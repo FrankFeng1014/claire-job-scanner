@@ -138,3 +138,26 @@ def test_discover_finds_ats_in_page():
     html2 = '<a href="https://acme.wd3.myworkdayjobs.com/en-US/Acme_Careers">Jobs</a>'
     s2 = FakeSession({"acme.com": Resp(text=html2)})
     assert discover.from_page(s2, "https://acme.com/careers") == ("workday", "acme/wd3/Acme_Careers")
+
+
+def test_workday_total_only_on_first_page():
+    posts = [{"title": f"Analyst {i}", "externalPath": f"/job/T/{i}", "locationsText": "Toronto",
+              "postedOn": "", "bulletFields": [f"R{i}"]} for i in range(55)]
+
+    def handler(body):
+        o = body["offset"]
+        return Resp({"total": 55 if o == 0 else 0, "jobPostings": posts[o:o + 20]})
+    s = FakeSession({"myworkdayjobs.com": handler})
+    assert len(adapters.workday(s, "acme/wd3/Site")) == 55
+
+
+def test_page_ignores_nav_and_news():
+    html = """<a href="/a">Students & Graduates overview</a><a href="/b">Market operations indicators</a>
+              <a href="/c">Join our Talent Community</a><a href="/d">Finance Coordinator</a>"""
+    s = FakeSession({"x.org": Resp(text=html)})
+    assert [j["title"] for j in adapters.page(s, "https://x.org/jobs")] == ["Finance Coordinator"]
+
+
+def test_excludes_tech_and_licensed():
+    for t in ["Data Center Specialist", "Client Associate (IR licensed)", "Executive Assistant to SVP"]:
+        assert not filters.title_ok(t)

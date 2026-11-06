@@ -52,8 +52,9 @@ def slugs(name):
     words = re.findall(r"[a-z0-9]+", base)
     if not words:
         return []
-    c = ["".join(words), "-".join(words), words[0]]
-    return list(dict.fromkeys(x for x in c if len(x) >= 3))
+    # 只用完整公司名（不再用第一个单词），避免把 "National Ballet" 猜成 "national"
+    c = ["".join(words), "-".join(words)]
+    return list(dict.fromkeys(x for x in c if len(x) >= 4))
 
 
 def similar(a, b):
@@ -78,7 +79,7 @@ def guess(s, name):
             pass
         try:
             r = s.get(f"https://api.ashbyhq.com/posting-api/job-board/{sl}", timeout=15)
-            if r.ok and r.json().get("jobs") is not None:
+            if r.ok and r.json().get("jobs"):
                 return "ashby", sl
         except Exception:
             pass

@@ -98,7 +98,7 @@ clearpoint-health-network,ClearPoint Health Network,P2,独立外科中心网络�
 cmhc,CMHC,P1,Crown corporation,,,https://careers.cmhc-schl.gc.ca/
 cmic,CMiC,P2,建筑行业ERP软件（Toronto）,,,
 cn-rail,CN Rail,P1,运输/物流,,,https://careers.cn.ca/go/Early-Careers/2706017/
-cohere,Cohere,P2,科技,,,
+cohere,Cohere,P2,科技,ashby,cohere,
 colgate-palmolive-canada,Colgate-Palmolive Canada,P2,消费品,,,
 colliers,Colliers,P2,房地产,,,
 combined-metal-industries,Combined Metal Industries,P2,金属回收/大宗贸易（SME）,,,
@@ -118,7 +118,7 @@ craft-ontario,Craft Ontario,P2,艺术服务组织（Toronto）,,,
 crowe-soberman,Crowe Soberman,P2,会计,,,https://www.crowe.com/ca/crowesoberman/careers/current-opportunities
 crows-theatre,Crow's Theatre,P2,剧团（Toronto）,,,https://www.crowstheatre.com/about/careers
 cushman-wakefield-canada,Cushman & Wakefield Canada,P2,房地产,,,
-d2l,D2L,P2,科技/教育,,,
+d2l,D2L,P2,科技/教育,greenhouse,d2l,
 dance-umbrella-of-ontario,Dance Umbrella of Ontario (DUO),P2,艺术管理/舞蹈经纪(SME非营利),,,https://danceumbrella.net/job-board
 dayforce,Dayforce,P1,科技,,,https://jobs.dayforcehcm.com/en-US/mydayforce/alljobs
 definity-financial,Definity Financial,P2,保险,,,https://careers.definityfinancial.com/
@@ -144,7 +144,7 @@ est-e-lauder-canada,Estée Lauder Canada,P2,奢侈品/美妆,,,https://elchxmpro
 export-development-canada,Export Development Canada,P1,Crown corporation,workable,edc,https://apply.workable.com/edc/
 ey-canada,EY Canada,P0,Big4,,,https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q
 factory-theatre,Factory Theatre,P2,剧团（Toronto）,,,
-faire,Faire,P2,科技/电商,,,
+faire,Faire,P2,科技/电商,greenhouse,faire,
 fairfax-financial,Fairfax Financial,P2,保险/投资,,,
 fall-for-dance-north,Fall for Dance North Festival,P2,艺术节（Toronto）,,,
 feheley-fine-arts,Feheley Fine Arts,P2,商业画廊（因纽特艺术）（Toronto）,,,
@@ -203,7 +203,7 @@ indigo,Indigo,P2,零售,smartrecruiters,IndigoBooksMusic,https://careers.smartre
 info-tech-research-group,Info-Tech Research Group / McLean & Company,P2,IT/HR研究咨询,,,https://www.infotech.com/careers
 infrastructure-ontario,Infrastructure Ontario,P1,公共部门,,,https://www.infrastructureontario.ca/en/careers-at-io/
 ingenium,Ingenium,P2,博物馆（Ottawa）,,,https://ingenium.ca/en/careers
-instacart-canada,Instacart Canada,P2,科技,,,
+instacart-canada,Instacart Canada,P2,科技,greenhouse,instacart,
 intact-financial,Intact Financial,P0,保险,,,https://careers.intactfc.com/new-grads
 integricon,Integricon,P2,房屋修复（Vaughan）,,,
 interac,Interac,P1,金融科技,workday,interac/wd3/Interac,https://interac.wd3.myworkdayjobs.com/Interac
@@ -219,7 +219,7 @@ kimberly-clark-canada,Kimberly-Clark Canada,P2,消费品,,,
 kinaxis,Kinaxis,P1,科技,,,https://careers-kinaxis.icims.com/jobs/search
 kings-pastry,King's Pastry,P2,烘焙食品制造（Mississauga）,,,
 koffler-arts,Koffler Arts,P2,艺术中心（Toronto）,,,https://jobs.jpro.org/companies/koffler-centre-of-the-arts
-koho,KOHO,P2,金融科技,,,
+koho,KOHO,P2,金融科技,ashby,koho,
 kpmg-canada,KPMG Canada,P0,Big4,,,https://careers.kpmg.ca/students
 kraft-heinz-canada,Kraft Heinz Canada,P1,消费品,,,https://jobs.kraftheinz.com/careers
 kroll-canada,Kroll Canada,P2,咨询/估值,,,
@@ -323,7 +323,7 @@ picton-investments,PICTON Investments,P2,资产管理,,,
 pinnacle,Pinnacle（在线博彩）,P2,在线博彩（North York）,,,
 pointclickcare,PointClickCare,P1,科技,lever,pointclickcare,https://jobs.lever.co/pointclickcare
 porter-airlines,Porter Airlines,P1,航空,,,https://careers.flyporter.com/
-power-corporation-great-west-lifeco,Power Corporation / Great-West Lifeco,P1,金融,,,https://www.powercorporation.com/en/other/careers/49/ ; https://jobs.canadalife.com/
+power-corporation-great-west-lifeco,Power Corporation / Great-West Lifeco,P1,金融,,,
 procter-gamble-canada,Procter & Gamble Canada,P1,消费品,workday,pg/wd5/1000,https://www.pgcareers.com/location-Canada
 protiviti-canada,Protiviti Canada,P2,咨询/内审,,,
 psp-investments,PSP Investments,P1,养老金,workday,investpsp/wd3/psp_careers,https://www.investpsp.com/en/work/careers/
@@ -351,10 +351,10 @@ robert-half-canada,Robert Half Canada,P2,招聘中介（财务会计临时/永�
 robert-mclaughlin-gallery,Robert McLaughlin Gallery,P2,公共美术馆（Oshawa）,,,
 rogers,Rogers,P0,通信,,,https://jobs.rogers.com/content/New-Grad-Program/
 romet-limited,Romet Limited,P2,燃气表/计量仪器制造（Mississauga）,,,
-roots,Roots,P2,零售,,,https://www.roots.com/ca/en/careers
+roots,Roots,P2,零售,,,
 royal-academy-of-dance-canada,Royal Academy of Dance (Canada),P2,艺术教育/考试机构（SME）,,,https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/
 royal-conservatory-of-music,Royal Conservatory of Music,P2,文化机构,,,https://www.rcmusic.com/about-us/careers-at-the-royal-conservatory
-royal-ontario-museum,Royal Ontario Museum,P2,博物馆,,,https://www.rom.on.ca/en/join-us/jobs
+royal-ontario-museum,Royal Ontario Museum,P2,博物馆,,,
 rsm-canada,RSM Canada,P2,会计/咨询,,,
 russel-metals,Russel Metals,P2,金属分销（TSX上市，Mississauga总部）,,,https://www.russelmetals.com/en/careers/
 s-p-global,S&P Global (Ratings),P1,信用评级/金融信息,workday,spgi/wd5/SPGI_Careers,https://careers.spglobal.com/jobs
@@ -378,19 +378,19 @@ small-world-music,Small World Music,P2,音乐演出/音乐节（Toronto）,,,
 smartcentres,SmartCentres REIT,P2,房地产 REIT,,,https://smartcentres.com/careers
 sobeys,Sobeys,P2,零售,,,
 sotheby-s-canada,Sotheby's Canada,P2,拍卖/艺术市场,greenhouse,sothebys,https://job-boards.greenhouse.io/sothebys
-soulpepper-theatre,Soulpepper Theatre Company,P2,剧团（Toronto）,,,https://www.soulpepper.ca/about/work-with-us/opportunities
+soulpepper-theatre,Soulpepper Theatre Company,P2,剧团（Toronto）,,,
 soundstreams-canada,Soundstreams Canada,P2,音乐演出机构（Toronto）,,,
 south-riverdale-community-health-centre,South Riverdale Community Health Centre,P2,社区健康中心/非营利,,,
 spin-master,Spin Master,P2,消费品/玩具/娱乐,,,
 sprott,Sprott,P2,资产管理,,,https://sprott.com/about-us/careers/
 staples-canada,Staples Canada,P2,零售/B2B,,,
-starlight-investments,Starlight Investments,P2,房地产投资/资产管理,,,https://www.starlightinvest.com/careers
+starlight-investments,Starlight Investments,P2,房地产投资/资产管理,,,
 state-street-canada,State Street Canada,P2,资产服务,,,
 statistics-canada,Statistics Canada,P2,公共部门（Ottawa）,,,
 stellantis-canada,Stellantis Canada,P2,汽车,,,
 stephen-bulger-gallery,Stephen Bulger Gallery,P2,商业画廊（摄影）（Toronto）,,,
 stratford-festival,Stratford Festival,P2,文化机构,,,https://www.stratfordfestival.ca/AboutUs/JobsandAuditions
-stripe-canada,Stripe Canada,P2,金融科技,,,
+stripe-canada,Stripe Canada,P2,金融科技,greenhouse,stripe,
 sun-life,Sun Life,P0,保险,,,https://www.sunlife.ca/en/careers/student-and-new-graduate-programs/
 swiss-re-canada,Swiss Re Canada,P2,再保险,,,
 tafelmusik,Tafelmusik Baroque Orchestra & Chamber Choir,P2,乐团（Toronto）,,,
@@ -399,7 +399,7 @@ tapestry-opera,Tapestry Opera,P2,歌剧团（Toronto）,,,https://tapestryopera.
 tarragon-theatre,Tarragon Theatre,P2,剧团（Toronto）,,,https://tarragontheatre.com/plays/news/job-opportunities-at-tarragon-theatre
 tc-energy,TC Energy,P1,能源,workday,tcenergy/wd3/CAREER_SITE_TC,https://www.tcenergy.com/about/careers/students-and-graduates
 td-bank,TD Bank,P0,银行,workday,td/wd3/TD_Bank_Careers,https://careers.td.com/student-new-grads/early-talent-programs/
-telesat,Telesat,P2,通信（Ottawa）,,,
+telesat,Telesat,P2,通信（Ottawa）,lever,telesat,
 telus,TELUS,P0,通信,,,https://www.telus.com/about/careers/students-grads
 terrapure,Terrapure,P2,电池回收（GTA（总部待核实））,,,https://terrapureenv.com/careers/
 textile-museum-of-canada,Textile Museum of Canada,P2,博物馆,,,https://textilemuseum.ca/?p=291
@@ -438,7 +438,7 @@ unilever-canada,Unilever Canada,P1,消费品,workday,unilever/wd3/Unilever_Exper
 united-way-greater-toronto,United Way Greater Toronto,P2,非营利,,,https://unitedwaygt.org/career-opportunities
 university-health-network,University Health Network,P2,医院（财务/运营）,,,
 university-of-toronto,University of Toronto,P2,大学（财务/行政）,,,https://jobs.utoronto.ca/go/Staff-Opportunities/2607517/
-util-assist,Util-Assist Inc.,P2,公用事业咨询/SME,,,https://www.util-assist.com/
+util-assist,Util-Assist Inc.,P2,公用事业咨询/SME,lever,util-assist,https://www.util-assist.com/
 varley-art-gallery,Varley Art Gallery of Markham,P2,公共美术馆（Markham）,,,
 veradek,Veradek,P2,户外家居装饰品牌（电商+零售）（Richmond Hill）,,,
 visa-canada,Visa Canada,P1,支付,workday,visa/wd5/Visa_Early_Careers,https://corporate.visa.com/en/jobs/

@@ -128,6 +128,8 @@ def workday(s, ats_id):
     for search in searches:
         offset = 0
         data = first if search == "" else page(search, 0)
+        # Workday 只在第一页返回 total，后续页 total 为 0，所以要记住第一页的数字
+        search_total = data.get("total", 0) or total
         while True:
             for j in data.get("jobPostings", []):
                 path = j.get("externalPath") or ""
@@ -138,7 +140,7 @@ def workday(s, ats_id):
                 out.append(_job(jid, j.get("title"), j.get("locationsText"),
                                 f"{base}/en-US/{site}{path}", j.get("postedOn") or ""))
             offset += 20
-            if offset >= data.get("total", total) or offset >= 400:
+            if offset >= search_total or offset >= 400 or not data.get("jobPostings"):
                 break
             data = page(search, offset)
     return out
@@ -167,11 +169,15 @@ class _LinkParser(HTMLParser):
             self._href = None
 
 
+# 普通网页上的链接很多是导航、新闻，只保留“像职位名”的：必须含一个岗位名词
 JOBLIKE = re.compile(
-    r"analyst|coordinator|associate|assistant|accountant|officer|administrator|specialist|"
-    r"manager|clerk|intern|graduate|new grad|program|development|finance|operations|"
-    r"posting|job|career|opportunit", re.I)
-NAV = re.compile(r"^(careers?|jobs?|join us|work with us|opportunities|volunteer|apply now|learn more|read more)$", re.I)
+    r"\b(analyst|coordinator|associate|assistant|accountant|officer|administrator|specialist|"
+    r"manager|clerk|trainee|graduate|new grad|controller|bookkeeper|producer|registrar|"
+    r"representative|advisor|consultant|director|technician|educator|curator|intern)\b", re.I)
+NAV = re.compile(
+    r"^(careers?|jobs?|join us|work with us|opportunities|volunteer|apply now|learn more|read more)$|"
+    r"overview|learn about|talent community|our people|meet |statement|indicators|news|press|"
+    r"blog|podcast|report|event|webinar|subscribe|sign up|log ?in|privacy|cookie", re.I)
 
 
 def page(s, url):

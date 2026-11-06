@@ -32,6 +32,10 @@ EXCLUDE = [
     r"nurse", r"driver", r"warehouse", r"\bcook\b", r"security guard", r"electrician",
     r"mechanic", r"millwright", r"machinist", r"\bstore\b", r"sales associate",
     r"cashier", r"barista", r"\bco-?op\b", r"\bintern(ship)?\b", r"summer student",
+    r"executive assistant", r"licen[sc]ed", r"financial advisor", r"wealth advisor",
+    r"technical", r"tech support", r"cloud", r"data center", r"\bsoc\b", r"cyber",
+    r"network", r"infrastructure", r"\bsap\b", r"oracle", r"salesforce", r"servicenow",
+    r"clinical", r"pharmac", r"physician", r"therapist", r"part-?time",
 ]
 _inc = re.compile("|".join(INCLUDE), re.I)
 _exc = re.compile("|".join(EXCLUDE), re.I)
