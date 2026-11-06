@@ -1,6 +1,6 @@
 id,name,tier,sector,ats,ats_id,careers_url
 3m-canada,3M Canada,P2,工业/消费品,,,
-accenture-canada,Accenture Canada,P0,咨询,,,https://www.accenture.com/ca-en/careers/life-at-accenture/entry-level
+accenture-canada,Accenture Canada,P0,咨询,workday,accenture/wd103/AccentureCareers,https://www.accenture.com/ca-en/careers/life-at-accenture/entry-level
 ada,Ada,P2,科技,,,
 adobe-canada,Adobe Canada,P2,科技（Ottawa）,,,
 aga-khan-museum,Aga Khan Museum,P2,博物馆,,,https://agakhanmuseum.org/current-job-openings/
@@ -10,7 +10,7 @@ albourne-partners,Albourne Partners (Canada),P2,另类投资咨询,,,https://www
 alectra-utilities,Alectra Utilities,P2,公用事业,,,
 alliance-solution-group,Alliance Solution Group,P2,包装增值服务与仓储（Oakville）,,,
 allied-properties-reit,Allied Properties REIT,P2,房地产,,,
-altus-group,Altus Group,P2,房地产咨询/数据,,,https://careers.altusgroup.com/global/en/search-results
+altus-group,Altus Group,P2,房地产咨询/数据,workday,altusgroup/wd3/AltusGroup,https://careers.altusgroup.com/global/en/search-results
 alvarez-marsal-canada,Alvarez & Marsal Canada,P2,咨询,,,
 amazon-canada,Amazon Canada,P0,科技/电商,,,https://www.amazon.jobs/
 amd-canada,AMD Canada,P1,科技/半导体,,,https://careers.amd.com/careers-home/jobs?location=Markham
@@ -45,7 +45,7 @@ bombardier,Bombardier,P2,航空/制造,,,
 borrowell,Borrowell,P2,金融科技,,,
 boston-consulting-group,Boston Consulting Group,P0,咨询,,,https://careers.bcg.com/early-careers
 broadridge-canada,Broadridge Canada,P2,金融科技,,,
-brookfield,Brookfield,P0,资产管理,,,https://www.brookfield.com/careers/career-opportunities
+brookfield,Brookfield,P0,资产管理,workday,brookfield/wd5/brookfield,https://www.brookfield.com/careers/career-opportunities
 brooklin-concrete-products,Brooklin Concrete Products,P2,预制混凝土建材（Whitby (Durham)）,,,
 brunswick-bierworks,Brunswick Bierworks,P2,饮料代工（Toronto）,,,https://www.brunswickbierworks.com/careers
 buddies-in-bad-times-theatre,Buddies in Bad Times Theatre,P2,剧团（Toronto）,,,
@@ -68,11 +68,11 @@ canadian-museum-of-nature,Canadian Museum of Nature,P2,博物馆（Ottawa）,,,h
 canadian-music-centre,Canadian Music Centre,P2,艺术服务组织（Toronto）,,,
 canadian-opera-company,Canadian Opera Company,P2,文化机构,,,https://coc.bamboohr.com/careers/69
 canadian-stage,Canadian Stage,P2,表演艺术,,,https://www.canadianstage.com/about/jobs
-canadian-tire,Canadian Tire,P0,零售,,,https://corp.canadiantire.ca/careers/campus
+canadian-tire,Canadian Tire,P0,零售,workday,canadiantirecorporation/wd3/Enterprise_External_Careers_Site,https://corp.canadiantire.ca/careers/campus
 canadian-wildlife-federation,Canadian Wildlife Federation,P2,非营利/环保（Ottawa）,,,
 cannect-mortgage-investment-corp,Cannect Mortgage Investment Corp.,P2,私人按揭贷款（SME）,,,
 capco,Capco,P1,咨询,greenhouse,capco,https://job-boards.greenhouse.io/capco
-capital-one-canada,Capital One Canada,P1,金融/信用卡,,,https://www.capitalonecareers.ca/new-grad-jobs
+capital-one-canada,Capital One Canada,P1,金融/信用卡,workday,capitalone/wd12/Capital_One,https://www.capitalonecareers.ca/new-grad-jobs
 capreit,CAPREIT (Canadian Apartment Properties REIT),P2,房地产/REIT,,,https://careers-capreit.icims.com/jobs/search
 cbc-radio-canada,CBC/Radio-Canada,P2,Crown corporation/媒体,,,https://cbc.radio-canada.ca/en/working-at-cbc-radio-canada/jobs
 cbre-canada,CBRE Canada,P2,房地产,,,
@@ -82,14 +82,14 @@ chamber-music-society-of-mississauga,The Chamber Music Society of Mississauga In
 charles-river-associates-toronto,Charles River Associates (Toronto),P2,经济咨询,greenhouse,charlesriverassociates,https://job-boards.greenhouse.io/charlesriverassociates
 choice-properties-reit,Choice Properties REIT,P2,房地产,,,
 ci-financial,CI Financial,P1,资产管理,workday,ci/wd3/CI_FINANCIAL_EXTERNAL_CAREER-SITE,https://ci.wd3.myworkdayjobs.com/CI_FINANCIAL_EXTERNAL_CAREER-SITE
-cibc,CIBC,P0,银行,,,https://www.cibc.com/en/about-cibc/careers/students-and-graduates/new-graduates.html
+cibc,CIBC,P0,银行,workday,cibc/wd3/search,https://www.cibc.com/en/about-cibc/careers/students-and-graduates/new-graduates.html
 cibc-mellon,CIBC Mellon,P2,资产服务,,,
 ciena,Ciena,P1,科技（Ottawa）,workday,ciena/wd5/Careers,https://www.ciena.com/careers/students-new-graduates
 cieslok-group,Cieslok Group,P2,户外广告媒体（Toronto）,,,
-cineplex,Cineplex,P2,娱乐,,,https://careers.cineplex.com
+cineplex,Cineplex,P2,娱乐,workday,cineplex/wd3/Cineplex,https://careers.cineplex.com
 ciro,CIRO,P2,金融监管,,,
 cisco-canada,Cisco Canada,P1,科技,,,https://careers.cisco.com/global/en/entry-level-careers
-citi-canada,Citi Canada,P1,银行,,,https://jobs.citi.com/analyst
+citi-canada,Citi Canada,P1,银行,workday,citi/wd5/2,https://jobs.citi.com/analyst
 city-of-mississauga,City of Mississauga,P2,公共部门,,,
 city-of-ottawa,City of Ottawa,P2,公共部门（Ottawa）,,,https://jobs-emplois.ottawa.ca/city-jobs/search/?q=finance
 city-of-toronto,City of Toronto,P1,公共部门,,,https://jobs.toronto.ca/jobsatcity/
@@ -124,7 +124,7 @@ dayforce,Dayforce,P1,科技,,,https://jobs.dayforcehcm.com/en-US/mydayforce/allj
 definity-financial,Definity Financial,P2,保险,,,https://careers.definityfinancial.com/
 deloitte-canada,Deloitte Canada,P0,Big4,,,https://careers.deloitte.ca/search/?locale=en_US
 denison-gallery,Denison Gallery Ltd.,P2,画廊/画框零售（North York）,,,
-desjardins,Desjardins,P0,银行,,,https://www.desjardins.com/en/careers.html
+desjardins,Desjardins,P0,银行,workday,desjardins/wd10/Desjardins,https://www.desjardins.com/en/careers.html
 diageo-canada,Diageo Canada,P2,消费品,,,
 diamond-corporation,Diamond Corporation,P2,房地产开发/投资管理（Toronto）,,,
 diamond-schmitt,Diamond Schmitt,P2,建筑设计（文化建筑）（Toronto）,,,
@@ -189,11 +189,11 @@ home-depot-canada,Home Depot Canada,P2,零售,,,
 homeequity-bank,HomeEquity Bank,P2,银行,,,
 honda-canada,Honda Canada,P2,汽车,,,
 honeywell-canada,Honeywell Canada,P2,工业,,,
-hoopp,HOOPP,P0,养老金,,,https://hoopp.com/about-hoopp/hoopp-careers/students-and-new-graduates/
+hoopp,HOOPP,P0,养老金,workday,hoopp/wd10/HOOPPStudent,https://hoopp.com/about-hoopp/hoopp-careers/students-and-new-graduates/
 humberview-group,Humberview Group,P2,汽车经销集团（Toronto）,,,
 hydro-one,Hydro One,P1,公用事业,,,https://jobs.hydroone.com/go/Student-Jobs/826900/
 hydro-ottawa,Hydro Ottawa,P2,公用事业（Ottawa）,,,
-ia-financial-group,iA Financial Group,P1,保险,,,https://ia.ca/jobs/jobs-available
+ia-financial-group,iA Financial Group,P1,保险,workday,ia/wd3/Professional,https://ia.ca/jobs/jobs-available
 ibm-canada,IBM Canada,P0,科技,,,https://careers.ibm.com
 ieso,IESO,P1,公用事业,,,https://careers.ieso.ca/ ; https://careers.ieso.ca/go/Student-and-Recent-Graduates-with-Search/9915400/
 igm-financial-mackenzie-investments,IGM Financial / Mackenzie Investments,P1,资产管理,,,https://www.mackenzieinvestments.com/en/careers
@@ -240,7 +240,7 @@ luminato,Luminato Festival Toronto,P2,艺术节（Toronto）,,,
 lush-handmade-cosmetics,Lush Handmade Cosmetics,P2,零售/消费品,greenhouse,lush,https://job-boards.greenhouse.io/lush
 mad-elevator,MAD Elevator Inc.,P2,电梯制造/服务（Mississauga SME）,,,
 magna-international,Magna International,P1,工业/制造,,,https://www.magna.com/careers/students
-manulife,Manulife,P0,保险,,,https://careers.manulife.com/global/en/new-graduate
+manulife,Manulife,P0,保险,workday,manulife/wd3/MFCJH_Jobs,https://careers.manulife.com/global/en/new-graduate
 maple-leaf-foods,Maple Leaf Foods,P2,消费品,,,
 marsh-canada,Marsh Canada,P2,保险经纪/风险,,,
 mastercard-canada,Mastercard Canada,P1,支付,workday,mastercard/wd1/campus,https://careers.mastercard.com/us/en/search-results
@@ -300,7 +300,7 @@ ontario-power-generation,Ontario Power Generation,P1,公用事业,,,https://jobs
 ontario-presents,Ontario Presents,P2,艺术服务组织（Toronto）,,,
 ontario-public-service,Ontario Public Service,P0,公共部门,,,https://www.gojobs.gov.on.ca
 ontario-securities-commission,Ontario Securities Commission,P1,公共部门,,,https://www.osc.ca/en/about-us/careers-osc
-ontario-teachers-pension-plan,Ontario Teachers' Pension Plan,P0,养老金,,,https://otpp.com/en-ca/careers/early-talent/new-graduates/
+ontario-teachers-pension-plan,Ontario Teachers' Pension Plan,P0,养老金,workday,otppb/wd3/OntarioTeachers_Careers,https://otpp.com/en-ca/careers/early-talent/new-graduates/
 opentext,OpenText,P1,科技,,,https://careers.opentext.com/us/en/emerging-talent
 opera-atelier,Opera Atelier,P2,歌剧团（Toronto）,,,
 optrust,OPTrust,P2,养老金,,,
@@ -309,7 +309,7 @@ osfi,OSFI,P1,公共部门,,,https://www.osfi-bsif.gc.ca/en/careers/job-opportuni
 ottawa-art-gallery,Ottawa Art Gallery (OAG),P2,美术馆(渥太华),,,https://oaggao.ca/about-us/careers-and-opportunities/
 ottawa-chamberfest,Ottawa Chamberfest,P2,艺术节（Ottawa）,,,https://www.ottawafestivals.ca/jobs
 ottawa-jazz-festival,Ottawa Jazz Festival,P2,艺术节（Ottawa）,,,https://www.ottawafestivals.ca/jobs
-oxford-properties,Oxford Properties,P2,房地产,,,https://careers.omers.com/ca/en/Oxford-Careers
+oxford-properties,Oxford Properties,P2,房地产,workday,omers/wd3/OMERS_External,https://careers.omers.com/ca/en/Oxford-Careers
 pacart,PACART,P2,艺术品物流（（城市待核实））,,,
 pact,Professional Association of Canadian Theatres (PACT),P2,艺术服务组织（兼招聘板）（Toronto）,,,
 park-lawn-corporation,Park Lawn Corporation,P2,殡葬服务（Toronto）,,,https://www.parklawncorp.com/careers/
@@ -324,9 +324,9 @@ pinnacle,Pinnacle（在线博彩）,P2,在线博彩（North York）,,,
 pointclickcare,PointClickCare,P1,科技,lever,pointclickcare,https://jobs.lever.co/pointclickcare
 porter-airlines,Porter Airlines,P1,航空,,,https://careers.flyporter.com/
 power-corporation-great-west-lifeco,Power Corporation / Great-West Lifeco,P1,金融,,,https://www.powercorporation.com/en/other/careers/49/ ; https://jobs.canadalife.com/
-procter-gamble-canada,Procter & Gamble Canada,P1,消费品,,,https://www.pgcareers.com/location-Canada
+procter-gamble-canada,Procter & Gamble Canada,P1,消费品,workday,pg/wd5/1000,https://www.pgcareers.com/location-Canada
 protiviti-canada,Protiviti Canada,P2,咨询/内审,,,
-psp-investments,PSP Investments,P1,养老金,,,https://www.investpsp.com/en/work/careers/
+psp-investments,PSP Investments,P1,养老金,workday,investpsp/wd3/psp_careers,https://www.investpsp.com/en/work/careers/
 publicis-sapient,Publicis Sapient,P2,咨询/科技,,,
 purolator,Purolator,P2,物流,,,
 purpose-investments,Purpose Investments,P2,资产管理,,,
@@ -398,7 +398,7 @@ tapa,Toronto Alliance for the Performing Arts (TAPA),P2,艺术服务组织（兼
 tapestry-opera,Tapestry Opera,P2,歌剧团（Toronto）,,,https://tapestryopera.com/contact/careers/
 tarragon-theatre,Tarragon Theatre,P2,剧团（Toronto）,,,https://tarragontheatre.com/plays/news/job-opportunities-at-tarragon-theatre
 tc-energy,TC Energy,P1,能源,workday,tcenergy/wd3/CAREER_SITE_TC,https://www.tcenergy.com/about/careers/students-and-graduates
-td-bank,TD Bank,P0,银行,,,https://careers.td.com/student-new-grads/early-talent-programs/
+td-bank,TD Bank,P0,银行,workday,td/wd3/TD_Bank_Careers,https://careers.td.com/student-new-grads/early-talent-programs/
 telesat,Telesat,P2,通信（Ottawa）,,,
 telus,TELUS,P0,通信,,,https://www.telus.com/about/careers/students-grads
 terrapure,Terrapure,P2,电池回收（GTA（总部待核实））,,,https://terrapureenv.com/careers/
@@ -434,7 +434,7 @@ transunion-canada,TransUnion Canada,P2,金融数据,,,
 tridel,Tridel,P2,房地产,,,
 ttc,TTC,P2,公共部门/交通,,,
 uber-canada,Uber Canada,P2,科技,,,
-unilever-canada,Unilever Canada,P1,消费品,,,https://careers.unilever.com/en/canada
+unilever-canada,Unilever Canada,P1,消费品,workday,unilever/wd3/Unilever_Experienced_Professionals,https://careers.unilever.com/en/canada
 united-way-greater-toronto,United Way Greater Toronto,P2,非营利,,,https://unitedwaygt.org/career-opportunities
 university-health-network,University Health Network,P2,医院（财务/运营）,,,
 university-of-toronto,University of Toronto,P2,大学（财务/行政）,,,https://jobs.utoronto.ca/go/Staff-Opportunities/2607517/
