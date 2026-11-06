@@ -1,0 +1,58 @@
+name: 每日招聘扫描
+
+on:
+  schedule:
+    - cron: "17 11 * * *"     # 每天 UTC 11:17（多伦多 6:17/7:17）
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: "先运行招聘系统自动识别（discover --apply）"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 测试
+        run: python -m pytest -q
+      - name: 识别招聘系统（每周一或手动勾选）
+        run: |
+          if [ "${{ inputs.discover }}" = "true" ] || [ "$(date -u +%u)" = "1" ]; then
+            python -m scanner.discover --apply
+          else
+            echo "今天不是周一，跳过识别"
+          fi
+      - name: 扫描全部雇主
+        run: python -m scanner.main scan
+      - name: 提交结果
+        run: |
+          git config user.name "claire-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data reports
+          git diff --cached --quiet || git commit -m "scan $(date -u +%F)"
+          git push
+      - name: 有新岗位时发一条 Issue（GitHub 会自动发邮件通知你）
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(python -c "import json;print(len(json.load(open('data/latest.json'))['new_relevant']))")
+          echo "新相关职位：$n"
+          if [ "$n" -gt 0 ]; then
+            head -c 60000 reports/latest.md > /tmp/body.md
+            gh issue create --title "新岗位 $n 个（$(date -u +%F)）" --body-file /tmp/body.md
+          fi
