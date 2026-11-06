@@ -1,16 +1,14 @@
 id,name,tier,careers_url,ats,ats_id,confidence,how
 3m-canada,3M Canada,P2,,,,,未识别
-accenture-canada,Accenture Canada,P0,https://www.accenture.com/ca-en/careers/life-at-accenture/entry-level,workday,accenture/wd103/AccentureCareers,high,招聘页源码中找到
 ada,Ada,P2,,,,,未识别
 adobe-canada,Adobe Canada,P2,,,,,未识别
 aga-khan-museum,Aga Khan Museum,P2,https://agakhanmuseum.org/current-job-openings/,,,,未识别
 agincourt-community-services-association,Agincourt Community Services Association,P2,https://www.agincourtcommunityservices.com/,,,,未识别
-air-canada,Air Canada,P1,https://careers.aircanada.com/,greenhouse,air,review,按公司名猜测，需人工确认
+air-canada,Air Canada,P1,https://careers.aircanada.com/,,,,未识别
 albourne-partners,Albourne Partners (Canada),P2,https://www.albourne.com/careers,,,,未识别
 alectra-utilities,Alectra Utilities,P2,,,,,未识别
-alliance-solution-group,Alliance Solution Group,P2,,greenhouse,alliance,review,按公司名猜测，需人工确认
-allied-properties-reit,Allied Properties REIT,P2,,greenhouse,allied,review,按公司名猜测，需人工确认
-altus-group,Altus Group,P2,https://careers.altusgroup.com/global/en/search-results,workday,altusgroup/wd3/AltusGroup,high,招聘页源码中找到
+alliance-solution-group,Alliance Solution Group,P2,,,,,未识别
+allied-properties-reit,Allied Properties REIT,P2,,,,,未识别
 alvarez-marsal-canada,Alvarez & Marsal Canada,P2,,,,,未识别
 amazon-canada,Amazon Canada,P0,https://www.amazon.jobs/,,,,未识别
 amd-canada,AMD Canada,P1,https://careers.amd.com/careers-home/jobs?location=Markham,,,,未识别
@@ -21,7 +19,7 @@ anova-fertility,ANOVA Fertility & Reproductive Health,P2,https://anovafertility.
 aon-canada,Aon Canada,P2,,,,,未识别
 aritzia,Aritzia,P2,https://www.aritzia.com/en/aritzia/corporate-hub/careers/retail,,,,招聘页打不开：HTTPError
 armstrong-fine-art-services,Armstrong Fine Art Services,P2,,,,,未识别
-armstrong-fluid-technology,Armstrong Fluid Technology,P2,https://armstrongfluidtechnology.com/en/about-armstrong/careers,,,,招聘页打不开：ReadTimeout
+armstrong-fluid-technology,Armstrong Fluid Technology,P2,https://armstrongfluidtechnology.com/en/about-armstrong/careers,,,,未识别
 art-canada-institute,Art Canada Institute (ACI),P2,https://artcanada.com/about/jobs,,,,未识别
 art-gallery-of-hamilton,Art Gallery of Hamilton,P2,https://www.artgalleryofhamilton.com/about-the-agh/careers/,,,,招聘页打不开：HTTPError
 art-gallery-of-ontario,Art Gallery of Ontario,P2,https://jobs.jobvite.com/ago/jobs/viewall,,,,未识别
@@ -43,15 +41,14 @@ bombardier,Bombardier,P2,,,,,未识别
 borrowell,Borrowell,P2,,,,,未识别
 boston-consulting-group,Boston Consulting Group,P0,https://careers.bcg.com/early-careers,,,,未识别
 broadridge-canada,Broadridge Canada,P2,,,,,未识别
-brookfield,Brookfield,P0,https://www.brookfield.com/careers/career-opportunities,workday,brookfield/wd5/brookfield,high,招聘页源码中找到
 brooklin-concrete-products,Brooklin Concrete Products,P2,,,,,未识别
-brunswick-bierworks,Brunswick Bierworks,P2,https://www.brunswickbierworks.com/careers,ashby,brunswick,review,按公司名猜测，需人工确认
+brunswick-bierworks,Brunswick Bierworks,P2,https://www.brunswickbierworks.com/careers,,,,未识别
 buddies-in-bad-times-theatre,Buddies in Bad Times Theatre,P2,,,,,未识别
 burgundy-asset-management,Burgundy Asset Management,P2,,,,,未识别
 c-d-howe-institute,C.D. Howe Institute,P2,https://cdhowe.org/careers,,,,未识别
 caat-pension-plan,CAAT Pension Plan,P2,,,,,未识别
 cadillac-fairview,Cadillac Fairview,P2,,,,,未识别
-campus-living-centres,Campus Living Centres,P2,,ashby,campus,review,按公司名猜测，需人工确认
+campus-living-centres,Campus Living Centres,P2,,,,,未识别
 can-art-aluminum-extrusion,Can Art Aluminum Extrusion,P2,https://canartaluminumextrusion.applytojob.com/apply/,,,,未识别
 canada-council-for-the-arts,Canada Council for the Arts,P2,https://careers.canadacouncil.ca/vacancies.html,,,,未识别
 canada-infrastructure-bank,Canada Infrastructure Bank,P2,,,,,未识别
@@ -64,44 +61,38 @@ canadian-museum-of-nature,Canadian Museum of Nature,P2,https://nature.ca/en/care
 canadian-music-centre,Canadian Music Centre,P2,,,,,未识别
 canadian-opera-company,Canadian Opera Company,P2,https://coc.bamboohr.com/careers/69,,,,未识别
 canadian-stage,Canadian Stage,P2,https://www.canadianstage.com/about/jobs,,,,未识别
-canadian-tire,Canadian Tire,P0,https://corp.canadiantire.ca/careers/campus,workday,canadiantirecorporation/wd3/Enterprise_External_Careers_Site,high,招聘页源码中找到
 canadian-wildlife-federation,Canadian Wildlife Federation,P2,,,,,未识别
 cannect-mortgage-investment-corp,Cannect Mortgage Investment Corp.,P2,,,,,未识别
-capital-one-canada,Capital One Canada,P1,https://www.capitalonecareers.ca/new-grad-jobs,workday,capitalone/wd12/Capital_One,high,招聘页源码中找到
 capreit,CAPREIT (Canadian Apartment Properties REIT),P2,https://careers-capreit.icims.com/jobs/search,,,,未识别
 cbc-radio-canada,CBC/Radio-Canada,P2,https://cbc.radio-canada.ca/en/working-at-cbc-radio-canada/jobs,,,,未识别
 cbre-canada,CBRE Canada,P2,,,,,未识别
 celestica,Celestica,P0,https://careers.celestica.com,,,,未识别
 cgi,CGI,P1,https://www.cgi.com/en/careers,,,,未识别
-chamber-music-society-of-mississauga,The Chamber Music Society of Mississauga Inc.,P2,https://workinculture.ca/jobs-and-more/the-chamber-music-society-of-mississauga-inc-independent-contractor-marketing-audience-development-coordinator/,ashby,chamber,review,按公司名猜测，需人工确认
+chamber-music-society-of-mississauga,The Chamber Music Society of Mississauga Inc.,P2,https://workinculture.ca/jobs-and-more/the-chamber-music-society-of-mississauga-inc-independent-contractor-marketing-audience-development-coordinator/,,,,未识别
 choice-properties-reit,Choice Properties REIT,P2,,,,,未识别
-cibc,CIBC,P0,https://www.cibc.com/en/about-cibc/careers/students-and-graduates/new-graduates.html,workday,cibc/wd3/search,high,招聘页源码中找到
 cibc-mellon,CIBC Mellon,P2,,,,,未识别
 cieslok-group,Cieslok Group,P2,,,,,未识别
-cineplex,Cineplex,P2,https://careers.cineplex.com,workday,cineplex/wd3/Cineplex,high,招聘页源码中找到
 ciro,CIRO,P2,,,,,未识别
 cisco-canada,Cisco Canada,P1,https://careers.cisco.com/global/en/entry-level-careers,,,,未识别
-citi-canada,Citi Canada,P1,https://jobs.citi.com/analyst,workday,citi/wd5/2,high,招聘页源码中找到
 city-of-mississauga,City of Mississauga,P2,,,,,未识别
 city-of-ottawa,City of Ottawa,P2,https://jobs-emplois.ottawa.ca/city-jobs/search/?q=finance,,,,未识别
 city-of-toronto,City of Toronto,P1,https://jobs.toronto.ca/jobsatcity/,,,,未识别
 cityfolk,CityFolk,P2,,,,,未识别
-clearpoint-health-network,ClearPoint Health Network,P2,,lever,clearpoint,review,按公司名猜测，需人工确认
+clearpoint-health-network,ClearPoint Health Network,P2,,,,,未识别
 cmhc,CMHC,P1,https://careers.cmhc-schl.gc.ca/,,,,未识别
 cmic,CMiC,P2,,,,,未识别
 cn-rail,CN Rail,P1,https://careers.cn.ca/go/Early-Careers/2706017/,,,,未识别
-cohere,Cohere,P2,,ashby,cohere,review,按公司名猜测，需人工确认
 colgate-palmolive-canada,Colgate-Palmolive Canada,P2,,,,,未识别
 colliers,Colliers,P2,,,,,未识别
 combined-metal-industries,Combined Metal Industries,P2,,,,,未识别
 competition-bureau,Competition Bureau,P2,,,,,未识别
 conference-board-of-canada,Conference Board of Canada,P2,https://www.signal49.ca/careers/,,,,未识别
-constellation-software,Constellation Software,P2,,ashby,constellation,review,按公司名猜测，需人工确认
+constellation-software,Constellation Software,P2,,,,,未识别
 contact-photography-festival,CONTACT Photography Festival,P2,,,,,未识别
 corus-entertainment,Corus Entertainment,P2,https://www.corus.ca/en/careers/,,,,招聘页打不开：SSLError
 costco-canada,Costco Canada,P2,,,,,未识别
 costi-immigrant-services,COSTI Immigrant Services,P2,,,,,未识别
-council-of-ontario-universities,Council of Ontario Universities,P2,https://cou.ca/,,,,招聘页打不开：ReadTimeout
+council-of-ontario-universities,Council of Ontario Universities,P2,https://cou.ca/,,,,未识别
 cowley-abbott,Cowley Abbott,P2,https://www.cowleyabbott.ca,,,,未识别
 cpac,CPAC (Cable Public Affairs Channel),P2,https://www.cpac.ca/articles/job-postings/careers-cpac,,,,未识别
 cpkc,CPKC,P1,https://careers.cpkcr.com,,,,招聘页打不开：SSLError
@@ -110,13 +101,11 @@ craft-ontario,Craft Ontario,P2,,,,,未识别
 crowe-soberman,Crowe Soberman,P2,https://www.crowe.com/ca/crowesoberman/careers/current-opportunities,,,,招聘页打不开：HTTPError
 crows-theatre,Crow's Theatre,P2,https://www.crowstheatre.com/about/careers,,,,未识别
 cushman-wakefield-canada,Cushman & Wakefield Canada,P2,,,,,未识别
-d2l,D2L,P2,,greenhouse,d2l,review,按公司名猜测，需人工确认
 dance-umbrella-of-ontario,Dance Umbrella of Ontario (DUO),P2,https://danceumbrella.net/job-board,,,,未识别
 dayforce,Dayforce,P1,https://jobs.dayforcehcm.com/en-US/mydayforce/alljobs,,,,未识别
 definity-financial,Definity Financial,P2,https://careers.definityfinancial.com/,,,,招聘页打不开：HTTPError
 deloitte-canada,Deloitte Canada,P0,https://careers.deloitte.ca/search/?locale=en_US,,,,未识别
 denison-gallery,Denison Gallery Ltd.,P2,,,,,未识别
-desjardins,Desjardins,P0,https://www.desjardins.com/en/careers.html,workday,desjardins/wd10/Desjardins,high,招聘页源码中找到
 diageo-canada,Diageo Canada,P2,,,,,未识别
 diamond-corporation,Diamond Corporation,P2,,,,,未识别
 diamond-schmitt,Diamond Schmitt,P2,,,,,未识别
@@ -133,8 +122,7 @@ ericsson-canada,Ericsson Canada,P2,,,,,未识别
 esprit-orchestra,Esprit Orchestra,P2,https://workinculture.ca/jobs-and-more/esprit-orchestra-contract-full-time-administrative-coordinator-1-year-contract-with-possible-extension/,,,,未识别
 est-e-lauder-canada,Estée Lauder Canada,P2,https://elchxmprod.jobs.hr.cloud.sap/search/?q=&locationsearch=Toronto,,,,未识别
 ey-canada,EY Canada,P0,https://eyglobal.yello.co/job_boards/c1riT--B2O-KySgYWsZO1Q,,,,未识别
-factory-theatre,Factory Theatre,P2,,ashby,factory,review,按公司名猜测，需人工确认
-faire,Faire,P2,,greenhouse,faire,review,按公司名猜测，需人工确认
+factory-theatre,Factory Theatre,P2,,,,,未识别
 fairfax-financial,Fairfax Financial,P2,,,,,未识别
 fall-for-dance-north,Fall for Dance North Festival,P2,,,,,未识别
 feheley-fine-arts,Feheley Fine Arts,P2,,,,,未识别
@@ -152,8 +140,8 @@ fundata-canada,Fundata Canada,P2,https://www.fundata.com/,,,,未识别
 galerie-st-laurent-hill,Galerie St. Laurent + Hill,P2,,,,,未识别
 gallery-44,Gallery 44 Centre for Contemporary Photography,P2,,,,,未识别
 gardiner-museum,Gardiner Museum,P2,https://gardinermuseum.on.ca/the-museum/jobs-volunteering/jobs,,,,未识别
-general-mills-canada,General Mills Canada,P2,,greenhouse,general,review,按公司名猜测，需人工确认
-general-motors-canada,General Motors Canada,P1,https://search-careers.gm.com/en/locations/canada/,greenhouse,general,review,按公司名猜测，需人工确认
+general-mills-canada,General Mills Canada,P2,,,,,未识别
+general-motors-canada,General Motors Canada,P1,https://search-careers.gm.com/en/locations/canada/,,,,未识别
 genumark,Genumark,P2,,,,,未识别
 gesco,Gesco,P2,,,,,未识别
 gfl-environmental,GFL Environmental,P2,,,,,未识别
@@ -165,22 +153,20 @@ grafton-apparel,Grafton Apparel,P2,,,,,未识别
 grant-thornton-canada,Grant Thornton Canada,P1,https://www.doanegrantthornton.ca/careers/,,,,未识别
 great-canadian-theatre-company,Great Canadian Theatre Company (GCTC),P2,,,,,未识别
 greater-toronto-airports-authority,Greater Toronto Airports Authority,P2,,,,,未识别
-greenhouse-juice,Greenhouse Juice Co.,P2,,greenhouse,greenhouse,review,按公司名猜测，需人工确认
+greenhouse-juice,Greenhouse Juice Co.,P2,,,,,未识别
 guardian-capital,Guardian Capital,P2,,,,,未识别
 gwl-realty-advisors,GWL Realty Advisors,P2,,,,,未识别
 harbourfront-centre,Harbourfront Centre,P2,https://harbourfrontcentre.com/careers/,,,,未识别
-haus-of-dada,Haus of Dada (Lisa Anita Wegner studio),P2,https://workinculture.ca/jobs-and-more/haus-of-dada-part-time-studio-assistant-project-coordinator/,ashby,haus,review,按公司名猜测，需人工确认
+haus-of-dada,Haus of Dada (Lisa Anita Wegner studio),P2,https://workinculture.ca/jobs-and-more/haus-of-dada-part-time-studio-assistant-project-coordinator/,,,,未识别
 heffel-fine-art-auction-house,Heffel Fine Art Auction House,P2,https://www.heffel.com/Links/Careers_E.aspx,,,,未识别
 holt-renfrew,Holt Renfrew,P2,https://www.holtrenfrew.com/en/careers,,,,招聘页打不开：HTTPError
 home-depot-canada,Home Depot Canada,P2,,,,,未识别
 homeequity-bank,HomeEquity Bank,P2,,,,,未识别
 honda-canada,Honda Canada,P2,,,,,未识别
 honeywell-canada,Honeywell Canada,P2,,,,,未识别
-hoopp,HOOPP,P0,https://hoopp.com/about-hoopp/hoopp-careers/students-and-new-graduates/,workday,hoopp/wd10/HOOPPStudent,high,招聘页源码中找到
 humberview-group,Humberview Group,P2,,,,,未识别
 hydro-one,Hydro One,P1,https://jobs.hydroone.com/go/Student-Jobs/826900/,,,,未识别
 hydro-ottawa,Hydro Ottawa,P2,,,,,未识别
-ia-financial-group,iA Financial Group,P1,https://ia.ca/jobs/jobs-available,workday,ia/wd3/Professional,high,招聘页源码中找到
 ibm-canada,IBM Canada,P0,https://careers.ibm.com,,,,未识别
 ieso,IESO,P1,https://careers.ieso.ca/ ; https://careers.ieso.ca/go/Student-and-Recent-Graduates-with-Search/9915400/,,,,未识别
 igm-financial-mackenzie-investments,IGM Financial / Mackenzie Investments,P1,https://www.mackenzieinvestments.com/en/careers,,,,招聘页打不开：HTTPError
@@ -189,7 +175,6 @@ imco,IMCO,P2,,,,,未识别
 info-tech-research-group,Info-Tech Research Group / McLean & Company,P2,https://www.infotech.com/careers,,,,未识别
 infrastructure-ontario,Infrastructure Ontario,P1,https://www.infrastructureontario.ca/en/careers-at-io/,,,,未识别
 ingenium,Ingenium,P2,https://ingenium.ca/en/careers,,,,未识别
-instacart-canada,Instacart Canada,P2,,greenhouse,instacart,review,按公司名猜测，需人工确认
 intact-financial,Intact Financial,P0,https://careers.intactfc.com/new-grads,,,,未识别
 integricon,Integricon,P2,,,,,未识别
 intuit-canada,Intuit Canada,P1,https://jobs.intuit.com,,,,未识别
@@ -204,7 +189,6 @@ kimberly-clark-canada,Kimberly-Clark Canada,P2,,,,,未识别
 kinaxis,Kinaxis,P1,https://careers-kinaxis.icims.com/jobs/search,,,,未识别
 kings-pastry,King's Pastry,P2,,,,,未识别
 koffler-arts,Koffler Arts,P2,https://jobs.jpro.org/companies/koffler-centre-of-the-arts,,,,未识别
-koho,KOHO,P2,,ashby,koho,review,按公司名猜测，需人工确认
 kpmg-canada,KPMG Canada,P0,https://careers.kpmg.ca/students,,,,未识别
 kraft-heinz-canada,Kraft Heinz Canada,P1,https://jobs.kraftheinz.com/careers,,,,未识别
 kroll-canada,Kroll Canada,P2,,,,,未识别
@@ -214,7 +198,7 @@ l-or-al-canada,L'Oréal Canada,P1,https://careers.loreal.com/en/search-jobs,,,,�
 labatt-breweries,Labatt Breweries,P2,,,,,未识别
 laurentian-bank,Laurentian Bank,P2,,,,,未识别
 library-and-archives-canada,Library and Archives Canada,P2,https://www.canada.ca/en/library-archives/corporate/join-team/career.html,,,,未识别
-lightspeed-commerce,Lightspeed Commerce,P2,,ashby,lightspeed,review,按公司名猜测，需人工确认
+lightspeed-commerce,Lightspeed Commerce,P2,,,,,未识别
 linamar,Linamar,P2,,,,,未识别
 lmc-diabetes-endocrinology,LMC Diabetes & Endocrinology,P2,https://www.lmc.ca/careers/,,,,未识别
 loblaw-companies,Loblaw Companies,P0,https://careers.loblaw.ca/corporate/emerging-talent,,,,未识别
@@ -223,8 +207,7 @@ lululemon,Lululemon,P2,https://careers.lululemon.com/en_US/careers/SearchJobs,,,
 luminato,Luminato Festival Toronto,P2,,,,,未识别
 mad-elevator,MAD Elevator Inc.,P2,,,,,未识别
 magna-international,Magna International,P1,https://www.magna.com/careers/students,,,,未识别
-manulife,Manulife,P0,https://careers.manulife.com/global/en/new-graduate,workday,manulife/wd3/MFCJH_Jobs,high,招聘页源码中找到
-maple-leaf-foods,Maple Leaf Foods,P2,,ashby,maple,review,按公司名猜测，需人工确认
+maple-leaf-foods,Maple Leaf Foods,P2,,,,,未识别
 marsh-canada,Marsh Canada,P2,,,,,未识别
 mattamy-homes,Mattamy Homes,P2,https://jobs.jobvite.com/mattamyhomes,,,,未识别
 mckinsey-company,McKinsey & Company,P0,https://www.mckinsey.com/ca/careers,,,,招聘页打不开：ReadTimeout
@@ -249,11 +232,11 @@ munich-re-canada,Munich Re Canada,P2,,,,,未识别
 murchinson,Murchinson Ltd.,P2,https://on.jobbank.gc.ca/jobsearch/jobposting/50514647,,,,未识别
 museum-of-contemporary-art-toronto,Museum of Contemporary Art Toronto,P2,https://careers.moca.ca,,,,未识别
 musical-stage-company,The Musical Stage Company,P2,,,,,未识别
-national-arts-centre,National Arts Centre,P2,https://nac-cna.ca/en/careers,greenhouse,national,review,按公司名猜测，需人工确认
-national-ballet-of-canada,National Ballet of Canada,P2,https://national.ballet.ca/about-us/join-our-team/,greenhouse,national,review,按公司名猜测，需人工确认
-national-bank-of-canada,National Bank of Canada,P0,https://emplois.bnc.ca/en_CA/careers,greenhouse,national,review,按公司名猜测，需人工确认
-national-gallery-of-canada,National Gallery of Canada,P2,https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=ac9cb340-83f7-41e5-a99c-269ca5134608&ccId=19000101_000001&lang=en_CA&selectedMenuKey=CareerCenter,greenhouse,national,review,按公司名猜测，需人工确认
-national-logistics-services,National Logistics Services (NLS),P2,,greenhouse,national,review,按公司名猜测，需人工确认
+national-arts-centre,National Arts Centre,P2,https://nac-cna.ca/en/careers,,,,未识别
+national-ballet-of-canada,National Ballet of Canada,P2,https://national.ballet.ca/about-us/join-our-team/,,,,未识别
+national-bank-of-canada,National Bank of Canada,P0,https://emplois.bnc.ca/en_CA/careers,,,,未识别
+national-gallery-of-canada,National Gallery of Canada,P2,https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=ac9cb340-83f7-41e5-a99c-269ca5134608&ccId=19000101_000001&lang=en_CA&selectedMenuKey=CareerCenter,,,,未识别
+national-logistics-services,National Logistics Services (NLS),P2,,,,,未识别
 native-earth-performing-arts,Native Earth Performing Arts,P2,,,,,未识别
 neighbourly-pharmacy,Neighbourly Pharmacy,P2,https://neighbourlypharmacy.ca/careers/,,,,未识别
 nestl-canada,Nestlé Canada,P1,https://www.corporate.nestle.ca/en/jobs/students-graduates,,,,招聘页打不开：HTTPError
@@ -263,7 +246,7 @@ northbridge-financial,Northbridge Financial,P2,,,,,未识别
 northern-trust-canada,Northern Trust Canada,P2,,,,,未识别
 northleaf-capital-partners,Northleaf Capital Partners,P2,https://www.northleafcapital.com/careers,,,,未识别
 nvidia,NVIDIA,P1,https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/,,,,未识别
-nyo-canada,National Youth Orchestra of Canada,P2,,greenhouse,national,review,按公司名猜测，需人工确认
+nyo-canada,National Youth Orchestra of Canada,P2,,,,,未识别
 oakville-galleries,Oakville Galleries,P2,https://oakvillegalleries.com/jobs,,,,未识别
 odell-hvac-group,O'Dell HVAC Group,P2,,,,,未识别
 office-of-the-auditor-general-of-canada,Office of the Auditor General of Canada,P2,,,,,未识别
@@ -278,7 +261,6 @@ ontario-power-generation,Ontario Power Generation,P1,https://jobs.opg.com/go/Our
 ontario-presents,Ontario Presents,P2,,,,,未识别
 ontario-public-service,Ontario Public Service,P0,https://www.gojobs.gov.on.ca,,,,未识别
 ontario-securities-commission,Ontario Securities Commission,P1,https://www.osc.ca/en/about-us/careers-osc,,,,未识别
-ontario-teachers-pension-plan,Ontario Teachers' Pension Plan,P0,https://otpp.com/en-ca/careers/early-talent/new-graduates/,workday,otppb/wd3/OntarioTeachers_Careers,high,招聘页源码中找到
 opentext,OpenText,P1,https://careers.opentext.com/us/en/emerging-talent,,,,未识别
 opera-atelier,Opera Atelier,P2,,,,,未识别
 optrust,OPTrust,P2,,,,,未识别
@@ -287,7 +269,6 @@ osfi,OSFI,P1,https://www.osfi-bsif.gc.ca/en/careers/job-opportunities-osfi,,,,�
 ottawa-art-gallery,Ottawa Art Gallery (OAG),P2,https://oaggao.ca/about-us/careers-and-opportunities/,,,,未识别
 ottawa-chamberfest,Ottawa Chamberfest,P2,https://www.ottawafestivals.ca/jobs,,,,未识别
 ottawa-jazz-festival,Ottawa Jazz Festival,P2,https://www.ottawafestivals.ca/jobs,,,,未识别
-oxford-properties,Oxford Properties,P2,https://careers.omers.com/ca/en/Oxford-Careers,workday,omers/wd3/OMERS_External,high,招聘页源码中找到
 pacart,PACART,P2,,,,,未识别
 pact,Professional Association of Canadian Theatres (PACT),P2,,,,,未识别
 park-lawn-corporation,Park Lawn Corporation,P2,https://www.parklawncorp.com/careers/,,,,未识别
@@ -299,11 +280,9 @@ pepsico-canada,PepsiCo Canada,P1,https://www.pepsicojobs.com/main/our-locations/
 pet-valu,Pet Valu,P2,,,,,未识别
 picton-investments,PICTON Investments,P2,,,,,未识别
 pinnacle,Pinnacle（在线博彩）,P2,,,,,未识别
-porter-airlines,Porter Airlines,P1,https://careers.flyporter.com/,greenhouse,porter,review,按公司名猜测，需人工确认
-power-corporation-great-west-lifeco,Power Corporation / Great-West Lifeco,P1,https://www.powercorporation.com/en/other/careers/49/ ; https://jobs.canadalife.com/,,,,招聘页打不开：HTTPError
-procter-gamble-canada,Procter & Gamble Canada,P1,https://www.pgcareers.com/location-Canada,workday,pg/wd5/1000,high,招聘页源码中找到
+porter-airlines,Porter Airlines,P1,https://careers.flyporter.com/,,,,未识别
+power-corporation-great-west-lifeco,Power Corporation / Great-West Lifeco,P1,,,,,未识别
 protiviti-canada,Protiviti Canada,P2,,,,,未识别
-psp-investments,PSP Investments,P1,https://www.investpsp.com/en/work/careers/,workday,investpsp/wd3/psp_careers,high,招聘页源码中找到
 publicis-sapient,Publicis Sapient,P2,,,,,未识别
 purolator,Purolator,P2,,,,,未识别
 purpose-investments,Purpose Investments,P2,,,,,未识别
@@ -326,10 +305,10 @@ robert-half-canada,Robert Half Canada,P2,https://www.roberthalf.com/ca/en/jobs,,
 robert-mclaughlin-gallery,Robert McLaughlin Gallery,P2,,,,,未识别
 rogers,Rogers,P0,https://jobs.rogers.com/content/New-Grad-Program/,,,,未识别
 romet-limited,Romet Limited,P2,,,,,未识别
-roots,Roots,P2,https://www.roots.com/ca/en/careers,,,,招聘页打不开：HTTPError
+roots,Roots,P2,,,,,未识别
 royal-academy-of-dance-canada,Royal Academy of Dance (Canada),P2,https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/,,,,招聘页打不开：HTTPError
 royal-conservatory-of-music,Royal Conservatory of Music,P2,https://www.rcmusic.com/about-us/careers-at-the-royal-conservatory,,,,未识别
-royal-ontario-museum,Royal Ontario Museum,P2,https://www.rom.on.ca/en/join-us/jobs,,,,招聘页打不开：HTTPError
+royal-ontario-museum,Royal Ontario Museum,P2,,,,,未识别
 rsm-canada,RSM Canada,P2,,,,,未识别
 russel-metals,Russel Metals,P2,https://www.russelmetals.com/en/careers/,,,,未识别
 sagard,Sagard,P2,,,,,未识别
@@ -346,32 +325,29 @@ sidefx,SideFX,P2,,,,,未识别
 siemens-canada,Siemens Canada,P2,,,,,未识别
 six-shooter-records,Six Shooter Records,P2,https://secure.collage.co/jobs/six-shooter-records/66199,,,,未识别
 slalom,Slalom,P2,,,,,未识别
-slate-asset-management,Slate Asset Management,P2,,lever,slate,review,按公司名猜测，需人工确认
+slate-asset-management,Slate Asset Management,P2,,,,,未识别
 sleep-country-canada,Sleep Country Canada,P2,,,,,未识别
 small-world-music,Small World Music,P2,,,,,未识别
 smartcentres,SmartCentres REIT,P2,https://smartcentres.com/careers,,,,未识别
 sobeys,Sobeys,P2,,,,,未识别
-soulpepper-theatre,Soulpepper Theatre Company,P2,https://www.soulpepper.ca/about/work-with-us/opportunities,,,,招聘页打不开：HTTPError
+soulpepper-theatre,Soulpepper Theatre Company,P2,,,,,未识别
 soundstreams-canada,Soundstreams Canada,P2,,,,,未识别
 south-riverdale-community-health-centre,South Riverdale Community Health Centre,P2,,,,,未识别
 spin-master,Spin Master,P2,,,,,未识别
 sprott,Sprott,P2,https://sprott.com/about-us/careers/,,,,未识别
 staples-canada,Staples Canada,P2,,,,,未识别
-starlight-investments,Starlight Investments,P2,https://www.starlightinvest.com/careers,,,,招聘页打不开：HTTPError
+starlight-investments,Starlight Investments,P2,,,,,未识别
 state-street-canada,State Street Canada,P2,,,,,未识别
 statistics-canada,Statistics Canada,P2,,,,,未识别
 stellantis-canada,Stellantis Canada,P2,,,,,未识别
 stephen-bulger-gallery,Stephen Bulger Gallery,P2,,,,,未识别
 stratford-festival,Stratford Festival,P2,https://www.stratfordfestival.ca/AboutUs/JobsandAuditions,,,,未识别
-stripe-canada,Stripe Canada,P2,,greenhouse,stripe,review,按公司名猜测，需人工确认
 sun-life,Sun Life,P0,https://www.sunlife.ca/en/careers/student-and-new-graduate-programs/,,,,招聘页打不开：HTTPError
 swiss-re-canada,Swiss Re Canada,P2,,,,,未识别
 tafelmusik,Tafelmusik Baroque Orchestra & Chamber Choir,P2,,,,,未识别
 tapa,Toronto Alliance for the Performing Arts (TAPA),P2,,,,,未识别
 tapestry-opera,Tapestry Opera,P2,https://tapestryopera.com/contact/careers/,,,,未识别
 tarragon-theatre,Tarragon Theatre,P2,https://tarragontheatre.com/plays/news/job-opportunities-at-tarragon-theatre,,,,未识别
-td-bank,TD Bank,P0,https://careers.td.com/student-new-grads/early-talent-programs/,workday,td/wd3/TD_Bank_Careers,high,招聘页源码中找到
-telesat,Telesat,P2,,lever,telesat,review,按公司名猜测，需人工确认
 telus,TELUS,P0,https://www.telus.com/about/careers/students-grads,,,,未识别
 terrapure,Terrapure,P2,https://terrapureenv.com/careers/,,,,未识别
 textile-museum-of-canada,Textile Museum of Canada,P2,https://textilemuseum.ca/?p=291,,,,未识别
@@ -403,11 +379,9 @@ transunion-canada,TransUnion Canada,P2,,,,,未识别
 tridel,Tridel,P2,,,,,未识别
 ttc,TTC,P2,,,,,未识别
 uber-canada,Uber Canada,P2,,,,,未识别
-unilever-canada,Unilever Canada,P1,https://careers.unilever.com/en/canada,workday,unilever/wd3/Unilever_Experienced_Professionals,high,招聘页源码中找到
 united-way-greater-toronto,United Way Greater Toronto,P2,https://unitedwaygt.org/career-opportunities,,,,未识别
 university-health-network,University Health Network,P2,,,,,未识别
 university-of-toronto,University of Toronto,P2,https://jobs.utoronto.ca/go/Staff-Opportunities/2607517/,,,,未识别
-util-assist,Util-Assist Inc.,P2,https://www.util-assist.com/,lever,util-assist,review,按公司名猜测，需人工确认
 varley-art-gallery,Varley Art Gallery of Markham,P2,,,,,未识别
 veradek,Veradek,P2,,,,,未识别
 voda-backyard-leisure-group,VODA Backyard Leisure Group,P2,,,,,未识别
