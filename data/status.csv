@@ -5,7 +5,6 @@ corus-entertainment,Corus Entertainment,fail,"page: SSLError: HTTPSConnectionPoo
 cpkc,CPKC,fail,"page: SSLError: HTTPSConnectionPool(host='careers.cpkcr.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTI",0,2026-11-06
 crowe-soberman,Crowe Soberman,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.crowe.com/ca/crowesoberman/careers/current-opportunities,0,2026-11-06
 definity-financial,Definity Financial,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://careers.definityfinancial.com/,0,2026-11-06
-dying-with-dignity-canada,Dying With Dignity Canada,fail,"page: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",0,2026-11-06
 holt-renfrew,Holt Renfrew,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.holtrenfrew.com/en/careers,0,2026-11-06
 igm-financial-mackenzie-investments,IGM Financial / Mackenzie Investments,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers,0,2026-11-06
 mckinsey-company,McKinsey & Company,fail,"page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)",0,2026-11-06
@@ -13,13 +12,12 @@ mosaic-north-america,Mosaic North America,fail,"page: SSLError: HTTPSConnectionP
 nestl-canada,Nestlé Canada,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.corporate.nestle.ca/en/jobs/students-graduates,0,2026-11-06
 royal-academy-of-dance-canada,Royal Academy of Dance (Canada),fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/,0,2026-11-06
 sun-life,Sun Life,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.sunlife.ca/en/careers/student-and-new-graduate-programs/,0,2026-11-06
-tarragon-theatre,Tarragon Theatre,fail,page: HTTPError: 508 Server Error: Loop Detected for url: https://tarragontheatre.com/plays/news/job-opportunities-at-tarragon-theatre,0,2026-11-06
-accenture-canada,Accenture Canada,ok,workday: 147 个职位,12,2026-11-06
+accenture-canada,Accenture Canada,ok,workday: 145 个职位,12,2026-11-06
 aga-khan-museum,Aga Khan Museum,ok,page: 0 个职位,0,2026-11-06
 agincourt-community-services-association,Agincourt Community Services Association,ok,page: 0 个职位,0,2026-11-06
 air-canada,Air Canada,ok,page: 0 个职位,0,2026-11-06
 albourne-partners,Albourne Partners (Canada),ok,page: 2 个职位,0,2026-11-06
-altus-group,Altus Group,ok,workday: 48 个职位,3,2026-11-06
+altus-group,Altus Group,ok,workday: 47 个职位,3,2026-11-06
 amazon-canada,Amazon Canada,ok,page: 0 个职位,0,2026-11-06
 amd-canada,AMD Canada,ok,page: 0 个职位,0,2026-11-06
 american-express-canada,American Express Canada,ok,page: 0 个职位,0,2026-11-06
@@ -32,26 +30,26 @@ ballet-jorgen,Ballet Jörgen,ok,page: 0 个职位,0,2026-11-06
 bank-of-canada,Bank of Canada,ok,page: 1 个职位,0,2026-11-06
 bata-shoe-museum,Bata Shoe Museum,ok,page: 1 个职位,1,2026-11-06
 bdc,BDC,ok,workday: 61 个职位,0,2026-11-06
-bdo-canada,BDO Canada,ok,workday: 260 个职位,7,2026-11-06
+bdo-canada,BDO Canada,ok,workday: 262 个职位,7,2026-11-06
 bell-canada,Bell Canada,ok,page: 17 个职位,13,2026-11-06
 blackrock,BlackRock,ok,page: 0 个职位,0,2026-11-06
 bmo,BMO,ok,page: 0 个职位,0,2026-11-06
 boston-consulting-group,Boston Consulting Group,ok,page: 0 个职位,0,2026-11-06
-brookfield,Brookfield,ok,workday: 140 个职位,5,2026-11-06
+brookfield,Brookfield,ok,workday: 142 个职位,5,2026-11-06
 brunswick-bierworks,Brunswick Bierworks,ok,page: 0 个职位,0,2026-11-06
 c-d-howe-institute,C.D. Howe Institute,ok,page: 0 个职位,0,2026-11-06
 can-art-aluminum-extrusion,Can Art Aluminum Extrusion,ok,page: 1 个职位,0,2026-11-06
-canaccord-genuity,Canaccord Genuity,ok,workday: 44 个职位,9,2026-11-06
+canaccord-genuity,Canaccord Genuity,ok,workday: 45 个职位,9,2026-11-06
 canada-council-for-the-arts,Canada Council for the Arts,ok,page: 0 个职位,0,2026-11-06
-canada-goose,Canada Goose,ok,workday: 99 个职位,7,2026-11-06
+canada-goose,Canada Goose,ok,workday: 98 个职位,7,2026-11-06
 canada-life,Canada Life,ok,page: 0 个职位,0,2026-11-06
 canadian-heritage,Canadian Heritage,ok,page: 0 个职位,0,2026-11-06
 canadian-museum-of-history,Canadian Museum of History,ok,page: 0 个职位,0,2026-11-06
 canadian-museum-of-nature,Canadian Museum of Nature,ok,page: 0 个职位,0,2026-11-06
 canadian-opera-company,Canadian Opera Company,ok,page: 0 个职位,0,2026-11-06
 canadian-stage,Canadian Stage,ok,page: 0 个职位,0,2026-11-06
-canadian-tire,Canadian Tire,ok,workday: 128 个职位,15,2026-11-06
-capco,Capco,ok,greenhouse: 691 个职位,0,2026-11-06
+canadian-tire,Canadian Tire,ok,workday: 130 个职位,17,2026-11-06
+capco,Capco,ok,greenhouse: 713 个职位,0,2026-11-06
 capital-one-canada,Capital One Canada,ok,workday: 55 个职位,3,2026-11-06
 capreit,CAPREIT (Canadian Apartment Properties REIT),ok,page: 0 个职位,0,2026-11-06
 cbc-radio-canada,CBC/Radio-Canada,ok,page: 0 个职位,0,2026-11-06
@@ -59,17 +57,17 @@ celestica,Celestica,ok,page: 0 个职位,0,2026-11-06
 cgi,CGI,ok,page: 0 个职位,0,2026-11-06
 chamber-music-society-of-mississauga,The Chamber Music Society of Mississauga Inc.,ok,page: 0 个职位,0,2026-11-06
 charles-river-associates-toronto,Charles River Associates (Toronto),ok,greenhouse: 96 个职位,3,2026-11-06
-ci-financial,CI Financial,ok,workday: 84 个职位,31,2026-11-06
-cibc,CIBC,ok,workday: 285 个职位,41,2026-11-06
-ciena,Ciena,ok,workday: 162 个职位,0,2026-11-06
-cineplex,Cineplex,ok,workday: 178 个职位,2,2026-11-06
+ci-financial,CI Financial,ok,workday: 85 个职位,32,2026-11-06
+cibc,CIBC,ok,workday: 266 个职位,40,2026-11-06
+ciena,Ciena,ok,workday: 163 个职位,0,2026-11-06
+cineplex,Cineplex,ok,workday: 170 个职位,2,2026-11-06
 cisco-canada,Cisco Canada,ok,page: 0 个职位,0,2026-11-06
-citi-canada,Citi Canada,ok,workday: 202 个职位,12,2026-11-06
+citi-canada,Citi Canada,ok,workday: 203 个职位,13,2026-11-06
 city-of-ottawa,City of Ottawa,ok,page: 3 个职位,3,2026-11-06
 city-of-toronto,City of Toronto,ok,page: 7 个职位,0,2026-11-06
 cmhc,CMHC,ok,page: 0 个职位,0,2026-11-06
 cn-rail,CN Rail,ok,page: 0 个职位,0,2026-11-06
-cohere,Cohere,ok,ashby: 119 个职位,6,2026-11-06
+cohere,Cohere,ok,ashby: 122 个职位,6,2026-11-06
 conference-board-of-canada,Conference Board of Canada,ok,page: 0 个职位,0,2026-11-06
 council-of-ontario-universities,Council of Ontario Universities,ok,page: 1 个职位,1,2026-11-06
 cowley-abbott,Cowley Abbott,ok,page: 0 个职位,0,2026-11-06
@@ -79,16 +77,17 @@ d2l,D2L,ok,greenhouse: 25 个职位,2,2026-11-06
 dance-umbrella-of-ontario,Dance Umbrella of Ontario (DUO),ok,page: 0 个职位,0,2026-11-06
 dayforce,Dayforce,ok,page: 0 个职位,0,2026-11-06
 deloitte-canada,Deloitte Canada,ok,page: 0 个职位,0,2026-11-06
-desjardins,Desjardins,ok,workday: 305 个职位,2,2026-11-06
+desjardins,Desjardins,ok,workday: 304 个职位,2,2026-11-06
+dying-with-dignity-canada,Dying With Dignity Canada,ok,page: 0 个职位,0,2026-11-06
 enbridge,Enbridge,ok,page: 0 个职位,0,2026-11-06
-eq-bank,EQ Bank,ok,lever: 81 个职位,8,2026-11-06
+eq-bank,EQ Bank,ok,lever: 80 个职位,8,2026-11-06
 erco-worldwide,ERCO Worldwide,ok,page: 0 个职位,0,2026-11-06
 esprit-orchestra,Esprit Orchestra,ok,page: 0 个职位,0,2026-11-06
 est-e-lauder-canada,Estée Lauder Canada,ok,page: 4 个职位,0,2026-11-06
 export-development-canada,Export Development Canada,ok,workable: 0 个职位,0,2026-11-06
-ey-canada,EY Canada,ok,page: 14 个职位,7,2026-11-06
+ey-canada,EY Canada,ok,page: 12 个职位,5,2026-11-06
 faire,Faire,ok,greenhouse: 65 个职位,0,2026-11-06
-fidelity-investments-canada,Fidelity Investments Canada,ok,workday: 154 个职位,29,2026-11-06
+fidelity-investments-canada,Fidelity Investments Canada,ok,workday: 155 个职位,29,2026-11-06
 financial-modeling-prep,Financial Modeling Prep,ok,page: 6 个职位,5,2026-11-06
 findev-canada,FinDev Canada,ok,page: 0 个职位,0,2026-11-06
 first-national-financial,First National Financial,ok,page: 0 个职位,0,2026-11-06
@@ -101,47 +100,47 @@ gore-mutual,Gore Mutual,ok,greenhouse: 15 个职位,4,2026-11-06
 government-of-canada-rpl-fswep-gc-jobs,Government of Canada (RPL/FSWEP/GC Jobs),ok,page: 0 个职位,0,2026-11-06
 grant-thornton-canada,Grant Thornton Canada,ok,page: 0 个职位,0,2026-11-06
 harbourfront-centre,Harbourfront Centre,ok,page: 0 个职位,0,2026-11-06
-harry-rosen,Harry Rosen,ok,workday: 87 个职位,21,2026-11-06
+harry-rosen,Harry Rosen,ok,workday: 86 个职位,21,2026-11-06
 haus-of-dada,Haus of Dada (Lisa Anita Wegner studio),ok,page: 0 个职位,0,2026-11-06
 heffel-fine-art-auction-house,Heffel Fine Art Auction House,ok,page: 0 个职位,0,2026-11-06
 hoopp,HOOPP,ok,workday: 0 个职位,0,2026-11-06
 hydro-one,Hydro One,ok,page: 1 个职位,1,2026-11-06
-ia-financial-group,iA Financial Group,ok,workday: 114 个职位,0,2026-11-06
+ia-financial-group,iA Financial Group,ok,workday: 107 个职位,0,2026-11-06
 ibm-canada,IBM Canada,ok,page: 0 个职位,0,2026-11-06
 ieso,IESO,ok,page: 0 个职位,0,2026-11-06
 indigo,Indigo,ok,smartrecruiters: 125 个职位,2,2026-11-06
 info-tech-research-group,Info-Tech Research Group / McLean & Company,ok,page: 0 个职位,0,2026-11-06
 infrastructure-ontario,Infrastructure Ontario,ok,page: 0 个职位,0,2026-11-06
 ingenium,Ingenium,ok,page: 0 个职位,0,2026-11-06
-instacart-canada,Instacart Canada,ok,greenhouse: 91 个职位,2,2026-11-06
+instacart-canada,Instacart Canada,ok,greenhouse: 89 个职位,2,2026-11-06
 intact-financial,Intact Financial,ok,page: 0 个职位,0,2026-11-06
 interac,Interac,ok,workday: 49 个职位,3,2026-11-06
 intuit-canada,Intuit Canada,ok,page: 2 个职位,0,2026-11-06
 inuit-art-foundation,Inuit Art Foundation,ok,page: 0 个职位,0,2026-11-06
 johnvince-foods,JohnVince Foods,ok,page: 0 个职位,0,2026-11-06
-kearney,Kearney,ok,page: 23 个职位,9,2026-11-06
+kearney,Kearney,ok,page: 23 个职位,8,2026-11-06
 kinaxis,Kinaxis,ok,page: 0 个职位,0,2026-11-06
 koffler-arts,Koffler Arts,ok,page: 0 个职位,0,2026-11-06
 koho,KOHO,ok,ashby: 8 个职位,0,2026-11-06
 kpmg-canada,KPMG Canada,ok,page: 0 个职位,0,2026-11-06
 kraft-heinz-canada,Kraft Heinz Canada,ok,page: 0 个职位,0,2026-11-06
 l-e-k-consulting,L.E.K. Consulting,ok,page: 0 个职位,0,2026-11-06
-l-or-al-canada,L'Oréal Canada,ok,page: 12 个职位,3,2026-11-06
-lcbo,LCBO,ok,workday: 254 个职位,0,2026-11-06
+l-or-al-canada,L'Oréal Canada,ok,page: 7 个职位,2,2026-11-06
+lcbo,LCBO,ok,workday: 243 个职位,0,2026-11-06
 library-and-archives-canada,Library and Archives Canada,ok,page: 0 个职位,0,2026-11-06
 lmc-diabetes-endocrinology,LMC Diabetes & Endocrinology,ok,page: 0 个职位,0,2026-11-06
 loblaw-companies,Loblaw Companies,ok,page: 2 个职位,0,2026-11-06
 lord-cultural-resources,Lord Cultural Resources,ok,page: 2 个职位,0,2026-11-06
-lululemon,Lululemon,ok,page: 9 个职位,3,2026-11-06
+lululemon,Lululemon,ok,page: 7 个职位,2,2026-11-06
 lush-handmade-cosmetics,Lush Handmade Cosmetics,ok,greenhouse: 263 个职位,1,2026-11-06
 magna-international,Magna International,ok,page: 1 个职位,1,2026-11-06
-manulife,Manulife,ok,workday: 183 个职位,1,2026-11-06
-mastercard-canada,Mastercard Canada,ok,workday: 26 个职位,0,2026-11-06
-mattamy-homes,Mattamy Homes,ok,page: 56 个职位,24,2026-11-06
+manulife,Manulife,ok,workday: 179 个职位,1,2026-11-06
+mastercard-canada,Mastercard Canada,ok,workday: 27 个职位,0,2026-11-06
+mattamy-homes,Mattamy Homes,ok,page: 58 个职位,25,2026-11-06
 mcmichael-canadian-art-collection,McMichael Canadian Art Collection,ok,page: 0 个职位,0,2026-11-06
 medspa-partners,MedSpa Partners,ok,page: 0 个职位,0,2026-11-06
 mejuri,Mejuri,ok,greenhouse: 185 个职位,2,2026-11-06
-mercer-canada,Mercer Canada,ok,workday: 56 个职位,4,2026-11-06
+mercer-canada,Mercer Canada,ok,workday: 54 个职位,2,2026-11-06
 metrolinx,Metrolinx,ok,page: 0 个职位,0,2026-11-06
 mevotech,Mevotech,ok,page: 0 个职位,0,2026-11-06
 microsoft-canada,Microsoft Canada,ok,page: 0 个职位,0,2026-11-06
@@ -174,7 +173,7 @@ osfi,OSFI,ok,page: 0 个职位,0,2026-11-06
 ottawa-art-gallery,Ottawa Art Gallery (OAG),ok,page: 1 个职位,1,2026-11-06
 ottawa-chamberfest,Ottawa Chamberfest,ok,page: 0 个职位,0,2026-11-06
 ottawa-jazz-festival,Ottawa Jazz Festival,ok,page: 0 个职位,0,2026-11-06
-oxford-properties,Oxford Properties,ok,workday: 53 个职位,13,2026-11-06
+oxford-properties,Oxford Properties,ok,workday: 54 个职位,13,2026-11-06
 park-lawn-corporation,Park Lawn Corporation,ok,page: 0 个职位,0,2026-11-06
 peoples-group,Peoples Group (Peoples Trust),ok,page: 0 个职位,0,2026-11-06
 pepsico-canada,PepsiCo Canada,ok,page: 0 个职位,0,2026-11-06
@@ -192,36 +191,37 @@ rexall-pharmacy-group,Rexall Pharmacy Group,ok,page: 0 个职位,0,2026-11-06
 richter,Richter,ok,page: 0 个职位,0,2026-11-06
 rideau-hall-foundation,Rideau Hall Foundation,ok,page: 0 个职位,0,2026-11-06
 riocan-reit,RioCan REIT,ok,lever: 9 个职位,3,2026-11-06
-robert-half-canada,Robert Half Canada,ok,page: 21 个职位,10,2026-11-06
+robert-half-canada,Robert Half Canada,ok,page: 21 个职位,11,2026-11-06
 rogers,Rogers,ok,page: 0 个职位,0,2026-11-06
 royal-conservatory-of-music,Royal Conservatory of Music,ok,page: 6 个职位,0,2026-11-06
 russel-metals,Russel Metals,ok,page: 0 个职位,0,2026-11-06
-s-p-global,S&P Global (Ratings),ok,workday: 329 个职位,1,2026-11-06
-sap-canada,SAP Canada,ok,page: 9 个职位,0,2026-11-06
+s-p-global,S&P Global (Ratings),ok,workday: 333 个职位,1,2026-11-06
+sap-canada,SAP Canada,ok,page: 6 个职位,0,2026-11-06
 scotiabank,Scotiabank,ok,page: 1 个职位,1,2026-11-06
 sephora-canada,Sephora Canada,ok,page: 4 个职位,1,2026-11-06
 shaw-festival,Shaw Festival,ok,page: 3 个职位,0,2026-11-06
 shopify,Shopify,ok,page: 4 个职位,0,2026-11-06
 six-shooter-records,Six Shooter Records,ok,page: 0 个职位,0,2026-11-06
 smartcentres,SmartCentres REIT,ok,page: 1 个职位,1,2026-11-06
-sotheby-s-canada,Sotheby's Canada,ok,greenhouse: 62 个职位,0,2026-11-06
+sotheby-s-canada,Sotheby's Canada,ok,greenhouse: 63 个职位,0,2026-11-06
 sprott,Sprott,ok,page: 1 个职位,0,2026-11-06
 stratford-festival,Stratford Festival,ok,page: 0 个职位,0,2026-11-06
-stripe-canada,Stripe Canada,ok,greenhouse: 768 个职位,2,2026-11-06
+stripe-canada,Stripe Canada,ok,greenhouse: 765 个职位,2,2026-11-06
 tapestry-opera,Tapestry Opera,ok,page: 1 个职位,0,2026-11-06
+tarragon-theatre,Tarragon Theatre,ok,page: 0 个职位,0,2026-11-06
 tc-energy,TC Energy,ok,workday: 67 个职位,0,2026-11-06
-td-bank,TD Bank,ok,workday: 554 个职位,109,2026-11-06
+td-bank,TD Bank,ok,workday: 545 个职位,106,2026-11-06
 telesat,Telesat,ok,lever: 55 个职位,7,2026-11-06
 telus,TELUS,ok,page: 0 个职位,0,2026-11-06
 terrapure,Terrapure,ok,page: 0 个职位,0,2026-11-06
 textile-museum-of-canada,Textile Museum of Canada,ok,page: 0 个职位,0,2026-11-06
 the-519,The 519,ok,page: 0 个职位,0,2026-11-06
 the-bentway,The Bentway Conservancy,ok,page: 4 个职位,2,2026-11-06
-the-brattle-group-toronto,The Brattle Group (Toronto),ok,greenhouse: 45 个职位,2,2026-11-06
+the-brattle-group-toronto,The Brattle Group (Toronto),ok,greenhouse: 44 个职位,2,2026-11-06
 the-power-plant-contemporary-art-gallery,The Power Plant Contemporary Art Gallery,ok,page: 0 个职位,0,2026-11-06
-thomson-reuters,Thomson Reuters,ok,workday: 86 个职位,2,2026-11-06
+thomson-reuters,Thomson Reuters,ok,workday: 85 个职位,2,2026-11-06
 tiff,TIFF,ok,page: 0 个职位,0,2026-11-06
-tmx-group,TMX Group,ok,workday: 94 个职位,4,2026-11-06
+tmx-group,TMX Group,ok,workday: 99 个职位,5,2026-11-06
 toronto-arts-council,Toronto Arts Council,ok,page: 0 个职位,0,2026-11-06
 toronto-biennial-of-art,Toronto Biennial of Art,ok,page: 0 个职位,0,2026-11-06
 toronto-foundation,Toronto Foundation,ok,page: 1 个职位,0,2026-11-06
@@ -230,16 +230,16 @@ toronto-public-library,Toronto Public Library,ok,page: 0 个职位,0,2026-11-06
 toronto-public-library-foundation,Toronto Public Library Foundation,ok,page: 2 个职位,2,2026-11-06
 toronto-symphony-orchestra,Toronto Symphony Orchestra,ok,page: 2 个职位,0,2026-11-06
 trailcon-leasing,Trailcon,ok,page: 0 个职位,0,2026-11-06
-unilever-canada,Unilever Canada,ok,workday: 253 个职位,0,2026-11-06
+unilever-canada,Unilever Canada,ok,workday: 271 个职位,0,2026-11-06
 united-way-greater-toronto,United Way Greater Toronto,ok,page: 1 个职位,1,2026-11-06
-university-of-toronto,University of Toronto,ok,page: 35 个职位,24,2026-11-06
+university-of-toronto,University of Toronto,ok,page: 33 个职位,22,2026-11-06
 util-assist,Util-Assist Inc.,ok,lever: 2 个职位,0,2026-11-06
-visa-canada,Visa Canada,ok,workday: 62 个职位,0,2026-11-06
-walmart-canada,Walmart Canada,ok,workday: 602 个职位,188,2026-11-06
+visa-canada,Visa Canada,ok,workday: 45 个职位,0,2026-11-06
+walmart-canada,Walmart Canada,ok,workday: 596 个职位,187,2026-11-06
 waterfront-toronto,Waterfront Toronto,ok,page: 1 个职位,1,2026-11-06
-wealthsimple,Wealthsimple,ok,ashby: 42 个职位,5,2026-11-06
+wealthsimple,Wealthsimple,ok,ashby: 42 个职位,4,2026-11-06
 welch-llp,Welch LLP,ok,page: 2 个职位,2,2026-11-06
-woodgreen-community-services,WoodGreen Community Services,ok,page: 10 个职位,2,2026-11-06
+woodgreen-community-services,WoodGreen Community Services,ok,page: 7 个职位,2,2026-11-06
 yorkville-university,Yorkville University,ok,page: 1 个职位,1,2026-11-06
 zeifmans,Zeifmans,ok,page: 0 个职位,0,2026-11-06
 3m-canada,3M Canada,skip,没有招聘系统或官方招聘页,0,2026-11-06

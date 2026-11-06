@@ -111,7 +111,7 @@ diamond-corporation,Diamond Corporation,P2,,,,,未识别
 diamond-schmitt,Diamond Schmitt,P2,,,,,未识别
 dollarama,Dollarama,P2,,,,,未识别
 dream-unlimited,Dream Unlimited,P2,,,,,未识别
-dying-with-dignity-canada,Dying With Dignity Canada,P2,https://www.dyingwithdignity.ca/?p=3209,,,,招聘页打不开：ConnectionError
+dying-with-dignity-canada,Dying With Dignity Canada,P2,https://www.dyingwithdignity.ca/?p=3209,,,,未识别
 ellisdon,EllisDon Corporation,P2,,,,,未识别
 emco-corporation,EMCO Corporation,P2,,,,,未识别
 enbridge,Enbridge,P1,https://www.enbridge.com/work-with-enbridge/careers/post-secondary-students,,,,未识别
@@ -252,7 +252,7 @@ odell-hvac-group,O'Dell HVAC Group,P2,,,,,未识别
 office-of-the-auditor-general-of-canada,Office of the Auditor General of Canada,P2,,,,,未识别
 office-of-the-auditor-general-of-ontario,Office of the Auditor General of Ontario,P2,https://auditor.on.ca/careers.html,,,,未识别
 olg,OLG,P2,,,,,未识别
-oliver-wyman,Oliver Wyman,P1,https://www.oliverwyman.com/careers.html,lever,oliverwyman,review,按公司名猜测，需人工确认
+oliver-wyman,Oliver Wyman,P1,https://www.oliverwyman.com/careers.html,,,,未识别
 omers,OMERS,P0,https://www.omers.com/students-and-new-grads,,,,未识别
 ontario-arts-council,Ontario Arts Council,P2,https://www.arts.on.ca/about-us/careers-at-oac,,,,未识别
 ontario-financing-authority,Ontario Financing Authority,P2,,,,,未识别
@@ -347,7 +347,7 @@ swiss-re-canada,Swiss Re Canada,P2,,,,,未识别
 tafelmusik,Tafelmusik Baroque Orchestra & Chamber Choir,P2,,,,,未识别
 tapa,Toronto Alliance for the Performing Arts (TAPA),P2,,,,,未识别
 tapestry-opera,Tapestry Opera,P2,https://tapestryopera.com/contact/careers/,,,,未识别
-tarragon-theatre,Tarragon Theatre,P2,https://tarragontheatre.com/plays/news/job-opportunities-at-tarragon-theatre,,,,未识别
+tarragon-theatre,Tarragon Theatre,P2,https://tarragontheatre.com/plays/news/job-opportunities-at-tarragon-theatre,,,,招聘页打不开：ReadTimeout
 telus,TELUS,P0,https://www.telus.com/about/careers/students-grads,,,,未识别
 terrapure,Terrapure,P2,https://terrapureenv.com/careers/,,,,未识别
 textile-museum-of-canada,Textile Museum of Canada,P2,https://textilemuseum.ca/?p=291,,,,未识别
