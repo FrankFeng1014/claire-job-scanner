@@ -233,8 +233,9 @@ def workday(s, ats_id):
             path = j.get("externalPath") or ""
             if not path or path in jobs:
                 continue
-            jid = (j.get("bulletFields") or [path])[0]
-            jobs[path] = _job(jid, j.get("title"), j.get("locationsText"),
+            # 用 externalPath 当职位编号：它在招聘板内唯一。bulletFields 在有些公司里不是唯一编号
+            # （例如放的是地点或发布时间），用它会让不同职位“撞号”。
+            jobs[path] = _job(path, j.get("title"), j.get("locationsText"),
                               f"{base}/en-US/{site}{path}", j.get("postedOn") or "")
 
     def paginate(first, cap, search="", facets=None):

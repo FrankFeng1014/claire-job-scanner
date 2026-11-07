@@ -193,6 +193,37 @@ def update_existing(rec, job, emp, d, scan_id):
     return reopened
 
 
+def migrate_workday_keys(seen):
+    """把旧版 Workday 记录的编号（bulletFields）换成链接路径（externalPath），与新版读取一致。
+
+    旧编号在部分公司不唯一，不同职位会“撞号”。迁移后同一职位的新旧记录能对上，
+    不会因为换编号而被当成新职位或误判下架。迁移不删除任何记录：
+    若新编号已被占用，旧记录改为“已停用（编号迁移）”，保留原数据。
+    """
+    moved = retired = 0
+    for key in list(seen):
+        rec = seen[key]
+        if rec.get("source") != "workday" or "/job/" not in (rec.get("url") or ""):
+            continue
+        path = rec["url"][rec["url"].index("/job/"):]
+        new_key = f"{rec['employer_id']}::{path}"
+        if new_key == key:
+            continue
+        if new_key in seen:
+            if rec.get("active"):
+                rec["active"] = False
+                rec["closed_reason"] = "编号迁移：与另一条记录重复"
+            retired += 1
+            continue
+        rec["legacy_job_id"] = rec.get("job_id")
+        rec["job_id"] = path
+        seen[new_key] = seen.pop(key)
+        moved += 1
+    if moved or retired:
+        print(f"Workday 编号迁移：{moved} 条换成新编号，{retired} 条重复记录停用（未删除）")
+    return moved, retired
+
+
 # ---------- 主流程 ----------
 def scan(only=None, workers=8):
     emps = load_employers()
@@ -201,6 +232,7 @@ def scan(only=None, workers=8):
     seen = load_json("seen.json", {})
     validate_seen(seen)
     first_run = not os.path.exists(os.path.join(DATA, "seen.json"))
+    migrate_workday_keys(seen)
     for rec in seen.values():
         _upgrade(rec)
 
@@ -215,8 +247,12 @@ def scan(only=None, workers=8):
                 ok_ids.add(emp["id"])
                 if complete:
                     complete_ids.add(emp["id"])
+                done = set()
                 for j in jobs:
                     key = f"{emp['id']}::{j['job_id']}"
+                    if key in done:          # 同一次读取里重复出现，只处理第一次
+                        continue
+                    done.add(key)
                     if key in seen:
                         rec = seen[key]
                         if update_existing(rec, j, emp, d, scan_id) and rec["candidate_status"] == "relevant":

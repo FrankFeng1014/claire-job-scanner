@@ -25,6 +25,25 @@ NON_TARGET_URL = re.compile(
     r"kelowna|nisku|arthur|kitchener|waterloo|guelph|hamilton|london|laval|quebec|surrey|"
     r"burnaby|red-deer|lethbridge|moncton|fredericton|st-johns|windsor|sudbury|barrie)[/-]", re.I)
 _loc = re.compile(r"\b(" + "|".join(re.escape(c) for c in LOCATIONS) + r")\b")
+# 明确在加拿大的标志（有它就不按美国处理）
+CANADA_MARK = re.compile(r"\bcanada\b|\(can\)|\bontario\b|,\s*on\b|\bon,|\bcan\b", re.I)
+# 美国/其他国家：有些美国地名和 GTA 重名（Concord、Scarborough、Burlington、Richmond Hill 等）
+US_STATES = ("alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|"
+             "hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|"
+             "michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|"
+             "new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|"
+             "rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|"
+             "west virginia|wisconsin|wyoming")
+US_CODES = ("AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|"
+            "NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC")
+FOREIGN_LOC = re.compile(r"\(usa\)|\busa\b|united states|\b(" + US_STATES + r")\b|"
+                         r"\b(mexico|india|brazil|philippines|united kingdom|england|ireland|france|"
+                         r"germany|poland|spain|singapore|australia|china|japan|argentina|colombia|"
+                         r"costa rica|kenya|nairobi|rio de janeiro)\b", re.I)
+US_CODE_AT_END = re.compile(r",\s*(" + US_CODES + r")\s*$")
+# Workday 等系统的职位链接里通常带地点（如 /job/United-States-of-America-Eagan/...）
+FOREIGN_URL = re.compile(r"/job/[^/]*(united-states|usa-|mexico|india|brazil|philippines|"
+                         r"united-kingdom|germany|poland|singapore|australia|argentina|colombia)", re.I)
 
 # ---------- 职位名 ----------
 # 明确不相关（资深 / 技术 / 门店与网点销售 / 需执照 / 体力岗）
@@ -42,7 +61,10 @@ HARD_EXCLUDE = [
     (r"\bstore\b|sales associate|retail associate|cashier|barista|\bcook\b|warehouse|driver|"
      r"security guard|electrician|mechanic|millwright|machinist|seasonal retail|team associate|"
      r"fulfil?lment|overnight|distribution cent|team leader|stocking|asset protection|"
-     r"food & consumables|\bdeli\b|bakery|welder", "门店/仓储/体力岗"),
+     r"food & consumables|\bdeli\b|bakery|welder|merchandise associate|unloader|\bmeat\b|grocery|"
+     r"dairy|frozen|\bproduce\b|fashion associate|consumables|over-the-counter|\bcafe\b|custodian|"
+     r"baker|packager|rotisserie|member specialist|electronics associate|freight|stock associate|"
+     r"\bcashier|front end|community specialist|educator \(store\)", "门店/仓储/体力岗"),
     (r"lawyer|counsel|paralegal|\blegal\b", "法律专业岗"),
     (r"\bjobs?\b|categor|\bsearch\b|^see |\bcareers\b|career planning|opportunit|talent community|"
      r"join our|learn more", "不是具体职位（导航链接）"),
@@ -96,9 +118,18 @@ _entry = re.compile(r"junior|\bjr\b|associate|analyst|entry|graduate|new grad|tr
                     r"\bi\b|level 1", re.I)
 
 
+def is_foreign(loc: str) -> bool:
+    """地点明确在美国或其他国家（且没有加拿大标志）。"""
+    if not loc or CANADA_MARK.search(loc):
+        return False
+    return bool(FOREIGN_LOC.search(loc) or US_CODE_AT_END.search(loc.strip()))
+
+
 def location_ok(loc: str) -> bool:
     if not loc:
         return True  # 没有地点信息时先不排除，由 classify 标记为需核实
+    if is_foreign(loc):
+        return False
     # 按整词匹配，避免 "Hamilton" 被 "milton" 误匹配
     return bool(_loc.search(loc.lower())) or bool(REMOTE_CANADA.search(loc))
 
@@ -110,7 +141,7 @@ def classify(job: dict):
     url = job.get("url") or ""
     t = title.lower()
 
-    if not loc and NON_TARGET_URL.search(url):
+    if not loc and (NON_TARGET_URL.search(url) or FOREIGN_URL.search(url)):
         return "irrelevant", "地点不在目标地区（从链接识别）"
     if loc and not location_ok(loc):
         return "irrelevant", f"地点不在目标地区：{loc[:40]}"

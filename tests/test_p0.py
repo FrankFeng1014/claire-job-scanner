@@ -371,3 +371,64 @@ def test_status_and_latest_backward_compatible(env):
     assert rows["c"]["status"] == "skip" and rows["c"]["scan_state"] == "not_configured"
     md = (env["path"] / "reports" / "latest.md").read_text(encoding="utf-8")
     assert "读取质量：完整成功 1" in md and "## 新出现的相关职位（1）" in md
+
+
+# ---------- P0 后续：撞号、境外地点、门店岗 ----------
+def test_workday_job_id_is_unique_path():
+    posts = [{"title": t, "externalPath": f"/job/Toronto/{i}", "locationsText": "Toronto",
+              "postedOn": "", "bulletFields": ["Posted Today"]}          # bulletFields 不唯一
+             for i, t in enumerate(["Financial Analyst", "Software Engineer"])]
+    s = FakeSession({"myworkdayjobs.com": lambda body: Resp({"jobPostings": posts if body["offset"] == 0 else [],
+                                                              "total": 2 if body["offset"] == 0 else 0})})
+    r = adapters.workday(s, "t/wd3/S")
+    assert {j["job_id"] for j in r} == {"/job/Toronto/0", "/job/Toronto/1"}
+
+
+def test_colliding_ids_do_not_overwrite_new_job(env):
+    env["write_emps"]([{"id": "a", "name": "A", "ats": "greenhouse", "ats_id": "a"}])
+    env["boards"]["a"] = adapters.AdapterResult([job(1, "Financial Analyst"), job(1, "Software Engineer")])
+    L = main.scan()
+    assert [r["title"] for r in L["new_relevant"]] == ["Financial Analyst"]
+
+
+def test_workday_legacy_keys_migrated_without_false_removal(env, monkeypatch):
+    env["write_emps"]([{"id": "w", "name": "W", "ats": "workday", "ats_id": "t/wd3/S"}])
+    base = "https://t.wd3.myworkdayjobs.com/en-US/S"
+    legacy = {"w::R1": {"job_id": "R1", "title": "Financial Analyst", "location": "Toronto",
+                        "url": base + "/job/Toronto/FA_R1", "posted": "", "employer_id": "w", "employer": "W",
+                        "tier": "P1", "source": "workday", "relevant": True, "first_seen": "2026-11-01",
+                        "last_seen": "2026-11-01", "active": True}}
+    (env["path"] / "data" / "seen.json").write_text(json.dumps(legacy), encoding="utf-8")
+    monkeypatch.setitem(main.ADAPTERS, "workday", lambda s, a: adapters.AdapterResult(
+        [{"job_id": "/job/Toronto/FA_R1", "title": "Financial Analyst", "location": "Toronto",
+          "url": base + "/job/Toronto/FA_R1", "posted": ""}]))
+    L = main.scan()
+    s = seen(env)
+    assert "w::/job/Toronto/FA_R1" in s and "w::R1" not in s
+    assert s["w::/job/Toronto/FA_R1"]["first_seen"] == "2026-11-01"
+    assert L["new_relevant"] == [] and L["removed_relevant"] == []
+
+
+@pytest.mark.parametrize("loc,ok", [
+    ("Concord, CA", False), ("Concord, NH", False), ("(USA) ME SCARBOROUGH 08186 SAM'S CLUB", False),
+    ("South Burlington, Vermont", False), ("Burlington, ON", True), ("(CAN) ON SCARBOROUGH 01117 WM SUPERCENTER", True),
+    ("Concord, ON", True), ("Toronto, ON, ca", True), ("Canada, Full Time Remote", True), ("FULTON MARKET", False),
+])
+def test_us_namesakes_excluded(loc, ok):
+    assert filters.location_ok(loc) is ok
+
+
+def test_foreign_workday_url_excluded():
+    j = {"title": "Analyst - West Coast", "location": "",
+         "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/X/job/United-States-of-America-McLean/Analyst_1"}
+    assert filters.classify(j)[0] == "irrelevant"
+
+
+@pytest.mark.parametrize("title", ["(CAN) General Merchandise Associate", "(Can) Stock Unloader Associate",
+                                   "(CAN) Meat Associate", "Fashion Associate", "Produce Associate"])
+def test_walmart_store_roles_excluded(title):
+    assert filters.classify({"title": title, "location": "Toronto, ON"})[0] == "irrelevant"
+
+
+def test_associate_producer_not_mistaken_for_produce():
+    assert filters.classify({"title": "Associate Producer", "location": "Toronto, ON"})[0] == "relevant"
