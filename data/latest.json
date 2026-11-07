@@ -1,8 +1,8 @@
 {
  "date": "2026-11-07",
  "employers_complete": 52,
- "employers_failed": 17,
- "employers_ok": 224,
+ "employers_failed": 16,
+ "employers_ok": 225,
  "employers_skipped": 220,
  "employers_total": 461,
  "failed": [
@@ -85,18 +85,6 @@
    "id": "definity-financial",
    "jobs_found": 0,
    "name": "Definity Financial",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-07",
-   "complete": "no",
-   "detail": "page: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "id": "dying-with-dignity-canada",
-   "jobs_found": 0,
-   "name": "Dying With Dignity Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -256,7 +244,7 @@
    "id": "mercer-canada",
    "jobs_found": 50,
    "name": "Mercer Canada",
-   "note": "招聘板共 1994 个职位，按地点筛选只读目标地区",
+   "note": "招聘板共 1995 个职位，按地点筛选只读目标地区",
    "relevant_now": 1,
    "scan_state": "partial",
    "status": "ok"
@@ -269,19 +257,19 @@
    "jobs_found": 538,
    "name": "TD Bank",
    "note": "招聘板共 1762 个职位，按地点筛选只读目标地区",
-   "relevant_now": 63,
+   "relevant_now": 60,
    "scan_state": "partial",
    "status": "ok"
   },
   {
    "checked": "2026-11-07",
    "complete": "no",
-   "detail": "workday: 568 个职位",
+   "detail": "workday: 565 个职位",
    "id": "walmart-canada",
-   "jobs_found": 568,
+   "jobs_found": 565,
    "name": "Walmart Canada",
    "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
-   "relevant_now": 83,
+   "relevant_now": 2,
    "scan_state": "partial",
    "status": "ok"
   }
@@ -290,636 +278,21 @@
   {
    "active": true,
    "candidate_status": "relevant",
-   "employer": "Manulife",
-   "employer_id": "manulife",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "JR26101301",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Canada, Full Time Remote",
-   "posted": "Posted 3 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Intermediate Underwriter",
-   "url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Canada-Full-Time-Remote/Intermediate-Underwriter_JR26101301-1"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Manulife",
-   "employer_id": "manulife",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "JR26101302",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Canada, Full Time Remote",
-   "posted": "Posted 3 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Life Underwriting Trainee",
-   "url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Canada-Full-Time-Remote/Life-Underwriting-Trainee_JR26101302-1"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R_1497317",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "South Burlington, Vermont",
-   "posted": "Posted Yesterday",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Associate Banker II - South Burlington, VT",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/South-Burlington-Vermont/Banking-Associate---South-Burlington--VT_R_1497317"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R_1495778",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "South Burlington, Vermont",
-   "posted": "Posted 2 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Associate Banker II - South Burlington, VT",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/South-Burlington-Vermont/Banking-Associate---South-Burlington--VT_R_1495778"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R_1518527",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "North York, Ontario",
-   "posted": "Posted 15 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Personal Banking Associate Trainee",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/North-York-Ontario/Personal-Banking-Associate-Trainee_R_1518527"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R_1514657",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Richmond Hill, Ontario",
-   "posted": "Posted 18 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Personal Banking Associate Trainee - Farsi Language Preferred",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Richmond-Hill-Ontario/Personal-Banking-Associate-Trainee---Farsi-Language-Preferred_R_1514657"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R_1507972",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Burlington, Vermont",
-   "posted": "Posted 19 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Associate Banker I - Burlington, VT",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Burlington-Vermont/Associate-Banker-I---Burlington--VT_R_1507972"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "title": [
-       "#3 Operator in Press - 3rd Shift",
-       "#3 Operator in Press - 2nd Shift"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/XMLNAME--3-Operator-in-Press---3rd-Shift_JREQ204176",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/XMLNAME--3-Operator-in-Press---2nd-Shift_JREQ204175"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "title": [
-       "#3 Operator in Press - 2nd Shift",
-       "Senior Product Manager"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/XMLNAME--3-Operator-in-Press---2nd-Shift_JREQ204175",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Senior-Product-Manager_JREQ201779"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "title": [
-       "Senior Product Manager",
-       "#3 Operator in Press - 3rd Shift"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Senior-Product-Manager_JREQ201779",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/XMLNAME--3-Operator---3rd-Shift_JREQ200096"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "title": [
-       "#3 Operator in Press - 3rd Shift",
-       "Director Partnerships and Alliances"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/XMLNAME--3-Operator---3rd-Shift_JREQ200096",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Director-Partnerships-and-Alliances_JREQ204016"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "title": [
-       "Director Partnerships and Alliances",
-       "Operator #1"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Director-Partnerships-and-Alliances_JREQ204016",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Operator--1_JREQ203136"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    }
-   ],
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "职位名没有相关职能关键词",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Eagan",
-   "last_modified_seen": "2026-11-07",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Operator #1",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Operator--1_JREQ203136"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "title": [
-       "Event Producer",
-       "Lead Software Engineer AI - (Materia AI)"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Event-Producer_JREQ204128",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Lead-Software-Engineer-AI----Materia-AI---Evergreen-_JREQ199887"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "title": [
-       "Lead Software Engineer AI - (Materia AI)",
-       "Lead AI Forward Engineer"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Lead-Software-Engineer-AI----Materia-AI---Evergreen-_JREQ199887",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Lead-AI-Forward-Engineer_JREQ203316"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "title": [
-       "Lead AI Forward Engineer",
-       "Lead Software Engineer AI (Staff Engineer)"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Lead-AI-Forward-Engineer_JREQ203316",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Lead-Software-Engineer-AI--Staff-Engineer-_JREQ201877"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "candidate_status": [
-       "irrelevant",
-       "relevant"
-      ],
-      "title": [
-       "Lead Software Engineer AI (Staff Engineer)",
-       "Account Specialist"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Lead-Software-Engineer-AI--Staff-Engineer-_JREQ201877",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Account-Specialist_JREQ195006"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "candidate_status": [
-       "relevant",
-       "irrelevant"
-      ],
-      "title": [
-       "Account Specialist",
-       "Software Engineer"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Account-Specialist_JREQ195006",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Software-Engineer_JREQ204044"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    }
-   ],
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "技术/IT岗",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Mexico City",
-   "last_modified_seen": "2026-11-07",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Software Engineer",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Mexico-Mexico-City/Software-Engineer_JREQ204044"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted 16 Days Ago",
-       "Posted 18 Days Ago"
-      ],
-      "title": [
-       "Senior Software Engineer - AI (Materia AI)",
-       "Nationwide Govt. Sr. Sales Specialist–High Value Accounts"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Senior-Software-Engineer---AI--Materia-AI-_JREQ196434-3",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Nationwide-Government-Sales-Specialist---High-Value-Accounts_JREQ203948"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 18 Days Ago",
-       "Posted 25 Days Ago"
-      ],
-      "title": [
-       "Nationwide Govt. Sr. Sales Specialist–High Value Accounts",
-       "Senior Transformation Consultant, CoCounsel"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Nationwide-Government-Sales-Specialist---High-Value-Accounts_JREQ203948",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Transformation-Consultant--Professional-Services_JREQ204372"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 25 Days Ago",
-       "Posted 26 Days Ago"
-      ],
-      "title": [
-       "Senior Transformation Consultant, CoCounsel",
-       "Senior Specialist Legal Editor, Corporate (Global)"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Transformation-Consultant--Professional-Services_JREQ204372",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Senior-Specialist-Legal-Editor--Practical-Law_JREQ202613"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 26 Days Ago",
-       "Posted 30 Days Ago"
-      ],
-      "title": [
-       "Senior Specialist Legal Editor, Corporate (Global)",
-       "Senior Specialist Legal Editor, Corp & M&A (Private Equity)"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Senior-Specialist-Legal-Editor--Practical-Law_JREQ202613",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Frisco-Texas/Senior-Specialist-Legal-Editor--Corp---M-A--Private-Equity-_JREQ201467"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 30 Days Ago",
-       "Posted 30+ Days Ago"
-      ],
-      "title": [
-       "Senior Specialist Legal Editor, Corp & M&A (Private Equity)",
-       "Senior Software Engineer - AI, CoCounsel International"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Frisco-Texas/Senior-Specialist-Legal-Editor--Corp---M-A--Private-Equity-_JREQ201467",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Senior-Software-Engineer---AI--CoCounsel-International_JREQ203612-1"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    }
-   ],
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "资深或管理岗",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Ann Arbor; Frisco; Eagan; New York",
-   "last_modified_seen": "2026-11-07",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Senior Software Engineer - AI, CoCounsel International",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Eagan-Minnesota/Senior-Software-Engineer---AI--CoCounsel-International_JREQ203612-1"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
    "employer": "Thomson Reuters",
    "employer_id": "thomson-reuters",
    "filter_reason": "职能相关；地点未注明",
    "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Los Angeles; Sacramento, California; McLean; Portland; Las Vegas; San Francisco; Seattle; Honolulu, Hawaii; San Diego",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Hong-Kong-Hong-Kong/Awards-Researcher--Events_JREQ202493",
    "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 2 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Analyst - West Coast",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-McLean-Virginia/Analyst---West-Coast_JREQ205125"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "职能相关；地点未注明",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "San Antonio; Mobile; Chicago; St. Paul, Minnesota; Kansas City; Laredo; Tucson; Jackson, Mississippi; Tyler; Detroit; El Paso; Houston; McLean; Corpus Christi; Oklahoma City, Oklahoma; Dallas; Louisville; Scottsdale",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 2 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Analyst - Midwest & South",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-McLean-Virginia/Analyst---Midwest---South_JREQ205122-1"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "职能相关；地点未注明",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Washington, DC, District of Columbia; McLean",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 2 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Analyst - DMV",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-McLean-Virginia/Analyst---DMV_JREQ205127-1"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "candidate_status": [
-       "relevant",
-       "irrelevant"
-      ],
-      "posted": [
-       "Posted 2 Days Ago",
-       "Posted 3 Days Ago"
-      ],
-      "title": [
-       "Strategic Account Executive",
-       "Sales Representative - Sales ERP (Bejerman)"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Argentina-Buenos-Aires/Strategic-Account-Executive_JREQ204797",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Argentina-Buenos-Aires/Sales-Representative_JREQ204174-1"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "title": [
-       "Sales Representative - Sales ERP (Bejerman)",
-       "Ejecutivo de cuentas - Ventas ERP (Bejerman)"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Argentina-Buenos-Aires/Sales-Representative_JREQ204174-1",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Argentina-Buenos-Aires/Ejecutivo-de-cuentas_JREQ204173"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    }
-   ],
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "职位名没有相关职能关键词",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Buenos Aires",
-   "last_modified_seen": "2026-11-07",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 3 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Ejecutivo de cuentas - Ventas ERP (Bejerman)",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Argentina-Buenos-Aires/Ejecutivo-de-cuentas_JREQ204173"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "职能相关；地点未注明",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Nashville, Tennessee; Atlanta, Georgia; Baltimore; San Juan; Jacksonville; New Orleans; Charlotte; Orlando; Tampa; Miami; Raleigh, North Carolina; Boston, Massachusetts; Jackson, Mississippi; Washington, DC, District of Columbia; Newark; McLean; Buffalo; Philadelphia; Charleston; Queens",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 2 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Analyst - East Coast",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-McLean-Virginia/Analyst---East-Coast_JREQ205121"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "职能相关；地点未注明",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Houston",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
+   "last_seen_run": "20261107T203144Z-76f465",
    "location": "",
    "posted": "Posted 4 Days Ago",
    "relevant": true,
    "source": "workday",
    "tier": "P0",
-   "title": "Analyst",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-Houston-Texas/Analyst_JREQ204698"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "candidate_status": [
-       "relevant",
-       "irrelevant"
-      ],
-      "posted": [
-       "Posted 4 Days Ago",
-       "Posted 30+ Days Ago"
-      ],
-      "title": [
-       "Awards Researcher, Events",
-       "Sales Manager, Sponsorship"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Hong-Kong-Hong-Kong/Awards-Researcher--Events_JREQ202493",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Hong-Kong-Hong-Kong/Sales-Manager--Sponsorship_JREQ203880"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    }
-   ],
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "资深或管理岗",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Hong Kong",
-   "last_modified_seen": "2026-11-07",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Sales Manager, Sponsorship",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Hong-Kong-Hong-Kong/Sales-Manager--Sponsorship_JREQ203880"
+   "title": "Awards Researcher, Events",
+   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Hong-Kong-Hong-Kong/Awards-Researcher--Events_JREQ202493"
   },
   {
    "active": true,
@@ -928,1353 +301,240 @@
    "employer_id": "thomson-reuters",
    "filter_reason": "职能相关；地点未注明",
    "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "New York; McLean",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Canada-Toronto-Ontario/Renewal-Specialist--Small-Law_JREQ204808",
    "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
+   "last_seen_run": "20261107T203144Z-76f465",
    "location": "",
-   "posted": "Posted 17 Days Ago",
+   "posted": "Posted 11 Days Ago",
    "relevant": true,
    "source": "workday",
    "tier": "P0",
-   "title": "Analyst",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-States-of-America-McLean-Virginia/Analyst_JREQ204696"
+   "title": "Renewal Specialist, Small Law",
+   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Canada-Toronto-Ontario/Renewal-Specialist--Small-Law_JREQ204808"
   },
   {
    "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "candidate_status": [
-       "relevant",
-       "irrelevant"
-      ],
-      "posted": [
-       "Posted 19 Days Ago",
-       "Posted 30+ Days Ago"
-      ],
-      "title": [
-       "Publishing Coordinator",
-       "Sales Executive - Asia Legal Business"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/China-Beijing-Beijing/Publishing-Coordinator_JREQ202992",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/China-Beijing-Beijing/Sales-Executive---Asia-Legal-Business_JREQ203463"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    }
-   ],
+   "candidate_status": "relevant",
    "employer": "Thomson Reuters",
    "employer_id": "thomson-reuters",
-   "filter_reason": "法律专业岗",
+   "filter_reason": "职能相关；地点未注明",
    "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Beijing",
-   "last_modified_seen": "2026-11-07",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/China-Beijing-Beijing/Publishing-Coordinator_JREQ202992",
    "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
+   "last_seen_run": "20261107T203144Z-76f465",
    "location": "",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Sales Executive - Asia Legal Business",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/China-Beijing-Beijing/Sales-Executive---Asia-Legal-Business_JREQ203463"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2701503",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON KANATA 03134 WAL-MART",
-   "posted": "Posted Yesterday",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Stock Unloader Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-KANATA-03134-WAL-MART/Stock-Unloader-Associate_R-2701503"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2700696",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BRAMPTON 01120 WM SUPERCENTER",
-   "posted": "Posted 2 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(Can) Stock Unloader Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BRAMPTON-01120-WM-SUPERCENTER/XMLNAME--Can--Stock-Unloader-Associate_R-2700696"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2700554",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Burlington, ON",
-   "posted": "Posted 2 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Fashion Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Burlington-ON/Fashion-Associate_R-2700554"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2696607",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON SCARBOROUGH 01117 WM SUPERCENTER",
-   "posted": "Posted 5 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-SCARBOROUGH-01117-WM-SUPERCENTER/General-Merchandise-Associate_R-2696607"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2695418",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON MARKHAM 03053 WM SUPERCENTER",
-   "posted": "Posted 7 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Stock Unloader Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-MARKHAM-03053-WM-SUPERCENTER/XMLNAME--CAN--Stock-Unloader-Associate_R-2695418"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2695416",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON MARKHAM 03053 WM SUPERCENTER",
-   "posted": "Posted 7 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-MARKHAM-03053-WM-SUPERCENTER/XMLNAME--CAN--General-Merchandise-Associate_R-2695416"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2694610",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Oakville, ON",
-   "posted": "Posted 8 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Stock Unloader Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Oakville-ON/Stock-Unloader-Associate_R-2694610"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2691785",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(USA) CA CONCORD 06612 SAM'S CLUB",
-   "posted": "Posted 10 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "MEMBER SPECIALIST",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/USA-CA-CONCORD-06612-SAMS-CLUB/MEMBER-SPECIALIST_R-2691785"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2689910",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Burlington, ON",
-   "posted": "Posted 12 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Burlington-ON/XMLNAME--CAN--General-Merchandise-Associate_R-2689910"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2689562",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON SCARBOROUGH 03159 WM SUPERCENTER",
-   "posted": "Posted 12 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Meat Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-SCARBOROUGH-03159-WM-SUPERCENTER/XMLNAME--CAN--Meat-Associate_R-2689562"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2689375",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON SCARBOROUGH 03111 WM SUPERCENTER",
-   "posted": "Posted 12 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Fashion Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-SCARBOROUGH-03111-WM-SUPERCENTER/XMLNAME--CAN--Fashion-Associate_R-2689375"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2685762",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Vaughan, ON",
-   "posted": "Posted 16 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Vaughan-ON/XMLNAME--CAN--General-Merchandise-Associate_R-2685762"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2683077",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BRAMPTON 03130 WM SUPERCENTER",
    "posted": "Posted 19 Days Ago",
    "relevant": true,
    "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BRAMPTON-03130-WM-SUPERCENTER/XMLNAME--CAN--General-Merchandise-Associate_R-2683077"
+   "tier": "P0",
+   "title": "Publishing Coordinator",
+   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/China-Beijing-Beijing/Publishing-Coordinator_JREQ202992"
   },
   {
    "active": true,
    "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2680802",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON SCARBOROUGH 03111 WM SUPERCENTER",
-   "posted": "Posted 22 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-SCARBOROUGH-03111-WM-SUPERCENTER/XMLNAME--CAN--General-Merchandise-Associate_R-2680802"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2680658",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "North York, ON",
-   "posted": "Posted 22 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Stock Unloader Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/North-York-ON/XMLNAME--CAN--Stock-Unloader-Associate_R-2680658"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2680152",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(USA) CA CONCORD 06612 SAM'S CLUB",
-   "posted": "Posted 22 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(USA) Freight Flow Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/USA-CA-CONCORD-06612-SAMS-CLUB/XMLNAME--USA--Freight-Flow-Associate_R-2680152"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2680148",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(USA) CA CONCORD 06612 SAM'S CLUB",
-   "posted": "Posted 22 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(USA) Freight Flow Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/USA-CA-CONCORD-06612-SAMS-CLUB/XMLNAME--USA--Freight-Flow-Associate_R-2680148"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2678124",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON KANATA 03134 WAL-MART",
-   "posted": "Posted 24 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-KANATA-03134-WAL-MART/General-Merchandise-Associate_R-2678124"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2674300",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Scarborough, ON",
-   "posted": "Posted 29 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Over-the-Counter Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Scarborough-ON/XMLNAME--CAN--Over-the-Counter-Associate_R-2674300"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2671893",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BURLINGTON 03170 WM SUPERCENTER",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Stock Unloader Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BURLINGTON-03170-WM-SUPERCENTER/XMLNAME--CAN--Stock-Unloader-Associate_R-2671893"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2670407",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BRAMPTON 01120 WM SUPERCENTER",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Grocery Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BRAMPTON-01120-WM-SUPERCENTER/XMLNAME--CAN--Grocery-Associate_R-2670407"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2670401",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BRAMPTON 01120 WM SUPERCENTER",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Meat Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BRAMPTON-01120-WM-SUPERCENTER/XMLNAME--CAN--Meat-Associate_R-2670401"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2668677",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BRAMPTON 01120 WM SUPERCENTER",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Consumables Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BRAMPTON-01120-WM-SUPERCENTER/XMLNAME--CAN--Consumables-Associate_R-2668677"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2668112",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON KANATA 03134 WAL-MART",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-KANATA-03134-WAL-MART/General-Merchandise-Associate_R-2668112"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2667770",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Vaughan, ON",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Dairy Frozen Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Vaughan-ON/XMLNAME--CAN--Dairy-Frozen-Associate_R-2667770"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2665805",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BURLINGTON 03170 WM SUPERCENTER",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BURLINGTON-03170-WM-SUPERCENTER/XMLNAME--CAN--General-Merchandise-Associate_R-2665805"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2665798",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BURLINGTON 03170 WM SUPERCENTER",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Meat Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BURLINGTON-03170-WM-SUPERCENTER/XMLNAME--CAN--Meat-Associate_R-2665798"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2663325",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BRAMPTON 01120 WM SUPERCENTER",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) General Merchandise Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BRAMPTON-01120-WM-SUPERCENTER/XMLNAME--CAN--General-Merchandise-Associate_R-2663325"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2646959",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(USA) ME SCARBOROUGH 08186 SAM'S CLUB",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(USA) Member Specialist FT",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/USA-ME-SCARBOROUGH-08186-SAMS-CLUB/XMLNAME--USA--Member-Specialist-FT_R-2646959"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2626017",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, NH",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(USA) Member Specialist",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-NH/XMLNAME--USA--Member-Specialist_R-2626017"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-176852",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, NH",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Cafe Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-NH/Cafe-Associate_R-176852-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-231904",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, CA",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Baker and Packager Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-CA/Baker-and-Packager-Associate_R-231904-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-231299",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, CA",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Produce Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-CA/Produce-Associate_R-231299-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-230697",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, CA",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Prepared Meals and Rotisserie Chicken Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-CA/Prepared-Meals-and-Rotisserie-Chicken-Associate_R-230697-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-177070",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, CA",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Cafe Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-CA/Cafe-Associate_R-177070-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-129509",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, CA",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Maintenance Custodian Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-CA/Maintenance-Associate_R-129509"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2529408",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(USA) CA CONCORD 06612 SAM'S CLUB",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "member specialist",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/USA-CA-CONCORD-06612-SAMS-CLUB/member-specialist_R-2529408"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-232030",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Scarborough, ME",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Baker and Packager Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Scarborough-ME/Baker-and-Packager-Associate_R-232030-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-231792",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, NH",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Baker and Packager Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-NH/Baker-and-Packager-Associate_R-231792-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-231426",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Scarborough, ME",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Produce Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Scarborough-ME/Produce-Associate_R-231426-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-231187",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, NH",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Produce Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-NH/Produce-Associate_R-231187-1"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-230824",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Scarborough, ME",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Prepared Meals and Rotisserie Chicken Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Scarborough-ME/Prepared-Meals-and-Rotisserie-Chicken-Associate_R-230824-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-230587",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, NH",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Prepared Meals and Rotisserie Chicken Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-NH/Prepared-Meals-and-Rotisserie-Chicken-Associate_R-230587-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-177261",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Scarborough, ME",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Cafe Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Scarborough-ME/Cafe-Associate_R-177261-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-130017",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Scarborough, ME",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Maintenance Custodian Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Scarborough-ME/Maintenance-Associate_R-130017-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-129065",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Concord, NH",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Maintenance Custodian Associate",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Concord-NH/Maintenance-Associate_R-129065-2"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "employer": "Lululemon",
-   "employer_id": "lululemon",
+   "employer": "Thomson Reuters",
+   "employer_id": "thomson-reuters",
    "filter_reason": "职能相关；地点未注明",
    "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "https://careers.lululemon.com/en_US/careers/JobDetail/Community-Specialist-FULTON-MARKET/65735",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Japan-Tokyo/Business-Analyst---Global-Trade_JREQ203569-4",
    "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
+   "last_seen_run": "20261107T203144Z-76f465",
    "location": "",
-   "posted": "",
+   "posted": "Posted 30+ Days Ago",
    "relevant": true,
-   "source": "page",
+   "source": "workday",
+   "tier": "P0",
+   "title": "Business Analyst - Global Trade",
+   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Japan-Tokyo/Business-Analyst---Global-Trade_JREQ203569-4"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "employer": "Altus Group",
+   "employer_id": "altus-group",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-07",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/300---Toronto/Real-Estate-Valuation-Analyst--Toronto-_R0014126",
+   "last_seen": "2026-11-07",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "300 - Toronto",
+   "posted": "Posted 3 Days Ago",
+   "relevant": true,
+   "source": "workday",
    "tier": "P2",
-   "title": "Community Specialist | FULTON MARKET",
-   "url": "https://careers.lululemon.com/en_US/careers/JobDetail/Community-Specialist-FULTON-MARKET/65735"
+   "title": "Real Estate Valuation Analyst (Toronto)",
+   "url": "https://altusgroup.wd3.myworkdayjobs.com/en-US/AltusGroup/job/300---Toronto/Real-Estate-Valuation-Analyst--Toronto-_R0014126"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "employer": "Altus Group",
+   "employer_id": "altus-group",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-07",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Toronto-Ontario/Analyst--Advisory--Real-Estate-_R0014058",
+   "last_seen": "2026-11-07",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "Toronto, Ontario",
+   "posted": "Posted 16 Days Ago",
+   "relevant": true,
+   "source": "workday",
+   "tier": "P2",
+   "title": "Real Estate Valuation Advisory, Analyst",
+   "url": "https://altusgroup.wd3.myworkdayjobs.com/en-US/AltusGroup/job/Toronto-Ontario/Analyst--Advisory--Real-Estate-_R0014058"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "employer": "Altus Group",
+   "employer_id": "altus-group",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-07",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Toronto-Ontario/Real-Estate-Valuation-Analyst--Toronto--ON-_R0013964",
+   "last_seen": "2026-11-07",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "Toronto, Ontario",
+   "posted": "Posted 30+ Days Ago",
+   "relevant": true,
+   "source": "workday",
+   "tier": "P2",
+   "title": "Real Estate Valuation Analyst (Toronto, ON)",
+   "url": "https://altusgroup.wd3.myworkdayjobs.com/en-US/AltusGroup/job/Toronto-Ontario/Real-Estate-Valuation-Analyst--Toronto--ON-_R0013964"
   }
  ],
  "new_review": [
   {
    "active": true,
    "candidate_status": "review",
-   "employer": "Manulife",
-   "employer_id": "manulife",
+   "employer": "Thomson Reuters",
+   "employer_id": "thomson-reuters",
+   "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+   "first_seen": "2026-11-07",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Korea-Republic-of-Seoul/Reuters-News-Internship-Program-2027---Seoul_JREQ204988",
+   "last_seen": "2026-11-07",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "",
+   "posted": "Posted 4 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Reuters News Internship Program 2027 - Seoul",
+   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Korea-Republic-of-Seoul/Reuters-News-Internship-Program-2027---Seoul_JREQ204988"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "employer": "Thomson Reuters",
+   "employer_id": "thomson-reuters",
    "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门",
    "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "JR26101299",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Hong-Kong-Hong-Kong/Deal-Desk-Consultant_JREQ203969",
    "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Canada, Full Time Remote",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "",
+   "posted": "Posted 30 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Deal Desk Consultant",
+   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Hong-Kong-Hong-Kong/Deal-Desk-Consultant_JREQ203969"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "employer": "Thomson Reuters",
+   "employer_id": "thomson-reuters",
+   "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+   "first_seen": "2026-11-07",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Canada-Toronto-Ontario/Applied-Research-Intern--NLP-ML-GenAI-_JREQ202812",
+   "last_seen": "2026-11-07",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "",
+   "posted": "Posted 30+ Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Applied Research Intern (NLP/ML/GenAI)",
+   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Canada-Toronto-Ontario/Applied-Research-Intern--NLP-ML-GenAI-_JREQ202812"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "employer": "Thomson Reuters",
+   "employer_id": "thomson-reuters",
+   "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门",
+   "first_seen": "2026-11-07",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Sri-Lanka-Colombo/Integration-Consultant_JREQ196780",
+   "last_seen": "2026-11-07",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "",
+   "posted": "Posted 30+ Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Integration Consultant",
+   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Sri-Lanka-Colombo/Integration-Consultant_JREQ196780"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "employer": "Altus Group",
+   "employer_id": "altus-group",
+   "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门",
+   "first_seen": "2026-11-07",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/300---Toronto/Real-Estate-Valuation-Consultant--Toronto-_R0014127",
+   "last_seen": "2026-11-07",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "300 - Toronto",
    "posted": "Posted 3 Days Ago",
    "relevant": false,
    "source": "workday",
-   "tier": "P0",
-   "title": "Underwriting Consultant",
-   "url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Canada-Full-Time-Remote/Underwriting-Consultant_JR26101299-1"
+   "tier": "P2",
+   "title": "Real Estate Valuation Consultant (Toronto)",
+   "url": "https://altusgroup.wd3.myworkdayjobs.com/en-US/AltusGroup/job/300---Toronto/Real-Estate-Valuation-Consultant--Toronto-_R0014127"
   },
   {
    "active": true,
    "candidate_status": "review",
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
+   "employer": "Altus Group",
+   "employer_id": "altus-group",
    "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门",
    "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R_1521103",
+   "first_seen_run": "20261107T203144Z-76f465",
+   "job_id": "/job/Toronto-Ontario/Consultant--Valuation-Expert_R0014066",
    "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Markham, Ontario",
-   "posted": "Posted 2 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Claims Advisor, Catastrophe Claims",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Markham-Ontario/Claims-Advisor--Catastrophe-Claims_R_1521103"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
-   "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R_1518316",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "North York, Ontario",
-   "posted": "Posted 16 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Auto Claims Advisor – TD Insurance Auto Centre (North York On-site)",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/North-York-Ontario/Auto-Claims-Advisor---TD-Insurance-Auto-Centre--North-York-On-site-_R_1518316-1"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
-   "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R_1518036",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Richmond Hill, Ontario",
-   "posted": "Posted 17 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Auto Claims Advisor – TD Insurance Auto Centre (Richmond Hill On-site)",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Richmond-Hill-Ontario/Auto-Claims-Advisor---TD-Insurance-Auto-Centre--Richmond-Hill-On-site-_R_1518036"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Nairobi",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 5 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Reuters News Internship Program 2027 - Nairobi",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Kenya-Nairobi/Reuters-News-Internship-Program-2027---Nairobi_JREQ204987-1"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Rio de Janeiro",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 5 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Reuters News Internship Program 2027 - Rio de Janeiro",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Brazil-Rio-de-Janeiro-Rio-de-Janeiro/Reuters-News-Internship-Program-2027---Rio-de-Janeiro_JREQ204986"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "candidate_status": [
-       "review",
-       "irrelevant"
-      ],
-      "posted": [
-       "Posted 4 Days Ago",
-       "Posted 22 Days Ago"
-      ],
-      "title": [
-       "Reuters News Internship Program 2027 - Seoul",
-       "Customer Success Manager"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Korea-Republic-of-Seoul/Reuters-News-Internship-Program-2027---Seoul_JREQ204988",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Korea-Republic-of-Seoul/Customer-Success-Manager_JREQ204054"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    }
-   ],
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "资深或管理岗",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Seoul",
-   "last_modified_seen": "2026-11-07",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
-   "posted": "Posted 22 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Customer Success Manager",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Korea-Republic-of-Seoul/Customer-Success-Manager_JREQ204054"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "candidate_status": [
-       "review",
-       "irrelevant"
-      ],
-      "title": [
-       "Solutions Consultant - Direct Tax, ANZ",
-       "Legal Content Strategy Specialist"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Solutions-Consultant---Direct-Tax--ANZ_JREQ204146",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Legal-Content-Segment-Specialist_JREQ200578"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 9 Days Ago",
-       "Posted 11 Days Ago"
-      ],
-      "title": [
-       "Legal Content Strategy Specialist",
-       "Senior Marketing Manager, Tax and Accounting- ANZ"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Legal-Content-Segment-Specialist_JREQ200578",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Senior-Marketing-Manager--Tax-and-Accounting--ANZ_JREQ204773"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 11 Days Ago",
-       "Posted 16 Days Ago"
-      ],
-      "title": [
-       "Senior Marketing Manager, Tax and Accounting- ANZ",
-       "Software Engineer, Legislation (1 Year Contrct)"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Senior-Marketing-Manager--Tax-and-Accounting--ANZ_JREQ204773",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Software-Engineer--Legislation--1-Year-Contrct-_JREQ204282"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 16 Days Ago",
-       "Posted 26 Days Ago"
-      ],
-      "title": [
-       "Software Engineer, Legislation (1 Year Contrct)",
-       "Marketing Director ANZ"
-      ],
-      "url": [
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Software-Engineer--Legislation--1-Year-Contrct-_JREQ204282",
-       "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Marketing-Director-ANZ_JREQ204207"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    }
-   ],
-   "employer": "Thomson Reuters",
-   "employer_id": "thomson-reuters",
-   "filter_reason": "资深或管理岗",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "Pyrmont",
-   "last_modified_seen": "2026-11-07",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "",
+   "last_seen_run": "20261107T203144Z-76f465",
+   "location": "Toronto, Ontario",
    "posted": "Posted 26 Days Ago",
    "relevant": false,
    "source": "workday",
-   "tier": "P0",
-   "title": "Marketing Director ANZ",
-   "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Australia-Pyrmont-New-South-Wales/Marketing-Director-ANZ_JREQ204207"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "兼职/临时：可在读期间做，需确认时间",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2702674",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Vaughan, ON",
-   "posted": "Posted Today",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Meat Associate**Part-Time Required Flexible Hours **",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Vaughan-ON/XMLNAME--CAN--Meat-Associate--Part-Time-Required-Flexible-Hours---_R-2702674"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "合同/临时岗：需确认入职时间",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2700406",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON SCARBOROUGH 03635 WM SUPERCENTER",
-   "posted": "Posted 2 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Electronics Associate (Temp. 6 months)",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-SCARBOROUGH-03635-WM-SUPERCENTER/XMLNAME--CAN--Electronics-Associate--Temp-6-months-_R-2700406"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "合同/临时岗：需确认入职时间",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2698187",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BRAMPTON 01188 WM SUPERCENTER",
-   "posted": "Posted 4 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Stock Unloader Associate Temporary - Contract ends May 17, 2027",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BRAMPTON-01188-WM-SUPERCENTER/XMLNAME--CAN--Stock-Unloader-Associate-Temporary---Contract-ends-May-17--2027_R-2698187"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "合同/临时岗：需确认入职时间",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2698181",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(CAN) ON BRAMPTON 01188 WM SUPERCENTER",
-   "posted": "Posted 4 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Stock Unloader Associate Temporary - Contract ends May 17, 2027",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-BRAMPTON-01188-WM-SUPERCENTER/XMLNAME--CAN--Stock-Unloader-Associate-Temporary---Contract-ends-May-17--2027_R-2698181"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "兼职/临时：可在读期间做，需确认时间",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2692447",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Vaughan, ON",
-   "posted": "Posted 10 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) Fashion Associate**Part Time**",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Vaughan-ON/XMLNAME--CAN--Fashion-Associate--Part-Time--_R-2692447"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "兼职/临时：可在读期间做，需确认时间",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2692441",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "Vaughan, ON",
-   "posted": "Posted 10 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(CAN) General Merchandise Associate**Part Time **",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/Vaughan-ON/XMLNAME--CAN--General-Merchandise-Associate--Part-Time---_R-2692441"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "employer": "Walmart Canada",
-   "employer_id": "walmart-canada",
-   "filter_reason": "兼职/临时：可在读期间做，需确认时间",
-   "first_seen": "2026-11-07",
-   "first_seen_run": "20261107T195111Z-0184bd",
-   "job_id": "R-2676121",
-   "last_seen": "2026-11-07",
-   "last_seen_run": "20261107T195111Z-0184bd",
-   "location": "(USA) ME SCARBOROUGH 08186 SAM'S CLUB",
-   "posted": "Posted 26 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "(USA) Member Specialist PT",
-   "url": "https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/USA-ME-SCARBOROUGH-08186-SAMS-CLUB/XMLNAME--USA--Member-Specialist-PT_R-2676121"
+   "tier": "P2",
+   "title": "Consultant, Valuation Expert",
+   "url": "https://altusgroup.wd3.myworkdayjobs.com/en-US/AltusGroup/job/Toronto-Ontario/Consultant--Valuation-Expert_R0014066"
   }
  ],
  "removed_relevant": [],
  "reopened_relevant": [],
- "scan_id": "20261107T195111Z-0184bd",
+ "scan_id": "20261107T203144Z-76f465",
  "scan_states": {
   "complete": 52,
-  "failed": 17,
+  "failed": 16,
   "invalid": 0,
   "not_configured": 220,
   "partial": 6,
   "unverified": 48,
-  "zero_jobs": 118
+  "zero_jobs": 119
  }
 }

@@ -6,7 +6,6 @@ cpkc,CPKC,fail,"page: SSLError: HTTPSConnectionPool(host='careers.cpkcr.com', po
 crowe-soberman,Crowe Soberman,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.crowe.com/ca/crowesoberman/careers/current-opportunities,0,2026-11-07,failed,0,no,
 crows-theatre,Crow's Theatre,fail,"page: ConnectionError: HTTPSConnectionPool(host='www.crowstheatre.com', port=443): Max retries exceeded with url: /about/careers (Caused by NameResolutionError(""HTTPSConnect",0,2026-11-07,failed,0,no,
 definity-financial,Definity Financial,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://careers.definityfinancial.com/,0,2026-11-07,failed,0,no,
-dying-with-dignity-canada,Dying With Dignity Canada,fail,"page: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",0,2026-11-07,failed,0,no,
 holt-renfrew,Holt Renfrew,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.holtrenfrew.com/en/careers,0,2026-11-07,failed,0,no,
 igm-financial-mackenzie-investments,IGM Financial / Mackenzie Investments,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers,0,2026-11-07,failed,0,no,
 mckinsey-company,McKinsey & Company,fail,"page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)",0,2026-11-07,failed,0,no,
@@ -81,6 +80,7 @@ dance-umbrella-of-ontario,Dance Umbrella of Ontario (DUO),ok,page: 0 个职位,0
 dayforce,Dayforce,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 deloitte-canada,Deloitte Canada,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 desjardins,Desjardins,ok,workday: 292 个职位,1,2026-11-07,complete,292,yes,
+dying-with-dignity-canada,Dying With Dignity Canada,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 enbridge,Enbridge,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 eq-bank,EQ Bank,ok,lever: 82 个职位,9,2026-11-07,complete,82,yes,
 erco-worldwide,ERCO Worldwide,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
@@ -133,16 +133,16 @@ library-and-archives-canada,Library and Archives Canada,ok,page: 0 个职位,0,2
 lmc-diabetes-endocrinology,LMC Diabetes & Endocrinology,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 loblaw-companies,Loblaw Companies,ok,page: 2 个职位,0,2026-11-07,unverified,2,no,普通网页：无法确认是否读全，只用于发现新职位
 lord-cultural-resources,Lord Cultural Resources,ok,page: 2 个职位,0,2026-11-07,unverified,2,no,普通网页：无法确认是否读全，只用于发现新职位
-lululemon,Lululemon,ok,page: 10 个职位,2,2026-11-07,unverified,10,no,普通网页：无法确认是否读全，只用于发现新职位
-lush-handmade-cosmetics,Lush Handmade Cosmetics,ok,greenhouse: 253 个职位,0,2026-11-07,complete,253,yes,
+lululemon,Lululemon,ok,page: 10 个职位,1,2026-11-07,unverified,10,no,普通网页：无法确认是否读全，只用于发现新职位
+lush-handmade-cosmetics,Lush Handmade Cosmetics,ok,greenhouse: 252 个职位,0,2026-11-07,complete,252,yes,
 magna-international,Magna International,ok,page: 1 个职位,0,2026-11-07,unverified,1,no,普通网页：无法确认是否读全，只用于发现新职位
 manulife,Manulife,ok,workday: 618 个职位,2,2026-11-07,complete,618,yes,
-mastercard-canada,Mastercard Canada,ok,workday: 27 个职位,0,2026-11-07,complete,27,yes,
+mastercard-canada,Mastercard Canada,ok,workday: 26 个职位,0,2026-11-07,complete,26,yes,
 mattamy-homes,Mattamy Homes,ok,page: 58 个职位,23,2026-11-07,unverified,58,no,普通网页：无法确认是否读全，只用于发现新职位
 mcmichael-canadian-art-collection,McMichael Canadian Art Collection,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 medspa-partners,MedSpa Partners,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 mejuri,Mejuri,ok,greenhouse: 189 个职位,2,2026-11-07,complete,189,yes,
-mercer-canada,Mercer Canada,ok,workday: 50 个职位,1,2026-11-07,partial,50,no,招聘板共 1994 个职位，按地点筛选只读目标地区
+mercer-canada,Mercer Canada,ok,workday: 50 个职位,1,2026-11-07,partial,50,no,招聘板共 1995 个职位，按地点筛选只读目标地区
 metrolinx,Metrolinx,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 mevotech,Mevotech,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 microsoft-canada,Microsoft Canada,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
@@ -209,7 +209,7 @@ stripe-canada,Stripe Canada,ok,greenhouse: 766 个职位,0,2026-11-07,complete,7
 tapestry-opera,Tapestry Opera,ok,page: 1 个职位,0,2026-11-07,unverified,1,no,普通网页：无法确认是否读全，只用于发现新职位
 tarragon-theatre,Tarragon Theatre,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 tc-energy,TC Energy,ok,workday: 68 个职位,0,2026-11-07,complete,68,yes,
-td-bank,TD Bank,ok,workday: 538 个职位,63,2026-11-07,partial,538,no,招聘板共 1762 个职位，按地点筛选只读目标地区
+td-bank,TD Bank,ok,workday: 538 个职位,60,2026-11-07,partial,538,no,招聘板共 1762 个职位，按地点筛选只读目标地区
 telesat,Telesat,ok,lever: 55 个职位,6,2026-11-07,complete,55,yes,
 telus,TELUS,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 terrapure,Terrapure,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
@@ -218,7 +218,7 @@ the-519,The 519,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：
 the-bentway,The Bentway Conservancy,ok,page: 4 个职位,2,2026-11-07,unverified,4,no,普通网页：无法确认是否读全，只用于发现新职位
 the-brattle-group-toronto,The Brattle Group (Toronto),ok,greenhouse: 44 个职位,2,2026-11-07,complete,44,yes,
 the-power-plant-contemporary-art-gallery,The Power Plant Contemporary Art Gallery,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
-thomson-reuters,Thomson Reuters,ok,workday: 494 个职位,58,2026-11-07,complete,494,yes,
+thomson-reuters,Thomson Reuters,ok,workday: 494 个职位,5,2026-11-07,complete,494,yes,
 tiff,TIFF,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 tmx-group,TMX Group,ok,workday: 98 个职位,1,2026-11-07,complete,98,yes,
 toronto-arts-council,Toronto Arts Council,ok,page: 0 个职位,0,2026-11-07,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
@@ -233,7 +233,7 @@ united-way-greater-toronto,United Way Greater Toronto,ok,page: 1 个职位,1,202
 university-of-toronto,University of Toronto,ok,page: 33 个职位,20,2026-11-07,unverified,33,no,普通网页：无法确认是否读全，只用于发现新职位
 util-assist,Util-Assist Inc.,ok,lever: 2 个职位,0,2026-11-07,complete,2,yes,
 visa-canada,Visa Canada,ok,workday: 44 个职位,0,2026-11-07,complete,44,yes,
-walmart-canada,Walmart Canada,ok,workday: 568 个职位,83,2026-11-07,partial,568,no,招聘板共 2000 个职位，按地点筛选只读目标地区
+walmart-canada,Walmart Canada,ok,workday: 565 个职位,2,2026-11-07,partial,565,no,招聘板共 2000 个职位，按地点筛选只读目标地区
 waterfront-toronto,Waterfront Toronto,ok,page: 1 个职位,1,2026-11-07,unverified,1,no,普通网页：无法确认是否读全，只用于发现新职位
 wealthsimple,Wealthsimple,ok,ashby: 42 个职位,4,2026-11-07,complete,42,yes,
 welch-llp,Welch LLP,ok,page: 2 个职位,2,2026-11-07,unverified,2,no,普通网页：无法确认是否读全，只用于发现新职位
