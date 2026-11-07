@@ -8,13 +8,32 @@
 2. 按每家的招聘系统调用公开接口，取回全部职位：
    - 支持 Greenhouse、Lever、Ashby、SmartRecruiters、Workable、Workday；
    - 没有这些系统、但有官方招聘页的，直接读网页上的职位链接（博物馆、剧团等）。
-3. 初筛：只留目标地点 + 入门/相关职能的职位（规则在 `scanner/filters.py`，可以直接改关键词）。
-4. 与上次结果比对，只报告**新出现**和**已下架**的职位。
+3. 初筛：把职位分成三类并记录原因（规则在 `scanner/filters.py`，可以直接改关键词）：
+   - **可能相关**：进入简报主表；
+   - **需要核实**：实习、兼职、合同岗、头衔笼统的顾问岗等，简报单列；
+   - **明确不相关**：资深、技术、门店/网点、仅限 Co-op 学生、外省等。不相关的职位也会保存（含原因），
+     规则改进后运行 `python -m scanner.main reclassify` 可重新分类，不会被永久丢弃。
+4. 与上次结果比对，报告**新出现**、**重新出现**和**已下架**的职位。
+
 5. 写出：
    - `reports/latest.md` 中文简报（按日期另存一份）；
    - `data/latest.json` 新职位清单（供 Claude 定时任务读取、打分、写入追踪表）；
    - `data/status.csv` 每家雇主的读取结果，方便找出读不到的公司。
 
+### 关于“下架”判断（重要）
+
+每个雇主每次读取都会标记读取质量（`data/status.csv` 的 `scan_state` 列）：
+
+| scan_state | 含义 | 会不会判定下架 |
+|---|---|---|
+| complete | 完整读取了整个招聘板 | 会 |
+| partial | 只读到一部分（大型 Workday 只读目标地区、分页中断、超过上限） | 不会 |
+| unverified | 普通网页，无法确认是否读全 | 不会 |
+| zero_jobs | 返回零个职位（可能是接口临时异常） | 不会 |
+| failed / invalid | 读取失败 / 数据结构异常 | 不会 |
+| not_configured | 没有招聘入口 | — |
+
+同一天运行多次也能正确判断（每次运行有唯一的 `scan_id`）。
 **不会抓取 LinkedIn、Indeed 等招聘网站**（它们禁止程序抓取），只读各公司自己的招聘系统。
 
 ## 每天自动运行
@@ -37,6 +56,7 @@ python -m pytest -q                 # 离线测试
 python -m scanner.discover          # 识别招聘系统，结果在 data/discovered.csv
 python -m scanner.main scan         # 扫描全部雇主
 python -m scanner.main scan --only onex,eq-bank   # 只扫几家
+python -m scanner.main reclassify   # 改了筛选规则后，重新给已有职位分类
 ```
 
 ## 雇主名单格式（data/employers.csv）

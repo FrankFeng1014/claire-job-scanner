@@ -1,11 +1,17 @@
-"""初筛规则：地点 + 职位名关键词。
+"""初筛规则：按地点和职位名，把职位分成三类，并给出原因。
 
-这里只做粗筛，宁可多留；资格（A/B/C/D）和匹配分由 Claude 定时任务判断。
+    relevant    可能相关：进入简报主表，交给 Claude 定时任务逐个核实
+    review      需要核实：有相关性但有疑点（实习、兼职、地点未注明、头衔含糊等），简报单列
+    irrelevant  明确不相关：资深岗、技术岗、门店岗、仅限 Co-op 学生、外省等
+
+这里只做粗筛，不等于申请资格；资格（A/B/C/D）和匹配分由定时任务判断。
+被判为不相关的职位仍然保存在 data/seen.json 里（含原因），规则改进后可以用
+`python -m scanner.main reclassify` 重新分类，不会被永久丢弃。
 修改关键词只需改下面几个列表。
 """
 import re
 
-# 目标地点（Toronto/GTA/Ottawa + 加拿大远程）
+# ---------- 地点 ----------
 LOCATIONS = [
     "toronto", "north york", "scarborough", "etobicoke", "mississauga", "brampton", "markham",
     "vaughan", "concord", "woodbridge", "richmond hill", "oakville", "burlington", "milton",
@@ -13,44 +19,126 @@ LOCATIONS = [
     "ottawa", "kanata", "nepean", "gatineau",
 ]
 REMOTE_CANADA = re.compile(r"remote.*(canada|ontario)|(canada|ontario).*remote|canada\s*\(remote\)", re.I)
+# 普通网页没有地点字段时，从链接里识别外省/非目标城市
+NON_TARGET_URL = re.compile(
+    r"[/-](vancouver|calgary|edmonton|montreal|winnipeg|halifax|regina|saskatoon|victoria|"
+    r"kelowna|nisku|arthur|kitchener|waterloo|guelph|hamilton|london|laval|quebec|surrey|"
+    r"burnaby|red-deer|lethbridge|moncton|fredericton|st-johns|windsor|sudbury|barrie)[/-]", re.I)
+_loc = re.compile(r"\b(" + "|".join(re.escape(c) for c in LOCATIONS) + r")\b")
 
-# 职位名必须包含其中之一（入门/相关职能）
-INCLUDE = [
-    r"analyst", r"associate", r"coordinator", r"accountant", r"accounting", r"assistant",
-    r"administrator", r"officer", r"new grad", r"graduate", r"rotational", r"development program",
-    r"leadership program", r"junior", r"jr\.?", r"entry", r"trainee", r"specialist",
-    r"finance", r"financial", r"fp&a", r"audit", r"treasury", r"payable", r"receivable",
-    r"reconciliation", r"reporting", r"pricing", r"procurement", r"purchasing", r"buyer",
-    r"operations", r"research", r"program", r"fundrais", r"philanthrop", r"advancement",
-    r"stewardship", r"donor", r"curatorial", r"collections", r"gallery", r"registrar",
+# ---------- 职位名 ----------
+# 明确不相关（资深 / 技术 / 门店与网点销售 / 需执照 / 体力岗）
+HARD_EXCLUDE = [
+    (r"\bsenior\b|\bsr\.?\b|\bdirector\b|\bhead of\b|\bvp\b|vice president|\bprincipal\b|\bchief\b|"
+     r"\bmanager\b|\bteam lead\b|\blead\b|\bleader\b|\bpartner\b|associate director|associate vice|"
+     r"associate partner",
+     "资深或管理岗"),
+    (r"\bavp\b|\bsvp\b|\bevp\b", "资深或管理岗"),
+    (r"engineer|developer|devops|architect|scientist|programmer|technician|\bsoc\b|cyber|"
+     r"identity|access management|cloud|data center|network|infrastructure|technical|tech support|"
+     r"\bsap\b|oracle|salesforce|servicenow|\bjava\b|python|\.net\b|back[- ]?end|front[- ]?end|"
+     r"full[- ]?stack|software|application packaging|application development|application consultant|"
+     r"\bitam\b|kubernetes|\bqa\b|satellite|information security|ccaas", "技术/IT岗"),
+    (r"\bstore\b|sales associate|retail associate|cashier|barista|\bcook\b|warehouse|driver|"
+     r"security guard|electrician|mechanic|millwright|machinist|seasonal retail|team associate|"
+     r"fulfil?lment|overnight|distribution cent|team leader|stocking|asset protection|"
+     r"food & consumables|\bdeli\b|bakery|welder", "门店/仓储/体力岗"),
+    (r"lawyer|counsel|paralegal|\blegal\b", "法律专业岗"),
+    (r"\bjobs?\b|categor|\bsearch\b|^see |\bcareers\b|career planning|opportunit|talent community|"
+     r"join our|learn more", "不是具体职位（导航链接）"),
+    (r"\blille\b|\bparis\b|\blondon\b|dubai|abu dhabi|\boman\b|muscat|singapore|hong kong|"
+     r"new york|f/h|\(e\)", "境外岗位"),
+    (r"personal banker|financial services? representative|customer experience associate|"
+     r"mortgage specialist|branch|teller|call cent|contact cent", "银行网点/客服销售岗"),
+    (r"licen[sc]ed|financial advisor|wealth advisor|financial planner", "需执照/持牌顾问岗"),
+    (r"nurse|clinical|pharmac|physician|therapist", "医疗专业岗"),
+    (r"executive assistant", "高管助理（通常要多年经验）"),
+    (r"payroll|benefits", "薪酬福利操作岗"),
+    (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
+     "仅限在校 Co-op/学生"),
 ]
-# 职位名包含其中之一则排除（资深 / 技术 / 明显不符）
-EXCLUDE = [
-    r"\bsenior\b", r"\bsr\.?\b", r"\bmanager\b", r"\bdirector\b", r"\bhead of\b", r"\bvp\b",
-    r"vice president", r"\bprincipal\b", r"\blead\b", r"\bchief\b", r"\bpartner\b",
-    r"engineer", r"developer", r"devops", r"architect", r"scientist", r"technician",
-    r"nurse", r"driver", r"warehouse", r"\bcook\b", r"security guard", r"electrician",
-    r"mechanic", r"millwright", r"machinist", r"\bstore\b", r"sales associate",
-    r"cashier", r"barista", r"\bco-?op\b", r"\bintern(ship)?\b", r"summer student",
-    r"executive assistant", r"licen[sc]ed", r"financial advisor", r"wealth advisor",
-    r"technical", r"tech support", r"cloud", r"data center", r"\bsoc\b", r"cyber",
-    r"network", r"infrastructure", r"\bsap\b", r"oracle", r"salesforce", r"servicenow",
-    r"clinical", r"pharmac", r"physician", r"therapist", r"part-?time",
+# 相关职能（命中其一即视为可能相关）
+RELEVANT = [
+    # 应届项目
+    r"new grad|graduate program|graduate development|development program|leadership development|"
+    r"rotational|analyst program|management trainee|trainee|early career|entry[- ]level|campus",
+    # 财务会计审计
+    r"analyst|accountant|accounting|audit|finance|financial|fp&a|treasury|payable|receivable|"
+    r"reconciliation|reporting|controller|bookkeep|tax\b|valuation|credit|risk|compliance",
+    # 咨询战略运营
+    r"consultant|consulting|advisory|strategy|strategic|business transformation|transformation|"
+    r"operations|business analyst|commercial|pricing|procurement|purchasing|buyer|planning|"
+    r"forecast|replenishment|category|merchandis|supply chain|project coordinator|program",
+    # 保险
+    r"underwrit|insurance|claims|actuar",
+    # 研究
+    r"research|econom|insights|market intelligence|data analyst",
+    # 艺术与非营利
+    r"gallery|museum|curatorial|collections|registrar|arts? admin|arts? management|exhibition|"
+    r"fundrais|philanthrop|advancement|development coordinator|stewardship|donor|grant",
+    # 通用入门头衔
+    r"\bassociate\b|coordinator|administrator|assistant|officer|specialist|junior|\bjr\b",
 ]
-_inc = re.compile("|".join(INCLUDE), re.I)
-_exc = re.compile("|".join(EXCLUDE), re.I)
+# 有相关性但需要核实的信号
+REVIEW_SIGNALS = [
+    (r"\bintern(ship)?\b|summer analyst", "实习：需确认是否接受 2027 年 5 月毕业生"),
+    (r"part[- ]?time|\bpt\b|casual|freelance|occasional", "兼职/临时：可在读期间做，需确认时间"),
+    (r"contract|fixed[- ]term|temporary|\btemp\b|secondment|maternity", "合同/临时岗：需确认入职时间"),
+    (r"^associate$|^specialist$|^officer$", "头衔过于笼统，需看职位描述"),
+    (r"actuar", "精算岗通常要求考试进度"),
+]
+
+_hard = [(re.compile(p, re.I), why) for p, why in HARD_EXCLUDE]
+_rel = re.compile("|".join(RELEVANT), re.I)
+_review = [(re.compile(p, re.I), why) for p, why in REVIEW_SIGNALS]
+_it = re.compile(r"\bIT\b")
+_entry = re.compile(r"junior|\bjr\b|associate|analyst|entry|graduate|new grad|trainee|débutant|"
+                    r"\bi\b|level 1", re.I)
 
 
 def location_ok(loc: str) -> bool:
     if not loc:
-        return True  # 普通网页没有地点信息，先保留
-    l = loc.lower()
-    return any(c in l for c in LOCATIONS) or bool(REMOTE_CANADA.search(loc))
+        return True  # 没有地点信息时先不排除，由 classify 标记为需核实
+    # 按整词匹配，避免 "Hamilton" 被 "milton" 误匹配
+    return bool(_loc.search(loc.lower())) or bool(REMOTE_CANADA.search(loc))
+
+
+def classify(job: dict):
+    """返回 (candidate_status, filter_reason)。candidate_status ∈ relevant / review / irrelevant。"""
+    title = (job.get("title") or "").strip()
+    loc = job.get("location") or ""
+    url = job.get("url") or ""
+    t = title.lower()
+
+    if not loc and NON_TARGET_URL.search(url):
+        return "irrelevant", "地点不在目标地区（从链接识别）"
+    if loc and not location_ok(loc):
+        return "irrelevant", f"地点不在目标地区：{loc[:40]}"
+
+    review_reasons = [why for rx, why in _review if rx.search(t)]
+    if _it.search(title):                 # 大写 IT 才算技术岗，避免误伤普通单词
+        return "irrelevant", "技术/IT岗"
+    for rx, why in _hard:
+        if rx.search(t):
+            # “仅限学生”的实习另作处理：实习本身进 review，Co-op/学生岗直接排除
+            return "irrelevant", why
+    if not _rel.search(t):
+        return "irrelevant", "职位名没有相关职能关键词"
+    if re.search(r"consultant|advisor", t) and not _entry.search(t):
+        review_reasons.append("顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门")
+    if review_reasons:
+        return "review", "；".join(review_reasons)
+    if not loc:
+        return "relevant", "职能相关；地点未注明"
+    return "relevant", "职能与地点相关"
 
 
 def title_ok(title: str) -> bool:
-    return bool(_inc.search(title)) and not _exc.search(title)
+    """旧接口：职位名层面是否“可能相关”（不看地点）。"""
+    st, _ = classify({"title": title, "location": "Toronto"})
+    return st == "relevant"
 
 
 def relevant(job: dict) -> bool:
-    return location_ok(job.get("location", "")) and title_ok(job.get("title", ""))
+    """旧接口：保留给旧报告字段 relevant 使用，等价于 candidate_status == relevant。"""
+    return classify(job)[0] == "relevant"

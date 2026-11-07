@@ -161,3 +161,20 @@ def test_page_ignores_nav_and_news():
 def test_excludes_tech_and_licensed():
     for t in ["Data Center Specialist", "Client Associate (IR licensed)", "Executive Assistant to SVP"]:
         assert not filters.title_ok(t)
+
+
+def test_location_word_boundary():
+    assert not filters.location_ok("Hamilton, ON")
+    assert filters.location_ok("Milton, ON") and filters.location_ok("Toronto, Ontario")
+
+
+def test_jsessionid_stripped_and_out_of_province_dropped():
+    html = '<a href="/jobsearch/jobposting/123;jsessionid=ABC.x">Junior Financial Analyst</a>'
+    s = FakeSession({"jobbank": Resp(text=html)})
+    j = adapters.page(s, "https://www.jobbank.gc.ca/search")[0]
+    assert "jsessionid" not in j["url"]
+    assert not filters.relevant({"title": "Accountant", "location": "",
+                                 "url": "https://www.roberthalf.com/ca/en/job/calgary-ab/accountant/1"})
+    assert filters.relevant({"title": "Accountant", "location": "",
+                             "url": "https://www.roberthalf.com/ca/en/job/toronto-on/accountant/1"})
+    assert not filters.title_ok("Identity Access Management Analyst")
