@@ -125,6 +125,20 @@ def is_foreign(loc: str) -> bool:
     return bool(FOREIGN_LOC.search(loc) or US_CODE_AT_END.search(loc.strip()))
 
 
+_WD_SEG = re.compile(r"/job/([^/]+)/")
+
+
+def _url_location(url: str) -> str:
+    """Workday 职位链接 /job/<地点>/<职位> 中的地点段，例如 Canada-Toronto-Ontario、Hong-Kong-Hong-Kong。"""
+    m = _WD_SEG.search(url or "") if "myworkdayjobs.com" in (url or "") else None
+    return m.group(1).replace("-", " ").strip() if m else ""
+
+
+def _url_loc_ok(seg: str) -> bool:
+    l = seg.lower()
+    return bool(_loc.search(l)) or "canada" in l or "ontario" in l or "remote" in l or "multiple" in l
+
+
 def location_ok(loc: str) -> bool:
     if not loc:
         return True  # 没有地点信息时先不排除，由 classify 标记为需核实
@@ -143,6 +157,9 @@ def classify(job: dict):
 
     if not loc and (NON_TARGET_URL.search(url) or FOREIGN_URL.search(url)):
         return "irrelevant", "地点不在目标地区（从链接识别）"
+    url_loc = _url_location(url) if not loc else ""
+    if url_loc and not _url_loc_ok(url_loc):
+        return "irrelevant", f"地点不在目标地区（链接显示：{url_loc[:40]}）"
     if loc and not location_ok(loc):
         return "irrelevant", f"地点不在目标地区：{loc[:40]}"
 

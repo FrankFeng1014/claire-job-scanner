@@ -432,3 +432,13 @@ def test_walmart_store_roles_excluded(title):
 
 def test_associate_producer_not_mistaken_for_produce():
     assert filters.classify({"title": "Associate Producer", "location": "Toronto, ON"})[0] == "relevant"
+
+
+@pytest.mark.parametrize("seg,ok", [("Hong-Kong-Hong-Kong", False), ("China-Beijing-Beijing", False),
+                                    ("Japan-Tokyo", False), ("Korea-Seoul", False),
+                                    ("Canada-Toronto-Ontario", True), ("300---Toronto", True),
+                                    ("Toronto-Ontario", True), ("Canada-Remote", True)])
+def test_workday_url_location_segment(seg, ok):
+    j = {"title": "Business Analyst", "location": "",
+         "url": f"https://x.wd5.myworkdayjobs.com/en-US/S/job/{seg}/Business-Analyst_1"}
+    assert (filters.classify(j)[0] == "relevant") is ok
