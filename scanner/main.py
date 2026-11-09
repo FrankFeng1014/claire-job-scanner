@@ -22,6 +22,7 @@ import csv
 import io
 import json
 import os
+import re
 import tempfile
 import time
 import uuid
@@ -36,6 +37,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 REPORTS = os.path.join(ROOT, "reports")
 UA = "Mozilla/5.0 (compatible; ClaireJobScanner/1.0; personal job search)"
+# 有些公司网站会拒绝“非浏览器”访问，读网页时用普通浏览器标识
+BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+              "Chrome/130.0 Safari/537.36")
 
 # 扫描状态（status.csv 的 scan_state 列；旧的 status 列 ok/fail/skip 保持不变）
 STATE_LABELS = {
@@ -52,6 +56,10 @@ STATUS_FIELDS = ["id", "name", "status", "detail", "relevant_now", "checked",
 UPDATABLE = ("title", "location", "url", "posted")
 HISTORY_MAX = 5
 REVIEW_REPORT_MAX = 60
+BASELINE_REPORT_MAX = 80
+RECENT_DAYS = 7
+NEW_EMPLOYERS_PER_RUN = 30
+EMPLOYER_FIELDS = ["id", "name", "tier", "sector", "ats", "ats_id", "careers_url", "source", "added"]
 
 
 def now_utc():
@@ -70,6 +78,21 @@ def new_scan_id():
 def load_employers():
     with open(os.path.join(DATA, "employers.csv"), newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
+
+
+def save_employers(emps):
+    """整体写回 employers.csv（先写临时文件）。保留所有已有列，新列加在最后。"""
+    fields = list(EMPLOYER_FIELDS)
+    for e in emps:
+        for k in e:
+            if k not in fields:
+                fields.append(k)
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=fields, extrasaction="ignore")
+    w.writeheader()
+    for e in emps:
+        w.writerow({k: e.get(k, "") or "" for k in fields})
+    _atomic_write(os.path.join(DATA, "employers.csv"), buf.getvalue())
 
 
 def load_json(name, default):
@@ -114,42 +137,71 @@ def validate_latest(L):
 # ---------- 扫描单个雇主 ----------
 def target(emp):
     """决定用哪个读取模块：有 ATS 用 ATS，否则用官方招聘页。"""
-    if emp.get("ats") in ADAPTERS and emp.get("ats_id"):
-        return emp["ats"], emp["ats_id"]
+    if emp.get("ats") in ADAPTERS and (emp.get("ats_id") or emp["ats"] == "amazon"):
+        return emp["ats"], emp.get("ats_id") or ""
     if emp.get("careers_url"):
         return "page", emp["careers_url"]
     return None, None
 
 
-def scan_one(emp):
-    """返回 (emp, status, detail, jobs, scan_state, complete, note)。"""
+def _run_adapter(kind, s, arg, known):
+    fn = ADAPTERS[kind]
+    if getattr(fn, "wants_known", False):
+        return fn(s, arg, known=known)
+    return fn(s, arg)
+
+
+def scan_one(emp, known=None):
+    """返回 (emp, status, detail, jobs, scan_state, complete, note)。
+
+    ats_id / careers_url 里可以用分号写多个（例如一家公司的社招和校招两个招聘板），会全部读取后合并；
+    只有每一个都读全，才算这家雇主“完整读取”。
+    """
     kind, arg = target(emp)
     if not kind:
         return emp, "skip", "没有招聘系统或官方招聘页", [], "not_configured", False, ""
     s = requests.Session()
-    s.headers["User-Agent"] = UA
-    last, state = None, "failed"
-    for attempt in range(2):
-        try:
-            jobs = ADAPTERS[kind](s, arg)
-            complete = bool(getattr(jobs, "complete", True))
-            note = getattr(jobs, "note", "")
-            if kind == "page":
-                st = "zero_jobs" if not jobs else "unverified"
-                complete = False
-            elif not jobs:
-                # ATS 返回零个职位也可能是接口临时异常，不据此判定所有职位下架
-                st, complete = "zero_jobs", False
-            else:
-                st = "complete" if complete else "partial"
-            return emp, "ok", f"{kind}: {len(jobs)} 个职位", list(jobs), st, complete, note
-        except AdapterDataError as e:
-            last, state = f"{kind}: 数据异常: {str(e)[:150]}", "invalid"
-            break
-        except Exception as e:  # noqa: BLE001
-            last, state = f"{kind}: {type(e).__name__}: {str(e)[:150]}", "failed"
-            time.sleep(2)
-    return emp, "fail", last, [], state, False, ""
+    s.headers["Accept-Language"] = "en-CA,en;q=0.9"
+    s.headers["User-Agent"] = UA if kind not in ("page", "successfactors", "phenom", "avature", "radancy",
+                                                 "sitemap") else BROWSER_UA
+    parts = [x.strip() for x in arg.split(";") if x.strip()] or [arg]
+    all_jobs, complete_all, notes, errors, any_ok = [], True, [], [], False
+    for part in parts:
+        err = None
+        for attempt in range(2):
+            try:
+                jobs = _run_adapter(kind, s, part, known or set())
+                complete_all &= bool(getattr(jobs, "complete", True))
+                if getattr(jobs, "note", ""):
+                    notes.append(jobs.note)
+                all_jobs.extend(jobs)
+                any_ok, err = True, None
+                break
+            except AdapterDataError as e:
+                err = ("invalid", f"{kind}: 数据异常: {str(e)[:150]}")
+                break
+            except Exception as e:  # noqa: BLE001
+                err = ("failed", f"{kind}: {type(e).__name__}: {str(e)[:150]}")
+                time.sleep(2)
+        if err:
+            errors.append(err)
+    if not any_ok:
+        state, last = errors[-1]
+        return emp, "fail", last, [], state, False, ""
+    if errors:
+        complete_all = False
+        notes.append("部分入口读取失败：" + "；".join(e[1] for e in errors))
+    jobs, note = all_jobs, "；".join(notes)
+    if kind == "page":
+        st = "zero_jobs" if not jobs else "unverified"
+        complete = False
+    elif not jobs:
+        # ATS 返回零个职位也可能是接口临时异常，不据此判定所有职位下架
+        st, complete = "zero_jobs", False
+    else:
+        complete = complete_all
+        st = "complete" if complete else "partial"
+    return emp, "ok", f"{kind}: {len(jobs)} 个职位", list(jobs), st, complete, note
 
 
 # ---------- 职位记录更新 ----------
@@ -189,7 +241,9 @@ def update_existing(rec, job, emp, d, scan_id):
         rec.pop("closed_seen", None)
     rec["active"] = True
     rec["last_seen"] = d
-    rec["last_seen_run"] = scan_id
+    # 不再每次都写 last_seen_run：一天扫描多次时，几万条记录每次都改会让仓库迅速变大。
+    # “本次是否见到”改由扫描过程中的 seen_now 集合判断。
+    rec.pop("last_seen_run", None)
     return reopened
 
 
@@ -224,81 +278,284 @@ def migrate_workday_keys(seen):
     return moved, retired
 
 
+# ---------- 雇主读取历史（判断“新接入”的雇主） ----------
+def load_employer_state(seen):
+    """data/employer_state.json：每家雇主上次成功读取时用的读取方式。
+
+    某家雇主第一次被成功读取（或换了读取方式，例如从普通网页换成 Workday）时，读到的职位大多是
+    早就挂出来的，不算“新发布”，单独列为“新接入雇主的现有职位”，不发新岗位通知。
+    第一次使用这个文件时，从已有记录推断，避免把老雇主误当成新接入。
+    """
+    st = load_json("employer_state.json", None)
+    if isinstance(st, dict):
+        return st
+    st = {}
+    path = os.path.join(DATA, "status.csv")
+    if os.path.exists(path):
+        with open(path, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                if r.get("status") == "ok":
+                    st[r["id"]] = {"kind": (r.get("detail") or "").split(":")[0].strip() or None,
+                                   "arg": None, "first_ok": r.get("checked", "")}
+    for rec in seen.values():
+        eid = rec.get("employer_id")
+        if eid and eid not in st:
+            st[eid] = {"kind": rec.get("source"), "arg": None, "first_ok": rec.get("first_seen", "")}
+    return st
+
+
+def is_new_source(state, key, kind, arg):
+    old = state.get(key)
+    if not old:
+        return True
+    if old.get("kind") and old["kind"] != kind:
+        return True
+    return old.get("arg") is not None and old["arg"] != arg
+
+
+def _norm_title(t):
+    return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+
+def _new_record(j, emp_id, employer, tier, source, cst, why, d, scan_id, baseline):
+    rec = {k: v for k, v in j.items() if k not in ("company", "company_site", "apply_url")}
+    rec.update({"employer_id": emp_id, "employer": employer, "tier": tier, "source": source,
+                "relevant": cst == "relevant", "candidate_status": cst, "filter_reason": why,
+                "first_seen": d, "last_seen": d, "first_seen_run": scan_id,
+                "active": True})
+    if baseline:
+        rec["baseline"] = True
+    return rec
+
+
+# ---------- 名单以外的渠道 ----------
+def scan_channels(seen, emps, state, d, scan_id, names=None):
+    """读取 Job Bank、Work In Culture 等渠道。返回 (新相关, 新待核实, 新接入, 新雇主, 渠道状态)。
+
+    - 职位所属雇主在名单里：记在该雇主名下（和它自己招聘系统里已有的同名职位去重）。
+    - 不在名单里、且职位与 Claire 相关：把这家雇主自动加入名单（data/employers.csv），并报告。
+    - 每个渠道第一次运行时，读到的职位只作为“现有职位”记录，不发新岗位通知。
+    """
+    from . import channels as C
+    from .discover import detect
+
+    index = [(C.norm_name(e["name"]), e) for e in emps]
+    taken = {e["id"] for e in emps}
+    active_titles = {}
+    for rec in seen.values():
+        if rec.get("active"):
+            active_titles.setdefault(rec.get("employer_id"), set()).add(_norm_title(rec.get("title")))
+    new, review, baseline, new_emps, status = [], [], [], [], []
+    for ch, (label, fn) in C.CHANNELS.items():
+        if names and ch not in names:
+            continue
+        s = requests.Session()
+        s.headers.update({"User-Agent": BROWSER_UA, "Accept-Language": "en-CA,en;q=0.9"})
+        try:
+            jobs = fn(s)
+        except Exception as e:  # noqa: BLE001
+            status.append({"channel": label, "status": "fail", "detail": f"{type(e).__name__}: {str(e)[:150]}"})
+            continue
+        if jobs is None:
+            status.append({"channel": label, "status": "skip", "detail": "未设置接口密钥，跳过"})
+            continue
+        first_time = is_new_source(state, f"channel:{ch}", "channel", ch)
+        n_rel = n_added = 0
+        for j in jobs:
+            cst, why = classify(j)
+            if cst == "irrelevant":
+                continue
+            company = (j.get("company") or "").strip()
+            emp = C.match_employer(company, index) if company else None
+            if emp is None and company and cst == "relevant" and not C.SKIP_COMPANY.search(company) \
+                    and C.CORE_ROLE.search(j.get("title") or "") and not C.NOT_CORE.search(j.get("title") or "") \
+                    and len(new_emps) < NEW_EMPLOYERS_PER_RUN:
+                k, a = (detect(j.get("apply_url") or "", j.get("apply_url") or "")
+                        if j.get("apply_url") else (None, None))
+                emp = {"id": C.employer_id(company, taken), "name": company, "tier": "P2",
+                       "sector": f"自动发现（{label}）", "ats": k or "", "ats_id": a or "",
+                       "careers_url": j.get("company_site") or "", "source": f"auto:{ch}", "added": d}
+                taken.add(emp["id"])
+                emps.append(emp)
+                index.append((C.norm_name(company), emp))
+                new_emps.append({**emp, "found_job": j.get("title"), "found_url": j.get("url")})
+                n_added += 1
+            emp_id = emp["id"] if emp else f"channel-{ch}"
+            key = f"{emp_id}::{ch}:{j['job_id']}"
+            if key in seen:
+                update_existing(seen[key], j, emp or {"name": seen[key].get("employer")}, d, scan_id)
+                continue
+            if emp and _norm_title(j["title"]) in active_titles.get(emp["id"], set()):
+                continue        # 该雇主自己的招聘系统里已经有同名职位
+            rec = _new_record(j, emp_id, emp["name"] if emp else (company or label),
+                              emp.get("tier", "P2") if emp else "—", f"channel:{ch}", cst,
+                              f"{why}（来源：{label}）", d, scan_id, first_time)
+            seen[key] = rec
+            active_titles.setdefault(emp_id, set()).add(_norm_title(j["title"]))
+            n_rel += cst == "relevant"
+            if first_time:
+                baseline.append(rec)
+            elif cst == "relevant":
+                new.append(rec)
+            else:
+                review.append(rec)
+        state[f"channel:{ch}"] = {"kind": "channel", "arg": ch, "first_ok": state.get(f"channel:{ch}", {})
+                                  .get("first_ok") or d}
+        status.append({"channel": label, "status": "ok",
+                       "detail": f"{len(jobs)} 个职位，新记录相关 {n_rel} 个，新加入名单的雇主 {n_added} 家"
+                                 + ("（第一次运行，只建立基线）" if first_time else "")})
+    return new, review, baseline, new_emps, status
+
+
+# ---------- 最近 7 天汇总（给每天只看一次的定时任务用） ----------
+def update_recent(L, now_iso):
+    rec = load_json("recent.json", {"items": []})
+    items = rec.get("items") if isinstance(rec, dict) else []
+    cutoff = (now_utc().timestamp() - RECENT_DAYS * 86400)
+    keep = []
+    for it in items or []:
+        try:
+            t = datetime.fromisoformat(it["found_at"]).timestamp()
+        except Exception:  # noqa: BLE001
+            continue
+        if t >= cutoff:
+            keep.append(it)
+
+    def slim(r, kind):
+        return {"kind": kind, "found_at": now_iso, "scan_id": L["scan_id"], "employer": r.get("employer"),
+                "employer_id": r.get("employer_id"), "tier": r.get("tier"), "title": r.get("title"),
+                "location": r.get("location"), "url": r.get("url"), "posted": r.get("posted"),
+                "status": r.get("candidate_status"), "reason": r.get("filter_reason"), "source": r.get("source")}
+    for r in L["new_relevant"]:
+        keep.append(slim(r, "new_relevant"))
+    for r in L["new_review"]:
+        keep.append(slim(r, "new_review"))
+    for r in L.get("baseline", []):
+        keep.append(slim(r, "baseline"))
+    for e in L.get("new_employers", []):
+        keep.append({"kind": "new_employer", "found_at": now_iso, "scan_id": L["scan_id"], "employer": e["name"],
+                     "employer_id": e["id"], "source": e.get("source"), "title": e.get("found_job"),
+                     "url": e.get("found_url")})
+    save_json("recent.json", {"about": f"最近 {RECENT_DAYS} 天每次扫描发现的新职位、新接入职位和新雇主（按发现时间）",
+                              "updated": now_iso, "items": keep})
+
+
 # ---------- 主流程 ----------
-def scan(only=None, workers=8):
-    emps = load_employers()
-    if only:
-        emps = [e for e in emps if e["id"] in only]
+def scan(only=None, workers=8, channels=True):
+    emps_all = load_employers()
+    emps = [e for e in emps_all if e["id"] in only] if only else emps_all
     seen = load_json("seen.json", {})
     validate_seen(seen)
     first_run = not os.path.exists(os.path.join(DATA, "seen.json"))
     migrate_workday_keys(seen)
     for rec in seen.values():
         _upgrade(rec)
+    state = load_employer_state(seen)
 
     d, scan_id = today(), new_scan_id()
-    new, review, reopened, status_rows = [], [], [], []
-    ok_ids, complete_ids = set(), set()
+    now_iso = now_utc().isoformat(timespec="seconds")
+    new, review, reopened, status_rows, baseline = [], [], [], [], []
+    ok_ids, complete_ids, seen_now, fresh_ids = set(), set(), set(), set()
+    known = {}
+    for rec in seen.values():
+        known.setdefault(rec.get("employer_id"), set()).add(str(rec.get("job_id")))
 
     with cf.ThreadPoolExecutor(max_workers=workers) as ex:
-        for emp, st, msg, jobs, state, complete, note in ex.map(scan_one, emps):
+        results = ex.map(lambda e: scan_one(e, known.get(e["id"])), emps)
+        for emp, st, msg, jobs, state_, complete, note in results:
             n_rel = 0
             if st == "ok":
                 ok_ids.add(emp["id"])
                 if complete:
                     complete_ids.add(emp["id"])
+                kind, arg = target(emp)
+                prev = state.get(emp["id"]) or {}
+                fresh = (not first_run) and (is_new_source(state, emp["id"], kind, arg)
+                                             or bool(prev.get("pending_baseline")))
+                if fresh:
+                    fresh_ids.add(emp["id"])
+                state[emp["id"]] = {"kind": kind, "arg": arg, "first_ok": prev.get("first_ok") or d}
+                # 网站地图需要分几次才能读完所有职位页：读完之前，读到的都还算“现有职位”
+                if fresh and not complete and kind == "sitemap":
+                    state[emp["id"]]["pending_baseline"] = True
                 done = set()
                 for j in jobs:
                     key = f"{emp['id']}::{j['job_id']}"
                     if key in done:          # 同一次读取里重复出现，只处理第一次
                         continue
                     done.add(key)
+                    seen_now.add(key)
                     if key in seen:
                         rec = seen[key]
                         if update_existing(rec, j, emp, d, scan_id) and rec["candidate_status"] == "relevant":
                             reopened.append(rec)
                         n_rel += rec["candidate_status"] == "relevant"
                         continue
+                    if not j.get("title"):
+                        continue
                     cst, why = classify(j)
-                    rec = {**j, "employer_id": emp["id"], "employer": emp["name"], "tier": emp.get("tier", ""),
-                           "source": target(emp)[0], "relevant": cst == "relevant",
-                           "candidate_status": cst, "filter_reason": why,
-                           "first_seen": d, "last_seen": d, "last_seen_run": scan_id,
-                           "first_seen_run": scan_id, "active": True}
+                    rec = _new_record(j, emp["id"], emp["name"], emp.get("tier", ""), kind, cst, why, d,
+                                      scan_id, fresh)
                     seen[key] = rec
                     n_rel += cst == "relevant"
-                    if cst == "relevant":
+                    if cst == "irrelevant":
+                        continue
+                    if fresh:
+                        baseline.append(rec)
+                    elif cst == "relevant":
                         new.append(rec)
-                    elif cst == "review":
+                    else:
                         review.append(rec)
             status_rows.append({"id": emp["id"], "name": emp["name"], "status": st, "detail": msg,
-                                "relevant_now": n_rel, "checked": d, "scan_state": state,
+                                "relevant_now": n_rel, "checked": d, "scan_state": state_,
                                 "jobs_found": len(jobs), "complete": "yes" if complete else "no",
                                 "note": note})
 
-    # 下架：只针对本次“完整读取成功”的雇主；以本次 scan_id 判断，同一天多次运行也正确
+    # 下架：只针对本次“完整读取成功”的雇主；以本次 scan_id 判断，同一天多次运行也正确。
+    # 来自外部渠道（Job Bank 等）的记录不在雇主自己的招聘系统里，不参与下架判断。
     removed = []
     for key, rec in seen.items():
         if (rec.get("employer_id") in complete_ids and rec.get("active")
-                and rec.get("last_seen_run") != scan_id):
+                and key not in seen_now
+                and not str(rec.get("source", "")).startswith("channel:")):
             rec["active"] = False
             rec["closed_seen"] = d
             rec["closed_run"] = scan_id
+            if rec.get("employer_id") in fresh_ids:
+                # 这家雇主刚换了读取方式（例如从普通网页换成招聘系统），旧记录的编号对不上，
+                # 不能据此说职位下架；安静停用，不报告
+                rec["closed_reason"] = "读取方式更换，旧记录停用"
+                continue
             if rec.get("candidate_status", "relevant" if rec.get("relevant") else "") == "relevant":
                 removed.append(rec)
+
+    new_emps, ch_status = [], []
+    if channels and not only:
+        c_new, c_rev, c_base, new_emps, ch_status = scan_channels(seen, emps_all, state, d, scan_id)
+        new += c_new
+        review += c_rev
+        baseline += c_base
 
     states = {k: 0 for k in STATE_LABELS}
     for r in status_rows:
         states[r["scan_state"]] = states.get(r["scan_state"], 0) + 1
     fails = [r for r in status_rows if r["status"] == "fail"]
-    latest = {"date": d, "scan_id": scan_id, "first_run": first_run, "employers_total": len(emps),
-              "employers_ok": len(ok_ids), "employers_failed": len(fails),
+    tiers = {e["id"]: e.get("tier", "") for e in emps_all}
+    unreadable = sorted(({"id": r["id"], "name": r["name"], "tier": tiers.get(r["id"], ""),
+                          "scan_state": r["scan_state"]} for r in status_rows
+                         if r["scan_state"] in ("failed", "not_configured", "invalid")),
+                        key=lambda r: (r["tier"], r["name"]))
+    key_fn = lambda r: (r.get("tier") or "", r.get("employer") or "")   # noqa: E731
+    latest = {"date": d, "scan_id": scan_id, "scanned_at": now_iso, "first_run": first_run,
+              "employers_total": len(emps), "employers_ok": len(ok_ids), "employers_failed": len(fails),
               "employers_skipped": sum(r["status"] == "skip" for r in status_rows),
               "employers_complete": len(complete_ids), "scan_states": states,
-              "new_relevant": sorted(new, key=lambda r: (r["tier"], r["employer"])),
-              "new_review": sorted(review, key=lambda r: (r["tier"], r["employer"])),
+              "new_relevant": sorted(new, key=key_fn),
+              "new_review": sorted(review, key=key_fn),
+              "baseline": sorted(baseline, key=lambda r: (r.get("candidate_status") != "relevant",) + key_fn(r)),
+              "new_employers": new_emps, "channels": ch_status,
               "reopened_relevant": reopened,
-              "removed_relevant": removed, "failed": fails,
+              "removed_relevant": removed, "failed": fails, "unreadable": unreadable,
               "needs_attention": [r for r in status_rows if r["scan_state"] in ("partial", "invalid")]}
 
     # 先在内存里把所有输出准备好、校验通过，再统一写入
@@ -310,15 +567,22 @@ def scan(only=None, workers=8):
     w.writerows(sorted(status_rows, key=lambda r: (r["status"], r["id"])))
     report = render_report(latest)
 
+    if new_emps:
+        save_employers(emps_all)
     save_json("seen.json", seen)
     save_json("latest.json", latest)
+    save_json("employer_state.json", state)
+    update_recent(latest, now_iso)
     _atomic_write(os.path.join(DATA, "status.csv"), buf.getvalue())
     for name in ("latest.md", f"{d}.md"):
         _atomic_write(os.path.join(REPORTS, name), report)
     print(f"完成（{scan_id}）：{len(ok_ids)}/{len(emps)} 家读取成功，其中完整 {len(complete_ids)} 家；"
-          f"新相关职位 {len(new)} 个，待核实 {len(review)} 个，重新出现 {len(reopened)} 个，"
-          f"下架 {len(removed)} 个，失败 {len(fails)} 家")
+          f"新相关职位 {len(new)} 个，待核实 {len(review)} 个，新接入雇主的现有职位 {len(baseline)} 个，"
+          f"重新出现 {len(reopened)} 个，下架 {len(removed)} 个，失败 {len(fails)} 家，"
+          f"新加入名单的雇主 {len(new_emps)} 家")
     print("扫描状态：" + "，".join(f"{STATE_LABELS[k]} {v}" for k, v in states.items() if v))
+    for c in ch_status:
+        print(f"渠道 {c['channel']}：{c['status']} {c['detail']}")
     return latest
 
 
@@ -351,6 +615,29 @@ def render_report(L):
             lines.append(f"\n（另有 {len(review) - REVIEW_REPORT_MAX} 个未列出，见 data/latest.json）")
     else:
         lines.append("无")
+    new_emps = L.get("new_employers", [])
+    if new_emps:
+        lines += ["", f"## 新加入名单的雇主（{len(new_emps)}）", "",
+                  "这些雇主不在原来的名单里，是从外部招聘渠道发现的（发布了与 Claire 相关的职位），已自动加入 "
+                  "`data/employers.csv`，以后每次都会扫描。", "",
+                  "| 雇主 | 来源 | 发现的职位 | 招聘系统 |", "|---|---|---|---|"]
+        for e in new_emps:
+            lines.append(f"| {e['name']} | {e.get('source', '').replace('auto:', '')} | "
+                         f"[{e.get('found_job') or '职位'}]({e.get('found_url') or ''}) | "
+                         f"{e.get('ats') or ('官网' if e.get('careers_url') else '待识别')} |")
+    baseline = L.get("baseline", [])
+    if baseline:
+        rel = [r for r in baseline if r.get("candidate_status") == "relevant"]
+        lines += ["", f"## 新接入雇主/渠道的现有职位（相关 {len(rel)}，待核实 {len(baseline) - len(rel)}）", "",
+                  "这次第一次能读到这些雇主（或渠道）的招聘系统，下面是它们**目前已挂出**的职位，不一定是今天新发布的，"
+                  "但 Claire 之前可能没看到过。", ""]
+        lines += ["| 层级 | 雇主 | 职位 | 地点 | 说明 | 链接 |", "|---|---|---|---|---|---|"]
+        for r in baseline[:BASELINE_REPORT_MAX]:
+            lines.append(f"| {r['tier']} | {r['employer']} | {r['title']} | {r['location'] or '—'} | "
+                         f"{'可能相关' if r.get('candidate_status') == 'relevant' else r.get('filter_reason', '')} | "
+                         f"[打开]({r['url']}) |")
+        if len(baseline) > BASELINE_REPORT_MAX:
+            lines.append(f"\n（另有 {len(baseline) - BASELINE_REPORT_MAX} 个未列出，见 data/latest.json 的 baseline）")
     reopened = L.get("reopened_relevant", [])
     if reopened:
         lines += ["", f"## 重新出现的相关职位（{len(reopened)}）", ""]
@@ -368,6 +655,18 @@ def render_report(L):
     lines += ["", f"## 读取失败的雇主（{len(L['failed'])}）", ""]
     for r in L["failed"]:
         lines.append(f"- {r['name']}：{r['detail']}")
+    chs = L.get("channels", [])
+    if chs:
+        lines += ["", "## 外部招聘渠道", ""]
+        for c in chs:
+            lines.append(f"- {c['channel']}：{ {'ok': '成功', 'fail': '失败', 'skip': '跳过'}.get(c['status'], c['status'])}，"
+                         f"{c['detail']}")
+    unread = [r for r in L.get("unreadable", []) if r["scan_state"] == "not_configured"]
+    if unread:
+        top = [r["name"] for r in unread if r["tier"] in ("P0", "P1")]
+        lines += ["", f"## 还没有招聘入口的雇主（{len(unread)}）", "",
+                  "每周一会自动按公司名寻找它们的官网招聘页。"
+                  + (f"其中重点雇主：{'、'.join(top)}。" if top else "")]
     return "\n".join(lines) + "\n"
 
 
@@ -403,10 +702,11 @@ def main():
     sc = sub.add_parser("scan")
     sc.add_argument("--only", help="逗号分隔的雇主 id")
     sc.add_argument("--workers", type=int, default=8)
+    sc.add_argument("--no-channels", action="store_true", help="不读取 Job Bank 等外部渠道")
     sub.add_parser("reclassify")
     a = ap.parse_args()
     if a.cmd == "scan":
-        scan(set(a.only.split(",")) if a.only else None, a.workers)
+        scan(set(a.only.split(",")) if a.only else None, a.workers, channels=not a.no_channels)
     elif a.cmd == "reclassify":
         reclassify()
 

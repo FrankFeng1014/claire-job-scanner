@@ -1,14 +1,19 @@
-"""自动识别雇主用的招聘系统（ATS），减少人工整理。
+"""自动识别雇主用的招聘系统（ATS），并给没有招聘页的雇主自动找招聘页。
 
 用法：
-    python -m scanner.discover            # 识别结果写到 data/discovered.csv，不改 employers.csv
+    python -m scanner.discover            # 结果写到 data/discovered.csv，不改 employers.csv
     python -m scanner.discover --apply    # 把“高可信”结果写回 employers.csv
+    python -m scanner.discover --all      # 连已经能完整读取的雇主也重新识别一遍（一般不需要）
 
-两种识别方式：
-1. 高可信：打开雇主的官方招聘页，在网页源码里找 Greenhouse / Lever / Ashby / Workday /
-   SmartRecruiters / Workable 的链接或嵌入代码。
-2. 待人工确认：没有招聘页的雇主，按公司名猜测 Greenhouse / Lever / Ashby 的账号名并试探接口，
-   且招聘板名称与公司名相近才记录。猜出来的结果不会自动写回。
+哪些雇主会被处理：上次扫描没有“完整/部分成功”的雇主（读不到、零职位、普通网页、没有招聘页）。
+
+识别方法（按顺序）：
+1. 打开官方招聘页，在网页源码里找招聘系统的特征（Workday、SuccessFactors、Phenom、Oracle、
+   Avature、Radancy、Greenhouse、Lever、Ashby、SmartRecruiters、Workable、JazzHR、BambooHR、UKG 等）。
+2. 招聘页本身没有特征时，顺着页面上“搜索职位 / 查看空缺”之类的链接再找一层。
+3. 没有招聘页的雇主：按公司名猜官网（xxx.com / xxx.ca），确认网页标题里有公司名后，
+   找到官网上的 Careers 链接作为招聘页，再做第 1、2 步。
+4. 都不行：按公司名猜 Greenhouse / Lever / Ashby 账号（只记录为“待确认”，不会自动写回）。
 """
 from __future__ import annotations
 
@@ -17,43 +22,172 @@ import concurrent.futures as cf
 import csv
 import os
 import re
+from urllib.parse import urljoin, urlparse
 
 import requests
 
-from .main import DATA, UA, load_employers
+from .main import DATA, load_employers
 
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+
+# (系统, 正则, 如何从匹配结果得到 ats_id)
 PATTERNS = [
-    ("greenhouse", re.compile(r"(?:boards|job-boards)(?:-api)?\.greenhouse\.io/(?:v1/boards/|embed/job_board\?for=)?([\w-]+)", re.I)),
+    ("workday", re.compile(r"([\w-]+)\.(wd\d+)\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([\w-]+)", re.I)),
+    ("greenhouse", re.compile(r"(?:boards|job-boards)(?:-api)?\.greenhouse\.io/(?:v1/boards/|embed/job_board(?:/js)?\?for=)?([\w-]+)", re.I)),
     ("lever", re.compile(r"jobs\.lever\.co/([\w-]+)", re.I)),
     ("ashby", re.compile(r"jobs\.ashbyhq\.com/([\w.-]+)", re.I)),
-    ("workday", re.compile(r"([\w-]+)\.(wd\d+)\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([\w-]+)", re.I)),
     ("smartrecruiters", re.compile(r"(?:careers|jobs)\.smartrecruiters\.com/([\w-]+)", re.I)),
-    ("workable", re.compile(r"apply\.workable\.com/([\w-]+)", re.I)),
+    ("workable", re.compile(r"apply\.workable\.com/(?!api|assets)([\w-]+)", re.I)),
+    ("oracle", re.compile(r"([\w-]+\.fa\.[\w-]+\.oraclecloud\.com)/hcmUI/CandidateExperience/[a-z]{2}/sites/(CX_?\d*)", re.I)),
+    ("jazzhr", re.compile(r"([\w-]+)\.applytojob\.com", re.I)),
+    ("bamboohr", re.compile(r"(?<![\w-])([\w-]+)\.bamboohr\.com/(?:careers|jobs)", re.I)),
+    ("ultipro", re.compile(r"(recruiting\d*\.ultipro\.(?:com|ca))/([\w]+)/JobBoard/([0-9a-f-]{36})", re.I)),
 ]
-IGNORE_IDS = {"embed", "v1", "js", "css", "static", "assets", "wday", "careers", "jobs"}
+IGNORE_IDS = {"embed", "v1", "js", "css", "static", "assets", "wday", "careers", "jobs", "www", "api",
+              "bhrpendo", "images3", "images", "app"}
+SEARCH_LINK = re.compile(r"search|view (all )?(jobs|openings|opportunit|positions)|current (opportunit|openings|"
+                         r"positions|vacancies)|job (opportunit|openings|postings|board)|open (positions|roles)|"
+                         r"career opportunit|explore (jobs|roles|opportunit)|see (all )?(jobs|openings)|"
+                         r"find (a |your )?(job|role)|apply (now|today)|join (our team|us)|work (with|for) us|"
+                         r"careers?$|jobs?$|emplois|carrières", re.I)
 
 
-def from_page(s, url):
-    r = s.get(url, timeout=25)
-    r.raise_for_status()
-    html = r.text
+def detect(html, final_url=""):
+    """在网页源码里找招聘系统。返回 (系统, ats_id) 或 (None, None)。"""
     for kind, pat in PATTERNS:
+        ids = []
         for m in pat.finditer(html):
             g = m.groups()
-            aid = "/".join(g) if kind == "workday" else g[0]
-            if aid.split("/")[0].lower() not in IGNORE_IDS:
-                return kind, aid
+            if kind == "workday":
+                aid = "/".join(g)
+            elif kind in ("oracle", "ultipro"):
+                aid = "/".join(g)
+            else:
+                aid = g[0]
+            if aid.split("/")[0].lower() in IGNORE_IDS or aid in ids:
+                continue
+            if kind == "workday" and g[2].lower() in ("wday", "en-us", "job"):
+                continue
+            ids.append(aid)
+        if ids:
+            # Workday 一家公司可能有几个招聘板（社招、校招），都读
+            return kind, ";".join(ids[:3]) if kind == "workday" else ids[0]
+    host_root = f"{urlparse(final_url).scheme}://{urlparse(final_url).netloc}" if final_url else ""
+    if re.search(r"rmkcdn|jobs2web|j2w\.", html) and host_root:
+        return "successfactors", host_root
+    if re.search(r"phApp|cdn\.phenompeople", html) and re.search(r'"refNum"\s*:', html) and final_url:
+        m = re.search(r'"baseUrl"\s*:\s*"(https?://[^"]+?)/?"', html)
+        if m:
+            return "phenom", m.group(1).replace("\\/", "/")
+        p = re.match(r"(https?://[^/]+(?:/[\w-]+)?/[a-z]{2}/[a-z]{2})(?:/|$)", final_url)
+        if p:
+            return "phenom", p.group(1)
+    m = re.search(r'href="([^"]*/careers/SearchJobs)[/"?]', html, re.I)
+    if m and final_url:
+        return "avature", re.sub(r"/searchjobs$", "", urljoin(final_url, m.group(1)), flags=re.I)
+    if re.search(r"radancy|tmpwebeng", html, re.I) and "/search-jobs" in html and host_root:
+        return "radancy", host_root
     return None, None
 
 
+def _session():
+    s = requests.Session()
+    s.headers.update({"User-Agent": UA, "Accept-Language": "en-CA,en;q=0.9"})
+    return s
+
+
+def from_page(s, url, follow=True):
+    """打开招聘页识别；找不到就顺着“搜索职位”之类的链接再看一层。"""
+    r = s.get(url, timeout=25)
+    r.raise_for_status()
+    final = getattr(r, "url", None) or url
+    k, a = detect(r.text, final)
+    if k or not follow:
+        return k, a, final
+    tried = 0
+    for href, text in re.findall(r'<a[^>]+href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', r.text, re.S | re.I):
+        t = re.sub(r"<[^>]+>|\s+", " ", text).strip()
+        if not t or len(t) > 60 or not SEARCH_LINK.search(t):
+            continue
+        u2 = urljoin(final, href)
+        if not u2.startswith("http") or u2.rstrip("/") == final.rstrip("/"):
+            continue
+        tried += 1
+        try:
+            k, a, f = from_page(s, u2, follow=False)
+            if k:
+                return k, a, f
+        except Exception:  # noqa: BLE001
+            pass
+        if tried >= 4:
+            break
+    return None, None, final
+
+
+def _words(name):
+    base = re.sub(r"\(.*?\)", " ", name).lower().replace("co-op", "coop")
+    base = re.sub(r"\b(inc|ltd|limited|corp|corporation|canada|group|the|of|and|company)\b\.?", " ", base)
+    return re.findall(r"[a-z0-9]+", base)
+
+
+# 不能当作“官网招聘页”的链接：社交网站、招聘网站
+BAD_CAREER_HOSTS = re.compile(r"linkedin|indeed|glassdoor|facebook|twitter|x\.com|instagram|youtube|"
+                              r"ziprecruiter|workopolis|monster|eluta|talent\.com", re.I)
+ATS_HOSTS = re.compile(r"myworkdayjobs|greenhouse|lever\.co|ashbyhq|smartrecruiters|workable|icims|taleo|"
+                       r"successfactors|oraclecloud|applytojob|bamboohr|ultipro|dayforcehcm|paycom|adp\.com|"
+                       r"jobvite|recruitee|breezy|pinpointhq|teamtailor|njoyn|avature|phenompeople", re.I)
+
+
+def _base_domain(host):
+    parts = host.lower().split(":")[0].split(".")
+    return ".".join(parts[-2:]) if len(parts) >= 2 else host
+
+
+def guess_site(s, name):
+    """按公司名猜官网，确认域名和网页标题都对得上公司名，再找官网上的招聘页链接。"""
+    w = _words(name)
+    if not w:
+        return None
+    joined = "".join(w)
+    if len(joined) < 4:
+        return None          # 名字太短（如 Ada），猜域名容易猜错
+    cands = [f"https://www.{joined}.com", f"https://www.{joined}.ca", f"https://{joined}.com", f"https://{joined}.ca"]
+    if len(w) > 1:
+        cands += [f"https://www.{'-'.join(w)}.com", f"https://www.{'-'.join(w)}.ca"]
+    for c in dict.fromkeys(cands):
+        try:
+            r = s.get(c, timeout=12)
+        except Exception:  # noqa: BLE001
+            continue
+        if not r.ok:
+            continue
+        host = urlparse(getattr(r, "url", c) or c).netloc.lower()
+        host_n = re.sub(r"[^a-z0-9]", "", host)
+        if joined[:10] not in host_n:
+            continue         # 跳转到了别的公司网站
+        title = (re.search(r"<title[^>]*>(.*?)</title>", r.text, re.S | re.I) or [None, ""])[1].lower()
+        title_n = re.sub(r"[^a-z0-9]", "", title)
+        if joined[:12] not in title_n and not all(x in title_n for x in w[:2]):
+            continue
+        for href, text in re.findall(r'<a[^>]+href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', r.text, re.S | re.I):
+            t = re.sub(r"<[^>]+>|\s+", " ", text).strip().lower()
+            if not (re.fullmatch(r"(careers?|jobs|join (our team|us)|work (with|for) us|careers? at .{1,40}|"
+                                 r"job opportunities|employment( opportunities)?|carrières|emplois)", t) or
+                    re.search(r"/(careers?|jobs|employment|join-us|work-with-us)/?$", href, re.I)):
+                continue
+            u = urljoin(getattr(r, "url", c) or c, href)
+            h2 = urlparse(u).netloc
+            if not u.startswith("http") or BAD_CAREER_HOSTS.search(h2):
+                continue
+            if _base_domain(h2) != _base_domain(host) and not ATS_HOSTS.search(h2):
+                continue
+            return u
+    return None
+
+
 def slugs(name):
-    base = re.sub(r"\(.*?\)", "", name).lower()
-    base = re.sub(r"\b(inc|ltd|limited|corp|corporation|canada|group|the|of|co)\b\.?", " ", base)
-    words = re.findall(r"[a-z0-9]+", base)
-    if not words:
-        return []
-    # 只用完整公司名（不再用第一个单词），避免把 "National Ballet" 猜成 "national"
-    c = ["".join(words), "-".join(words)]
+    w = _words(name)
+    c = ["".join(w), "-".join(w)] if w else []
     return list(dict.fromkeys(x for x in c if len(x) >= 4))
 
 
@@ -69,63 +203,112 @@ def guess(s, name):
             r = s.get(f"https://boards-api.greenhouse.io/v1/boards/{sl}", timeout=15)
             if r.ok and similar(r.json().get("name", ""), name):
                 return "greenhouse", sl
-        except Exception:
+        except Exception:  # noqa: BLE001
             pass
         try:
             r = s.get(f"https://api.lever.co/v0/postings/{sl}?mode=json&limit=1", timeout=15)
             if r.ok and isinstance(r.json(), list) and r.json():
                 return "lever", sl
-        except Exception:
+        except Exception:  # noqa: BLE001
             pass
         try:
             r = s.get(f"https://api.ashbyhq.com/posting-api/job-board/{sl}", timeout=15)
             if r.ok and r.json().get("jobs"):
                 return "ashby", sl
-        except Exception:
+        except Exception:  # noqa: BLE001
             pass
     return None, None
 
 
 def work(emp):
-    if emp.get("ats"):
-        return None
-    s = requests.Session()
-    s.headers["User-Agent"] = UA
-    if emp.get("careers_url"):
+    s = _session()
+    row = {**emp, "new_careers_url": "", "confidence": "", "how": ""}
+    url = (emp.get("careers_url") or "").split(";")[0].strip()
+    found_site = False
+    if not url:
         try:
-            k, a = from_page(s, emp["careers_url"])
+            url = guess_site(s, emp["name"]) or ""
+            found_site = bool(url)
+        except Exception:  # noqa: BLE001
+            url = ""
+    if url:
+        try:
+            k, a, final = from_page(s, url)
             if k:
-                return {**emp, "ats": k, "ats_id": a, "confidence": "high", "how": "招聘页源码中找到"}
+                same = (k == emp.get("ats") and a == emp.get("ats_id"))
+                return {**row, "ats": k, "ats_id": a, "new_careers_url": url if found_site else "",
+                        "confidence": "" if same else "high",
+                        "how": ("已是当前设置" if same else
+                                ("按公司名找到官网招聘页，" if found_site else "") + "网页源码中找到招聘系统")}
+            if found_site:
+                return {**row, "new_careers_url": url, "confidence": "high",
+                        "how": "按公司名找到官网招聘页（未识别招聘系统，按普通网页读取）"}
         except Exception as e:  # noqa: BLE001
-            return {**emp, "ats": "", "ats_id": "", "confidence": "", "how": f"招聘页打不开：{type(e).__name__}"}
+            row["how"] = f"招聘页打不开：{type(e).__name__}"
+            if found_site:
+                return {**row, "new_careers_url": url, "confidence": "high", "how": "按公司名找到官网招聘页（暂时打不开）"}
+    if emp.get("ats"):
+        return {**row, "how": row["how"] or "未识别到新的招聘系统"}
     k, a = guess(s, emp["name"])
     if k:
-        return {**emp, "ats": k, "ats_id": a, "confidence": "review", "how": "按公司名猜测，需人工确认"}
-    return {**emp, "ats": "", "ats_id": "", "confidence": "", "how": "未识别"}
+        return {**row, "ats": k, "ats_id": a, "confidence": "review", "how": "按公司名猜测，需人工确认"}
+    return {**row, "how": row["how"] or "未识别"}
+
+
+def needs_discovery(emps, all_=False):
+    """上次没读全的雇主。刚改过设置、还没按新设置扫描过的雇主先不动（等扫描结果出来再说）。"""
+    path = os.path.join(DATA, "status.csv")
+    rows = {}
+    if os.path.exists(path):
+        with open(path, newline="", encoding="utf-8") as f:
+            rows = {r["id"]: r for r in csv.DictReader(f)}
+    if all_:
+        return list(emps)
+    out = []
+    for e in emps:
+        r = rows.get(e["id"])
+        if r and r.get("scan_state") in ("complete", "partial"):
+            continue
+        if r and e.get("ats") and not (r.get("detail") or "").startswith(e["ats"] + ":"):
+            continue
+        out.append(e)
+    return out
+
+
+def write_employers(emps):
+    from .main import save_employers
+    save_employers(emps)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="把高可信结果写回 employers.csv")
+    ap.add_argument("--all", action="store_true", help="所有雇主都重新识别")
+    ap.add_argument("--only", help="逗号分隔的雇主 id")
     a = ap.parse_args()
     emps = load_employers()
-    with cf.ThreadPoolExecutor(max_workers=8) as ex:
-        res = [r for r in ex.map(work, emps) if r]
-    cols = ["id", "name", "tier", "careers_url", "ats", "ats_id", "confidence", "how"]
+    todo = needs_discovery(emps, a.all)
+    if a.only:
+        todo = [e for e in emps if e["id"] in set(a.only.split(","))]
+    with cf.ThreadPoolExecutor(max_workers=10) as ex:
+        res = list(ex.map(work, todo))
+    cols = ["id", "name", "tier", "careers_url", "new_careers_url", "ats", "ats_id", "confidence", "how"]
     with open(os.path.join(DATA, "discovered.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader()
         w.writerows(res)
     high = {r["id"]: r for r in res if r["confidence"] == "high"}
-    print(f"待识别 {len(res)} 家：高可信 {len(high)}，待确认 {sum(r['confidence']=='review' for r in res)}")
+    print(f"待识别 {len(res)} 家：高可信 {len(high)}，待确认 {sum(r['confidence'] == 'review' for r in res)}")
     if a.apply and high:
         for e in emps:
-            if e["id"] in high:
-                e["ats"], e["ats_id"] = high[e["id"]]["ats"], high[e["id"]]["ats_id"]
-        with open(os.path.join(DATA, "employers.csv"), "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(f, fieldnames=list(emps[0]))
-            w.writeheader()
-            w.writerows(emps)
+            h = high.get(e["id"])
+            if not h:
+                continue
+            if h.get("new_careers_url") and not e.get("careers_url"):
+                e["careers_url"] = h["new_careers_url"]
+            if h.get("ats") and h.get("ats_id"):
+                e["ats"], e["ats_id"] = h["ats"], h["ats_id"]
+        write_employers(emps)
         print(f"已写回 employers.csv：{len(high)} 家")
 
 

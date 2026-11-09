@@ -96,7 +96,7 @@ def test_legacy_seen_without_new_fields(env):
     env["boards"]["a"] = adapters.AdapterResult([job(1)])
     L = main.scan()
     s = seen(env)
-    assert s["a::1"]["first_seen"] == "2026-11-01" and s["a::1"]["last_seen_run"] == L["scan_id"]
+    assert s["a::1"]["first_seen"] == "2026-11-01" and s["a::1"]["last_seen"] == L["date"]
     assert s["a::9"]["active"] is False and [r["job_id"] for r in L["removed_relevant"]] == ["9"]
 
 

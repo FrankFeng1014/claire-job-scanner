@@ -2,11 +2,13 @@ name: 每日招聘扫描
 
 on:
   schedule:
-    - cron: "17 11 * * *"     # 每天 UTC 11:17（多伦多 6:17/7:17）——时间未改动
+    # 每 2 小时扫描一次（GitHub 的定时任务常会推迟几十分钟，所以分钟数避开整点）。
+    # 公开仓库的 Actions 免费，不限分钟数。
+    - cron: "17 */2 * * *"
   workflow_dispatch:
     inputs:
       discover:
-        description: "先运行招聘系统自动识别（discover --apply）"
+        description: "先运行招聘系统自动识别（discover --apply；平时每周自动跑一次）"
         type: boolean
         default: false
       test_email:
@@ -37,7 +39,7 @@ jobs:
   scan:
     if: ${{ !inputs.test_email }}
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -49,16 +51,22 @@ jobs:
       - name: 测试
         run: python -m pytest -q
 
-      - name: 识别招聘系统（每周一或手动勾选）
+      - name: 识别招聘系统（每 7 天一次，或手动勾选）
         run: |
-          if [ "${{ inputs.discover }}" = "true" ] || [ "$(date -u +%u)" = "1" ]; then
-            python -m scanner.discover --apply
+          last=$(cat data/discover_last.txt 2>/dev/null || echo 0)
+          now=$(date -u +%s)
+          if [ "${{ inputs.discover }}" = "true" ] || [ $((now - last)) -ge 590000 ]; then
+            python -m scanner.discover --apply && echo "$now" > data/discover_last.txt
           else
-            echo "今天不是周一，跳过识别"
+            echo "距上次识别不到 7 天，跳过"
           fi
 
-      - name: 扫描全部雇主
+      - name: 扫描全部雇主 + 外部招聘渠道
         id: scan
+        env:
+          # 可选：在仓库 Settings → Secrets and variables → Actions 里添加，就会多读 Adzuna 渠道
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
         run: python -m scanner.main scan
 
       # 提交和通知相互独立：任一步失败都不影响另一步
@@ -89,10 +97,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           n=$(python -c "import json;print(len(json.load(open('data/latest.json'))['new_relevant']))")
-          echo "新相关职位：$n"
-          if [ "$n" -eq 0 ]; then exit 0; fi
+          m=$(python -c "import json;print(len(json.load(open('data/latest.json')).get('new_employers',[])))")
+          echo "新相关职位：$n  新加入名单的雇主：$m"
+          if [ "$n" -eq 0 ] && [ "$m" -eq 0 ]; then exit 0; fi
           day=$(date -u +%F)
-          { echo "@${{ github.repository_owner }} 扫描到 $n 个新岗位："; echo; head -c 60000 reports/latest.md; } > /tmp/body.md
+          { echo "@${{ github.repository_owner }} 扫描到 $n 个新岗位，新加入名单的雇主 $m 家（$(TZ=America/Toronto date '+%H:%M') 多伦多时间）："; echo; head -c 60000 reports/latest.md; } > /tmp/body.md
           existing=$(gh issue list --state all --search "\"新岗位\" \"$day\" in:title" --json number,title \
                      --jq "map(select(.title | contains(\"$day\"))) | .[0].number // empty")
           if [ -n "$existing" ]; then
