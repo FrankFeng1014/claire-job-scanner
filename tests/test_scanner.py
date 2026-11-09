@@ -134,10 +134,10 @@ def test_discover_finds_ats_in_page():
     from scanner import discover
     html = '<iframe src="https://boards.greenhouse.io/embed/job_board?for=acmeco"></iframe>'
     s = FakeSession({"acme.com": Resp(text=html)})
-    assert discover.from_page(s, "https://acme.com/careers") == ("greenhouse", "acmeco")
+    assert discover.from_page(s, "https://acme.com/careers")[:2] == ("greenhouse", "acmeco")
     html2 = '<a href="https://acme.wd3.myworkdayjobs.com/en-US/Acme_Careers">Jobs</a>'
     s2 = FakeSession({"acme.com": Resp(text=html2)})
-    assert discover.from_page(s2, "https://acme.com/careers") == ("workday", "acme/wd3/Acme_Careers")
+    assert discover.from_page(s2, "https://acme.com/careers")[:2] == ("workday", "acme/wd3/Acme_Careers")
 
 
 def test_workday_total_only_on_first_page():

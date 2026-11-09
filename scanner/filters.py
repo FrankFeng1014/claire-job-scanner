@@ -57,7 +57,8 @@ HARD_EXCLUDE = [
      r"identity|access management|cloud|data center|network|infrastructure|technical|tech support|"
      r"\bsap\b|oracle|salesforce|servicenow|\bjava\b|python|\.net\b|back[- ]?end|front[- ]?end|"
      r"full[- ]?stack|software|application packaging|application development|application consultant|"
-     r"\bitam\b|kubernetes|\bqa\b|satellite|information security|ccaas", "技术/IT岗"),
+     r"\bitam\b|kubernetes|\bqa\b|satellite|information security|ccaas|"
+     r"server administrator|systems? administrator|database|help ?desk|desktop support", "技术/IT岗"),
     (r"\bstore\b|sales associate|retail associate|cashier|barista|\bcook\b|warehouse|driver|"
      r"security guard|electrician|mechanic|millwright|machinist|seasonal retail|team associate|"
      r"fulfil?lment|overnight|distribution cent|team leader|stocking|asset protection|"
@@ -75,6 +76,7 @@ HARD_EXCLUDE = [
     (r"licen[sc]ed|financial advisor|wealth advisor|financial planner", "需执照/持牌顾问岗"),
     (r"nurse|clinical|pharmac|physician|therapist", "医疗专业岗"),
     (r"executive assistant", "高管助理（通常要多年经验）"),
+    (r"\bvolunteer\b|\bunpaid\b|b[ée]n[ée]vole", "志愿者/无薪岗位"),
     (r"payroll|benefits", "薪酬福利操作岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
      "仅限在校 Co-op/学生"),
@@ -157,6 +159,10 @@ def classify(job: dict):
 
     if not loc and (NON_TARGET_URL.search(url) or FOREIGN_URL.search(url)):
         return "irrelevant", "地点不在目标地区（从链接识别）"
+    # 只写了 "Canada"（全国性雇主常见），城市未知：不排除，但需要核实
+    country_only = bool(re.fullmatch(r"\s*(canada|ca|can|multiple locations|various locations)\s*", loc, re.I))
+    if country_only:
+        loc = ""
     url_loc = _url_location(url) if not loc else ""
     if url_loc and not _url_loc_ok(url_loc):
         return "irrelevant", f"地点不在目标地区（链接显示：{url_loc[:40]}）"
@@ -174,6 +180,8 @@ def classify(job: dict):
         return "irrelevant", "职位名没有相关职能关键词"
     if re.search(r"consultant|advisor", t) and not _entry.search(t):
         review_reasons.append("顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门")
+    if country_only:
+        review_reasons.append("地点只写了 Canada，需确认城市")
     if review_reasons:
         return "review", "；".join(review_reasons)
     if not loc:
