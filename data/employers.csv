@@ -252,7 +252,7 @@ medspa-partners,MedSpa Partners,P2,医美诊所并购平台（Toronto）,,,https
 mejuri,Mejuri,P2,轻奢珠宝/DTC零售,greenhouse,mejuri,https://job-boards.greenhouse.io/mejuri,original,
 menkes-developments,Menkes Developments,P2,房地产,,,,original,
 mercer-canada,Mercer Canada,P1,咨询/养老金精算,workday,mmc/wd1/MMC,https://marketingpreview.mercer.com/content/mercer/north-america/ca/en/mercer-careers/recent-graduates.html,original,
-metro-inc,Metro Inc.,P2,零售,,,,original,
+metro-inc,Metro Inc.,P2,零售,,,https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=E1EA9276FE3A682DD15CD3D2402B9E5E,original,
 metrolinx,Metrolinx,P1,公共部门/交通,oracle,ehtc.fa.ca2.oraclecloud.com/CX_1,https://metrolinx.com/careers,original,
 mevotech,Mevotech,P2,汽车后市场零部件（Toronto）,jazzhr,mevotech,https://www.mevotech.com/careers/,original,
 microsoft-canada,Microsoft Canada,P0,科技,,,https://careers.microsoft.com/v2/global/en/recentgraduate,original,
@@ -428,7 +428,7 @@ toronto-public-library,Toronto Public Library,P2,公共部门/文化,,,https://t
 toronto-public-library-foundation,Toronto Public Library Foundation,P1,非营利/公共图书馆基金会,,,https://tplfoundation.ca/careers/,original,
 toronto-summer-music,Toronto Summer Music Festival,P2,艺术节（Toronto）,,,,original,
 toronto-symphony-orchestra,Toronto Symphony Orchestra,P2,文化机构,,,https://www.tso.ca/footer-links/employment,original,
-toyota-canada,Toyota Canada,P2,汽车,,,,original,
+toyota-canada,Toyota Canada,P2,汽车,workday,toyota/wd503/TMNA,https://careers.toyota.com/us/en/,original,
 trailcon-leasing,Trailcon,P2,挂车租赁与维修（Brampton）,,,https://trailcon.com/about/careers/,original,
 transunion-canada,TransUnion Canada,P2,金融数据,,,,original,
 tridel,Tridel,P2,房地产,,,https://www.tridel.com/about-tridel/careers/,original,
@@ -460,3 +460,32 @@ york-university,York University,P2,大学（财务/行政）,,,,original,
 yorkville-university,Yorkville University,P2,私立高等教育（含Toronto Film School）（Toronto）,jazzhr,yorkvilleuniversity,https://www.yorkvilleu.ca/job-postings/,original,
 young-peoples-theatre,Young People's Theatre,P2,剧团（儿童剧院）（Toronto）,,,,original,
 zeifmans,Zeifmans,P2,会计（SME）,,,https://www.zeifmans.ca/career/,original,
+ontario-media-development-ontario-creatif,Ontario Media Development Corporation / Ontario Créatif,P2,自动发现（Work In Culture）,,,,auto:workinculture,2026-11-09
+aurora-cultural-centre,Aurora Cultural Centre,P2,自动发现（Work In Culture）,,,http://www.auroraculturalcentre.ca,auto:workinculture,2026-11-09
+secret-city,Secret City,P2,自动发现（Work In Culture）,,,https://www.secretcityadventures.com,auto:workinculture,2026-11-09
+musicounts,MusiCounts,P2,自动发现（Work In Culture）,,,https://musicounts.ca/en/,auto:workinculture,2026-11-09
+substrakt,Substrakt Limited,P2,自动发现（Work In Culture）,workable,substrakt,https://substrakt.com/,auto:workinculture,2026-11-09
+mgg,MGG,P2,自动发现（Work In Culture）,,,,auto:workinculture,2026-11-09
+wesdome-gold-mines,Wesdome Gold Mines Ltd.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+straight-freight,STRAIGHT FREIGHT LTD.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+dexterra,Dexterra,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+saa-accounting-tax-consultants,SAA ACCOUNTING AND TAX CONSULTANTS,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+imgadgets,IMGadgets,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+olli-brands,Olli Brands inc,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+dawson-partners,Dawson Partners Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+investment-regulatory-organization,Canadian Investment Regulatory Organization,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+sapling-financial-consultants,Sapling Financial Consultants Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+sns-tax-professional,SNS Tax Professional Corporation,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+ringcentral,RingCentral Canada Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+toradex-solutions,Toradex Solutions Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+springfield-college,Springfield College,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+philrobben,Philrobben Group,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+sound-insurance-services,Sound Insurance Services Inc,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+taxsmile,TAXSMILE INC.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+bond-securcom,Bond Securcom,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+ptag,PTAG,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+superior-door-gate-systems,Superior Door & Gate Systems,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+bajaj-tax-financial-secrets,BAJAJ TAX & FINANCIAL SECRETS INC.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+kaizen-health,KAIZEN HEALTH GROUP,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+pathstreams,Pathstreams,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
+derose-barristers-solicitors-professional,DeRose Barristers & Solicitors Professional Corporation,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-09
