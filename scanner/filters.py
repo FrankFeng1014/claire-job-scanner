@@ -102,6 +102,16 @@ RELEVANT = [
     # 艺术与非营利
     r"gallery|museum|curatorial|collections|registrar|arts? admin|arts? management|exhibition|"
     r"fundrais|philanthrop|advancement|development coordinator|stewardship|donor|grant",
+    # 2026-11-10: Claire 20 个新增岗位族及常见同义词；只做发现初筛，不替代 JD 资格核查。
+    r"reconcil|cash management|cash operations|payment operations|payments? analyst|transaction operations|"
+    r"data quality|data integrity|data validat|data governance|data steward|"
+    r"budget|financial planning support|pricing|commercial operations|revenue operations|"
+    r"business process|process improvement|process coordinator|"
+    r"client onboarding|customer onboarding|onboarding coordinator|implementation|client delivery|"
+    r"proposal|\\brfp\\b|\\bbid coordinator\\b|\\bpmo\\b|project controls|"
+    r"grants? administrat|grants? coordinator|development assistant|fundraising|donor relations|"
+    r"sponsorship|research administrat|research grants?|"
+    r"product operations|content operations|web content|website content|wordpress content",
     # 通用入门头衔
     r"\bassociate\b|coordinator|administrator|assistant|officer|specialist|junior|\bjr\b",
 ]
@@ -238,6 +248,15 @@ _FIT_ARTS = re.compile(r"gallery|museum|curat|art\b|arts\b|exhibit|collections? 
                        r"donor|philanthrop|grant|programs? (coordinator|associate|officer)", re.I)
 _FIT_OK = re.compile(r"operations|procurement|purchasing|marketing|communications|project|program|"
                      r"administrat|client service|account services|planning", re.I)
+# 能力驱动的新增岗位族：用于排序，不等于满足招聘广告的硬性条件。
+_FIT_EXPANDED = re.compile(
+    r"reconcil|data quality|data integrity|data validat|treasury operations|cash management|"
+    r"payment operations|transaction operations|budget|pricing|commercial operations|"
+    r"business process|process improvement|onboarding|implementation|client delivery|"
+    r"proposal|\\brfp\\b|\\bpmo\\b|project controls|grant|development assistant|"
+    r"sponsorship|research administrat|product operations|content operations|web content|"
+    r"website content|revenue operations", re.I)
+
 _FIT_WEAK = re.compile(r"sales|customer service|representative|call cent|banking associate|personal banking|"
                        r"teller|receptionist|clerk|cashier|retail", re.I)
 _FIT_TARGET = re.compile(r"toronto|ottawa|mississauga|markham|vaughan|brampton|oakville|richmond hill|"
@@ -275,6 +294,9 @@ def fit_score(rec: dict):
     elif _FIT_ARTS.search(title):
         score += 25
         why.append("艺术/文化")
+    elif _FIT_EXPANDED.search(title):
+        score += 22
+        why.append("新增岗位族：数据/财务运营/协调")
     elif _FIT_OK.search(title):
         score += 12
         why.append("运营/项目类")
