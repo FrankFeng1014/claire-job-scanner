@@ -433,3 +433,19 @@ def test_embedded_phenom_assistant_is_not_the_careers_site():
     html = ('<script>phApp.ddo = {"refNum":"MDLZ"}; "baseUrl":"https://virtualhiringassistant.mdlz.com/global/en/"'
             '</script><script src="https://cdn.phenompeople.com/x.js"></script>')
     assert discover.detect(html, "https://www.mdlz.com/careers/jobs/") == (None, None)
+
+
+def test_new_and_baseline_ranked_together_by_fit_not_tier(env):
+    env["write"]([{"id": "a", "name": "BigBank", "ats": "greenhouse", "ats_id": "a", "tier": "P0"}])
+    env["boards"]["a"] = adapters.AdapterResult([J(1, "Business Analyst")])
+    main.scan()
+    env["write"]([{"id": "a", "name": "BigBank", "ats": "greenhouse", "ats_id": "a", "tier": "P0"},
+                  {"id": "b", "name": "SmallCo", "ats": "greenhouse", "ats_id": "b", "tier": "P2"}])
+    env["boards"]["a"] = adapters.AdapterResult([J(1, "Business Analyst"), J(2, "Personal Banking Associate")])
+    env["boards"]["b"] = adapters.AdapterResult([J(5, "Junior Financial Analyst")])     # 新接入
+    L = main.scan()
+    order = [(r["employer"], r["found_as"]) for r in L["candidates"]]
+    assert order == [("SmallCo", "新接入"), ("BigBank", "新发布")]
+    assert L["candidates"][0]["fit_score"] > L["candidates"][1]["fit_score"]
+    md = (env["path"] / "reports" / "latest.md").read_text()
+    assert "## 本次可申请的职位（2）" in md and md.index("SmallCo") < md.index("BigBank")

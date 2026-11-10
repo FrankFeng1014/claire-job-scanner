@@ -216,3 +216,71 @@ def title_ok(title: str) -> bool:
 def relevant(job: dict) -> bool:
     """旧接口：保留给旧报告字段 relevant 使用，等价于 candidate_status == relevant。"""
     return classify(job)[0] == "relevant"
+
+
+# ---------- 与 Claire 的匹配度（用于排序，0–100） ----------
+# Claire：U of T 经济学 + 艺术史，2027 年 5 月毕业，有 PwC 审计实习和画廊实习。
+# 排序看岗位本身是否适合她，雇主层级（P0/P1/P2）只在分数接近时起一点作用。
+_FIT_ENTRY = re.compile(r"new grad|graduate|\b2027\b|campus|junior|\bjr\b|entry|trainee|rotational|"
+                        r"development program|leadership program|\bassociate\b|analyst\s*(i|1)\b|"
+                        r"coordinator|assistant|\bintern", re.I)
+_FIT_CORE = re.compile(r"audit|accounting|accountant|financial analyst|finance|fp&a|financial reporting|"
+                       r"econom|valuation|investment|research analyst|risk|compliance|treasury|tax|"
+                       r"actuar|underwrit|consult|strategy|business analyst|data analyst|analyst", re.I)
+_FIT_ARTS = re.compile(r"gallery|museum|curat|art\b|arts\b|exhibit|collection|registrar|archiv|cultur|"
+                       r"artist|theatre|music|festival|fundrais|development (coordinator|officer|associate)|"
+                       r"donor|philanthrop|grant|programs? (coordinator|associate|officer)", re.I)
+_FIT_OK = re.compile(r"operations|procurement|purchasing|marketing|communications|project|program|"
+                     r"administrat|client service|account services|planning", re.I)
+_FIT_WEAK = re.compile(r"sales|customer service|representative|call cent|banking associate|personal banking|"
+                       r"teller|receptionist|clerk|cashier|retail", re.I)
+_FIT_TARGET = re.compile(r"toronto|ottawa|mississauga|markham|vaughan|brampton|oakville|richmond hill|"
+                         r"north york|scarborough|etobicoke|\bGTA\b|burlington|pickering|ajax|whitby|"
+                         r"newmarket|aurora|milton", re.I)
+
+
+def fit_score(rec: dict):
+    """返回 (分数, 简短理由)。分数越高越值得 Claire 先看。"""
+    title = rec.get("title") or ""
+    loc = rec.get("location") or ""
+    score, why = 0, []
+    if _FIT_TARGET.search(loc):
+        score += 30
+        why.append("多伦多/渥太华")
+    elif re.search(r"remote|hybrid", loc, re.I):
+        score += 20
+        why.append("可远程")
+    elif not loc.strip() or re.fullmatch(r"\s*(canada|ca|can)\s*", loc, re.I):
+        score += 10
+        why.append("地点待确认")
+    else:
+        score += 15
+    if _FIT_ENTRY.search(title):
+        score += 30
+        why.append("入门级")
+    elif re.search(r"analyst|staff accountant|specialist|officer", title, re.I):
+        score += 15          # 常见的初级到中级头衔，需打开确认经验要求
+    if re.search(r"new grad|graduate|\b2027\b|campus|rotational|development program|leadership program", title, re.I):
+        score += 10
+        why.append("应届/项目")
+    if _FIT_CORE.search(title):
+        score += 25
+        why.append("财务/审计/分析")
+    elif _FIT_ARTS.search(title):
+        score += 25
+        why.append("艺术/文化")
+    elif _FIT_OK.search(title):
+        score += 12
+        why.append("运营/项目类")
+    if re.search(r"supervisor|manager|\blead\b|head of|director|principal|senior|\bsr\b", title, re.I):
+        score -= 30
+        why.append("头衔偏资深")
+    if _FIT_WEAK.search(title):
+        score -= 15
+        why.append("偏销售/柜台")
+    if re.search(r"\b(ii|2|iii|3)\b", title, re.I) and not re.search(r"\b2027\b", title):
+        score -= 5
+    if rec.get("candidate_status") == "review":
+        score -= 10
+    score += {"P0": 3, "P1": 2, "P2": 1}.get(rec.get("tier") or "", 0)
+    return max(0, min(100, score)), "、".join(why)
