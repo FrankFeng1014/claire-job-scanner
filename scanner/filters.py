@@ -52,6 +52,8 @@ HARD_EXCLUDE = [
      r"\bmanager\b|\bteam lead\b|\blead\b|\bleader\b|\bpartner\b|associate director|associate vice|"
      r"associate partner",
      "资深或管理岗"),
+    (r"\bsupervisors?\b|\bsupervising\b", "资深或管理岗"),
+    (r"\bvtr\b|video editor|reporter|copywriter|copy editor|medical (?:editor|writer)", "新闻/影视/医学编辑岗"),
     (r"\bavp\b|\bsvp\b|\bevp\b", "资深或管理岗"),
     (r"engineer|developer|devops|architect|scientist|programmer|technician|\bsoc\b|cyber|"
      r"identity|access management|cloud|data center|network|infrastructure|technical|tech support|"
@@ -80,6 +82,7 @@ HARD_EXCLUDE = [
      r"instructional assistant", "大学教职/助教岗"),
     (r"\bvolunteer\b|\bunpaid\b|b[ée]n[ée]vole", "志愿者/无薪岗位"),
     (r"payroll|benefits", "薪酬福利操作岗"),
+    (r"settlement (?:worker|counsell?or)|newcomer settlement", "移民安置服务岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
      "仅限在校 Co-op/学生"),
 ]
@@ -102,9 +105,32 @@ RELEVANT = [
     # 艺术与非营利
     r"gallery|museum|curatorial|collections|registrar|arts? admin|arts? management|exhibition|"
     r"fundrais|philanthrop|advancement|development coordinator|stewardship|donor|grant",
+    # 2026-11-10 新增岗位族（家人与 GPT 列出的 20 个职位 + 同义词）：财务运营、对账、支付、数据质量
+    r"reconcil|financial operations|finance operations|accounting operations|cash management|cash operations|"
+    r"liquidity|payments? operations|payments? analyst|payment processing|transaction operations|"
+    r"settlements? (?:analyst|associate|specialist|officer|coordinator)|trade support|middle office|back office|"
+    r"data quality|data integrity|data validat|data governance|data steward|master data|data operations|"
+    r"data management",
+    # 预算、定价、商业运营、流程、客户开户与实施、投标与 PMO
+    r"budget|financial planning|commercial operations|revenue operations|sales operations|business operations|"
+    r"business process|process improvement|process analyst|continuous improvement|operational excellence|"
+    r"onboarding|\bkyc\b|account opening|implementation (?:coordinator|analyst|associate|specialist|consultant)|"
+    r"client delivery|proposal|\brfp\b|\btender|\bbid (?:coordinator|specialist|writer)|\bpmo\b|"
+    r"project management office|project controls|project analyst",
+    # 资助、筹款、赞助、科研行政、产品与内容运营
+    r"grants?\b|development assistant|fundraising|donor relations|sponsorship|partnerships|"
+    r"research administrat|research (?:coordinator|services|office)|product operations|product coordinator|"
+    r"content operations|content (?:coordinator|editor|writer|specialist|assistant)|web content|website content|"
+    r"wordpress|digital content|(?:grant|proposal|bid|content) writer",
+    # Claude 补充：审计（Assurance）、反洗钱、基金会计/后台、艺术品搬运与编目、中文优势
+    r"assurance|\baml\b|anti-money|financial crime|fund account|fund admin|fund services|investment operations|"
+    r"art handl|preparator|catalogu|cataloger|exhibition technician|installation technician|"
+    r"mandarin|cantonese|chinese[- ]speaking|bilingual \(?(?:mandarin|chinese)",
     # 通用入门头衔
     r"\bassociate\b|coordinator|administrator|assistant|officer|specialist|junior|\bjr\b",
 ]
+# 职位名命中这些时，不被“技术/IT岗”规则误伤（布展技术员、艺术品搬运不是 IT）
+ARTS_TECH = re.compile(r"exhibit|installation technician|art handl|preparator|gallery|museum|collections", re.I)
 # 有相关性但需要核实的信号
 REVIEW_SIGNALS = [
     (r"\bintern(ship)?\b|summer analyst", "实习：需确认是否接受 2027 年 5 月毕业生"),
@@ -194,6 +220,8 @@ def classify(job: dict):
         return "irrelevant", "技术/IT岗"
     for rx, why in _hard:
         if rx.search(t):
+            if why == "技术/IT岗" and ARTS_TECH.search(t) and not re.search(r"engineer|developer|software", t):
+                continue
             # “仅限学生”的实习另作处理：实习本身进 review，Co-op/学生岗直接排除
             return "irrelevant", why
     if not _rel.search(t):
@@ -231,7 +259,21 @@ _FIT_ENTRY = re.compile(r"new grad|graduate|\b2027\b|campus|junior|\bjr\b|entry|
                         r"coordinator|assistant|\bintern", re.I)
 _FIT_CORE = re.compile(r"audit|accounting|accountant|financial analyst|finance|fp&a|financial reporting|"
                        r"econom|valuation|investment|research analyst|risk|compliance|treasury|tax|"
-                       r"actuar|underwrit|consult|strategy|business analyst|data analyst|analyst", re.I)
+                       r"actuar|underwrit|consult|strategy|business analyst|data analyst|analyst|"
+                       r"reconcil|assurance|fund account|fund admin|fund services|investment operations|"
+                       r"trade support|settlements? (?:analyst|associate|specialist|officer)|\bkyc\b|\baml\b|"
+                       r"anti-money|financial crime|financial operations|accounts (?:payable|receivable)|"
+                       r"financial officer|budget officer|treasury", re.I)
+# 新增岗位族：能力对口的协调/运营岗（排序用，不等于满足招聘要求）
+_FIT_EXPANDED = re.compile(
+    r"data quality|data integrity|data validat|data governance|data steward|master data|cash management|"
+    r"payments? operations|transaction operations|budget|pricing|commercial operations|revenue operations|"
+    r"sales operations|business operations|business process|process improvement|onboarding|implementation|"
+    r"client delivery|proposal|\brfp\b|\bpmo\b|project controls|project analyst|grants?\b|development assistant|"
+    r"sponsorship|partnerships|research administrat|product operations|content operations|web content|"
+    r"website content|content (?:coordinator|editor|writer)|art handl|preparator|catalogu|cataloger", re.I)
+_FIT_MANDARIN = re.compile(r"mandarin|cantonese|chinese", re.I)
+_FIT_NOT_WEAK = re.compile(r"sales operations|sales support analyst|accounts (?:payable|receivable)", re.I)
 _FIT_ARTS = re.compile(r"gallery|museum|curat|art\b|arts\b|exhibit|collections? (?:manager|assistant|technician|"
                        r"coordinator|registrar)|registrar|archiv|cultur|"
                        r"artist|theatre|music|festival|fundrais|development (coordinator|officer|associate)|"
@@ -275,13 +317,19 @@ def fit_score(rec: dict):
     elif _FIT_ARTS.search(title):
         score += 25
         why.append("艺术/文化")
+    elif _FIT_EXPANDED.search(title):
+        score += 22
+        why.append("新增岗位族：财务运营/数据/协调")
     elif _FIT_OK.search(title):
         score += 12
         why.append("运营/项目类")
+    if _FIT_MANDARIN.search(title):
+        score += 5
+        why.append("用得上中文")
     if re.search(r"supervisor|manager|\blead\b|head of|director|principal|senior|\bsr\b", title, re.I):
         score -= 30
         why.append("头衔偏资深")
-    if _FIT_WEAK.search(title):
+    if _FIT_WEAK.search(title) and not _FIT_NOT_WEAK.search(title):
         score -= 15
         why.append("偏销售/柜台")
     if re.search(r"\b(ii|2|iii|3)\b", title, re.I) and not re.search(r"\b2027\b", title):
@@ -290,3 +338,36 @@ def fit_score(rec: dict):
         score -= 10
     score += {"P0": 3, "P1": 2, "P2": 1}.get(rec.get("tier") or "", 0)
     return max(0, min(100, score)), "、".join(why)
+
+
+# ---------- 职位类别 → 建议使用的简历版本 ----------
+RESUME_VERSIONS = {
+    "arts": "Arts_Culture", "audit": "Audit", "ib": "IB_Capital_Markets",
+    "consulting": "Consulting", "finance": "Finance", "ba": "Business_Analyst",
+}
+_FAMILY = [
+    ("arts", r"gallery|museum|curat|exhibit|art handl|preparator|catalogu|cataloger|registrar|archiv|cultur|"
+             r"\barts?\b|artist|theatre|festival|grants?\b|fundrais|donor|philanthrop|sponsorship|"
+             r"development (?:assistant|coordinator|officer|associate)|advancement|research administrat|"
+             r"box office|patron|membership"),
+    ("audit", r"audit|assurance|accountant|accounting|reconcil|fund account|fund admin|fund services|"
+              r"settlement|trade support|middle office|back office|investment operations|accounts (?:payable|receivable)|"
+              r"bookkeep|\btax\b|\bkyc\b|\baml\b|anti-money|financial crime|compliance|controls?\b"),
+    ("ib", r"investment bank|capital markets|equity research|corporate development|m&a|mergers|private equity|"
+           r"investment (?:analyst|associate)|portfolio (?:analyst|associate)|wealth|asset management|"
+           r"investor relations|sales & trading|trading"),
+    ("consulting", r"consult|strategy|strategic|advisory|transformation|business process|process improvement|"
+                   r"continuous improvement|operational excellence|\bpmo\b|project management office|"
+                   r"proposal|\brfp\b|implementation|change management"),
+    ("finance", r"financ|fp&a|treasury|budget|pricing|credit|risk|valuation|revenue|payment|cash|liquidity|"
+                r"underwrit|actuar|insurance|econom|controller|billing|collections officer|commercial"),
+]
+_FAMILY = [(k, re.compile(p, re.I)) for k, p in _FAMILY]
+
+
+def resume_family(title: str) -> str:
+    """按职位名归类，返回简历版本的类别键（arts / audit / ib / consulting / finance / ba）。"""
+    for k, rx in _FAMILY:
+        if rx.search(title or ""):
+            return k
+    return "ba"

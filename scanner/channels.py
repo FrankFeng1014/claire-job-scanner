@@ -27,12 +27,16 @@ JOBBANK_QUERIES = [
     "analyst", "financial analyst", "accounting", "audit", "junior", "entry level", "new graduate",
     "coordinator", "administrative assistant", "research assistant", "economist", "gallery", "museum",
     "arts administrator",
+    # 2026-11-10 新增岗位族
+    "reconciliation", "financial operations", "data quality", "budget coordinator", "client onboarding",
+    "proposal coordinator", "grants coordinator", "development assistant", "art handler", "fund accounting",
 ]
 JOBBANK_PAGES = 2          # 每个搜索词读前几页（每页 25 个，按日期排序）
 JOBBANK_DELAY = 5          # Job Bank 的 robots.txt 要求每次请求间隔 5 秒
 
 ADZUNA_QUERIES = ["analyst", "junior accountant", "entry level finance", "coordinator arts",
-                  "research assistant", "new graduate"]
+                  "research assistant", "new graduate", "reconciliation", "operations coordinator",
+                  "grants coordinator"]
 ADZUNA_WHERE = ["Toronto", "Ottawa"]
 
 

@@ -433,7 +433,9 @@ def update_recent(L, now_iso):
                 "location": r.get("location"), "url": r.get("url"), "posted": r.get("posted"),
                 "status": r.get("candidate_status"), "reason": r.get("filter_reason"), "source": r.get("source"),
                 "fit_score": r.get("fit_score"), "fit_reasons": r.get("fit_reasons"),
-                "details": r.get("details_note") or "", "deadline": (r.get("details") or {}).get("deadline", "")}
+                "details": r.get("details_note") or "", "deadline": (r.get("details") or {}).get("deadline", ""),
+                "eligibility": r.get("eligibility"), "eligibility_notes": r.get("eligibility_notes") or [],
+                "resume_version": r.get("resume_version"), "rule_included": bool(r.get("rule_included"))}
     for r in L["new_relevant"]:
         keep.append(slim(r, "new_relevant"))
     for r in L["new_review"]:
@@ -530,8 +532,14 @@ def scan(only=None, workers=8, channels=True):
                     seen_now.add(key)
                     if key in seen:
                         rec = seen[key]
+                        was = rec.get("candidate_status")
                         if update_existing(rec, j, emp, d, scan_id) and rec["candidate_status"] == "relevant":
                             reopened.append(rec)
+                        elif was == "irrelevant" and rec["candidate_status"] in ("relevant", "review") \
+                                and not rec.get("excluded_by_details"):
+                            # 搜索规则扩大后新纳入的老职位：Claire 之前没见过，和新发布的一样报告
+                            rec["rule_included"] = d
+                            baseline.append(rec)
                         n_rel += rec["candidate_status"] == "relevant"
                         continue
                     if not j.get("title"):
@@ -609,12 +617,22 @@ def scan(only=None, workers=8, channels=True):
         r["details_note"] = details_summary(r.get("details"), r.get("title"))
     deadlines = _upcoming_deadlines(seen, d)
     by_fit = lambda r: (-r.get("fit_score", 0), r.get("employer") or "")   # noqa: E731
+    from .details import grade as elig_grade
+    from .filters import resume_family, RESUME_VERSIONS
+    for r in new + review + baseline:
+        g, gaps = elig_grade(r)
+        r["eligibility"], r["eligibility_notes"] = g, gaps
+        r["resume_family"] = resume_family(r.get("title"))
+        r["resume_version"] = RESUME_VERSIONS[r["resume_family"]]
+    _found = lambda r: "规则新纳入" if r.get("rule_included") == d else "新接入"   # noqa: E731
+    # 先按 A/B/C 资格等级，再按匹配度
+    by_grade = lambda r: ({"A": 0, "B": 1}.get(r.get("eligibility"), 2),) + by_fit(r)   # noqa: E731
     cand_rel = sorted([dict(r, found_as="新发布") for r in new] +
-                      [dict(r, found_as="新接入") for r in baseline if r.get("candidate_status") == "relevant"],
-                      key=by_fit)
+                      [dict(r, found_as=_found(r)) for r in baseline if r.get("candidate_status") == "relevant"],
+                      key=by_grade)
     cand_rev = sorted([dict(r, found_as="新发布") for r in review] +
-                      [dict(r, found_as="新接入") for r in baseline if r.get("candidate_status") != "relevant"],
-                      key=by_fit)
+                      [dict(r, found_as=_found(r)) for r in baseline if r.get("candidate_status") != "relevant"],
+                      key=by_grade)
 
     states = {k: 0 for k in STATE_LABELS}
     for r in status_rows:
@@ -758,6 +776,11 @@ def _group_links(g):
     return " ".join(f"[{i + 1}]({r['url']})" for i, r in enumerate(g[:5])) + (f" 等 {len(g)} 个" if len(g) > 5 else "")
 
 
+def _grade_cell(r):
+    g = r.get("eligibility") or "C"
+    return {"A": "A", "B": "B", "C": "C"}.get(g, g)
+
+
 def render_report(L):
     st = L.get("scan_states", {})
     lines = [f"# 扫描简报 {L['date']}", "",
@@ -787,31 +810,34 @@ def render_report(L):
     cands = L.get("candidates", L["new_relevant"])
     n_new = sum(1 for r in cands if r.get("found_as", "新发布") == "新发布")
     lines += [f"## 本次可申请的职位（{len(cands)}）", "",
-              f"其中新发布 {n_new} 个、新接入 {len(cands) - n_new} 个（雇主或渠道第一次被读到，职位已挂出一段时间，"
-              "但 Claire 之前没见过）。两类一视同仁，**按与 Claire 的匹配度排序**：地点、是否入门级、"
-              "职能是否对口（财务/审计/分析、艺术/文化）。雇主层级只在分数接近时起一点作用。"
-              "这是按职位名和地点的初筛，申请前请打开链接确认经验要求。", ""]
+              f"其中新发布 {n_new} 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。"
+              "全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。", "",
+              "资格等级（扫描程序根据职位页自动初评，最终以打开职位页核对为准）："
+              "**A 已满足**＝职位页读到了，没发现她不满足的硬性要求；"
+              "**B 部分满足**＝有 1 项需要确认或弥补（如要 2 年经验、要证书）；"
+              "**C 待核查**＝职位页没读到或差距 2 项以上。"
+              "明确不符合的（要 3 年以上经验、仅限在校生的全职岗）已排除，单独列在后面。", ""]
     if cands:
-        lines += ["| 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 职位页信息 | 链接 |",
-                  "|---|---|---|---|---|---|---|---|"]
+        lines += ["| 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 职位页信息 | 建议简历 | 链接 |",
+                  "|---|---|---|---|---|---|---|---|---|---|"]
         for g in _group_same_title(cands):
             r = g[0]
-            lines.append(f"| {r.get('fit_score', '')} | {r['employer']} | {r['title']} | {_group_locations(g)} | "
-                         f"{r.get('found_as', '新发布')} | {r.get('fit_reasons', '')} | "
-                         f"{r.get('details_note') or '—'} | {_group_links(g)} |")
+            lines.append(f"| {_grade_cell(r)} | {r.get('fit_score', '')} | {r['employer']} | {r['title']} | "
+                         f"{_group_locations(g)} | {r.get('found_as', '新发布')} | {r.get('fit_reasons', '')} | "
+                         f"{r.get('details_note') or '—'} | {r.get('resume_version', '')} | {_group_links(g)} |")
     else:
         lines.append("无")
     review = L.get("candidates_review", L.get("new_review", []))
     lines += ["", f"## 可能相关、需要核实（{len(review)}）", "",
               "实习、兼职、合同、地点只写了 Canada 等需要先确认的职位，同样按匹配度排序。", ""]
     if review:
-        lines += ["| 匹配 | 雇主 | 职位 | 地点 | 来源 | 待核实原因 | 职位页信息 | 链接 |",
-                  "|---|---|---|---|---|---|---|---|"]
+        lines += ["| 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 待核实原因 | 职位页信息 | 建议简历 | 链接 |",
+                  "|---|---|---|---|---|---|---|---|---|---|"]
         for g in _group_same_title(review):
             r = g[0]
-            lines.append(f"| {r.get('fit_score', '')} | {r['employer']} | {r['title']} | {_group_locations(g)} | "
-                         f"{r.get('found_as', '新发布')} | {r.get('filter_reason', '')} | "
-                         f"{r.get('details_note') or '—'} | {_group_links(g)} |")
+            lines.append(f"| {_grade_cell(r)} | {r.get('fit_score', '')} | {r['employer']} | {r['title']} | "
+                         f"{_group_locations(g)} | {r.get('found_as', '新发布')} | {r.get('filter_reason', '')} | "
+                         f"{r.get('details_note') or '—'} | {r.get('resume_version', '')} | {_group_links(g)} |")
     else:
         lines.append("无")
     exc = L.get("excluded_by_details", [])
