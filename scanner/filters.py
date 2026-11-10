@@ -341,30 +341,67 @@ def fit_score(rec: dict):
     return max(0, min(100, score)), "、".join(why)
 
 
-# ---------- 职位类别 → 建议使用的简历版本 ----------
+# ---------- 职位类别 → 建议使用的简历版本（7 版；艺术类再分 5 个方向，按职位描述动态组合） ----------
 RESUME_VERSIONS = {
-    "arts": "Arts_Culture", "audit": "Audit", "ib": "IB_Capital_Markets",
-    "consulting": "Consulting", "finance": "Finance", "ba": "Business_Analyst",
+    "arts": "Arts_Culture", "audit": "Audit_FinOps", "ib": "IB_Capital_Markets", "consulting": "Consulting",
+    "finance": "Finance", "coordination": "Coordination_Client_Ops", "ba": "Business_Analyst",
 }
 _FAMILY = [
     ("arts", r"gallery|museum|curat|exhibit|art handl|preparator|catalogu|cataloger|registrar|archiv|cultur|"
-             r"\barts?\b|artist|theatre|festival|grants?\b|fundrais|donor|philanthrop|sponsorship|"
+             r"\barts?\b|artist|theatre|festival|grants?\b|fundrais|donor|philanthrop|"
              r"development (?:assistant|coordinator|officer|associate)|advancement|research administrat|"
-             r"box office|patron|membership"),
+             r"box office|patron|membership|collections? (?:assistant|coordinator|technician|manager|registrar)"),
     ("audit", r"audit|assurance|accountant|accounting|reconcil|fund account|fund admin|fund services|"
               r"settlement|trade support|middle office|back office|investment operations|accounts (?:payable|receivable)|"
-              r"bookkeep|\btax\b|\bkyc\b|\baml\b|anti-money|financial crime|compliance|controls?\b"),
+              r"bookkeep|\btax\b|\bkyc\b|\baml\b|anti-money|financial crime|compliance|controls?\b|"
+              r"financial operations|finance operations|payments? operations|payments? analyst|payment processing|"
+              r"treasury operations|cash (?:management|operations)|transaction operations"),
     ("ib", r"investment bank|capital markets|equity research|corporate development|m&a|mergers|private equity|"
            r"investment (?:analyst|associate)|portfolio (?:analyst|associate)|wealth|asset management|"
            r"investor relations|sales & trading|trading"),
     ("consulting", r"consult|strategy|strategic|advisory|transformation|business process|process improvement|"
                    r"continuous improvement|operational excellence|\bpmo\b|project management office|"
-                   r"proposal|\brfp\b|implementation|change management"),
+                   r"project controls|change management"),
     ("finance", r"financ|fp&a|treasury|budget|pricing|credit|risk|valuation|revenue|payment|cash|liquidity|"
                 r"bank|investment|private client|client engagement|"
                 r"underwrit|actuar|insurance|econom|controller|billing|collections officer|commercial"),
+    ("coordination", r"onboarding|implementation|proposal|\brfp\b|\bbid\b|tender|content|product operations|"
+                     r"product coordinator|client service|customer service|customer success|sponsorship|partnerships|"
+                     r"event|program (?:coordinator|assistant)|project coordinator|operations coordinator|"
+                     r"administrat|office|mandarin|cantonese|bilingual|coordinator"),
 ]
 _FAMILY = [(k, re.compile(p, re.I)) for k, p in _FAMILY]
+
+# 艺术机构内部的方向：不同方向突出不同经历（由事实库动态组合）
+ARTS_BRANCHES = [
+    ("Development", r"grant|fundrais|donor|philanthrop|development|advancement|sponsor|membership|stewardship"),
+    ("Arts Marketing", r"marketing|communications|content|digital|social media|audience|box office|patron|"
+                       r"publicity|media"),
+    ("Arts Finance", r"financ|accounting|accountant|bookkeep|budget|payroll|controller"),
+    ("Museum Administration", r"administrat|registrar|collections|archiv|research|office|program|coordinator|"
+                              r"records|database"),
+]
+ARTS_BRANCHES = [(k, re.compile(p, re.I)) for k, p in ARTS_BRANCHES]
+
+
+def arts_branch(title: str) -> str:
+    for k, rx in ARTS_BRANCHES:
+        if rx.search(title or ""):
+            return k
+    return "Gallery / Exhibition"
+
+
+ARTS_EMPLOYER = re.compile(r"gallery|museum|\bart\b|\barts\b|theatre|theater|symphony|orchestra|opera|ballet|"
+                           r"festival|cultur|heritage|\bago\b|\brom\b|canada council|artscape", re.I)
+
+
+def resume_version(title: str, employer: str = "") -> str:
+    fam = resume_family(title)
+    # 艺术机构里的财务、行政、市场、协调岗：用艺术版并按方向组合
+    if fam in ("audit", "finance", "coordination", "ba") and ARTS_EMPLOYER.search(employer or ""):
+        fam = "arts"
+    v = RESUME_VERSIONS[fam]
+    return f"{v} · {arts_branch(title)}" if fam == "arts" else v
 
 
 # 只靠这些通用头衔被选中、没有命中任何职能关键词的职位，资格不能给 A/B（职能是否对口要人看）
