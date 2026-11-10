@@ -536,7 +536,7 @@ def scan(only=None, workers=8, channels=True):
                         continue
                     if not j.get("title"):
                         continue
-                    cst, why = classify(j)
+                    cst, why = classify({**j, "source": kind})
                     rec = _new_record(j, emp["id"], emp["name"], emp.get("tier", ""), kind, cst, why, d,
                                       scan_id, fresh)
                     seen[key] = rec
@@ -606,7 +606,7 @@ def scan(only=None, workers=8, channels=True):
         sc, why = fit_score(r)
         r["fit_score"] = max(0, min(100, sc + fit_adjust(r.get("details"))))
         r["fit_reasons"] = why
-        r["details_note"] = details_summary(r.get("details"))
+        r["details_note"] = details_summary(r.get("details"), r.get("title"))
     deadlines = _upcoming_deadlines(seen, d)
     by_fit = lambda r: (-r.get("fit_score", 0), r.get("employer") or "")   # noqa: E731
     cand_rel = sorted([dict(r, found_as="新发布") for r in new] +
@@ -697,7 +697,7 @@ def _upcoming_deadlines(seen, today_s, days=7):
             continue
         if 0 <= left <= days:
             out.append({**{k: r.get(k) for k in ("employer", "tier", "title", "location", "url", "candidate_status")},
-                        "deadline": dl, "days_left": left, "details_note": details_summary(r.get("details"))})
+                        "deadline": dl, "days_left": left, "details_note": details_summary(r.get("details"), r.get("title"))})
     return sorted(out, key=lambda x: (x["deadline"], x["employer"] or ""))
 
 

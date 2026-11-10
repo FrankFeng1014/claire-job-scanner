@@ -519,3 +519,18 @@ def test_details_exclusion_survives_next_run(env, monkeypatch):
     L = main.scan()
     seen = json.loads((env["path"] / "data" / "seen.json").read_text())
     assert seen["a::1"]["candidate_status"] == "irrelevant" and L["candidates"] == [] and L["reopened_relevant"] == []
+
+
+def test_page_job_without_location_goes_to_review():
+    from scanner.filters import classify
+    st, why = classify({"title": "Financial Analyst", "location": "", "source": "page"})
+    assert st == "review" and "地点" in why
+    st, _ = classify({"title": "Financial Analyst", "location": "", "source": "greenhouse"})
+    assert st == "relevant"
+
+
+def test_program_title_hides_years():
+    from scanner.details import summary
+    d = {"ok": True, "years_min": 3, "deadline": "2026-11-15", "salary": "", "flags": [], "new_grad_text": False}
+    assert "经验" not in summary(d, "Graduate Leadership Development Program 2027")
+    assert "经验≥3年" in summary(d, "Financial Analyst")

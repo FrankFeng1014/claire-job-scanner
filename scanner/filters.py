@@ -202,6 +202,9 @@ def classify(job: dict):
         review_reasons.append("顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门")
     if country_only:
         review_reasons.append("地点只写了 Canada，需确认城市")
+    if not loc and job.get("source") == "page":
+        # 从雇主官网招聘页直接抓到、又没写地点的：跨国公司官网常列全球职位，先放“需要核实”
+        review_reasons.append("招聘页没写地点，需确认是否在加拿大/目标城市")
     if review_reasons:
         return "review", "；".join(review_reasons)
     if not loc:
