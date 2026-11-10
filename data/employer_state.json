@@ -524,6 +524,11 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "definity-financial": {
+  "arg": "https://careers.definityfinancial.com/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "deloitte-canada": {
   "arg": "https://careers.deloitte.ca",
   "first_ok": "2026-11-08",
