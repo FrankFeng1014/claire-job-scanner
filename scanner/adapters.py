@@ -370,19 +370,41 @@ def _ld_location(d):
     return "; ".join(p for p in parts if p)
 
 
-def page(s, url):
-    r = s.get(url, timeout=TIMEOUT)
-    r.raise_for_status()
+# 浏览器预先打开好的网页：{网址: browser.render_all 的结果}。扫描开始前由 main 填好。
+RENDERED: dict = {}
+
+
+def _page_links(html, base):
     p = _LinkParser()
-    p.feed(r.text)
-    out = _jsonld_jobs(r.text, url)
+    try:
+        p.feed(html)
+    except Exception:  # noqa: BLE001
+        pass
+    out = []
     for text, href in p.links:
         if len(text) < 8 or len(text) > 140 or NAV.match(text) or not JOBLIKE.search(text):
             continue
-        full = urljoin(url, href or "")
+        full = urljoin(base, href or "")
+        if not full.startswith("http"):
+            continue
         # 去掉每次访问都会变的会话编号（如 Job Bank 的 ;jsessionid=...），否则同一职位会被当成新职位
         full = re.sub(r";jsessionid=[^?#]*", "", full, flags=re.I)
         out.append(_job(full, text, "", full))
+    return out
+
+
+def page(s, url):
+    r = RENDERED.get(url)
+    if r and not r.get("error") and (r.get("status") or 200) < 400:
+        base = r.get("final") or url
+        out = _jsonld_jobs(r.get("html", ""), base) + _page_links(r.get("html", ""), base)
+        for furl, fhtml in r.get("frames", []):
+            if furl.startswith("http"):
+                out += _jsonld_jobs(fhtml, furl) + _page_links(fhtml, furl)
+        return AdapterResult(_dedupe(out), False, "普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位")
+    resp = s.get(url, timeout=TIMEOUT)
+    resp.raise_for_status()
+    out = _jsonld_jobs(resp.text, url) + _page_links(resp.text, url)
     # 普通网页无法确认是否读全（可能有 JS 加载、分页、改版），一律标记为不完整
     return AdapterResult(_dedupe(out), False, "普通网页：无法确认是否读全，只用于发现新职位")
 

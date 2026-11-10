@@ -255,6 +255,60 @@ def work(emp):
     return {**row, "how": row["how"] or "未识别"}
 
 
+def _search_links(html, base):
+    out = []
+    for href, text in re.findall(r'<a[^>]+href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', html, re.S | re.I):
+        t = re.sub(r"<[^>]+>|\s+", " ", text).strip()
+        if t and len(t) <= 60 and SEARCH_LINK.search(t):
+            u = urljoin(base, href)
+            if u.startswith("http") and u.rstrip("/") != base.rstrip("/") and not BAD_CAREER_HOSTS.search(u):
+                out.append(u)
+    return list(dict.fromkeys(out))[:3]
+
+
+def browser_pass(rows):
+    """普通读取没认出招聘系统的，用浏览器打开（等脚本加载完、包括 iframe）再认一次；
+    还认不出就顺着页面上“搜索职位”之类的链接再打开一层。"""
+    from . import browser
+    todo = {r["id"]: (r.get("new_careers_url") or (r.get("careers_url") or "").split(";")[0]).strip()
+            for r in rows if (r.get("confidence") != "high" or not r.get("ats")) and r.get("how") != "已是当前设置"}
+    todo = {k: v for k, v in todo.items() if v.startswith("http")}
+    if not todo or not browser.available():
+        return rows
+    rendered = browser.render_all(list(todo.values()))
+    found, second = {}, {}
+    for eid, u in todo.items():
+        r = rendered.get(u)
+        if not r or r.get("error"):
+            continue
+        k, a = detect(browser.combined_html(r), r.get("final") or u)
+        if k:
+            found[eid] = (k, a, "浏览器打开招聘页后找到招聘系统")
+        else:
+            links = _search_links(r.get("html", ""), r.get("final") or u)
+            if links:
+                second[eid] = links
+    if second:
+        rendered2 = browser.render_all([u for v in second.values() for u in v])
+        for eid, links in second.items():
+            for u in links:
+                r = rendered2.get(u)
+                if r and not r.get("error"):
+                    k, a = detect(browser.combined_html(r), r.get("final") or u)
+                    if k:
+                        found[eid] = (k, a, "浏览器顺着招聘页链接找到招聘系统")
+                        break
+    print(f"浏览器识别：打开 {len(todo)} 家，新认出招聘系统 {len(found)} 家")
+    out = []
+    for r in rows:
+        if r["id"] in found:
+            k, a, how = found[r["id"]]
+            r = {**r, "ats": k, "ats_id": a, "confidence": "high",
+                 "how": (r.get("how", "") + "；" if r.get("new_careers_url") else "") + how}
+        out.append(r)
+    return out
+
+
 def needs_discovery(emps, all_=False):
     """上次没读全的雇主。刚改过设置、还没按新设置扫描过的雇主先不动（等扫描结果出来再说）。"""
     path = os.path.join(DATA, "status.csv")
@@ -292,6 +346,7 @@ def main():
         todo = [e for e in emps if e["id"] in set(a.only.split(","))]
     with cf.ThreadPoolExecutor(max_workers=10) as ex:
         res = list(ex.map(work, todo))
+    res = browser_pass(res)
     cols = ["id", "name", "tier", "careers_url", "new_careers_url", "ats", "ats_id", "confidence", "how"]
     with open(os.path.join(DATA, "discovered.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")

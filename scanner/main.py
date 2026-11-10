@@ -440,6 +440,28 @@ def update_recent(L, now_iso):
                               "updated": now_iso, "items": keep})
 
 
+def _browser_suggestions(emps, rendered):
+    """浏览器打开普通网页后，如果在里面认出了招聘系统，立即改用该系统读取（下次扫描生效）。"""
+    if not rendered:
+        return []
+    from .discover import detect
+    out = []
+    for e in emps:
+        kind, arg = target(e)
+        if kind != "page":
+            continue
+        for u in arg.split(";"):
+            r = rendered.get(u.strip())
+            if not r or r.get("error"):
+                continue
+            from .browser import combined_html
+            k, a = detect(combined_html(r), r.get("final") or u)
+            if k and k in ADAPTERS:
+                out.append({"id": e["id"], "name": e["name"], "ats": k, "ats_id": a})
+                break
+    return out
+
+
 # ---------- 主流程 ----------
 def scan(only=None, workers=8, channels=True):
     emps_all = load_employers()
@@ -459,6 +481,19 @@ def scan(only=None, workers=8, channels=True):
     known = {}
     for rec in seen.values():
         known.setdefault(rec.get("employer_id"), set()).add(str(rec.get("job_id")))
+
+    # 普通网页类雇主：先用浏览器统一打开（等脚本加载完），读取时直接用浏览器看到的内容
+    page_urls = [u.strip() for e in emps if target(e)[0] == "page" for u in target(e)[1].split(";") if u.strip()]
+    from . import browser
+    t0 = time.time()
+    ADAPTERS_RENDERED = browser.render_all(page_urls)
+    from . import adapters as _ad
+    _ad.RENDERED.clear()
+    _ad.RENDERED.update(ADAPTERS_RENDERED)
+    if ADAPTERS_RENDERED:
+        ok_n = sum(1 for v in ADAPTERS_RENDERED.values() if not v.get("error"))
+        print(f"浏览器打开 {len(page_urls)} 个招聘页：成功 {ok_n} 个，用时 {time.time() - t0:.0f} 秒")
+    suggested = _browser_suggestions(emps, ADAPTERS_RENDERED)
 
     with cf.ThreadPoolExecutor(max_workers=workers) as ex:
         results = ex.map(lambda e: scan_one(e, known.get(e["id"])), emps)
@@ -553,7 +588,7 @@ def scan(only=None, workers=8, channels=True):
               "new_relevant": sorted(new, key=key_fn),
               "new_review": sorted(review, key=key_fn),
               "baseline": sorted(baseline, key=lambda r: (r.get("candidate_status") != "relevant",) + key_fn(r)),
-              "new_employers": new_emps, "channels": ch_status,
+              "new_employers": new_emps, "channels": ch_status, "ats_detected_by_browser": suggested,
               "reopened_relevant": reopened,
               "removed_relevant": removed, "failed": fails, "unreadable": unreadable,
               "needs_attention": [r for r in status_rows if r["scan_state"] in ("partial", "invalid")]}
@@ -567,7 +602,14 @@ def scan(only=None, workers=8, channels=True):
     w.writerows(sorted(status_rows, key=lambda r: (r["status"], r["id"])))
     report = render_report(latest)
 
-    if new_emps:
+    if suggested and not only:
+        by_id = {x["id"]: x for x in suggested}
+        for e in emps_all:
+            if e["id"] in by_id and not e.get("ats"):
+                e["ats"], e["ats_id"] = by_id[e["id"]]["ats"], by_id[e["id"]]["ats_id"]
+        print("浏览器识别出招聘系统（下次扫描起改用）：" +
+              "，".join(f"{x['name']}={x['ats']}" for x in suggested))
+    if new_emps or (suggested and not only):
         save_employers(emps_all)
     save_json("seen.json", seen)
     save_json("latest.json", latest)
