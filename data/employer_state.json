@@ -1,7 +1,17 @@
 {
+ "3m-canada": {
+  "arg": "3m/wd1/Search",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
  "accenture-canada": {
   "arg": "accenture/wd103/AccentureCareers",
   "first_ok": "2026-11-08",
+  "kind": "workday"
+ },
+ "adobe-canada": {
+  "arg": "adobe/wd5/external_experienced",
+  "first_ok": "2026-11-10",
   "kind": "workday"
  },
  "aga-khan-museum": {
@@ -24,6 +34,16 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "alectra-utilities": {
+  "arg": "https://www.alectra.com/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "allied-properties-reit": {
+  "arg": "alliedreit",
+  "first_ok": "2026-11-10",
+  "kind": "lever"
+ },
  "altus-group": {
   "arg": "altusgroup/wd3/AltusGroup",
   "first_ok": "2026-11-08",
@@ -44,10 +64,25 @@
   "first_ok": "2026-11-08",
   "kind": "oracle"
  },
+ "amir-quality-meats": {
+  "arg": "https://amirqualitymeats.com/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "anova-fertility": {
   "arg": "https://anovafertility.com/careers/",
   "first_ok": "2026-11-08",
   "kind": "page"
+ },
+ "aon-canada": {
+  "arg": "https://jobs.aon.com/jobs?location=Canada",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "aritzia": {
+  "arg": "aritzia/wd3/External",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "armstrong-fluid-technology": {
   "arg": "armstrongfluidtechnology",
@@ -67,6 +102,11 @@
  "art-gallery-of-ontario": {
   "arg": "https://jobs.jobvite.com/ago/jobs/viewall",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "aurora-cultural-centre": {
+  "arg": "http://www.auroraculturalcentre.ca",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "avanade": {
@@ -124,6 +164,11 @@
   "first_ok": "2026-11-08",
   "kind": "radancy"
  },
+ "bloomberg-toronto": {
+  "arg": "https://bloomberg.avature.net/careers",
+  "first_ok": "2026-11-10",
+  "kind": "avature"
+ },
  "bmo": {
   "arg": "https://jobs.bmo.com/ca/en",
   "first_ok": "2026-11-08",
@@ -159,15 +204,30 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "buddies-in-bad-times-theatre": {
+  "arg": "https://buddiesinbadtimes.com/create-with-us/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "burgundy-asset-management": {
+  "arg": "https://www.burgundyasset.com/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "c-d-howe-institute": {
   "arg": "https://cdhowe.org/careers",
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "caat-pension-plan": {
+  "arg": "caatpension/wd10/Careers",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
  "cadillac-fairview": {
-  "arg": "https://www.cadillacfairview.com/careers/",
+  "arg": "recruiting.ultipro.ca/cad5000cfcl/89aff150-d66c-444e-b2df-be190dad9e87",
   "first_ok": "2026-11-09",
-  "kind": "page"
+  "kind": "ultipro"
  },
  "campus-living-centres": {
   "arg": "https://campuslivingcentres.com/careers/",
@@ -194,13 +254,28 @@
   "first_ok": "2026-11-08",
   "kind": "workday"
  },
+ "canada-infrastructure-bank": {
+  "arg": "canadainfrastructurebank",
+  "first_ok": "2026-11-10",
+  "kind": "greenhouse"
+ },
  "canada-life": {
-  "arg": "https://www.careers.canadalife.com/students-new-graduates.html",
+  "arg": "https://jobs.canadalife.com",
   "first_ok": "2026-11-08",
+  "kind": "successfactors"
+ },
+ "canada-post": {
+  "arg": "https://jobs.canadapost.ca",
+  "first_ok": "2026-11-10",
+  "kind": "successfactors"
+ },
+ "canada-revenue-agency": {
+  "arg": "https://www.canada.ca/en/revenue-agency/corporate/careers-cra.html",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "canadian-heritage": {
-  "arg": null,
+  "arg": "https://www.canada.ca/en/canadian-heritage/services/funding/young-canada-works/students-graduates/careers-heritage-graduates.html",
   "first_ok": "2026-11-08",
   "kind": "page"
  },
@@ -212,6 +287,11 @@
  "canadian-museum-of-nature": {
   "arg": "https://nature.ca/en/careers/",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "canadian-music-centre": {
+  "arg": "https://cmccanada.org/employment-opportunities/",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "canadian-opera-company": {
@@ -245,9 +325,9 @@
   "kind": "page"
  },
  "cbc-radio-canada": {
-  "arg": "https://cbc.radio-canada.ca/en/working-at-cbc-radio-canada/jobs",
+  "arg": "cbcrc/wd3/CBC_Radio-Canada_Jobs;cbcrc/wd3/CBC_Radio-Canada_Future_Opportunities",
   "first_ok": "2026-11-08",
-  "kind": "page"
+  "kind": "workday"
  },
  "celestica": {
   "arg": "https://careers.celestica.com",
@@ -279,6 +359,11 @@
   "first_ok": "2026-11-08",
   "kind": "greenhouse"
  },
+ "choice-properties-reit": {
+  "arg": "myview/wd3/Choice_Properties_REIT",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
  "ci-financial": {
   "arg": "ci/wd3/CI_FINANCIAL_EXTERNAL_CAREER-SITE",
   "first_ok": "2026-11-08",
@@ -304,6 +389,11 @@
   "first_ok": "2026-11-08",
   "kind": "workday"
  },
+ "ciro": {
+  "arg": "recruiting.ultipro.ca/INV5000IIRO/794be965-00dd-4119-bd51-c4257eccf3b2",
+  "first_ok": "2026-11-10",
+  "kind": "ultipro"
+ },
  "cisco-canada": {
   "arg": "https://careers.cisco.com/global/en",
   "first_ok": "2026-11-08",
@@ -313,6 +403,11 @@
   "arg": "citi/wd5/2",
   "first_ok": "2026-11-08",
   "kind": "workday"
+ },
+ "city-of-mississauga": {
+  "arg": "https://jobs.mississauga.ca",
+  "first_ok": "2026-11-10",
+  "kind": "successfactors"
  },
  "city-of-ottawa": {
   "arg": "https://jobs-emplois.ottawa.ca",
@@ -344,10 +439,20 @@
   "first_ok": "2026-11-08",
   "kind": "ashby"
  },
+ "colgate-palmolive-canada": {
+  "arg": "https://jobs.colgate.com",
+  "first_ok": "2026-11-10",
+  "kind": "successfactors"
+ },
  "colliers": {
   "arg": "colliers/wd3/Colliers-External-Career-Site",
   "first_ok": "2026-11-09",
   "kind": "workday"
+ },
+ "combined-metal-industries": {
+  "arg": "https://www.combinedmetal.com/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
  },
  "conference-board-of-canada": {
   "arg": "signal49",
@@ -357,6 +462,11 @@
  "costco-canada": {
   "arg": "https://www.costco.com/jobs.html",
   "first_ok": "2026-11-09",
+  "kind": "page"
+ },
+ "costi-immigrant-services": {
+  "arg": "https://costi.org/get-involved/",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "council-of-ontario-universities": {
@@ -373,6 +483,16 @@
   "arg": "https://www.cpac.ca/articles/job-postings/careers-cpac",
   "first_ok": "2026-11-08",
   "kind": "page"
+ },
+ "cpp-investments": {
+  "arg": "cppib/wd10/cppinvestments",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
+ "crowe-soberman": {
+  "arg": "crowesoberman",
+  "first_ok": "2026-11-10",
+  "kind": "bamboohr"
  },
  "crows-theatre": {
   "arg": "https://www.crowstheatre.com/about/careers",
@@ -394,6 +514,11 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "dawson-partners": {
+  "arg": "dawsonpartners",
+  "first_ok": "2026-11-10",
+  "kind": "bamboohr"
+ },
  "dayforce": {
   "arg": "https://jobs.dayforcehcm.com/en-US/mydayforce/alljobs",
   "first_ok": "2026-11-08",
@@ -409,15 +534,30 @@
   "first_ok": "2026-11-08",
   "kind": "workday"
  },
+ "dexterra": {
+  "arg": "Dexterra",
+  "first_ok": "2026-11-10",
+  "kind": "smartrecruiters"
+ },
  "diageo-canada": {
   "arg": "diageo/wd3/Diageo_Careers",
   "first_ok": "2026-11-09",
   "kind": "workday"
  },
+ "diamond-schmitt": {
+  "arg": "https://dsai.ca/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "dollarama": {
   "arg": "https://jobs.dollarama.com",
   "first_ok": "2026-11-09",
   "kind": "successfactors"
+ },
+ "dream-unlimited": {
+  "arg": "recruiting.ultipro.ca/DRE5000DOMC/641409c4-22a9-4262-b1c5-14ed9a4d73fb",
+  "first_ok": "2026-11-10",
+  "kind": "ultipro"
  },
  "dying-with-dignity-canada": {
   "arg": "https://www.dyingwithdignity.ca/?p=3209",
@@ -429,6 +569,11 @@
   "first_ok": "2026-11-09",
   "kind": "workday"
  },
+ "emco-corporation": {
+  "arg": "EMCOCorporation",
+  "first_ok": "2026-11-10",
+  "kind": "smartrecruiters"
+ },
  "enbridge": {
   "arg": "enbridge/wd3/enbridge_careers",
   "first_ok": "2026-11-08",
@@ -438,6 +583,11 @@
   "arg": "eqbank",
   "first_ok": "2026-11-08",
   "kind": "lever"
+ },
+ "equifax-canada": {
+  "arg": "https://careers.equifax.com/en/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
  },
  "erco-worldwide": {
   "arg": "https://www.ercoworldwide.com/careers/",
@@ -474,6 +624,16 @@
   "first_ok": "2026-11-08",
   "kind": "greenhouse"
  },
+ "fairfax-financial": {
+  "arg": "https://www.fairfax.ca/employment/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "fall-for-dance-north": {
+  "arg": "https://www.ffdnorth.com/about/join-our-team",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "fidelity-investments-canada": {
   "arg": "fil/wd3/fidelitycanada",
   "first_ok": "2026-11-08",
@@ -489,15 +649,35 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "first-capital-reit": {
+  "arg": "https://fcr.ca/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "first-national-financial": {
   "arg": "https://www.firstnational.ca/about/careers",
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "ford-motor-company-of-canada": {
+  "arg": "efds.fa.em5.oraclecloud.com/CX_1",
+  "first_ok": "2026-11-10",
+  "kind": "oracle"
+ },
+ "foresters-financial": {
+  "arg": "foresters/wd3/ForestersFinancialCareers",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
+ "fsra": {
+  "arg": "fsra/wd3/FSRA_Careers",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
  "fti-consulting-canada": {
-  "arg": "https://www.fticonsulting.com/careers",
+  "arg": "fticonsulting/wd108/FTIConsultingCareers",
   "first_ok": "2026-11-09",
-  "kind": "page"
+  "kind": "workday"
  },
  "fundata-canada": {
   "arg": "https://www.fundata.com/",
@@ -508,6 +688,11 @@
   "arg": "https://gardinermuseum.on.ca/the-museum/jobs-volunteering/jobs",
   "first_ok": "2026-11-08",
   "kind": "page"
+ },
+ "general-mills-canada": {
+  "arg": "genmills/wd1/GMI_External_Careers",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "general-motors-canada": {
   "arg": "https://search-careers.gm.com/en/locations/canada/",
@@ -523,6 +708,16 @@
   "arg": "https://www.gesco.ca/en-ca/careers",
   "first_ok": "2026-11-09",
   "kind": "page"
+ },
+ "gfl-environmental": {
+  "arg": "https://careers.gflenv.com/jobs",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "giant-tiger": {
+  "arg": "gianttiger/wd3/gianttiger",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "glenn-gould-foundation": {
   "arg": "https://workinculture.ca/jobs-and-more/the-glenn-gould-foundation-part-time-assistant-arts-administrator/",
@@ -544,14 +739,34 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "grafton-apparel": {
+  "arg": "https://www.tiptop.ca/pages/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "grant-thornton-canada": {
   "arg": "https://www.doanegrantthornton.ca/careers/",
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "greater-toronto-airports-authority": {
+  "arg": "recruiting.ultipro.ca/GRE5001GRAT/f3ff6021-0c43-4d9f-a20d-4f8139a89507",
+  "first_ok": "2026-11-10",
+  "kind": "ultipro"
+ },
+ "greenhouse-juice": {
+  "arg": "greenhousejuice",
+  "first_ok": "2026-11-10",
+  "kind": "bamboohr"
+ },
  "guardian-capital": {
   "arg": "https://www.guardiancapital.com/careers/",
   "first_ok": "2026-11-09",
+  "kind": "page"
+ },
+ "gwl-realty-advisors": {
+  "arg": "https://www.gwlra.com/careers",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "harbourfront-centre": {
@@ -573,6 +788,11 @@
   "arg": "https://www.heffel.com/Links/Careers_E.aspx",
   "first_ok": "2026-11-08",
   "kind": "page"
+ },
+ "home-depot-canada": {
+  "arg": "homedepot/wd5/CareerDepotCanada",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "honda-canada": {
   "arg": "https://www.honda.ca/en/careers",
@@ -619,10 +839,20 @@
   "first_ok": "2026-11-08",
   "kind": "successfactors"
  },
+ "igm-financial-mackenzie-investments": {
+  "arg": "https://www.mackenzieinvestments.com/en/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "ikea-canada": {
   "arg": "https://jobs.ikea.com",
   "first_ok": "2026-11-09",
   "kind": "radancy"
+ },
+ "imco": {
+  "arg": "imcoinvest/wd3/IMCO",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "indigo": {
   "arg": "IndigoBooksMusic",
@@ -673,6 +903,16 @@
   "arg": "https://www.investontario.ca/careers",
   "first_ok": "2026-11-09",
   "kind": "page"
+ },
+ "jarislowsky-fraser": {
+  "arg": "https://www.jflglobal.com/en/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "jll-canada": {
+  "arg": "jll/wd1/jllcareers",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "johnvince-foods": {
   "arg": "https://johnvince.com/work-at-johnvince/",
@@ -746,7 +986,7 @@
   "kind": "workday"
  },
  "library-and-archives-canada": {
-  "arg": null,
+  "arg": "https://www.canada.ca/en/library-archives/corporate/join-team/career.html",
   "first_ok": "2026-11-08",
   "kind": "page"
  },
@@ -754,6 +994,11 @@
   "arg": "https://www.lightspeedhq.com/careers/",
   "first_ok": "2026-11-09",
   "kind": "page"
+ },
+ "linamar": {
+  "arg": "fa-epmd-saasfaprod1.fa.ocs.oraclecloud.com/CX_3001",
+  "first_ok": "2026-11-10",
+  "kind": "oracle"
  },
  "lmc-diabetes-endocrinology": {
   "arg": "lmcdiabetesendocrinology",
@@ -774,6 +1019,11 @@
   "arg": "https://careers.lululemon.com/en_US/careers",
   "first_ok": "2026-11-08",
   "kind": "avature"
+ },
+ "luminato": {
+  "arg": "https://www.luminatofestival.com/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
  },
  "lush-handmade-cosmetics": {
   "arg": "lush",
@@ -835,6 +1085,11 @@
   "first_ok": "2026-11-08",
   "kind": "greenhouse"
  },
+ "menkes-developments": {
+  "arg": "https://menkes.com/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "mercer-canada": {
   "arg": "mmc/wd1/MMC",
   "first_ok": "2026-11-08",
@@ -890,6 +1145,11 @@
   "first_ok": "2026-11-08",
   "kind": "workday"
  },
+ "morningstar-dbrs": {
+  "arg": "morningstar/wd5/morningstar",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
  "munich-re-canada": {
   "arg": "https://careers.munichre.com",
   "first_ok": "2026-11-09",
@@ -903,6 +1163,11 @@
  "museum-of-contemporary-art-toronto": {
   "arg": "https://careers.moca.ca",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "musicounts": {
+  "arg": "https://musicounts.ca/en/",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "national-arts-centre": {
@@ -925,6 +1190,11 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "native-earth-performing-arts": {
+  "arg": "https://nativeearth.ca/employment-opportunities",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "neighbourly-pharmacy": {
   "arg": "https://neighbourlypharmacy.ca/careers/",
   "first_ok": "2026-11-08",
@@ -934,6 +1204,16 @@
   "arg": "https://www.nokia.com/careers/",
   "first_ok": "2026-11-09",
   "kind": "page"
+ },
+ "north-york-harvest-food-bank": {
+  "arg": "https://northyorkharvest.com/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "northbridge-financial": {
+  "arg": "https://careers.nbfc.com/ca/en",
+  "first_ok": "2026-11-10",
+  "kind": "phenom"
  },
  "northern-trust-canada": {
   "arg": "ntrs/wd1/northerntrust",
@@ -956,14 +1236,24 @@
   "kind": "page"
  },
  "odell-hvac-group": {
-  "arg": "https://www.odellhvac.com/careers/",
+  "arg": "odellhvac",
   "first_ok": "2026-11-09",
+  "kind": "bamboohr"
+ },
+ "office-of-the-auditor-general-of-canada": {
+  "arg": "https://www.oag-bvg.gc.ca/internet/English/admin_e_41.html",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "office-of-the-auditor-general-of-ontario": {
   "arg": "https://auditor.on.ca/careers.html",
   "first_ok": "2026-11-08",
   "kind": "page"
+ },
+ "olg": {
+  "arg": "olg/wd3/Careers",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "oliver-wyman": {
   "arg": "mmc/wd1/MMC",
@@ -983,6 +1273,11 @@
  "ontario-arts-council": {
   "arg": "https://www.arts.on.ca/about-us/careers-at-oac",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "ontario-pension-board": {
+  "arg": "https://www.opb.ca/about-opb/careers",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "ontario-power-generation": {
@@ -1014,6 +1309,11 @@
   "arg": "https://www.operaatelier.com/work-with-us/",
   "first_ok": "2026-11-09",
   "kind": "page"
+ },
+ "optrust": {
+  "arg": "optrust/wd3/OPTrust",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "oracle-canada": {
   "arg": "https://www.oracle.com/ca-en/careers/",
@@ -1055,6 +1355,16 @@
   "first_ok": "2026-11-08",
   "kind": "ultipro"
  },
+ "parkdale-community-food-bank": {
+  "arg": "https://www.pcfb.ca/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "pathstreams": {
+  "arg": "https://pathstreams.ca/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "peoples-group": {
   "arg": "recruiting.ultipro.ca/PEO5000PTC/6694b516-8e57-41f9-b4c2-78527f59c1f4",
   "first_ok": "2026-11-08",
@@ -1065,6 +1375,11 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "picton-investments": {
+  "arg": "pictonmahoney",
+  "first_ok": "2026-11-10",
+  "kind": "bamboohr"
+ },
  "pointclickcare": {
   "arg": "pointclickcare",
   "first_ok": "2026-11-08",
@@ -1074,6 +1389,11 @@
   "arg": "https://careers.flyporter.com/",
   "first_ok": "2026-11-08",
   "kind": "page"
+ },
+ "power-corporation-great-west-lifeco": {
+  "arg": "https://jobs.canadalife.com",
+  "first_ok": "2026-11-10",
+  "kind": "successfactors"
  },
  "procter-gamble-canada": {
   "arg": "pg/wd5/1000",
@@ -1100,6 +1420,11 @@
   "first_ok": "2026-11-08",
   "kind": "phenom"
  },
+ "q4-inc": {
+  "arg": "https://careers.q4inc.com/overview/default.aspx",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "questrade": {
   "arg": "https://jobs.dayforcehcm.com/qfg/CANDIDATEPORTAL",
   "first_ok": "2026-11-08",
@@ -1120,15 +1445,30 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "region-of-peel": {
+  "arg": "https://peelregion.ca/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "relx-lexisnexis-canada": {
   "arg": "relx/wd3/relx",
   "first_ok": "2026-11-08",
   "kind": "workday"
  },
+ "restaurant-brands-international": {
+  "arg": "https://careers.rbi.com/global/en",
+  "first_ok": "2026-11-10",
+  "kind": "phenom"
+ },
  "rexall-pharmacy-group": {
   "arg": "https://careers.rexall.ca/",
   "first_ok": "2026-11-08",
   "kind": "page"
+ },
+ "rga-canada": {
+  "arg": "rgare/wd1/Careers",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "richter": {
   "arg": "recruiting.ultipro.ca/RSM5000RSMR/fb29febb-ec04-413d-9596-1496a4ffe2ad",
@@ -1150,6 +1490,11 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "robert-mclaughlin-gallery": {
+  "arg": "https://rmg.on.ca/about/opportunities/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "rogers": {
   "arg": "https://jobs.rogers.com",
   "first_ok": "2026-11-08",
@@ -1160,10 +1505,25 @@
   "first_ok": "2026-11-09",
   "kind": "page"
  },
+ "royal-academy-of-dance-canada": {
+  "arg": "https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "royal-conservatory-of-music": {
   "arg": "https://www.rcmusic.com/about-us/careers-at-the-royal-conservatory",
   "first_ok": "2026-11-08",
   "kind": "page"
+ },
+ "royal-ontario-museum": {
+  "arg": "royalontariomuseum",
+  "first_ok": "2026-11-10",
+  "kind": "jazzhr"
+ },
+ "rsm-canada": {
+  "arg": "rsm/wd1/RSMCareers",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
  },
  "russel-metals": {
   "arg": "recruiting.ultipro.ca/RUS5000RUME/2c9eb4de-0808-4f40-b4f2-98e190b8f525",
@@ -1195,6 +1555,11 @@
   "first_ok": "2026-11-08",
   "kind": "successfactors"
  },
+ "secret-city": {
+  "arg": "https://www.secretcityadventures.com",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "sephora-canada": {
   "arg": "https://jobs.sephora.com",
   "first_ok": "2026-11-08",
@@ -1210,10 +1575,20 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "sia-partners": {
+  "arg": "https://www.sia-partners.com/en/opportunities",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "sickkids": {
   "arg": "https://www.sickkids.ca/en/careers-volunteer/careers/",
   "first_ok": "2026-11-09",
   "kind": "page"
+ },
+ "sidefx": {
+  "arg": "sidefx",
+  "first_ok": "2026-11-10",
+  "kind": "bamboohr"
  },
  "siemens-canada": {
   "arg": "https://www.siemens.com/en-gb/company/jobs/",
@@ -1230,14 +1605,29 @@
   "first_ok": "2026-11-09",
   "kind": "page"
  },
+ "slate-asset-management": {
+  "arg": "https://www.slateam.com/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "sleep-country-canada": {
   "arg": "eklv.fa.ca3.oraclecloud.com/CX_1001",
   "first_ok": "2026-11-09",
   "kind": "oracle"
  },
+ "small-world-music": {
+  "arg": "https://smallworldmusic.com/get-involved",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "smartcentres": {
   "arg": "https://smartcentres.com/careers",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "sobeys": {
+  "arg": "https://www.sobeyscareers.com/",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "sotheby-s-canada": {
@@ -1245,14 +1635,44 @@
   "first_ok": "2026-11-08",
   "kind": "greenhouse"
  },
+ "soulpepper-theatre": {
+  "arg": "https://soulpepper.ca/work-with-us/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "soundstreams-canada": {
   "arg": "https://soundstreams.ca/about-us/employment-opportunities/",
   "first_ok": "2026-11-09",
   "kind": "page"
  },
+ "south-riverdale-community-health-centre": {
+  "arg": "srchc",
+  "first_ok": "2026-11-10",
+  "kind": "bamboohr"
+ },
  "sprott": {
-  "arg": "https://sprott.com/about-us/careers/",
+  "arg": "sprott",
   "first_ok": "2026-11-08",
+  "kind": "bamboohr"
+ },
+ "staples-canada": {
+  "arg": "https://careers.staples.ca/hcmUI/CandidateExperience/en/sites/StaplesCanada",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "starlight-investments": {
+  "arg": "https://www.starlightinvest.com/our-company/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "state-street-canada": {
+  "arg": "statestreet/wd1/Global",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
+ "stellantis-canada": {
+  "arg": "https://www.stellantis.com/en/careers",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "stratford-festival": {
@@ -1265,6 +1685,11 @@
   "first_ok": "2026-11-08",
   "kind": "greenhouse"
  },
+ "substrakt": {
+  "arg": "substrakt",
+  "first_ok": "2026-11-10",
+  "kind": "workable"
+ },
  "sun-life": {
   "arg": "sunlife/wd3/Experienced-Jobs",
   "first_ok": "2026-11-09",
@@ -1273,6 +1698,11 @@
  "swiss-re-canada": {
   "arg": "https://www.swissre.com/careers.html",
   "first_ok": "2026-11-09",
+  "kind": "page"
+ },
+ "tapa": {
+  "arg": "https://tapa.ca/jobs/",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "tapestry-opera": {
@@ -1345,6 +1775,11 @@
   "first_ok": "2026-11-09",
   "kind": "page"
  },
+ "theatre-passe-muraille": {
+  "arg": "https://www.passemuraille.ca/employment-opportunities/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "thomson-reuters": {
   "arg": "thomsonreuters/wd5/External_Career_Site",
   "first_ok": "2026-11-08",
@@ -1370,6 +1805,11 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "toronto-dance-theatre": {
+  "arg": "https://tdt.org/about/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "toronto-foundation": {
   "arg": "https://torontofoundation.ca/careers",
   "first_ok": "2026-11-08",
@@ -1380,6 +1820,16 @@
   "first_ok": "2026-11-08",
   "kind": "successfactors"
  },
+ "toronto-mendelssohn-choir": {
+  "arg": "https://tmchoir.org/job-postings/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "toronto-metropolitan-university": {
+  "arg": "https://www.torontomu.ca/careers/",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "toronto-public-library": {
   "arg": "https://tpl.ca/about-the-library/jobs/",
   "first_ok": "2026-11-08",
@@ -1388,6 +1838,11 @@
  "toronto-public-library-foundation": {
   "arg": "https://tplfoundation.ca/careers/",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "toronto-summer-music": {
+  "arg": "https://torontosummermusic.com/job-opportunities/",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "toronto-symphony-orchestra": {
@@ -1405,9 +1860,24 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "transunion-canada": {
+  "arg": "transunion/wd5/transunion",
+  "first_ok": "2026-11-10",
+  "kind": "workday"
+ },
  "tridel": {
   "arg": "https://www.tridel.com/about-tridel/careers/",
   "first_ok": "2026-11-09",
+  "kind": "page"
+ },
+ "ttc": {
+  "arg": "https://www.ttc.ca/jobs",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "uber-canada": {
+  "arg": "https://www.uber.com/ca/en/careers/list/?location=CAN-Ontario-Toronto",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "unilever-canada": {
@@ -1418,6 +1888,11 @@
  "united-way-greater-toronto": {
   "arg": "https://unitedwaygt.org/career-opportunities",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "university-health-network": {
+  "arg": "https://www.uhn.ca/corporate/Careers/pages/default.aspx",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "university-of-toronto": {
@@ -1445,6 +1920,16 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "wave-financial": {
+  "arg": "waveapps",
+  "first_ok": "2026-11-10",
+  "kind": "lever"
+ },
+ "wawanesa-insurance": {
+  "arg": "https://jobs.wawanesa.com",
+  "first_ok": "2026-11-10",
+  "kind": "successfactors"
+ },
  "wealthsimple": {
   "arg": "wealthsimple",
   "first_ok": "2026-11-08",
@@ -1455,6 +1940,11 @@
   "first_ok": "2026-11-08",
   "kind": "page"
  },
+ "wildbrain": {
+  "arg": "wildbrain",
+  "first_ok": "2026-11-10",
+  "kind": "smartrecruiters"
+ },
  "woodgreen-community-services": {
   "arg": "woodgreencommunityservices",
   "first_ok": "2026-11-08",
@@ -1463,6 +1953,11 @@
  "workman-arts": {
   "arg": "https://workmanarts.com/employment-opportunities/",
   "first_ok": "2026-11-09",
+  "kind": "page"
+ },
+ "york-region": {
+  "arg": "https://www.york.ca/york-region/careers",
+  "first_ok": "2026-11-10",
   "kind": "page"
  },
  "yorkville-university": {
