@@ -370,7 +370,7 @@ def test_status_and_latest_backward_compatible(env):
     assert rows["b"]["status"] == "fail" and rows["b"]["scan_state"] == "invalid"
     assert rows["c"]["status"] == "skip" and rows["c"]["scan_state"] == "not_configured"
     md = (env["path"] / "reports" / "latest.md").read_text(encoding="utf-8")
-    assert "读取质量：完整成功 1" in md and "## 新出现的相关职位（1）" in md
+    assert "读取质量：完整成功 1" in md and "## 本次可申请的职位（1）" in md
 
 
 # ---------- P0 后续：撞号、境外地点、门店岗 ----------

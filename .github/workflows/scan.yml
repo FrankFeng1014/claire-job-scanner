@@ -97,26 +97,32 @@ jobs:
           echo "::error::三次推送都失败，本次结果未保存到仓库"
           exit 1
 
-      - name: 有新岗位时发 Issue（同一天已有则追加评论，避免重复）
+      - name: 有可申请职位时发 Issue（同一天已有则追加评论，避免重复）
         id: notify
         if: ${{ steps.scan.outcome == 'success' }}
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          n=$(python -c "import json;print(len(json.load(open('data/latest.json'))['new_relevant']))")
+          n=$(python -c "import json;L=json.load(open('data/latest.json'));print(len(L.get('candidates', L['new_relevant'])))")
+          k=$(python -c "import json;L=json.load(open('data/latest.json'));print(len(L['new_relevant']))")
           m=$(python -c "import json;print(len(json.load(open('data/latest.json')).get('new_employers',[])))")
-          echo "新相关职位：$n  新加入名单的雇主：$m"
+          d=$(python -c "import json;print(json.load(open('data/latest.json'))['date'])")
+          echo "可申请职位：$n（其中新发布 $k）  新加入名单的雇主：$m"
           if [ "$n" -eq 0 ] && [ "$m" -eq 0 ]; then exit 0; fi
           day=$(date -u +%F)
-          { echo "@${{ github.repository_owner }} 扫描到 $n 个新岗位，新加入名单的雇主 $m 家（$(TZ=America/Toronto date '+%H:%M') 多伦多时间）："; echo; head -c 60000 reports/latest.md; } > /tmp/body.md
-          existing=$(gh issue list --state all --search "\"新岗位\" \"$day\" in:title" --json number,title \
-                     --jq "map(select(.title | contains(\"$day\"))) | .[0].number // empty")
+          full="https://github.com/${{ github.repository }}/blob/main/reports/$d.md"
+          { echo "@${{ github.repository_owner }} 本次可申请的职位 $n 个（新发布 $k 个，其余为新接入雇主的现有职位），新加入名单的雇主 $m 家（$(TZ=America/Toronto date '+%H:%M') 多伦多时间）。按与 Claire 的匹配度排序。"
+            echo; echo "完整清单（不截断）：$full"; echo
+            head -c 60000 reports/latest.md
+            echo; echo; echo "（内容较长时这里会被截断，请看上面的完整清单链接）"; } > /tmp/body.md
+          existing=$(gh issue list --state all --search "\"$day\" in:title" --json number,title \
+                     --jq "map(select((.title | contains(\"$day\")) and ((.title | contains(\"新岗位\")) or (.title | contains(\"可申请职位\"))))) | .[0].number // empty")
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --body-file /tmp/body.md
             echo "今天已有 Issue #$existing，已追加评论"
           else
-            gh issue create --title "新岗位 $n 个（$day）" --body-file /tmp/body.md
+            gh issue create --title "可申请职位 $n 个（$day）" --body-file /tmp/body.md
           fi
 
       - name: 运行摘要（便于排查）

@@ -31,7 +31,7 @@ from datetime import datetime, timezone
 import requests
 
 from .adapters import ADAPTERS, AdapterDataError
-from .filters import classify
+from .filters import classify, fit_score
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -425,7 +425,8 @@ def update_recent(L, now_iso):
         return {"kind": kind, "found_at": now_iso, "scan_id": L["scan_id"], "employer": r.get("employer"),
                 "employer_id": r.get("employer_id"), "tier": r.get("tier"), "title": r.get("title"),
                 "location": r.get("location"), "url": r.get("url"), "posted": r.get("posted"),
-                "status": r.get("candidate_status"), "reason": r.get("filter_reason"), "source": r.get("source")}
+                "status": r.get("candidate_status"), "reason": r.get("filter_reason"), "source": r.get("source"),
+                "fit_score": r.get("fit_score"), "fit_reasons": r.get("fit_reasons")}
     for r in L["new_relevant"]:
         keep.append(slim(r, "new_relevant"))
     for r in L["new_review"]:
@@ -571,6 +572,17 @@ def scan(only=None, workers=8, channels=True):
         review += c_rev
         baseline += c_base
 
+    # 新发布的和新接入的一视同仁：都按与 Claire 的匹配度打分、排序（雇主层级只作很小的加分）
+    for r in new + review + baseline:
+        r["fit_score"], r["fit_reasons"] = fit_score(r)
+    by_fit = lambda r: (-r.get("fit_score", 0), r.get("employer") or "")   # noqa: E731
+    cand_rel = sorted([dict(r, found_as="新发布") for r in new] +
+                      [dict(r, found_as="新接入") for r in baseline if r.get("candidate_status") == "relevant"],
+                      key=by_fit)
+    cand_rev = sorted([dict(r, found_as="新发布") for r in review] +
+                      [dict(r, found_as="新接入") for r in baseline if r.get("candidate_status") != "relevant"],
+                      key=by_fit)
+
     states = {k: 0 for k in STATE_LABELS}
     for r in status_rows:
         states[r["scan_state"]] = states.get(r["scan_state"], 0) + 1
@@ -588,6 +600,7 @@ def scan(only=None, workers=8, channels=True):
               "new_relevant": sorted(new, key=key_fn),
               "new_review": sorted(review, key=key_fn),
               "baseline": sorted(baseline, key=lambda r: (r.get("candidate_status") != "relevant",) + key_fn(r)),
+              "candidates": cand_rel, "candidates_review": cand_rev,
               "new_employers": new_emps, "channels": ch_status, "ats_detected_by_browser": suggested,
               "reopened_relevant": reopened,
               "removed_relevant": removed, "failed": fails, "unreadable": unreadable,
@@ -628,6 +641,29 @@ def scan(only=None, workers=8, channels=True):
     return latest
 
 
+def _group_same_title(rows):
+    """同一雇主、同一职位名在多个城市各发一条时，简报里合并成一行（保持原排序）。"""
+    groups, order = {}, []
+    for r in rows:
+        k = (r.get("employer"), _norm_title(r.get("title")))
+        if k not in groups:
+            groups[k] = []
+            order.append(k)
+        groups[k].append(r)
+    return [groups[k] for k in order]
+
+
+def _group_locations(g):
+    locs = list(dict.fromkeys((r.get("location") or "—").replace("|", "/") for r in g))
+    return "、".join(locs[:3]) + (f" 等 {len(locs)} 地" if len(locs) > 3 else "")
+
+
+def _group_links(g):
+    if len(g) == 1:
+        return f"[打开]({g[0]['url']})"
+    return " ".join(f"[{i + 1}]({r['url']})" for i, r in enumerate(g[:5])) + (f" 等 {len(g)} 个" if len(g) > 5 else "")
+
+
 def render_report(L):
     st = L.get("scan_states", {})
     lines = [f"# 扫描简报 {L['date']}", "",
@@ -638,23 +674,30 @@ def render_report(L):
              f"数据异常 {st.get('invalid', 0)}。（只有“完整成功”的雇主才会判定职位下架）", ""]
     if L["first_run"]:
         lines += ["> 这是第一次运行：所有现有职位都会被记为“新职位”，属正常现象，从第二次运行起才是真正的新增。", ""]
-    lines += [f"## 新出现的相关职位（{len(L['new_relevant'])}）", ""]
-    if L["new_relevant"]:
-        lines += ["| 层级 | 雇主 | 职位 | 地点 | 发布 | 链接 |", "|---|---|---|---|---|---|"]
-        for r in L["new_relevant"]:
-            lines.append(f"| {r['tier']} | {r['employer']} | {r['title']} | {r['location'] or '—'} | "
-                         f"{r['posted'] or '—'} | [打开]({r['url']}) |")
+    cands = L.get("candidates", L["new_relevant"])
+    n_new = sum(1 for r in cands if r.get("found_as", "新发布") == "新发布")
+    lines += [f"## 本次可申请的职位（{len(cands)}）", "",
+              f"其中新发布 {n_new} 个、新接入 {len(cands) - n_new} 个（雇主或渠道第一次被读到，职位已挂出一段时间，"
+              "但 Claire 之前没见过）。两类一视同仁，**按与 Claire 的匹配度排序**：地点、是否入门级、"
+              "职能是否对口（财务/审计/分析、艺术/文化）。雇主层级只在分数接近时起一点作用。"
+              "这是按职位名和地点的初筛，申请前请打开链接确认经验要求。", ""]
+    if cands:
+        lines += ["| 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 链接 |", "|---|---|---|---|---|---|---|"]
+        for g in _group_same_title(cands):
+            r = g[0]
+            lines.append(f"| {r.get('fit_score', '')} | {r['employer']} | {r['title']} | {_group_locations(g)} | "
+                         f"{r.get('found_as', '新发布')} | {r.get('fit_reasons', '')} | {_group_links(g)} |")
     else:
         lines.append("无")
-    review = L.get("new_review", [])
-    lines += ["", f"## 可能相关、需要核实（{len(review)}）", ""]
+    review = L.get("candidates_review", L.get("new_review", []))
+    lines += ["", f"## 可能相关、需要核实（{len(review)}）", "",
+              "实习、兼职、合同、地点只写了 Canada 等需要先确认的职位，同样按匹配度排序。", ""]
     if review:
-        lines += ["| 层级 | 雇主 | 职位 | 地点 | 待核实原因 | 链接 |", "|---|---|---|---|---|---|"]
-        for r in review[:REVIEW_REPORT_MAX]:
-            lines.append(f"| {r['tier']} | {r['employer']} | {r['title']} | {r['location'] or '—'} | "
-                         f"{r.get('filter_reason', '')} | [打开]({r['url']}) |")
-        if len(review) > REVIEW_REPORT_MAX:
-            lines.append(f"\n（另有 {len(review) - REVIEW_REPORT_MAX} 个未列出，见 data/latest.json）")
+        lines += ["| 匹配 | 雇主 | 职位 | 地点 | 来源 | 待核实原因 | 链接 |", "|---|---|---|---|---|---|---|"]
+        for g in _group_same_title(review):
+            r = g[0]
+            lines.append(f"| {r.get('fit_score', '')} | {r['employer']} | {r['title']} | {_group_locations(g)} | "
+                         f"{r.get('found_as', '新发布')} | {r.get('filter_reason', '')} | {_group_links(g)} |")
     else:
         lines.append("无")
     new_emps = L.get("new_employers", [])
@@ -667,19 +710,6 @@ def render_report(L):
             lines.append(f"| {e['name']} | {e.get('source', '').replace('auto:', '')} | "
                          f"[{e.get('found_job') or '职位'}]({e.get('found_url') or ''}) | "
                          f"{e.get('ats') or ('官网' if e.get('careers_url') else '待识别')} |")
-    baseline = L.get("baseline", [])
-    if baseline:
-        rel = [r for r in baseline if r.get("candidate_status") == "relevant"]
-        lines += ["", f"## 新接入雇主/渠道的现有职位（相关 {len(rel)}，待核实 {len(baseline) - len(rel)}）", "",
-                  "这次第一次能读到这些雇主（或渠道）的招聘系统，下面是它们**目前已挂出**的职位，不一定是今天新发布的，"
-                  "但 Claire 之前可能没看到过。", ""]
-        lines += ["| 层级 | 雇主 | 职位 | 地点 | 说明 | 链接 |", "|---|---|---|---|---|---|"]
-        for r in baseline[:BASELINE_REPORT_MAX]:
-            lines.append(f"| {r['tier']} | {r['employer']} | {r['title']} | {r['location'] or '—'} | "
-                         f"{'可能相关' if r.get('candidate_status') == 'relevant' else r.get('filter_reason', '')} | "
-                         f"[打开]({r['url']}) |")
-        if len(baseline) > BASELINE_REPORT_MAX:
-            lines.append(f"\n（另有 {len(baseline) - BASELINE_REPORT_MAX} 个未列出，见 data/latest.json 的 baseline）")
     reopened = L.get("reopened_relevant", [])
     if reopened:
         lines += ["", f"## 重新出现的相关职位（{len(reopened)}）", ""]
