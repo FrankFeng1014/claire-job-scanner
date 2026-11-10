@@ -227,6 +227,12 @@ def update_existing(rec, job, emp, d, scan_id):
     if emp.get("tier"):
         rec["tier"] = emp["tier"]
     st, why = classify(rec)
+    if st != "irrelevant" and (rec.get("details") or {}).get("ok"):
+        # 之前已经打开过职位页：沿用职位页的结论（例如要求 3 年以上经验 → 排除）
+        from .details import apply as details_apply
+        tmp = {**rec, "candidate_status": st, "filter_reason": why}
+        details_apply(tmp, rec["details"])
+        st, why = tmp["candidate_status"], tmp["filter_reason"]
     if st != rec.get("candidate_status"):
         changes["candidate_status"] = [rec.get("candidate_status", ""), st]
     rec["candidate_status"], rec["filter_reason"], rec["relevant"] = st, why, st == "relevant"
@@ -580,7 +586,7 @@ def scan(only=None, workers=8, channels=True):
         this_run = [r for r in new + review + baseline if not r.get("details")]
         ids = {id(r) for r in this_run}
         older = [r for r in seen.values() if r.get("active") and id(r) not in ids and not r.get("details")
-                 and r.get("candidate_status") in ("relevant", "review")]
+                 and r.get("candidate_status") in ("relevant", "review") and classify(r)[0] != "irrelevant"]
         rank = lambda r: -fit_score(r)[0]   # noqa: E731
         batch = (sorted(this_run, key=rank) + sorted(older, key=rank))[:D.MAX_PER_RUN]
         if batch:
@@ -682,6 +688,8 @@ def _upcoming_deadlines(seen, today_s, days=7):
     for r in seen.values():
         dl = (r.get("details") or {}).get("deadline") or ""
         if not dl or not r.get("active") or r.get("candidate_status") not in ("relevant", "review"):
+            continue
+        if classify(r)[0] == "irrelevant":
             continue
         try:
             left = (datetime.fromisoformat(dl).date() - t).days

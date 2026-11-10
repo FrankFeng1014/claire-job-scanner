@@ -158,7 +158,8 @@ def extract(text, extra=None):
         before = re.split(r"[.;\n]", text[max(0, m.start() - 60):m.start()])[-1]
         after = re.split(r"[.;\n]", text[m.end():m.end() + 60])[0]
         ctx = (before + m.group(0) + after).lower()
-        if n is None or n > 15 or re.search(r"asset|preferred|nice to have|an advantage|ideally|bonus", ctx):
+        # 超过 10 年的数字多半是在介绍公司（"over 15 years of experience in the industry"），不当要求
+        if n is None or n > 10 or re.search(r"asset|preferred|nice to have|an advantage|ideally|bonus", ctx):
             continue
         years.append(n)
     if years:
@@ -190,6 +191,10 @@ def extract(text, extra=None):
     return out
 
 
+_PROGRAM_TITLE = re.compile(r"graduate|new grad|\b20(?:26|27|28)\b|intern|co-?op|summer|campus|rotational|"
+                            r"development program|leadership program|trainee|amplify|student", re.I)
+
+
 def summary(d):
     """简报里显示的一句话。"""
     if not d or not d.get("ok"):
@@ -213,6 +218,16 @@ def apply(rec, d):
     if not d.get("ok"):
         return None
     y = d.get("years_min")
+    # 应届/实习/项目类职位：描述里常出现“3 年轮岗”“过去 3 年内毕业”等，提取容易误判，只提示、不排除
+    program = bool(_PROGRAM_TITLE.search(rec.get("title") or ""))
+    if program:
+        notes = ([f"职位页提到 {y} 年经验，请确认是否针对应届生"] if y is not None and y >= REVIEW_YEARS else []) + \
+                [f"职位页：{f}" for f in d.get("flags") or []]
+        if notes and rec.get("candidate_status") == "relevant":
+            rec["candidate_status"], rec["relevant"] = "review", False
+            rec["filter_reason"] = "；".join(notes)
+            return "review"
+        return None
     if y is not None and y >= EXCLUDE_YEARS and not d.get("new_grad_text"):
         rec["candidate_status"] = "irrelevant"
         rec["relevant"] = False

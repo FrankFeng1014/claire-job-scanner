@@ -506,3 +506,16 @@ def test_newly_broken_priority_employer(env):
     L = main.scan()
     assert [b["name"] for b in L["newly_broken"]] == ["BigBank"]
     assert "重点雇主突然读不到" in (env["path"] / "reports" / "latest.md").read_text()
+
+
+def test_details_exclusion_survives_next_run(env, monkeypatch):
+    monkeypatch.setenv("SCANNER_DETAILS", "1")
+    monkeypatch.setattr(details, "fetch", lambda s, url: ("Requirements: 4 years of experience in FP&A. " * 10, {}))
+    env["write"]([{"id": "a", "name": "A", "ats": "greenhouse", "ats_id": "a"}])
+    env["boards"]["a"] = adapters.AdapterResult([J(0, "Data Entry Clerk")])
+    main.scan()
+    env["boards"]["a"] = adapters.AdapterResult([J(0, "Data Entry Clerk"), J(1, "Junior Financial Analyst")])
+    main.scan()
+    L = main.scan()
+    seen = json.loads((env["path"] / "data" / "seen.json").read_text())
+    assert seen["a::1"]["candidate_status"] == "irrelevant" and L["candidates"] == [] and L["reopened_relevant"] == []

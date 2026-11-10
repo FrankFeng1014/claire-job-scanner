@@ -76,6 +76,8 @@ HARD_EXCLUDE = [
     (r"licen[sc]ed|financial advisor|wealth advisor|financial planner", "需执照/持牌顾问岗"),
     (r"nurse|clinical|pharmac|physician|therapist", "医疗专业岗"),
     (r"executive assistant", "高管助理（通常要多年经验）"),
+    (r"professor|lecturer|\binstructor|sessional|faculty|postdoc|post-doctoral|teaching assistant|"
+     r"instructional assistant", "大学教职/助教岗"),
     (r"\bvolunteer\b|\bunpaid\b|b[ée]n[ée]vole", "志愿者/无薪岗位"),
     (r"payroll|benefits", "薪酬福利操作岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
