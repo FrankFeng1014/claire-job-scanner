@@ -20,7 +20,7 @@
   "title": "Operations Finance (OFRP) Intern - Summer 2027, Amazon Finance Rotational Program (AFRP)",
   "url": "https://www.amazon.jobs/en/jobs/10575231/operations-finance-ofrp-intern-summer-2027-amazon-finance-rotational-program-afrp",
   "candidate_status": "review",
-  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生；职位页：仅限在校生/需返校",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -54,7 +54,7 @@
   "title": "Campus Undergraduate Summer Internship Program - 2027 Finance, Finance - Toronto, Ontario, CN",
   "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26016023",
   "candidate_status": "review",
-  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生；职位页：仅限在校生/需返校",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "2026-11-17",
@@ -88,7 +88,7 @@
   "title": "2027 Graduate Program - Media",
   "url": "https://jobs.bce.ca/bell/job/Toronto-2027-Graduate-Program-Media-ON/1429781900/",
   "candidate_status": "review",
-  "filter_reason": "职位页要求 3 年经验",
+  "filter_reason": "职位页提到 3 年经验，请确认是否针对应届生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "2026-11-16",
@@ -168,7 +168,7 @@
   "title": "Intern, Operations Council/Strategy (Winter 2027)",
   "url": "https://jobs.bombardier.com/job/Intern%2C-Operations-CouncilStrategy-%28Winter-2027%29/15662-en_US/",
   "candidate_status": "review",
-  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生；职位页：仅限在校生/需返校",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -314,7 +314,7 @@
   "title": "Intern, Strategy Analyst - Summer 2027",
   "url": "https://capitalone.wd12.myworkdayjobs.com/en-US/Capital_One/job/Toronto-ON/Intern--Strategy-Analyst---Summer-2027_R243855-1",
   "candidate_status": "review",
-  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生；职位页：仅限在校生/需返校",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -324,6 +324,22 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$45,000 to $85,000",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "The Chamber Music Society of Mississauga Inc.",
+  "title": "Marketing & Audience Development Coordinator (independent contractor)",
+  "url": "https://workinculture.ca/jobs-and-more/the-chamber-music-society-of-mississauga-inc-independent-contractor-marketing-audience-development-coordinator/",
+  "candidate_status": "review",
+  "filter_reason": "合同/临时岗：需确认入职时间",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "2026-12-22",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$35/hour",
    "years_min": null
   }
  },
@@ -380,7 +396,7 @@
   "title": "Internal Auditor",
   "url": "https://ci.wd3.myworkdayjobs.com/en-US/CI_FINANCIAL_EXTERNAL_CAREER-SITE/job/Toronto-ON/Internal-Auditor_JR5001",
   "candidate_status": "review",
-  "filter_reason": "职位页要求 2 年经验",
+  "filter_reason": "职位页提到 2 年经验，请确认是否针对应届生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -475,8 +491,8 @@
   "employer": "CIBC",
   "title": "Associate Graduate Leadership Development Program - Summer  2027",
   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate-Graduate-Leadership-Development-Program---Summer--2027_2622684-1",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 3 年以上经验",
+  "candidate_status": "review",
+  "filter_reason": "职位页提到 3 年经验，请确认是否针对应届生；职位页：仅限在校生/需返校",
   "details": {
    "checked": "2026-11-10",
    "deadline": "2026-11-15",
@@ -493,8 +509,8 @@
   "employer": "CIBC",
   "title": "Associate Technology Leadership Advancement Program - Summer 2027",
   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate-Technology-Leadership-Advancement-Program---Summer-2027_2623078-1",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 3 年以上经验",
+  "candidate_status": "review",
+  "filter_reason": "职位页提到 3 年经验，请确认是否针对应届生；职位页：仅限在校生/需返校",
   "details": {
    "checked": "2026-11-10",
    "deadline": "2026-11-16",
@@ -560,7 +576,7 @@
   "title": "Summer 2027 Internship - Collections Assistant",
   "url": "https://careers.cmhc-schl.gc.ca/job/Ottawa-Summer-2027-Internship-Collections-Assistant/607148417/",
   "candidate_status": "review",
-  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生；职位页：仅限在校生/需返校",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -578,7 +594,7 @@
   "title": "Summer 2027 Internship - Finance, Accounting and Economics",
   "url": "https://careers.cmhc-schl.gc.ca/job/Ottawa-Summer-2027-Internship-Finance%2C-Accounting-and-Economics/607196017/",
   "candidate_status": "review",
-  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生；职位页：仅限在校生/需返校",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -640,11 +656,11 @@
   }
  },
  {
-  "employer": "EMCO Corporation",
-  "title": "Strategic Development Program Trainee",
-  "url": "https://jobs.smartrecruiters.com/EMCOCorporation/743999853970831",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "employer": "Dream Unlimited",
+  "title": "Intern, Enterprise Applications Support Analyst",
+  "url": "https://recruiting.ultipro.ca/DRE5000DOMC/JobBoard/641409c4-22a9-4262-b1c5-14ed9a4d73fb/OpportunityDetail?opportunityId=1a568c0f-488a-4778-8cb0-21bd3a9faf0b",
+  "candidate_status": "review",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -652,15 +668,31 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "",
-   "years_min": 15
+   "years_min": null
+  }
+ },
+ {
+  "employer": "EMCO Corporation",
+  "title": "Strategic Development Program Trainee",
+  "url": "https://jobs.smartrecruiters.com/EMCOCorporation/743999853970831",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "",
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/743999860289951",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -668,15 +700,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/743999924997163",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -684,7 +716,7 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
@@ -707,8 +739,8 @@
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000072461575",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -716,15 +748,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee at Luxury Showroom",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000072539220",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -732,15 +764,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$45,000 - $60,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000078458205",
-  "candidate_status": "review",
-  "filter_reason": "职位页要求 15 年经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -748,15 +780,15 @@
    "new_grad_text": true,
    "ok": true,
    "salary": "$45,000-$65,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee at Luxury Showroom",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000090972141",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -764,15 +796,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$45,000 - $65,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Accelerated Management Development Program",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000090973145",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 5 年以上经验",
+  "candidate_status": "review",
+  "filter_reason": "职位页提到 5 年经验，请确认是否针对应届生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -787,8 +819,8 @@
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000103414784",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -796,15 +828,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$50,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000112910426",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -812,15 +844,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000137913509",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -828,15 +860,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$50,000 - $65,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000141745065",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -844,15 +876,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$40,000 - $45,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000144080579",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -860,15 +892,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$45,000 - $50,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000149626018",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -876,15 +908,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$43,000 to $48,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000152999119",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -892,15 +924,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$48,000-55,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000155298646",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -908,15 +940,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$40,000 - $45,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee - Business Analyst",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000155821769",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -924,15 +956,15 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$50,000",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
   "employer": "EMCO Corporation",
   "title": "Strategic Development Program Trainee",
   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000158805830",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页要求 15 年以上经验",
+  "candidate_status": "relevant",
+  "filter_reason": "职能与地点相关",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -940,7 +972,7 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "",
-   "years_min": 15
+   "years_min": null
   }
  },
  {
@@ -1060,7 +1092,7 @@
   "title": "Intern - Risk Analyst, Enterprise Risk Governance & Transformation, Winter 2027",
   "url": "https://jobs.lever.co/eqbank/eaa019f9-0c17-4020-8aeb-e0969a89117e",
   "candidate_status": "review",
-  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生；职位页：仅限在校生/需返校",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -1170,6 +1202,86 @@
   }
  },
  {
+  "employer": "Kearney",
+  "title": "Kearney Business Analyst 2027",
+  "url": "https://kearney.recsolu.com/jobs/5EUkHsuFQFp574TZKp2Q0A?job_board_id=EPd41qlA4_03IncZMnWyRQ",
+  "candidate_status": "relevant",
+  "filter_reason": "职能相关；地点未注明",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "Kearney",
+  "title": "Kearney Junior Analyst 2027 (MNL)",
+  "url": "https://kearney.recsolu.com/jobs/5aT9Ra68RX32mIVptbB1jQ?job_board_id=EPd41qlA4_03IncZMnWyRQ",
+  "candidate_status": "relevant",
+  "filter_reason": "职能相关；地点未注明",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "Kearney",
+  "title": "Kearney Junior Analyst 2027 (BKK)",
+  "url": "https://kearney.recsolu.com/jobs/Cp8CaaNS8BiUFfqcN2LnMg?job_board_id=EPd41qlA4_03IncZMnWyRQ",
+  "candidate_status": "relevant",
+  "filter_reason": "职能相关；地点未注明",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "Kearney",
+  "title": "Kearney Junior Analyst 2027 (KUL)",
+  "url": "https://kearney.recsolu.com/jobs/Dc1geOoXDQQ0pwi2ZKW90Q?job_board_id=EPd41qlA4_03IncZMnWyRQ",
+  "candidate_status": "relevant",
+  "filter_reason": "职能相关；地点未注明",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "Kearney",
+  "title": "Kearney Junior Analyst 2027 (JKT)",
+  "url": "https://kearney.recsolu.com/jobs/i-D3ziAAx5_0h_grI4bvoQ?job_board_id=EPd41qlA4_03IncZMnWyRQ",
+  "candidate_status": "relevant",
+  "filter_reason": "职能相关；地点未注明",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "",
+   "years_min": null
+  }
+ },
+ {
   "employer": "KPMG Canada",
   "title": "Tax Specialist, Intelligent Delivery & Innovation",
   "url": "https://careers.kpmg.ca/jobs/33970?lang=en-us",
@@ -1238,7 +1350,7 @@
   "title": "Summer 2027 Intern - Mortgage Operations Analyst",
   "url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Summer-2027-Intern---Mortgage-Operations-Analyst_JR26091425",
   "candidate_status": "review",
-  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生；职位页：仅限在校生/需返校",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "2026-11-19",
@@ -1248,6 +1360,22 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "$52,650.00",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "Mercer Canada",
+  "title": "Underwriting Assistant (Fixed-Term, 12 Months))",
+  "url": "https://mmc.wd1.myworkdayjobs.com/en-US/MMC/job/Ottawa---Blair-Towers-Place/Underwriting-Assistant_R_369723",
+  "candidate_status": "review",
+  "filter_reason": "合同/临时岗：需确认入职时间",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$41,400 to $73,500",
    "years_min": null
   }
  },
@@ -1344,6 +1472,22 @@
    "new_grad_text": false,
    "ok": true,
    "salary": "",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "Oliver Wyman",
+  "title": "Underwriting Assistant (Fixed-Term, 12 Months))",
+  "url": "https://mmc.wd1.myworkdayjobs.com/en-US/MMC/job/Ottawa---Blair-Towers-Place/Underwriting-Assistant_R_369723",
+  "candidate_status": "review",
+  "filter_reason": "合同/临时岗：需确认入职时间",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$41,400 to $73,500",
    "years_min": null
   }
  },
@@ -1543,8 +1687,8 @@
   "employer": "RBC",
   "title": "Business Analyst, RBC Amplify 2027, Toronto",
   "url": "https://jobs.rbc.com/ca/en/job/R-0000191191/Business-Analyst-RBC-Amplify-2027-Toronto",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页写明仅限在校生",
+  "candidate_status": "review",
+  "filter_reason": "职位页：仅限在校生/需返校",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -1706,7 +1850,7 @@
   "title": "Analyst, Internal Audit and Compliance",
   "url": "https://jobs.lever.co/riocan/a5b33eed-cd93-4137-aedf-ec527b3d6bdb",
   "candidate_status": "review",
-  "filter_reason": "职位页要求 2 年经验",
+  "filter_reason": "职位页提到 2 年经验，请确认是否针对应届生",
   "details": {
    "checked": "2026-11-10",
    "deadline": "",
@@ -1798,6 +1942,22 @@
   }
  },
  {
+  "employer": "S&P Global (Ratings)",
+  "title": "Summer intern, Financial Risk Analytics Product",
+  "url": "https://spgi.wd5.myworkdayjobs.com/en-US/SPGI_Careers/job/Toronto-CAN/Summer-intern--Financial-Risk-Analytics-Product_332618-2",
+  "candidate_status": "review",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "",
+   "years_min": null
+  }
+ },
+ {
   "employer": "Scotiabank",
   "title": "Analyst or Associate, Investment Banking, Corporate Finance Advisory - Toronto, ON",
   "url": "https://jobs.scotiabank.com/job/Toronto-Analyst-or-Associate%2C-Investment-Banking%2C-Corporate-Finance-Advisory-Toronto%2C-ON-ON-M5H0B4/606471617/",
@@ -1865,8 +2025,8 @@
   "employer": "Scotiabank",
   "title": "2027 Canada UpLIFTED: Women in Finance Development Program",
   "url": "https://jobs.scotiabank.com/job/Toronto-2027-Canada-UpLIFTED-Women-in-Finance-Development-Program-ON/607808317/",
-  "candidate_status": "irrelevant",
-  "filter_reason": "职位页写明仅限在校生",
+  "candidate_status": "review",
+  "filter_reason": "职位页：仅限在校生/需返校",
   "details": {
    "checked": "2026-11-10",
    "deadline": "2026-11-23",
@@ -2120,6 +2280,110 @@
   }
  },
  {
+  "employer": "TMX Group",
+  "title": "Cash Management Officer - Tax Intern",
+  "url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/Cash-Management-Officer---Tax_R-6588",
+  "candidate_status": "review",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$22/hour",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "TMX Group",
+  "title": "Enterprise Compliance Intern",
+  "url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/Enterprise-Compliance-Intern_R-6683",
+  "candidate_status": "review",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [
+    "仅限在校生/需返校"
+   ],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$20/hour",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "TMX Group",
+  "title": "ISO Finance Coordinator Intern",
+  "url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/ISO-Finance-Coordinator-Intern_R-6652",
+  "candidate_status": "review",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [
+    "仅限在校生/需返校"
+   ],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$20/hour",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "TMX Group",
+  "title": "Junior GRC Analyst Intern",
+  "url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/Junior-GRC-Analyst-Intern_R-6672",
+  "candidate_status": "review",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [
+    "仅限在校生/需返校"
+   ],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$20/hour",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "TMX Group",
+  "title": "Project Analyst Intern",
+  "url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/Project-Analyst-Intern_R-6615",
+  "candidate_status": "review",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [
+    "仅限在校生/需返校"
+   ],
+   "new_grad_text": true,
+   "ok": true,
+   "salary": "$20/hour",
+   "years_min": null
+  }
+ },
+ {
+  "employer": "TMX Group",
+  "title": "Analyst, Market Insights Intern",
+  "url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/Student-Intern---Analyst--Market-Insights--WinterTerm-_R-6586",
+  "candidate_status": "review",
+  "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$25/hour",
+   "years_min": null
+  }
+ },
+ {
   "employer": "Toradex Solutions Inc.",
   "title": "accounting assistant",
   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50692072",
@@ -2137,278 +2401,6 @@
  },
  {
   "employer": "University of Toronto",
-  "title": "Assistant Professor - Accounting or Strategic Management (Canada Impact+ Emerging Leaders Award)",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Assistant-Professor-Accounting-or-Strategic-Management-%28Canada-Impact%2B-Emerging-Leaders-Award%29-ON/605322617/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-09",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$100K per year",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Assistant Professor, Teaching Stream - Macroeconomics",
-  "url": "https://jobs.utoronto.ca/job/Mississauga-Assistant-Professor%2C-Teaching-Stream-Macroeconomics-ON/605576017/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-16",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "CAD 155,000 – 185,000 per annum",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Assistant Professor, Teaching Stream - Economics",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Assistant-Professor%2C-Teaching-Stream-Economics-ON/606027317/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-16",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$150,000-$180,000",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Assistant Professor - Environmental Economics",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Assistant-Professor-Environmental-Economics-ON/606802117/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-16",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$200,000",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Assistant Professor - Global Economics",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Assistant-Professor-Global-Economics-ON/606817417/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-30",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$130,000 to $170,000",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Associate Professor / Professor - Global Economics",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Associate-Professor-Professor-Global-Economics-ON/606817817/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-30",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$200,000",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Associate Professor / Professor - Applied Economics and Munk Chair in Economics",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Associate-Professor-Professor-Applied-Economics-and-Munk-Chair-in-Economics-ON/606818717/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-12-10",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$200,000",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Sessional Instructional Assistant - MGAC50H3 - Management Canadian Income Taxation I",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAC50H3-Management-Canadian-Income-Taxation-I-ON/607093117/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-13",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$55.25 per hour",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Sessional Instructional Assistant - MGAD20H3 - Advanced Auditing",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAD20H3-Advanced-Auditing-ON/607094217/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-13",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$55.25 per hour",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Sessional Instructional Assistant - MGAD45H3 - Corporate Goverance and Strategy - CPA Perspective 1",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAD45H3-Corporate-Goverance-and-Strategy-CPA-Perspective-1-ON/607096817/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-13",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$55.25 per hour",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Sessional Instructional Assistant - MGAD65H3 - Canadian Income Taxation II",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAD65H3-Canadian-Income-Taxation-II-ON/607097517/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-13",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$55.25 per hour",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Sessional Instructional Assistant - MGAD70H3 - Advanced Accounting Case Analysis - A Capstone Course",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAD70H3-Advanced-Accounting-Case-Analysis-A-Capstone-Course-ON/607098017/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-13",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$55.25 per hour",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Sessional Instructional Assistant - FAH338H1S Art and Consumers in the Renaissance (1400-1700)",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-FAH338H1S-Art-and-Consumers-in-the-Renaissance-%281400-1700%29-ON/607220417/",
-  "candidate_status": "review",
-  "filter_reason": "职位页要求 2 年经验",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-11",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$55.25/hour",
-   "years_min": 2
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Winter 2027 Sessional Lecturer: LMP2347H Economics of Healthcare (0.25FCE)",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Winter-2027-Sessional-Lecturer-LMP2347H-Economics-of-Healthcare-%280_25FCE%29-ON/607340717/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-13",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Sessional Instructional Assistant, MMI1070H Economics of Business Strategy, 2027 (Jan - April)",
-  "url": "https://jobs.utoronto.ca/job/Mississauga-Sessional-Instructional-Assistant%2C-MMI1070H-Economics-of-Business-Strategy%2C-2027-%28Jan-April%29-ON/607365217/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-09",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Sessional Instructional Assistant, MMI1090H Technology, Strategy and Policy, 2027 (Jan - April)",
-  "url": "https://jobs.utoronto.ca/job/Mississauga-Sessional-Instructional-Assistant%2C-MMI1090H-Technology%2C-Strategy-and-Policy%2C-2027-%28Jan-April%29-ON/607561617/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2026-11-13",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
-  "title": "Associate Professor / Professor - African Arts, Media and/or Cultural Studies",
-  "url": "https://jobs.utoronto.ca/job/Toronto-Associate-Professor-Professor-African-Arts%2C-Media-andor-Cultural-Studies-ON/607790017/",
-  "candidate_status": "relevant",
-  "filter_reason": "职能与地点相关",
-  "details": {
-   "checked": "2026-11-10",
-   "deadline": "2027-01-18",
-   "flags": [],
-   "new_grad_text": false,
-   "ok": true,
-   "salary": "$200,000",
-   "years_min": null
-  }
- },
- {
-  "employer": "University of Toronto",
   "title": "Graduate Program Assistant (1-Year Term)",
   "url": "https://jobs.utoronto.ca/job/Toronto-Graduate-Program-Assistant-%281-Year-Term%29-ON/607857617/",
   "candidate_status": "relevant",
@@ -2421,6 +2413,22 @@
    "ok": true,
    "salary": "$66,522",
    "years_min": 1
+  }
+ },
+ {
+  "employer": "Wealthsimple",
+  "title": "Associate Treasury Reporting & Analytics",
+  "url": "https://jobs.ashbyhq.com/wealthsimple/95d17671-6a4a-4543-848d-2bfe1f3e16e0",
+  "candidate_status": "review",
+  "filter_reason": "职位页要求 2 年经验",
+  "details": {
+   "checked": "2026-11-10",
+   "deadline": "",
+   "flags": [],
+   "new_grad_text": false,
+   "ok": true,
+   "salary": "$54400–$68000 /year",
+   "years_min": 2
   }
  }
 ]
