@@ -1,0 +1,2685 @@
+{
+ "ats_detected_by_browser": [],
+ "baseline": [
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2027-09-18",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$68,000 to $106,000",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年；截止 2027-09-18；$68,000 to $106,000",
+   "employer": "KPMG Canada",
+   "employer_id": "kpmg-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 83,
+   "job_id": "33970",
+   "last_seen": "2026-11-10",
+   "location": "Vaughan, Ontario, Canada; Vaughan, Ontario, Canada; Toronto, Ontario, Canada",
+   "posted": "2026-09-18",
+   "relevant": true,
+   "source": "sitemap",
+   "tier": "P0",
+   "title": "Tax Specialist, Intelligent Delivery & Innovation",
+   "url": "https://careers.kpmg.ca/jobs/33970?lang=en-us"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2027-10-07",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$80,613 to $106,000",
+    "years_min": 2
+   },
+   "details_note": "经验≥2年；截止 2027-10-07；$80,613 to $106,000",
+   "employer": "KPMG Canada",
+   "employer_id": "kpmg-canada",
+   "filter_reason": "职位页要求 2 年经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 48,
+   "job_id": "34198",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, Ontario, Canada",
+   "posted": "2026-10-07",
+   "relevant": false,
+   "source": "sitemap",
+   "tier": "P0",
+   "title": "Tax Specialist, US Corporate Tax",
+   "url": "https://careers.kpmg.ca/jobs/34198?lang=en-us"
+  }
+ ],
+ "candidates": [
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2027-09-18",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$68,000 to $106,000",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年；截止 2027-09-18；$68,000 to $106,000",
+   "employer": "KPMG Canada",
+   "employer_id": "kpmg-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 83,
+   "found_as": "新接入",
+   "job_id": "33970",
+   "last_seen": "2026-11-10",
+   "location": "Vaughan, Ontario, Canada; Vaughan, Ontario, Canada; Toronto, Ontario, Canada",
+   "posted": "2026-09-18",
+   "relevant": true,
+   "source": "sitemap",
+   "tier": "P0",
+   "title": "Tax Specialist, Intelligent Delivery & Innovation",
+   "url": "https://careers.kpmg.ca/jobs/33970?lang=en-us"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$58,000 - $96,000",
+    "years_min": null
+   },
+   "details_note": "$58,000 - $96,000",
+   "employer": "Deloitte Canada",
+   "employer_id": "deloitte-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 73,
+   "found_as": "新发布",
+   "job_id": "134948",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, ON, CAN, M5C 3G7; Toronto, ON",
+   "posted": "9/8/26",
+   "relevant": true,
+   "source": "successfactors",
+   "tier": "P0",
+   "title": "Application Security Analyst, Deloitte Global Technology",
+   "url": "https://careers.deloitte.ca/job/Application-Security-Analyst%2C-Deloitte-Global-Technology/134948-en_US/"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "employer": "Mondelez Canada",
+   "employer_id": "mondelez-canada",
+   "filter_reason": "职能相关；地点未注明",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "地点待确认、入门级",
+   "fit_score": 42,
+   "found_as": "新发布",
+   "job_id": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181908&jobtitle=Management%20Trainee",
+   "last_seen": "2026-11-10",
+   "location": "",
+   "posted": "",
+   "relevant": true,
+   "source": "page",
+   "tier": "P1",
+   "title": "Management Trainee",
+   "url": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181908&jobtitle=Management%20Trainee"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "employer": "Mondelez Canada",
+   "employer_id": "mondelez-canada",
+   "filter_reason": "职能相关；地点未注明",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "地点待确认、入门级",
+   "fit_score": 42,
+   "found_as": "新发布",
+   "job_id": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181519&jobtitle=Management%20Trainee",
+   "last_seen": "2026-11-10",
+   "location": "",
+   "posted": "",
+   "relevant": true,
+   "source": "page",
+   "tier": "P1",
+   "title": "Management Trainee",
+   "url": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181519&jobtitle=Management%20Trainee"
+  }
+ ],
+ "candidates_review": [
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2027-10-07",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$80,613 to $106,000",
+    "years_min": 2
+   },
+   "details_note": "经验≥2年；截止 2027-10-07；$80,613 to $106,000",
+   "employer": "KPMG Canada",
+   "employer_id": "kpmg-canada",
+   "filter_reason": "职位页要求 2 年经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 48,
+   "found_as": "新接入",
+   "job_id": "34198",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, Ontario, Canada",
+   "posted": "2026-10-07",
+   "relevant": false,
+   "source": "sitemap",
+   "tier": "P0",
+   "title": "Tax Specialist, US Corporate Tax",
+   "url": "https://careers.kpmg.ca/jobs/34198?lang=en-us"
+  }
+ ],
+ "channels": [],
+ "date": "2026-11-10",
+ "deadlines_7d": [
+  {
+   "candidate_status": "review",
+   "days_left": 0,
+   "deadline": "2026-11-10",
+   "details_note": "经验≥2年；截止 2026-11-10",
+   "employer": "TD Bank",
+   "location": "Toronto, Ontario",
+   "tier": "P0",
+   "title": "Market Risk Associate - FX (5772)",
+   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Senior-Market-Risk-Analyst--5772-_R_1518961"
+  },
+  {
+   "candidate_status": "review",
+   "days_left": 1,
+   "deadline": "2026-11-11",
+   "details_note": "经验≥2年；截止 2026-11-11；$55.25/hour",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Sessional Instructional Assistant - FAH338H1S Art and Consumers in the Renaissance (1400-1700)",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-FAH338H1S-Art-and-Consumers-in-the-Renaissance-%281400-1700%29-ON/607220417/"
+  },
+  {
+   "candidate_status": "review",
+   "days_left": 3,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13",
+   "employer": "TD Bank",
+   "location": "Toronto, Ontario",
+   "tier": "P0",
+   "title": "Actuarial Analyst I",
+   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Actuarial-Analyst-I_R_1520950"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 3,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13；$55.25 per hour",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Sessional Instructional Assistant - MGAC50H3 - Management Canadian Income Taxation I",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAC50H3-Management-Canadian-Income-Taxation-I-ON/607093117/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 3,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13；$55.25 per hour",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Sessional Instructional Assistant - MGAD20H3 - Advanced Auditing",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAD20H3-Advanced-Auditing-ON/607094217/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 3,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13；$55.25 per hour",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Sessional Instructional Assistant - MGAD45H3 - Corporate Goverance and Strategy - CPA Perspective 1",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAD45H3-Corporate-Goverance-and-Strategy-CPA-Perspective-1-ON/607096817/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 3,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13；$55.25 per hour",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Sessional Instructional Assistant - MGAD65H3 - Canadian Income Taxation II",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAD65H3-Canadian-Income-Taxation-II-ON/607097517/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 3,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13；$55.25 per hour",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Sessional Instructional Assistant - MGAD70H3 - Advanced Accounting Case Analysis - A Capstone Course",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Sessional-Instructional-Assistant-MGAD70H3-Advanced-Accounting-Case-Analysis-A-Capstone-Course-ON/607098017/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 3,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Winter 2027 Sessional Lecturer: LMP2347H Economics of Healthcare (0.25FCE)",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Winter-2027-Sessional-Lecturer-LMP2347H-Economics-of-Healthcare-%280_25FCE%29-ON/607340717/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 3,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13",
+   "employer": "University of Toronto",
+   "location": "Mississauga, ON, CA",
+   "tier": "P2",
+   "title": "Sessional Instructional Assistant, MMI1090H Technology, Strategy and Policy, 2027 (Jan - April)",
+   "url": "https://jobs.utoronto.ca/job/Mississauga-Sessional-Instructional-Assistant%2C-MMI1090H-Technology%2C-Strategy-and-Policy%2C-2027-%28Jan-April%29-ON/607561617/"
+  },
+  {
+   "candidate_status": "review",
+   "days_left": 5,
+   "deadline": "2026-11-15",
+   "details_note": "截止 2026-11-15",
+   "employer": "CPP Investments",
+   "location": "Toronto",
+   "tier": "P0",
+   "title": "Intern Analyst, PhD – Systematic Strategies Group",
+   "url": "https://cppib.wd10.myworkdayjobs.com/en-US/cppinvestments/job/Toronto/Intern-Analyst--PhD---Systematic-Strategies-Group_JR00860"
+  },
+  {
+   "candidate_status": "review",
+   "days_left": 6,
+   "deadline": "2026-11-16",
+   "details_note": "经验≥3年；截止 2026-11-16",
+   "employer": "Bell Canada",
+   "location": "Toronto, ON, CA",
+   "tier": "P0",
+   "title": "2027 Graduate Program - Media",
+   "url": "https://jobs.bce.ca/bell/job/Toronto-2027-Graduate-Program-Media-ON/1429781900/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 6,
+   "deadline": "2026-11-16",
+   "details_note": "写明应届可申；截止 2026-11-16",
+   "employer": "Bell Canada",
+   "location": "Toronto, ON, CA",
+   "tier": "P0",
+   "title": "Graduate Program 2027 - Consumer and Small Business (Marketing)",
+   "url": "https://jobs.bce.ca/bell/job/Toronto-Graduate-Program-2027-Consumer-and-Small-Business-%28Marketing%29-ON/1431803900/"
+  },
+  {
+   "candidate_status": "review",
+   "days_left": 6,
+   "deadline": "2026-11-16",
+   "details_note": "截止 2026-11-16",
+   "employer": "CIBC",
+   "location": "Brampton, ON",
+   "tier": "P0",
+   "title": "Client Engagement Associate - Part-time (15 hours/week)",
+   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Brampton-ON/Client-Engagement-Associate---Part-time--15-hours-week-_2622539"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 6,
+   "deadline": "2026-11-16",
+   "details_note": "截止 2026-11-16；CAD 155,000 – 185,000 per annum",
+   "employer": "University of Toronto",
+   "location": "Mississauga, ON, CA",
+   "tier": "P2",
+   "title": "Assistant Professor, Teaching Stream - Macroeconomics",
+   "url": "https://jobs.utoronto.ca/job/Mississauga-Assistant-Professor%2C-Teaching-Stream-Macroeconomics-ON/605576017/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 6,
+   "deadline": "2026-11-16",
+   "details_note": "截止 2026-11-16；$150,000-$180,000",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Assistant Professor, Teaching Stream - Economics",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Assistant-Professor%2C-Teaching-Stream-Economics-ON/606027317/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 6,
+   "deadline": "2026-11-16",
+   "details_note": "截止 2026-11-16；$200,000",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Assistant Professor - Environmental Economics",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Assistant-Professor-Environmental-Economics-ON/606802117/"
+  },
+  {
+   "candidate_status": "review",
+   "days_left": 7,
+   "deadline": "2026-11-17",
+   "details_note": "截止 2026-11-17；仅限在校生/需返校",
+   "employer": "American Express Canada",
+   "location": "Toronto, ON, Canada",
+   "tier": "P1",
+   "title": "Campus Undergraduate Summer Internship Program - 2027 Finance, Finance - Toronto, Ontario, CN",
+   "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26016023"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 7,
+   "deadline": "2026-11-17",
+   "details_note": "截止 2026-11-17",
+   "employer": "MGG",
+   "location": "Toronto, ON",
+   "tier": "P2",
+   "title": "Gallery Assistant/Registrar in charge of Installations, Shipping and Receiving",
+   "url": "https://workinculture.ca/jobs-and-more/mgg-toronto-full-time-gallery-assistant-registrar-in-charge-of-installations-shipping-and-receiving-2/"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 7,
+   "deadline": "2026-11-17",
+   "details_note": "经验≥1年；截止 2026-11-17；$66,522",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Graduate Program Assistant (1-Year Term)",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Graduate-Program-Assistant-%281-Year-Term%29-ON/607857617/"
+  }
+ ],
+ "details_checked": 150,
+ "employers_complete": 166,
+ "employers_failed": 13,
+ "employers_ok": 386,
+ "employers_skipped": 93,
+ "employers_total": 492,
+ "excluded_by_details": [
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [
+     "仅限在校生/需返校"
+    ],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "employer": "RBC",
+   "employer_id": "rbc",
+   "excluded_by_details": true,
+   "filter_reason": "职位页写明仅限在校生",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "R-0000191191",
+   "last_seen": "2026-11-10",
+   "location": "TORONTO, Ontario, Canada",
+   "posted": "2026-10-26",
+   "relevant": false,
+   "source": "phenom",
+   "tier": "P0",
+   "title": "Business Analyst, RBC Amplify 2027, Toronto",
+   "url": "https://jobs.rbc.com/ca/en/job/R-0000191191/Business-Analyst-RBC-Amplify-2027-Toronto"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2026-11-23",
+    "flags": [
+     "仅限在校生/需返校"
+    ],
+    "new_grad_text": true,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "employer": "Scotiabank",
+   "employer_id": "scotiabank",
+   "excluded_by_details": true,
+   "filter_reason": "职位页写明仅限在校生",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "607808317",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 6, 2026",
+   "relevant": false,
+   "source": "successfactors",
+   "tier": "P0",
+   "title": "2027 Canada UpLIFTED: Women in Finance Development Program",
+   "url": "https://jobs.scotiabank.com/job/Toronto-2027-Canada-UpLIFTED-Women-in-Finance-Development-Program-ON/607808317/"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$50,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000155821769",
+   "last_seen": "2026-11-10",
+   "location": "Ottawa, ON, ca",
+   "posted": "2026-10-15",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee - Business Analyst",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000155821769"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 8 Days Ago",
+       "Posted 10 Days Ago"
+      ]
+     },
+     "date": "2026-11-07",
+     "run": "20261107T195111Z-0184bd"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 10 Days Ago",
+       "Posted 11 Days Ago"
+      ]
+     },
+     "date": "2026-11-08",
+     "run": "20261108T170147Z-7edd2d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 11 Days Ago",
+       "Posted 12 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2026-11-11",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 3
+   },
+   "employer": "CIBC",
+   "employer_id": "cibc",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Toronto-ON/Associate--Mid-Market-Investment-Banking_2622373",
+   "last_modified_seen": "2026-11-09",
+   "last_seen": "2026-11-10",
+   "legacy_job_id": "2622373",
+   "location": "Toronto, ON",
+   "posted": "Posted 12 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Associate, Mid-Market Investment Banking",
+   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate--Mid-Market-Investment-Banking_2622373"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2027-10-23",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$82,000",
+    "years_min": 7
+   },
+   "employer": "KPMG Canada",
+   "employer_id": "kpmg-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 7 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "34509",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, Ontario, Canada; Oakville, Ontario, Canada; Vaughan, Ontario, Canada; Toronto, Ontario, Canada; Calgary, Alberta, Canada; Edmonton, Alberta, Canada; Vancouver, British Columbia, Canada; Halifax, Nova Scotia, Canada; Montreal, Quebec, Canada",
+   "posted": "2026-10-23",
+   "relevant": false,
+   "source": "sitemap",
+   "tier": "P0",
+   "title": "Practice Coordinator, Audit Operations and Audit Technology & Transformation",
+   "url": "https://careers.kpmg.ca/jobs/34509?lang=en-us"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 3 Days Ago",
+       "Posted 5 Days Ago"
+      ]
+     },
+     "date": "2026-11-07",
+     "run": "20261107T195111Z-0184bd"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 5 Days Ago",
+       "Posted 6 Days Ago"
+      ]
+     },
+     "date": "2026-11-08",
+     "run": "20261108T170147Z-7edd2d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 6 Days Ago",
+       "Posted 7 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2026-11-30",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 4
+   },
+   "employer": "TD Bank",
+   "employer_id": "td-bank",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 4 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Toronto-Ontario/Specialized-Market-Risk-Associate--5375-_R_1519047",
+   "last_modified_seen": "2026-11-09",
+   "last_seen": "2026-11-10",
+   "legacy_job_id": "R_1519047",
+   "location": "Toronto, Ontario",
+   "posted": "Posted 7 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Specialized Market Risk Associate (5375)",
+   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Specialized-Market-Risk-Associate--5375-_R_1519047"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2026-11-23",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 3
+   },
+   "employer": "TD Bank",
+   "employer_id": "td-bank",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "/job/Toronto-Ontario/Wealth-Operations-Analyst-I_R_1519362",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, Ontario",
+   "posted": "Posted Today",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Wealth Operations Analyst I",
+   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Wealth-Operations-Analyst-I_R_1519362"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$135,000 - $200,000",
+    "years_min": 5
+   },
+   "employer": "Canaccord Genuity",
+   "employer_id": "canaccord-genuity",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Oakville-ON/Associate-Investment-Advisor_JR100578",
+   "last_seen": "2026-11-10",
+   "legacy_job_id": "JR100578",
+   "location": "Oakville, ON",
+   "posted": "Posted 30+ Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P1",
+   "title": "Associate Investment Advisor",
+   "url": "https://cgf.wd10.myworkdayjobs.com/en-US/CG/job/Oakville-ON/Associate-Investment-Advisor_JR100578"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$100,000 - $140,000",
+    "years_min": 5
+   },
+   "employer": "Canaccord Genuity",
+   "employer_id": "canaccord-genuity",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Oakville-ON/Investment-Associate_JR100599",
+   "last_seen": "2026-11-10",
+   "legacy_job_id": "JR100599",
+   "location": "Oakville, ON",
+   "posted": "Posted 30+ Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P1",
+   "title": "Investment Associate",
+   "url": "https://cgf.wd10.myworkdayjobs.com/en-US/CG/job/Oakville-ON/Investment-Associate_JR100599"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 5
+   },
+   "employer": "EQ Bank",
+   "employer_id": "eq-bank",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "72b59b15-8011-4eda-afd0-38c6a2d3a851",
+   "last_seen": "2026-11-10",
+   "location": "Toronto",
+   "posted": "2026-10-23",
+   "relevant": false,
+   "source": "lever",
+   "tier": "P1",
+   "title": "Associate, Commercial Credit, Commercial Finance Group (CFG)",
+   "url": "https://jobs.lever.co/eqbank/72b59b15-8011-4eda-afd0-38c6a2d3a851"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted Yesterday",
+       "Posted 2 Days Ago"
+      ]
+     },
+     "date": "2026-11-08",
+     "run": "20261108T170147Z-7edd2d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 2 Days Ago",
+       "Posted 3 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2026-12-04",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$50,000",
+    "years_min": 3
+   },
+   "employer": "iA Financial Group",
+   "employer_id": "ia-financial-group",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-07",
+   "job_id": "/job/Toronto-Ontario/Business-Development-Coordinator---ON_JR10028367",
+   "last_modified_seen": "2026-11-09",
+   "last_seen": "2026-11-10",
+   "legacy_job_id": "JR10028367",
+   "location": "Toronto, Ontario",
+   "posted": "Posted 3 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P1",
+   "title": "Business Development Coordinator - ON",
+   "url": "https://ia.wd3.myworkdayjobs.com/en-US/Professional/job/Toronto-Ontario/Business-Development-Coordinator---ON_JR10028367"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2027-01-03",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$55,000–$60,000 per year",
+    "years_min": 3
+   },
+   "employer": "Aga Khan Museum",
+   "employer_id": "aga-khan-museum",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "287280",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON",
+   "posted": "2026-11-04",
+   "relevant": false,
+   "source": "channel:workinculture",
+   "tier": "P2",
+   "title": "Development Coordinator, Donor Services and Operations",
+   "url": "https://workinculture.ca/jobs-and-more/the-aga-khan-museum-full-time-development-coordinator-donor-services-and-operations/"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$ 51,000 to $ 59,000",
+    "years_min": 3
+   },
+   "employer": "Bond Securcom",
+   "employer_id": "bond-securcom",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "50662317",
+   "last_seen": "2026-11-10",
+   "location": "North York, ON",
+   "posted": "November 04, 2026",
+   "relevant": false,
+   "source": "channel:jobbank",
+   "tier": "P2",
+   "title": "accounting assistant",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50662317"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$120,000 – $140,000",
+    "years_min": 3
+   },
+   "employer": "Charles River Associates (Toronto)",
+   "employer_id": "charles-river-associates-toronto",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "8130727",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, Canada",
+   "posted": "2026-10-29",
+   "relevant": false,
+   "source": "greenhouse",
+   "tier": "P2",
+   "title": "Consulting Associate/Recovery Services (Forensic Services practice)",
+   "url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8130727"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$50,000.00 per year",
+    "years_min": 3
+   },
+   "employer": "Superior Door & Gate Systems",
+   "employer_id": "superior-door-gate-systems",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "50642174",
+   "last_seen": "2026-11-09",
+   "location": "Mississauga, ON",
+   "posted": "November 02, 2026",
+   "relevant": false,
+   "source": "channel:jobbank",
+   "tier": "P2",
+   "title": "accounting assistant",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50642174"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2026-11-15",
+    "flags": [
+     "仅限在校生/需返校"
+    ],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 3
+   },
+   "employer": "CIBC",
+   "employer_id": "cibc",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "/job/Toronto-ON/Associate-Graduate-Leadership-Development-Program---Summer--2027_2622684-1",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON",
+   "posted": "Posted Today",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Associate Graduate Leadership Development Program - Summer  2027",
+   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate-Graduate-Leadership-Development-Program---Summer--2027_2622684-1"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2026-11-16",
+    "flags": [
+     "仅限在校生/需返校"
+    ],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 3
+   },
+   "employer": "CIBC",
+   "employer_id": "cibc",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "/job/Toronto-ON/Associate-Technology-Leadership-Advancement-Program---Summer-2027_2623078-1",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON",
+   "posted": "Posted Today",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Associate Technology Leadership Advancement Program - Summer 2027",
+   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate-Technology-Leadership-Advancement-Program---Summer-2027_2623078-1"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "743999853970831",
+   "last_seen": "2026-11-10",
+   "location": "Brampton, ON, ca",
+   "posted": "2022-09-27",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/743999853970831"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "743999860289951",
+   "last_seen": "2026-11-10",
+   "location": "Oakville, ON, ca",
+   "posted": "2022-10-26",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/743999860289951"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "743999924997163",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, ca",
+   "posted": "2023-08-16",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/743999924997163"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000072461575",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, ca",
+   "posted": "2025-07-24",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000072461575"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$45,000 - $60,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000072539220",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, ca",
+   "posted": "2025-07-24",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee at Luxury Showroom",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000072539220"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$45,000 - $65,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000090972141",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, ca",
+   "posted": "2025-10-30",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee at Luxury Showroom",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000090972141"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$55,000-$70,000",
+    "years_min": 5
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000090973145",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, ca",
+   "posted": "2025-10-30",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Accelerated Management Development Program",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000090973145"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$50,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000103414784",
+   "last_seen": "2026-11-10",
+   "location": "North York, Ontario, ca",
+   "posted": "2026-01-14",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000103414784"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000112910426",
+   "last_seen": "2026-11-10",
+   "location": "Ottawa, ON, ca",
+   "posted": "2026-03-05",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000112910426"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$50,000 - $65,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000137913509",
+   "last_seen": "2026-11-10",
+   "location": "Etobicoke, Ontario, ca",
+   "posted": "2026-07-15",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000137913509"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$40,000 - $45,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000141745065",
+   "last_seen": "2026-11-10",
+   "location": "Oakville, ON, ca",
+   "posted": "2026-08-05",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000141745065"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$45,000 - $50,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000144080579",
+   "last_seen": "2026-11-10",
+   "location": "Mississauga, ON, ca",
+   "posted": "2026-08-18",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000144080579"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$43,000 to $48,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000149626018",
+   "last_seen": "2026-11-10",
+   "location": "Ottawa, ON, ca",
+   "posted": "2026-09-15",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000149626018"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$48,000-55,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000152999119",
+   "last_seen": "2026-11-10",
+   "location": "Richmond Hill, ON, ca",
+   "posted": "2026-10-01",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000152999119"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$40,000 - $45,000",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000155298646",
+   "last_seen": "2026-11-10",
+   "location": "Milton, ON, ca",
+   "posted": "2026-10-13",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000155298646"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 15
+   },
+   "employer": "EMCO Corporation",
+   "employer_id": "emco-corporation",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 15 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "744000158805830",
+   "last_seen": "2026-11-10",
+   "location": "Ottawa, ON, ca",
+   "posted": "2026-10-30",
+   "relevant": false,
+   "source": "smartrecruiters",
+   "tier": "P2",
+   "title": "Strategic Development Program Trainee",
+   "url": "https://jobs.smartrecruiters.com/EMCOCorporation/744000158805830"
+  }
+ ],
+ "failed": [
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-capreit.icims.com/jobs/search",
+   "id": "capreit",
+   "jobs_found": 0,
+   "name": "CAPREIT (Canadian Apartment Properties REIT)",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "avature: 数据异常: Avature 页面里找不到职位链接",
+   "id": "cbre-canada",
+   "jobs_found": 0,
+   "name": "CBRE Canada",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "invalid",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: SSLError: HTTPSConnectionPool(host='www.corus.ca', port=443): Max retries exceeded with url: /en/careers/ (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HAN",
+   "id": "corus-entertainment",
+   "jobs_found": 0,
+   "name": "Corus Entertainment",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: SSLError: HTTPSConnectionPool(host='careers.cpkcr.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTI",
+   "id": "cpkc",
+   "jobs_found": 0,
+   "name": "CPKC",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://careers.definityfinancial.com/",
+   "id": "definity-financial",
+   "jobs_found": 0,
+   "name": "Definity Financial",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.holtrenfrew.com/en/careers",
+   "id": "holt-renfrew",
+   "jobs_found": 0,
+   "name": "Holt Renfrew",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-kinaxis.icims.com/jobs/search",
+   "id": "kinaxis",
+   "jobs_found": 0,
+   "name": "Kinaxis",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)",
+   "id": "mckinsey-company",
+   "jobs_found": 0,
+   "name": "McKinsey & Company",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: SSLError: HTTPSConnectionPool(host='mosaicjobs.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME]",
+   "id": "mosaic-north-america",
+   "jobs_found": 0,
+   "name": "Mosaic North America",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.corporate.nestle.ca/en/jobs/students-graduates",
+   "id": "nestl-canada",
+   "jobs_found": 0,
+   "name": "Nestlé Canada",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: ConnectTimeout: HTTPSConnectionPool(host='auditor.on.ca', port=443): Max retries exceeded with url: /careers.html (Caused by ConnectTimeoutError(<HTTPSConnection(host",
+   "id": "office-of-the-auditor-general-of-ontario",
+   "jobs_found": 0,
+   "name": "Office of the Auditor General of Ontario",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: HTTPError: 429 Client Error: Too Many Requests for url: https://www.purposeinvest.com/careers",
+   "id": "purpose-investments",
+   "jobs_found": 0,
+   "name": "Purpose Investments",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "page: ConnectTimeout: HTTPSConnectionPool(host='tplfoundation.ca', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host=",
+   "id": "toronto-public-library-foundation",
+   "jobs_found": 0,
+   "name": "Toronto Public Library Foundation",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  }
+ ],
+ "first_run": false,
+ "needs_attention": [
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 125 个职位",
+   "id": "accenture-canada",
+   "jobs_found": 125,
+   "name": "Accenture Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 5,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "avature: 202 个职位",
+   "id": "bloomberg-toronto",
+   "jobs_found": 202,
+   "name": "Bloomberg (Toronto)",
+   "note": "报告共 330 个，实际只读到 202 个",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 635 个职位",
+   "id": "bombardier",
+   "jobs_found": 635,
+   "name": "Bombardier",
+   "note": "报告共 907 个，实际只读到 635 个",
+   "relevant_now": 3,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 1197 个职位",
+   "id": "canada-post",
+   "jobs_found": 1197,
+   "name": "Canada Post",
+   "note": "只读到最新职位的 RSS（不完整）",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 55 个职位",
+   "id": "capital-one-canada",
+   "jobs_found": 55,
+   "name": "Capital One Canada",
+   "note": "招聘板共 2053 个职位，按地点筛选只读目标地区",
+   "relevant_now": 3,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "avature: 数据异常: Avature 页面里找不到职位链接",
+   "id": "cbre-canada",
+   "jobs_found": 0,
+   "name": "CBRE Canada",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "invalid",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 201 个职位",
+   "id": "citi-canada",
+   "jobs_found": 201,
+   "name": "Citi Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 5,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 8 个职位",
+   "id": "city-of-toronto",
+   "jobs_found": 8,
+   "name": "City of Toronto",
+   "note": "按网站地图读取（不完整）",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 77 个职位",
+   "id": "cn-rail",
+   "jobs_found": 77,
+   "name": "CN Rail",
+   "note": "报告共 93 个，实际只读到 77 个",
+   "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 237 个职位",
+   "id": "colgate-palmolive-canada",
+   "jobs_found": 237,
+   "name": "Colgate-Palmolive Canada",
+   "note": "报告共 308 个，实际只读到 237 个",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 38 个职位",
+   "id": "cushman-wakefield-canada",
+   "jobs_found": 38,
+   "name": "Cushman & Wakefield Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 6,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 314 个职位",
+   "id": "deloitte-canada",
+   "jobs_found": 314,
+   "name": "Deloitte Canada",
+   "note": "报告共 416 个，实际只读到 314 个",
+   "relevant_now": 9,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 16 个职位",
+   "id": "ieso",
+   "jobs_found": 16,
+   "name": "IESO",
+   "note": "按网站地图读取（不完整）",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 42 个职位",
+   "id": "jll-canada",
+   "jobs_found": 42,
+   "name": "JLL Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 8,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "sitemap: 280 个职位",
+   "id": "kpmg-canada",
+   "jobs_found": 280,
+   "name": "KPMG Canada",
+   "note": "还有 242 个新职位页没读，下次继续",
+   "relevant_now": 15,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 50 个职位",
+   "id": "mercer-canada",
+   "jobs_found": 50,
+   "name": "Mercer Canada",
+   "note": "招聘板共 1962 个职位，按地点筛选只读目标地区",
+   "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 20 个职位",
+   "id": "nvidia",
+   "jobs_found": 20,
+   "name": "NVIDIA",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 50 个职位",
+   "id": "oliver-wyman",
+   "jobs_found": 50,
+   "name": "Oliver Wyman",
+   "note": "招聘板共 1962 个职位，按地点筛选只读目标地区",
+   "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 8 个职位",
+   "id": "ontario-power-generation",
+   "jobs_found": 8,
+   "name": "Ontario Power Generation",
+   "note": "只读到最新职位的 RSS（不完整）",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 122 个职位",
+   "id": "state-street-canada",
+   "jobs_found": 122,
+   "name": "State Street Canada",
+   "note": "招聘板共 1160 个职位，按地点筛选只读目标地区",
+   "relevant_now": 6,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 541 个职位",
+   "id": "td-bank",
+   "jobs_found": 541,
+   "name": "TD Bank",
+   "note": "招聘板共 1783 个职位，按地点筛选只读目标地区",
+   "relevant_now": 60,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "successfactors: 10 个职位",
+   "id": "toronto-hydro",
+   "jobs_found": 10,
+   "name": "Toronto Hydro",
+   "note": "报告共 18 个，去重后只有 10 个",
+   "relevant_now": 2,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-10",
+   "complete": "no",
+   "detail": "workday: 570 个职位",
+   "id": "walmart-canada",
+   "jobs_found": 570,
+   "name": "Walmart Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 2,
+   "scan_state": "partial",
+   "status": "ok"
+  }
+ ],
+ "new_employers": [],
+ "new_relevant": [
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$58,000 - $96,000",
+    "years_min": null
+   },
+   "details_note": "$58,000 - $96,000",
+   "employer": "Deloitte Canada",
+   "employer_id": "deloitte-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 73,
+   "job_id": "134948",
+   "last_seen": "2026-11-10",
+   "location": "Toronto, ON, ON, CAN, M5C 3G7; Toronto, ON",
+   "posted": "9/8/26",
+   "relevant": true,
+   "source": "successfactors",
+   "tier": "P0",
+   "title": "Application Security Analyst, Deloitte Global Technology",
+   "url": "https://careers.deloitte.ca/job/Application-Security-Analyst%2C-Deloitte-Global-Technology/134948-en_US/"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "employer": "Mondelez Canada",
+   "employer_id": "mondelez-canada",
+   "filter_reason": "职能相关；地点未注明",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "地点待确认、入门级",
+   "fit_score": 42,
+   "job_id": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181908&jobtitle=Management%20Trainee",
+   "last_seen": "2026-11-10",
+   "location": "",
+   "posted": "",
+   "relevant": true,
+   "source": "page",
+   "tier": "P1",
+   "title": "Management Trainee",
+   "url": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181908&jobtitle=Management%20Trainee"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "employer": "Mondelez Canada",
+   "employer_id": "mondelez-canada",
+   "filter_reason": "职能相关；地点未注明",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T033808Z-131d2d",
+   "fit_reasons": "地点待确认、入门级",
+   "fit_score": 42,
+   "job_id": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181519&jobtitle=Management%20Trainee",
+   "last_seen": "2026-11-10",
+   "location": "",
+   "posted": "",
+   "relevant": true,
+   "source": "page",
+   "tier": "P1",
+   "title": "Management Trainee",
+   "url": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181519&jobtitle=Management%20Trainee"
+  }
+ ],
+ "new_review": [],
+ "newly_broken": [],
+ "removed_relevant": [],
+ "reopened_relevant": [],
+ "scan_id": "20261110T033808Z-131d2d",
+ "scan_states": {
+  "complete": 166,
+  "failed": 12,
+  "invalid": 1,
+  "not_configured": 93,
+  "partial": 22,
+  "unverified": 68,
+  "zero_jobs": 130
+ },
+ "scanned_at": "2026-11-10T03:38:08+00:00",
+ "unreadable": [
+  {
+   "id": "mckinsey-company",
+   "name": "McKinsey & Company",
+   "scan_state": "failed",
+   "tier": "P0"
+  },
+  {
+   "id": "cpkc",
+   "name": "CPKC",
+   "scan_state": "failed",
+   "tier": "P1"
+  },
+  {
+   "id": "kinaxis",
+   "name": "Kinaxis",
+   "scan_state": "failed",
+   "tier": "P1"
+  },
+  {
+   "id": "nestl-canada",
+   "name": "Nestlé Canada",
+   "scan_state": "failed",
+   "tier": "P1"
+  },
+  {
+   "id": "power-corporation-great-west-lifeco",
+   "name": "Power Corporation / Great-West Lifeco",
+   "scan_state": "not_configured",
+   "tier": "P1"
+  },
+  {
+   "id": "toronto-public-library-foundation",
+   "name": "Toronto Public Library Foundation",
+   "scan_state": "failed",
+   "tier": "P1"
+  },
+  {
+   "id": "ats-corporation",
+   "name": "ATS Corporation",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "ada",
+   "name": "Ada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "alliance-solution-group",
+   "name": "Alliance Solution Group",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "alvarez-marsal-canada",
+   "name": "Alvarez & Marsal Canada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "amynta-group",
+   "name": "Amynta Group (Canada)",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "armstrong-fine-art-services",
+   "name": "Armstrong Fine Art Services",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "bajaj-tax-financial-secrets",
+   "name": "BAJAJ TAX & FINANCIAL SECRETS INC.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "bamford-group",
+   "name": "Bamford Group of Companies (Everything Produce)",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "bau-xi-gallery",
+   "name": "Bau-Xi Gallery",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "bond-securcom",
+   "name": "Bond Securcom",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "brooklin-concrete-products",
+   "name": "Brooklin Concrete Products",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "capreit",
+   "name": "CAPREIT (Canadian Apartment Properties REIT)",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "cbre-canada",
+   "name": "CBRE Canada",
+   "scan_state": "invalid",
+   "tier": "P2"
+  },
+  {
+   "id": "cmic",
+   "name": "CMiC",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "contact-photography-festival",
+   "name": "CONTACT Photography Festival",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "investment-regulatory-organization",
+   "name": "Canadian Investment Regulatory Organization",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "canadian-wildlife-federation",
+   "name": "Canadian Wildlife Federation",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "cannect-mortgage-investment-corp",
+   "name": "Cannect Mortgage Investment Corp.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "cieslok-group",
+   "name": "Cieslok Group",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "cityfolk",
+   "name": "CityFolk",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "competition-bureau",
+   "name": "Competition Bureau",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "constellation-software",
+   "name": "Constellation Software",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "corus-entertainment",
+   "name": "Corus Entertainment",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "craft-ontario",
+   "name": "Craft Ontario",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "derose-barristers-solicitors-professional",
+   "name": "DeRose Barristers & Solicitors Professional Corporation",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "definity-financial",
+   "name": "Definity Financial",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "denison-gallery",
+   "name": "Denison Gallery Ltd.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "diamond-corporation",
+   "name": "Diamond Corporation",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "equitable-life-of-canada",
+   "name": "Equitable Life of Canada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "fintrac",
+   "name": "FINTRAC",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "factory-theatre",
+   "name": "Factory Theatre",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "feheley-fine-arts",
+   "name": "Feheley Fine Arts",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "financial-consumer-agency-of-canada",
+   "name": "Financial Consumer Agency of Canada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "galerie-st-laurent-hill",
+   "name": "Galerie St. Laurent + Hill",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "gallery-44",
+   "name": "Gallery 44 Centre for Contemporary Photography",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "gifted-people-services",
+   "name": "Gifted People Services",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "great-canadian-theatre-company",
+   "name": "Great Canadian Theatre Company (GCTC)",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "holt-renfrew",
+   "name": "Holt Renfrew",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "homeequity-bank",
+   "name": "HomeEquity Bank",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "imgadgets",
+   "name": "IMGadgets",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "integricon",
+   "name": "Integricon",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "kaizen-health",
+   "name": "KAIZEN HEALTH GROUP",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "kings-pastry",
+   "name": "King's Pastry",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "labatt-breweries",
+   "name": "Labatt Breweries",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "mgg",
+   "name": "MGG",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "mnr-capital-group",
+   "name": "MNR Capital Group",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "mira-godard-gallery",
+   "name": "Mira Godard Gallery",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "mitel",
+   "name": "Mitel",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "mosaic-north-america",
+   "name": "Mosaic North America",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "murchinson",
+   "name": "Murchinson Ltd.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "national-logistics-services",
+   "name": "National Logistics Services (NLS)",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "nyo-canada",
+   "name": "National Youth Orchestra of Canada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "office-of-the-auditor-general-of-ontario",
+   "name": "Office of the Auditor General of Ontario",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "olli-brands",
+   "name": "Olli Brands inc",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "ontario-financing-authority",
+   "name": "Ontario Financing Authority",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "ontario-media-development-ontario-creatif",
+   "name": "Ontario Media Development Corporation / Ontario Créatif",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "ontario-presents",
+   "name": "Ontario Presents",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "ptag",
+   "name": "PTAG",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "parliamentary-budget-officer",
+   "name": "Parliamentary Budget Officer",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "penalta-group",
+   "name": "Penalta Group",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "pet-valu",
+   "name": "Pet Valu",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "philrobben",
+   "name": "Philrobben Group",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "pinnacle",
+   "name": "Pinnacle（在线博彩）",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "pact",
+   "name": "Professional Association of Canadian Theatres (PACT)",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "publicis-sapient",
+   "name": "Publicis Sapient",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "purpose-investments",
+   "name": "Purpose Investments",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "risc-foundation",
+   "name": "RISC Foundation",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "raymond-james-canada",
+   "name": "Raymond James Canada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "redstone-food-group",
+   "name": "Redstone Food Group",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "ringcentral",
+   "name": "RingCentral Canada Inc.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "romet-limited",
+   "name": "Romet Limited",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "saa-accounting-tax-consultants",
+   "name": "SAA ACCOUNTING AND TAX CONSULTANTS",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "saw-ottawa",
+   "name": "SAW Centre",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "sns-tax-professional",
+   "name": "SNS Tax Professional Corporation",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "straight-freight",
+   "name": "STRAIGHT FREIGHT LTD.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "sapling-financial-consultants",
+   "name": "Sapling Financial Consultants Inc.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "sound-insurance-services",
+   "name": "Sound Insurance Services Inc",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "spin-master",
+   "name": "Spin Master",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "springfield-college",
+   "name": "Springfield College",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "statistics-canada",
+   "name": "Statistics Canada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "stephen-bulger-gallery",
+   "name": "Stephen Bulger Gallery",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "superior-door-gate-systems",
+   "name": "Superior Door & Gate Systems",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "taxsmile",
+   "name": "TAXSMILE INC.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "tafelmusik",
+   "name": "Tafelmusik Baroque Orchestra & Chamber Choir",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "the-image-centre",
+   "name": "The Image Centre (TMU)",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "musical-stage-company",
+   "name": "The Musical Stage Company",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "properties-management",
+   "name": "The Properties Group Management Ltd.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "the-writers-union-of-canada",
+   "name": "The Writers' Union of Canada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "theatre-direct",
+   "name": "Theatre Direct",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "toradex-solutions",
+   "name": "Toradex Solutions Inc.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "toronto-downtown-jazz-society",
+   "name": "Toronto Downtown Jazz Society (TD Toronto Jazz Festival)",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "voda-backyard-leisure-group",
+   "name": "VODA Backyard Leisure Group",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "varley-art-gallery",
+   "name": "Varley Art Gallery of Markham",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "veradek",
+   "name": "Veradek",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "wtw-canada",
+   "name": "WTW Canada",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "waddington-s",
+   "name": "Waddington's",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "wesdome-gold-mines",
+   "name": "Wesdome Gold Mines Ltd.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "why-not-theatre",
+   "name": "Why Not Theatre",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "york-university",
+   "name": "York University",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "young-peoples-theatre",
+   "name": "Young People's Theatre",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  }
+ ]
+}
