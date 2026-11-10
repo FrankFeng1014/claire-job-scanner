@@ -195,12 +195,13 @@ _PROGRAM_TITLE = re.compile(r"graduate|new grad|\b20(?:26|27|28)\b|\bintern(?:sh
                             r"development program|leadership program|trainee|amplify|student", re.I)
 
 
-def summary(d):
-    """简报里显示的一句话。"""
+def summary(d, title=""):
+    """简报里显示的一句话。应届/实习/项目类职位不显示经验年限（描述里常是"3 年轮岗"之类，容易误读）。"""
     if not d or not d.get("ok"):
         return ""
     parts = []
-    if d.get("years_min") is not None:
+    program = bool(_PROGRAM_TITLE.search(title or ""))
+    if d.get("years_min") is not None and not program:
         parts.append(f"经验≥{d['years_min']}年")
     elif d.get("new_grad_text"):
         parts.append("写明应届可申")
