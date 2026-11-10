@@ -426,7 +426,8 @@ def update_recent(L, now_iso):
                 "employer_id": r.get("employer_id"), "tier": r.get("tier"), "title": r.get("title"),
                 "location": r.get("location"), "url": r.get("url"), "posted": r.get("posted"),
                 "status": r.get("candidate_status"), "reason": r.get("filter_reason"), "source": r.get("source"),
-                "fit_score": r.get("fit_score"), "fit_reasons": r.get("fit_reasons")}
+                "fit_score": r.get("fit_score"), "fit_reasons": r.get("fit_reasons"),
+                "details": r.get("details_note") or "", "deadline": (r.get("details") or {}).get("deadline", "")}
     for r in L["new_relevant"]:
         keep.append(slim(r, "new_relevant"))
     for r in L["new_review"]:
@@ -572,9 +573,35 @@ def scan(only=None, workers=8, channels=True):
         review += c_rev
         baseline += c_base
 
+    # 第二轮筛选：打开职位页读经验年限、截止日期、薪资（本次候选优先，再补以前没读过的在招职位）
+    excluded, details_checked = [], 0
+    if details_enabled() and not only:
+        from . import details as D
+        this_run = [r for r in new + review + baseline if not r.get("details")]
+        ids = {id(r) for r in this_run}
+        older = [r for r in seen.values() if r.get("active") and id(r) not in ids and not r.get("details")
+                 and r.get("candidate_status") in ("relevant", "review")]
+        rank = lambda r: -fit_score(r)[0]   # noqa: E731
+        batch = (sorted(this_run, key=rank) + sorted(older, key=rank))[:D.MAX_PER_RUN]
+        if batch:
+            t0 = time.time()
+            res = D.check_many(batch, today=d)
+            excluded, details_checked = res["excluded"], res["checked"]
+            print(f"打开职位页 {len(batch)} 个：读到 {res['checked']} 个，排除 {len(res['excluded'])} 个，"
+                  f"改为需核实 {len(res['review'])} 个，用时 {time.time() - t0:.0f} 秒")
+        moved = [r for r in new if r.get("candidate_status") == "review"]
+        new = [r for r in new if r.get("candidate_status") == "relevant"]
+        review = [r for r in review if r.get("candidate_status") == "review"] + moved
+        baseline = [r for r in baseline if r.get("candidate_status") in ("relevant", "review")]
+
     # 新发布的和新接入的一视同仁：都按与 Claire 的匹配度打分、排序（雇主层级只作很小的加分）
+    from .details import fit_adjust, summary as details_summary
     for r in new + review + baseline:
-        r["fit_score"], r["fit_reasons"] = fit_score(r)
+        sc, why = fit_score(r)
+        r["fit_score"] = max(0, min(100, sc + fit_adjust(r.get("details"))))
+        r["fit_reasons"] = why
+        r["details_note"] = details_summary(r.get("details"))
+    deadlines = _upcoming_deadlines(seen, d)
     by_fit = lambda r: (-r.get("fit_score", 0), r.get("employer") or "")   # noqa: E731
     cand_rel = sorted([dict(r, found_as="新发布") for r in new] +
                       [dict(r, found_as="新接入") for r in baseline if r.get("candidate_status") == "relevant"],
@@ -601,6 +628,8 @@ def scan(only=None, workers=8, channels=True):
               "new_review": sorted(review, key=key_fn),
               "baseline": sorted(baseline, key=lambda r: (r.get("candidate_status") != "relevant",) + key_fn(r)),
               "candidates": cand_rel, "candidates_review": cand_rev,
+              "deadlines_7d": deadlines, "excluded_by_details": excluded, "details_checked": details_checked,
+              "newly_broken": _newly_broken(status_rows, emps_all),
               "new_employers": new_emps, "channels": ch_status, "ats_detected_by_browser": suggested,
               "reopened_relevant": reopened,
               "removed_relevant": removed, "failed": fails, "unreadable": unreadable,
@@ -641,6 +670,63 @@ def scan(only=None, workers=8, channels=True):
     return latest
 
 
+def details_enabled():
+    return os.environ.get("SCANNER_DETAILS", "1") != "0"
+
+
+def _upcoming_deadlines(seen, today_s, days=7):
+    """所有在招、可能相关的职位里，截止日期在今天到 7 天后之间的。"""
+    from .details import summary as details_summary
+    t = datetime.fromisoformat(today_s).date()
+    out = []
+    for r in seen.values():
+        dl = (r.get("details") or {}).get("deadline") or ""
+        if not dl or not r.get("active") or r.get("candidate_status") not in ("relevant", "review"):
+            continue
+        try:
+            left = (datetime.fromisoformat(dl).date() - t).days
+        except ValueError:
+            continue
+        if 0 <= left <= days:
+            out.append({**{k: r.get(k) for k in ("employer", "tier", "title", "location", "url", "candidate_status")},
+                        "deadline": dl, "days_left": left, "details_note": details_summary(r.get("details"))})
+    return sorted(out, key=lambda x: (x["deadline"], x["employer"] or ""))
+
+
+def _newly_broken(status_rows, emps):
+    """上次还能读到、这次突然读不到的 P0/P1 雇主（网站改版或接口变化，需要处理）。"""
+    path = os.path.join(DATA, "status.csv")
+    if not os.path.exists(path):
+        return []
+    with open(path, newline="", encoding="utf-8") as f:
+        old = {r["id"]: r for r in csv.DictReader(f)}
+    tiers = {e["id"]: e.get("tier", "") for e in emps}
+    out = []
+    for r in status_rows:
+        o = old.get(r["id"])
+        if (o and o.get("scan_state") in ("complete", "partial") and tiers.get(r["id"]) in ("P0", "P1")
+                and r["scan_state"] in ("failed", "invalid", "zero_jobs")):
+            out.append({"id": r["id"], "name": r["name"], "tier": tiers.get(r["id"]), "was": o.get("scan_state"),
+                        "now": r["scan_state"], "detail": r["detail"][:150]})
+    return out
+
+
+def _short_locations(loc, keep=3):
+    """地点太多时只显示前几个（多伦多/渥太华等目标城市优先）。"""
+    from .filters import _FIT_TARGET
+    parts = [p.strip() for p in re.split(r";\s*", loc or "") if p.strip()]
+    uniq = []
+    for p in parts:
+        key = re.sub(r",\s*(ON|Ontario)\b.*$", "", p, flags=re.I).strip().lower()
+        if key not in [u[0] for u in uniq]:
+            uniq.append((key, re.sub(r",\s*ON,\s*ON\b", ", ON", p)))
+    items = [u[1] for u in uniq]
+    items.sort(key=lambda x: 0 if _FIT_TARGET.search(x) else 1)
+    if not items:
+        return "—"
+    return "、".join(items[:keep]) + (f" 等 {len(items)} 地" if len(items) > keep else "")
+
+
 def _group_same_title(rows):
     """同一雇主、同一职位名在多个城市各发一条时，简报里合并成一行（保持原排序）。"""
     groups, order = {}, []
@@ -654,8 +740,8 @@ def _group_same_title(rows):
 
 
 def _group_locations(g):
-    locs = list(dict.fromkeys((r.get("location") or "—").replace("|", "/") for r in g))
-    return "、".join(locs[:3]) + (f" 等 {len(locs)} 地" if len(locs) > 3 else "")
+    joined = "; ".join((r.get("location") or "").replace("|", "/") for r in g)
+    return _short_locations(joined)
 
 
 def _group_links(g):
@@ -674,6 +760,22 @@ def render_report(L):
              f"数据异常 {st.get('invalid', 0)}。（只有“完整成功”的雇主才会判定职位下架）", ""]
     if L["first_run"]:
         lines += ["> 这是第一次运行：所有现有职位都会被记为“新职位”，属正常现象，从第二次运行起才是真正的新增。", ""]
+    dls = L.get("deadlines_7d", [])
+    if dls:
+        lines += [f"## ⏰ 7 天内截止（{len(dls)}）", "",
+                  "所有在招、可能相关的职位里，职位页写明的截止日期在 7 天内的（不只是本次新出现的）。", "",
+                  "| 截止 | 剩余 | 雇主 | 职位 | 地点 | 职位页信息 | 链接 |", "|---|---|---|---|---|---|---|"]
+        for r in dls:
+            lines.append(f"| {r['deadline']} | {r['days_left']} 天 | {r['employer']} | {r['title']} | "
+                         f"{_short_locations(r.get('location'))} | {r.get('details_note') or '—'} | [打开]({r['url']}) |")
+        lines.append("")
+    broken = L.get("newly_broken", [])
+    if broken:
+        lines += [f"## ⚠️ 重点雇主突然读不到（{len(broken)}）", "",
+                  "上次还能读取、这次读取失败的 P0/P1 雇主，可能是招聘网站改版，需要修复。", ""]
+        for b in broken:
+            lines.append(f"- {b['tier']} {b['name']}：{b['detail']}")
+        lines.append("")
     cands = L.get("candidates", L["new_relevant"])
     n_new = sum(1 for r in cands if r.get("found_as", "新发布") == "新发布")
     lines += [f"## 本次可申请的职位（{len(cands)}）", "",
@@ -682,24 +784,36 @@ def render_report(L):
               "职能是否对口（财务/审计/分析、艺术/文化）。雇主层级只在分数接近时起一点作用。"
               "这是按职位名和地点的初筛，申请前请打开链接确认经验要求。", ""]
     if cands:
-        lines += ["| 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 链接 |", "|---|---|---|---|---|---|---|"]
+        lines += ["| 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 职位页信息 | 链接 |",
+                  "|---|---|---|---|---|---|---|---|"]
         for g in _group_same_title(cands):
             r = g[0]
             lines.append(f"| {r.get('fit_score', '')} | {r['employer']} | {r['title']} | {_group_locations(g)} | "
-                         f"{r.get('found_as', '新发布')} | {r.get('fit_reasons', '')} | {_group_links(g)} |")
+                         f"{r.get('found_as', '新发布')} | {r.get('fit_reasons', '')} | "
+                         f"{r.get('details_note') or '—'} | {_group_links(g)} |")
     else:
         lines.append("无")
     review = L.get("candidates_review", L.get("new_review", []))
     lines += ["", f"## 可能相关、需要核实（{len(review)}）", "",
               "实习、兼职、合同、地点只写了 Canada 等需要先确认的职位，同样按匹配度排序。", ""]
     if review:
-        lines += ["| 匹配 | 雇主 | 职位 | 地点 | 来源 | 待核实原因 | 链接 |", "|---|---|---|---|---|---|---|"]
+        lines += ["| 匹配 | 雇主 | 职位 | 地点 | 来源 | 待核实原因 | 职位页信息 | 链接 |",
+                  "|---|---|---|---|---|---|---|---|"]
         for g in _group_same_title(review):
             r = g[0]
             lines.append(f"| {r.get('fit_score', '')} | {r['employer']} | {r['title']} | {_group_locations(g)} | "
-                         f"{r.get('found_as', '新发布')} | {r.get('filter_reason', '')} | {_group_links(g)} |")
+                         f"{r.get('found_as', '新发布')} | {r.get('filter_reason', '')} | "
+                         f"{r.get('details_note') or '—'} | {_group_links(g)} |")
     else:
         lines.append("无")
+    exc = L.get("excluded_by_details", [])
+    if exc:
+        lines += ["", f"## 打开职位页后排除（{len(exc)}）", "",
+                  "职位名看起来合适，但职位页写明要求 3 年以上经验或仅限在校生。列在这里备查，不用申请。", ""]
+        for r in exc[:60]:
+            lines.append(f"- {r['employer']} · {r['title']}：{r.get('filter_reason', '')}（[打开]({r['url']})）")
+        if len(exc) > 60:
+            lines.append(f"- 另有 {len(exc) - 60} 个，见 data/latest.json 的 excluded_by_details")
     new_emps = L.get("new_employers", [])
     if new_emps:
         lines += ["", f"## 新加入名单的雇主（{len(new_emps)}）", "",

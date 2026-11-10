@@ -125,6 +125,38 @@ jobs:
             gh issue create --title "可申请职位 $n 个（$day）" --body-file /tmp/body.md
           fi
 
+      - name: 扫描出问题时发 Issue（扫描失败、保存失败、重点雇主突然读不到）
+        if: ${{ always() }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          problem=""
+          if [ "${{ steps.scan.outcome }}" != "success" ]; then problem="扫描没有成功完成（${{ steps.scan.outcome }}）。"; fi
+          if [ "${{ steps.commit.outcome }}" = "failure" ]; then problem="$problem 扫描结果没有保存成功。"; fi
+          nb=0
+          if [ -f data/latest.json ] && [ "${{ steps.scan.outcome }}" = "success" ]; then
+            nb=$(python -c "import json;print(len(json.load(open('data/latest.json')).get('newly_broken',[])))")
+          fi
+          if [ -z "$problem" ] && [ "$nb" = "0" ]; then echo "一切正常"; exit 0; fi
+          day=$(date -u +%F)
+          { echo "@${{ github.repository_owner }} ⚠️ 扫描出现问题，需要处理：$problem"
+            echo
+            if [ "$nb" != "0" ]; then
+              echo "上次还能读取、这次读不到的重点雇主（P0/P1）："
+              python -c "import json;[print('- %s %s：%s'%(b['tier'],b['name'],b['detail'])) for b in json.load(open('data/latest.json'))['newly_broken']]"
+              echo
+            fi
+            echo "运行记录：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo; echo "把这个 Issue 的链接发给 Claude，就能据此排查修复。"; } > /tmp/problem.md
+          existing=$(gh issue list --state open --search "\"扫描异常\" \"$day\" in:title" --json number,title \
+                     --jq "map(select(.title | contains(\"$day\"))) | .[0].number // empty")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file /tmp/problem.md
+          else
+            gh issue create --title "⚠️ 扫描异常（$day）" --body-file /tmp/problem.md
+          fi
+
       - name: 运行摘要（便于排查）
         if: ${{ always() }}
         run: |

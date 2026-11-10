@@ -227,7 +227,8 @@ _FIT_ENTRY = re.compile(r"new grad|graduate|\b2027\b|campus|junior|\bjr\b|entry|
 _FIT_CORE = re.compile(r"audit|accounting|accountant|financial analyst|finance|fp&a|financial reporting|"
                        r"econom|valuation|investment|research analyst|risk|compliance|treasury|tax|"
                        r"actuar|underwrit|consult|strategy|business analyst|data analyst|analyst", re.I)
-_FIT_ARTS = re.compile(r"gallery|museum|curat|art\b|arts\b|exhibit|collection|registrar|archiv|cultur|"
+_FIT_ARTS = re.compile(r"gallery|museum|curat|art\b|arts\b|exhibit|collections? (?:manager|assistant|technician|"
+                       r"coordinator|registrar)|registrar|archiv|cultur|"
                        r"artist|theatre|music|festival|fundrais|development (coordinator|officer|associate)|"
                        r"donor|philanthrop|grant|programs? (coordinator|associate|officer)", re.I)
 _FIT_OK = re.compile(r"operations|procurement|purchasing|marketing|communications|project|program|"
