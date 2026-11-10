@@ -383,3 +383,25 @@ def test_sitemap_stays_baseline_until_fully_read(env, monkeypatch):
     assert [r["job_id"] for r in L["baseline"]] == ["2"] and L["new_relevant"] == []
     L = main.scan()                       # 已经读完过一次：之后出现的才是新职位
     assert [r["job_id"] for r in L["new_relevant"]] == ["3"] and L["baseline"] == []
+
+
+def test_page_uses_browser_rendered_content_and_frames(monkeypatch):
+    rendered = {"https://x.org/careers": {
+        "final": "https://x.org/careers", "status": 200,
+        "html": '<div><a href="/jobs/7">Junior Financial Analyst</a></div>',
+        "frames": [("https://board.x.org/list", '<a href="/p/9">Gallery Programs Coordinator</a>')], "requests": []}}
+    monkeypatch.setattr(adapters, "RENDERED", rendered)
+    r = adapters.page(None, "https://x.org/careers")      # 不应再联网
+    assert {(j["title"], j["url"]) for j in r} == {
+        ("Junior Financial Analyst", "https://x.org/jobs/7"),
+        ("Gallery Programs Coordinator", "https://board.x.org/p/9")}
+
+
+def test_browser_detects_ats_hidden_in_rendered_page():
+    from scanner import browser
+    emps = [{"id": "a", "name": "A", "ats": "", "ats_id": "", "careers_url": "https://a.org/careers"}]
+    rendered = {"https://a.org/careers": {"final": "https://a.org/careers", "status": 200, "html": "<div></div>",
+                "frames": [("https://acme.wd3.myworkdayjobs.com/en-US/Acme_Careers", "")], "requests": []}}
+    assert main._browser_suggestions(emps, rendered) == [
+        {"id": "a", "name": "A", "ats": "workday", "ats_id": "acme/wd3/Acme_Careers"}]
+    assert "myworkdayjobs" in browser.combined_html(rendered["https://a.org/careers"])

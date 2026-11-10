@@ -2,9 +2,9 @@ name: 每日招聘扫描
 
 on:
   schedule:
-    # 每 2 小时扫描一次（GitHub 的定时任务常会推迟几十分钟，所以分钟数避开整点）。
-    # 公开仓库的 Actions 免费，不限分钟数。
-    - cron: "17 */2 * * *"
+    # 每天两次：UTC 11:23 和 23:23（多伦多冬令时早上 6:23、晚上 6:23；夏令时各晚 1 小时）。
+    # GitHub 的定时任务繁忙时可能推迟，分钟数避开整点。
+    - cron: "23 11,23 * * *"
   workflow_dispatch:
     inputs:
       discover:
@@ -39,13 +39,21 @@ jobs:
   scan:
     if: ${{ !inputs.test_email }}
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+
+      # 无界面浏览器（Chromium）：用来打开靠脚本加载职位的招聘页。缓存起来，下次不用重新下载。
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+      - name: 安装浏览器
+        run: python -m playwright install --with-deps chromium || echo "浏览器安装失败，本次按普通方式读取网页"
 
       # 测试不通过，后面所有步骤都不会执行，不会改动任何数据
       - name: 测试
