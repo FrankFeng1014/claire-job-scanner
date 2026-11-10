@@ -310,3 +310,28 @@ def check_many(recs, today=None, workers=8):
         if res:
             out[res].append(rec)
     return out
+
+
+# ---------- A/B/C 资格初评 ----------
+# A：职位页读到了，没发现 Claire 不满足的硬性要求
+# B：职位页读到了，有 1 项需要确认或弥补（要 2 年经验、要执照/证书、要求立即入职、仅限在校生的实习）
+# C：职位页没读到（只能凭职位名判断），或有 2 项以上差距
+# D：明确不符合（要 3 年以上经验、写明仅限在校生的全职岗）——在第二轮筛选里已排除，不进报告
+GRADE_TEXT = {"A": "A 已满足", "B": "B 部分满足", "C": "C 待核查"}
+
+
+def grade(rec):
+    """返回 (等级, 原因列表)。"""
+    d = rec.get("details") or {}
+    if not d.get("ok"):
+        return "C", ["职位页没读到，只按职位名判断"]
+    gaps = []
+    y = d.get("years_min")
+    program = bool(_PROGRAM_TITLE.search(rec.get("title") or ""))
+    if y is not None and y >= REVIEW_YEARS and not program and not d.get("new_grad_text"):
+        gaps.append(f"要求 {y} 年经验")
+    for f in d.get("flags") or []:
+        gaps.append(f)
+    if not gaps:
+        return "A", []
+    return ("B" if len(gaps) == 1 else "C"), gaps

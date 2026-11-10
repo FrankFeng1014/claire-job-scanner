@@ -534,3 +534,68 @@ def test_program_title_hides_years():
     d = {"ok": True, "years_min": 3, "deadline": "2026-11-15", "salary": "", "flags": [], "new_grad_text": False}
     assert "经验" not in summary(d, "Graduate Leadership Development Program 2027")
     assert "经验≥3年" in summary(d, "Financial Analyst")
+
+
+# ---------- 2026-11-10 新增岗位族、A/B/C 资格初评、建议简历 ----------
+NEW_FAMILY_TITLES = [
+    "Reconciliation Analyst", "Financial Operations Associate", "Data Quality Analyst",
+    "Data Integrity Coordinator", "Treasury Operations Assistant", "Payment Operations Analyst",
+    "Budget Coordinator", "Pricing Coordinator", "Commercial Operations Coordinator",
+    "Business Process Coordinator", "Client Onboarding Coordinator", "Implementation Coordinator",
+    "Proposal Coordinator", "Junior PMO Analyst", "Grants Coordinator", "Development Assistant",
+    "Sponsorship Coordinator", "Research Administration Assistant", "Product Operations Coordinator",
+    "Content Operations Coordinator",
+    # 同义词与 Claude 补充
+    "Assurance Staff", "AML Investigator", "Fund Accountant", "Art Handler", "Preparator",
+    "Exhibition Technician", "Cataloguer", "Content Editor", "Proposal Writer", "Data Steward",
+    "Settlements Analyst", "RFP Specialist", "Mandarin Speaking Client Service Representative",
+]
+
+
+def test_new_role_families_are_found():
+    from scanner.filters import classify
+    for t in NEW_FAMILY_TITLES:
+        st, why = classify({"title": t, "location": "Toronto, ON"})
+        assert st in ("relevant", "review"), (t, why)
+
+
+def test_old_exclusions_still_hold():
+    from scanner.filters import classify
+    for t in ["Senior Reconciliation Analyst", "Software Implementation Engineer", "IT Technician",
+              "Settlement Worker", "Payroll Administrator", "Teller", "Manager, Data Quality"]:
+        assert classify({"title": t, "location": "Toronto, ON"})[0] == "irrelevant", t
+
+
+def test_fit_scores_for_new_families():
+    from scanner.filters import fit_score
+    s1, _ = fit_score({"title": "Reconciliation Analyst", "location": "Toronto, ON"})
+    s2, _ = fit_score({"title": "Accounts Payable Clerk", "location": "Toronto, ON"})
+    s3, why = fit_score({"title": "Mandarin Speaking Client Service Associate", "location": "Toronto, ON"})
+    assert s1 >= 70 and s2 >= 55 and "中文" in why
+
+
+def test_resume_family():
+    from scanner.filters import resume_family
+    assert resume_family("Assurance Staff") == "audit"
+    assert resume_family("Grants Coordinator") == "arts"
+    assert resume_family("Preparator") == "arts"
+    assert resume_family("Junior PMO Analyst") == "consulting"
+    assert resume_family("Budget Coordinator") == "finance"
+    assert resume_family("Equity Research Associate") == "ib"
+    assert resume_family("Data Quality Analyst") == "ba"
+
+
+def test_eligibility_grade():
+    from scanner.details import grade
+    base = {"ok": True, "years_min": None, "deadline": "", "salary": "", "flags": [], "new_grad_text": False}
+    assert grade({"title": "Analyst", "details": base})[0] == "A"
+    assert grade({"title": "Analyst", "details": {**base, "years_min": 2}})[0] == "B"
+    assert grade({"title": "Analyst", "details": {**base, "years_min": 2, "flags": ["要求执照/证书"]}})[0] == "C"
+    assert grade({"title": "Analyst", "details": {"ok": False}})[0] == "C"
+    assert grade({"title": "2027 Graduate Program", "details": {**base, "years_min": 3}})[0] == "A"
+
+
+def test_supervision_specialist_kept_supervisor_excluded():
+    from scanner.filters import classify
+    assert classify({"title": "Associate, Global Market Supervision", "location": "Toronto, ON"})[0] != "irrelevant"
+    assert classify({"title": "Tax Supervisor", "location": "Toronto, ON"})[0] == "irrelevant"
