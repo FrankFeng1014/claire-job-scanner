@@ -553,7 +553,12 @@ def _successfactors_unify(s, root):
             locs = []
             for k, v in j.items():
                 if "location" in k.lower() or k == "mfield1":
-                    locs.extend(v if isinstance(v, list) else [v])
+                    for x in (v if isinstance(v, list) else [v]):
+                        if isinstance(x, dict):          # 有的网站给 {"value": "...", "key": "坐标"}
+                            x = x.get("value") or ""
+                        x = _clean(str(x or "").replace("<br/>", " "))
+                        if x and x not in locs:
+                            locs.append(x)
             title = j.get("unifiedStandardTitle") or j.get("title") or ""
             url_title = j.get("unifiedUrlTitle") or j.get("urlTitle") or ""
             jobs.append(_job(j.get("id"), title, "; ".join(str(x) for x in locs if x),

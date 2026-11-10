@@ -78,7 +78,11 @@ def detect(html, final_url=""):
     if re.search(r"phApp|cdn\.phenompeople", html) and re.search(r'"refNum"\s*:', html) and final_url:
         m = re.search(r'"baseUrl"\s*:\s*"(https?://[^"]+?)/?"', html)
         if m:
-            return "phenom", m.group(1).replace("\\/", "/")
+            base = m.group(1).replace("\\/", "/")
+            # 只接受招聘页本身就是 Phenom 网站的情况；页面里嵌的 Phenom 聊天助手（如 virtualhiringassistant）不算
+            if urlparse(base).netloc != urlparse(final_url).netloc:
+                return None, None
+            return "phenom", base
         p = re.match(r"(https?://[^/]+(?:/[\w-]+)?/[a-z]{2}/[a-z]{2})(?:/|$)", final_url)
         if p:
             return "phenom", p.group(1)

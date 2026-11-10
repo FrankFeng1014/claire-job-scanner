@@ -405,3 +405,31 @@ def test_browser_detects_ats_hidden_in_rendered_page():
     assert main._browser_suggestions(emps, rendered) == [
         {"id": "a", "name": "A", "ats": "workday", "ats_id": "acme/wd3/Acme_Careers"}]
     assert "myworkdayjobs" in browser.combined_html(rendered["https://a.org/careers"])
+
+
+def test_unify_location_dicts_are_cleaned():
+    body = {"totalJobs": 1, "jobSearchResult": [{"response": {
+        "id": "9", "unifiedStandardTitle": "Staff Accountant", "urlTitle": "x",
+        "jobLocationShort": ["Toronto, ON, ON, CAN, M5C 3G7<br/>"],
+        "mfield1": [{"value": "Toronto, ON, ON, CAN, M5C 3G7<br/>", "key": "43.65,-79.37"}, "Ottawa, ON"]}}]}
+    s = FakeSession({"/search/": Resp(text="<html></html>"), "/services/recruiting/v1/jobs": Resp(body)})
+    r = adapters.successfactors(s, "https://c.ca")
+    assert r[0]["location"] == "Toronto, ON, ON, CAN, M5C 3G7; Ottawa, ON"
+
+
+@pytest.mark.parametrize("title,status", [
+    ("Associate, Research Analytics Permanent Full-Time Mexico City APPLY", "irrelevant"),
+    ("Plant Controller, Fremont, OH, US", "irrelevant"),
+    ("Sales Assistant-Zhejiang", "irrelevant"),
+    ("Junior Financial Analyst", "relevant"),
+    ("Financial Analyst, Toronto", "relevant"),
+    ("Analyst, US Equities", "relevant"),
+])
+def test_foreign_place_in_title_when_location_missing(title, status):
+    assert main.classify({"title": title, "location": ""})[0] == status
+
+
+def test_embedded_phenom_assistant_is_not_the_careers_site():
+    html = ('<script>phApp.ddo = {"refNum":"MDLZ"}; "baseUrl":"https://virtualhiringassistant.mdlz.com/global/en/"'
+            '</script><script src="https://cdn.phenompeople.com/x.js"></script>')
+    assert discover.detect(html, "https://www.mdlz.com/careers/jobs/") == (None, None)

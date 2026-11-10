@@ -150,6 +150,21 @@ def location_ok(loc: str) -> bool:
     return bool(_loc.search(loc.lower())) or bool(REMOTE_CANADA.search(loc))
 
 
+TARGET_IN_TITLE = re.compile(r"toronto|ottawa|\bGTA\b|mississauga|markham|vaughan|brampton|oakville|"
+                             r"richmond hill|burlington|\bON\b|ontario|remote", re.I)
+_US_STATES = ("AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|"
+              "ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC")
+FOREIGN_IN_TITLE = re.compile(
+    r",\s*(?:" + _US_STATES + r")\b(?!\s*\d)|\bUSA\b|\bU\.S\.|united states|united kingdom|\bUK\b|"
+    r"mexico|brazil|argentina|colombia|bogot[aá]|chile|peru|china|zhejiang|shanghai|beijing|shenzhen|hong kong|"
+    r"india|bangalore|bengaluru|mumbai|hyderabad|pune|singapore|malaysia|philippines|manila|indonesia|jakarta|"
+    r"vietnam|thailand|bangkok|japan|tokyo|korea|seoul|australia|sydney|melbourne|new zealand|dubai|"
+    r"germany|berlin|munich|france|paris|spain|madrid|barcelona|italy|milan|netherlands|amsterdam|poland|warsaw|"
+    r"ireland|dublin|switzerland|zurich|belgium|brussels|sweden|stockholm|london\b(?!,?\s*on)|"
+    r"calgary|edmonton|vancouver|burnaby|montr[eé]al|laval|qu[eé]bec|winnipeg|halifax|regina|saskatoon|victoria,",
+    re.I)
+
+
 def classify(job: dict):
     """返回 (candidate_status, filter_reason)。candidate_status ∈ relevant / review / irrelevant。"""
     title = (job.get("title") or "").strip()
@@ -159,6 +174,9 @@ def classify(job: dict):
 
     if not loc and (NON_TARGET_URL.search(url) or FOREIGN_URL.search(url)):
         return "irrelevant", "地点不在目标地区（从链接识别）"
+    # 普通网页读到的职位常常没有单独的地点，但职位名里带着地点（如 "... Mexico City"、"Fremont, OH"）
+    if not loc and not TARGET_IN_TITLE.search(title) and FOREIGN_IN_TITLE.search(title):
+        return "irrelevant", f"职位名里的地点不在目标地区：{FOREIGN_IN_TITLE.search(title).group(0).strip(' ,')[:30]}"
     # 只写了 "Canada"（全国性雇主常见），城市未知：不排除，但需要核实
     country_only = bool(re.fullmatch(r"\s*(canada|ca|can|multiple locations|various locations)\s*", loc, re.I))
     if country_only:
