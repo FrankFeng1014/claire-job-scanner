@@ -929,6 +929,11 @@
   "first_ok": "2026-11-09",
   "kind": "workday"
  },
+ "kimberly-clark-canada": {
+  "arg": "https://www.kimberly-clark.com/en-us/careers",
+  "first_ok": "2026-11-10",
+  "kind": "page"
+ },
  "kinaxis": {
   "arg": null,
   "first_ok": "2026-11-08",
