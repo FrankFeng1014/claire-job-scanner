@@ -618,9 +618,11 @@ def scan(only=None, workers=8, channels=True):
     deadlines = _upcoming_deadlines(seen, d)
     by_fit = lambda r: (-r.get("fit_score", 0), r.get("employer") or "")   # noqa: E731
     from .details import grade as elig_grade
-    from .filters import resume_family, RESUME_VERSIONS
+    from .filters import resume_family, RESUME_VERSIONS, FAMILY_REASONS
     for r in new + review + baseline:
         g, gaps = elig_grade(r)
+        if g in ("A", "B") and not any(k in (r.get("fit_reasons") or "") for k in FAMILY_REASONS):
+            g, gaps = "C", gaps + ["职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"]
         r["eligibility"], r["eligibility_notes"] = g, gaps
         r["resume_family"] = resume_family(r.get("title"))
         r["resume_version"] = RESUME_VERSIONS[r["resume_family"]]

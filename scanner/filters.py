@@ -83,6 +83,7 @@ HARD_EXCLUDE = [
     (r"\bvolunteer\b|\bunpaid\b|b[ée]n[ée]vole", "志愿者/无薪岗位"),
     (r"payroll|benefits", "薪酬福利操作岗"),
     (r"settlement (?:worker|counsell?or)|newcomer settlement", "移民安置服务岗"),
+    (r"early childhood|childcare|child care|\bece\b|dental|veterinar|optometr|massage", "幼教/牙科/医疗诊所岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
      "仅限在校 Co-op/学生"),
 ]
@@ -360,9 +361,14 @@ _FAMILY = [
                    r"continuous improvement|operational excellence|\bpmo\b|project management office|"
                    r"proposal|\brfp\b|implementation|change management"),
     ("finance", r"financ|fp&a|treasury|budget|pricing|credit|risk|valuation|revenue|payment|cash|liquidity|"
+                r"bank|investment|private client|client engagement|"
                 r"underwrit|actuar|insurance|econom|controller|billing|collections officer|commercial"),
 ]
 _FAMILY = [(k, re.compile(p, re.I)) for k, p in _FAMILY]
+
+
+# 只靠这些通用头衔被选中、没有命中任何职能关键词的职位，资格不能给 A/B（职能是否对口要人看）
+FAMILY_REASONS = ("财务/审计/分析", "艺术/文化", "新增岗位族", "运营/项目类")
 
 
 def resume_family(title: str) -> str:

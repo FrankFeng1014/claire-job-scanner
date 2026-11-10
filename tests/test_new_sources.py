@@ -599,3 +599,12 @@ def test_supervision_specialist_kept_supervisor_excluded():
     from scanner.filters import classify
     assert classify({"title": "Associate, Global Market Supervision", "location": "Toronto, ON"})[0] != "irrelevant"
     assert classify({"title": "Tax Supervisor", "location": "Toronto, ON"})[0] == "irrelevant"
+
+
+def test_clinic_childcare_excluded_and_bank_maps_to_finance():
+    from scanner.filters import classify, resume_family
+    for t in ["early childhood assistant", "dental treatment coordinator"]:
+        assert classify({"title": t, "location": "Toronto, ON"})[0] == "irrelevant", t
+    assert resume_family("Associate Private Banker") == "finance"
+    assert resume_family("Client Engagement Associate (Mandarin/Cantonese)") == "finance"
+    assert resume_family("Equity Research Associate") == "ib"
