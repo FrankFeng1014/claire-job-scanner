@@ -59,6 +59,13 @@ FLAGS = [
     (re.compile(r"\b(?:CPA|CFA|CIA|CPP|LLQP|FRM)\b[^.]{0,40}\b(?:required|designation required|must)|"
                 r"(?:must|required to) (?:hold|have) (?:a|an|the)? ?(?:CPA|CFA|LLQP|licen[cs]e)", re.I),
      "要求执照/证书"),
+    # 投行/资本市场：要求已有交易执行、可比公司估值、并购/LBO 建模经验的，Claire 目前不满足（只有课程 DCF 项目）
+    (re.compile(r"experience (?:with|in|building|performing) [^.]{0,50}(?:comparable compan|comps\b|precedent "
+                r"transaction|\blbo\b|m&a|merger|transaction (?:execution|modell?ing)|deal (?:execution|modell?ing))|"
+                r"(?:\blbo\b|m&a|merger|transaction|deal|comps|valuation) (?:modell?ing )?experience (?:is )?"
+                r"(?:required|an asset|preferred)?|(?:prior|previous) (?:deal|transaction|investment banking) experience|"
+                r"live deal experience", re.I),
+     "要求交易/估值建模经验"),
 ]
 _NEW_GRAD_TXT = re.compile(r"new grad|recent grad|recent graduate|graduating in 2027|class of 2027|0\s*(?:-|–|to)\s*[12]"
                            r"\s*years|no (?:prior )?experience (?:is )?required|entry[- ]level", re.I)

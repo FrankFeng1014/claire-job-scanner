@@ -577,9 +577,12 @@ def test_fit_scores_for_new_families():
 def test_resume_family():
     from scanner.filters import resume_family
     assert resume_family("Assurance Staff") == "audit"
+    assert resume_family("Payment Operations Analyst") == "audit"
+    assert resume_family("Client Onboarding Coordinator") == "coordination"
     assert resume_family("Grants Coordinator") == "arts"
     assert resume_family("Preparator") == "arts"
     assert resume_family("Junior PMO Analyst") == "consulting"
+    assert resume_family("Proposal Coordinator") == "coordination"
     assert resume_family("Budget Coordinator") == "finance"
     assert resume_family("Equity Research Associate") == "ib"
     assert resume_family("Data Quality Analyst") == "ba"
@@ -608,3 +611,23 @@ def test_clinic_childcare_excluded_and_bank_maps_to_finance():
     assert resume_family("Associate Private Banker") == "finance"
     assert resume_family("Client Engagement Associate (Mandarin/Cantonese)") == "finance"
     assert resume_family("Equity Research Associate") == "ib"
+
+
+def test_resume_version_arts_branches_and_employer():
+    from scanner.filters import resume_version
+    assert resume_version("Grants Coordinator") == "Arts_Culture · Development"
+    assert resume_version("Collections Assistant") == "Arts_Culture · Museum Administration"
+    assert resume_version("Gallery Assistant") == "Arts_Culture · Gallery / Exhibition"
+    assert resume_version("Marketing Coordinator", "Art Gallery of Ontario") == "Arts_Culture · Arts Marketing"
+    assert resume_version("Finance Assistant", "Royal Ontario Museum") == "Arts_Culture · Arts Finance"
+    assert resume_version("Marketing Coordinator", "Loblaw") == "Coordination_Client_Ops"
+    assert resume_version("Reconciliation Analyst") == "Audit_FinOps"
+
+
+def test_deal_experience_flag():
+    from scanner.details import extract, grade
+    d = extract("Requirements: 1+ years of experience with comparable company analysis and LBO models.")
+    assert "要求交易/估值建模经验" in d["flags"]
+    assert "要求交易/估值建模经验" not in extract("You will build comps for live deals as part of training.")["flags"]
+    d = {**d, "ok": True}
+    assert grade({"title": "Investment Banking Analyst", "details": d})[0] in ("B", "C")
