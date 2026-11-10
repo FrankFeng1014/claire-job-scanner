@@ -12,3 +12,8 @@ def _no_channels(monkeypatch):
 @pytest.fixture(autouse=True)
 def _no_browser(monkeypatch):
     monkeypatch.setenv("SCANNER_BROWSER", "0")
+
+
+@pytest.fixture(autouse=True)
+def _no_details(monkeypatch):
+    monkeypatch.setenv("SCANNER_DETAILS", "0")

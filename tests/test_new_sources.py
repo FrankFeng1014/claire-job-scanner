@@ -449,3 +449,73 @@ def test_new_and_baseline_ranked_together_by_fit_not_tier(env):
     assert L["candidates"][0]["fit_score"] > L["candidates"][1]["fit_score"]
     md = (env["path"] / "reports" / "latest.md").read_text()
     assert "## 本次可申请的职位（2）" in md and md.index("SmallCo") < md.index("BigBank")
+
+
+# ---------- 第二轮筛选：职位页 ----------
+from scanner import details  # noqa: E402
+
+
+def test_details_extract_and_api_urls():
+    d = details.extract("Requirements: 3+ years of experience in audit. Excel is an asset. "
+                        "Salary range: $58,000 - $65,000 per year. Applications close November 21, 2026.")
+    assert (d["years_min"], d["deadline"], d["salary"]) == (3, "2026-11-21", "$58,000 - $65,000 per year")
+    assert details.extract("5 years of experience is considered an asset.")["years_min"] is None
+    assert details.extract("Minimum of two (2) years of relevant experience")["years_min"] == 2
+    assert details.extract("Open to new grads and recent graduates. 0-1 years of experience")["new_grad_text"]
+    assert details.extract("Must be currently enrolled in a post-secondary program")["flags"] == ["仅限在校生/需返校"]
+    assert details._workday_api("https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto/Analyst_R1") == \
+        "https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/job/Toronto/Analyst_R1"
+    assert "Id=%22117141%22,siteNumber=CX_1" in details._oracle_api(
+        "https://ehtc.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/117141")
+
+
+def test_details_second_pass_in_scan(env, monkeypatch):
+    monkeypatch.setenv("SCANNER_DETAILS", "1")
+    pages = {
+        "https://x/1": "Junior Financial Analyst. Requirements: 4 years of experience in FP&A. " * 5,
+        "https://x/2": ("Business Analyst. Requirements: 2 years of experience in analysis. "
+                        "Apply by 2026-11-0{}.".format(5)) * 5,
+        "https://x/3": "Research Analyst. Recent graduates welcome. Apply by 2026-11-04. " * 10,
+    }
+    monkeypatch.setattr(details, "fetch", lambda s, url: (pages[url], {}))
+    env["write"]([{"id": "a", "name": "A", "ats": "greenhouse", "ats_id": "a"}])
+    env["boards"]["a"] = adapters.AdapterResult([J(0, "Data Entry Clerk")])
+    main.scan()                                                      # 2026-11-01
+    env["boards"]["a"] = adapters.AdapterResult([J(0, "Data Entry Clerk"), J(1, "Junior Financial Analyst"),
+                                                 J(2, "Business Analyst"), J(3, "Research Analyst")])
+    L = main.scan()                                                  # 2026-11-02
+    assert [r["title"] for r in L["excluded_by_details"]] == ["Junior Financial Analyst"]
+    assert [r["title"] for r in L["candidates"]] == ["Research Analyst"]
+    assert L["candidates"][0]["details_note"].startswith("写明应届可申；截止 2026-11-04")
+    assert [r["title"] for r in L["candidates_review"]] == ["Business Analyst"]
+    assert {r["title"]: r["days_left"] for r in L["deadlines_7d"]} == {"Research Analyst": 2, "Business Analyst": 3}
+    md = (env["path"] / "reports" / "latest.md").read_text()
+    assert "## ⏰ 7 天内截止（2）" in md and "## 打开职位页后排除（1）" in md
+    seen = json.loads((env["path"] / "data" / "seen.json").read_text())
+    assert seen["a::1"]["details"]["years_min"] == 4 and seen["a::1"]["candidate_status"] == "irrelevant"
+
+
+def test_newly_broken_priority_employer(env):
+    env["write"]([{"id": "a", "name": "BigBank", "ats": "greenhouse", "ats_id": "a", "tier": "P0"}])
+    env["boards"]["a"] = adapters.AdapterResult([J(1)])
+    main.scan()
+
+    def boom(s, arg):
+        raise RuntimeError("site changed")
+    main.ADAPTERS["greenhouse"] = boom
+    L = main.scan()
+    assert [b["name"] for b in L["newly_broken"]] == ["BigBank"]
+    assert "重点雇主突然读不到" in (env["path"] / "reports" / "latest.md").read_text()
+
+
+def test_details_exclusion_survives_next_run(env, monkeypatch):
+    monkeypatch.setenv("SCANNER_DETAILS", "1")
+    monkeypatch.setattr(details, "fetch", lambda s, url: ("Requirements: 4 years of experience in FP&A. " * 10, {}))
+    env["write"]([{"id": "a", "name": "A", "ats": "greenhouse", "ats_id": "a"}])
+    env["boards"]["a"] = adapters.AdapterResult([J(0, "Data Entry Clerk")])
+    main.scan()
+    env["boards"]["a"] = adapters.AdapterResult([J(0, "Data Entry Clerk"), J(1, "Junior Financial Analyst")])
+    main.scan()
+    L = main.scan()
+    seen = json.loads((env["path"] / "data" / "seen.json").read_text())
+    assert seen["a::1"]["candidate_status"] == "irrelevant" and L["candidates"] == [] and L["reopened_relevant"] == []

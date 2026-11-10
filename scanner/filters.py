@@ -76,6 +76,8 @@ HARD_EXCLUDE = [
     (r"licen[sc]ed|financial advisor|wealth advisor|financial planner", "需执照/持牌顾问岗"),
     (r"nurse|clinical|pharmac|physician|therapist", "医疗专业岗"),
     (r"executive assistant", "高管助理（通常要多年经验）"),
+    (r"professor|lecturer|\binstructor|sessional|faculty|postdoc|post-doctoral|teaching assistant|"
+     r"instructional assistant", "大学教职/助教岗"),
     (r"\bvolunteer\b|\bunpaid\b|b[ée]n[ée]vole", "志愿者/无薪岗位"),
     (r"payroll|benefits", "薪酬福利操作岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
@@ -227,7 +229,8 @@ _FIT_ENTRY = re.compile(r"new grad|graduate|\b2027\b|campus|junior|\bjr\b|entry|
 _FIT_CORE = re.compile(r"audit|accounting|accountant|financial analyst|finance|fp&a|financial reporting|"
                        r"econom|valuation|investment|research analyst|risk|compliance|treasury|tax|"
                        r"actuar|underwrit|consult|strategy|business analyst|data analyst|analyst", re.I)
-_FIT_ARTS = re.compile(r"gallery|museum|curat|art\b|arts\b|exhibit|collection|registrar|archiv|cultur|"
+_FIT_ARTS = re.compile(r"gallery|museum|curat|art\b|arts\b|exhibit|collections? (?:manager|assistant|technician|"
+                       r"coordinator|registrar)|registrar|archiv|cultur|"
                        r"artist|theatre|music|festival|fundrais|development (coordinator|officer|associate)|"
                        r"donor|philanthrop|grant|programs? (coordinator|associate|officer)", re.I)
 _FIT_OK = re.compile(r"operations|procurement|purchasing|marketing|communications|project|program|"
