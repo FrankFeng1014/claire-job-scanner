@@ -957,8 +957,7 @@
  "kpmg-canada": {
   "arg": "https://careers.kpmg.ca/sitemap.xml",
   "first_ok": "2026-11-08",
-  "kind": "sitemap",
-  "pending_baseline": true
+  "kind": "sitemap"
  },
  "kraft-heinz-canada": {
   "arg": "https://jobs.kraftheinz.com/careers",
