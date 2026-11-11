@@ -581,8 +581,8 @@ def test_resume_family():
     assert resume_family("Client Onboarding Coordinator") == "coordination"
     assert resume_family("Grants Coordinator") == "arts"
     assert resume_family("Preparator") == "arts"
-    assert resume_family("Junior PMO Analyst") == "consulting"
-    assert resume_family("Proposal Coordinator") == "coordination"
+    assert resume_family("Junior PMO Analyst") == "project"
+    assert resume_family("Proposal Coordinator") == "project"
     assert resume_family("Budget Coordinator") == "finance"
     assert resume_family("Equity Research Associate") == "ib"
     assert resume_family("Data Quality Analyst") == "ba"
@@ -631,3 +631,16 @@ def test_deal_experience_flag():
     assert "要求交易/估值建模经验" not in extract("You will build comps for live deals as part of training.")["flags"]
     d = {**d, "ok": True}
     assert grade({"title": "Investment Banking Analyst", "details": d})[0] in ("B", "C")
+
+
+def test_commercial_and_project_versions():
+    from scanner.filters import resume_version
+    for t in ["Commercial Operations Coordinator", "Sales Operations Analyst", "Revenue Operations Associate",
+              "Product Operations Coordinator", "Pricing Coordinator", "Merchandise Planning Assistant"]:
+        assert resume_version(t) == "Commercial_Product_Ops", t
+    for t in ["Junior PMO Analyst", "Project Controls Assistant", "Proposal Coordinator", "RFP Coordinator",
+              "Program Assistant", "Research Administration Coordinator"]:
+        assert resume_version(t) == "Project_Proposal_Program", t
+    assert resume_version("Client Onboarding Coordinator") == "Coordination_Client_Ops"
+    assert resume_version("Internal Controls Analyst") == "Audit_FinOps"
+    assert resume_version("Budget Coordinator") == "Finance"
