@@ -83,6 +83,8 @@ HARD_EXCLUDE = [
     (r"\bvolunteer\b|\bunpaid\b|b[ée]n[ée]vole", "志愿者/无薪岗位"),
     (r"payroll|benefits", "薪酬福利操作岗"),
     (r"settlement (?:worker|counsell?or)|newcomer settlement", "移民安置服务岗"),
+    (r"(?<!student[- ])(?<!pursuing )\b(?:CPA|CA)\b(?![- ]?(?:student|candidate|track|stream|program))|chartered (?:professional )?accountant",
+     "要求 CPA 资格"),
     (r"early childhood|childcare|child care|\bece\b|dental|veterinar|optometr|massage", "幼教/牙科/医疗诊所岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
      "仅限在校 Co-op/学生"),
@@ -345,30 +347,35 @@ def fit_score(rec: dict):
 RESUME_VERSIONS = {
     "arts": "Arts_Culture", "audit": "Audit_FinOps", "ib": "IB_Capital_Markets", "consulting": "Consulting",
     "finance": "Finance", "coordination": "Coordination_Client_Ops", "ba": "Business_Analyst",
+    "commercial": "Commercial_Product_Ops", "project": "Project_Proposal_Program",
 }
 _FAMILY = [
-    ("arts", r"gallery|museum|curat|exhibit|art handl|preparator|catalogu|cataloger|registrar|archiv|cultur|"
+    ("arts", r"gallery|museum|curat|exhibit|art handl|preparator|catalogu|cataloger|collections registrar|archiv|cultur|"
              r"\barts?\b|artist|theatre|festival|grants?\b|fundrais|donor|philanthrop|"
-             r"development (?:assistant|coordinator|officer|associate)|advancement|research administrat|"
+             r"development (?:assistant|coordinator|officer|associate)|advancement|"
              r"box office|patron|membership|collections? (?:assistant|coordinator|technician|manager|registrar)"),
     ("audit", r"audit|assurance|accountant|accounting|reconcil|fund account|fund admin|fund services|"
               r"settlement|trade support|middle office|back office|investment operations|accounts (?:payable|receivable)|"
-              r"bookkeep|\btax\b|\bkyc\b|\baml\b|anti-money|financial crime|compliance|controls?\b|"
+              r"bookkeep|\btax\b|\bkyc\b|\baml\b|anti-money|financial crime|compliance|(?<!project )controls?\b|"
               r"financial operations|finance operations|payments? operations|payments? analyst|payment processing|"
               r"treasury operations|cash (?:management|operations)|transaction operations"),
     ("ib", r"investment bank|capital markets|equity research|corporate development|m&a|mergers|private equity|"
            r"investment (?:analyst|associate)|portfolio (?:analyst|associate)|wealth|asset management|"
            r"investor relations|sales & trading|trading"),
     ("consulting", r"consult|strategy|strategic|advisory|transformation|business process|process improvement|"
-                   r"continuous improvement|operational excellence|\bpmo\b|project management office|"
-                   r"project controls|change management"),
+                   r"continuous improvement|operational excellence|change management"),
+    ("commercial", r"commercial operations|sales operations|revenue operations|product operations|product coordinator|"
+                   r"pricing|merchandis|category (?:analyst|assistant|coordinator|specialist)|inventory|demand planning|"
+                   r"planning (?:assistant|analyst|coordinator)|assortment|sales (?:support|analyst|coordinator)"),
+    ("project", r"\bpmo\b|project management office|project controls|project (?:coordinator|analyst|assistant|"
+                r"administrator)|proposal|\brfp\b|\bbid\b|tender|program (?:assistant|coordinator|administrator|"
+                r"associate)|research administrat|research (?:coordinator|office|services|grants?)"),
     ("finance", r"financ|fp&a|treasury|budget|pricing|credit|risk|valuation|revenue|payment|cash|liquidity|"
                 r"bank|investment|private client|client engagement|"
                 r"underwrit|actuar|insurance|econom|controller|billing|collections officer|commercial"),
-    ("coordination", r"onboarding|implementation|proposal|\brfp\b|\bbid\b|tender|content|product operations|"
-                     r"product coordinator|client service|customer service|customer success|sponsorship|partnerships|"
-                     r"event|program (?:coordinator|assistant)|project coordinator|operations coordinator|"
-                     r"administrat|office|mandarin|cantonese|bilingual|coordinator"),
+    ("coordination", r"onboarding|implementation|content|client service|customer service|customer success|"
+                     r"sponsorship|partnerships|event|operations coordinator|administrat|office|mandarin|cantonese|"
+                     r"bilingual|coordinator"),
 ]
 _FAMILY = [(k, re.compile(p, re.I)) for k, p in _FAMILY]
 
