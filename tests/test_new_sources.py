@@ -652,4 +652,10 @@ def test_licence_flags_and_cpa_title():
     assert "要求投资/保险执照" not in extract("We support you in completing the CSC after you join.")["flags"]
     assert classify({"title": "chartered professional accountant, chartered accountant (CPA, CA)", "location": "Toronto, ON"})[0] == "irrelevant"
     assert classify({"title": "CPA Student - Audit", "location": "Toronto, ON"})[0] != "irrelevant"
+    for t in ["Corporate Accountant (CPA Pre-approved Program)", "2027 Graduate Program - CPA",
+              "Cashflow Modeling Analyst – ABS, Toronto, CA or Denver, CO", "Pension Specialist Toronto, Ontario, CA"]:
+        assert classify({"title": t, "location": "Toronto, ON"})[0] != "irrelevant", t
+    assert classify({"title": "Staff Accountant, CPA", "location": "Toronto, ON"})[0] == "irrelevant"
+    assert classify({"title": "QA Officer", "location": "Toronto, ON"})[0] == "irrelevant"
+    assert classify({"title": "Assurance Associate", "location": "Toronto, ON"})[0] != "irrelevant"
     assert resume_version("Registrar", "University of Toronto") != "Arts_Culture · Museum Administration"
