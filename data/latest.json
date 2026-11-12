@@ -1,185 +1,32 @@
 {
  "ats_detected_by_browser": [],
- "baseline": [],
- "candidates": [
+ "baseline": [
   {
    "active": true,
+   "baseline": true,
    "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Walia Group of Companies",
-   "employer_id": "walia-companies",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级、财务/审计/分析",
-   "fit_score": 86,
-   "found_as": "新发布",
-   "job_id": "50708396",
-   "last_seen": "2026-11-12",
-   "location": "Mississauga, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "junior accountant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708396"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$62,000 to $92,000 per year",
-    "years_min": null
-   },
-   "details_note": "$62,000 to $92,000 per year",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "OMERS",
-   "employer_id": "omers",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 75,
-   "found_as": "新发布",
-   "job_id": "JR-8560",
-   "last_seen": "2026-11-12",
-   "location": "Toronto, Ontario, Canada",
-   "posted": "2026-11-11",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Associate, Marketing & Communications",
-   "url": "https://careers.omers.com/ca/en/job/JR-8560/Associate-Marketing-Communications"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 55,000 to $ 65,000",
-    "years_min": null
-   },
-   "details_note": "$ 55,000 to $ 65,000",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Holmes & Brakel Limited",
-   "employer_id": "holmes-brakel",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 73,
-   "found_as": "新发布",
-   "job_id": "50708788",
-   "last_seen": "2026-11-12",
-   "location": "Pickering, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "marketing coordinator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708788"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Hercules Moving Company",
-   "employer_id": "hercules-moving",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 71,
-   "found_as": "新发布",
-   "job_id": "50709025",
-   "last_seen": "2026-11-12",
-   "location": "North York, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "regulatory compliance officer",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50709025"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$45,000.00-$50,000.00 per year",
-    "years_min": null
-   },
-   "details_note": "$45,000.00-$50,000.00 per year",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Seamax Trading Ltd.",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 70,
-   "found_as": "新发布",
-   "job_id": "50709407",
-   "last_seen": "2026-11-12",
-   "location": "Richmond Hill, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "quality assurance officer",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50709407"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
    "details": {
     "checked": "2026-11-12",
     "deadline": "",
@@ -192,391 +39,838 @@
    "details_note": "经验≥1年",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "LAND2AIR IMMIGRATION SERVICES",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 67,
-   "found_as": "新发布",
-   "job_id": "50707900",
-   "last_seen": "2026-11-12",
-   "location": "Brampton, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "digital marketing specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50707900"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 78,000",
-    "years_min": null
-   },
-   "details_note": "$ 78,000",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "The Successful Investor",
-   "employer_id": "successful-investor",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 58,
-   "found_as": "新发布",
-   "job_id": "50708700",
-   "last_seen": "2026-11-12",
-   "location": "North York, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "marketing specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708700"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Dream Unlimited",
-   "employer_id": "dream-unlimited",
+   "employer": "Allied Properties REIT",
+   "employer_id": "allied-properties-reit",
    "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
    "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 56,
-   "found_as": "新发布",
-   "job_id": "42f0ff83-22e5-4a9b-826c-de8741aeaa43",
+   "fit_score": 66,
+   "job_id": "c591a3ef-dad8-4e52-8d6b-0db7d4466a0f",
+   "last_modified_seen": "2026-11-12",
    "last_seen": "2026-11-12",
-   "location": "Markham, ON",
-   "posted": "2026-11-11",
+   "location": "Toronto, Ontario",
+   "posted": "2023-05-02",
    "relevant": true,
    "resume_family": "audit",
    "resume_version": "Audit_FinOps",
-   "source": "ultipro",
+   "rule_included": "2026-11-12",
+   "source": "lever",
    "tier": "P2",
-   "title": "Property Accountant (6 Month)",
-   "url": "https://recruiting.ultipro.ca/DRE5000DOMC/JobBoard/641409c4-22a9-4262-b1c5-14ed9a4d73fb/OpportunityDetail?opportunityId=42f0ff83-22e5-4a9b-826c-de8741aeaa43"
+   "title": "Corporate Accountant (CPA Pre-approved Program)",
+   "url": "https://jobs.lever.co/alliedreit/c591a3ef-dad8-4e52-8d6b-0db7d4466a0f"
   },
   {
    "active": true,
+   "baseline": true,
    "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Markham Real Estate Law Office",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析、偏销售/柜台",
-   "fit_score": 40,
-   "found_as": "新发布",
-   "job_id": "50708727",
-   "last_seen": "2026-11-12",
-   "location": "Markham, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "accounting clerk",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708727"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$20.00-$25.00 per hour",
-    "years_min": null
-   },
-   "details_note": "$20.00-$25.00 per hour",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "GeoGuard Innovations Ltd.",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "运营/项目类",
-   "fit_score": 27,
-   "found_as": "新发布",
-   "job_id": "50709383",
-   "last_seen": "2026-11-12",
-   "location": "Concord, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "office administrator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50709383"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
    ],
-   "employer": "Qualified Metal Fabricators Inc",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华",
-   "fit_score": 45,
-   "found_as": "新发布",
-   "job_id": "50708710",
-   "last_seen": "2026-11-12",
-   "location": "Etobicoke, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "quotations specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708710"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
    "details": {
     "checked": "2026-11-12",
     "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$20.00 - $23.01/hour",
+    "salary": "",
     "years_min": 1
    },
-   "details_note": "经验≥1年；$20.00 - $23.01/hour",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   "details_note": "经验≥1年",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Allied Properties REIT",
+   "employer_id": "allied-properties-reit",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 66,
+   "job_id": "c9c326ee-f833-4db4-9e8b-39ac6930994d",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, Ontario",
+   "posted": "2023-05-02",
+   "relevant": true,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "rule_included": "2026-11-12",
+   "source": "lever",
+   "tier": "P2",
+   "title": "Property Accountant (CPA Pre-approved Program)",
+   "url": "https://jobs.lever.co/alliedreit/c9c326ee-f833-4db4-9e8b-39ac6930994d"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
    ],
-   "employer": "Lululemon",
-   "employer_id": "lululemon",
-   "filter_reason": "职能相关；地点未注明",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 36,
-   "found_as": "新发布",
-   "job_id": "65801",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Allied Properties REIT",
+   "employer_id": "allied-properties-reit",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 66,
+   "job_id": "d481a1da-f3f0-4aa3-a16b-983cae99f81f",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, Ontario",
+   "posted": "2023-05-02",
+   "relevant": true,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "rule_included": "2026-11-12",
+   "source": "lever",
+   "tier": "P2",
+   "title": "Valuation Accountant (CPA Pre-approved Program)",
+   "url": "https://jobs.lever.co/alliedreit/d481a1da-f3f0-4aa3-a16b-983cae99f81f"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted Yesterday",
+       "Posted 2 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 2 Days Ago",
+       "Posted 3 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 3 Days Ago",
+       "Posted 4 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "review",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-11",
+    "deadline": "2027-01-01",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$62,000 to $102,000",
+    "years_min": 2
+   },
+   "details_note": "经验≥2年；截止 2027-01-01；$62,000 to $102,000",
+   "eligibility": "B",
+   "eligibility_notes": [
+    "要求 2 年经验"
+   ],
+   "employer": "S&P Global (Ratings)",
+   "employer_id": "s-p-global",
+   "filter_reason": "职位页要求 2 年经验",
+   "first_seen": "2026-11-07",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 47,
+   "job_id": "/job/Toronto-CAN/Cashflow-Modeling-Analyst---ABS--Toronto--Canada_332537-1",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "legacy_job_id": "332537",
+   "location": "Toronto, CAN",
+   "posted": "Posted 4 Days Ago",
+   "relevant": false,
+   "resume_family": "finance",
+   "resume_version": "Finance",
+   "rule_included": "2026-11-12",
+   "source": "workday",
+   "tier": "P1",
+   "title": "Cashflow Modeling Analyst – ABS, Toronto, CA or Denver, CO",
+   "url": "https://spgi.wd5.myworkdayjobs.com/en-US/SPGI_Careers/job/Toronto-CAN/Cashflow-Modeling-Analyst---ABS--Toronto--Canada_332537-1"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "review",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "review",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$115,000",
+    "years_min": 4
+   },
+   "details_note": "$115,000",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Ontario Pension Board",
+   "employer_id": "ontario-pension-board",
+   "filter_reason": "精算岗通常要求考试进度；顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门；招聘页没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 26,
+   "job_id": "https://opb.talcura.com/Cands/Job.aspx?JobId=2881",
+   "last_modified_seen": "2026-11-12",
    "last_seen": "2026-11-12",
    "location": "",
    "posted": "",
-   "relevant": true,
-   "resume_family": "commercial",
-   "resume_version": "Commercial_Product_Ops",
-   "source": "avature",
+   "relevant": false,
+   "resume_family": "finance",
+   "resume_version": "Finance",
+   "rule_included": "2026-11-12",
+   "source": "page",
    "tier": "P2",
-   "title": "Visual Merchandising Specialist | Butler Town Center",
-   "url": "https://careers.lululemon.com/en_US/careers/JobDetail/Visual-Merchandising-Specialist-Butler-Town-Center/65801"
+   "title": "chevron_right Full-Time Actuarial Advisor Toronto, Ontario, CA Posted on October 14, 2026",
+   "url": "https://opb.talcura.com/Cands/Job.aspx?JobId=2881"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "review",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "review",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$95,000",
+    "years_min": null
+   },
+   "details_note": "$95,000",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Ontario Pension Board",
+   "employer_id": "ontario-pension-board",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 41,
+   "job_id": "https://opb.talcura.com/Cands/Job.aspx?JobId=2877",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "consulting",
+   "resume_version": "Consulting",
+   "rule_included": "2026-11-12",
+   "source": "page",
+   "tier": "P2",
+   "title": "chevron_right Full-Time Strategy, Planning & Corporate Reporting Specialist Toronto, Ontario, CA Posted on September 17, 2026",
+   "url": "https://opb.talcura.com/Cands/Job.aspx?JobId=2877"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "review",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "review",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$81,519",
+    "years_min": null
+   },
+   "details_note": "$81,519",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Ontario Pension Board",
+   "employer_id": "ontario-pension-board",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "地点待确认",
+   "fit_score": 16,
+   "job_id": "https://opb.talcura.com/Cands/Job.aspx?JobId=2876",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "ba",
+   "resume_version": "Business_Analyst",
+   "rule_included": "2026-11-12",
+   "source": "page",
+   "tier": "P2",
+   "title": "chevron_right Full-Time Pension Specialist Toronto, Ontario, CA Posted on September 11, 2026",
+   "url": "https://opb.talcura.com/Cands/Job.aspx?JobId=2876"
+  }
+ ],
+ "candidates": [
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Allied Properties REIT",
+   "employer_id": "allied-properties-reit",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 66,
+   "found_as": "规则新纳入",
+   "job_id": "c591a3ef-dad8-4e52-8d6b-0db7d4466a0f",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, Ontario",
+   "posted": "2023-05-02",
+   "relevant": true,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "rule_included": "2026-11-12",
+   "source": "lever",
+   "tier": "P2",
+   "title": "Corporate Accountant (CPA Pre-approved Program)",
+   "url": "https://jobs.lever.co/alliedreit/c591a3ef-dad8-4e52-8d6b-0db7d4466a0f"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Allied Properties REIT",
+   "employer_id": "allied-properties-reit",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 66,
+   "found_as": "规则新纳入",
+   "job_id": "c9c326ee-f833-4db4-9e8b-39ac6930994d",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, Ontario",
+   "posted": "2023-05-02",
+   "relevant": true,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "rule_included": "2026-11-12",
+   "source": "lever",
+   "tier": "P2",
+   "title": "Property Accountant (CPA Pre-approved Program)",
+   "url": "https://jobs.lever.co/alliedreit/c9c326ee-f833-4db4-9e8b-39ac6930994d"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Allied Properties REIT",
+   "employer_id": "allied-properties-reit",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 66,
+   "found_as": "规则新纳入",
+   "job_id": "d481a1da-f3f0-4aa3-a16b-983cae99f81f",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, Ontario",
+   "posted": "2023-05-02",
+   "relevant": true,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "rule_included": "2026-11-12",
+   "source": "lever",
+   "tier": "P2",
+   "title": "Valuation Accountant (CPA Pre-approved Program)",
+   "url": "https://jobs.lever.co/alliedreit/d481a1da-f3f0-4aa3-a16b-983cae99f81f"
   }
  ],
  "candidates_review": [
   {
    "active": true,
+   "baseline": true,
    "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": true,
-    "ok": true,
-    "salary": "$41,100 - $68,400",
-    "years_min": 5
-   },
-   "details_note": "经验≥5年；$41,100 - $68,400",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Canada Life",
-   "employer_id": "canada-life",
-   "filter_reason": "合同/临时岗：需确认入职时间；职位页要求 5 年经验",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 73,
-   "found_as": "新发布",
-   "job_id": "1447719233",
-   "last_seen": "2026-11-12",
-   "location": "Toronto Ontario, ON, CA, M5H 3B7 +4 more…",
-   "posted": "Nov 12, 2026",
-   "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Investment Specialist - 12 Month Contract",
-   "url": "https://jobs.canadalife.com/job/Toronto-Ontario-Investment-Specialist-12-Month-Contract-ON-M5H-3B7/1447719233/"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "review",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
    "details": {
     "checked": "2026-11-12",
     "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$ 55,000 to $ 60,000",
+    "salary": "$95,000",
+    "years_min": null
+   },
+   "details_note": "$95,000",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Ontario Pension Board",
+   "employer_id": "ontario-pension-board",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 41,
+   "found_as": "规则新纳入",
+   "job_id": "https://opb.talcura.com/Cands/Job.aspx?JobId=2877",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "consulting",
+   "resume_version": "Consulting",
+   "rule_included": "2026-11-12",
+   "source": "page",
+   "tier": "P2",
+   "title": "chevron_right Full-Time Strategy, Planning & Corporate Reporting Specialist Toronto, Ontario, CA Posted on September 17, 2026",
+   "url": "https://opb.talcura.com/Cands/Job.aspx?JobId=2877"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "review",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "review",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$115,000",
+    "years_min": 4
+   },
+   "details_note": "$115,000",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Ontario Pension Board",
+   "employer_id": "ontario-pension-board",
+   "filter_reason": "精算岗通常要求考试进度；顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门；招聘页没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 26,
+   "found_as": "规则新纳入",
+   "job_id": "https://opb.talcura.com/Cands/Job.aspx?JobId=2881",
+   "last_modified_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "finance",
+   "resume_version": "Finance",
+   "rule_included": "2026-11-12",
+   "source": "page",
+   "tier": "P2",
+   "title": "chevron_right Full-Time Actuarial Advisor Toronto, Ontario, CA Posted on October 14, 2026",
+   "url": "https://opb.talcura.com/Cands/Job.aspx?JobId=2881"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted Yesterday",
+       "Posted 2 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 2 Days Ago",
+       "Posted 3 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 3 Days Ago",
+       "Posted 4 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "review",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-11",
+    "deadline": "2027-01-01",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$62,000 to $102,000",
     "years_min": 2
    },
-   "details_note": "经验≥2年；$ 55,000 to $ 60,000",
+   "details_note": "经验≥2年；截止 2027-01-01；$62,000 to $102,000",
    "eligibility": "B",
    "eligibility_notes": [
     "要求 2 年经验"
    ],
-   "employer": "Nour Private Wealth",
-   "employer_id": "channel-jobbank",
+   "employer": "S&P Global (Ratings)",
+   "employer_id": "s-p-global",
    "filter_reason": "职位页要求 2 年经验",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
+   "first_seen": "2026-11-07",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
    "fit_score": 47,
-   "found_as": "新发布",
-   "job_id": "50708732",
+   "found_as": "规则新纳入",
+   "job_id": "/job/Toronto-CAN/Cashflow-Modeling-Analyst---ABS--Toronto--Canada_332537-1",
+   "last_modified_seen": "2026-11-12",
    "last_seen": "2026-11-12",
-   "location": "Oakville, ON",
-   "posted": "November 11, 2026",
+   "legacy_job_id": "332537",
+   "location": "Toronto, CAN",
+   "posted": "Posted 4 Days Ago",
    "relevant": false,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "administrative assistant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708732"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$18.00/hr",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年；$18.00/hr",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "要求 2 年经验",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Harry Rosen",
-   "employer_id": "harry-rosen",
-   "filter_reason": "职位页要求 2 年经验",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 36,
-   "found_as": "新发布",
-   "job_id": "/job/Etobicoke/Logistics-Associate_R6222",
-   "last_seen": "2026-11-12",
-   "location": "Etobicoke",
-   "posted": "Posted Today",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
+   "resume_family": "finance",
+   "resume_version": "Finance",
+   "rule_included": "2026-11-12",
    "source": "workday",
-   "tier": "P2",
-   "title": "Logistics Associate",
-   "url": "https://harry.wd10.myworkdayjobs.com/en-US/HRI/job/Etobicoke/Logistics-Associate_R6222"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [
-     "要求立即入职"
-    ],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$16 - $22/hour",
-    "years_min": null
-   },
-   "details_note": "$16 - $22/hour；要求立即入职",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "要求立即入职",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "DHE BOSS INC.",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职位页：要求立即入职",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华",
-   "fit_score": 20,
-   "found_as": "新发布",
-   "job_id": "50708456",
-   "last_seen": "2026-11-12",
-   "location": "Brampton, ON",
-   "posted": "November 11, 2026",
-   "relevant": false,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "bookkeeper",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708456"
+   "tier": "P1",
+   "title": "Cashflow Modeling Analyst – ABS, Toronto, CA or Denver, CO",
+   "url": "https://spgi.wd5.myworkdayjobs.com/en-US/SPGI_Careers/job/Toronto-CAN/Cashflow-Modeling-Analyst---ABS--Toronto--Canada_332537-1"
   },
   {
    "active": true,
@@ -591,178 +885,138 @@
     "years_min": 2
    },
    "details_note": "经验≥2年",
-   "eligibility": "C",
+   "eligibility": "B",
    "eligibility_notes": [
-    "要求 2 年经验",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+    "要求 2 年经验"
    ],
-   "employer": "Mattamy Homes",
-   "employer_id": "mattamy-homes",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
    "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市；职位页要求 2 年经验",
    "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
+   "first_seen_run": "20261112T035230Z-148c6b",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 26,
    "found_as": "新发布",
-   "job_id": "https://jobs.jobvite.com/mattamyhomes/job/oyJ5AfwG",
+   "job_id": "https://www.roberthalf.com/ca/en/job/newmarket-on/staff-accountant/001268840-caen",
+   "last_seen": "2026-11-12",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "page",
+   "tier": "P2",
+   "title": "Staff Accountant",
+   "url": "https://www.roberthalf.com/ca/en/job/newmarket-on/staff-accountant/001268840-caen"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 2
+   },
+   "details_note": "经验≥2年",
+   "eligibility": "B",
+   "eligibility_notes": [
+    "要求 2 年经验"
+   ],
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市；职位页要求 2 年经验",
+   "first_seen": "2026-11-12",
+   "first_seen_run": "20261112T035230Z-148c6b",
+   "fit_reasons": "地点待确认、财务/审计/分析、偏销售/柜台",
+   "fit_score": 0,
+   "found_as": "新发布",
+   "job_id": "https://www.roberthalf.com/ca/en/job/north-york-on/accounting-clerk/001269032-caen",
+   "last_seen": "2026-11-12",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "page",
+   "tier": "P2",
+   "title": "Accounting Clerk",
+   "url": "https://www.roberthalf.com/ca/en/job/north-york-on/accounting-clerk/001269032-caen"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "review",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "review",
+       "irrelevant"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T030623Z-dadf6c"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "review"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T035230Z-148c6b"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$81,519",
+    "years_min": null
+   },
+   "details_note": "$81,519",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Ontario Pension Board",
+   "employer_id": "ontario-pension-board",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "fit_reasons": "地点待确认",
+   "fit_score": 16,
+   "found_as": "规则新纳入",
+   "job_id": "https://opb.talcura.com/Cands/Job.aspx?JobId=2876",
+   "last_modified_seen": "2026-11-12",
    "last_seen": "2026-11-12",
    "location": "",
    "posted": "",
    "relevant": false,
    "resume_family": "ba",
    "resume_version": "Business_Analyst",
+   "rule_included": "2026-11-12",
    "source": "page",
    "tier": "P2",
-   "title": "Talent Acquisition Specialist (Recruiter)",
-   "url": "https://jobs.jobvite.com/mattamyhomes/job/oyJ5AfwG"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Robert Half Canada",
-   "employer_id": "robert-half-canada",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "found_as": "新发布",
-   "job_id": "https://www.roberthalf.com/ca/en/job/markham-on/controller/001259545-caen",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "page",
-   "tier": "P2",
-   "title": "Controller",
-   "url": "https://www.roberthalf.com/ca/en/job/markham-on/controller/001259545-caen"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Robert Half Canada",
-   "employer_id": "robert-half-canada",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "found_as": "新发布",
-   "job_id": "https://www.roberthalf.com/ca/en/job/welland-on/controller-canada/001162343-caen",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "page",
-   "tier": "P2",
-   "title": "Controller - Canada",
-   "url": "https://www.roberthalf.com/ca/en/job/welland-on/controller-canada/001162343-caen"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Robert Half Canada",
-   "employer_id": "robert-half-canada",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "found_as": "新发布",
-   "job_id": "https://www.roberthalf.com/ca/en/job/toronto-on/bookkeeper/001268835-caen",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "page",
-   "tier": "P2",
-   "title": "Bookkeeper",
-   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/bookkeeper/001268835-caen"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Robert Half Canada",
-   "employer_id": "robert-half-canada",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "found_as": "新发布",
-   "job_id": "https://www.roberthalf.com/ca/en/job/scarborough-on/bookkeeper/001269114-caen",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "page",
-   "tier": "P2",
-   "title": "Bookkeeper",
-   "url": "https://www.roberthalf.com/ca/en/job/scarborough-on/bookkeeper/001269114-caen"
+   "title": "chevron_right Full-Time Pension Specialist Toronto, Ontario, CA Posted on September 11, 2026",
+   "url": "https://opb.talcura.com/Cands/Job.aspx?JobId=2876"
   }
  ],
  "channels": [
@@ -773,7 +1027,7 @@
   },
   {
    "channel": "Job Bank",
-   "detail": "322 个职位，新记录相关 11 个，新加入名单的雇主 4 家",
+   "detail": "322 个职位，新记录相关 0 个，新加入名单的雇主 0 家",
    "status": "ok"
   },
   {
@@ -819,6 +1073,28 @@
   },
   {
    "candidate_status": "review",
+   "days_left": 0,
+   "deadline": "2026-11-12",
+   "details_note": "写明应届可申；截止 2026-11-12；$75,004",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Student Success Coordinator (Term)",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Student-Success-Coordinator-%28Term%29-ON/607703417/"
+  },
+  {
+   "candidate_status": "review",
+   "days_left": 0,
+   "deadline": "2026-11-12",
+   "details_note": "经验≥2年；截止 2026-11-12；$70,633；要求交易/估值建模经验",
+   "employer": "University of Toronto",
+   "location": "Scarborough, ON, CA",
+   "tier": "P2",
+   "title": "Registration & Financial Aid Assistant",
+   "url": "https://jobs.utoronto.ca/job/Scarborough-Registration-&amp;-Financial-Aid-Assistant-ON/607721417/"
+  },
+  {
+   "candidate_status": "review",
    "days_left": 1,
    "deadline": "2026-11-13",
    "details_note": "截止 2026-11-13；仅限在校生/需返校",
@@ -860,6 +1136,17 @@
    "tier": "P0",
    "title": "Intern, CPA Program (January – August 2027)",
    "url": "https://cppib.wd10.myworkdayjobs.com/en-US/cppinvestments/job/Toronto/Intern--CPA-Program--January---August-2027-_JR00771"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 1,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13",
+   "employer": "Canadian Tire",
+   "location": "Toronto, ON",
+   "tier": "P0",
+   "title": "Vice-President, Pricing & Promotions",
+   "url": "https://canadiantirecorporation.wd3.myworkdayjobs.com/en-US/Enterprise_External_Careers_Site/job/Toronto-ON/Vice-President--Pricing---Promotions_JR167907"
   },
   {
    "candidate_status": "relevant",
@@ -970,6 +1257,17 @@
    "tier": "P0",
    "title": "TDS Operations Analyst II",
    "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/TDS-Operations-Analyst-II_R_1519937"
+  },
+  {
+   "candidate_status": "relevant",
+   "days_left": 1,
+   "deadline": "2026-11-13",
+   "details_note": "截止 2026-11-13；$70,633",
+   "employer": "University of Toronto",
+   "location": "Toronto, ON, CA",
+   "tier": "P2",
+   "title": "Community Wellness Coordinator",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Community-Wellness-Coordinator-ON/607741817/"
   },
   {
    "candidate_status": "review",
@@ -1190,6 +1488,17 @@
    "tier": "P0",
    "title": "Digital Expansion Associate - Simplii Financial",
    "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Digital-Expansion-Analyst---Simplii-Financial_2623204"
+  },
+  {
+   "candidate_status": "review",
+   "days_left": 4,
+   "deadline": "2026-11-16",
+   "details_note": "经验≥2年；截止 2026-11-16；$53,000",
+   "employer": "Canadian Tire",
+   "location": "Toronto, ON",
+   "tier": "P0",
+   "title": "Space Planning Specialist - 2 Roles",
+   "url": "https://canadiantirecorporation.wd3.myworkdayjobs.com/en-US/Enterprise_External_Careers_Site/job/Toronto-ON/Space-Planning-Specialist---2-Roles_JR167499"
   },
   {
    "candidate_status": "review",
@@ -1456,6 +1765,17 @@
    "url": "https://ia.wd3.myworkdayjobs.com/en-US/Professional/job/Toronto-Ontario/Administrative-Assistant_JR10028407"
   },
   {
+   "candidate_status": "review",
+   "days_left": 7,
+   "deadline": "2026-11-19",
+   "details_note": "经验≥2年；截止 2026-11-19",
+   "employer": "CBC/Radio-Canada",
+   "location": "Toronto",
+   "tier": "P2",
+   "title": "Specialist, Production Planning, Scripted (English Services)",
+   "url": "https://cbcrc.wd3.myworkdayjobs.com/en-US/CBC_Radio-Canada_Jobs/job/Toronto/Specialist--Production-Planning--Scripted--English-Services-_JR00009547"
+  },
+  {
    "candidate_status": "relevant",
    "days_left": 7,
    "deadline": "2026-11-19",
@@ -1502,9 +1822,9 @@
  ],
  "details_checked": 150,
  "employers_complete": 167,
- "employers_failed": 11,
- "employers_ok": 388,
- "employers_skipped": 104,
+ "employers_failed": 13,
+ "employers_ok": 386,
+ "employers_skipped": 108,
  "employers_total": 507,
  "excluded_by_details": [
   {
@@ -1512,138 +1832,28 @@
    "candidate_status": "irrelevant",
    "details": {
     "checked": "2026-11-12",
-    "deadline": "2026-11-26",
+    "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
     "salary": "",
-    "years_min": 6
+    "years_min": 5
    },
-   "employer": "Metrolinx",
-   "employer_id": "metrolinx",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
    "excluded_by_details": true,
-   "filter_reason": "职位页要求 6 年以上经验",
+   "filter_reason": "职位页要求 5 年以上经验",
    "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "job_id": "117773",
+   "first_seen_run": "20261112T035230Z-148c6b",
+   "job_id": "https://www.roberthalf.com/ca/en/job/woodbridge-on/ap-specialist/001269111-caen",
    "last_seen": "2026-11-12",
-   "location": "Canada",
-   "posted": "2026-11-11",
+   "location": "",
+   "posted": "",
    "relevant": false,
-   "source": "oracle",
-   "tier": "P1",
-   "title": "Energy & GHG Management Specialist",
-   "url": "https://ehtc.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/117773"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted Today",
-       "Posted 2 Days Ago"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 2 Days Ago",
-       "Posted 3 Days Ago"
-      ]
-     },
-     "date": "2026-11-08",
-     "run": "20261108T170147Z-7edd2d"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 3 Days Ago",
-       "Posted 4 Days Ago"
-      ]
-     },
-     "date": "2026-11-09",
-     "run": "20261109T211917Z-3724fa"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 4 Days Ago",
-       "Posted 5 Days Ago"
-      ]
-     },
-     "date": "2026-11-10",
-     "run": "20261110T184325Z-f0f618"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 5 Days Ago",
-       "Posted 6 Days Ago"
-      ]
-     },
-     "date": "2026-11-11",
-     "run": "20261111T184510Z-500a99"
-    }
-   ],
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "2026-11-20",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 3
-   },
-   "employer": "CIBC",
-   "employer_id": "cibc",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-06",
-   "job_id": "/job/Toronto-ON/Associate--Global-Markets_2622758",
-   "last_modified_seen": "2026-11-11",
-   "last_seen": "2026-11-12",
-   "legacy_job_id": "2622758",
-   "location": "Toronto, ON",
-   "posted": "Posted 6 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Associate, Global Markets",
-   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate--Global-Markets_2622758"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "2027-11-04",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$130,000 to $150,000",
-    "years_min": 4
-   },
-   "employer": "KPMG Canada",
-   "employer_id": "kpmg-canada",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 4 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "34281",
-   "last_seen": "2026-11-12",
-   "location": "Toronto, Ontario, Canada",
-   "posted": "2026-11-04",
-   "relevant": false,
-   "source": "sitemap",
-   "tier": "P0",
-   "title": "Associate, International Trade",
-   "url": "https://careers.kpmg.ca/jobs/34281?lang=en-us"
+   "source": "page",
+   "tier": "P2",
+   "title": "AP Specialist",
+   "url": "https://www.roberthalf.com/ca/en/job/woodbridge-on/ap-specialist/001269111-caen"
   },
   {
    "active": true,
@@ -1655,29 +1865,109 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "",
+    "salary": "$89,000 and $104,000 per year",
     "years_min": 3
    },
-   "employer": "National Bank of Canada",
-   "employer_id": "national-bank-of-canada",
+   "employer": "Munich Re Canada",
+   "employer_id": "munich-re-canada",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
    "first_seen": "2026-11-09",
    "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "34489",
+   "job_id": "44432197760",
    "last_seen": "2026-11-12",
    "location": "Toronto, Ontario",
-   "posted": "",
+   "posted": "11/02/2026",
    "relevant": false,
-   "source": "avature",
-   "tier": "P0",
-   "title": "Associate, Execution, National Client Group",
-   "url": "https://emplois.bnc.ca/en_CA/careers/JobDetail/80055-ASSOCIE/34489"
+   "source": "radancy",
+   "tier": "P2",
+   "title": "Actuarial Analyst (Pricing)",
+   "url": "https://careers.munichre.com/en/job/toronto/actuarial-analyst-pricing/3342/44432197760"
   },
   {
    "active": true,
    "baseline": true,
    "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$70,000 and $80,000 per year",
+    "years_min": 3
+   },
+   "employer": "Munich Re Canada",
+   "employer_id": "munich-re-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "46131831040",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, Ontario",
+   "posted": "10/19/2026",
+   "relevant": false,
+   "source": "radancy",
+   "tier": "P2",
+   "title": "Underwriter/ Business Analyst - 12 Month Contract",
+   "url": "https://careers.munichre.com/en/job/toronto/underwriter-business-analyst-12-month-contract/3342/46131831040"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 2 Days Ago",
+       "Posted 4 Days Ago"
+      ]
+     },
+     "date": "2026-11-07",
+     "run": "20261107T195111Z-0184bd"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 4 Days Ago",
+       "Posted 5 Days Ago"
+      ]
+     },
+     "date": "2026-11-08",
+     "run": "20261108T170147Z-7edd2d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 5 Days Ago",
+       "Posted 6 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 6 Days Ago",
+       "Posted 7 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 7 Days Ago",
+       "Posted 8 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    }
+   ],
    "details": {
     "checked": "2026-11-12",
     "deadline": "",
@@ -1687,21 +1977,22 @@
     "salary": "$58,000 - $68,000 per year",
     "years_min": 5
    },
-   "employer": "OMERS",
-   "employer_id": "omers",
+   "employer": "Oxford Properties",
+   "employer_id": "oxford-properties",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 5 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "JR-8543",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Mississauga-Ontario/Coordinator--Specialty-Leasing_JR-8543",
+   "last_modified_seen": "2026-11-11",
    "last_seen": "2026-11-12",
-   "location": "Mississauga, Ontario, Canada",
-   "posted": "2026-11-03",
+   "legacy_job_id": "JR-8543",
+   "location": "Mississauga, Ontario",
+   "posted": "Posted 8 Days Ago",
    "relevant": false,
-   "source": "phenom",
-   "tier": "P0",
+   "source": "workday",
+   "tier": "P2",
    "title": "Coordinator, Specialty Leasing",
-   "url": "https://careers.omers.com/ca/en/job/JR-8543/Coordinator-Specialty-Leasing"
+   "url": "https://omers.wd3.myworkdayjobs.com/en-US/OMERS_External/job/Mississauga-Ontario/Coordinator--Specialty-Leasing_JR-8543"
   },
   {
    "active": true,
@@ -1709,307 +2000,173 @@
    "candidate_status": "irrelevant",
    "details": {
     "checked": "2026-11-12",
-    "deadline": "",
+    "deadline": "2026-11-17",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$90,000.00 - $135,000.00",
-    "years_min": 3
-   },
-   "employer": "RBC",
-   "employer_id": "rbc",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "R-0000190227",
-   "last_seen": "2026-11-12",
-   "location": "TORONTO, Ontario, Canada",
-   "posted": "2026-11-04",
-   "relevant": false,
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Associate, Global Market Supervision (Macro & Spread)",
-   "url": "https://jobs.rbc.com/ca/en/job/R-0000190227/Associate-Global-Market-Supervision-Macro-Spread"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$38,000.00- $60,000.00",
-    "years_min": 4
-   },
-   "employer": "RBC",
-   "employer_id": "rbc",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 4 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "R-0000191332",
-   "last_seen": "2026-11-12",
-   "location": "TORONTO, Ontario, Canada",
-   "posted": "2026-10-29",
-   "relevant": false,
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Associate Advisor",
-   "url": "https://jobs.rbc.com/ca/en/job/R-0000191332/Associate-Advisor"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [
-     "要求交易/估值建模经验"
-    ],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 4
-   },
-   "employer": "RBC",
-   "employer_id": "rbc",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 4 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "R-0000191545",
-   "last_seen": "2026-11-12",
-   "location": "TORONTO, Ontario, Canada",
-   "posted": "2026-11-02",
-   "relevant": false,
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Associate, Corporate Development",
-   "url": "https://jobs.rbc.com/ca/en/job/R-0000191545/Associate-Corporate-Development"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$38,000.00- $60,000.00",
+    "salary": "$84,564",
     "years_min": 5
    },
-   "employer": "RBC",
-   "employer_id": "rbc",
+   "employer": "University of Toronto",
+   "employer_id": "university-of-toronto",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 5 年以上经验",
    "first_seen": "2026-11-09",
    "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "R-0000191571",
+   "job_id": "607595817",
    "last_seen": "2026-11-12",
-   "location": "TORONTO, Ontario, Canada",
-   "posted": "2026-10-29",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 2, 2026",
    "relevant": false,
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Associate Advisor",
-   "url": "https://jobs.rbc.com/ca/en/job/R-0000191571/Associate-Advisor"
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Facilities Coordinator",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Facilities-Coordinator-ON/607595817/"
   },
   {
    "active": true,
+   "baseline": true,
    "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted 6 Days Ago",
-       "Posted 8 Days Ago"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 8 Days Ago",
-       "Posted 9 Days Ago"
-      ]
-     },
-     "date": "2026-11-08",
-     "run": "20261108T170147Z-7edd2d"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 9 Days Ago",
-       "Posted 10 Days Ago"
-      ]
-     },
-     "date": "2026-11-09",
-     "run": "20261109T211917Z-3724fa"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 10 Days Ago",
-       "Posted 11 Days Ago"
-      ]
-     },
-     "date": "2026-11-10",
-     "run": "20261110T184325Z-f0f618"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 11 Days Ago",
-       "Posted 12 Days Ago"
-      ]
-     },
-     "date": "2026-11-11",
-     "run": "20261111T184510Z-500a99"
-    }
-   ],
    "details": {
     "checked": "2026-11-12",
-    "deadline": "2026-11-15",
+    "deadline": "2026-11-11",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
     "salary": "",
     "years_min": 3
    },
-   "employer": "TD Bank",
-   "employer_id": "td-bank",
+   "employer": "University of Toronto",
+   "employer_id": "university-of-toronto",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-06",
-   "job_id": "/job/Toronto-Ontario/Data-Analytics-Associate--CIB-Business-Management_R_1520075-1",
-   "last_modified_seen": "2026-11-11",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "607626817",
    "last_seen": "2026-11-12",
-   "legacy_job_id": "R_1520075",
-   "location": "Toronto, Ontario",
-   "posted": "Posted 12 Days Ago",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 2, 2026",
    "relevant": false,
-   "source": "workday",
-   "tier": "P0",
-   "title": "Data Analytics Associate, CIB Business Management",
-   "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Data-Analytics-Associate--CIB-Business-Management_R_1520075-1"
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Research Associate (Limited Term)",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Research-Associate-%28Limited-Term%29-ON/607626817/"
   },
   {
    "active": true,
+   "baseline": true,
    "candidate_status": "irrelevant",
    "details": {
     "checked": "2026-11-12",
-    "deadline": "",
+    "deadline": "2026-11-12",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$79,000 to $96,000",
+    "salary": "$75,004",
     "years_min": 3
    },
-   "employer": "Fidelity Investments Canada",
-   "employer_id": "fidelity-investments-canada",
+   "employer": "University of Toronto",
+   "employer_id": "university-of-toronto",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-06",
-   "job_id": "/job/Toronto-Office/Client-Experience-Associate--Investly_J70208",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "607714717",
    "last_seen": "2026-11-12",
-   "legacy_job_id": "J70208",
-   "location": "Toronto Office",
-   "posted": "Posted 30+ Days Ago",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 4, 2026",
    "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Client Experience Associate, Investly",
-   "url": "https://fil.wd3.myworkdayjobs.com/en-US/fidelitycanada/job/Toronto-Office/Client-Experience-Associate--Investly_J70208"
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Coordinator, Alumni Relations Awards",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Coordinator%2C-Alumni-Relations-Awards-ON/607714717/"
   },
   {
    "active": true,
+   "baseline": true,
    "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted Yesterday",
-       "Posted 3 Days Ago"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 3 Days Ago",
-       "Posted 4 Days Ago"
-      ]
-     },
-     "date": "2026-11-08",
-     "run": "20261108T170147Z-7edd2d"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 4 Days Ago",
-       "Posted 5 Days Ago"
-      ]
-     },
-     "date": "2026-11-09",
-     "run": "20261109T211917Z-3724fa"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 5 Days Ago",
-       "Posted 6 Days Ago"
-      ]
-     },
-     "date": "2026-11-10",
-     "run": "20261110T184325Z-f0f618"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 6 Days Ago",
-       "Posted 7 Days Ago"
-      ]
-     },
-     "date": "2026-11-11",
-     "run": "20261111T184510Z-500a99"
-    }
-   ],
    "details": {
     "checked": "2026-11-12",
-    "deadline": "",
+    "deadline": "2026-11-13",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$60,000 to $75,000",
+    "salary": "$79,640",
     "years_min": 3
    },
-   "employer": "Fidelity Investments Canada",
-   "employer_id": "fidelity-investments-canada",
+   "employer": "University of Toronto",
+   "employer_id": "university-of-toronto",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-06",
-   "job_id": "/job/Toronto-Office/Facilities-Coordinator_J70694",
-   "last_modified_seen": "2026-11-11",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "607747117",
    "last_seen": "2026-11-12",
-   "legacy_job_id": "J70694",
-   "location": "Toronto Office",
-   "posted": "Posted 7 Days Ago",
+   "location": "Mississauga, ON, CA",
+   "posted": "Nov 4, 2026",
    "relevant": false,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Facilities Coordinator",
-   "url": "https://fil.wd3.myworkdayjobs.com/en-US/fidelitycanada/job/Toronto-Office/Facilities-Coordinator_J70694"
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Laboratory Coordinator- Term",
+   "url": "https://jobs.utoronto.ca/job/Mississauga-Laboratory-Coordinator-Term-ON/607747117/"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "2026-11-13",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$75,004",
+    "years_min": 3
+   },
+   "employer": "University of Toronto",
+   "employer_id": "university-of-toronto",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "607778517",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 5, 2026",
+   "relevant": false,
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Academic Appointments & HRIS Assistant",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Academic-Appointments-&amp;-HRIS-Assistant-ON/607778517/"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "2026-11-26",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$75,004",
+    "years_min": 3
+   },
+   "employer": "University of Toronto",
+   "employer_id": "university-of-toronto",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "607838317",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 6, 2026",
+   "relevant": false,
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Events Coordinator",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Events-Coordinator-ON/607838317/"
   },
   {
    "active": true,
@@ -2072,81 +2229,25 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$99,000 to $129,000",
+    "salary": "$60,000 - $92,000",
     "years_min": 3
    },
-   "employer": "Fidelity Investments Canada",
-   "employer_id": "fidelity-investments-canada",
+   "employer": "BDO Canada",
+   "employer_id": "bdo-canada",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
    "first_seen": "2026-11-06",
-   "job_id": "/job/Toronto-Office/Strategic-Account-Associate_J71579",
+   "job_id": "/job/Toronto---Wellington-St/Specialist--Corporate-Communications_JR7182",
    "last_modified_seen": "2026-11-11",
    "last_seen": "2026-11-12",
-   "legacy_job_id": "J71579",
-   "location": "Toronto Office",
+   "legacy_job_id": "JR7182",
+   "location": "Toronto - Wellington St",
    "posted": "Posted 23 Days Ago",
    "relevant": false,
    "source": "workday",
    "tier": "P1",
-   "title": "Strategic Account Associate",
-   "url": "https://fil.wd3.myworkdayjobs.com/en-US/fidelitycanada/job/Toronto-Office/Strategic-Account-Associate_J71579"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$176,000- $238,000",
-    "years_min": 6
-   },
-   "employer": "Intuit Canada",
-   "employer_id": "intuit-canada",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 6 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "24180",
-   "last_seen": "2026-11-12",
-   "location": "Multiple Locations",
-   "posted": "",
-   "relevant": false,
-   "source": "radancy",
-   "tier": "P1",
-   "title": "Staff Corporate Strategy Associate – Credit Karma (Personal Loans)",
-   "url": "https://jobs.intuit.com/job/charlotte/staff-corporate-strategy-associate-credit-karma-personal-loans/27595/101137643840"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$26.44 - $30.77 per hour",
-    "years_min": 3
-   },
-   "employer": "PointClickCare",
-   "employer_id": "pointclickcare",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-06",
-   "job_id": "507b05f9-e8cb-4dbc-a8a7-c5b55bd65121",
-   "last_seen": "2026-11-12",
-   "location": "Mississauga, Ontario",
-   "posted": "2026-10-09",
-   "relevant": false,
-   "source": "lever",
-   "tier": "P1",
-   "title": "Accounts Receivable Specialist (1 year contract)",
-   "url": "https://jobs.lever.co/pointclickcare/507b05f9-e8cb-4dbc-a8a7-c5b55bd65121"
+   "title": "Specialist, Corporate Communications",
+   "url": "https://bdo.wd3.myworkdayjobs.com/en-US/BDO/job/Toronto---Wellington-St/Specialist--Corporate-Communications_JR7182"
   },
   {
    "active": true,
@@ -2209,7 +2310,7 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "",
+    "salary": "$70/hour",
     "years_min": 3
    },
    "employer": "TMX Group",
@@ -2217,21 +2318,328 @@
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
    "first_seen": "2026-11-06",
-   "job_id": "/job/Toronto---100-Adelaide-St-W/Contract---Sales-Support-Analyst_R-6565-1",
+   "job_id": "/job/Toronto---100-Adelaide-St-W/Onboarding-Specialist--Contract-_R-6336",
    "last_modified_seen": "2026-11-11",
    "last_seen": "2026-11-12",
-   "legacy_job_id": "R-6565",
+   "legacy_job_id": "R-6336",
    "location": "Toronto - 100 Adelaide St W",
    "posted": "Posted 13 Days Ago",
    "relevant": false,
    "source": "workday",
    "tier": "P1",
-   "title": "Contract & Sales Support Analyst",
-   "url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/Contract---Sales-Support-Analyst_R-6565-1"
+   "title": "Post-Trade Onboarding & Operations Specialist (Contract)",
+   "url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/Onboarding-Specialist--Contract-_R-6336"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 13 Days Ago",
+       "Posted 15 Days Ago"
+      ]
+     },
+     "date": "2026-11-07",
+     "run": "20261107T195111Z-0184bd"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 15 Days Ago",
+       "Posted 16 Days Ago"
+      ]
+     },
+     "date": "2026-11-08",
+     "run": "20261108T170147Z-7edd2d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 16 Days Ago",
+       "Posted 17 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 17 Days Ago",
+       "Posted 18 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 18 Days Ago",
+       "Posted 19 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$62,000.00 - $87,000.00 / year",
+    "years_min": 5
+   },
+   "employer": "Canada Goose",
+   "employer_id": "canada-goose",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Toronto-Ontario-CAN/Project-Specialist--Production_R16435",
+   "last_modified_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
+   "legacy_job_id": "R16435",
+   "location": "Toronto, Ontario, CAN",
+   "posted": "Posted 19 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P2",
+   "title": "Project Specialist, Production",
+   "url": "https://canadagoose.wd3.myworkdayjobs.com/en-US/CanadaGooseCareers/job/Toronto-Ontario-CAN/Project-Specialist--Production_R16435"
   },
   {
    "active": true,
    "baseline": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Oct 13, 2026",
+       "Nov 11, 2026"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T025201Z-eeb67f"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$125K-175K",
+    "years_min": 10
+   },
+   "employer": "Celestica",
+   "employer_id": "celestica",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 10 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "1436669833",
+   "last_modified_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 11, 2026",
+   "relevant": false,
+   "source": "successfactors",
+   "tier": "P0",
+   "title": "Corporate QMS Auditor (SMT Manufacturing)",
+   "url": "https://careers.celestica.com/job/Toronto-Corporate-QMS-Auditor-%28SMT-Manufacturing%29-ON/1436669833/"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 13 Days Ago",
+       "Posted 14 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 14 Days Ago",
+       "Posted 15 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$70,000 - $85,000",
+    "years_min": 5
+   },
+   "employer": "EllisDon Corporation",
+   "employer_id": "ellisdon",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "/job/Mississauga-Office/Marketing-Communications-Specialist_R2026-01447",
+   "last_modified_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
+   "location": "Mississauga Office",
+   "posted": "Posted 15 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P2",
+   "title": "Communications Specialist",
+   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Mississauga-Office/Marketing-Communications-Specialist_R2026-01447"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 3 Days Ago",
+       "Posted 4 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 4 Days Ago",
+       "Posted 5 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$70,000 - $90,000",
+    "years_min": 5
+   },
+   "employer": "EllisDon Corporation",
+   "employer_id": "ellisdon",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "/job/Mississauga-Office/Procurement-Specialist_R2026-01856",
+   "last_modified_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
+   "location": "Mississauga Office",
+   "posted": "Posted 5 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P2",
+   "title": "Procurement Specialist",
+   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Mississauga-Office/Procurement-Specialist_R2026-01856"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 13 Days Ago",
+       "Posted 15 Days Ago"
+      ]
+     },
+     "date": "2026-11-07",
+     "run": "20261107T195111Z-0184bd"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 15 Days Ago",
+       "Posted 16 Days Ago"
+      ]
+     },
+     "date": "2026-11-08",
+     "run": "20261108T170147Z-7edd2d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 16 Days Ago",
+       "Posted 17 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 17 Days Ago",
+       "Posted 18 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 18 Days Ago",
+       "Posted 19 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$55,000 - $77,000",
+    "years_min": 3
+   },
+   "employer": "BDO Canada",
+   "employer_id": "bdo-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Toronto---Bay-St/Senior-Accountant--Canadian-Tax-Services_JR7011",
+   "last_modified_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
+   "legacy_job_id": "JR7011",
+   "location": "Toronto - Bay St",
+   "posted": "Posted 19 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P1",
+   "title": "Intermediate Accountant, Canadian Tax Services",
+   "url": "https://bdo.wd3.myworkdayjobs.com/en-US/BDO/job/Toronto---Bay-St/Senior-Accountant--Canadian-Tax-Services_JR7011"
+  },
+  {
+   "active": true,
    "candidate_status": "irrelevant",
    "details": {
     "checked": "2026-11-12",
@@ -2239,24 +2647,127 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$100609",
+    "salary": "",
+    "years_min": 4
+   },
+   "employer": "EQ Bank",
+   "employer_id": "eq-bank",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 4 年以上经验",
+   "first_seen": "2026-11-06",
+   "job_id": "eb71271e-70a6-4257-bb81-a086207f6b1c",
+   "last_seen": "2026-11-12",
+   "location": "Toronto",
+   "posted": "2025-04-02",
+   "relevant": false,
+   "source": "lever",
+   "tier": "P1",
+   "title": "Commercial Mortgage Underwriter",
+   "url": "https://jobs.lever.co/eqbank/eb71271e-70a6-4257-bb81-a086207f6b1c"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 10 Days Ago",
+       "Posted 11 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 11 Days Ago",
+       "Posted 12 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "2026-11-17",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 7
+   },
+   "employer": "CBC/Radio-Canada",
+   "employer_id": "cbc-radio-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 7 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "/job/Toronto-ON/Executive-Producer_JR00009483",
+   "last_modified_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, ON",
+   "posted": "Posted 12 Days Ago",
+   "relevant": false,
+   "source": "workday",
+   "tier": "P2",
+   "title": "Executive Producer, CBC, Personal Finance Business News, Toronto (English Services) (On-Site)",
+   "url": "https://cbcrc.wd3.myworkdayjobs.com/en-US/CBC_Radio-Canada_Jobs/job/Toronto-ON/Executive-Producer_JR00009483"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 3 Days Ago",
+       "Posted 4 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 4 Days Ago",
+       "Posted 5 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$60,000 - $75,000",
     "years_min": 3
    },
-   "employer": "Toronto Hydro",
-   "employer_id": "toronto-hydro",
+   "employer": "EllisDon Corporation",
+   "employer_id": "ellisdon",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
    "first_seen": "2026-11-09",
    "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "607520317",
-   "last_seen": "2026-11-10",
-   "location": "Toronto, ON, CA",
-   "posted": "Oct 29, 2026",
+   "job_id": "/job/Ottawa-ON/Project-Accountant_R2026-01861",
+   "last_modified_seen": "2026-11-11",
+   "last_seen": "2026-11-12",
+   "location": "Ottawa, ON",
+   "posted": "Posted 5 Days Ago",
    "relevant": false,
-   "source": "successfactors",
-   "tier": "P1",
-   "title": "Customer Energy Management Associate",
-   "url": "https://jobs.torontohydro.com/job/Toronto-Customer-Energy-Management-Associate-ON/607520317/"
+   "source": "workday",
+   "tier": "P2",
+   "title": "Project Accountant",
+   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Ottawa-ON/Project-Accountant_R2026-01861"
   },
   {
    "active": true,
@@ -2268,64 +2779,145 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$73,200.00-$86,100.00",
+    "salary": "$85,000 and $95,000 per year",
+    "years_min": 5
+   },
+   "employer": "Munich Re Canada",
+   "employer_id": "munich-re-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "45667944960",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, Ontario",
+   "posted": "10/07/2026",
+   "relevant": false,
+   "source": "radancy",
+   "tier": "P2",
+   "title": "Accountant",
+   "url": "https://careers.munichre.com/en/job/toronto/accountant/3342/45667944960"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$117,000–$162,000",
+    "years_min": 10
+   },
+   "employer": "Northbridge Financial",
+   "employer_id": "northbridge-financial",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 10 年以上经验",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T001409Z-63634a",
+   "job_id": "R5130",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, Ontario",
+   "posted": "2026-11-02",
+   "relevant": false,
+   "source": "phenom",
+   "tier": "P2",
+   "title": "Account Executive Underwriter",
+   "url": "https://careers.nbfc.com/ca/en/job/R5130/Account-Executive-Underwriter"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 10 Days Ago",
+       "Posted 11 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 11 Days Ago",
+       "Posted 12 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "2026-11-14",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$83,695.00 to $97,181.00 per year",
     "years_min": 3
    },
-   "employer": "CAAT Pension Plan",
-   "employer_id": "caat-pension-plan",
+   "employer": "OPTrust",
+   "employer_id": "optrust",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
    "first_seen": "2026-11-10",
    "first_seen_run": "20261110T001409Z-63634a",
-   "job_id": "/job/Toronto-ON/Member-Care-Associate--Bilingual-_JR100188",
+   "job_id": "/job/Toronto-ON/Intermediate-Accountant--Accounts-Payable_R1311",
+   "last_modified_seen": "2026-11-11",
    "last_seen": "2026-11-12",
    "location": "Toronto, ON",
-   "posted": "Posted 30+ Days Ago",
+   "posted": "Posted 12 Days Ago",
    "relevant": false,
    "source": "workday",
    "tier": "P2",
-   "title": "Member Care Associate (Bilingual)",
-   "url": "https://caatpension.wd10.myworkdayjobs.com/en-US/Careers/job/Toronto-ON/Member-Care-Associate--Bilingual-_JR100188"
+   "title": "Intermediate Accountant, Accounts Payable",
+   "url": "https://optrust.wd3.myworkdayjobs.com/en-US/OPTrust/job/Toronto-ON/Intermediate-Accountant--Accounts-Payable_R1311"
   },
   {
    "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$60,000-$70,000",
-    "years_min": 4
-   },
-   "employer": "EllisDon Corporation",
-   "employer_id": "ellisdon",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 4 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "/job/Mississauga-ON/Hoist-Coordinator_R2026-00306",
-   "last_seen": "2026-11-12",
-   "location": "Mississauga, ON",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P2",
-   "title": "Hoist Coordinator",
-   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Mississauga-ON/Hoist-Coordinator_R2026-00306"
-  },
-  {
-   "active": true,
-   "baseline": true,
    "candidate_status": "irrelevant",
    "change_history": [
     {
      "changes": {
       "posted": [
-       "Posted 20 Days Ago",
-       "Posted 21 Days Ago"
+       "Posted Today",
+       "Posted 2 Days Ago"
+      ]
+     },
+     "date": "2026-11-07",
+     "run": "20261107T195111Z-0184bd"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 2 Days Ago",
+       "Posted 3 Days Ago"
+      ]
+     },
+     "date": "2026-11-08",
+     "run": "20261108T170147Z-7edd2d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 3 Days Ago",
+       "Posted 4 Days Ago"
+      ]
+     },
+     "date": "2026-11-09",
+     "run": "20261109T211917Z-3724fa"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 4 Days Ago",
+       "Posted 5 Days Ago"
       ]
      },
      "date": "2026-11-10",
@@ -2334,8 +2926,8 @@
     {
      "changes": {
       "posted": [
-       "Posted 21 Days Ago",
-       "Posted 22 Days Ago"
+       "Posted 5 Days Ago",
+       "Posted 6 Days Ago"
       ]
      },
      "date": "2026-11-11",
@@ -2348,241 +2940,83 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$75,000 - $100,000",
-    "years_min": 3
-   },
-   "employer": "EllisDon Corporation",
-   "employer_id": "ellisdon",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "/job/Ottawa-ON/Assistant-Superintendent_R2026-01686",
-   "last_modified_seen": "2026-11-11",
-   "last_seen": "2026-11-12",
-   "location": "Ottawa, ON",
-   "posted": "Posted 22 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P2",
-   "title": "Assistant Superintendent",
-   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Ottawa-ON/Assistant-Superintendent_R2026-01686"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted 20 Days Ago",
-       "Posted 21 Days Ago"
-      ]
-     },
-     "date": "2026-11-10",
-     "run": "20261110T184325Z-f0f618"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 21 Days Ago",
-       "Posted 22 Days Ago"
-      ]
-     },
-     "date": "2026-11-11",
-     "run": "20261111T184510Z-500a99"
-    }
-   ],
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$75,000 - $100,000",
-    "years_min": 3
-   },
-   "employer": "EllisDon Corporation",
-   "employer_id": "ellisdon",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "/job/Ottawa-ON/Assistant-Superintendent_R2026-01690",
-   "last_modified_seen": "2026-11-11",
-   "last_seen": "2026-11-12",
-   "location": "Ottawa, ON",
-   "posted": "Posted 22 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P2",
-   "title": "Assistant Superintendent",
-   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Ottawa-ON/Assistant-Superintendent_R2026-01690"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$66,200 - $82,700",
-    "years_min": 3
-   },
-   "employer": "EllisDon Corporation",
-   "employer_id": "ellisdon",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "/job/Ottawa-ON/Virtual-Design-and-Construction-Coordinator_R2026-01609",
-   "last_seen": "2026-11-12",
-   "location": "Ottawa, ON",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P2",
-   "title": "Virtual Design and Construction Coordinator",
-   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Ottawa-ON/Virtual-Design-and-Construction-Coordinator_R2026-01609"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$80,000 - $95,000",
-    "years_min": 3
-   },
-   "employer": "EllisDon Corporation",
-   "employer_id": "ellisdon",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "/job/Toronto-ON/Geomatics-3D-Modelling-Coordinator---Heavy-Civil_R2026-01635",
-   "last_seen": "2026-11-12",
-   "location": "Toronto, ON",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P2",
-   "title": "Geomatics 3D Modelling Coordinator - Heavy Civil",
-   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Toronto-ON/Geomatics-3D-Modelling-Coordinator---Heavy-Civil_R2026-01635"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "irrelevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted 7 Days Ago",
-       "Posted 8 Days Ago"
-      ]
-     },
-     "date": "2026-11-10",
-     "run": "20261110T184325Z-f0f618"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 8 Days Ago",
-       "Posted 9 Days Ago"
-      ]
-     },
-     "date": "2026-11-11",
-     "run": "20261111T184510Z-500a99"
-    }
-   ],
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$60,000-$70,000",
-    "years_min": 4
-   },
-   "employer": "EllisDon Corporation",
-   "employer_id": "ellisdon",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 4 年以上经验",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "/job/Toronto-Oxford-Office/Hoist-Coordinator_R2026-01806",
-   "last_modified_seen": "2026-11-11",
-   "last_seen": "2026-11-12",
-   "location": "Toronto Oxford Office",
-   "posted": "Posted 9 Days Ago",
-   "relevant": false,
-   "source": "workday",
-   "tier": "P2",
-   "title": "Hoist Coordinator",
-   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Toronto-Oxford-Office/Hoist-Coordinator_R2026-01806"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$64,500 - $114,500",
-    "years_min": 4
-   },
-   "employer": "Gore Mutual",
-   "employer_id": "gore-mutual",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 4 年以上经验",
-   "first_seen": "2026-11-06",
-   "job_id": "4647236006",
-   "last_seen": "2026-11-12",
-   "location": "Cambridge, Ontario, Canada; Toronto, Ontario, Canada",
-   "posted": "2026-10-06",
-   "relevant": false,
-   "source": "greenhouse",
-   "tier": "P2",
-   "title": "Intermediate Actuarial Analyst",
-   "url": "https://job-boards.greenhouse.io/goremutualinsurance/jobs/4647236006"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$97,500 - $147,500",
+    "salary": "",
     "years_min": 5
    },
-   "employer": "Gore Mutual",
-   "employer_id": "gore-mutual",
+   "employer": "Accenture Canada",
+   "employer_id": "accenture-canada",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 5 年以上经验",
    "first_seen": "2026-11-06",
-   "job_id": "4712770006",
+   "job_id": "/job/Ontario---Toronto/Digital-Transformation-Strategy-Implementation-Specialist_R00364841",
+   "last_modified_seen": "2026-11-11",
    "last_seen": "2026-11-12",
-   "location": "Cambridge, Ontario, Canada; Toronto, Ontario, Canada; Vancouver, British Columbia, Canada",
-   "posted": "2026-09-21",
+   "legacy_job_id": "R00364841",
+   "location": "",
+   "posted": "Posted 6 Days Ago",
    "relevant": false,
-   "source": "greenhouse",
-   "tier": "P2",
-   "title": "Actuarial Specialist",
-   "url": "https://job-boards.greenhouse.io/goremutualinsurance/jobs/4712770006"
+   "source": "workday",
+   "tier": "P0",
+   "title": "Digital Transformation Strategy Implementation Specialist",
+   "url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Ontario---Toronto/Digital-Transformation-Strategy-Implementation-Specialist_R00364841"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "2026-11-16",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 3
+   },
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "1449005700",
+   "last_seen": "2026-11-12",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 9, 2026",
+   "relevant": false,
+   "source": "successfactors",
+   "tier": "P0",
+   "title": "Billing Coordinator, 12 months contract, Bell Media",
+   "url": "https://jobs.bce.ca/bell/job/Toronto-Billing-Coordinator%2C-12-months-contract%2C-Bell-Media-ON/1449005700/"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$105,000.00 - $155,000.00",
+    "years_min": 5
+   },
+   "employer": "BMO",
+   "employer_id": "bmo",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 5 年以上经验",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "R260021560",
+   "last_seen": "2026-11-12",
+   "location": "Markham, ON L3R 9V8, Canada",
+   "posted": "2026-11-06",
+   "relevant": false,
+   "source": "phenom",
+   "tier": "P0",
+   "title": "Wealth & Tax Planning Consultant, Private Wealth (Mandarin)",
+   "url": "https://jobs.bmo.com/ca/en/job/R260021560/Wealth-Tax-Planning-Consultant-Private-Wealth-Mandarin"
   }
  ],
  "failed": [
@@ -2661,6 +3095,18 @@
   {
    "checked": "2026-11-12",
    "complete": "no",
+   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers",
+   "id": "igm-financial-mackenzie-investments",
+   "jobs_found": 0,
+   "name": "IGM Financial / Mackenzie Investments",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-12",
+   "complete": "no",
    "detail": "page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-kinaxis.icims.com/jobs/search",
    "id": "kinaxis",
    "jobs_found": 0,
@@ -2717,6 +3163,18 @@
    "relevant_now": 0,
    "scan_state": "failed",
    "status": "fail"
+  },
+  {
+   "checked": "2026-11-12",
+   "complete": "no",
+   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/",
+   "id": "royal-academy-of-dance-canada",
+   "jobs_found": 0,
+   "name": "Royal Academy of Dance (Canada)",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
   }
  ],
  "first_run": false,
@@ -2736,11 +3194,11 @@
   {
    "checked": "2026-11-12",
    "complete": "no",
-   "detail": "avature: 207 个职位",
+   "detail": "avature: 208 个职位",
    "id": "bloomberg-toronto",
-   "jobs_found": 207,
+   "jobs_found": 208,
    "name": "Bloomberg (Toronto)",
-   "note": "报告共 343 个，实际只读到 207 个",
+   "note": "报告共 344 个，实际只读到 208 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -2748,12 +3206,12 @@
   {
    "checked": "2026-11-12",
    "complete": "no",
-   "detail": "successfactors: 619 个职位",
+   "detail": "successfactors: 605 个职位",
    "id": "bombardier",
-   "jobs_found": 619,
+   "jobs_found": 605,
    "name": "Bombardier",
-   "note": "报告共 878 个，实际只读到 619 个",
-   "relevant_now": 3,
+   "note": "报告共 878 个，实际只读到 605 个",
+   "relevant_now": 2,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2776,7 +3234,7 @@
    "id": "capital-one-canada",
    "jobs_found": 56,
    "name": "Capital One Canada",
-   "note": "招聘板共 2066 个职位，按地点筛选只读目标地区",
+   "note": "招聘板共 2067 个职位，按地点筛选只读目标地区",
    "relevant_now": 3,
    "scan_state": "partial",
    "status": "ok"
@@ -2820,11 +3278,11 @@
   {
    "checked": "2026-11-12",
    "complete": "no",
-   "detail": "successfactors: 67 个职位",
+   "detail": "successfactors: 76 个职位",
    "id": "cn-rail",
-   "jobs_found": 67,
+   "jobs_found": 76,
    "name": "CN Rail",
-   "note": "报告共 93 个，实际只读到 67 个",
+   "note": "报告共 93 个，实际只读到 76 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -2832,11 +3290,11 @@
   {
    "checked": "2026-11-12",
    "complete": "no",
-   "detail": "successfactors: 229 个职位",
+   "detail": "successfactors: 223 个职位",
    "id": "colgate-palmolive-canada",
-   "jobs_found": 229,
+   "jobs_found": 223,
    "name": "Colgate-Palmolive Canada",
-   "note": "报告共 316 个，实际只读到 229 个",
+   "note": "报告共 316 个，实际只读到 223 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -2849,19 +3307,19 @@
    "jobs_found": 38,
    "name": "Cushman & Wakefield Canada",
    "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
-   "relevant_now": 6,
+   "relevant_now": 5,
    "scan_state": "partial",
    "status": "ok"
   },
   {
    "checked": "2026-11-12",
    "complete": "no",
-   "detail": "successfactors: 291 个职位",
+   "detail": "successfactors: 302 个职位",
    "id": "deloitte-canada",
-   "jobs_found": 291,
+   "jobs_found": 302,
    "name": "Deloitte Canada",
-   "note": "报告共 410 个，实际只读到 291 个",
-   "relevant_now": 11,
+   "note": "报告共 410 个，实际只读到 302 个",
+   "relevant_now": 9,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2952,12 +3410,12 @@
   {
    "checked": "2026-11-12",
    "complete": "no",
-   "detail": "workday: 535 个职位",
+   "detail": "workday: 537 个职位",
    "id": "td-bank",
-   "jobs_found": 535,
+   "jobs_found": 537,
    "name": "TD Bank",
-   "note": "招聘板共 1797 个职位，按地点筛选只读目标地区",
-   "relevant_now": 42,
+   "note": "招聘板共 1799 个职位，按地点筛选只读目标地区",
+   "relevant_now": 40,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2986,474 +3444,8 @@
    "status": "ok"
   }
  ],
- "new_employers": [
-  {
-   "added": "2026-11-12",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "regulatory compliance officer",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50709025",
-   "id": "hercules-moving",
-   "name": "Hercules Moving Company",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  },
-  {
-   "added": "2026-11-12",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "junior accountant",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708396",
-   "id": "walia-companies",
-   "name": "Walia Group of Companies",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  },
-  {
-   "added": "2026-11-12",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "marketing coordinator",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708788",
-   "id": "holmes-brakel",
-   "name": "Holmes & Brakel Limited",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  },
-  {
-   "added": "2026-11-12",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "marketing specialist",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708700",
-   "id": "successful-investor",
-   "name": "The Successful Investor",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  }
- ],
- "new_relevant": [
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$62,000 to $92,000 per year",
-    "years_min": null
-   },
-   "details_note": "$62,000 to $92,000 per year",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "OMERS",
-   "employer_id": "omers",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 75,
-   "job_id": "JR-8560",
-   "last_seen": "2026-11-12",
-   "location": "Toronto, Ontario, Canada",
-   "posted": "2026-11-11",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Associate, Marketing & Communications",
-   "url": "https://careers.omers.com/ca/en/job/JR-8560/Associate-Marketing-Communications"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Dream Unlimited",
-   "employer_id": "dream-unlimited",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 56,
-   "job_id": "42f0ff83-22e5-4a9b-826c-de8741aeaa43",
-   "last_seen": "2026-11-12",
-   "location": "Markham, ON",
-   "posted": "2026-11-11",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "ultipro",
-   "tier": "P2",
-   "title": "Property Accountant (6 Month)",
-   "url": "https://recruiting.ultipro.ca/DRE5000DOMC/JobBoard/641409c4-22a9-4262-b1c5-14ed9a4d73fb/OpportunityDetail?opportunityId=42f0ff83-22e5-4a9b-826c-de8741aeaa43"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Hercules Moving Company",
-   "employer_id": "hercules-moving",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 71,
-   "job_id": "50709025",
-   "last_seen": "2026-11-12",
-   "location": "North York, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "regulatory compliance officer",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50709025"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 55,000 to $ 65,000",
-    "years_min": null
-   },
-   "details_note": "$ 55,000 to $ 65,000",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Holmes & Brakel Limited",
-   "employer_id": "holmes-brakel",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 73,
-   "job_id": "50708788",
-   "last_seen": "2026-11-12",
-   "location": "Pickering, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "marketing coordinator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708788"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$20.00 - $23.01/hour",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年；$20.00 - $23.01/hour",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Lululemon",
-   "employer_id": "lululemon",
-   "filter_reason": "职能相关；地点未注明",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 36,
-   "job_id": "65801",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": true,
-   "resume_family": "commercial",
-   "resume_version": "Commercial_Product_Ops",
-   "source": "avature",
-   "tier": "P2",
-   "title": "Visual Merchandising Specialist | Butler Town Center",
-   "url": "https://careers.lululemon.com/en_US/careers/JobDetail/Visual-Merchandising-Specialist-Butler-Town-Center/65801"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 78,000",
-    "years_min": null
-   },
-   "details_note": "$ 78,000",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "The Successful Investor",
-   "employer_id": "successful-investor",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 58,
-   "job_id": "50708700",
-   "last_seen": "2026-11-12",
-   "location": "North York, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "marketing specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708700"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Walia Group of Companies",
-   "employer_id": "walia-companies",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级、财务/审计/分析",
-   "fit_score": 86,
-   "job_id": "50708396",
-   "last_seen": "2026-11-12",
-   "location": "Mississauga, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "junior accountant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708396"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$20.00-$25.00 per hour",
-    "years_min": null
-   },
-   "details_note": "$20.00-$25.00 per hour",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "GeoGuard Innovations Ltd.",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "运营/项目类",
-   "fit_score": 27,
-   "job_id": "50709383",
-   "last_seen": "2026-11-12",
-   "location": "Concord, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "office administrator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50709383"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "LAND2AIR IMMIGRATION SERVICES",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 67,
-   "job_id": "50707900",
-   "last_seen": "2026-11-12",
-   "location": "Brampton, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "digital marketing specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50707900"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Markham Real Estate Law Office",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析、偏销售/柜台",
-   "fit_score": 40,
-   "job_id": "50708727",
-   "last_seen": "2026-11-12",
-   "location": "Markham, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "accounting clerk",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708727"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Qualified Metal Fabricators Inc",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华",
-   "fit_score": 45,
-   "job_id": "50708710",
-   "last_seen": "2026-11-12",
-   "location": "Etobicoke, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "quotations specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708710"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$45,000.00-$50,000.00 per year",
-    "years_min": null
-   },
-   "details_note": "$45,000.00-$50,000.00 per year",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Seamax Trading Ltd.",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 70,
-   "job_id": "50709407",
-   "last_seen": "2026-11-12",
-   "location": "Richmond Hill, ON",
-   "posted": "November 11, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "quality assurance officer",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50709407"
-  }
- ],
+ "new_employers": [],
+ "new_relevant": [],
  "new_review": [
   {
    "active": true,
@@ -3462,69 +3454,34 @@
     "checked": "2026-11-12",
     "deadline": "",
     "flags": [],
-    "new_grad_text": true,
-    "ok": true,
-    "salary": "$41,100 - $68,400",
-    "years_min": 5
-   },
-   "details_note": "经验≥5年；$41,100 - $68,400",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Canada Life",
-   "employer_id": "canada-life",
-   "filter_reason": "合同/临时岗：需确认入职时间；职位页要求 5 年经验",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 73,
-   "job_id": "1447719233",
-   "last_seen": "2026-11-12",
-   "location": "Toronto Ontario, ON, CA, M5H 3B7 +4 more…",
-   "posted": "Nov 12, 2026",
-   "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Investment Specialist - 12 Month Contract",
-   "url": "https://jobs.canadalife.com/job/Toronto-Ontario-Investment-Specialist-12-Month-Contract-ON-M5H-3B7/1447719233/"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$18.00/hr",
+    "salary": "",
     "years_min": 2
    },
-   "details_note": "经验≥2年；$18.00/hr",
-   "eligibility": "C",
+   "details_note": "经验≥2年",
+   "eligibility": "B",
    "eligibility_notes": [
-    "要求 2 年经验",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+    "要求 2 年经验"
    ],
-   "employer": "Harry Rosen",
-   "employer_id": "harry-rosen",
-   "filter_reason": "职位页要求 2 年经验",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市；职位页要求 2 年经验",
    "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 36,
-   "job_id": "/job/Etobicoke/Logistics-Associate_R6222",
+   "first_seen_run": "20261112T035230Z-148c6b",
+   "fit_reasons": "地点待确认、财务/审计/分析、偏销售/柜台",
+   "fit_score": 0,
+   "job_id": "https://www.roberthalf.com/ca/en/job/north-york-on/accounting-clerk/001269032-caen",
    "last_seen": "2026-11-12",
-   "location": "Etobicoke",
-   "posted": "Posted Today",
+   "location": "",
+   "posted": "",
    "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "workday",
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "page",
    "tier": "P2",
-   "title": "Logistics Associate",
-   "url": "https://harry.wd10.myworkdayjobs.com/en-US/HRI/job/Etobicoke/Logistics-Associate_R6222"
+   "title": "Accounting Clerk",
+   "url": "https://www.roberthalf.com/ca/en/job/north-york-on/accounting-clerk/001269032-caen"
   },
   {
    "active": true,
@@ -3539,368 +3496,44 @@
     "years_min": 2
    },
    "details_note": "经验≥2年",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "要求 2 年经验",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Mattamy Homes",
-   "employer_id": "mattamy-homes",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市；职位页要求 2 年经验",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "job_id": "https://jobs.jobvite.com/mattamyhomes/job/oyJ5AfwG",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "page",
-   "tier": "P2",
-   "title": "Talent Acquisition Specialist (Recruiter)",
-   "url": "https://jobs.jobvite.com/mattamyhomes/job/oyJ5AfwG"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Robert Half Canada",
-   "employer_id": "robert-half-canada",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "job_id": "https://www.roberthalf.com/ca/en/job/markham-on/controller/001259545-caen",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "page",
-   "tier": "P2",
-   "title": "Controller",
-   "url": "https://www.roberthalf.com/ca/en/job/markham-on/controller/001259545-caen"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Robert Half Canada",
-   "employer_id": "robert-half-canada",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "job_id": "https://www.roberthalf.com/ca/en/job/welland-on/controller-canada/001162343-caen",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "page",
-   "tier": "P2",
-   "title": "Controller - Canada",
-   "url": "https://www.roberthalf.com/ca/en/job/welland-on/controller-canada/001162343-caen"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Robert Half Canada",
-   "employer_id": "robert-half-canada",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "job_id": "https://www.roberthalf.com/ca/en/job/toronto-on/bookkeeper/001268835-caen",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "page",
-   "tier": "P2",
-   "title": "Bookkeeper",
-   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/bookkeeper/001268835-caen"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Robert Half Canada",
-   "employer_id": "robert-half-canada",
-   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "地点待确认",
-   "fit_score": 1,
-   "job_id": "https://www.roberthalf.com/ca/en/job/scarborough-on/bookkeeper/001269114-caen",
-   "last_seen": "2026-11-12",
-   "location": "",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "page",
-   "tier": "P2",
-   "title": "Bookkeeper",
-   "url": "https://www.roberthalf.com/ca/en/job/scarborough-on/bookkeeper/001269114-caen"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [
-     "要求立即入职"
-    ],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$16 - $22/hour",
-    "years_min": null
-   },
-   "details_note": "$16 - $22/hour；要求立即入职",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "要求立即入职",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "DHE BOSS INC.",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职位页：要求立即入职",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华",
-   "fit_score": 20,
-   "job_id": "50708456",
-   "last_seen": "2026-11-12",
-   "location": "Brampton, ON",
-   "posted": "November 11, 2026",
-   "relevant": false,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "bookkeeper",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708456"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 55,000 to $ 60,000",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年；$ 55,000 to $ 60,000",
    "eligibility": "B",
    "eligibility_notes": [
     "要求 2 年经验"
    ],
-   "employer": "Nour Private Wealth",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职位页要求 2 年经验",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市；职位页要求 2 年经验",
    "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T030623Z-dadf6c",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 47,
-   "job_id": "50708732",
+   "first_seen_run": "20261112T035230Z-148c6b",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 26,
+   "job_id": "https://www.roberthalf.com/ca/en/job/newmarket-on/staff-accountant/001268840-caen",
    "last_seen": "2026-11-12",
-   "location": "Oakville, ON",
-   "posted": "November 11, 2026",
+   "location": "",
+   "posted": "",
    "relevant": false,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "administrative assistant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50708732"
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "page",
+   "tier": "P2",
+   "title": "Staff Accountant",
+   "url": "https://www.roberthalf.com/ca/en/job/newmarket-on/staff-accountant/001268840-caen"
   }
  ],
  "newly_broken": [],
- "removed_relevant": [
-  {
-   "active": false,
-   "candidate_status": "relevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted 20 Days Ago",
-       "Posted 22 Days Ago"
-      ]
-     },
-     "date": "2026-11-07",
-     "run": "20261107T195111Z-0184bd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 22 Days Ago",
-       "Posted 23 Days Ago"
-      ]
-     },
-     "date": "2026-11-08",
-     "run": "20261108T170147Z-7edd2d"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 23 Days Ago",
-       "Posted 24 Days Ago"
-      ]
-     },
-     "date": "2026-11-09",
-     "run": "20261109T211917Z-3724fa"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 24 Days Ago",
-       "Posted 25 Days Ago"
-      ]
-     },
-     "date": "2026-11-10",
-     "run": "20261110T184325Z-f0f618"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 25 Days Ago",
-       "Posted 26 Days Ago"
-      ]
-     },
-     "date": "2026-11-11",
-     "run": "20261111T184510Z-500a99"
-    }
-   ],
-   "closed_run": "20261112T030623Z-dadf6c",
-   "closed_seen": "2026-11-12",
-   "employer": "Moneris",
-   "employer_id": "moneris",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-06",
-   "job_id": "/job/Toronto/Product-Commercialization-Specialist_JR105992-1",
-   "last_modified_seen": "2026-11-11",
-   "last_seen": "2026-11-11",
-   "legacy_job_id": "JR105992",
-   "location": "Toronto",
-   "posted": "Posted 26 Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P1",
-   "title": "Product Commercialization Specialist",
-   "url": "https://moneris.wd3.myworkdayjobs.com/en-US/Moneris/job/Toronto/Product-Commercialization-Specialist_JR105992-1"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261112T030623Z-dadf6c",
-   "closed_seen": "2026-11-12",
-   "details": {
-    "checked": "2026-11-10",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": true,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "employer": "Scotiabank",
-   "employer_id": "scotiabank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "607706217",
-   "last_seen": "2026-11-11",
-   "location": "Mississauga, ON, CA, L4W0B4",
-   "posted": "Nov 3, 2026",
-   "relevant": true,
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Accounting Officer, Reconciliation (GWO)",
-   "url": "https://jobs.scotiabank.com/job/Mississauga-Accounting-Officer%2C-Reconciliation-%28GWO%29-ON-L4W0B4/607706217/"
-  }
- ],
+ "removed_relevant": [],
  "reopened_relevant": [],
- "scan_id": "20261112T030623Z-dadf6c",
+ "scan_id": "20261112T035230Z-148c6b",
  "scan_states": {
   "complete": 167,
-  "failed": 10,
+  "failed": 12,
   "invalid": 1,
-  "not_configured": 104,
+  "not_configured": 108,
   "partial": 21,
-  "unverified": 68,
-  "zero_jobs": 132
+  "unverified": 67,
+  "zero_jobs": 131
  },
- "scanned_at": "2026-11-12T03:06:23+00:00",
+ "scanned_at": "2026-11-12T03:52:30+00:00",
  "unreadable": [
   {
    "id": "mckinsey-company",
@@ -3911,6 +3544,12 @@
   {
    "id": "cpkc",
    "name": "CPKC",
+   "scan_state": "failed",
+   "tier": "P1"
+  },
+  {
+   "id": "igm-financial-mackenzie-investments",
+   "name": "IGM Financial / Mackenzie Investments",
    "scan_state": "failed",
    "tier": "P1"
   },
@@ -4173,6 +3812,18 @@
    "tier": "P2"
   },
   {
+   "id": "hercules-moving",
+   "name": "Hercules Moving Company",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "holmes-brakel",
+   "name": "Holmes & Brakel Limited",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
    "id": "holt-renfrew",
    "name": "Holt Renfrew",
    "scan_state": "failed",
@@ -4401,6 +4052,12 @@
    "tier": "P2"
   },
   {
+   "id": "royal-academy-of-dance-canada",
+   "name": "Royal Academy of Dance (Canada)",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
    "id": "saa-accounting-tax-consultants",
    "name": "SAA ACCOUNTING AND TAX CONSULTANTS",
    "scan_state": "not_configured",
@@ -4509,6 +4166,12 @@
    "tier": "P2"
   },
   {
+   "id": "successful-investor",
+   "name": "The Successful Investor",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
    "id": "the-writers-union-of-canada",
    "name": "The Writers' Union of Canada",
    "scan_state": "not_configured",
@@ -4565,6 +4228,12 @@
   {
    "id": "waddington-s",
    "name": "Waddington's",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "walia-companies",
+   "name": "Walia Group of Companies",
    "scan_state": "not_configured",
    "tier": "P2"
   },
