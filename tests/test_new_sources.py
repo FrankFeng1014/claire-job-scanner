@@ -644,3 +644,12 @@ def test_commercial_and_project_versions():
     assert resume_version("Client Onboarding Coordinator") == "Coordination_Client_Ops"
     assert resume_version("Internal Controls Analyst") == "Audit_FinOps"
     assert resume_version("Budget Coordinator") == "Finance"
+def test_licence_flags_and_cpa_title():
+    from scanner.details import extract
+    from scanner.filters import classify, resume_version
+    assert "要求投资/保险执照" in extract("Must-have: Canadian Investment Regulatory Exam (CIRE). Strong Excel.")["flags"]
+    assert "要求投资/保险执照" in extract("Requirements: IR-licensed or RR-licensed.")["flags"]
+    assert "要求投资/保险执照" not in extract("We support you in completing the CSC after you join.")["flags"]
+    assert classify({"title": "chartered professional accountant, chartered accountant (CPA, CA)", "location": "Toronto, ON"})[0] == "irrelevant"
+    assert classify({"title": "CPA Student - Audit", "location": "Toronto, ON"})[0] != "irrelevant"
+    assert resume_version("Registrar", "University of Toronto") != "Arts_Culture · Museum Administration"

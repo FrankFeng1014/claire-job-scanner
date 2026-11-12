@@ -59,6 +59,12 @@ FLAGS = [
     (re.compile(r"\b(?:CPA|CFA|CIA|CPP|LLQP|FRM)\b[^.]{0,40}\b(?:required|designation required|must)|"
                 r"(?:must|required to) (?:hold|have) (?:a|an|the)? ?(?:CPA|CFA|LLQP|licen[cs]e)", re.I),
      "要求执照/证书"),
+    # 投资/证券类执照：IR/RR、CIRE、CSC、CIRO 注册（入职前或入职后若干个月内须取得）
+    (re.compile(r"\bCIRE\b|Canadian Investment Regulatory Exam|\b(?:IR|RR)[- ]licen[cs]ed|"
+                r"Investment Representative (?:licen[cs]e|registration)|CIRO (?:licen[cs]ed|registered|registration)|"
+                r"Canadian Securities Course\b[^.]{0,40}(?:required|must|completed)|\bCSC\b[^.]{0,30}(?:required|must|completed)|"
+                r"\b(?:LLQP|life insurance licen[cs]e)\b", re.I),
+     "要求投资/保险执照"),
     # 投行/资本市场：要求已有交易执行、可比公司估值、并购/LBO 建模经验的，Claire 目前不满足（只有课程 DCF 项目）
     (re.compile(r"experience (?:with|in|building|performing) [^.]{0,50}(?:comparable compan|comps\b|precedent "
                 r"transaction|\blbo\b|m&a|merger|transaction (?:execution|modell?ing)|deal (?:execution|modell?ing))|"

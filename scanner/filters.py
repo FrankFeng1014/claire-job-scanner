@@ -83,6 +83,8 @@ HARD_EXCLUDE = [
     (r"\bvolunteer\b|\bunpaid\b|b[ée]n[ée]vole", "志愿者/无薪岗位"),
     (r"payroll|benefits", "薪酬福利操作岗"),
     (r"settlement (?:worker|counsell?or)|newcomer settlement", "移民安置服务岗"),
+    (r"(?<!student[- ])(?<!pursuing )\b(?:CPA|CA)\b(?![- ]?(?:student|candidate|track|stream|program))|chartered (?:professional )?accountant",
+     "要求 CPA 资格"),
     (r"early childhood|childcare|child care|\bece\b|dental|veterinar|optometr|massage", "幼教/牙科/医疗诊所岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
      "仅限在校 Co-op/学生"),
@@ -348,7 +350,7 @@ RESUME_VERSIONS = {
     "commercial": "Commercial_Product_Ops", "project": "Project_Proposal_Program",
 }
 _FAMILY = [
-    ("arts", r"gallery|museum|curat|exhibit|art handl|preparator|catalogu|cataloger|registrar|archiv|cultur|"
+    ("arts", r"gallery|museum|curat|exhibit|art handl|preparator|catalogu|cataloger|collections registrar|archiv|cultur|"
              r"\barts?\b|artist|theatre|festival|grants?\b|fundrais|donor|philanthrop|"
              r"development (?:assistant|coordinator|officer|associate)|advancement|"
              r"box office|patron|membership|collections? (?:assistant|coordinator|technician|manager|registrar)"),
