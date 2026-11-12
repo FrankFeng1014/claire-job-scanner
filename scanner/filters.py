@@ -83,8 +83,7 @@ HARD_EXCLUDE = [
     (r"\bvolunteer\b|\bunpaid\b|b[ée]n[ée]vole", "志愿者/无薪岗位"),
     (r"payroll|benefits", "薪酬福利操作岗"),
     (r"settlement (?:worker|counsell?or)|newcomer settlement", "移民安置服务岗"),
-    (r"(?<!student[- ])(?<!pursuing )\b(?:CPA|CA)\b(?![- ]?(?:student|candidate|track|stream|program))|chartered (?:professional )?accountant",
-     "要求 CPA 资格"),
+    (r"quality assurance|quality control|\bqa\b|\bqc\b", "质量检验岗"),
     (r"early childhood|childcare|child care|\bece\b|dental|veterinar|optometr|massage", "幼教/牙科/医疗诊所岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
      "仅限在校 Co-op/学生"),
@@ -132,6 +131,16 @@ RELEVANT = [
     # 通用入门头衔
     r"\bassociate\b|coordinator|administrator|assistant|officer|specialist|junior|\bjr\b",
 ]
+# 职位名写明要已有 CPA 资格（不含 CPA 培养项目、CPA 学员/在读、应届项目）
+_CPA = re.compile(r"\bCPA\b|chartered (?:professional )?accountant", re.I)
+_CPA_OK = re.compile(r"pre-?approved|program|student|candidate|path|track|stream|graduate|new grad|trainee|"
+                     r"intern|co-?op|articling|\bPEP\b|pursuing|in progress|working towards", re.I)
+
+
+def _needs_cpa(title):
+    return bool(_CPA.search(title or "")) and not _CPA_OK.search(title or "")
+
+
 # 职位名命中这些时，不被“技术/IT岗”规则误伤（布展技术员、艺术品搬运不是 IT）
 ARTS_TECH = re.compile(r"exhibit|installation technician|art handl|preparator|gallery|museum|collections", re.I)
 # 有相关性但需要核实的信号
@@ -221,6 +230,8 @@ def classify(job: dict):
     review_reasons = [why for rx, why in _review if rx.search(t)]
     if _it.search(title):                 # 大写 IT 才算技术岗，避免误伤普通单词
         return "irrelevant", "技术/IT岗"
+    if _needs_cpa(t):
+        return "irrelevant", "要求已有 CPA 资格"
     for rx, why in _hard:
         if rx.search(t):
             if why == "技术/IT岗" and ARTS_TECH.search(t) and not re.search(r"engineer|developer|software", t):
