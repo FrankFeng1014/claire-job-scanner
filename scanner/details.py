@@ -328,16 +328,16 @@ def check_many(recs, today=None, workers=8):
 
 
 # ---------- 入职时间：Claire 2027 年 5 月才毕业 ----------
-_EARLY = r"(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|winter|spring)\.?,? 2027|(?:\w+\.? )?2026"
-EARLY_START_TITLE = re.compile(r"(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|winter)\.?,? 2027|\b2026\b", re.I)
+_EARLY = r"(?:[a-z]+\.? )?2026"   # 家人决定：2027 年 1 月及以后入职都可以，只标 2026 年内入职
+EARLY_START_TITLE = re.compile(r"\b(?:start(?:ing)?|intake|cohort|join)[^,;()]{0,15}2026|\(\s*(?:[a-z]+\.? )?2026\s*(?:start)?\s*\)|(?:[a-z]+ )?2026 (?:start|intake|cohort)", re.I)
 EARLY_START_TEXT = re.compile(
     r"(?:start(?:ing)?(?: date)?|commenc\w*|begin\w*|intake|join(?:ing)? us)[^.\n]{0,25}?(?:in |on |:|of )?\s*(?:" + _EARLY + r")|"
     r"(?:" + _EARLY + r")\s+(?:start|intake|cohort)", re.I)
-EARLY_FLAG = "入职时间早于毕业（2027年5月）"
+EARLY_FLAG = "要求 2026 年内入职（早于 2027 年 1 月）"
 
 
 def early_start(title, text=""):
-    """职位名或描述写明入职时间早于 2027 年 5 月（如 January 2027、Winter 2027、2026 年内）。"""
+    """职位名或描述写明 2026 年内入职（家人决定：2027 年 1 月及以后入职都可以）。"""
     return bool(EARLY_START_TITLE.search(title or "") or (text and EARLY_START_TEXT.search(text)))
 
 

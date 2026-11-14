@@ -664,11 +664,14 @@ def test_licence_flags_and_cpa_title():
 def test_early_start_date():
     from scanner.details import grade, early_start, extract, EARLY_FLAG
     base = {"ok": True, "years_min": None, "deadline": "", "salary": "", "flags": [], "new_grad_text": False}
-    g, gaps = grade({"title": "Business Analyst - BizApps - New Grad (January 2027)", "details": base})
-    assert g == "B" and EARLY_FLAG in gaps
+    # 2027 年 1 月及以后入职都可以
+    assert grade({"title": "Business Analyst - BizApps - New Grad (January 2027)", "details": base})[0] == "A"
     assert grade({"title": "2027 Graduate Program", "details": base})[0] == "A"
-    assert grade({"title": "Analyst (September 2027 start)", "details": base})[0] == "A"
-    assert EARLY_FLAG in extract("Start date: January 2027. Excel skills.")["flags"]
-    assert EARLY_FLAG not in extract("This role starts in September 2027.")["flags"]
+    assert EARLY_FLAG not in extract("Start date: January 2027. Excel skills.")["flags"]
+    # 2026 年内入职才标出
+    g, gaps = grade({"title": "Junior Analyst (December 2026 start)", "details": base})
+    assert g == "B" and EARLY_FLAG in gaps
+    assert EARLY_FLAG in extract("The start date for this role is December 2026.")["flags"]
     assert EARLY_FLAG not in extract("We were founded in 2026 and are growing.")["flags"]
+    assert grade({"title": "2026/2027 Graduate Program", "details": base})[0] == "A"
     assert not early_start("", "Must be able to start immediately.")
