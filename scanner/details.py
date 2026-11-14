@@ -164,6 +164,8 @@ def _parse_date(s):
 def extract(text, extra=None):
     extra = extra or {}
     out = {"years_min": None, "deadline": "", "salary": "", "flags": [], "new_grad_text": False}
+    if early_start("", text):
+        out["flags"].append(EARLY_FLAG)
     years = []
     for m in _YEARS.finditer(text or ""):
         v = m.group(1).lower()
@@ -325,6 +327,20 @@ def check_many(recs, today=None, workers=8):
     return out
 
 
+# ---------- 入职时间：Claire 2027 年 5 月才毕业 ----------
+_EARLY = r"(?:[a-z]+\.? )?2026"   # 家人决定：2027 年 1 月及以后入职都可以，只标 2026 年内入职
+EARLY_START_TITLE = re.compile(r"\b(?:start(?:ing)?|intake|cohort|join)[^,;()]{0,15}2026|\(\s*(?:[a-z]+\.? )?2026\s*(?:start)?\s*\)|(?:[a-z]+ )?2026 (?:start|intake|cohort)", re.I)
+EARLY_START_TEXT = re.compile(
+    r"(?:start(?:ing)?(?: date)?|commenc\w*|begin\w*|intake|join(?:ing)? us)[^.\n]{0,25}?(?:in |on |:|of )?\s*(?:" + _EARLY + r")|"
+    r"(?:" + _EARLY + r")\s+(?:start|intake|cohort)", re.I)
+EARLY_FLAG = "要求 2026 年内入职（早于 2027 年 1 月）"
+
+
+def early_start(title, text=""):
+    """职位名或描述写明 2026 年内入职（家人决定：2027 年 1 月及以后入职都可以）。"""
+    return bool(EARLY_START_TITLE.search(title or "") or (text and EARLY_START_TEXT.search(text)))
+
+
 # ---------- A/B/C 资格初评 ----------
 # A：职位页读到了，没发现 Claire 不满足的硬性要求
 # B：职位页读到了，有 1 项需要确认或弥补（要 2 年经验、要执照/证书、要求立即入职、仅限在校生的实习）
@@ -336,9 +352,10 @@ GRADE_TEXT = {"A": "A 已满足", "B": "B 部分满足", "C": "C 待核查"}
 def grade(rec):
     """返回 (等级, 原因列表)。"""
     d = rec.get("details") or {}
+    title_early = bool(EARLY_START_TITLE.search(rec.get("title") or ""))
     if not d.get("ok"):
-        return "C", ["职位页没读到，只按职位名判断"]
-    gaps = []
+        return "C", ["职位页没读到，只按职位名判断"] + ([EARLY_FLAG] if title_early else [])
+    gaps = [EARLY_FLAG] if title_early and EARLY_FLAG not in (d.get("flags") or []) else []
     y = d.get("years_min")
     program = bool(_PROGRAM_TITLE.search(rec.get("title") or ""))
     if y is not None and y >= REVIEW_YEARS and not program and not d.get("new_grad_text"):
