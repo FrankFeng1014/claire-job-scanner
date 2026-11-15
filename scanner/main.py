@@ -799,7 +799,8 @@ def _newly_broken(status_rows, emps):
     for r in status_rows:
         o = old.get(r["id"])
         if (o and o.get("scan_state") in ("complete", "partial") and tiers.get(r["id"]) in ("P0", "P1")
-                and r["scan_state"] in ("failed", "invalid", "zero_jobs")):
+                and r["scan_state"] in ("failed", "invalid", "zero_jobs")
+                and "正在维护" not in (r.get("detail") or "")):      # 雇主网站维护不是故障，不开异常 Issue
             out.append({"id": r["id"], "name": r["name"], "tier": tiers.get(r["id"]), "was": o.get("scan_state"),
                         "now": r["scan_state"], "detail": r["detail"][:150]})
     return out

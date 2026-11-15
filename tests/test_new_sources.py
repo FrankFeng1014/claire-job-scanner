@@ -762,3 +762,62 @@ def test_discovery_does_not_reassign_taken_board():
             {"id": "jarislowsky-fraser", "name": "Jarislowsky Fraser", "ats": "", "ats_id": ""}]
     assert _owner_of(emps, "successfactors", "https://jobs.scotiabank.com/", "jarislowsky-fraser") == "Scotiabank"
     assert _owner_of(emps, "successfactors", "https://jobs.scotiabank.com", "scotiabank") == ""
+
+
+def test_workday_falls_back_to_browser(monkeypatch):
+    from scanner import adapters, browser
+
+    class R:
+        status_code = 401
+
+        def raise_for_status(self):
+            raise RuntimeError("401 Client Error: Unauthorized")
+
+    class S:
+        def post(self, *a, **k):
+            return R()
+
+        def get(self, *a, **k):
+            return R()
+
+    monkeypatch.setattr(browser, "workday_via_browser", lambda *a, **k: (
+        [{"externalPath": "/job/Toronto/Analyst_JR1", "title": "Analyst", "locationsText": "Toronto"},
+         {"externalPath": "/job/Toronto/Associate_JR2", "title": "Associate", "locationsText": "Toronto"}], 2))
+    res = adapters.workday(S(), "bdo/wd3/BDO")
+    assert len(res) == 2 and res.complete
+
+
+def test_workday_maintenance_detected():
+    import pytest
+    from scanner import adapters
+
+    class R:
+        def __init__(self, code, headers=None):
+            self.status_code, self.headers = code, headers or {}
+
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise RuntimeError(f"{self.status_code} Client Error: Unauthorized")
+
+    class S:
+        def post(self, *a, **k):
+            return R(401)
+
+        def get(self, *a, **k):
+            return R(302, {"Location": "https://wd3.myworkday.com/wday/drs/outage?t=bdo&s=bdo"})
+
+    with pytest.raises(RuntimeError, match="正在维护"):
+        adapters.workday(S(), "bdo/wd3/BDO")
+
+
+def test_maintenance_does_not_open_issue(tmp_path, monkeypatch):
+    import csv
+    from scanner import main
+    monkeypatch.setattr(main, "DATA", str(tmp_path))
+    with open(tmp_path / "status.csv", "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["id", "scan_state"])
+        w.writeheader()
+        w.writerow({"id": "bdo-canada", "scan_state": "complete"})
+    rows = [{"id": "bdo-canada", "name": "BDO Canada", "scan_state": "failed",
+             "detail": "workday: 招聘网站正在维护（Workday 显示暂时不可用）"}]
+    assert main._newly_broken(rows, [{"id": "bdo-canada", "tier": "P1"}]) == []
