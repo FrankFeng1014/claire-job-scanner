@@ -1,8 +1,8 @@
 # 扫描简报 2026-11-15
 
-雇主共 514 家：读取成功 390，失败 17，无招聘页跳过 107。
+雇主共 515 家：读取成功 389，失败 18，无招聘页跳过 108。
 
-读取质量：完整成功 167，部分成功 20，返回零职位 137，需人工核验 66，数据异常 1。（只有“完整成功”的雇主才会判定职位下架）
+读取质量：完整成功 159，部分成功 28，返回零职位 136，需人工核验 66，数据异常 1。（只有“完整成功”的雇主才会判定职位下架）
 
 ## ⏰ 7 天内截止（88）
 
@@ -99,15 +99,13 @@
 | 2026-11-21 | 6 天 | Home Depot Canada | TRANSPORTATION ANALYST | VAUGHAN DC - 7275 | 截止 2026-11-21；$55,100.00 - $62,000.00 | [打开](https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepotCanada/job/VAUGHAN-DC---7275/TRANSPORTATION-ANALYST_Req198918) |
 | 2026-11-22 | 7 天 | University of Toronto | Governance Coordinator | Toronto, ON, CA | 截止 2026-11-22；$86,902 - $101,385 | [打开](https://jobs.utoronto.ca/job/Toronto-Governance-Coordinator-ON/607855417/) |
 
-## 本次可申请的职位（1）
+## 本次可申请的职位（0）
 
-其中新发布 1 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。
+其中新发布 0 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。
 
 资格等级（扫描程序根据职位页自动初评，最终以打开职位页核对为准）：**A 已满足**＝职位页读到了，没发现她不满足的硬性要求；**B 部分满足**＝有 1 项需要确认或弥补（如要 2 年经验、要证书）；**C 待核查**＝职位页没读到或差距 2 项以上。明确不符合的（要 3 年以上经验、仅限在校生的全职岗）已排除，单独列在后面。
 
-| 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 职位页信息 | 建议简历 | 链接 |
-|---|---|---|---|---|---|---|---|---|---|
-| A | 71 | Shah Trading Company Ltd | business systems analyst | Scarborough, ON | 新发布 | 多伦多/渥太华、财务/审计/分析 | — | Business_Analyst | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50729869) |
+无
 
 ## 可能相关、需要核实（0）
 
@@ -115,47 +113,42 @@
 
 无
 
-## 新加入名单的雇主（1）
+## 已下架的相关职位（0）
 
-这些雇主不在原来的名单里，是从外部招聘渠道发现的（发布了与 Claire 相关的职位），已自动加入 `data/employers.csv`，以后每次都会扫描。
 
-| 雇主 | 来源 | 发现的职位 | 招聘系统 |
-|---|---|---|---|
-| Shah Trading Company Ltd | jobbank | [business systems analyst](https://www.jobbank.gc.ca/jobsearch/jobposting/50729869) | 待识别 |
-
-## 已下架的相关职位（5）
-
-- Scotiabank · Client Scam Intervention Specialist | Evening Shift (2:00 PM-10:00 PM)（首次出现 2026-11-09）
-- Scotiabank · Associate, Investment Banking, Financial Institutions Group (FIG) - Toronto, ON（首次出现 2026-11-09）
-- Scotiabank · Fraud Detection Analyst（首次出现 2026-11-09）
-- Scotiabank · Fraud Detection Analyst（首次出现 2026-11-09）
-- Scotiabank · Specialist, Investments - Tangerine（首次出现 2026-11-09）
-
-## 只读到部分或数据异常的雇主（21）
+## 只读到部分或数据异常的雇主（29）
 
 - Accenture Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 - Bloomberg (Toronto)：部分成功，报告共 337 个，实际只读到 204 个
-- Bombardier：部分成功，报告共 880 个，实际只读到 634 个
+- Bombardier：部分成功，报告共 880 个，实际只读到 590 个
 - Canada Post：部分成功，只读到最新职位的 RSS（不完整）
 - Capital One Canada：部分成功，招聘板共 2061 个职位，按地点筛选只读目标地区
 - CBRE Canada：数据异常
 - Citi Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 - City of Toronto：部分成功，按网站地图读取（不完整）
-- CN Rail：部分成功，报告共 91 个，实际只读到 74 个
-- Colgate-Palmolive Canada：部分成功，报告共 316 个，实际只读到 225 个
+- CN Rail：部分成功，报告共 91 个，实际只读到 69 个
+- Colgate-Palmolive Canada：部分成功，报告共 316 个，实际只读到 228 个
 - Cushman & Wakefield Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
-- Deloitte Canada：部分成功，报告共 416 个，实际只读到 305 个
+- Deloitte Canada：部分成功，报告共 416 个，实际只读到 310 个
+- Giant Tiger：部分成功，第 3 页读取失败（ReadTimeout），已读 40 个
 - IESO：部分成功，按网站地图读取（不完整）
 - JLL Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
+- Manulife：部分成功，第 21 页读取失败（ReadTimeout），已读 400 个
 - Mercer Canada：部分成功，招聘板共 1960 个职位，按地点筛选只读目标地区
+- Morningstar DBRS：部分成功，第 6 页读取失败（HTTPError），已读 100 个
+- Northern Trust Canada：部分成功，第 7 页读取失败（HTTPError），已读 120 个
 - NVIDIA：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 - Ontario Power Generation：部分成功，只读到最新职位的 RSS（不完整）
+- Procter & Gamble Canada：部分成功，第 9 页读取失败（HTTPError），已读 160 个
+- RSM Canada：部分成功，第 9 页读取失败（HTTPError），已读 160 个
+- S&P Global (Ratings)：部分成功，第 3 页读取失败（HTTPError），已读 40 个
 - State Street Canada：部分成功，招聘板共 1171 个职位，按地点筛选只读目标地区
 - TD Bank：部分成功，招聘板共 1675 个职位，按地点筛选只读目标地区
+- Thomson Reuters：部分成功，第 11 页读取失败（HTTPError），已读 200 个
 - Toronto Hydro：部分成功，报告共 14 个，去重后只有 10 个
 - Walmart Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 
-## 读取失败的雇主（17）
+## 读取失败的雇主（18）
 
 这是**数据读取问题**，不代表这些雇主没有职位：上次读到的职位保持在招状态，不会因此判为下架。需要人工到官网核查，或等下次扫描恢复。
 
@@ -171,18 +164,19 @@
 - Honeywell Canada：page: HTTPError: 404 Client Error: Not Found for url: https://www.honeywell.com/content/honeywell/us/en
 - IGM Financial / Mackenzie Investments：page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers
 - Kinaxis：page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-kinaxis.icims.com/jobs/search
-- Maple Leaf Foods：page: HTTPError: 404 Client Error: Not Found for url: https://www.mapleleaffoods.com/careers/
+- Maple Leaf Foods：page: ConnectTimeout: HTTPSConnectionPool(host='www.mapleleaffoods.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection
 - McKinsey & Company：page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)
 - Mosaic North America：page: SSLError: HTTPSConnectionPool(host='mosaicjobs.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME]
 - Nestlé Canada：page: HTTPError: 403 Client Error: Forbidden for url: https://www.corporate.nestle.ca/en/jobs/students-graduates
 - Purpose Investments：page: HTTPError: 429 Client Error: Too Many Requests for url: https://www.purposeinvest.com/careers
+- Royal Academy of Dance (Canada)：page: HTTPError: 403 Client Error: Forbidden for url: https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/
 
 ## 外部招聘渠道
 
 - Work In Culture：成功，88 个职位，新记录相关 0 个，新加入名单的雇主 0 家
-- Job Bank：成功，321 个职位，新记录相关 1 个，新加入名单的雇主 1 家
+- Job Bank：成功，323 个职位，新记录相关 0 个，新加入名单的雇主 0 家
 - Adzuna：跳过，未设置接口密钥，跳过
 
-## 还没有招聘入口的雇主（107）
+## 还没有招聘入口的雇主（108）
 
 每周一会自动按公司名寻找它们的官网招聘页。其中重点雇主：Power Corporation / Great-West Lifeco。

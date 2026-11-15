@@ -1,43 +1,7 @@
 {
  "ats_detected_by_browser": [],
  "baseline": [],
- "candidates": [
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-15",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Shah Trading Company Ltd",
-   "employer_id": "shah-trading",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-15",
-   "first_seen_run": "20261115T022757Z-9dfcc5",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 71,
-   "found_as": "新发布",
-   "job_id": "50729869",
-   "last_seen": "2026-11-15",
-   "location": "Scarborough, ON",
-   "posted": "November 14, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "business systems analyst",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50729869"
-  }
- ],
+ "candidates": [],
  "candidates_review": [],
  "channels": [
   {
@@ -47,7 +11,7 @@
   },
   {
    "channel": "Job Bank",
-   "detail": "321 个职位，新记录相关 1 个，新加入名单的雇主 1 家",
+   "detail": "323 个职位，新记录相关 0 个，新加入名单的雇主 0 家",
    "status": "ok"
   },
   {
@@ -1027,12 +991,12 @@
    "url": "https://jobs.utoronto.ca/job/Toronto-Governance-Coordinator-ON/607855417/"
   }
  ],
- "details_checked": 1,
- "employers_complete": 167,
- "employers_failed": 17,
- "employers_ok": 390,
- "employers_skipped": 107,
- "employers_total": 514,
+ "details_checked": 0,
+ "employers_complete": 159,
+ "employers_failed": 18,
+ "employers_ok": 389,
+ "employers_skipped": 108,
+ "employers_total": 515,
  "excluded_by_details": [],
  "failed": [
   {
@@ -1182,7 +1146,7 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "page: HTTPError: 404 Client Error: Not Found for url: https://www.mapleleaffoods.com/careers/",
+   "detail": "page: ConnectTimeout: HTTPSConnectionPool(host='www.mapleleaffoods.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection",
    "id": "maple-leaf-foods",
    "jobs_found": 0,
    "name": "Maple Leaf Foods",
@@ -1238,6 +1202,18 @@
    "relevant_now": 0,
    "scan_state": "failed",
    "status": "fail"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
+   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/",
+   "id": "royal-academy-of-dance-canada",
+   "jobs_found": 0,
+   "name": "Royal Academy of Dance (Canada)",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
   }
  ],
  "first_run": false,
@@ -1269,11 +1245,11 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 634 个职位",
+   "detail": "successfactors: 590 个职位",
    "id": "bombardier",
-   "jobs_found": 634,
+   "jobs_found": 590,
    "name": "Bombardier",
-   "note": "报告共 880 个，实际只读到 634 个",
+   "note": "报告共 880 个，实际只读到 590 个",
    "relevant_now": 2,
    "scan_state": "partial",
    "status": "ok"
@@ -1341,11 +1317,11 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 74 个职位",
+   "detail": "successfactors: 69 个职位",
    "id": "cn-rail",
-   "jobs_found": 74,
+   "jobs_found": 69,
    "name": "CN Rail",
-   "note": "报告共 91 个，实际只读到 74 个",
+   "note": "报告共 91 个，实际只读到 69 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -1353,11 +1329,11 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 225 个职位",
+   "detail": "successfactors: 228 个职位",
    "id": "colgate-palmolive-canada",
-   "jobs_found": 225,
+   "jobs_found": 228,
    "name": "Colgate-Palmolive Canada",
-   "note": "报告共 316 个，实际只读到 225 个",
+   "note": "报告共 316 个，实际只读到 228 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -1377,12 +1353,24 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 305 个职位",
+   "detail": "successfactors: 310 个职位",
    "id": "deloitte-canada",
-   "jobs_found": 305,
+   "jobs_found": 310,
    "name": "Deloitte Canada",
-   "note": "报告共 416 个，实际只读到 305 个",
+   "note": "报告共 416 个，实际只读到 310 个",
    "relevant_now": 6,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
+   "detail": "workday: 40 个职位",
+   "id": "giant-tiger",
+   "jobs_found": 40,
+   "name": "Giant Tiger",
+   "note": "第 3 页读取失败（ReadTimeout），已读 40 个",
+   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -1413,12 +1401,48 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
+   "detail": "workday: 400 个职位",
+   "id": "manulife",
+   "jobs_found": 400,
+   "name": "Manulife",
+   "note": "第 21 页读取失败（ReadTimeout），已读 400 个",
+   "relevant_now": 3,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
    "detail": "workday: 51 个职位",
    "id": "mercer-canada",
    "jobs_found": 51,
    "name": "Mercer Canada",
    "note": "招聘板共 1960 个职位，按地点筛选只读目标地区",
    "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
+   "detail": "workday: 100 个职位",
+   "id": "morningstar-dbrs",
+   "jobs_found": 100,
+   "name": "Morningstar DBRS",
+   "note": "第 6 页读取失败（HTTPError），已读 100 个",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
+   "detail": "workday: 120 个职位",
+   "id": "northern-trust-canada",
+   "jobs_found": 120,
+   "name": "Northern Trust Canada",
+   "note": "第 7 页读取失败（HTTPError），已读 120 个",
+   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -1449,6 +1473,42 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
+   "detail": "workday: 160 个职位",
+   "id": "procter-gamble-canada",
+   "jobs_found": 160,
+   "name": "Procter & Gamble Canada",
+   "note": "第 9 页读取失败（HTTPError），已读 160 个",
+   "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
+   "detail": "workday: 160 个职位",
+   "id": "rsm-canada",
+   "jobs_found": 160,
+   "name": "RSM Canada",
+   "note": "第 9 页读取失败（HTTPError），已读 160 个",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
+   "detail": "workday: 40 个职位",
+   "id": "s-p-global",
+   "jobs_found": 40,
+   "name": "S&P Global (Ratings)",
+   "note": "第 3 页读取失败（HTTPError），已读 40 个",
+   "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
    "detail": "workday: 116 个职位",
    "id": "state-street-canada",
    "jobs_found": 116,
@@ -1467,6 +1527,18 @@
    "name": "TD Bank",
    "note": "招聘板共 1675 个职位，按地点筛选只读目标地区",
    "relevant_now": 26,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-15",
+   "complete": "no",
+   "detail": "workday: 200 个职位",
+   "id": "thomson-reuters",
+   "jobs_found": 200,
+   "name": "Thomson Reuters",
+   "note": "第 11 页读取失败（HTTPError），已读 200 个",
+   "relevant_now": 1,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -1495,223 +1567,23 @@
    "status": "ok"
   }
  ],
- "new_employers": [
-  {
-   "added": "2026-11-15",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "business systems analyst",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50729869",
-   "id": "shah-trading",
-   "name": "Shah Trading Company Ltd",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  }
- ],
- "new_relevant": [
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-15",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Shah Trading Company Ltd",
-   "employer_id": "shah-trading",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-15",
-   "first_seen_run": "20261115T022757Z-9dfcc5",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 71,
-   "job_id": "50729869",
-   "last_seen": "2026-11-15",
-   "location": "Scarborough, ON",
-   "posted": "November 14, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "business systems analyst",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50729869"
-  }
- ],
+ "new_employers": [],
+ "new_relevant": [],
  "new_review": [],
  "newly_broken": [],
- "removed_relevant": [
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261115T022757Z-9dfcc5",
-   "closed_seen": "2026-11-15",
-   "details": {
-    "checked": "2026-11-13",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": true,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "employer": "Scotiabank",
-   "employer_id": "scotiabank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "606303117",
-   "last_seen": "2026-11-14",
-   "location": "Scarborough, ON, CA, M1K5L1",
-   "posted": "Nov 7, 2026",
-   "relevant": true,
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Client Scam Intervention Specialist | Evening Shift (2:00 PM-10:00 PM)",
-   "url": "https://jobs.scotiabank.com/job/Scarborough-Client-Scam-Intervention-Specialist-Evening-Shift-%28200-PM-1000-PM%29-ON-M1K5L1/606303117/"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261115T022757Z-9dfcc5",
-   "closed_seen": "2026-11-15",
-   "details": {
-    "checked": "2026-11-10",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": true,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "employer": "Scotiabank",
-   "employer_id": "scotiabank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "607351317",
-   "last_seen": "2026-11-14",
-   "location": "Toronto, ON, CA, M5H0B4",
-   "posted": "Oct 26, 2026",
-   "relevant": true,
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Associate, Investment Banking, Financial Institutions Group (FIG) - Toronto, ON",
-   "url": "https://jobs.scotiabank.com/job/Toronto-Associate%2C-Investment-Banking%2C-Financial-Institutions-Group-%28FIG%29-Toronto%2C-ON-ON-M5H0B4/607351317/"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261115T022757Z-9dfcc5",
-   "closed_seen": "2026-11-15",
-   "details": {
-    "checked": "2026-11-10",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "employer": "Scotiabank",
-   "employer_id": "scotiabank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "607544817",
-   "last_seen": "2026-11-14",
-   "location": "Toronto, ON, CA, M2H 0A1",
-   "posted": "Oct 30, 2026",
-   "relevant": true,
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Fraud Detection Analyst",
-   "url": "https://jobs.scotiabank.com/Tangerine/job/Toronto-Fraud-Detection-Analyst-ON-M2H-0A1/607544817/"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261115T022757Z-9dfcc5",
-   "closed_seen": "2026-11-15",
-   "details": {
-    "checked": "2026-11-10",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "employer": "Scotiabank",
-   "employer_id": "scotiabank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "607568817",
-   "last_seen": "2026-11-14",
-   "location": "Toronto, ON, CA, M2H 0A1",
-   "posted": "Oct 30, 2026",
-   "relevant": true,
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Fraud Detection Analyst",
-   "url": "https://jobs.scotiabank.com/Tangerine/job/Toronto-Fraud-Detection-Analyst-ON-M2H-0A1/607568817/"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261115T022757Z-9dfcc5",
-   "closed_seen": "2026-11-15",
-   "details": {
-    "checked": "2026-11-11",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "employer": "Scotiabank",
-   "employer_id": "scotiabank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "607815017",
-   "last_seen": "2026-11-14",
-   "location": "Toronto, ON, CA, M2H 0A1",
-   "posted": "Nov 6, 2026",
-   "relevant": true,
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Specialist, Investments - Tangerine",
-   "url": "https://jobs.scotiabank.com/Tangerine/job/Toronto-Specialist%2C-Investments-Tangerine-ON-M2H-0A1/607815017/"
-  }
- ],
+ "removed_relevant": [],
  "reopened_relevant": [],
- "scan_id": "20261115T022757Z-9dfcc5",
+ "scan_id": "20261115T024706Z-461e90",
  "scan_states": {
-  "complete": 167,
-  "failed": 16,
+  "complete": 159,
+  "failed": 17,
   "invalid": 1,
-  "not_configured": 107,
-  "partial": 20,
+  "not_configured": 108,
+  "partial": 28,
   "unverified": 66,
-  "zero_jobs": 137
+  "zero_jobs": 136
  },
- "scanned_at": "2026-11-15T02:27:57+00:00",
+ "scanned_at": "2026-11-15T02:47:06+00:00",
  "unreadable": [
   {
    "id": "mckinsey-company",
@@ -2254,6 +2126,12 @@
    "tier": "P2"
   },
   {
+   "id": "royal-academy-of-dance-canada",
+   "name": "Royal Academy of Dance (Canada)",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
    "id": "saa-accounting-tax-consultants",
    "name": "SAA ACCOUNTING AND TAX CONSULTANTS",
    "scan_state": "not_configured",
@@ -2298,6 +2176,12 @@
   {
    "id": "sapling-financial-consultants",
    "name": "Sapling Financial Consultants Inc.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "shah-trading",
+   "name": "Shah Trading Company Ltd",
    "scan_state": "not_configured",
    "tier": "P2"
   },
