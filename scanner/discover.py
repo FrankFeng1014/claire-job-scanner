@@ -366,9 +366,23 @@ def main():
             if h.get("new_careers_url") and not e.get("careers_url"):
                 e["careers_url"] = h["new_careers_url"]
             if h.get("ats") and h.get("ats_id"):
+                taken = _owner_of(emps, h["ats"], h["ats_id"], e["id"])
+                if taken:
+                    # 这个招聘网站已经属于另一家雇主（常见于子公司用母公司的招聘网站），不重复指派
+                    print(f"跳过 {e['name']}：{h['ats']} {h['ats_id']} 已属于 {taken}")
+                    continue
                 e["ats"], e["ats_id"] = h["ats"], h["ats_id"]
         write_employers(emps)
         print(f"已写回 employers.csv：{len(high)} 家")
+
+
+def _owner_of(emps, ats, ats_id, me):
+    """返回已经在用这个招聘系统地址的其他雇主名（没有就返回空）。"""
+    key = (ats, (ats_id or "").strip().lower().rstrip("/"))
+    for o in emps:
+        if o["id"] != me and (o.get("ats"), (o.get("ats_id") or "").strip().lower().rstrip("/")) == key:
+            return o["name"]
+    return ""
 
 
 if __name__ == "__main__":

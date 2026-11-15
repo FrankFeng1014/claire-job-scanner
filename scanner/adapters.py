@@ -218,10 +218,22 @@ def workday(s, ats_id):
     jobs = {}
     notes = []
 
+    warmed = []
+
     def fetch(offset, search="", facets=None):
-        r = s.post(api, json={"appliedFacets": facets or {}, "limit": WORKDAY_PAGE, "offset": offset,
-                              "searchText": search},
-                   headers={"Accept": "application/json"}, timeout=TIMEOUT)
+        body = {"appliedFacets": facets or {}, "limit": WORKDAY_PAGE, "offset": offset, "searchText": search}
+        hdr = {"Accept": "application/json", "Content-Type": "application/json", "Accept-Language": "en-US",
+               "Origin": base, "Referer": f"{base}/en-US/{site}"}
+        r = s.post(api, json=body, headers=hdr, timeout=TIMEOUT)
+        if getattr(r, "status_code", 200) in (401, 403, 422) and not warmed:
+            # 有的 Workday 招聘板要求先打开一次招聘页、拿到会话 cookie 才肯回答接口（BDO 2026-11-14 起如此）
+            warmed.append(True)
+            try:
+                s.get(f"{base}/en-US/{site}", headers={"Accept": "text/html"}, timeout=TIMEOUT)
+            except Exception:  # noqa: BLE001
+                pass
+            time.sleep(2)
+            r = s.post(api, json=body, headers=hdr, timeout=TIMEOUT)
         r.raise_for_status()
         d = r.json()
         if not isinstance(d, dict) or not isinstance(d.get("jobPostings"), list):
