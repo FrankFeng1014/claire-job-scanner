@@ -24,6 +24,10 @@ class AdapterDataError(ValueError):
     """接口返回了无法识别的数据结构（不是网络错误）。"""
 
 
+MAINTENANCE_MSG = ("招聘网站正在维护（Workday 显示暂时不可用）——不是扫描程序的问题，"
+                   "也不代表没有职位，通常几小时到一天内恢复")
+
+
 class AdapterResult(list):
     def __init__(self, jobs=(), complete=True, note=""):
         super().__init__(jobs)
@@ -269,7 +273,28 @@ def workday(s, ats_id):
             offset += WORKDAY_PAGE
         return True, ""
 
-    first = fetch(0)
+    try:
+        first = fetch(0)
+    except Exception as e:  # noqa: BLE001
+        if "401" not in str(e) and "403" not in str(e):
+            raise
+        # 先看是不是 Workday 在维护：招聘页会跳到 /wday/drs/outage（BDO 2026-11-14 就是这样）
+        try:
+            r = s.get(f"{base}/en-US/{site}", allow_redirects=False, timeout=TIMEOUT)
+            loc = (getattr(r, "headers", {}) or {}).get("Location", "") or ""
+        except Exception:  # noqa: BLE001
+            loc = ""
+        if "outage" in loc or "maintenance" in loc:
+            raise RuntimeError(MAINTENANCE_MSG) from e
+        # 接口拒绝程序直接访问：改用浏览器打开招聘页后，在页面里读取
+        from . import browser
+        try:
+            postings, total = browser.workday_via_browser(base, site, api, WORKDAY_PAGE, WORKDAY_FULL_MAX)
+        except Exception as e2:  # noqa: BLE001
+            raise RuntimeError(f"{e}；改用浏览器读取也失败：{type(e2).__name__}: {str(e2)[:120]}") from e2
+        add(postings)
+        ok = total <= WORKDAY_FULL_MAX and len(jobs) >= total - max(2, total // 50)
+        return AdapterResult(jobs.values(), ok, "" if ok else f"浏览器读取：共 {total} 个，读到 {len(jobs)} 个")
     total = first.get("total") or 0
     if total <= WORKDAY_FULL_MAX:
         ok, why = paginate(first, WORKDAY_FULL_MAX)
