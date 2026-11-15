@@ -1,0 +1,17 @@
+GOTO https://bdo.wd3.myworkdayjobs.com/en-US/BDO -> https://community.workday.com/maintenance-page?d=3&s=1&e=1&o= status 200 title Workday is currently unavailable.
+  body: English | Workday is currently unavailable. |  | We are experiencing a service interruption. |  | Your service will be restored as quickly as possible. |  | We apologize for the inconvenience. If you are a Workday customer and require additional assistance please contact the Workday Administrator within your organization. Otherwise, please check back later. |  | © 2026 Workday, Inc. All rights reserved.
+GOTO https://bdo.wd3.myworkdayjobs.com/BDO -> https://community.workday.com/maintenance-page?d=3&s=1&e=1&o= status 200 title Workday is currently unavailable.
+  body: English | Workday is currently unavailable. |  | We are experiencing a service interruption. |  | Your service will be restored as quickly as possible. |  | We apologize for the inconvenience. If you are a Workday customer and require additional assistance please contact the Workday Administrator within your organization. Otherwise, please check back later. |  | © 2026 Workday, Inc. All rights reserved.
+GOTO https://bdo.wd3.myworkdayjobs.com/en-US/BDO/job/Toronto---Bay-St/Business-Analyst---BizApps_JR7066 -> https://community.workday.com/maintenance-page?d=3&s=1&e=1&o= status 200 title Workday is currently unavailable.
+  body: English | Workday is currently unavailable. |  | We are experiencing a service interruption. |  | Your service will be restored as quickly as possible. |  | We apologize for the inconvenience. If you are a Workday customer and require additional assistance please contact the Workday Administrator within your organization. Otherwise, please check back later. |  | © 2026 Workday, Inc. All rights reserved.
+
+--- workday network ---
+('GET', 302, 'https://bdo.wd3.myworkdayjobs.com/en-US/BDO', '')
+('GET', 302, 'https://wd3.myworkday.com/wday/drs/outage?t=bdo&s=bdo', '')
+('GET', 302, 'https://bdo.wd3.myworkdayjobs.com/BDO', '')
+('GET', 302, 'https://wd3.myworkday.com/wday/drs/outage?t=bdo&s=bdo', '')
+('GET', 302, 'https://bdo.wd3.myworkdayjobs.com/en-US/BDO/job/Toronto---Bay-St/Business-Analyst---BizApps_JR7066', '')
+('GET', 302, 'https://wd3.myworkday.com/wday/drs/outage?t=bdo&s=bdo', '')
+curl GET board: 302 https://wd3.myworkday.com/wday/drs/outage?t=bdo&s=bdo
+{"errorCode":"HTTP_401","errorCaseId":"5A98BDMWH8IZWK","httpStatus":401,"message":"Unable to verify credentials for system account 39$17291","messageParams":{}}
+curl POST cxs: 401
