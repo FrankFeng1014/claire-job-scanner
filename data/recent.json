@@ -28526,7 +28526,40 @@
    "tier": "P2",
    "title": "Operations Administrator",
    "url": "https://www.linkedin.com/jobs/view/4477264400/"
+  },
+  {
+   "deadline": "",
+   "details": "",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Shah Trading Company Ltd",
+   "employer_id": "shah-trading",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 71,
+   "found_at": "2026-11-15T02:27:57+00:00",
+   "kind": "new_relevant",
+   "location": "Scarborough, ON",
+   "posted": "November 14, 2026",
+   "reason": "职能与地点相关（来源：Job Bank）",
+   "resume_version": "Business_Analyst",
+   "rule_included": false,
+   "scan_id": "20261115T022757Z-9dfcc5",
+   "source": "channel:jobbank",
+   "status": "relevant",
+   "tier": "P2",
+   "title": "business systems analyst",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50729869"
+  },
+  {
+   "employer": "Shah Trading Company Ltd",
+   "employer_id": "shah-trading",
+   "found_at": "2026-11-15T02:27:57+00:00",
+   "kind": "new_employer",
+   "scan_id": "20261115T022757Z-9dfcc5",
+   "source": "auto:jobbank",
+   "title": "business systems analyst",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50729869"
   }
  ],
- "updated": "2026-11-14T23:55:05+00:00"
+ "updated": "2026-11-15T02:27:57+00:00"
 }
