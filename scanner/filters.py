@@ -244,6 +244,10 @@ def classify(job: dict):
         review_reasons.append("顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门")
     if country_only:
         review_reasons.append("地点只写了 Canada，需确认城市")
+    if re.search(r"associate,?\s*[-–]?\s*(?:investment banking|capital markets|m&a|mergers|corporate banking|"
+                 r"leveraged finance|equity research|global banking)|(?:investment banking|m&a|capital markets|"
+                 r"corporate banking|leveraged finance)\s+associate", t, re.I):
+        review_reasons.append("投行/资本市场 Associate 级别，通常要求 MBA 或 2–3 年分析师经验")
     if not loc and job.get("source") == "page":
         # 从雇主官网招聘页直接抓到、又没写地点的：跨国公司官网常列全球职位，先放“需要核实”
         review_reasons.append("招聘页没写地点，需确认是否在加拿大/目标城市")

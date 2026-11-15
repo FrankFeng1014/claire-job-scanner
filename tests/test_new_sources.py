@@ -675,3 +675,90 @@ def test_early_start_date():
     assert EARLY_FLAG not in extract("We were founded in 2026 and are growing.")["flags"]
     assert grade({"title": "2026/2027 Graduate Program", "details": base})[0] == "A"
     assert not early_start("", "Must be able to start immediately.")
+
+
+# ---------- 2026-11-14 GPT 反馈的问题 ----------
+def test_shared_source_kept_once():
+    from scanner.main import shared_sources
+    emps = [{"id": "scotiabank", "name": "Scotiabank", "tier": "P0", "ats": "successfactors",
+             "ats_id": "https://jobs.scotiabank.com", "careers_url": ""},
+            {"id": "jarislowsky-fraser", "name": "Jarislowsky Fraser", "tier": "P2", "ats": "successfactors",
+             "ats_id": "https://jobs.scotiabank.com/", "careers_url": ""}]
+    assert shared_sources(emps) == {"jarislowsky-fraser": "Scotiabank"}
+
+
+def test_retire_shared_records():
+    from scanner.main import retire_shared
+    seen = {"a": {"employer_id": "jarislowsky-fraser", "active": True, "source": "successfactors"},
+            "b": {"employer_id": "scotiabank", "active": True, "source": "successfactors"}}
+    assert retire_shared(seen, {"jarislowsky-fraser": "Scotiabank"}) == 1
+    assert not seen["a"]["active"] and "Scotiabank" in seen["a"]["closed_reason"] and seen["b"]["active"]
+
+
+def test_workday_req_id():
+    from scanner.main import req_id
+    assert req_id("https://mmc.wd1.myworkdayjobs.com/en-US/MMC/job/Toronto/Exec-Rewards_R_363843") == "R_363843"
+    assert req_id("https://acc.wd103.myworkdayjobs.com/en-US/X/job/Mississauga/Analyst_R00371424") == \
+        req_id("https://acc.wd103.myworkdayjobs.com/en-US/X/job/Ontario---Multiple/Analyst_R00371424")
+    assert req_id("https://jobs.bmo.com/ca/en/job/R260030597/Personal-Banking-Associate") is None
+
+
+def test_new_grad_footer_does_not_override_years():
+    from scanner.details import apply, grade
+    d = {"ok": True, "years_min": 5, "deadline": "", "salary": "", "flags": [], "new_grad_text": True}
+    rec = {"title": "Portfolio Analyst", "candidate_status": "relevant"}
+    assert apply(rec, d) == "excluded"
+    d2 = {**d, "years_min": 2}
+    assert grade({"title": "Client Administration Officer", "details": d2})[0] == "B"
+    # 应届项目本身不受影响
+    assert grade({"title": "2027 Graduate Program", "details": {**d, "years_min": 3}})[0] == "A"
+
+
+def test_ib_associate_not_entry():
+    from scanner.details import grade
+    from scanner.filters import classify
+    t = "Associate, Investment Banking, Financial Institutions Group (FIG)"
+    base = {"ok": True, "years_min": None, "deadline": "", "salary": "", "flags": [], "new_grad_text": True}
+    assert grade({"title": t, "details": base})[0] != "A"
+    assert classify({"title": t, "location": "Toronto, ON"})[0] == "review"
+    assert classify({"title": "Investment Banking Analyst", "location": "Toronto, ON"})[0] == "relevant"
+
+
+def test_workday_retries_after_401():
+    from scanner import adapters
+
+    class R:
+        def __init__(self, code, data=None):
+            self.status_code, self._d = code, data or {}
+
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise RuntimeError(self.status_code)
+
+        def json(self):
+            return self._d
+
+    class S:
+        def __init__(self):
+            self.posts, self.gets = 0, 0
+
+        def post(self, *a, **k):
+            self.posts += 1
+            return R(401) if self.posts == 1 else R(200, {"total": 1, "jobPostings": [
+                {"externalPath": "/job/Toronto/Analyst_JR1", "title": "Analyst", "locationsText": "Toronto"}]})
+
+        def get(self, *a, **k):
+            self.gets += 1
+            return R(200)
+
+    s = S()
+    res = adapters.workday(s, "bdo/wd3/BDO")
+    assert s.gets == 1 and len(res) == 1
+
+
+def test_discovery_does_not_reassign_taken_board():
+    from scanner.discover import _owner_of
+    emps = [{"id": "scotiabank", "name": "Scotiabank", "ats": "successfactors", "ats_id": "https://jobs.scotiabank.com"},
+            {"id": "jarislowsky-fraser", "name": "Jarislowsky Fraser", "ats": "", "ats_id": ""}]
+    assert _owner_of(emps, "successfactors", "https://jobs.scotiabank.com/", "jarislowsky-fraser") == "Scotiabank"
+    assert _owner_of(emps, "successfactors", "https://jobs.scotiabank.com", "scotiabank") == ""

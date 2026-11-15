@@ -135,6 +135,50 @@ def validate_latest(L):
 
 
 # ---------- 扫描单个雇主 ----------
+_TIER_RANK = {"P0": 0, "P1": 1, "P2": 2}
+
+
+def shared_sources(emps):
+    """多家雇主用同一个招聘系统地址（如 Jarislowsky Fraser 用的是母公司 Scotiabank 的招聘网站）：
+    只保留层级最高的一家去读，其余的返回 {雇主id: 保留的雇主名}，避免同一批职位被记到两家名下。"""
+    by_src = {}
+    for e in emps:
+        kind, arg = target(e)
+        if kind and kind != "page" and arg:
+            by_src.setdefault((kind, arg.strip().lower().rstrip("/")), []).append(e)
+    out = {}
+    for group in by_src.values():
+        if len(group) < 2:
+            continue
+        group.sort(key=lambda e: (_TIER_RANK.get(e.get("tier"), 9), e["id"]))
+        for e in group[1:]:
+            out[e["id"]] = group[0]["name"]
+    return out
+
+
+def retire_shared(seen, shared):
+    """把共用招聘网站的雇主名下的记录安静停用（这些职位已经记在保留的那家名下）。"""
+    n = 0
+    for rec in seen.values():
+        owner = shared.get(rec.get("employer_id"))
+        if owner and rec.get("active") and not str(rec.get("source", "")).startswith("channel:"):
+            rec["active"] = False
+            rec["closed_reason"] = f"与 {owner} 共用招聘网站，职位已归到 {owner}"
+            n += 1
+    return n
+
+
+_REQ = re.compile(r"_((?:[A-Za-z]{1,4}[-_]?)?\d{4,}(?:-\d+)?)(?:[/?#]|$)")
+
+
+def req_id(url):
+    """Workday 链接末尾的职位编号（如 _R00371424、_JR7066、_R_363843）。同一编号＝同一个职位。"""
+    if not url or "myworkdayjobs.com" not in url:
+        return None
+    m = _REQ.search(url.split("?")[0])
+    return m.group(1).upper() if m else None
+
+
 def target(emp):
     """决定用哪个读取模块：有 ATS 用 ATS，否则用官方招聘页。"""
     if emp.get("ats") in ADAPTERS and (emp.get("ats_id") or emp["ats"] == "amazon"):
@@ -483,11 +527,19 @@ def scan(only=None, workers=8, channels=True):
     for rec in seen.values():
         _upgrade(rec)
     state = load_employer_state(seen)
+    shared = shared_sources(emps_all)
+    emps = [e for e in emps if e["id"] not in shared]
+    retire_shared(seen, shared)
 
     d, scan_id = today(), new_scan_id()
     now_iso = now_utc().isoformat(timespec="seconds")
     new, review, reopened, status_rows, baseline = [], [], [], [], []
     ok_ids, complete_ids, seen_now, fresh_ids = set(), set(), set(), set()
+    req_index = {}
+    for k, rec in seen.items():
+        r = req_id(rec.get("url") or "")
+        if r and rec.get("active"):
+            req_index.setdefault((rec.get("employer_id"), r), k)
     known = {}
     for rec in seen.values():
         known.setdefault(rec.get("employer_id"), set()).add(str(rec.get("job_id")))
@@ -544,10 +596,21 @@ def scan(only=None, workers=8, channels=True):
                         continue
                     if not j.get("title"):
                         continue
+                    req = req_id(j.get("url") or j.get("job_id"))
+                    dup = req and req_index.get((emp["id"], req))
+                    if dup and dup in seen and dup != key:
+                        # 同一个职位编号挂在多个城市/多个链接下：算同一个职位，只记下备用链接
+                        alt = seen[dup].setdefault("alt_urls", [])
+                        if j.get("url") and j["url"] not in alt and j["url"] != seen[dup].get("url"):
+                            alt.append(j["url"])
+                        seen_now.add(dup)
+                        continue
                     cst, why = classify({**j, "source": kind})
                     rec = _new_record(j, emp["id"], emp["name"], emp.get("tier", ""), kind, cst, why, d,
                                       scan_id, fresh)
                     seen[key] = rec
+                    if req:
+                        req_index[(emp["id"], req)] = key
                     n_rel += cst == "relevant"
                     if cst == "irrelevant":
                         continue
@@ -674,6 +737,9 @@ def scan(only=None, workers=8, channels=True):
         by_id = {x["id"]: x for x in suggested}
         for e in emps_all:
             if e["id"] in by_id and not e.get("ats"):
+                from .discover import _owner_of
+                if _owner_of(emps_all, by_id[e["id"]]["ats"], by_id[e["id"]]["ats_id"], e["id"]):
+                    continue      # 招聘网站已属于另一家雇主（如子公司用母公司网站），不重复指派
                 e["ats"], e["ats_id"] = by_id[e["id"]]["ats"], by_id[e["id"]]["ats_id"]
         print("浏览器识别出招聘系统（下次扫描起改用）：" +
               "，".join(f"{x['name']}={x['ats']}" for x in suggested))
@@ -805,7 +871,8 @@ def render_report(L):
     broken = L.get("newly_broken", [])
     if broken:
         lines += [f"## ⚠️ 重点雇主突然读不到（{len(broken)}）", "",
-                  "上次还能读取、这次读取失败的 P0/P1 雇主，可能是招聘网站改版，需要修复。", ""]
+                  "上次还能读取、这次读取失败的 P0/P1 雇主，可能是招聘网站改版或临时拦截，需要修复。"
+                  "这是数据读取问题，不代表没有职位；它们已有的职位不会被判为下架。", ""]
         for b in broken:
             lines.append(f"- {b['tier']} {b['name']}：{b['detail']}")
         lines.append("")
@@ -874,7 +941,9 @@ def render_report(L):
         for r in attention:
             lines.append(f"- {r['name']}：{STATE_LABELS.get(r['scan_state'], r['scan_state'])}"
                          f"{'，' + r['note'] if r.get('note') else ''}")
-    lines += ["", f"## 读取失败的雇主（{len(L['failed'])}）", ""]
+    lines += ["", f"## 读取失败的雇主（{len(L['failed'])}）", "",
+              "这是**数据读取问题**，不代表这些雇主没有职位：上次读到的职位保持在招状态，不会因此判为下架。"
+              "需要人工到官网核查，或等下次扫描恢复。", ""]
     for r in L["failed"]:
         lines.append(f"- {r['name']}：{r['detail']}")
     chs = L.get("channels", [])

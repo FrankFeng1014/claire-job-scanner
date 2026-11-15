@@ -244,7 +244,8 @@ def apply(rec, d):
             rec["filter_reason"] = "；".join(notes)
             return "review"
         return None
-    if y is not None and y >= EXCLUDE_YEARS and not d.get("new_grad_text"):
+    # “欢迎应届生”常是招聘网站的通用页脚（如 Scotiabank 每个职位都有），不能抵消正文里的经验年限要求
+    if y is not None and y >= EXCLUDE_YEARS:
         rec["candidate_status"] = "irrelevant"
         rec["relevant"] = False
         rec["filter_reason"] = f"职位页要求 {y} 年以上经验"
@@ -341,6 +342,12 @@ def early_start(title, text=""):
     return bool(EARLY_START_TITLE.search(title or "") or (text and EARLY_START_TEXT.search(text)))
 
 
+# 投行、资本市场的 Associate 是分析师之上一级（MBA 或 2–3 年分析师经验），不是入门岗
+IB_ASSOCIATE = re.compile(r"associate,?\s*[-–]?\s*(?:investment banking|capital markets|m&a|mergers|corporate banking|"
+                          r"leveraged finance|equity research|global banking)|(?:investment banking|m&a|capital markets|"
+                          r"corporate banking|leveraged finance)\s+associate", re.I)
+
+
 # ---------- A/B/C 资格初评 ----------
 # A：职位页读到了，没发现 Claire 不满足的硬性要求
 # B：职位页读到了，有 1 项需要确认或弥补（要 2 年经验、要执照/证书、要求立即入职、仅限在校生的实习）
@@ -356,9 +363,11 @@ def grade(rec):
     if not d.get("ok"):
         return "C", ["职位页没读到，只按职位名判断"] + ([EARLY_FLAG] if title_early else [])
     gaps = [EARLY_FLAG] if title_early and EARLY_FLAG not in (d.get("flags") or []) else []
+    if IB_ASSOCIATE.search(rec.get("title") or ""):
+        gaps.append("投行/资本市场 Associate 级别（通常要求 MBA 或 2–3 年分析师经验）")
     y = d.get("years_min")
     program = bool(_PROGRAM_TITLE.search(rec.get("title") or ""))
-    if y is not None and y >= REVIEW_YEARS and not program and not d.get("new_grad_text"):
+    if y is not None and y >= REVIEW_YEARS and not program:
         gaps.append(f"要求 {y} 年经验")
     for f in d.get("flags") or []:
         gaps.append(f)
