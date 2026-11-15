@@ -762,3 +762,26 @@ def test_discovery_does_not_reassign_taken_board():
             {"id": "jarislowsky-fraser", "name": "Jarislowsky Fraser", "ats": "", "ats_id": ""}]
     assert _owner_of(emps, "successfactors", "https://jobs.scotiabank.com/", "jarislowsky-fraser") == "Scotiabank"
     assert _owner_of(emps, "successfactors", "https://jobs.scotiabank.com", "scotiabank") == ""
+
+
+def test_workday_falls_back_to_browser(monkeypatch):
+    from scanner import adapters, browser
+
+    class R:
+        status_code = 401
+
+        def raise_for_status(self):
+            raise RuntimeError("401 Client Error: Unauthorized")
+
+    class S:
+        def post(self, *a, **k):
+            return R()
+
+        def get(self, *a, **k):
+            return R()
+
+    monkeypatch.setattr(browser, "workday_via_browser", lambda *a, **k: (
+        [{"externalPath": "/job/Toronto/Analyst_JR1", "title": "Analyst", "locationsText": "Toronto"},
+         {"externalPath": "/job/Toronto/Associate_JR2", "title": "Associate", "locationsText": "Toronto"}], 2))
+    res = adapters.workday(S(), "bdo/wd3/BDO")
+    assert len(res) == 2 and res.complete

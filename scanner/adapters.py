@@ -269,7 +269,20 @@ def workday(s, ats_id):
             offset += WORKDAY_PAGE
         return True, ""
 
-    first = fetch(0)
+    try:
+        first = fetch(0)
+    except Exception as e:  # noqa: BLE001
+        if "401" not in str(e) and "403" not in str(e):
+            raise
+        # 接口拒绝程序直接访问（BDO 2026-11-14 起）：改用浏览器打开招聘页后，在页面里读取
+        from . import browser
+        try:
+            postings, total = browser.workday_via_browser(base, site, api, WORKDAY_PAGE, WORKDAY_FULL_MAX)
+        except Exception as e2:  # noqa: BLE001
+            raise RuntimeError(f"{e}；改用浏览器读取也失败：{type(e2).__name__}: {str(e2)[:120]}") from e2
+        add(postings)
+        ok = total <= WORKDAY_FULL_MAX and len(jobs) >= total - max(2, total // 50)
+        return AdapterResult(jobs.values(), ok, "" if ok else f"浏览器读取：共 {total} 个，读到 {len(jobs)} 个")
     total = first.get("total") or 0
     if total <= WORKDAY_FULL_MAX:
         ok, why = paginate(first, WORKDAY_FULL_MAX)

@@ -99,3 +99,46 @@ def render_all(urls, concurrency=CONCURRENCY) -> dict:
     except Exception as e:  # noqa: BLE001  浏览器本身启动失败：整批跳过，退回普通读取
         print(f"浏览器不可用，跳过：{type(e).__name__}: {str(e)[:200]}")
         return {}
+
+
+# ---------- Workday 招聘板：接口拒绝程序直接访问时，用浏览器打开招聘页后在页面里读取 ----------
+async def _workday_pages(base, site, api, page_size, cap):
+    from playwright.async_api import async_playwright
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+        ctx = await browser.new_context(user_agent=BROWSER_UA, locale="en-CA", viewport={"width": 1366, "height": 900})
+        page = await ctx.new_page()
+        await page.goto(f"{base}/en-US/{site}", wait_until="domcontentloaded", timeout=GOTO_TIMEOUT)
+        try:
+            await page.wait_for_load_state("networkidle", timeout=IDLE_TIMEOUT)
+        except Exception:  # noqa: BLE001
+            pass
+        js = """async ([api, offset, limit]) => {
+            const r = await fetch(api, {method: 'POST', credentials: 'include',
+                headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
+                body: JSON.stringify({appliedFacets: {}, limit: limit, offset: offset, searchText: ''})});
+            return {status: r.status, data: r.ok ? await r.json() : null};
+        }"""
+        postings, total, offset = [], None, 0
+        while True:
+            res = await page.evaluate(js, [api, offset, page_size])
+            if res["status"] != 200 or not res["data"]:
+                raise RuntimeError(f"浏览器内读取也失败：HTTP {res['status']}")
+            d = res["data"]
+            if total is None:
+                total = d.get("total") or 0
+            batch = d.get("jobPostings") or []
+            postings += batch
+            offset += page_size
+            if not batch or offset >= total or offset >= cap:
+                break
+            await page.wait_for_timeout(800)
+        await browser.close()
+        return postings, total
+
+
+def workday_via_browser(base, site, api, page_size=20, cap=1000):
+    """返回 (职位列表, 总数)；浏览器不可用时抛出异常。"""
+    if not available():
+        raise RuntimeError("浏览器不可用")
+    return asyncio.run(_workday_pages(base, site, api, page_size, cap))
