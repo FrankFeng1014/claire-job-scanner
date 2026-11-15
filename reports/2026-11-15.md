@@ -1,21 +1,15 @@
 # 扫描简报 2026-11-15
 
-雇主共 515 家：读取成功 389，失败 18，无招聘页跳过 108。
+雇主共 515 家：读取成功 391，失败 16，无招聘页跳过 108。
 
-读取质量：完整成功 159，部分成功 28，返回零职位 136，需人工核验 66，数据异常 1。（只有“完整成功”的雇主才会判定职位下架）
+读取质量：完整成功 167，部分成功 20，返回零职位 135，需人工核验 69，数据异常 1。（只有“完整成功”的雇主才会判定职位下架）
 
-## ⏰ 7 天内截止（88）
+## ⏰ 7 天内截止（82）
 
 所有在招、可能相关的职位里，职位页写明的截止日期在 7 天内的（不只是本次新出现的）。
 
 | 截止 | 剩余 | 雇主 | 职位 | 地点 | 职位页信息 | 链接 |
 |---|---|---|---|---|---|---|
-| 2026-11-15 | 0 天 | CIBC | Associate, Oversight - Global Asset Management | Toronto, ON | 截止 2026-11-15；$82,000 to $106,400 | [打开](https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate--Oversight---Global-Asset-Management_2622415) |
-| 2026-11-15 | 0 天 | CIBC | Associate Graduate Leadership Development Program - Summer  2027 | Toronto, ON | 截止 2026-11-15；仅限在校生/需返校 | [打开](https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate-Graduate-Leadership-Development-Program---Summer--2027_2622684-1) |
-| 2026-11-15 | 0 天 | CPP Investments | Intern Analyst, PhD – Systematic Strategies Group | Toronto | 截止 2026-11-15 | [打开](https://cppib.wd10.myworkdayjobs.com/en-US/cppinvestments/job/Toronto/Intern-Analyst--PhD---Systematic-Strategies-Group_JR00860) |
-| 2026-11-15 | 0 天 | Diageo Canada | Channel Planning Associate | Toronto, Canada | 截止 2026-11-15 | [打开](https://diageo.wd3.myworkdayjobs.com/en-US/Diageo_Careers/job/Toronto-Canada/Channel-Planning-Associate_JR1130905) |
-| 2026-11-15 | 0 天 | Diageo Canada | Commercial Performance Analyst | Toronto, Canada | 截止 2026-11-15；$57,750.00 - $96,250.00 | [打开](https://diageo.wd3.myworkdayjobs.com/en-US/Diageo_Careers/job/Toronto-Canada/Commercial-Analyst_JR1129809) |
-| 2026-11-15 | 0 天 | Metrolinx | Rail Operations Specialist | Canada | 截止 2026-11-15 | [打开](https://ehtc.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/116643) |
 | 2026-11-16 | 1 天 | Bell Canada | 2027 Graduate Program - Media | Toronto, ON, CA | 写明应届可申；截止 2026-11-16 | [打开](https://jobs.bce.ca/bell/job/Toronto-2027-Graduate-Program-Media-ON/1429781900/) |
 | 2026-11-16 | 1 天 | Bell Canada | Graduate Program 2027 - Consumer and Small Business (Marketing) | Toronto, ON, CA | 写明应届可申；截止 2026-11-16 | [打开](https://jobs.bce.ca/bell/job/Toronto-Graduate-Program-2027-Consumer-and-Small-Business-%28Marketing%29-ON/1431803900/) |
 | 2026-11-16 | 1 天 | CIBC | Client Engagement Associate - Part-time (15 hours/week) | Brampton, ON | 截止 2026-11-16 | [打开](https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Brampton-ON/Client-Engagement-Associate---Part-time--15-hours-week-_2622539) |
@@ -99,72 +93,90 @@
 | 2026-11-21 | 6 天 | Home Depot Canada | TRANSPORTATION ANALYST | VAUGHAN DC - 7275 | 截止 2026-11-21；$55,100.00 - $62,000.00 | [打开](https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepotCanada/job/VAUGHAN-DC---7275/TRANSPORTATION-ANALYST_Req198918) |
 | 2026-11-22 | 7 天 | University of Toronto | Governance Coordinator | Toronto, ON, CA | 截止 2026-11-22；$86,902 - $101,385 | [打开](https://jobs.utoronto.ca/job/Toronto-Governance-Coordinator-ON/607855417/) |
 
-## 本次可申请的职位（0）
+## 本次可申请的职位（6）
 
-其中新发布 0 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。
+其中新发布 6 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。
 
 资格等级（扫描程序根据职位页自动初评，最终以打开职位页核对为准）：**A 已满足**＝职位页读到了，没发现她不满足的硬性要求；**B 部分满足**＝有 1 项需要确认或弥补（如要 2 年经验、要证书）；**C 待核查**＝职位页没读到或差距 2 项以上。明确不符合的（要 3 年以上经验、仅限在校生的全职岗）已排除，单独列在后面。
 
-无
+| 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 职位页信息 | 建议简历 | 链接 |
+|---|---|---|---|---|---|---|---|---|---|
+| A | 73 | Bell Canada | business development officer | Mississauga, ON | 新发布 | 多伦多/渥太华、艺术/文化 | — | Arts_Culture · Development | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50725705) |
+| A | 72 | BLUFFER'S PARK MARINA LTD | administrative assistant | Scarborough, ON | 新发布 | 多伦多/渥太华、入门级、运营/项目类 | $20.00-$24.00 per hour | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50731643) |
+| A | 71 | Mercor | administration analyst | Toronto, ON | 新发布 | 多伦多/渥太华、财务/审计/分析 | $60/hour | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50732351) |
+| A | 56 | Mercor | accountant | Toronto, ON | 新发布 | 多伦多/渥太华、财务/审计/分析 | $95/hour | Audit_FinOps | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50732226) |
+| C | 63 | Bell Canada | human resources coordinator | Mississauga, ON | 新发布 | 多伦多/渥太华、入门级 | — | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50730452) |
+| C | 48 | Bell Canada | financial management officer | Mississauga, ON | 新发布 | 多伦多/渥太华 | — | Finance | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50730523) |
 
-## 可能相关、需要核实（0）
+## 可能相关、需要核实（1）
 
 实习、兼职、合同、地点只写了 Canada 等需要先确认的职位，同样按匹配度排序。
 
-无
+| 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 待核实原因 | 职位页信息 | 建议简历 | 链接 |
+|---|---|---|---|---|---|---|---|---|---|
+| C | 17 | Mondelez Canada | IL6S Specialist | — | 新发布 | 招聘页没写地点，需确认是否在加拿大/目标城市 | — | Business_Analyst | [打开](https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181340&jobtitle=IL6S%20Specialist) |
 
-## 已下架的相关职位（0）
+## 打开职位页后排除（4）
 
+职位名看起来合适，但职位页写明要求 3 年以上经验或仅限在校生。列在这里备查，不用申请。
 
-## 只读到部分或数据异常的雇主（29）
+- Bell Canada · business management analyst：职位页要求 3 年以上经验（[打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50730398)）
+- Bell Canada · analyst, business management：职位页要求 3 年以上经验（[打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50730414)）
+- Bell Canada · business consultant：职位页要求 7 年以上经验（[打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50725564)）
+- Robert Half Canada · Inventory Specialist：职位页要求 3 年以上经验（[打开](https://www.roberthalf.com/ca/en/job/cambridge-on/inventory-specialist/001268026-caen)）
+
+## 已下架的相关职位（10）
+
+- BMO · BMO Personal & Business Banking Development Program (New Graduate) - 2 Year Program（首次出现 2026-11-09）
+- CIBC · Associate, Oversight - Global Asset Management（首次出现 2026-11-06）
+- City of Ottawa · Councillor's Assistant I（首次出现 2026-11-09）
+- City of Ottawa · Councillor's Assistant II（首次出现 2026-11-09）
+- Diageo Canada · Channel Planning Associate（首次出现 2026-11-09）
+- Diageo Canada · Commercial Performance Analyst（首次出现 2026-11-09）
+- Lululemon · Visual Merchandising Specialist | Towson Town Center（首次出现 2026-11-14）
+- RBC · Analyst, Trade Support（首次出现 2026-11-09）
+- Sephora Canada · Seasonal Associate（首次出现 2026-11-09）
+- Sephora Canada · Seasonal Associate（首次出现 2026-11-10）
+
+## 只读到部分或数据异常的雇主（21）
 
 - Accenture Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 - Bloomberg (Toronto)：部分成功，报告共 337 个，实际只读到 204 个
-- Bombardier：部分成功，报告共 880 个，实际只读到 590 个
+- Bombardier：部分成功，报告共 880 个，实际只读到 613 个
 - Canada Post：部分成功，只读到最新职位的 RSS（不完整）
 - Capital One Canada：部分成功，招聘板共 2061 个职位，按地点筛选只读目标地区
 - CBRE Canada：数据异常
 - Citi Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 - City of Toronto：部分成功，按网站地图读取（不完整）
-- CN Rail：部分成功，报告共 91 个，实际只读到 69 个
-- Colgate-Palmolive Canada：部分成功，报告共 316 个，实际只读到 228 个
+- CN Rail：部分成功，报告共 89 个，实际只读到 73 个
+- Colgate-Palmolive Canada：部分成功，报告共 316 个，实际只读到 220 个
 - Cushman & Wakefield Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
-- Deloitte Canada：部分成功，报告共 416 个，实际只读到 310 个
-- Giant Tiger：部分成功，第 3 页读取失败（ReadTimeout），已读 40 个
+- Deloitte Canada：部分成功，报告共 416 个，实际只读到 301 个
 - IESO：部分成功，按网站地图读取（不完整）
 - JLL Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
-- Manulife：部分成功，第 21 页读取失败（ReadTimeout），已读 400 个
-- Mercer Canada：部分成功，招聘板共 1960 个职位，按地点筛选只读目标地区
-- Morningstar DBRS：部分成功，第 6 页读取失败（HTTPError），已读 100 个
-- Northern Trust Canada：部分成功，第 7 页读取失败（HTTPError），已读 120 个
+- Mercer Canada：部分成功，招聘板共 1958 个职位，按地点筛选只读目标地区
 - NVIDIA：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 - Ontario Power Generation：部分成功，只读到最新职位的 RSS（不完整）
-- Procter & Gamble Canada：部分成功，第 9 页读取失败（HTTPError），已读 160 个
-- RSM Canada：部分成功，第 9 页读取失败（HTTPError），已读 160 个
-- S&P Global (Ratings)：部分成功，第 3 页读取失败（HTTPError），已读 40 个
-- State Street Canada：部分成功，招聘板共 1171 个职位，按地点筛选只读目标地区
-- TD Bank：部分成功，招聘板共 1675 个职位，按地点筛选只读目标地区
-- Thomson Reuters：部分成功，第 11 页读取失败（HTTPError），已读 200 个
+- State Street Canada：部分成功，招聘板共 1169 个职位，按地点筛选只读目标地区
+- TD Bank：部分成功，招聘板共 1643 个职位，按地点筛选只读目标地区
 - Toronto Hydro：部分成功，报告共 14 个，去重后只有 10 个
 - Walmart Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 
-## 读取失败的雇主（18）
+## 读取失败的雇主（16）
 
 这是**数据读取问题**，不代表这些雇主没有职位：上次读到的职位保持在招状态，不会因此判为下架。需要人工到官网核查，或等下次扫描恢复。
 
-- BDO Canada：workday: HTTPError: 401 Client Error: Unauthorized for url: https://bdo.wd3.myworkdayjobs.com/wday/cxs/bdo/BDO/jobs
+- BDO Canada：workday: RuntimeError: 招聘网站正在维护（Workday 显示暂时不可用）——不是扫描程序的问题，也不代表没有职位，通常几小时到一天内恢复
 - CAPREIT (Canadian Apartment Properties REIT)：page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-capreit.icims.com/jobs/search
 - CBRE Canada：avature: 数据异常: Avature 页面里找不到职位链接
 - Corus Entertainment：page: SSLError: HTTPSConnectionPool(host='www.corus.ca', port=443): Max retries exceeded with url: /en/careers/ (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HAN
 - CPKC：page: SSLError: HTTPSConnectionPool(host='careers.cpkcr.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTI
-- Definity Financial：page: HTTPError: 403 Client Error: Forbidden for url: https://careers.definityfinancial.com/
 - FinDev Canada：page: HTTPError: 410 Client Error: Gone for url: https://jobs.workable.com/view/23H94p8G1Rrgw7VSvHTynA/hybrid-analyst%2C-investments-in-montreal-at-findev-canada
 - Genumark：successfactors: HTTPError: 404 Client Error: Not Found for url: https://genumark.espwebsites.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow=0
 - Holt Renfrew：page: HTTPError: 403 Client Error: Forbidden for url: https://www.holtrenfrew.com/en/careers
-- Honeywell Canada：page: HTTPError: 404 Client Error: Not Found for url: https://www.honeywell.com/content/honeywell/us/en
-- IGM Financial / Mackenzie Investments：page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers
+- Kimberly-Clark Canada：page: HTTPError: 403 Client Error: Forbidden for url: https://www.kimberly-clark.com/en-us/careers
 - Kinaxis：page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-kinaxis.icims.com/jobs/search
-- Maple Leaf Foods：page: ConnectTimeout: HTTPSConnectionPool(host='www.mapleleaffoods.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection
+- Maple Leaf Foods：page: HTTPError: 404 Client Error: Not Found for url: https://www.mapleleaffoods.com/careers/
 - McKinsey & Company：page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)
 - Mosaic North America：page: SSLError: HTTPSConnectionPool(host='mosaicjobs.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME]
 - Nestlé Canada：page: HTTPError: 403 Client Error: Forbidden for url: https://www.corporate.nestle.ca/en/jobs/students-graduates
@@ -174,7 +186,7 @@
 ## 外部招聘渠道
 
 - Work In Culture：成功，88 个职位，新记录相关 0 个，新加入名单的雇主 0 家
-- Job Bank：成功，323 个职位，新记录相关 0 个，新加入名单的雇主 0 家
+- Job Bank：成功，325 个职位，新记录相关 8 个，新加入名单的雇主 0 家
 - Adzuna：跳过，未设置接口密钥，跳过
 
 ## 还没有招聘入口的雇主（108）

@@ -1,8 +1,261 @@
 {
  "ats_detected_by_browser": [],
  "baseline": [],
- "candidates": [],
- "candidates_review": [],
+ "candidates": [
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、艺术/文化",
+   "fit_score": 73,
+   "found_as": "新发布",
+   "job_id": "50725705",
+   "last_seen": "2026-11-15",
+   "location": "Mississauga, ON",
+   "posted": "November 14, 2026",
+   "relevant": true,
+   "resume_family": "arts",
+   "resume_version": "Arts_Culture · Development",
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "business development officer",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50725705"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$20.00-$24.00 per hour",
+    "years_min": null
+   },
+   "details_note": "$20.00-$24.00 per hour",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "BLUFFER'S PARK MARINA LTD",
+   "employer_id": "channel-jobbank",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
+   "fit_score": 72,
+   "found_as": "新发布",
+   "job_id": "50731643",
+   "last_seen": "2026-11-15",
+   "location": "Scarborough, ON",
+   "posted": "November 12, 2026",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "channel:jobbank",
+   "tier": "—",
+   "title": "administrative assistant",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50731643"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$60/hour",
+    "years_min": null
+   },
+   "details_note": "$60/hour",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Mercor",
+   "employer_id": "mercor",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 71,
+   "found_as": "新发布",
+   "job_id": "50732351",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, ON",
+   "posted": "November 15, 2026",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "channel:jobbank",
+   "tier": "P2",
+   "title": "administration analyst",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50732351"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$95/hour",
+    "years_min": null
+   },
+   "details_note": "$95/hour",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Mercor",
+   "employer_id": "mercor",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 56,
+   "found_as": "新发布",
+   "job_id": "50732226",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, ON",
+   "posted": "November 15, 2026",
+   "relevant": true,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "channel:jobbank",
+   "tier": "P2",
+   "title": "accountant",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50732226"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、入门级",
+   "fit_score": 63,
+   "found_as": "新发布",
+   "job_id": "50730452",
+   "last_seen": "2026-11-15",
+   "location": "Mississauga, ON",
+   "posted": "November 13, 2026",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "human resources coordinator",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50730452"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华",
+   "fit_score": 48,
+   "found_as": "新发布",
+   "job_id": "50730523",
+   "last_seen": "2026-11-15",
+   "location": "Mississauga, ON",
+   "posted": "November 13, 2026",
+   "relevant": true,
+   "resume_family": "finance",
+   "resume_version": "Finance",
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "financial management officer",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50730523"
+  }
+ ],
+ "candidates_review": [
+  {
+   "active": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Mondelez Canada",
+   "employer_id": "mondelez-canada",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "地点待确认",
+   "fit_score": 17,
+   "found_as": "新发布",
+   "job_id": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181340&jobtitle=IL6S%20Specialist",
+   "last_seen": "2026-11-15",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "ba",
+   "resume_version": "Business_Analyst",
+   "source": "page",
+   "tier": "P1",
+   "title": "IL6S Specialist",
+   "url": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181340&jobtitle=IL6S%20Specialist"
+  }
+ ],
  "channels": [
   {
    "channel": "Work In Culture",
@@ -11,7 +264,7 @@
   },
   {
    "channel": "Job Bank",
-   "detail": "323 个职位，新记录相关 0 个，新加入名单的雇主 0 家",
+   "detail": "325 个职位，新记录相关 8 个，新加入名单的雇主 0 家",
    "status": "ok"
   },
   {
@@ -22,72 +275,6 @@
  ],
  "date": "2026-11-15",
  "deadlines_7d": [
-  {
-   "candidate_status": "relevant",
-   "days_left": 0,
-   "deadline": "2026-11-15",
-   "details_note": "截止 2026-11-15；$82,000 to $106,400",
-   "employer": "CIBC",
-   "location": "Toronto, ON",
-   "tier": "P0",
-   "title": "Associate, Oversight - Global Asset Management",
-   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate--Oversight---Global-Asset-Management_2622415"
-  },
-  {
-   "candidate_status": "review",
-   "days_left": 0,
-   "deadline": "2026-11-15",
-   "details_note": "截止 2026-11-15；仅限在校生/需返校",
-   "employer": "CIBC",
-   "location": "Toronto, ON",
-   "tier": "P0",
-   "title": "Associate Graduate Leadership Development Program - Summer  2027",
-   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate-Graduate-Leadership-Development-Program---Summer--2027_2622684-1"
-  },
-  {
-   "candidate_status": "review",
-   "days_left": 0,
-   "deadline": "2026-11-15",
-   "details_note": "截止 2026-11-15",
-   "employer": "CPP Investments",
-   "location": "Toronto",
-   "tier": "P0",
-   "title": "Intern Analyst, PhD – Systematic Strategies Group",
-   "url": "https://cppib.wd10.myworkdayjobs.com/en-US/cppinvestments/job/Toronto/Intern-Analyst--PhD---Systematic-Strategies-Group_JR00860"
-  },
-  {
-   "candidate_status": "relevant",
-   "days_left": 0,
-   "deadline": "2026-11-15",
-   "details_note": "截止 2026-11-15",
-   "employer": "Diageo Canada",
-   "location": "Toronto, Canada",
-   "tier": "P2",
-   "title": "Channel Planning Associate",
-   "url": "https://diageo.wd3.myworkdayjobs.com/en-US/Diageo_Careers/job/Toronto-Canada/Channel-Planning-Associate_JR1130905"
-  },
-  {
-   "candidate_status": "relevant",
-   "days_left": 0,
-   "deadline": "2026-11-15",
-   "details_note": "截止 2026-11-15；$57,750.00 - $96,250.00",
-   "employer": "Diageo Canada",
-   "location": "Toronto, Canada",
-   "tier": "P2",
-   "title": "Commercial Performance Analyst",
-   "url": "https://diageo.wd3.myworkdayjobs.com/en-US/Diageo_Careers/job/Toronto-Canada/Commercial-Analyst_JR1129809"
-  },
-  {
-   "candidate_status": "review",
-   "days_left": 0,
-   "deadline": "2026-11-15",
-   "details_note": "截止 2026-11-15",
-   "employer": "Metrolinx",
-   "location": "Canada",
-   "tier": "P1",
-   "title": "Rail Operations Specialist",
-   "url": "https://ehtc.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/116643"
-  },
   {
    "candidate_status": "review",
    "days_left": 1,
@@ -991,18 +1178,131 @@
    "url": "https://jobs.utoronto.ca/job/Toronto-Governance-Coordinator-ON/607855417/"
   }
  ],
- "details_checked": 0,
- "employers_complete": 159,
- "employers_failed": 18,
- "employers_ok": 389,
+ "details_checked": 11,
+ "employers_complete": 167,
+ "employers_failed": 16,
+ "employers_ok": 391,
  "employers_skipped": 108,
  "employers_total": 515,
- "excluded_by_details": [],
+ "excluded_by_details": [
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 3
+   },
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "job_id": "50730398",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, ON",
+   "posted": "November 13, 2026",
+   "relevant": false,
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "business management analyst",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50730398"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 3
+   },
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "job_id": "50730414",
+   "last_seen": "2026-11-15",
+   "location": "Mississauga, ON",
+   "posted": "November 13, 2026",
+   "relevant": false,
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "analyst, business management",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50730414"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 7
+   },
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 7 年以上经验",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "job_id": "50725564",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, ON",
+   "posted": "November 14, 2026",
+   "relevant": false,
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "business consultant",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50725564"
+  },
+  {
+   "active": true,
+   "candidate_status": "irrelevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 3
+   },
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
+   "excluded_by_details": true,
+   "filter_reason": "职位页要求 3 年以上经验",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "job_id": "https://www.roberthalf.com/ca/en/job/cambridge-on/inventory-specialist/001268026-caen",
+   "last_seen": "2026-11-15",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "source": "page",
+   "tier": "P2",
+   "title": "Inventory Specialist",
+   "url": "https://www.roberthalf.com/ca/en/job/cambridge-on/inventory-specialist/001268026-caen"
+  }
+ ],
  "failed": [
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "workday: HTTPError: 401 Client Error: Unauthorized for url: https://bdo.wd3.myworkdayjobs.com/wday/cxs/bdo/BDO/jobs",
+   "detail": "workday: RuntimeError: 招聘网站正在维护（Workday 显示暂时不可用）——不是扫描程序的问题，也不代表没有职位，通常几小时到一天内恢复",
    "id": "bdo-canada",
    "jobs_found": 0,
    "name": "BDO Canada",
@@ -1062,18 +1362,6 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://careers.definityfinancial.com/",
-   "id": "definity-financial",
-   "jobs_found": 0,
-   "name": "Definity Financial",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
    "detail": "page: HTTPError: 410 Client Error: Gone for url: https://jobs.workable.com/view/23H94p8G1Rrgw7VSvHTynA/hybrid-analyst%2C-investments-in-montreal-at-findev-canada",
    "id": "findev-canada",
    "jobs_found": 0,
@@ -1110,22 +1398,10 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "page: HTTPError: 404 Client Error: Not Found for url: https://www.honeywell.com/content/honeywell/us/en",
-   "id": "honeywell-canada",
+   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.kimberly-clark.com/en-us/careers",
+   "id": "kimberly-clark-canada",
    "jobs_found": 0,
-   "name": "Honeywell Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
-   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers",
-   "id": "igm-financial-mackenzie-investments",
-   "jobs_found": 0,
-   "name": "IGM Financial / Mackenzie Investments",
+   "name": "Kimberly-Clark Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1146,7 +1422,7 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "page: ConnectTimeout: HTTPSConnectionPool(host='www.mapleleaffoods.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection",
+   "detail": "page: HTTPError: 404 Client Error: Not Found for url: https://www.mapleleaffoods.com/careers/",
    "id": "maple-leaf-foods",
    "jobs_found": 0,
    "name": "Maple Leaf Foods",
@@ -1245,21 +1521,21 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 590 个职位",
+   "detail": "successfactors: 613 个职位",
    "id": "bombardier",
-   "jobs_found": 590,
+   "jobs_found": 613,
    "name": "Bombardier",
-   "note": "报告共 880 个，实际只读到 590 个",
-   "relevant_now": 2,
+   "note": "报告共 880 个，实际只读到 613 个",
+   "relevant_now": 1,
    "scan_state": "partial",
    "status": "ok"
   },
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 1172 个职位",
+   "detail": "successfactors: 1164 个职位",
    "id": "canada-post",
-   "jobs_found": 1172,
+   "jobs_found": 1164,
    "name": "Canada Post",
    "note": "只读到最新职位的 RSS（不完整）",
    "relevant_now": 0,
@@ -1293,9 +1569,9 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "workday: 197 个职位",
+   "detail": "workday: 196 个职位",
    "id": "citi-canada",
-   "jobs_found": 197,
+   "jobs_found": 196,
    "name": "Citi Canada",
    "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
    "relevant_now": 2,
@@ -1317,11 +1593,11 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 69 个职位",
+   "detail": "successfactors: 73 个职位",
    "id": "cn-rail",
-   "jobs_found": 69,
+   "jobs_found": 73,
    "name": "CN Rail",
-   "note": "报告共 91 个，实际只读到 69 个",
+   "note": "报告共 89 个，实际只读到 73 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -1329,11 +1605,11 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 228 个职位",
+   "detail": "successfactors: 220 个职位",
    "id": "colgate-palmolive-canada",
-   "jobs_found": 228,
+   "jobs_found": 220,
    "name": "Colgate-Palmolive Canada",
-   "note": "报告共 316 个，实际只读到 228 个",
+   "note": "报告共 316 个，实际只读到 220 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -1353,24 +1629,12 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 310 个职位",
+   "detail": "successfactors: 301 个职位",
    "id": "deloitte-canada",
-   "jobs_found": 310,
+   "jobs_found": 301,
    "name": "Deloitte Canada",
-   "note": "报告共 416 个，实际只读到 310 个",
-   "relevant_now": 6,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
-   "detail": "workday: 40 个职位",
-   "id": "giant-tiger",
-   "jobs_found": 40,
-   "name": "Giant Tiger",
-   "note": "第 3 页读取失败（ReadTimeout），已读 40 个",
-   "relevant_now": 0,
+   "note": "报告共 416 个，实际只读到 301 个",
+   "relevant_now": 7,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -1401,48 +1665,12 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "workday: 400 个职位",
-   "id": "manulife",
-   "jobs_found": 400,
-   "name": "Manulife",
-   "note": "第 21 页读取失败（ReadTimeout），已读 400 个",
-   "relevant_now": 3,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
    "detail": "workday: 51 个职位",
    "id": "mercer-canada",
    "jobs_found": 51,
    "name": "Mercer Canada",
-   "note": "招聘板共 1960 个职位，按地点筛选只读目标地区",
+   "note": "招聘板共 1958 个职位，按地点筛选只读目标地区",
    "relevant_now": 1,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
-   "detail": "workday: 100 个职位",
-   "id": "morningstar-dbrs",
-   "jobs_found": 100,
-   "name": "Morningstar DBRS",
-   "note": "第 6 页读取失败（HTTPError），已读 100 个",
-   "relevant_now": 0,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
-   "detail": "workday: 120 个职位",
-   "id": "northern-trust-canada",
-   "jobs_found": 120,
-   "name": "Northern Trust Canada",
-   "note": "第 7 页读取失败（HTTPError），已读 120 个",
-   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -1461,48 +1689,12 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "successfactors: 13 个职位",
+   "detail": "successfactors: 12 个职位",
    "id": "ontario-power-generation",
-   "jobs_found": 13,
+   "jobs_found": 12,
    "name": "Ontario Power Generation",
    "note": "只读到最新职位的 RSS（不完整）",
    "relevant_now": 0,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
-   "detail": "workday: 160 个职位",
-   "id": "procter-gamble-canada",
-   "jobs_found": 160,
-   "name": "Procter & Gamble Canada",
-   "note": "第 9 页读取失败（HTTPError），已读 160 个",
-   "relevant_now": 1,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
-   "detail": "workday: 160 个职位",
-   "id": "rsm-canada",
-   "jobs_found": 160,
-   "name": "RSM Canada",
-   "note": "第 9 页读取失败（HTTPError），已读 160 个",
-   "relevant_now": 0,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
-   "detail": "workday: 40 个职位",
-   "id": "s-p-global",
-   "jobs_found": 40,
-   "name": "S&P Global (Ratings)",
-   "note": "第 3 页读取失败（HTTPError），已读 40 个",
-   "relevant_now": 1,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -1513,7 +1705,7 @@
    "id": "state-street-canada",
    "jobs_found": 116,
    "name": "State Street Canada",
-   "note": "招聘板共 1171 个职位，按地点筛选只读目标地区",
+   "note": "招聘板共 1169 个职位，按地点筛选只读目标地区",
    "relevant_now": 2,
    "scan_state": "partial",
    "status": "ok"
@@ -1521,24 +1713,12 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "workday: 474 个职位",
+   "detail": "workday: 466 个职位",
    "id": "td-bank",
-   "jobs_found": 474,
+   "jobs_found": 466,
    "name": "TD Bank",
-   "note": "招聘板共 1675 个职位，按地点筛选只读目标地区",
+   "note": "招聘板共 1643 个职位，按地点筛选只读目标地区",
    "relevant_now": 26,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-15",
-   "complete": "no",
-   "detail": "workday: 200 个职位",
-   "id": "thomson-reuters",
-   "jobs_found": 200,
-   "name": "Thomson Reuters",
-   "note": "第 11 页读取失败（HTTPError），已读 200 个",
-   "relevant_now": 1,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -1557,9 +1737,9 @@
   {
    "checked": "2026-11-15",
    "complete": "no",
-   "detail": "workday: 538 个职位",
+   "detail": "workday: 536 个职位",
    "id": "walmart-canada",
-   "jobs_found": 538,
+   "jobs_found": 536,
    "name": "Walmart Canada",
    "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
    "relevant_now": 2,
@@ -1568,22 +1748,763 @@
   }
  ],
  "new_employers": [],
- "new_relevant": [],
- "new_review": [],
+ "new_relevant": [
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、艺术/文化",
+   "fit_score": 73,
+   "job_id": "50725705",
+   "last_seen": "2026-11-15",
+   "location": "Mississauga, ON",
+   "posted": "November 14, 2026",
+   "relevant": true,
+   "resume_family": "arts",
+   "resume_version": "Arts_Culture · Development",
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "business development officer",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50725705"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、入门级",
+   "fit_score": 63,
+   "job_id": "50730452",
+   "last_seen": "2026-11-15",
+   "location": "Mississauga, ON",
+   "posted": "November 13, 2026",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "human resources coordinator",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50730452"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华",
+   "fit_score": 48,
+   "job_id": "50730523",
+   "last_seen": "2026-11-15",
+   "location": "Mississauga, ON",
+   "posted": "November 13, 2026",
+   "relevant": true,
+   "resume_family": "finance",
+   "resume_version": "Finance",
+   "source": "channel:jobbank",
+   "tier": "P0",
+   "title": "financial management officer",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50730523"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$95/hour",
+    "years_min": null
+   },
+   "details_note": "$95/hour",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Mercor",
+   "employer_id": "mercor",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 56,
+   "job_id": "50732226",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, ON",
+   "posted": "November 15, 2026",
+   "relevant": true,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "channel:jobbank",
+   "tier": "P2",
+   "title": "accountant",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50732226"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$60/hour",
+    "years_min": null
+   },
+   "details_note": "$60/hour",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Mercor",
+   "employer_id": "mercor",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 71,
+   "job_id": "50732351",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, ON",
+   "posted": "November 15, 2026",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "channel:jobbank",
+   "tier": "P2",
+   "title": "administration analyst",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50732351"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$20.00-$24.00 per hour",
+    "years_min": null
+   },
+   "details_note": "$20.00-$24.00 per hour",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "BLUFFER'S PARK MARINA LTD",
+   "employer_id": "channel-jobbank",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
+   "fit_score": 72,
+   "job_id": "50731643",
+   "last_seen": "2026-11-15",
+   "location": "Scarborough, ON",
+   "posted": "November 12, 2026",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "channel:jobbank",
+   "tier": "—",
+   "title": "administrative assistant",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50731643"
+  }
+ ],
+ "new_review": [
+  {
+   "active": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-15",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Mondelez Canada",
+   "employer_id": "mondelez-canada",
+   "filter_reason": "招聘页没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-15",
+   "first_seen_run": "20261115T174854Z-1fb16f",
+   "fit_reasons": "地点待确认",
+   "fit_score": 17,
+   "job_id": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181340&jobtitle=IL6S%20Specialist",
+   "last_seen": "2026-11-15",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "ba",
+   "resume_version": "Business_Analyst",
+   "source": "page",
+   "tier": "P1",
+   "title": "IL6S Specialist",
+   "url": "https://www.mondelezinternational.com/careers/jobs/job?jobid=R-181340&jobtitle=IL6S%20Specialist"
+  }
+ ],
  "newly_broken": [],
- "removed_relevant": [],
+ "removed_relevant": [
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": true,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "employer": "BMO",
+   "employer_id": "bmo",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "R260031068",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, ON M8X 1C4, Canada",
+   "posted": "2026-11-06",
+   "relevant": true,
+   "source": "phenom",
+   "tier": "P0",
+   "title": "BMO Personal & Business Banking Development Program (New Graduate) - 2 Year Program",
+   "url": "https://jobs.bmo.com/ca/en/job/R260031068/BMO-Personal-Business-Banking-Development-Program-New-Graduate-2-Year-Program"
+  },
+  {
+   "active": false,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted 4 Days Ago",
+       "Posted 5 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 5 Days Ago",
+       "Posted 6 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 6 Days Ago",
+       "Posted 7 Days Ago"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T185853Z-1f179d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 7 Days Ago",
+       "Posted 8 Days Ago"
+      ]
+     },
+     "date": "2026-11-13",
+     "run": "20261113T183457Z-b74ae7"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 8 Days Ago",
+       "Posted 9 Days Ago"
+      ]
+     },
+     "date": "2026-11-14",
+     "run": "20261114T171223Z-096dfd"
+    }
+   ],
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "2026-11-15",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$82,000 to $106,400",
+    "years_min": null
+   },
+   "employer": "CIBC",
+   "employer_id": "cibc",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Toronto-ON/Associate--Oversight---Global-Asset-Management_2622415",
+   "last_modified_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "legacy_job_id": "2622415",
+   "location": "Toronto, ON",
+   "posted": "Posted 9 Days Ago",
+   "relevant": true,
+   "source": "workday",
+   "tier": "P0",
+   "title": "Associate, Oversight - Global Asset Management",
+   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/search/job/Toronto-ON/Associate--Oversight---Global-Asset-Management_2622415"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "16 Oct 2026",
+       "14 Nov 2026"
+      ]
+     },
+     "date": "2026-11-14",
+     "run": "20261114T032302Z-b9143d"
+    }
+   ],
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-13",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$59,153.64 - $69,209.14",
+    "years_min": null
+   },
+   "employer": "City of Ottawa",
+   "employer_id": "city-of-ottawa",
+   "filter_reason": "职能相关；地点未注明",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "1291665647",
+   "last_modified_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "location": "",
+   "posted": "14 Nov 2026",
+   "relevant": true,
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Councillor's Assistant I",
+   "url": "https://jobs-emplois.ottawa.ca/city-jobs/job/Ottawa%2C-ON-Councillor&amp;apos;s-Assistant-I-ON-Ottawa%2C-ON/1291665647/"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "16 Oct 2026",
+       "14 Nov 2026"
+      ]
+     },
+     "date": "2026-11-14",
+     "run": "20261114T032302Z-b9143d"
+    }
+   ],
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-14",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$64,175.02 - $75,085.92",
+    "years_min": null
+   },
+   "employer": "City of Ottawa",
+   "employer_id": "city-of-ottawa",
+   "filter_reason": "职能相关；地点未注明",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "1291665947",
+   "last_modified_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "location": "",
+   "posted": "14 Nov 2026",
+   "relevant": true,
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Councillor's Assistant II",
+   "url": "https://jobs-emplois.ottawa.ca/city-jobs/job/Ottawa%2C-ON-Councillor&amp;apos;s-Assistant-II-ON-Ottawa%2C-ON/1291665947/"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted Yesterday",
+       "Posted 2 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 2 Days Ago",
+       "Posted 3 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 3 Days Ago",
+       "Posted 4 Days Ago"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T185853Z-1f179d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 4 Days Ago",
+       "Posted 5 Days Ago"
+      ]
+     },
+     "date": "2026-11-13",
+     "run": "20261113T183457Z-b74ae7"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 5 Days Ago",
+       "Posted 6 Days Ago"
+      ]
+     },
+     "date": "2026-11-14",
+     "run": "20261114T171223Z-096dfd"
+    }
+   ],
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "2026-11-15",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "employer": "Diageo Canada",
+   "employer_id": "diageo-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "/job/Toronto-Canada/Channel-Planning-Associate_JR1130905",
+   "last_modified_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, Canada",
+   "posted": "Posted 6 Days Ago",
+   "relevant": true,
+   "source": "workday",
+   "tier": "P2",
+   "title": "Channel Planning Associate",
+   "url": "https://diageo.wd3.myworkdayjobs.com/en-US/Diageo_Careers/job/Toronto-Canada/Channel-Planning-Associate_JR1130905"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "posted": [
+       "Posted Yesterday",
+       "Posted 2 Days Ago"
+      ]
+     },
+     "date": "2026-11-10",
+     "run": "20261110T184325Z-f0f618"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 2 Days Ago",
+       "Posted 3 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 3 Days Ago",
+       "Posted 4 Days Ago"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T185853Z-1f179d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 4 Days Ago",
+       "Posted 5 Days Ago"
+      ]
+     },
+     "date": "2026-11-13",
+     "run": "20261113T183457Z-b74ae7"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 5 Days Ago",
+       "Posted 6 Days Ago"
+      ]
+     },
+     "date": "2026-11-14",
+     "run": "20261114T171223Z-096dfd"
+    }
+   ],
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-11",
+    "deadline": "2026-11-15",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$57,750.00 - $96,250.00",
+    "years_min": null
+   },
+   "employer": "Diageo Canada",
+   "employer_id": "diageo-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "/job/Toronto-Canada/Commercial-Analyst_JR1129809",
+   "last_modified_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
+   "location": "Toronto, Canada",
+   "posted": "Posted 6 Days Ago",
+   "relevant": true,
+   "source": "workday",
+   "tier": "P2",
+   "title": "Commercial Performance Analyst",
+   "url": "https://diageo.wd3.myworkdayjobs.com/en-US/Diageo_Careers/job/Toronto-Canada/Commercial-Analyst_JR1129809"
+  },
+  {
+   "active": false,
+   "candidate_status": "relevant",
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-14",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$21.00 - $24.16/hour",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年；$21.00 - $24.16/hour",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Lululemon",
+   "employer_id": "lululemon",
+   "filter_reason": "职能相关；地点未注明",
+   "first_seen": "2026-11-14",
+   "first_seen_run": "20261114T032302Z-b9143d",
+   "fit_reasons": "地点待确认",
+   "fit_score": 36,
+   "job_id": "65845",
+   "last_seen": "2026-11-15",
+   "location": "",
+   "posted": "",
+   "relevant": true,
+   "resume_family": "commercial",
+   "resume_version": "Commercial_Product_Ops",
+   "source": "avature",
+   "tier": "P2",
+   "title": "Visual Merchandising Specialist | Towson Town Center",
+   "url": "https://careers.lululemon.com/en_US/careers/JobDetail/Visual-Merchandising-Specialist-Towson-Town-Center/65845"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": true,
+    "ok": true,
+    "salary": "",
+    "years_min": 1
+   },
+   "employer": "RBC",
+   "employer_id": "rbc",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "R-0000191717",
+   "last_seen": "2026-11-15",
+   "location": "TORONTO, Ontario, Canada",
+   "posted": "2026-10-30",
+   "relevant": true,
+   "source": "phenom",
+   "tier": "P0",
+   "title": "Analyst, Trade Support",
+   "url": "https://jobs.rbc.com/ca/en/job/R-0000191717/Analyst-Trade-Support"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-12",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$22.60/hr",
+    "years_min": null
+   },
+   "employer": "Sephora Canada",
+   "employer_id": "sephora-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "1366137955",
+   "last_seen": "2026-11-15",
+   "location": "North York, ON, CA, M4R 1K8",
+   "posted": "Nov 9, 2026",
+   "relevant": true,
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Seasonal Associate",
+   "url": "https://jobs.sephora.com/Canada/job/North-York-Seasonal-Associate-ON-M4R-1K8/1366137955/"
+  },
+  {
+   "active": false,
+   "candidate_status": "relevant",
+   "closed_run": "20261115T174854Z-1fb16f",
+   "closed_seen": "2026-11-15",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$22.60/hr",
+    "years_min": null
+   },
+   "details_note": "$22.60/hr",
+   "employer": "Sephora Canada",
+   "employer_id": "sephora-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-10",
+   "first_seen_run": "20261110T184325Z-f0f618",
+   "fit_reasons": "多伦多/渥太华、入门级",
+   "fit_score": 61,
+   "job_id": "1376450855",
+   "last_seen": "2026-11-15",
+   "location": "Ottawa, ON, CA, K1K 3B8",
+   "posted": "Nov 10, 2026",
+   "relevant": true,
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Seasonal Associate",
+   "url": "https://jobs.sephora.com/Canada/job/Ottawa-Seasonal-Associate-ON-K1K-3B8/1376450855/"
+  }
+ ],
  "reopened_relevant": [],
- "scan_id": "20261115T024706Z-461e90",
+ "scan_id": "20261115T174854Z-1fb16f",
  "scan_states": {
-  "complete": 159,
-  "failed": 17,
+  "complete": 167,
+  "failed": 15,
   "invalid": 1,
   "not_configured": 108,
-  "partial": 28,
-  "unverified": 66,
-  "zero_jobs": 136
+  "partial": 20,
+  "unverified": 69,
+  "zero_jobs": 135
  },
- "scanned_at": "2026-11-15T02:47:06+00:00",
+ "scanned_at": "2026-11-15T17:48:54+00:00",
  "unreadable": [
   {
    "id": "mckinsey-company",
@@ -1600,12 +2521,6 @@
   {
    "id": "cpkc",
    "name": "CPKC",
-   "scan_state": "failed",
-   "tier": "P1"
-  },
-  {
-   "id": "igm-financial-mackenzie-investments",
-   "name": "IGM Financial / Mackenzie Investments",
    "scan_state": "failed",
    "tier": "P1"
   },
@@ -1796,12 +2711,6 @@
    "tier": "P2"
   },
   {
-   "id": "definity-financial",
-   "name": "Definity Financial",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "denison-gallery",
    "name": "Denison Gallery Ltd.",
    "scan_state": "not_configured",
@@ -1904,12 +2813,6 @@
    "tier": "P2"
   },
   {
-   "id": "honeywell-canada",
-   "name": "Honeywell Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "imgadgets",
    "name": "IMGadgets",
    "scan_state": "not_configured",
@@ -1931,6 +2834,12 @@
    "id": "kann-boutique",
    "name": "KANN Boutique",
    "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "kimberly-clark-canada",
+   "name": "Kimberly-Clark Canada",
+   "scan_state": "failed",
    "tier": "P2"
   },
   {
