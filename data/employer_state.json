@@ -685,9 +685,9 @@
   "kind": "workday"
  },
  "fundata-canada": {
-  "arg": "https://www.fundata.com/",
+  "arg": "vincentinc",
   "first_ok": "2026-11-08",
-  "kind": "page"
+  "kind": "bamboohr"
  },
  "gardiner-museum": {
   "arg": "https://gardinermuseum.on.ca/the-museum/jobs-volunteering/jobs",
@@ -792,6 +792,11 @@
  "heffel-fine-art-auction-house": {
   "arg": "https://www.heffel.com/Links/Careers_E.aspx",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "hercules-moving": {
+  "arg": "https://www.herculesmoving.ca/careers",
+  "first_ok": "2026-11-14",
   "kind": "page"
  },
  "home-depot-canada": {
@@ -910,9 +915,9 @@
   "kind": "page"
  },
  "jarislowsky-fraser": {
-  "arg": "https://www.jflglobal.com/en/careers",
+  "arg": "https://jobs.scotiabank.com",
   "first_ok": "2026-11-10",
-  "kind": "page"
+  "kind": "successfactors"
  },
  "jll-canada": {
   "arg": "jll/wd1/jllcareers",
@@ -1104,6 +1109,16 @@
   "first_ok": "2026-11-08",
   "kind": "workday"
  },
+ "mercor": {
+  "arg": "mercor",
+  "first_ok": "2026-11-14",
+  "kind": "ashby"
+ },
+ "metalogics": {
+  "arg": "https://metalogics.ca/employment/",
+  "first_ok": "2026-11-14",
+  "kind": "page"
+ },
  "metro-inc": {
   "arg": "https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=E1EA9276FE3A682DD15CD3D2402B9E5E",
   "first_ok": "2026-11-09",
@@ -1153,6 +1168,11 @@
   "arg": "moneris/wd3/Moneris",
   "first_ok": "2026-11-08",
   "kind": "workday"
+ },
+ "moorelands-kids": {
+  "arg": "https://www.moorelands.ca/jobs/",
+  "first_ok": "2026-11-14",
+  "kind": "page"
  },
  "morningstar-dbrs": {
   "arg": "morningstar/wd5/morningstar",
@@ -1359,6 +1379,11 @@
   "first_ok": "2026-11-09",
   "kind": "page"
  },
+ "paradigm-sample": {
+  "arg": "https://corporate.paradigmsample.com/careers/",
+  "first_ok": "2026-11-14",
+  "kind": "page"
+ },
  "park-lawn-corporation": {
   "arg": "recruiting.ultipro.com/SIG1005SIGM/25f0a774-289e-4deb-a0c0-2982887ab0ba",
   "first_ok": "2026-11-08",
@@ -1389,6 +1414,11 @@
   "first_ok": "2026-11-10",
   "kind": "bamboohr"
  },
+ "piper-arms": {
+  "arg": "https://piperarms.com/job-openings/",
+  "first_ok": "2026-11-14",
+  "kind": "page"
+ },
  "pointclickcare": {
   "arg": "pointclickcare",
   "first_ok": "2026-11-08",
@@ -1403,6 +1433,11 @@
   "arg": "https://jobs.canadalife.com",
   "first_ok": "2026-11-10",
   "kind": "successfactors"
+ },
+ "prep-doctors": {
+  "arg": "https://ca.prepdoctors.com/careers",
+  "first_ok": "2026-11-14",
+  "kind": "page"
  },
  "procter-gamble-canada": {
   "arg": "pg/wd5/1000",
@@ -1554,6 +1589,11 @@
   "first_ok": "2026-11-09",
   "kind": "page"
  },
+ "salesgamma": {
+  "arg": "https://salesgamma.com/career/",
+  "first_ok": "2026-11-14",
+  "kind": "page"
+ },
  "sap-canada": {
   "arg": "dremio",
   "first_ok": "2026-11-08",
@@ -1632,6 +1672,11 @@
  "smartcentres": {
   "arg": "https://smartcentres.com/careers",
   "first_ok": "2026-11-08",
+  "kind": "page"
+ },
+ "snappay": {
+  "arg": "https://www.snappay.ca/about/careers/",
+  "first_ok": "2026-11-14",
   "kind": "page"
  },
  "sobeys": {
@@ -1913,6 +1958,11 @@
   "arg": "util-assist",
   "first_ok": "2026-11-08",
   "kind": "lever"
+ },
+ "vale-base-metals": {
+  "arg": "https://valebasemetals.com/careers/",
+  "first_ok": "2026-11-14",
+  "kind": "page"
  },
  "visa-canada": {
   "arg": "visa/wd5/Visa_Early_Careers",

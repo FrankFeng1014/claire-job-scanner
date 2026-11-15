@@ -159,13 +159,13 @@ ford-motor-company-of-canada,Ford Motor Company of Canada,P2,汽车,oracle,efds.
 foresters-financial,Foresters Financial,P2,保险,workday,foresters/wd3/ForestersFinancialCareers,https://www.foresters.com/en/careers,original,
 fsra,FSRA,P2,公共部门/金融监管,workday,fsra/wd3/FSRA_Careers,https://www.fsrao.ca/about-fsra/careers,original,
 fti-consulting-canada,FTI Consulting Canada,P2,咨询,workday,fticonsulting/wd108/FTIConsultingCareers,https://www.fticonsulting.com/careers,original,
-fundata-canada,Fundata Canada,P2,金融数据/SME,,,https://www.fundata.com/,original,
+fundata-canada,Fundata Canada,P2,金融数据/SME,bamboohr,vincentinc,https://www.fundata.com/,original,
 galerie-st-laurent-hill,Galerie St. Laurent + Hill,P2,商业画廊（Ottawa）,,,,original,
 gallery-44,Gallery 44 Centre for Contemporary Photography,P2,艺术家自营中心（Toronto）,,,,original,
 gardiner-museum,Gardiner Museum,P2,博物馆,,,https://gardinermuseum.on.ca/the-museum/jobs-volunteering/jobs,original,
 general-mills-canada,General Mills Canada,P2,消费品,workday,genmills/wd1/GMI_External_Careers,https://careers.generalmills.com,original,
 general-motors-canada,General Motors Canada,P1,汽车/制造,,,https://search-careers.gm.com/en/locations/canada/,original,
-genumark,Genumark,P2,推广礼品分销（B Corp）（（总部待核实，推测Toronto））,,,https://www.genumark.com/careers/,original,
+genumark,Genumark,P2,推广礼品分销（B Corp）（（总部待核实，推测Toronto））,successfactors,https://genumark.espwebsites.com,https://www.genumark.com/careers/,original,
 gesco,Gesco,P2,地板材料全国分销（Brampton）,,,https://www.gesco.ca/en-ca/careers,original,
 gfl-environmental,GFL Environmental,P2,环境服务,,,https://careers.gflenv.com/jobs,original,
 giant-tiger,Giant Tiger,P2,零售（Ottawa）,workday,gianttiger/wd3/gianttiger,https://www.gianttiger.com/pages/careers,original,
@@ -210,7 +210,7 @@ interac,Interac,P1,金融科技,workday,interac/wd3/Interac,https://interac.wd3.
 intuit-canada,Intuit Canada,P1,科技,radancy,https://jobs.intuit.com,https://jobs.intuit.com,original,
 inuit-art-foundation,Inuit Art Foundation,P2,艺术服务组织（Toronto）,,,https://www.inuitartfoundation.org/work-with-us,original,
 invest-ontario,Invest Ontario,P2,公共部门,,,https://www.investontario.ca/careers,original,
-jarislowsky-fraser,Jarislowsky Fraser,P2,资产管理,,,https://www.jflglobal.com/en/careers,original,
+jarislowsky-fraser,Jarislowsky Fraser,P2,资产管理,successfactors,https://jobs.scotiabank.com,https://www.jflglobal.com/en/careers,original,
 jll-canada,JLL Canada,P2,房地产,workday,jll/wd1/jllcareers,https://www.us.jll.com/en/careers,original,
 johnvince-foods,JohnVince Foods,P2,食品加工/分销（Toronto）,,,https://johnvince.com/work-at-johnvince/,original,
 kearney,Kearney,P1,咨询,,,https://kearney.recsolu.com/job_boards/1,original,
@@ -492,25 +492,25 @@ derose-barristers-solicitors-professional,DeRose Barristers & Solicitors Profess
 properties-management,The Properties Group Management Ltd.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-10
 gifted-people-services,Gifted People Services,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-10
 cammtac,Cammtac,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-10
-vale-base-metals,Vale Base Metals,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-10
-mercor,Mercor,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-10
+vale-base-metals,Vale Base Metals,P2,自动发现（Job Bank）,,,https://valebasemetals.com/careers/,auto:jobbank,2026-11-10
+mercor,Mercor,P2,自动发现（Job Bank）,ashby,mercor,https://www.mercor.com/careers/,auto:jobbank,2026-11-10
 recrute-action,Recrute Action,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-10
-paradigm-sample,Paradigm Sample,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-10
+paradigm-sample,Paradigm Sample,P2,自动发现（Job Bank）,,,https://corporate.paradigmsample.com/careers/,auto:jobbank,2026-11-10
 national-research-council,National Research Council Canada,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-10
-prep-doctors,Prep Doctors,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-11
+prep-doctors,Prep Doctors,P2,自动发现（Job Bank）,,,https://ca.prepdoctors.com/careers,auto:jobbank,2026-11-11
 goodman-associates,Goodman & Associates LLP,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-11
 chatters-partnerships,Chatters Limited Partnerships,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-11
-snappay,Snappay Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-11
-salesgamma,SalesGamma,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-11
-hercules-moving,Hercules Moving Company,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-12
+snappay,Snappay Inc.,P2,自动发现（Job Bank）,,,https://www.snappay.ca/about/careers/,auto:jobbank,2026-11-11
+salesgamma,SalesGamma,P2,自动发现（Job Bank）,,,https://salesgamma.com/career/,auto:jobbank,2026-11-11
+hercules-moving,Hercules Moving Company,P2,自动发现（Job Bank）,,,https://www.herculesmoving.ca/careers,auto:jobbank,2026-11-12
 walia-companies,Walia Group of Companies,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-12
 holmes-brakel,Holmes & Brakel Limited,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-12
 successful-investor,The Successful Investor,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-12
 comfort-living,Comfort of Living,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-12
-piper-arms,PIPER ARMS,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-12
+piper-arms,PIPER ARMS,P2,自动发现（Job Bank）,,,https://piperarms.com/job-openings/,auto:jobbank,2026-11-12
 mccain-foods,McCain Foods,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-12
-moorelands-kids,Moorelands Kids,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-13
-metalogics,Metalogics,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-13
+moorelands-kids,Moorelands Kids,P2,自动发现（Job Bank）,,,https://www.moorelands.ca/jobs/,auto:jobbank,2026-11-13
+metalogics,Metalogics,P2,自动发现（Job Bank）,,,https://metalogics.ca/employment/,auto:jobbank,2026-11-13
 saeed-cpas-professional,Saeed & Company CPAS PROFESSIONAL CORPORATION,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-14
 symtech-innovations,SYMTECH INNOVATIONS,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-14
 sander-geophysics,Sander Geophysics Ltd,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-14
