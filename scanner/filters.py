@@ -85,6 +85,9 @@ HARD_EXCLUDE = [
     (r"settlement (?:worker|counsell?or)|newcomer settlement", "移民安置服务岗"),
     (r"quality assurance|quality control|\bqa\b|\bqc\b", "质量检验岗"),
     (r"early childhood|childcare|child care|\bece\b|dental|veterinar|optometr|massage", "幼教/牙科/医疗诊所岗"),
+    (r"patholog|laborator|\blab (?:tech|assistant)|phlebotom|histolog|steriliz|pharmacy (?:assistant|tech)|"
+     r"medical (?:laboratory|device reprocess)|radiolog|sonograph|kinesiolog|physiotherap|rehab(?:ilitation)? assistant",
+     "医疗专业技术岗"),
     (r"\bco-?op\b|summer student|^students?\s*[,:&–-]|student work experience|student (intern|position|job)",
      "仅限在校 Co-op/学生"),
 ]
@@ -248,9 +251,12 @@ def classify(job: dict):
                  r"leveraged finance|equity research|global banking)|(?:investment banking|m&a|capital markets|"
                  r"corporate banking|leveraged finance)\s+associate", t, re.I):
         review_reasons.append("投行/资本市场 Associate 级别，通常要求 MBA 或 2–3 年分析师经验")
-    if not loc and job.get("source") == "page":
-        # 从雇主官网招聘页直接抓到、又没写地点的：跨国公司官网常列全球职位，先放“需要核实”
-        review_reasons.append("招聘页没写地点，需确认是否在加拿大/目标城市")
+    src = str(job.get("source") or "")
+    local_emp = TARGET_IN_TITLE.search(job.get("employer") or "")   # 如 City of Mississauga、Toronto Hydro
+    if not loc and not url_loc and src and not src.startswith("channel:") and not local_emp:
+        # 没写地点的（招聘页、或像 Lululemon 那样只写门店名的招聘系统）：跨国公司常列全球职位，先放“需要核实”
+        # Job Bank 等外部渠道本身只列加拿大职位，不受影响
+        review_reasons.append("没写地点，需确认是否在加拿大/目标城市")
     if review_reasons:
         return "review", "；".join(review_reasons)
     if not loc:
@@ -290,6 +296,9 @@ _FIT_EXPANDED = re.compile(
     r"client delivery|proposal|\brfp\b|\bpmo\b|project controls|project analyst|grants?\b|development assistant|"
     r"sponsorship|partnerships|research administrat|product operations|content operations|web content|"
     r"website content|content (?:coordinator|editor|writer)|art handl|preparator|catalogu|cataloger", re.I)
+_FIT_GENERIC_ADMIN = re.compile(r"administrative assistant|admin assistant|office (?:administrator|assistant|clerk)|"
+                                r"receptionist|front desk|medical (?:office|administrative)|administrative (?:clerk|support)|"
+                                r"data entry|clerical", re.I)
 _FIT_MANDARIN = re.compile(r"mandarin|cantonese|chinese", re.I)
 _FIT_NOT_WEAK = re.compile(r"sales operations|sales support analyst|accounts (?:payable|receivable)", re.I)
 _FIT_ARTS = re.compile(r"gallery|museum|curat|art\b|arts\b|exhibit|collections? (?:manager|assistant|technician|"
@@ -347,6 +356,9 @@ def fit_score(rec: dict):
     if re.search(r"supervisor|manager|\blead\b|head of|director|principal|senior|\bsr\b", title, re.I):
         score -= 30
         why.append("头衔偏资深")
+    if _FIT_GENERIC_ADMIN.search(title):
+        score -= 15
+        why.append("通用行政岗，和财务/分析/艺术方向关系较远")
     if _FIT_WEAK.search(title) and not _FIT_NOT_WEAK.search(title):
         score -= 15
         why.append("偏销售/柜台")

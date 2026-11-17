@@ -525,7 +525,10 @@ def test_page_job_without_location_goes_to_review():
     from scanner.filters import classify
     st, why = classify({"title": "Financial Analyst", "location": "", "source": "page"})
     assert st == "review" and "地点" in why
+    # 2026-11-17 起：招聘系统里没写地点的也先放“需要核实”（Lululemon 美国门店曾因此混入）
     st, _ = classify({"title": "Financial Analyst", "location": "", "source": "greenhouse"})
+    assert st == "review"
+    st, _ = classify({"title": "Financial Analyst", "location": "", "source": "channel:jobbank"})
     assert st == "relevant"
 
 
@@ -821,3 +824,27 @@ def test_maintenance_does_not_open_issue(tmp_path, monkeypatch):
     rows = [{"id": "bdo-canada", "name": "BDO Canada", "scan_state": "failed",
              "detail": "workday: 招聘网站正在维护（Workday 显示暂时不可用）"}]
     assert main._newly_broken(rows, [{"id": "bdo-canada", "tier": "P1"}]) == []
+
+
+# ---------- 2026-11-17 GPT 复核 Issue #35 发现的问题 ----------
+def test_jobbank_experience_and_asap():
+    from scanner.details import extract
+    d = extract("Experience: 5 years or more. Start date: As soon as possible")
+    assert d["years_min"] == 5 and "要求立即入职" in d["flags"]
+    assert extract("Experience: 1 year to less than 2 years")["years_min"] == 1
+    assert extract("Experience: Will train")["years_min"] is None
+
+
+def test_medical_technical_excluded_admin_scored_low():
+    from scanner.filters import classify, fit_score
+    assert classify({"title": "pathologists' assistant", "location": "Etobicoke, ON", "source": "channel:jobbank"})[0] == "irrelevant"
+    assert classify({"title": "Laboratory Assistant", "location": "Toronto, ON"})[0] == "irrelevant"
+    admin, _ = fit_score({"title": "administrative assistant", "location": "Toronto, ON"})
+    analyst, _ = fit_score({"title": "Junior Financial Analyst", "location": "Toronto, ON"})
+    assert analyst - admin >= 25
+
+
+def test_missing_location_goes_to_review_except_jobbank():
+    from scanner.filters import classify
+    assert classify({"title": "Visual Merchandising Specialist", "location": "", "source": "avature"})[0] == "review"
+    assert classify({"title": "Marketing Coordinator", "location": "", "source": "channel:jobbank"})[0] == "relevant"

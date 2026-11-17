@@ -35,6 +35,7 @@ _YEARS = re.compile(
     r"(\d{1,2}|one|two|three|four|five|six|seven|eight|ten)\s*(?:\+|plus)?\s*"
     r"(?:(?:-|–|to|or)\s*(?:\d{1,2})\s*\+?\s*)?(?:\(\d+\)\s*)?"
     r"years?(?:['’]s?)?\s+(?:of\s+)?(?:[\w/&,-]+\s+){0,6}?(?:experience|work experience)", re.I)
+_JOBBANK_YEARS = re.compile(r"experience:?\s*(\d{1,2})\s+years?\s+(?:or more|to less than)", re.I)
 _MONTHS = ("january|february|march|april|may|june|july|august|september|october|november|december|"
            "jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec")
 _DEADLINE = re.compile(
@@ -54,8 +55,8 @@ FLAGS = [
     (re.compile(r"currently enrolled|must be (?:a )?(?:current|full[- ]time) student|returning to (?:school|studies)|"
                 r"return to (?:full[- ]time )?(?:school|studies)|enrolled in a (?:post-secondary|co-?op)|"
                 r"co-?op (?:program|placement) requirement", re.I), "仅限在校生/需返校"),
-    (re.compile(r"start(?:ing)? immediately|immediate start|available immediately|asap start|start date:? asap",
-                re.I), "要求立即入职"),
+    (re.compile(r"start(?:ing)? immediately|immediate start|available immediately|asap start|start date:? asap|"
+                r"start(?:ing)? date:?\s*as soon as possible|start as soon as possible", re.I), "要求立即入职"),
     (re.compile(r"\b(?:CPA|CFA|CIA|CPP|LLQP|FRM)\b[^.]{0,40}\b(?:required|designation required|must)|"
                 r"(?:must|required to) (?:hold|have) (?:a|an|the)? ?(?:CPA|CFA|LLQP|licen[cs]e)", re.I),
      "要求执照/证书"),
@@ -177,6 +178,9 @@ def extract(text, extra=None):
         if n is None or n > 10 or re.search(r"asset|preferred|nice to have|an advantage|ideally|bonus", ctx):
             continue
         years.append(n)
+    # Job Bank 的固定格式：“Experience: 5 years or more”“1 year to less than 2 years”“Will train”
+    for m in _JOBBANK_YEARS.finditer(text or ""):
+        years.append(int(m.group(1)))
     if years:
         out["years_min"] = min(years)
     vt = (extra.get("validThrough") or "")[:10]
