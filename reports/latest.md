@@ -1,8 +1,8 @@
 # 扫描简报 2026-11-18
 
-雇主共 524 家：读取成功 354，失败 53，无招聘页跳过 117。
+雇主共 526 家：读取成功 320，失败 87，无招聘页跳过 119。
 
-读取质量：完整成功 118，部分成功 29，返回零职位 140，需人工核验 67，数据异常 1。（只有“完整成功”的雇主才会判定职位下架）
+读取质量：完整成功 105，部分成功 13，返回零职位 138，需人工核验 64，数据异常 1。（只有“完整成功”的雇主才会判定职位下架）
 
 ## ⏰ 7 天内截止（84）
 
@@ -95,76 +95,96 @@
 | 2026-11-25 | 7 天 | University of Toronto | Program Administrator (TERM) | Toronto, ON, CA | 经验≥2年；截止 2026-11-25；$70,633 | [打开](https://jobs.utoronto.ca/job/Toronto-Program-Administrator-%28TERM%29-ON/608060617/) |
 | 2026-11-25 | 7 天 | University of Toronto | Financial Aid and Awards Advisor, Graduate | Toronto, ON, CA | 截止 2026-11-25；$84,564 | [打开](https://jobs.utoronto.ca/job/Toronto-Financial-Aid-and-Awards-Advisor%2C-Graduate-ON/608122117/) |
 
-## ⚠️ 重点雇主突然读不到（3）
+## ⚠️ 重点雇主突然读不到（13）
 
 上次还能读取、这次读取失败的 P0/P1 雇主，可能是招聘网站改版或临时拦截，需要修复。这是数据读取问题，不代表没有职位；它们已有的职位不会被判为下架。
 
-- P0 Intact Financial：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://intactfc.wd3.myworkdayjobs.com/wday/cxs/intactfc/intactfc/jobs
-- P1 Interac：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://interac.wd3.myworkdayjobs.com/wday/cxs/interac/Interac/jobs
-- P0 TD Bank：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/jobs
+- P0 Accenture Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
+- P0 Brookfield：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://brookfield.wd5.myworkdayjobs.com/wday/cxs/brookfield/brookfield/jobs
+- P1 Capital One Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://capitalone.wd12.myworkdayjobs.com/wday/cxs/capitalone/Capital_One/jobs
+- P1 Ciena：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ciena.wd5.myworkdayjobs.com/wday/cxs/ciena/Careers/jobs
+- P1 Citi Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs
+- P0 HOOPP：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hoopp.wd10.myworkdayjobs.com/wday/cxs/hoopp/HOOPP/jobs
+- P1 Mastercard Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs
+- P1 Mercer Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mmc.wd1.myworkdayjobs.com/wday/cxs/mmc/MMC/jobs
+- P0 Ontario Teachers' Pension Plan：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://otppb.wd3.myworkdayjobs.com/wday/cxs/otppb/OntarioTeachers_Careers/jobs
+- P1 Procter & Gamble Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000/jobs
+- P1 S&P Global (Ratings)：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://spgi.wd5.myworkdayjobs.com/wday/cxs/spgi/SPGI_Careers/jobs
+- P0 Thomson Reuters：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_
+- P1 Visa Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa_Early_Careers/jobs
 
-## 本次可申请的职位（16）
+## 本次可申请的职位（21）
 
-其中新发布 14 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。
+其中新发布 21 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。
 
 资格等级（扫描程序根据职位页自动初评，最终以打开职位页核对为准）：**A 已满足**＝职位页读到了，没发现她不满足的硬性要求；**B 部分满足**＝有 1 项需要确认或弥补（如要 2 年经验、要证书）；**C 待核查**＝职位页没读到或差距 2 项以上。明确不符合的（要 3 年以上经验、仅限在校生的全职岗）已排除，单独列在后面。
 
 | 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 职位页信息 | 建议简历 | 链接 |
 |---|---|---|---|---|---|---|---|---|---|
-| A | 75 | BMO | Administration Associate, Private Wealth | Toronto, ON M8X 1C4, Canada | 新发布 | 多伦多/渥太华、入门级、运营/项目类 | — | IB_Capital_Markets | [打开](https://jobs.bmo.com/ca/en/job/R260031673/Administration-Associate-Private-Wealth) |
-| A | 73 | Kenvue Canada | Professional Marketing Associate - Oral Health | North America, Canada, Ontario, Toronto | 新发布 | 多伦多/渥太华、入门级、运营/项目类 | 截止 2026-11-20；$72,000.00 - $116,150.00 | Business_Analyst | [打开](https://kenvue.wd5.myworkdayjobs.com/en-US/kenvue/job/North-America-Canada-Ontario-Toronto/Professional-Marketing-Associate---Oral-Health_2607050228W) |
-| A | 73 | RBC | Analyst, CST - Client Shared Services | TORONTO, Ontario, Canada | 新发布 | 多伦多/渥太华、财务/审计/分析 | — | Business_Analyst | [打开](https://jobs.rbc.com/ca/en/job/R-0000188893/Analyst-CST-Client-Shared-Services) |
-| A | 67 | NANAK REAL ESTATE CORPORATION | sales and marketing coordinator | Etobicoke, ON | 新发布 | 多伦多/渥太华、入门级、运营/项目类、偏销售/柜台 | 经验≥1年 | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50750174) |
-| A | 60 | RBC | DR Planning and Operations Specialist | TORONTO, Ontario, Canada | 新发布 | 多伦多/渥太华、运营/项目类 | — | Business_Analyst | [打开](https://jobs.rbc.com/ca/en/job/R-0000192403/DR-Planning-and-Operations-Specialist) |
-| A | 59 | Ciena | Lab Purchasing Support Specialist | Ottawa | 新发布 | 多伦多/渥太华、运营/项目类 | $28/hr | Business_Analyst | [打开](https://ciena.wd5.myworkdayjobs.com/en-US/Careers/job/Ottawa/Lab-Purchasing-Support-Specialist_R032124) |
-| A | 58 | RE/MAX OPTIMUM TEAM ARORA REALTY | digital marketing specialist | Mississauga, ON | 新发布 | 多伦多/渥太华、运营/项目类 | $40,000.00-$55,000.00 per year | Business_Analyst | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50750229) |
-| A | 56 | Ontario Community Newspapers Association/Ad*Reach | accountant | Oakville, ON | 新发布 | 多伦多/渥太华、财务/审计/分析 | $55,000.00-$65,000.00 per year | Audit_FinOps | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50750242) |
-| A | 55 | 4Sight Search Solutions Inc. | accounts payable clerk | Milton, ON | 新发布 | 多伦多/渥太华、财务/审计/分析 | $28.00 per hour | Audit_FinOps | [1](https://www.jobbank.gc.ca/jobsearch/jobposting/50750225) [2](https://www.jobbank.gc.ca/jobsearch/jobposting/50750257) |
-| A | 40 | Accenture Canada | Marketing Specialist | — | 新发布 | 地点待确认、运营/项目类 | — | Business_Analyst | [打开](https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Toronto-40-King-St-W-Corp/Marketing-Specialist_R00361399-1) |
-| C | 56 | State Street Canada | Alternative Ops Transfer Agency, Associate 2 | Toronto, Ontario | 新发布 | 多伦多/渥太华、入门级 | 截止 2026-12-31；$45,000 - $67,500 | Business_Analyst | [1](https://statestreet.wd1.myworkdayjobs.com/en-US/Global/job/Toronto-Ontario/Alternative-Ops-Transfer-Agency--Associate-2_R-792354) [2](https://statestreet.wd1.myworkdayjobs.com/en-US/Global/job/Toronto-Ontario/Alternative-Ops-Transfer-Agency--Senior-Associate_R-789742) |
-| C | 48 | BMO | Client Care Officer | Toronto, ON M8X 1C4, Canada | 新发布 | 多伦多/渥太华 | — | Coordination_Client_Ops | [打开](https://jobs.bmo.com/ca/en/job/R260031773/Client-Care-Officer) |
-| C | 48 | BMO | Associate, Internal Sales, Intermediary Distribution | Toronto, ON M8X 1C4, Canada | 规则新纳入 | 多伦多/渥太华、入门级、偏销售/柜台 | $45,000.00 - $100,000.00 | Business_Analyst | [打开](https://jobs.bmo.com/ca/en/job/R260011666/Associate-Internal-Sales-Intermediary-Distribution) |
-| C | 45 | Merangue International Limited | sourcing specialist | Ajax, ON | 新发布 | 多伦多/渥太华 | 截止 2026-11-30；$38,000.00-$50,000.00 per year | Business_Analyst | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50750285) |
+| A | 100 | Marsh Canada | Marsh Risk Early Career Program, New Grads 2027 – Toronto | 120 Bremner Boulevard, Toronto, ON M5J 0A8, Canada | 新发布 | 多伦多/渥太华、入门级、应届/项目、财务/审计/分析 | 写明应届可申 | Finance | [打开](https://careers.marsh.com/global/en/job/R_373183/Marsh-Risk-Early-Career-Program-New-Grads-2027-Toronto) |
+| A | 85 | BrightPath Kids Canada | music coordinator - education | Mississauga, ON、Milton, ON、Brampton, ON | 新发布 | 多伦多/渥太华、入门级、艺术/文化 | — | Coordination_Client_Ops | [1](https://www.jobbank.gc.ca/jobsearch/jobposting/50753047) [2](https://www.jobbank.gc.ca/jobsearch/jobposting/50753050) [3](https://www.jobbank.gc.ca/jobsearch/jobposting/50753046) |
+| A | 73 | RBC | Disability Claims Analyst, Individual Claims | MISSISSAUGA, Ontario, Canada | 新发布 | 多伦多/渥太华、财务/审计/分析 | — | Business_Analyst | [打开](https://jobs.rbc.com/ca/en/job/R-0000193036/Disability-Claims-Analyst-Individual-Claims) |
+| A | 72 | American Express Canada | Bilingual Credit Analyst | Toronto, ON, Canada | 新发布 | 多伦多/渥太华、财务/审计/分析 | 截止 2026-12-05 | Finance | [打开](https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26016654) |
+| A | 67 | Ocean Breeze Accounting Inc. | medical administrative assistant | Mississauga, ON | 新发布 | 多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远 | 经验≥1年 | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50755907) |
+| A | 67 | OrientDepot | administration officer | Mississauga, ON | 新发布 | 多伦多/渥太华、运营/项目类 | 经验≥1年 | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50754317) |
+| A | 58 | RBC | Fund Accountant | MISSISSAUGA, Ontario, Canada | 新发布 | 多伦多/渥太华、财务/审计/分析 | $46,000.00 - $70,000.00 | Audit_FinOps | [打开](https://jobs.rbc.com/ca/en/job/R-0000189205/Fund-Accountant) |
+| A | 58 | University of Toronto | Administrative Assistant - Exam Services | Mississauga, ON, CA | 新发布 | 多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远 | 截止 2026-11-26；$62,646 | Coordination_Client_Ops | [打开](https://jobs.utoronto.ca/job/Mississauga-Administrative-Assistant-Exam-Services-ON/608139817/) |
+| A | 57 | ??????????? ?BEYOND CANADA INTERNATIONAL CONSULTING CORPORATION | administrative assistant | Markham, ON | 新发布 | 多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远 | $21.00 per hour | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50754454) |
+| A | 57 | ADECCO | administrative assistant | Pickering, ON | 新发布 | 多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远 | $22.00/hour | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50752639) |
+| A | 57 | Hygge Energy Inc | administrative assistant | Toronto, ON | 新发布 | 多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远 | — | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50756455) |
+| A | 40 | MASI Group Inc. | accounts payable and receivable clerk | Concord, ON | 新发布 | 财务/审计/分析 | $20.00-$25.00 per hour | Audit_FinOps | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50754480) |
+| C | 73 | Scotiabank | Associate Private Banker | Toronto, ON, CA, M5H 4A9 | 新发布 | 多伦多/渥太华、入门级 | 写明应届可申 | Finance | [打开](https://jobs.scotiabank.com/job/Toronto-Associate-Private-Banker-ON-M5H-4A9/608154017/) |
+| C | 60 | The Alzheimer Society of BHNHH | recreation coordinator | Burlington, ON | 新发布 | 多伦多/渥太华、入门级 | $26.50 - $28.00/hour | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50755296) |
+| C | 48 | BMO | Mortgage  Specialist | Brampton, ON L6Z 1Y4, Canada | 新发布 | 多伦多/渥太华 | — | Business_Analyst | [打开](https://jobs.bmo.com/ca/en/job/R260023285/Mortgage-Specialist) |
+| C | 47 | Walmart Canada | (CAN) Customer Service Desk Associate | (CAN) ON MISSISSAUGA 03055 WM SUPERCENTER | 新发布 | 多伦多/渥太华、入门级、偏销售/柜台 | — | Coordination_Client_Ops | [打开](https://walmart.wd504.myworkdayjobs.com/en-US/WalmartExternal/job/CAN-ON-MISSISSAUGA-03055-WM-SUPERCENTER/XMLNAME--CAN--Customer-Service-Desk-Associate_R-2714224) |
+| C | 46 | Sephora Canada | Seasonal Associate | Concord, NC, US, 28027 | 新发布 | 入门级 | $18.00 - $20.50/hr | Business_Analyst | [打开](https://jobs.sephora.com/USA/job/Concord-Seasonal-Associate-NC-28027/1377517655/) |
+| C | 46 | The Co-operators | Data Integration Specialist | Toronto, ON、Burlington, ON、Guelph, ON 等 6 地 | 新发布 | 多伦多/渥太华 | — | Arts_Culture · Gallery / Exhibition | [打开](https://recruiting.ultipro.com/COO5000COOP/JobBoard/163383cc-cbae-4201-956e-c5e437bbfeb3/OpportunityDetail?opportunityId=cffa4195-06d3-431d-9231-e0c72d9f3756) |
+| C | 30 | RAJIV MADAN CPA PROFESSIONAL CORPORATION | bookkeeper | Mississauga, ON | 新发布 | 多伦多/渥太华 | $17.95-$20.00 per hour | Audit_FinOps | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50756000) |
 
-## 可能相关、需要核实（15）
+## 可能相关、需要核实（25）
 
 实习、兼职、合同、地点只写了 Canada 等需要先确认的职位，同样按匹配度排序。
 
 | 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 待核实原因 | 职位页信息 | 建议简历 | 链接 |
 |---|---|---|---|---|---|---|---|---|---|
-| A | 76 | Giant Tiger | Softgoods Associate (Part-Time) | Mississauga (Dundas Street West), Ontario, Canada | 新发布 | 兼职/临时：可在读期间做，需确认时间 | — | Business_Analyst | [打开](https://gianttiger.wd3.myworkdayjobs.com/en-US/gianttiger/job/Mississauga-Dundas-Street-West-Ontario-Canada/Softgoods-Associate--Part-Time-_JR134385) |
-| A | 73 | Info-Tech Research Group / McLean & Company | Marketing Specialist (Contract: January 2027 - August 2028) | Toronto, ON、London, ON | 新发布 | 合同/临时岗：需确认入职时间 | — | Business_Analyst | [打开](https://recruiting.ultipro.ca/INF5000IFTC/JobBoard/2526a5be-e33e-4de9-90ae-3b23d42b9441/OpportunityDetail?opportunityId=02008ae8-3b49-42dc-8dbe-99f14f8d64b6) |
-| A | 67 | Kraft Heinz Canada | Jr Analyst GBS, ProcurementMéxico D.F., CDMX, MXPosted 7 hours ago | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | 经验≥1年；截止 2027-05-16 | Business_Analyst | [打开](https://jobs.kraftheinz.com/careers/job/1970324837596078) |
-| A | 61 | Dexterra | HCM & Reporting Analyst - Dayforce (8 mos contract) | Mississauga, ON, ca (Remote) | 新发布 | 合同/临时岗：需确认入职时间 | — | Business_Analyst | [打开](https://jobs.smartrecruiters.com/Dexterra/744000162167579) |
-| A | 27 | Kraft Heinz Canada | Customer Sales Analyst, Regional South GrocersUSRemotePosted 7 hours ago | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | 截止 2027-05-16 | Commercial_Product_Ops | [打开](https://jobs.kraftheinz.com/careers/job/1970324837598350) |
-| A | 27 | Metrolinx | Talent Acquisition Consultant | Canada | 新发布 | 顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门；地点只写了 Canada，需确认城市；没写地点，需确认是否在加拿大/目标城市 | 截止 2026-12-02 | Consulting | [打开](https://ehtc.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/117883) |
-| A | 26 | Robert Half Canada | Accounts Payable Clerk | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Audit_FinOps | [打开](https://www.roberthalf.com/ca/en/job/richmond-bc/accounts-payable-clerk/001269235-caen) |
-| B | 63 | Ontario Teachers' Pension Plan | Investment Analyst, Private Capital - Financial Services | Toronto, Canada | 新发布 | 职位页：要求交易/估值建模经验 | $115,000；要求交易/估值建模经验 | IB_Capital_Markets | [打开](https://otppb.wd3.myworkdayjobs.com/en-US/OntarioTeachers_Careers/job/Toronto-Canada/Investment-Analyst--Private-Capital---Financial-Services_7330) |
-| B | 33 | Restaurant Brands International | Marketing Communications Specialist, Tim Hortons, Canada | Toronto, Ontario, Canada | 新发布 | 职位页要求 2 年经验 | 经验≥2年；$75,000 – $95,000 | Business_Analyst | [打开](https://careers.rbi.com/global/en/job/R4098/Marketing-Communications-Specialist-Tim-Hortons-Canada) |
-| B | 2 | Copper Core Limited | office administrator | Etobicoke, ON | 新发布 | 职位页要求 2 年经验 | 经验≥2年；$55,000.00-$65,000.00 per year | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50749560) |
-| C | 43 | BMO | Associate, Outbound Virtual Experience Team (Secondment) | REMOTE/TELETRAVAIL, ON L4X 1X1, Canada | 新发布 | 合同/临时岗：需确认入职时间 | — | Business_Analyst | [打开](https://jobs.bmo.com/ca/en/job/R260030967/Associate-Outbound-Virtual-Experience-Team-Secondment) |
-| C | 41 | Definity Financial | New Grad opens in a new tab | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Business_Analyst | [打开](https://hdks.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Careers-Definity/jobs?keyword=New%20Grad&mode=location) |
-| C | 32 | Mondelez Canada | Team Member Trainee | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Business_Analyst | [打开](https://www.mondelezinternational.com/careers/jobs/job?jobid=R-182333&jobtitle=Team%20Member%20Trainee) |
-| C | 26 | Wave Financial | Chargeback Dispute Specialist | Canada | 新发布 | 地点只写了 Canada，需确认城市；没写地点，需确认是否在加拿大/目标城市 | 经验≥1年 | Business_Analyst | [打开](https://jobs.lever.co/waveapps/fc5a4230-beaf-44a0-9060-7b810bc814c7) |
-| C | 12 | Dayforce | Production Support Specialist II Req# 24919 | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Business_Analyst | [打开](https://jobs.dayforcehcm.com/en-US/mydayforce/alljobs/jobs/104821) |
+| A | 86 | Marsh Canada | Marsh Risk Early Career Internship Program, Summer 2027 – Toronto | 120 Bremner Boulevard, Toronto, ON M5J 0A8, Canada | 新发布 | 实习：需确认是否接受 2027 年 5 月毕业生 | — | Finance | [打开](https://careers.marsh.com/global/en/job/R_373139/Marsh-Risk-Early-Career-Internship-Program-Summer-2027-Toronto) |
+| A | 68 | EY Canada | Intern - Risk Consulting (Financial Services), Technology Risk (Jan - Jun 2027) | — | 新发布 | 实习：需确认是否接受 2027 年 5 月毕业生；没写地点，需确认是否在加拿大/目标城市 | — | Consulting | [打开](https://eyglobal.yello.co/jobs/c_saI3PcsI422zzvNHU5lw?job_board_id=c1riT--B2O-KySgYWsZO1Q) |
+| A | 58 | Scotiabank | HR Data Management Consultant (12-month contract) | Scarborough, ON, CA, M1L 4S2 | 新发布 | 合同/临时岗：需确认入职时间；顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门 | 写明应届可申 | Consulting | [打开](https://jobs.scotiabank.com/job/Scarborough-HR-Data-Management-Consultant-%2812-month-contract%29-ON-M1L-4S2/608147617/) |
+| A | 58 | Scotiabank | Global Workforce Security Screening Consultant | Scarborough, ON, CA, M1L 4S2 | 新发布 | 顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门 | 写明应届可申 | Consulting | [打开](https://jobs.scotiabank.com/job/Scarborough-Global-Workforce-Security-Screening-Consultant-ON-M1L-4S2/608162117/) |
+| A | 56 | Menkes Developments | Accounting Associate November 18, 2026 | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | $50,000 to $55,000 | Audit_FinOps | [打开](https://www.menkes.com/about/careers/posts/5004231185) |
+| A | 55 | EY Canada | Graduate Program Capital Dept Advisory | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Consulting | [打开](https://eyglobal.yello.co/jobs/S6mgb7MGQczXZkhLxdOHEQ?job_board_id=c1riT--B2O-KySgYWsZO1Q) |
+| A | 51 | Equifax Canada | Sales Rotational Development Associate | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Arts_Culture · Development | [打开](https://careers.equifax.com/en/jobs/j00178839/sales-rotational-development-associate/) |
+| A | 48 | Deloitte Canada | Consultant - T&T & OpN Quality & Risk Management Operations | Toronto, ON, CAN, M5C 3G7 | 新发布 | 顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门 | $58,000 - $102,000 | Consulting | [打开](https://careers.deloitte.ca/job/Consultant-T&amp;T-&amp;-OpN-Quality-&amp;-Risk-Management-Operations/135286-en_US/) |
+| A | 48 | Deloitte Canada | Consultant, GRC Technology | Toronto, ON, CAN, M5C 3G7 | 新发布 | 顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门 | $68,000 - $102,000 | Consulting | [打开](https://careers.deloitte.ca/job/Consultant%2C-GRC-Technology/135982-en_US/) |
+| A | 42 | General Motors Canada | Data Validation & Quality Analyst | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | $76,100 to $114,300 | Business_Analyst | [打开](https://search-careers.gm.com/en/jobs/jr-202623986/data-validation-quality-analyst/) |
+| A | 42 | General Motors Canada | CCA Financial Analyst, Financial Planning and Analysis (FP&A) and Oshawa Operations | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | $76,100.00 to $114,300.00 | Finance | [打开](https://search-careers.gm.com/en/jobs/jr-202618485/cca-financial-analyst-financial-planning-and-analysis-fp-a-and-oshawa-operations/) |
+| A | 33 | Lululemon | Product Operations Educator | Avalon Mall Seasonal | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | 写明应届可申；$19.25 - $22.15/hour | Commercial_Product_Ops | [打开](https://careers.lululemon.com/en_US/careers/JobDetail/Product-Operations-Educator-Avalon-Mall-Seasonal/65920) |
+| A | 26 | Robert Half Canada | Accountant | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Audit_FinOps | [打开](https://www.roberthalf.com/ca/en/job/toronto-on/accountant/001268489-caen) |
+| A | 13 | Menkes Developments | Property Administrator November 18, 2026 | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | $49,000 to $55,000 | Coordination_Client_Ops | [打开](https://www.menkes.com/about/careers/posts/4075550651) |
+| B | 47 | Canaccord Genuity | Analyst, Market Risk | Toronto, ON | 新发布 | 职位页要求 2 年经验 | 经验≥2年；$70,000 to $80,000 | Finance | [打开](https://cgf.wd10.myworkdayjobs.com/en-US/CG/job/Toronto-ON/Analyst--Market-Risk_JR100655) |
+| B | 46 | CAAT Pension Plan | Pension Analyst, Member Services | Toronto, ON | 新发布 | 职位页要求 2 年经验 | 经验≥2年；$73,200.00-86,100.00 | Business_Analyst | [打开](https://caatpension.wd10.myworkdayjobs.com/en-US/Careers/job/Toronto-ON/Pension-Analyst--Member-Services_JR100213) |
+| B | 31 | BVD Group | general accountant | Brampton, ON | 新发布 | 职位页要求 2 年经验 | 经验≥2年；$55,000.00-$65,000.00 per year | Audit_FinOps | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50753518) |
+| B | 30 | AKITU Inc | accounts receivable clerk | Oakville, ON | 新发布 | 职位页要求 2 年经验 | 经验≥2年；$ 71,518 | Audit_FinOps | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50752618) |
+| B | 28 | City of Ottawa | Coordinator, Road Rehabilitation Projects | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市；职位页要求 2 年经验 | 经验≥2年；截止 2026-02-12 | Coordination_Client_Ops | [打开](https://jobs-emplois.ottawa.ca/city-jobs/job/Ottawa%2C-ON-Coordinator%2C-Road-Rehabilitation-Projects-ON-Ottawa%2C-ON/1291773747/) |
+| C | 62 | Canaccord Genuity | Investment Advisor Assistant | Toronto, ON | 新发布 | 顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门；职位页要求 2 年经验；职位页：要求投资/保险执照 | 经验≥2年；$60,000 - $70,000；要求投资/保险执照 | Finance | [打开](https://cgf.wd10.myworkdayjobs.com/en-US/CG/job/Toronto-ON/Investment-Advisor-Assistant_JR100654) |
+| C | 41 | Lululemon | Associate Planner | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | 经验≥1年；$ 80,800 - 106,100 | Business_Analyst | [打开](https://careers.lululemon.com/en_US/careers/JobDetail/Associate-Planner/65831) |
+| C | 37 | Canaccord Genuity | Product Specialist – Advisor Solutions & Market Knowledge | Toronto, ON | 新发布 | 顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门 | $125,000 - $140,000 | Business_Analyst | [打开](https://cgf.wd10.myworkdayjobs.com/en-US/CG/job/Toronto-ON/Product-Specialist---Advisor-Solutions---Market-Knowledge_JR100656) |
+| C | 20 | Nella Food Equipment | sales assistant | North York, ON | 新发布 | 职位页要求 2 年经验 | 经验≥2年；$20.00-$23.00 per hour | Business_Analyst | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50755963) |
+| C | 1 | Robert Half Canada | Corporate Controller | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Finance | [打开](https://www.roberthalf.com/ca/en/job/east-gwillimbury-on/corporate-controller/001212223-caen) |
+| C | 0 | University of Toronto | Financial Clerk (TERM) | Toronto, ON, CA | 新发布 | 职位页要求 2 年经验 | 经验≥2年；截止 2026-12-02；$62,646 | Finance | [打开](https://jobs.utoronto.ca/job/Toronto-Financial-Clerk-%28TERM%29-ON/608147017/) |
 
-## 打开职位页后排除（13）
+## 打开职位页后排除（8）
 
 职位名看起来合适，但职位页写明要求 3 年以上经验或仅限在校生。列在这里备查，不用申请。
 
-- Mercer Canada · Compensation Consultant, Associate：职位页要求 3 年以上经验（[打开](https://mmc.wd1.myworkdayjobs.com/en-US/MMC/job/Toronto---Bremner/Compensation-Consultant--Associate_R_359899-1)）
-- Marsh Canada · Compensation Consultant, Associate：职位页要求 3 年以上经验（[打开](https://careers.marsh.com/global/en/job/R_359899/Compensation-Consultant-Associate)）
-- Morningstar DBRS · Workday Analyst - Security & Configuration：职位页要求 3 年以上经验（[打开](https://morningstar.wd5.myworkdayjobs.com/en-US/morningstar/job/Toronto/Workday-Analyst---Security---Configuration_REQ-059246-1)）
-- Celestica · Organization Change Management Finance Specialist (Contractor)：职位页要求 7 年以上经验（[打开](https://careers.celestica.com/job/Toronto-Organization-Change-Management-Finance-Specialist-%28Contractor%29-ON/1457818133/)）
-- Compten Management Inc. · assistant controller：职位页要求 3 年以上经验（[打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50749574)）
-- Northbridge Financial · Underwriter, Commercial Lines：职位页要求 3 年以上经验（[打开](https://careers.nbfc.com/ca/en/job/R5143/Underwriter-Commercial-Lines)）
-- University of Toronto · Research Financial and Business Officer (TERM)：职位页要求 3 年以上经验（[打开](https://jobs.utoronto.ca/job/Toronto-Research-Financial-and-Business-Officer-%28TERM%29-ON/608131417/)）
-- Robert Half Canada · Accounts Payable Specialist：职位页要求 3 年以上经验（[打开](https://www.roberthalf.com/ca/en/job/langley-bc/accounts-payable-specialist/001269626-caen)）
-- Accenture Canada · Marketing Specialist：职位页要求 4 年以上经验（[打开](https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Ontario---Toronto/Marketing-Specialist_R00372014)）
-- Celestica · Change Management Specialist - Contractor：职位页要求 8 年以上经验（[打开](https://careers.celestica.com/job/Toronto-Change-Management-Specialist-Contractor-ON/1457817533/)）
-- Robert Half Canada · Accountant：职位页要求 3 年以上经验（[打开](https://www.roberthalf.com/ca/en/job/concord-on/accountant/001269024-caen)）
-- Robert Half Canada · Full Charge Bookkeeper：职位页要求 3 年以上经验（[打开](https://www.roberthalf.com/ca/en/job/toronto-on/full-charge-bookkeeper/000814744-caen)）
-- CMHC · Bilingual Specialist, Enterprise Vulnerability Management：职位页要求 5 年以上经验（[打开](https://careers.cmhc-schl.gc.ca/job/Ottawa-Bilingual-Specialist%2C-Enterprise-Vulnerability-Management/606005717/)）
+- Indigo · Lease Auditor Specialist：职位页要求 7 年以上经验（[打开](https://jobs.smartrecruiters.com/IndigoBooksMusic/744000162315690)）
+- University of Toronto · Research Associate - AP2D Labs (Limited Term)：职位页要求 3 年以上经验（[打开](https://jobs.utoronto.ca/job/Toronto-Research-Associate-AP2D-Labs-%28Limited-Term%29-ON/608145617/)）
+- University of Toronto · Research Associate - GMC (Limited Term)：职位页要求 5 年以上经验（[打开](https://jobs.utoronto.ca/job/Toronto-Research-Associate-GMC-%28Limited-Term%29-ON/608152417/)）
+- University of Toronto · Digital Communications and Social Media Specialist：职位页要求 5 年以上经验（[打开](https://jobs.utoronto.ca/job/Toronto-Digital-Communications-and-Social-Media-Specialist-ON/608141217/)）
+- The Anglican Church of Canada · accountant：职位页要求 3 年以上经验（[打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50753885)）
+- Metrolinx · Project Officer：职位页要求 4 年以上经验（[打开](https://ehtc.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/117835)）
+- Robert Half Canada · Administrative Assistant：职位页要求 3 年以上经验（[打开](https://www.roberthalf.com/ca/en/job/ottawa-on/administrative-assistant/001269521-caen)）
+- Lululemon · Retail Planning and Optimization Analyst - (12-Month FTC)：职位页要求 3 年以上经验（[打开](https://careers.lululemon.com/en_US/careers/JobDetail/Retail-Planning-and-Optimization-Analyst-12-Month-FTC/65605)）
 
 ## 新加入名单的雇主（2）
 
@@ -172,120 +192,135 @@
 
 | 雇主 | 来源 | 发现的职位 | 招聘系统 |
 |---|---|---|---|
-| Ontario Community Newspapers Association/Ad*Reach | jobbank | [accountant](https://www.jobbank.gc.ca/jobsearch/jobposting/50750242) | 待识别 |
-| RE/MAX OPTIMUM TEAM ARORA REALTY | jobbank | [digital marketing specialist](https://www.jobbank.gc.ca/jobsearch/jobposting/50750229) | 待识别 |
+| The Anglican Church of Canada | jobbank | [accountant](https://www.jobbank.gc.ca/jobsearch/jobposting/50753885) | 待识别 |
+| BVD Group | jobbank | [general accountant](https://www.jobbank.gc.ca/jobsearch/jobposting/50753518) | 待识别 |
 
 ## 重新出现的相关职位（1）
 
-- CMHC · Bilingual Specialist, Enterprise Vulnerability Management（[打开](https://careers.cmhc-schl.gc.ca/job/Ottawa-Bilingual-Specialist%2C-Enterprise-Vulnerability-Management/606005717/)）
+- Sephora Canada · Seasonal Associate（[打开](https://jobs.sephora.com/Canada/job/North-York-Seasonal-Associate-ON-M4R-1K8/1366137955/)）
 
-## 已下架的相关职位（7）
+## 已下架的相关职位（4）
 
-- BMO · Personal Banking Associate（首次出现 2026-11-09）
-- BMO · Personal Banking Associate（首次出现 2026-11-09）
-- BMO · Associate, Outbound Virtual Experience Team（首次出现 2026-11-13）
-- BMO · Personal Banking Associate（首次出现 2026-11-13）
-- RSM Canada · Treasury Consulting Professionals – Global Treasury Practice（首次出现 2026-11-10）
-- Scotiabank · Associate, Scotia Financial Planning - Newmarket, ON（首次出现 2026-11-10）
-- Scotiabank · ScotiaMcLeod Administrative Associate - Toronto（首次出现 2026-11-09）
+- BMO · Client Service Assistant, Private Wealth（首次出现 2026-11-09）
+- Sephora Canada · Seasonal Associate（首次出现 2026-11-09）
+- University of Toronto · Administrative Coordinator（首次出现 2026-11-09）
+- University of Toronto · Graduate Program Assistant (1-Year Term)（首次出现 2026-11-09）
 
-## 只读到部分或数据异常的雇主（30）
+## 只读到部分或数据异常的雇主（14）
 
-- Accenture Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区；第 3 页读取失败（HTTPError），已读 40 个
-- Adobe Canada：部分成功，第 7 页读取失败（HTTPError），已读 120 个
-- Bloomberg (Toronto)：部分成功，报告共 336 个，实际只读到 204 个
-- Bombardier：部分成功，报告共 848 个，实际只读到 573 个
+- Bloomberg (Toronto)：部分成功，报告共 328 个，实际只读到 200 个
+- Bombardier：部分成功，报告共 844 个，实际只读到 608 个
+- Canaccord Genuity：部分成功，第 3 页读取失败（HTTPError），已读 40 个
 - Canada Post：部分成功，只读到最新职位的 RSS（不完整）
-- Capital One Canada：部分成功，招聘板共 2075 个职位，按地点筛选只读目标地区
-- CBC/Radio-Canada：部分成功，第 2 页读取失败（HTTPError），已读 20 个；部分入口读取失败：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cbcrc.wd3.myworkdayjobs.com/wday/cxs/cbcrc/CBC_Radio-Canada_Future_Opportunities/jobs
 - CBRE Canada：数据异常
-- Citi Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区；第 2 页读取失败（HTTPError），已读 20 个
 - City of Toronto：部分成功，按网站地图读取（不完整）
-- CN Rail：部分成功，报告共 85 个，实际只读到 56 个
-- Colgate-Palmolive Canada：部分成功，报告共 317 个，实际只读到 234 个
-- Cushman & Wakefield Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
-- Deloitte Canada：部分成功，报告共 422 个，实际只读到 310 个
-- FTI Consulting Canada：部分成功，第 10 页读取失败（HTTPError），已读 180 个
-- Giant Tiger：部分成功，第 5 页读取失败（HTTPError），已读 80 个
-- Home Depot Canada：部分成功，第 2 页读取失败（HTTPError），已读 20 个
-- HOOPP：部分成功，第 2 页读取失败（HTTPError），已读 20 个
+- CN Rail：部分成功，报告共 86 个，实际只读到 66 个
+- Colgate-Palmolive Canada：部分成功，报告共 320 个，实际只读到 218 个
+- Deloitte Canada：部分成功，报告共 425 个，实际只读到 317 个
+- Desjardins：部分成功，第 6 页读取失败（HTTPError），已读 100 个
 - IESO：部分成功，按网站地图读取（不完整）
-- JLL Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
-- Kenvue Canada：部分成功，第 3 页读取失败（HTTPError），已读 40 个
-- Mercer Canada：部分成功，招聘板共 1982 个职位，按地点筛选只读目标地区
-- Morningstar DBRS：部分成功，第 6 页读取失败（HTTPError），已读 100 个
 - Ontario Power Generation：部分成功，只读到最新职位的 RSS（不完整）
-- Procter & Gamble Canada：部分成功，第 6 页读取失败（HTTPError），已读 100 个
-- RELX / LexisNexis Canada：部分成功，第 2 页读取失败（HTTPError），已读 20 个
-- State Street Canada：部分成功，招聘板共 1186 个职位，按地点筛选只读目标地区
-- Toronto Hydro：部分成功，报告共 16 个，去重后只有 10 个
-- TransUnion Canada：部分成功，第 10 页读取失败（HTTPError），已读 180 个
-- Walmart Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
+- Toronto Hydro：部分成功，报告共 15 个，去重后只有 10 个
+- Walmart Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区；第 8 页读取失败（HTTPError），已读 140 个
 
-## 读取失败的雇主（53）
+## 读取失败的雇主（87）
 
 这是**数据读取问题**，不代表这些雇主没有职位：上次读到的职位保持在招状态，不会因此判为下架。需要人工到官网核查，或等下次扫描恢复。
 
+- 3M Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs
+- Accenture Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
+- Adobe Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs
 - Altus Group：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://altusgroup.wd3.myworkdayjobs.com/wday/cxs/altusgroup/AltusGroup/jobs
 - Aritzia：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://aritzia.wd3.myworkdayjobs.com/wday/cxs/aritzia/External/jobs
 - BDC：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://bdc.wd10.myworkdayjobs.com/wday/cxs/bdc/BDC_Careers/jobs
 - BDO Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://bdo.wd3.myworkdayjobs.com/wday/cxs/bdo/BDO/jobs
-- CAAT Pension Plan：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://caatpension.wd10.myworkdayjobs.com/wday/cxs/caatpension/Careers/jobs
-- Canaccord Genuity：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cgf.wd10.myworkdayjobs.com/wday/cxs/cgf/CG/jobs
+- Broadridge Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://broadridge.wd5.myworkdayjobs.com/wday/cxs/broadridge/Careers/jobs
+- Brookfield：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://brookfield.wd5.myworkdayjobs.com/wday/cxs/brookfield/brookfield/jobs
 - Canada Goose：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://canadagoose.wd3.myworkdayjobs.com/wday/cxs/canadagoose/CanadaGooseCareers/jobs
 - Canadian Tire：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://canadiantirecorporation.wd3.myworkdayjobs.com/wday/cxs/canadiantirecorporation/Enterprise_Externa
+- Capital One Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://capitalone.wd12.myworkdayjobs.com/wday/cxs/capitalone/Capital_One/jobs
 - CAPREIT (Canadian Apartment Properties REIT)：page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-capreit.icims.com/jobs/search
+- CBC/Radio-Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cbcrc.wd3.myworkdayjobs.com/wday/cxs/cbcrc/CBC_Radio-Canada_Future_Opportunities/jobs
 - CBRE Canada：avature: 数据异常: Avature 页面里找不到职位链接
 - Choice Properties REIT：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://myview.wd3.myworkdayjobs.com/wday/cxs/myview/Choice_Properties_REIT/jobs
 - CI Financial：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ci.wd3.myworkdayjobs.com/wday/cxs/ci/CI_FINANCIAL_EXTERNAL_CAREER-SITE/jobs
 - CIBC：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cibc.wd3.myworkdayjobs.com/wday/cxs/cibc/search/jobs
+- Ciena：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ciena.wd5.myworkdayjobs.com/wday/cxs/ciena/Careers/jobs
 - Cineplex：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cineplex.wd3.myworkdayjobs.com/wday/cxs/cineplex/Cineplex/jobs
+- Citi Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs
 - Colliers：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://colliers.wd3.myworkdayjobs.com/wday/cxs/colliers/Colliers-External-Career-Site/jobs
 - Corus Entertainment：page: SSLError: HTTPSConnectionPool(host='www.corus.ca', port=443): Max retries exceeded with url: /en/careers/ (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HAN
 - CPKC：page: SSLError: HTTPSConnectionPool(host='careers.cpkcr.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTI
 - CPP Investments：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cppib.wd10.myworkdayjobs.com/wday/cxs/cppib/cppinvestments/jobs
-- Desjardins：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://desjardins.wd10.myworkdayjobs.com/wday/cxs/desjardins/Desjardins/jobs
+- Cushman & Wakefield Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cw.wd1.myworkdayjobs.com/wday/cxs/cw/External/jobs
 - Diageo Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://diageo.wd3.myworkdayjobs.com/wday/cxs/diageo/Diageo_Careers/jobs
 - EllisDon Corporation：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ellisdon.wd3.myworkdayjobs.com/wday/cxs/ellisdon/Ellis-Don/jobs
 - Enbridge：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://enbridge.wd3.myworkdayjobs.com/wday/cxs/enbridge/enbridge_careers/jobs
 - Fidelity Investments Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://fil.wd3.myworkdayjobs.com/wday/cxs/fil/fidelitycanada/jobs
 - Financial Modeling Prep：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://michelinhr.wd3.myworkdayjobs.com/wday/cxs/michelinhr/Michelin/jobs
 - FinDev Canada：page: HTTPError: 410 Client Error: Gone for url: https://jobs.workable.com/view/23H94p8G1Rrgw7VSvHTynA/hybrid-analyst%2C-investments-in-montreal-at-findev-canada
+- Foresters Financial：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://foresters.wd3.myworkdayjobs.com/wday/cxs/foresters/ForestersFinancialCareers/jobs
 - FSRA：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://fsra.wd3.myworkdayjobs.com/wday/cxs/fsra/FSRA_Careers/jobs
+- General Mills Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://genmills.wd1.myworkdayjobs.com/wday/cxs/genmills/GMI_External_Careers/jobs
 - Genumark：successfactors: HTTPError: 404 Client Error: Not Found for url: https://genumark.espwebsites.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow=0
+- Giant Tiger：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://gianttiger.wd3.myworkdayjobs.com/wday/cxs/gianttiger/gianttiger/jobs
 - Harry Rosen：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://harry.wd10.myworkdayjobs.com/wday/cxs/harry/HRI/jobs
 - Holt Renfrew：page: HTTPError: 403 Client Error: Forbidden for url: https://www.holtrenfrew.com/en/careers
+- Home Depot Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://homedepot.wd5.myworkdayjobs.com/wday/cxs/homedepot/CareerDepotCanada/jobs
+- HOOPP：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hoopp.wd10.myworkdayjobs.com/wday/cxs/hoopp/HOOPP/jobs
 - Hydro Ottawa：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hydroottawa.wd3.myworkdayjobs.com/wday/cxs/hydroottawa/hydro_ottawa_careersite/jobs
 - iA Financial Group：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ia.wd3.myworkdayjobs.com/wday/cxs/ia/Professional/jobs
+- IGM Financial / Mackenzie Investments：page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers
 - IMCO：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://imcoinvest.wd3.myworkdayjobs.com/wday/cxs/imcoinvest/IMCO/jobs
 - Intact Financial：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://intactfc.wd3.myworkdayjobs.com/wday/cxs/intactfc/intactfc/jobs
 - Interac：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://interac.wd3.myworkdayjobs.com/wday/cxs/interac/Interac/jobs
+- JLL Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://jll.wd1.myworkdayjobs.com/wday/cxs/jll/jllcareers/jobs
+- Kenvue Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://kenvue.wd5.myworkdayjobs.com/wday/cxs/kenvue/kenvue/jobs
+- Kimberly-Clark Canada：page: HTTPError: 403 Client Error: Forbidden for url: https://www.kimberly-clark.com/en-us/careers
 - Kinaxis：page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-kinaxis.icims.com/jobs/search
 - LCBO：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://lcbo.wd3.myworkdayjobs.com/wday/cxs/lcbo/LCBOCareerSite/jobs
 - Manulife：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://manulife.wd3.myworkdayjobs.com/wday/cxs/manulife/MFCJH_Jobs/jobs
+- Mastercard Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs
 - McKinsey & Company：page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)
+- Mercer Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mmc.wd1.myworkdayjobs.com/wday/cxs/mmc/MMC/jobs
 - Moneris：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://moneris.wd3.myworkdayjobs.com/wday/cxs/moneris/Moneris/jobs
+- Morningstar DBRS：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://morningstar.wd5.myworkdayjobs.com/wday/cxs/morningstar/morningstar/jobs
 - Mosaic North America：page: SSLError: HTTPSConnectionPool(host='mosaicjobs.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME]
 - Nestlé Canada：page: HTTPError: 403 Client Error: Forbidden for url: https://www.corporate.nestle.ca/en/jobs/students-graduates
+- Northern Trust Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ntrs.wd1.myworkdayjobs.com/wday/cxs/ntrs/northerntrust/jobs
 - NVIDIA：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs
+- Office of the Auditor General of Ontario：page: ConnectTimeout: HTTPSConnectionPool(host='auditor.on.ca', port=443): Max retries exceeded with url: /careers.html (Caused by ConnectTimeoutError(<HTTPSConnection(host
 - OLG：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://olg.wd3.myworkdayjobs.com/wday/cxs/olg/Careers/jobs
-- OPTrust：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://optrust.wd3.myworkdayjobs.com/wday/cxs/optrust/OPTrust/jobs
+- Ontario Teachers' Pension Plan：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://otppb.wd3.myworkdayjobs.com/wday/cxs/otppb/OntarioTeachers_Careers/jobs
 - Oxford Properties：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://omers.wd3.myworkdayjobs.com/wday/cxs/omers/OMERS_External/jobs
+- Procter & Gamble Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000/jobs
+- Protiviti Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://roberthalf.wd1.myworkdayjobs.com/wday/cxs/roberthalf/ProtivitiNA/jobs
 - PSP Investments：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://investpsp.wd3.myworkdayjobs.com/wday/cxs/investpsp/psp_careers/jobs
 - Purpose Investments：page: HTTPError: 429 Client Error: Too Many Requests for url: https://www.purposeinvest.com/careers
+- RELX / LexisNexis Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://relx.wd3.myworkdayjobs.com/wday/cxs/relx/relx/jobs
 - RGA Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://rgare.wd1.myworkdayjobs.com/wday/cxs/rgare/Careers/jobs
+- Royal Academy of Dance (Canada)：page: HTTPError: 403 Client Error: Forbidden for url: https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/
+- RSM Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://rsm.wd1.myworkdayjobs.com/wday/cxs/rsm/RSMCareers/jobs
+- S&P Global (Ratings)：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://spgi.wd5.myworkdayjobs.com/wday/cxs/spgi/SPGI_Careers/jobs
+- Sagard：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://sagardholdings.wd10.myworkdayjobs.com/wday/cxs/sagardholdings/sagardcareers/jobs
+- State Street Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs
 - Sun Life：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://sunlife.wd3.myworkdayjobs.com/wday/cxs/sunlife/Experienced-Jobs/jobs
 - TC Energy：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://tcenergy.wd3.myworkdayjobs.com/wday/cxs/tcenergy/CAREER_SITE_TC/jobs
 - TD Bank：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/jobs
+- Thomson Reuters：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_Site/jobs
 - TMX Group：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://tmx.wd3.myworkdayjobs.com/wday/cxs/tmx/TMX_Careers/jobs
+- Toronto Public Library Foundation：page: ConnectTimeout: HTTPSConnectionPool(host='tplfoundation.ca', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host=
+- Toyota Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://toyota.wd503.myworkdayjobs.com/wday/cxs/toyota/TMNA/jobs
+- TransUnion Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://transunion.wd5.myworkdayjobs.com/wday/cxs/transunion/transunion/jobs
 - Unilever Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://unilever.wd3.myworkdayjobs.com/wday/cxs/unilever/Unilever_Experienced_Professionals/jobs
+- Visa Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa_Early_Careers/jobs
 
 ## 外部招聘渠道
 
-- Work In Culture：成功，88 个职位，新记录相关 0 个，新加入名单的雇主 0 家
-- Job Bank：成功，320 个职位，新记录相关 8 个，新加入名单的雇主 2 家
+- Work In Culture：成功，87 个职位，新记录相关 0 个，新加入名单的雇主 0 家
+- Job Bank：成功，317 个职位，新记录相关 15 个，新加入名单的雇主 2 家
 - Adzuna：跳过，未设置接口密钥，跳过
 
-## 还没有招聘入口的雇主（117）
+## 还没有招聘入口的雇主（119）
 
 每周一会自动按公司名寻找它们的官网招聘页。其中重点雇主：Power Corporation / Great-West Lifeco。
