@@ -223,7 +223,7 @@ koho,KOHO,P2,金融科技,ashby,koho,,original,
 kpmg-canada,KPMG Canada,P0,Big4,sitemap,https://careers.kpmg.ca/sitemap.xml,https://careers.kpmg.ca/students,original,
 kraft-heinz-canada,Kraft Heinz Canada,P1,消费品,,,https://jobs.kraftheinz.com/careers,original,
 kroll-canada,Kroll Canada,P2,咨询/估值,,,https://careers.kroll.com/en,original,
-kruger-products,Kruger Products,P2,纸品消费品（Mississauga）,,,https://www.krugerproducts.ca/en-ca/careers,original,
+kruger-products,Kruger Products,P2,纸品消费品（Mississauga）,workday,kruger/wd10/Kruger_Products,https://www.krugerproducts.ca/en-ca/careers,original,
 l-e-k-consulting,L.E.K. Consulting,P1,咨询,,,https://www.lek.com/careers,original,
 l-or-al-canada,L'Oréal Canada,P1,消费品/奢侈品,radancy,https://careers.loreal.com,https://careers.loreal.com/en/search-jobs,original,
 labatt-breweries,Labatt Breweries,P2,消费品,,,,original,
@@ -530,3 +530,6 @@ re-max-optimum-team-arora-realty,RE/MAX OPTIMUM TEAM ARORA REALTY,P2,自动发�
 anglican-church,The Anglican Church of Canada,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-18
 bvd,BVD Group,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-18
 sgb-freight-system,SGB FREIGHT SYSTEM,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-19
+nelson-education,Nelson Education LTD,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-19
+convoy-finance,Convoy Finance,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-19
+visa-depot,The Visa Depot Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-19
