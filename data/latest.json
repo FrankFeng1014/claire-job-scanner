@@ -1,111 +1,321 @@
 {
  "ats_detected_by_browser": [],
- "baseline": [],
- "candidates": [
+ "baseline": [
   {
    "active": true,
    "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ],
+      "location": [
+       "Burlington, ON L7R 3N2, Canada",
+       "Hamilton, ON L8K 1H1, Canada"
+      ]
+     },
+     "date": "2026-11-20",
+     "run": "20261120T190934Z-bf98b1"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ],
+      "location": [
+       "Hamilton, ON L8K 1H1, Canada",
+       "Burlington, ON L7R 3N2, Canada"
+      ]
+     },
+     "date": "2026-11-21",
+     "run": "20261121T180242Z-f399b7"
+    }
+   ],
    "details": {
-    "checked": "2026-11-21",
+    "checked": "2026-11-20",
     "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$62,000.00 - $92,000.00 per year",
+    "salary": "$40,000",
     "years_min": 1
    },
-   "details_note": "经验≥1年；$62,000.00 - $92,000.00 per year",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Oxford Properties",
-   "employer_id": "oxford-properties",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 83,
-   "found_as": "新发布",
-   "job_id": "/job/Toronto-Ontario/Associate--People-Experience---Operations_JR-8431",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, Ontario",
-   "posted": "Posted 4 Days Ago",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "workday",
-   "tier": "P2",
-   "title": "Associate, People Experience & Operations",
-   "url": "https://omers.wd3.myworkdayjobs.com/en-US/OMERS_External/job/Toronto-Ontario/Associate--People-Experience---Operations_JR-8431"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
+   "details_note": "经验≥1年；$40,000",
    "eligibility": "A",
    "eligibility_notes": [],
    "employer": "BMO",
    "employer_id": "bmo",
    "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 73,
-   "found_as": "新发布",
-   "job_id": "R260031276",
+   "first_seen": "2026-11-20",
+   "first_seen_run": "20261120T040206Z-083054",
+   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
+   "fit_score": 85,
+   "job_id": "R260027665",
+   "last_modified_seen": "2026-11-21",
    "last_seen": "2026-11-21",
-   "location": "Toronto, ON M8X 1C4, Canada",
-   "posted": "2026-11-20",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Scorecard Reporting Analyst",
-   "url": "https://jobs.bmo.com/ca/en/job/R260031276/Scorecard-Reporting-Analyst"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Canada Post",
-   "employer_id": "canada-post",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 68,
-   "found_as": "新发布",
-   "job_id": "608243817",
-   "last_seen": "2026-11-21",
-   "location": "Ottawa, ON, CA",
-   "posted": "",
+   "location": "Burlington, ON L7R 3N2, Canada",
+   "posted": "2026-11-19",
    "relevant": true,
    "resume_family": "coordination",
    "resume_version": "Coordination_Client_Ops",
-   "source": "successfactors",
+   "rule_included": "2026-11-21",
+   "source": "phenom",
+   "tier": "P0",
+   "title": "Client Service Assistant",
+   "url": "https://jobs.bmo.com/ca/en/job/R260027665/Client-Service-Assistant"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ],
+      "location": [
+       "Calgary, AB T2A 2K2, Canada",
+       "Toronto, ON M8X 1C4, Canada"
+      ]
+     },
+     "date": "2026-11-18",
+     "run": "20261118T043028Z-0685ee"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ],
+      "location": [
+       "Toronto, ON M8X 1C4, Canada",
+       "Calgary, AB T2A 2K2, Canada"
+      ]
+     },
+     "date": "2026-11-19",
+     "run": "20261119T193132Z-654877"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ],
+      "location": [
+       "Calgary, AB T2A 2K2, Canada",
+       "Toronto, ON M8X 1C4, Canada"
+      ]
+     },
+     "date": "2026-11-20",
+     "run": "20261120T190934Z-bf98b1"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ],
+      "location": [
+       "Toronto, ON M8X 1C4, Canada",
+       "Calgary, AB T2A 2K2, Canada"
+      ]
+     },
+     "date": "2026-11-21",
+     "run": "20261121T040056Z-0a11f6"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ],
+      "location": [
+       "Calgary, AB T2A 2K2, Canada",
+       "Toronto, ON M8X 1C4, Canada"
+      ]
+     },
+     "date": "2026-11-21",
+     "run": "20261121T180242Z-f399b7"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$45,000.00 - $100,000.00",
+    "years_min": null
+   },
+   "details_note": "$45,000.00 - $100,000.00",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "BMO",
+   "employer_id": "bmo",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "fit_reasons": "多伦多/渥太华、入门级、偏销售/柜台",
+   "fit_score": 48,
+   "job_id": "R260011666",
+   "last_modified_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "location": "Toronto, ON M8X 1C4, Canada",
+   "posted": "2026-10-06",
+   "relevant": true,
+   "resume_family": "ba",
+   "resume_version": "Business_Analyst",
+   "rule_included": "2026-11-21",
+   "source": "phenom",
+   "tier": "P0",
+   "title": "Associate, Internal Sales, Intermediary Distribution",
+   "url": "https://jobs.bmo.com/ca/en/job/R260011666/Associate-Internal-Sales-Intermediary-Distribution"
+  },
+  {
+   "active": true,
+   "baseline": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-21",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$23 to $24 an hour",
+    "years_min": null
+   },
+   "details_note": "$23 to $24 an hour",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Kruger Products",
+   "employer_id": "kruger-products",
+   "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+   "first_seen": "2026-11-21",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "多伦多/渥太华、入门级、财务/审计/分析",
+   "fit_score": 76,
+   "job_id": "/job/Head-Office---Mississauga/FP-A-Intern--8-months-_JR0000000023-1",
+   "last_seen": "2026-11-21",
+   "location": "Head Office - Mississauga",
+   "posted": "Posted 3 Days Ago",
+   "relevant": false,
+   "resume_family": "finance",
+   "resume_version": "Finance",
+   "source": "workday",
    "tier": "P2",
-   "title": "Officer, Planning and Projects",
-   "url": "https://jobs.canadapost.ca/job/Ottawa-Officer%2C-Planning-and-Projects-ON/608243817/"
+   "title": "FP&A Intern (8 months)",
+   "url": "https://kruger.wd10.myworkdayjobs.com/en-US/Kruger_Products/job/Head-Office---Mississauga/FP-A-Intern--8-months-_JR0000000023-1"
+  }
+ ],
+ "candidates": [
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ],
+      "location": [
+       "Burlington, ON L7R 3N2, Canada",
+       "Hamilton, ON L8K 1H1, Canada"
+      ]
+     },
+     "date": "2026-11-20",
+     "run": "20261120T190934Z-bf98b1"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ],
+      "location": [
+       "Hamilton, ON L8K 1H1, Canada",
+       "Burlington, ON L7R 3N2, Canada"
+      ]
+     },
+     "date": "2026-11-21",
+     "run": "20261121T180242Z-f399b7"
+    }
+   ],
+   "details": {
+    "checked": "2026-11-20",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$40,000",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年；$40,000",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "BMO",
+   "employer_id": "bmo",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-20",
+   "first_seen_run": "20261120T040206Z-083054",
+   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
+   "fit_score": 85,
+   "found_as": "规则新纳入",
+   "job_id": "R260027665",
+   "last_modified_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "location": "Burlington, ON L7R 3N2, Canada",
+   "posted": "2026-11-19",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "rule_included": "2026-11-21",
+   "source": "phenom",
+   "tier": "P0",
+   "title": "Client Service Assistant",
+   "url": "https://jobs.bmo.com/ca/en/job/R260027665/Client-Service-Assistant"
+  },
+  {
+   "active": true,
+   "candidate_status": "relevant",
+   "details": {
+    "checked": "2026-11-21",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$20.00-$22.00 per hour",
+    "years_min": null
+   },
+   "details_note": "$20.00-$22.00 per hour",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Napkin Marketing Inc.",
+   "employer_id": "napkin-marketing",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
+   "first_seen": "2026-11-21",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
+   "fit_score": 73,
+   "found_as": "新发布",
+   "job_id": "50774492",
+   "last_seen": "2026-11-21",
+   "location": "Toronto, ON",
+   "posted": "November 21, 2026",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "channel:jobbank",
+   "tier": "P2",
+   "title": "marketing coordinator",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50774492"
   },
   {
    "active": true,
@@ -117,286 +327,148 @@
     "new_grad_text": false,
     "ok": true,
     "salary": "",
-    "years_min": 1
+    "years_min": 0
    },
-   "details_note": "经验≥1年",
+   "details_note": "经验≥0年",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "Green Ira Immigration Solutions Inc.",
+   "employer": "Top Shop",
    "employer_id": "channel-jobbank",
    "filter_reason": "职能与地点相关（来源：Job Bank）",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
+   "first_seen_run": "20261121T180242Z-f399b7",
    "fit_reasons": "多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远",
    "fit_score": 67,
    "found_as": "新发布",
-   "job_id": "50771182",
+   "job_id": "50774900",
    "last_seen": "2026-11-21",
-   "location": "Brampton, ON",
-   "posted": "November 20, 2026",
+   "location": "Toronto, ON",
+   "posted": "November 21, 2026",
    "relevant": true,
    "resume_family": "coordination",
    "resume_version": "Coordination_Client_Ops",
    "source": "channel:jobbank",
    "tier": "—",
    "title": "administrative assistant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771182"
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50774900"
   },
   {
    "active": true,
+   "baseline": true,
    "candidate_status": "relevant",
+   "change_history": [
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ],
+      "location": [
+       "Calgary, AB T2A 2K2, Canada",
+       "Toronto, ON M8X 1C4, Canada"
+      ]
+     },
+     "date": "2026-11-18",
+     "run": "20261118T043028Z-0685ee"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ],
+      "location": [
+       "Toronto, ON M8X 1C4, Canada",
+       "Calgary, AB T2A 2K2, Canada"
+      ]
+     },
+     "date": "2026-11-19",
+     "run": "20261119T193132Z-654877"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ],
+      "location": [
+       "Calgary, AB T2A 2K2, Canada",
+       "Toronto, ON M8X 1C4, Canada"
+      ]
+     },
+     "date": "2026-11-20",
+     "run": "20261120T190934Z-bf98b1"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "relevant",
+       "irrelevant"
+      ],
+      "location": [
+       "Toronto, ON M8X 1C4, Canada",
+       "Calgary, AB T2A 2K2, Canada"
+      ]
+     },
+     "date": "2026-11-21",
+     "run": "20261121T040056Z-0a11f6"
+    },
+    {
+     "changes": {
+      "candidate_status": [
+       "irrelevant",
+       "relevant"
+      ],
+      "location": [
+       "Calgary, AB T2A 2K2, Canada",
+       "Toronto, ON M8X 1C4, Canada"
+      ]
+     },
+     "date": "2026-11-21",
+     "run": "20261121T180242Z-f399b7"
+    }
+   ],
    "details": {
-    "checked": "2026-11-21",
+    "checked": "2026-11-10",
     "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Modern Air Filtration Corporation",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 65,
-   "found_as": "新发布",
-   "job_id": "50771507",
-   "last_seen": "2026-11-21",
-   "location": "Brampton, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "accounts receivable clerk",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771507"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$55,000 - $68,800",
+    "salary": "$45,000.00 - $100,000.00",
     "years_min": null
    },
-   "details_note": "$55,000 - $68,800",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "PointClickCare",
-   "employer_id": "pointclickcare",
+   "details_note": "$45,000.00 - $100,000.00",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "BMO",
+   "employer_id": "bmo",
    "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "可远程、财务/审计/分析",
-   "fit_score": 62,
-   "found_as": "新发布",
-   "job_id": "666eed2e-a629-4dae-8afd-cae397cca694",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "fit_reasons": "多伦多/渥太华、入门级、偏销售/柜台",
+   "fit_score": 48,
+   "found_as": "规则新纳入",
+   "job_id": "R260011666",
+   "last_modified_seen": "2026-11-21",
    "last_seen": "2026-11-21",
-   "location": "Remote, Canada",
-   "posted": "2026-11-20",
+   "location": "Toronto, ON M8X 1C4, Canada",
+   "posted": "2026-10-06",
    "relevant": true,
    "resume_family": "ba",
    "resume_version": "Business_Analyst",
-   "source": "lever",
-   "tier": "P1",
-   "title": "Solutions Analyst (EHR, Clinexus Customer Support) - CA",
-   "url": "https://jobs.lever.co/pointclickcare/666eed2e-a629-4dae-8afd-cae397cca694"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Multi-Turf Canada",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远",
-   "fit_score": 57,
-   "found_as": "新发布",
-   "job_id": "50771580",
-   "last_seen": "2026-11-21",
-   "location": "Markham, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "administrative assistant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771580"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "PLDental",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远",
-   "fit_score": 37,
-   "found_as": "新发布",
-   "job_id": "50772261",
-   "last_seen": "2026-11-21",
-   "location": "Scarborough, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "office administrator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50772261"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Northbridge Financial",
-   "employer_id": "northbridge-financial",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 61,
-   "found_as": "新发布",
-   "job_id": "R5242",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, Ontario",
-   "posted": "2026-11-20",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
+   "rule_included": "2026-11-21",
    "source": "phenom",
-   "tier": "P2",
-   "title": "Claims Coordinator, Appraisal Services (Bilingual Preferred)",
-   "url": "https://careers.nbfc.com/ca/en/job/R5242/Claims-Coordinator-Appraisal-Services-Bilingual-Preferred"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 90,000 to $ 105,000",
-    "years_min": null
-   },
-   "details_note": "$ 90,000 to $ 105,000",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Almag Aluminum",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 60,
-   "found_as": "新发布",
-   "job_id": "50771887",
-   "last_seen": "2026-11-21",
-   "location": "Brampton, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "assistant controller",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771887"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 45,000 to $ 56,000",
-    "years_min": null
-   },
-   "details_note": "$ 45,000 to $ 56,000",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Snuggle Bugz",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华",
-   "fit_score": 45,
-   "found_as": "新发布",
-   "job_id": "50770936",
-   "last_seen": "2026-11-21",
-   "location": "Oakville, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "social media content specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50770936"
+   "tier": "P0",
+   "title": "Associate, Internal Sales, Intermediary Distribution",
+   "url": "https://jobs.bmo.com/ca/en/job/R260011666/Associate-Internal-Sales-Intermediary-Distribution"
   }
  ],
  "candidates_review": [
   {
    "active": true,
+   "baseline": true,
    "candidate_status": "review",
    "details": {
     "checked": "2026-11-21",
@@ -404,66 +476,31 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "",
+    "salary": "$23 to $24 an hour",
     "years_min": null
    },
-   "details_note": "",
+   "details_note": "$23 to $24 an hour",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "Mercer Canada",
-   "employer_id": "mercer-canada",
+   "employer": "Kruger Products",
+   "employer_id": "kruger-products",
    "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级、应届/项目、财务/审计/分析",
-   "fit_score": 87,
-   "found_as": "新发布",
-   "job_id": "/job/Toronto---Bremner/Marsh-Risk-Early-Career-Internship-Program--Summer-2027---Toronto_R_373139",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "多伦多/渥太华、入门级、财务/审计/分析",
+   "fit_score": 76,
+   "found_as": "新接入",
+   "job_id": "/job/Head-Office---Mississauga/FP-A-Intern--8-months-_JR0000000023-1",
    "last_seen": "2026-11-21",
-   "location": "Toronto - Bremner",
-   "posted": "Posted Yesterday",
+   "location": "Head Office - Mississauga",
+   "posted": "Posted 3 Days Ago",
    "relevant": false,
    "resume_family": "finance",
    "resume_version": "Finance",
    "source": "workday",
-   "tier": "P1",
-   "title": "Marsh Risk Early Career Internship Program, Summer 2027 – Toronto",
-   "url": "https://mmc.wd1.myworkdayjobs.com/en-US/MMC/job/Toronto---Bremner/Marsh-Risk-Early-Career-Internship-Program--Summer-2027---Toronto_R_373139"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$72,000.00 - $108,000.00 per year",
-    "years_min": null
-   },
-   "details_note": "$72,000.00 - $108,000.00 per year",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Oxford Properties",
-   "employer_id": "oxford-properties",
-   "filter_reason": "合同/临时岗：需确认入职时间",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 61,
-   "found_as": "新发布",
-   "job_id": "/job/Toronto-Ontario/Analyst--Derivative-Operations--10-Month-Contract-_JR-8571",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, Ontario",
-   "posted": "Posted 3 Days Ago",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "workday",
    "tier": "P2",
-   "title": "Analyst, Derivative Operations (10-Month Contract)",
-   "url": "https://omers.wd3.myworkdayjobs.com/en-US/OMERS_External/job/Toronto-Ontario/Analyst--Derivative-Operations--10-Month-Contract-_JR-8571"
+   "title": "FP&A Intern (8 months)",
+   "url": "https://kruger.wd10.myworkdayjobs.com/en-US/Kruger_Products/job/Head-Office---Mississauga/FP-A-Intern--8-months-_JR0000000023-1"
   },
   {
    "active": true,
@@ -475,139 +512,139 @@
     "new_grad_text": false,
     "ok": true,
     "salary": "",
-    "years_min": null
+    "years_min": 1
    },
-   "details_note": "",
+   "details_note": "经验≥1年",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "Equifax Canada",
-   "employer_id": "equifax-canada",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
    "filter_reason": "没写地点，需确认是否在加拿大/目标城市",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "地点待确认、入门级、应届/项目、艺术/文化、偏销售/柜台",
-   "fit_score": 51,
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 36,
    "found_as": "新发布",
-   "job_id": "https://careers.equifax.com/en/jobs/j00178815/sales-rotational-development-associate/",
+   "job_id": "https://www.roberthalf.com/ca/en/job/mississauga-on/accounts-payable-clerk/001269921-caen",
    "last_seen": "2026-11-21",
    "location": "",
    "posted": "",
+   "relevant": false,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "page",
+   "tier": "P2",
+   "title": "Accounts Payable Clerk",
+   "url": "https://www.roberthalf.com/ca/en/job/mississauga-on/accounts-payable-clerk/001269921-caen"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-21",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
+   "filter_reason": "没写地点，需确认是否在加拿大/目标城市",
+   "first_seen": "2026-11-21",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "地点待确认、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远",
+   "fit_score": 10,
+   "found_as": "新发布",
+   "job_id": "https://www.roberthalf.com/ca/en/job/toronto-on/office-administrator/001269844-caen",
+   "last_seen": "2026-11-21",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "page",
+   "tier": "P2",
+   "title": "Office Administrator",
+   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/office-administrator/001269844-caen"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-21",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$79 320",
+    "years_min": 2
+   },
+   "details_note": "经验≥2年；$79 320",
+   "eligibility": "B",
+   "eligibility_notes": [
+    "要求 2 年经验"
+   ],
+   "employer": "Citi Canada",
+   "employer_id": "citi-canada",
+   "filter_reason": "职位页要求 2 年经验",
+   "first_seen": "2026-11-21",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 47,
+   "found_as": "新发布",
+   "job_id": "/job/Mississauga-Ontario-Canada/Testing-Intermediate-Analyst---Officer_261005774",
+   "last_seen": "2026-11-21",
+   "location": "Mississauga Ontario Canada",
+   "posted": "Posted Yesterday",
+   "relevant": false,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "workday",
+   "tier": "P1",
+   "title": "Testing Intermediate Analyst - Officer",
+   "url": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Mississauga-Ontario-Canada/Testing-Intermediate-Analyst---Officer_261005774"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-21",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$ 90,000 to $ 100,000",
+    "years_min": 2
+   },
+   "details_note": "经验≥2年；$ 90,000 to $ 100,000",
+   "eligibility": "B",
+   "eligibility_notes": [
+    "要求 2 年经验"
+   ],
+   "employer": "Employment Hero",
+   "employer_id": "channel-jobbank",
+   "filter_reason": "职位页要求 2 年经验",
+   "first_seen": "2026-11-21",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "多伦多/渥太华、艺术/文化",
+   "fit_score": 45,
+   "found_as": "新发布",
+   "job_id": "50773963",
+   "last_seen": "2026-11-21",
+   "location": "Toronto, ON",
+   "posted": "November 21, 2026",
    "relevant": false,
    "resume_family": "arts",
    "resume_version": "Arts_Culture · Development",
-   "source": "page",
-   "tier": "P2",
-   "title": "Sales Rotational Development Associate",
-   "url": "https://careers.equifax.com/en/jobs/j00178815/sales-rotational-development-associate/"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "2027-02-18",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$29.25/hour",
-    "years_min": 5
-   },
-   "details_note": "截止 2027-02-18；$29.25/hour",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "WoodGreen Community Services",
-   "employer_id": "woodgreen-community-services",
-   "filter_reason": "职位页提到 5 年经验，请确认是否针对应届生",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 33,
-   "found_as": "新发布",
-   "job_id": "cEaDCYqpTU",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, ON, Canada",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "jazzhr",
-   "tier": "P2",
-   "title": "Youth Worker, In-Home Intensive Program (2026-214-YPS)",
-   "url": "https://woodgreencommunityservices.applytojob.com/apply/cEaDCYqpTU/Youth-Worker-InHome-Intensive-Program-2026214YPS"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "ZEPHYR CANNABIS",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "财务/审计/分析",
-   "fit_score": 30,
-   "found_as": "新发布",
-   "job_id": "50772638",
-   "last_seen": "2026-11-21",
-   "location": "Kanata, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "consulting",
-   "resume_version": "Consulting",
    "source": "channel:jobbank",
    "tier": "—",
-   "title": "Cannabis consultant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50772638"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [
-     "要求 2026 年内入职（早于 2027 年 1 月）"
-    ],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$50,000",
-    "years_min": null
-   },
-   "details_note": "$50,000；要求 2026 年内入职（早于 2027 年 1 月）",
-   "eligibility": "B",
-   "eligibility_notes": [
-    "要求 2026 年内入职（早于 2027 年 1 月）"
-   ],
-   "employer": "Optimum Assurance générale",
-   "employer_id": "optimum-assurance-generale",
-   "filter_reason": "职位页：要求 2026 年内入职（早于 2027 年 1 月）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级、财务/审计/分析",
-   "fit_score": 76,
-   "found_as": "新发布",
-   "job_id": "50771947",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "junior underwriter - insurance",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771947"
+   "title": "business development officer",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50773963"
   },
   {
    "active": true,
@@ -626,173 +663,25 @@
    "eligibility_notes": [
     "要求 2 年经验"
    ],
-   "employer": "Swiftronics",
-   "employer_id": "swiftronics",
-   "filter_reason": "职位页要求 2 年经验",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
+   "filter_reason": "没写地点，需确认是否在加拿大/目标城市；职位页要求 2 年经验",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 46,
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 11,
    "found_as": "新发布",
-   "job_id": "50771512",
-   "last_seen": "2026-11-21",
-   "location": "Brampton, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "business management analyst",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771512"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "2027-11-20",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$55,000 to $85,000",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年；截止 2027-11-20；$55,000 to $85,000",
-   "eligibility": "B",
-   "eligibility_notes": [
-    "要求 2 年经验"
-   ],
-   "employer": "KPMG Canada",
-   "employer_id": "kpmg-canada",
-   "filter_reason": "合同/临时岗：需确认入职时间；职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 35,
-   "found_as": "新发布",
-   "job_id": "37489",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, Ontario, Canada; Ottawa, Ontario, Canada; Kingston, Ontario, Canada; Kitchener, Ontario, Canada; Edmonton, Alberta, Canada; Halifax, Nova Scotia, Canada; Hamilton, Ontario, Canada; Kanata, Ontario, Canada; North Bay, Ontario, Canada; Oakville, Ontario, Canada; London, Ontario, Canada; Regina, Saskatchewan, Canada; Saskatoon, Saskatchewan, Canada; Sault Ste. Marie, Ontario, Canada; St. John's, Newfoundland and Labrador, Canada; Sudbury, Ontario, Canada; Toronto, Ontario, Canada; Vancouver, British Columbia, Canada; Vaughan, Ontario, Canada; Vernon, British Columbia, Canada; Victoria, British Columbia, Canada; Waterloo, Ontario, Canada; Windsor, Ontario, Canada; Winnipeg, Manitoba, Canada",
-   "posted": "2026-11-20",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "sitemap",
-   "tier": "P0",
-   "title": "Specialist, National CPA Program (24 months contract)",
-   "url": "https://careers.kpmg.ca/jobs/37489?lang=en-us"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年",
-   "eligibility": "B",
-   "eligibility_notes": [
-    "要求 2 年经验"
-   ],
-   "employer": "Excel Exhaust System Inc",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门（来源：Job Bank）；职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 30,
-   "found_as": "新发布",
-   "job_id": "50771933",
-   "last_seen": "2026-11-21",
-   "location": "Scarborough, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "consulting",
-   "resume_version": "Consulting",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "business management consultant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771933"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年",
-   "eligibility": "B",
-   "eligibility_notes": [
-    "要求 2 年经验"
-   ],
-   "employer": "Purolator",
-   "employer_id": "purolator",
-   "filter_reason": "职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 18,
-   "found_as": "新发布",
-   "job_id": "1452734800",
-   "last_seen": "2026-11-21",
-   "location": "Etobicoke, ON, CA, M9W 1L2",
-   "posted": "20 Nov 2026",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "successfactors",
-   "tier": "P2",
-   "title": "Operations Dispatcher",
-   "url": "https://careers.purolator.com/job/Etobicoke-Operations-Dispatcher-ON-M9W-1L2/1452734800/"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": true,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "写明应届可申",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Ballet Jörgen",
-   "employer_id": "ballet-jorgen",
-   "filter_reason": "没写地点，需确认是否在加拿大/目标城市",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "地点待确认、入门级",
-   "fit_score": 41,
-   "found_as": "新发布",
-   "job_id": "https://www.jorgendance.ca/jorgen-dance/careers/",
+   "job_id": "https://www.roberthalf.com/ca/en/job/toronto-on/property-accountant/001269725-caen",
    "last_seen": "2026-11-21",
    "location": "",
    "posted": "",
    "relevant": false,
-   "resume_family": "coordination",
-   "resume_version": "Arts_Culture · Museum Administration",
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
    "source": "page",
    "tier": "P2",
-   "title": "Lighting Coordinator",
-   "url": "https://www.jorgendance.ca/jorgen-dance/careers/"
+   "title": "Property Accountant",
+   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/property-accountant/001269725-caen"
   },
   {
    "active": true,
@@ -803,120 +692,45 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$57,000.00",
+    "salary": "$25,000.00-$50,000.00 per year",
     "years_min": 2
    },
-   "details_note": "经验≥2年；$57,000.00",
+   "details_note": "经验≥2年；$25,000.00-$50,000.00 per year",
    "eligibility": "C",
    "eligibility_notes": [
     "要求 2 年经验",
     "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
    ],
-   "employer": "Sephora Canada",
-   "employer_id": "sephora-canada",
-   "filter_reason": "合同/临时岗：需确认入职时间；职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 36,
-   "found_as": "新发布",
-   "job_id": "1377854955",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, ON, CA, M4W 0A2",
-   "posted": "Nov 21, 2026",
-   "relevant": false,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "successfactors",
-   "tier": "P2",
-   "title": "Coordinator, Sampling Promotions (12-Month Contract)",
-   "url": "https://jobs.sephora.com/Canada/job/Toronto-Coordinator%2C-Sampling-Promotions-%2812-Month-Contract%29-ON-M4W-0A2/1377854955/"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$24/hour",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年；$24/hour",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "要求 2 年经验",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "ADECCO",
+   "employer": "eye care - optical",
    "employer_id": "channel-jobbank",
    "filter_reason": "职位页要求 2 年经验",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
+   "first_seen_run": "20261121T180242Z-f399b7",
    "fit_reasons": "多伦多/渥太华、入门级",
    "fit_score": 35,
    "found_as": "新发布",
-   "job_id": "50771757",
+   "job_id": "50774874",
    "last_seen": "2026-11-21",
-   "location": "Ottawa, ON",
-   "posted": "November 20, 2026",
+   "location": "Toronto, ON",
+   "posted": "November 21, 2026",
    "relevant": false,
    "resume_family": "coordination",
    "resume_version": "Coordination_Client_Ops",
    "source": "channel:jobbank",
    "tier": "—",
-   "title": "materials coordinator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771757"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 61,464 to $ 65,304",
-    "years_min": null
-   },
-   "details_note": "$ 61,464 to $ 65,304",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "VON Canada",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "地点只写了 Canada，需确认城市（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "入门级",
-   "fit_score": 35,
-   "found_as": "新发布",
-   "job_id": "50767531",
-   "last_seen": "2026-11-21",
-   "location": "Various locations",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "employer-employee relations coordinator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50767531"
+   "title": "patient care coordinator",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50774874"
   }
  ],
  "channels": [
   {
    "channel": "Work In Culture",
-   "detail": "93 个职位，新记录相关 0 个，新加入名单的雇主 0 家",
+   "detail": "90 个职位，新记录相关 0 个，新加入名单的雇主 0 家",
    "status": "ok"
   },
   {
    "channel": "Job Bank",
-   "detail": "313 个职位，新记录相关 13 个，新加入名单的雇主 5 家",
+   "detail": "319 个职位，新记录相关 4 个，新加入名单的雇主 1 家",
    "status": "ok"
   },
   {
@@ -1731,12 +1545,12 @@
    "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Markham-Ontario/SBB--Client-Service-Associate-11_R_1520874"
   }
  ],
- "details_checked": 32,
- "employers_complete": 116,
- "employers_failed": 68,
- "employers_ok": 339,
- "employers_skipped": 128,
- "employers_total": 535,
+ "details_checked": 11,
+ "employers_complete": 122,
+ "employers_failed": 56,
+ "employers_ok": 351,
+ "employers_skipped": 133,
+ "employers_total": 540,
  "excluded_by_details": [
   {
    "active": true,
@@ -1747,108 +1561,24 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$ 55,000 to $ 80,000",
-    "years_min": 3
-   },
-   "employer": "Agora Dealer Services Corp.",
-   "employer_id": "agora-dealer-services",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "job_id": "50771015",
-   "last_seen": "2026-11-21",
-   "location": "Mississauga, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "financial analyst",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771015"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 60,000 to $ 80,000",
-    "years_min": 4
-   },
-   "employer": "Yunshang Rice Noodle",
-   "employer_id": "yunshang-rice-noodle",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 4 年以上经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "job_id": "50771285",
-   "last_seen": "2026-11-21",
-   "location": "Markham, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "marketing specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771285"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 70,000 to $ 75,000",
-    "years_min": 3
-   },
-   "employer": "ADECCO",
-   "employer_id": "channel-jobbank",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "job_id": "50771591",
-   "last_seen": "2026-11-21",
-   "location": "Markham, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "sales analyst",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771591"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$100K",
+    "salary": "",
     "years_min": 5
    },
-   "employer": "Blue Mantis",
-   "employer_id": "channel-jobbank",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 5 年以上经验",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "job_id": "50771689",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "job_id": "https://www.roberthalf.com/ca/en/job/langley-bc/accountant/001269986-caen",
    "last_seen": "2026-11-21",
-   "location": "Toronto, ON",
-   "posted": "November 20, 2026",
+   "location": "",
+   "posted": "",
    "relevant": false,
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "business consultant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771689"
+   "source": "page",
+   "tier": "P2",
+   "title": "Accountant",
+   "url": "https://www.roberthalf.com/ca/en/job/langley-bc/accountant/001269986-caen"
   },
   {
    "active": true,
@@ -1862,87 +1592,31 @@
     "salary": "",
     "years_min": 3
    },
-   "employer": "Reef Promotional Staffing Inc.",
-   "employer_id": "channel-jobbank",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
    "excluded_by_details": true,
    "filter_reason": "职位页要求 3 年以上经验",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "job_id": "50771494",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "job_id": "https://www.roberthalf.com/ca/en/job/ottawa-on/bookkeeperoffice-admin/001269927-caen",
    "last_seen": "2026-11-21",
-   "location": "Toronto, ON",
-   "posted": "November 20, 2026",
+   "location": "",
+   "posted": "",
    "relevant": false,
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "marketing consultant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771494"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$58,000 - $71,000 a year",
-    "years_min": 3
-   },
-   "employer": "RioCan REIT",
-   "employer_id": "riocan-reit",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 3 年以上经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "job_id": "2704c028-fd6e-4957-8f46-6fe5b84516f2",
-   "last_seen": "2026-11-21",
-   "location": "Oakville, ON",
-   "posted": "2026-11-20",
-   "relevant": false,
-   "source": "lever",
+   "source": "page",
    "tier": "P2",
-   "title": "Property Administrator - Oakville Place",
-   "url": "https://jobs.lever.co/riocan/2704c028-fd6e-4957-8f46-6fe5b84516f2"
-  },
-  {
-   "active": true,
-   "candidate_status": "irrelevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 5
-   },
-   "employer": "Merit Decorating Centre Ltd.",
-   "employer_id": "merit-decorating-centre",
-   "excluded_by_details": true,
-   "filter_reason": "职位页要求 5 年以上经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "job_id": "50770806",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "purchasing agent",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50770806"
+   "title": "Bookkeeper/Office Admin",
+   "url": "https://www.roberthalf.com/ca/en/job/ottawa-on/bookkeeperoffice-admin/001269927-caen"
   }
  ],
  "failed": [
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
-   "id": "accenture-canada",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs",
+   "id": "3m-canada",
    "jobs_found": 0,
-   "name": "Accenture Canada",
+   "name": "3M Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1951,10 +1625,10 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs",
-   "id": "adobe-canada",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs",
+   "id": "accenture-canada",
    "jobs_found": 0,
-   "name": "Adobe Canada",
+   "name": "Accenture Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1975,10 +1649,10 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://bdc.wd10.myworkdayjobs.com/wday/cxs/bdc/BDC_Careers/jobs",
-   "id": "bdc",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://aritzia.wd3.myworkdayjobs.com/wday/cxs/aritzia/External/jobs",
+   "id": "aritzia",
    "jobs_found": 0,
-   "name": "BDC",
+   "name": "Aritzia",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2003,42 +1677,6 @@
    "id": "brookfield",
    "jobs_found": 0,
    "name": "Brookfield",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://caatpension.wd10.myworkdayjobs.com/wday/cxs/caatpension/Careers/jobs",
-   "id": "caat-pension-plan",
-   "jobs_found": 0,
-   "name": "CAAT Pension Plan",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cgf.wd10.myworkdayjobs.com/wday/cxs/cgf/CG/jobs",
-   "id": "canaccord-genuity",
-   "jobs_found": 0,
-   "name": "Canaccord Genuity",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://canadagoose.wd3.myworkdayjobs.com/wday/cxs/canadagoose/CanadaGooseCareers/jobs",
-   "id": "canada-goose",
-   "jobs_found": 0,
-   "name": "Canada Goose",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2143,18 +1781,6 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs",
-   "id": "citi-canada",
-   "jobs_found": 0,
-   "name": "Citi Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
    "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://colliers.wd3.myworkdayjobs.com/wday/cxs/colliers/Colliers-External-Career-Site/jobs",
    "id": "colliers",
    "jobs_found": 0,
@@ -2183,18 +1809,6 @@
    "id": "cpkc",
    "jobs_found": 0,
    "name": "CPKC",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cw.wd1.myworkdayjobs.com/wday/cxs/cw/External/jobs",
-   "id": "cushman-wakefield-canada",
-   "jobs_found": 0,
-   "name": "Cushman & Wakefield Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2299,6 +1913,18 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://genmills.wd1.myworkdayjobs.com/wday/cxs/genmills/GMI_External_Careers/jobs",
+   "id": "general-mills-canada",
+   "jobs_found": 0,
+   "name": "General Mills Canada",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-21",
+   "complete": "no",
    "detail": "successfactors: HTTPError: 404 Client Error: Not Found for url: https://genumark.espwebsites.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow=0",
    "id": "genumark",
    "jobs_found": 0,
@@ -2335,18 +1961,6 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hoopp.wd10.myworkdayjobs.com/wday/cxs/hoopp/HOOPP/jobs",
-   "id": "hoopp",
-   "jobs_found": 0,
-   "name": "HOOPP",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
    "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hydroottawa.wd3.myworkdayjobs.com/wday/cxs/hydroottawa/hydro_ottawa_careersite/jobs",
    "id": "hydro-ottawa",
    "jobs_found": 0,
@@ -2371,10 +1985,10 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers",
-   "id": "igm-financial-mackenzie-investments",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://imcoinvest.wd3.myworkdayjobs.com/wday/cxs/imcoinvest/IMCO/jobs",
+   "id": "imco",
    "jobs_found": 0,
-   "name": "IGM Financial / Mackenzie Investments",
+   "name": "IMCO",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2395,34 +2009,10 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://jll.wd1.myworkdayjobs.com/wday/cxs/jll/jllcareers/jobs",
-   "id": "jll-canada",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://interac.wd3.myworkdayjobs.com/wday/cxs/interac/Interac/jobs",
+   "id": "interac",
    "jobs_found": 0,
-   "name": "JLL Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://kenvue.wd5.myworkdayjobs.com/wday/cxs/kenvue/kenvue/jobs",
-   "id": "kenvue-canada",
-   "jobs_found": 0,
-   "name": "Kenvue Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.kimberly-clark.com/en-us/careers",
-   "id": "kimberly-clark-canada",
-   "jobs_found": 0,
-   "name": "Kimberly-Clark Canada",
+   "name": "Interac",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2435,18 +2025,6 @@
    "id": "kinaxis",
    "jobs_found": 0,
    "name": "Kinaxis",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://kruger.wd10.myworkdayjobs.com/wday/cxs/kruger/Kruger_Products/jobs",
-   "id": "kruger-products",
-   "jobs_found": 0,
-   "name": "Kruger Products",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2479,18 +2057,6 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs",
-   "id": "mastercard-canada",
-   "jobs_found": 0,
-   "name": "Mastercard Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
    "detail": "page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)",
    "id": "mckinsey-company",
    "jobs_found": 0,
@@ -2507,18 +2073,6 @@
    "id": "moneris",
    "jobs_found": 0,
    "name": "Moneris",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://morningstar.wd5.myworkdayjobs.com/wday/cxs/morningstar/morningstar/jobs",
-   "id": "morningstar-dbrs",
-   "jobs_found": 0,
-   "name": "Morningstar DBRS",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2551,22 +2105,10 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ntrs.wd1.myworkdayjobs.com/wday/cxs/ntrs/northerntrust/jobs",
-   "id": "northern-trust-canada",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+   "id": "nvidia",
    "jobs_found": 0,
-   "name": "Northern Trust Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "page: ConnectTimeout: HTTPSConnectionPool(host='auditor.on.ca', port=443): Max retries exceeded with url: /careers.html (Caused by ConnectTimeoutError(<HTTPSConnection(host",
-   "id": "office-of-the-auditor-general-of-ontario",
-   "jobs_found": 0,
-   "name": "Office of the Auditor General of Ontario",
+   "name": "NVIDIA",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2603,6 +2145,18 @@
    "id": "optrust",
    "jobs_found": 0,
    "name": "OPTrust",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-21",
+   "complete": "no",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://omers.wd3.myworkdayjobs.com/wday/cxs/omers/OMERS_External/jobs",
+   "id": "oxford-properties",
+   "jobs_found": 0,
+   "name": "Oxford Properties",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2671,10 +2225,10 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://sagardholdings.wd10.myworkdayjobs.com/wday/cxs/sagardholdings/sagardcareers/jobs",
-   "id": "sagard",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://spgi.wd5.myworkdayjobs.com/wday/cxs/spgi/SPGI_Careers/jobs",
+   "id": "s-p-global",
    "jobs_found": 0,
-   "name": "Sagard",
+   "name": "S&P Global (Ratings)",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2707,34 +2261,10 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/jobs",
-   "id": "td-bank",
-   "jobs_found": 0,
-   "name": "TD Bank",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
    "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://tmx.wd3.myworkdayjobs.com/wday/cxs/tmx/TMX_Careers/jobs",
    "id": "tmx-group",
    "jobs_found": 0,
    "name": "TMX Group",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "page: ConnectTimeout: HTTPSConnectionPool(host='tplfoundation.ca', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host=",
-   "id": "toronto-public-library-foundation",
-   "jobs_found": 0,
-   "name": "Toronto Public Library Foundation",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -2758,18 +2288,6 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 200 个职位",
-   "id": "aritzia",
-   "jobs_found": 200,
-   "name": "Aritzia",
-   "note": "第 11 页读取失败（HTTPError），已读 200 个",
-   "relevant_now": 0,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
    "detail": "avature: 200 个职位",
    "id": "bloomberg-toronto",
    "jobs_found": 200,
@@ -2782,21 +2300,33 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "successfactors: 594 个职位",
+   "detail": "successfactors: 601 个职位",
    "id": "bombardier",
-   "jobs_found": 594,
+   "jobs_found": 601,
    "name": "Bombardier",
-   "note": "报告共 826 个，实际只读到 594 个",
-   "relevant_now": 2,
+   "note": "报告共 825 个，实际只读到 601 个",
+   "relevant_now": 1,
    "scan_state": "partial",
    "status": "ok"
   },
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "successfactors: 1154 个职位",
+   "detail": "workday: 300 个职位",
+   "id": "broadridge-canada",
+   "jobs_found": 300,
+   "name": "Broadridge Canada",
+   "note": "第 16 页读取失败（HTTPError），已读 300 个",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-21",
+   "complete": "no",
+   "detail": "successfactors: 1106 个职位",
    "id": "canada-post",
-   "jobs_found": 1154,
+   "jobs_found": 1106,
    "name": "Canada Post",
    "note": "只读到最新职位的 RSS（不完整）",
    "relevant_now": 2,
@@ -2806,12 +2336,12 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 40 个职位",
+   "detail": "workday: 20 个职位",
    "id": "capital-one-canada",
-   "jobs_found": 40,
+   "jobs_found": 20,
    "name": "Capital One Canada",
-   "note": "招聘板共 2050 个职位，按地点筛选只读目标地区；第 3 页读取失败（HTTPError），已读 40 个",
-   "relevant_now": 1,
+   "note": "招聘板共 2052 个职位，按地点筛选只读目标地区；第 2 页读取失败（HTTPError），已读 20 个",
+   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2830,6 +2360,18 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
+   "detail": "workday: 188 个职位",
+   "id": "citi-canada",
+   "jobs_found": 188,
+   "name": "Citi Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 2,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-21",
+   "complete": "no",
    "detail": "successfactors: 12 个职位",
    "id": "city-of-toronto",
    "jobs_found": 12,
@@ -2842,11 +2384,11 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "successfactors: 69 个职位",
+   "detail": "successfactors: 59 个职位",
    "id": "cn-rail",
-   "jobs_found": 69,
+   "jobs_found": 59,
    "name": "CN Rail",
-   "note": "报告共 93 个，实际只读到 69 个",
+   "note": "报告共 81 个，实际只读到 59 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -2854,11 +2396,11 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "successfactors: 240 个职位",
+   "detail": "successfactors: 224 个职位",
    "id": "colgate-palmolive-canada",
-   "jobs_found": 240,
+   "jobs_found": 224,
    "name": "Colgate-Palmolive Canada",
-   "note": "报告共 317 个，实际只读到 240 个",
+   "note": "报告共 315 个，实际只读到 224 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -2866,11 +2408,11 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "successfactors: 317 个职位",
-   "id": "deloitte-canada",
-   "jobs_found": 317,
-   "name": "Deloitte Canada",
-   "note": "报告共 422 个，实际只读到 317 个",
+   "detail": "workday: 36 个职位",
+   "id": "cushman-wakefield-canada",
+   "jobs_found": 36,
+   "name": "Cushman & Wakefield Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
    "relevant_now": 4,
    "scan_state": "partial",
    "status": "ok"
@@ -2878,11 +2420,23 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 60 个职位",
-   "id": "desjardins",
-   "jobs_found": 60,
-   "name": "Desjardins",
-   "note": "第 4 页读取失败（HTTPError），已读 60 个",
+   "detail": "successfactors: 320 个职位",
+   "id": "deloitte-canada",
+   "jobs_found": 320,
+   "name": "Deloitte Canada",
+   "note": "报告共 421 个，实际只读到 320 个",
+   "relevant_now": 7,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-21",
+   "complete": "no",
+   "detail": "workday: 160 个职位",
+   "id": "fti-consulting-canada",
+   "jobs_found": 160,
+   "name": "FTI Consulting Canada",
+   "note": "第 9 页读取失败（HTTPError），已读 160 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -2890,12 +2444,12 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 100 个职位",
-   "id": "general-mills-canada",
-   "jobs_found": 100,
-   "name": "General Mills Canada",
-   "note": "第 6 页读取失败（HTTPError），已读 100 个",
-   "relevant_now": 1,
+   "detail": "workday: 40 个职位",
+   "id": "home-depot-canada",
+   "jobs_found": 40,
+   "name": "Home Depot Canada",
+   "note": "第 3 页读取失败（HTTPError），已读 40 个",
+   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2914,11 +2468,23 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 40 个职位",
+   "detail": "workday: 38 个职位",
+   "id": "jll-canada",
+   "jobs_found": 38,
+   "name": "JLL Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 3,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-21",
+   "complete": "no",
+   "detail": "workday: 56 个职位",
    "id": "mercer-canada",
-   "jobs_found": 40,
+   "jobs_found": 56,
    "name": "Mercer Canada",
-   "note": "招聘板共 1957 个职位，按地点筛选只读目标地区；第 3 页读取失败（HTTPError），已读 40 个",
+   "note": "招聘板共 1957 个职位，只读了部分；地点筛选失败（HTTPError），改用关键词搜索；关键词 Toronto：第 3 页读取失败（HTTPError），已读 40 个；关键词 Ontario：第 2 页读取失败（HTTPError），已读 20 个",
    "relevant_now": 2,
    "scan_state": "partial",
    "status": "ok"
@@ -2926,21 +2492,21 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 16 个职位",
-   "id": "nvidia",
-   "jobs_found": 16,
-   "name": "NVIDIA",
-   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
-   "relevant_now": 1,
+   "detail": "workday: 20 个职位",
+   "id": "northern-trust-canada",
+   "jobs_found": 20,
+   "name": "Northern Trust Canada",
+   "note": "第 2 页读取失败（HTTPError），已读 20 个",
+   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "successfactors: 20 个职位",
+   "detail": "successfactors: 19 个职位",
    "id": "ontario-power-generation",
-   "jobs_found": 20,
+   "jobs_found": 19,
    "name": "Ontario Power Generation",
    "note": "只读到最新职位的 RSS（不完整）",
    "relevant_now": 0,
@@ -2950,34 +2516,10 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 20 个职位",
-   "id": "procter-gamble-canada",
-   "jobs_found": 20,
-   "name": "Procter & Gamble Canada",
-   "note": "第 2 页读取失败（HTTPError），已读 20 个",
-   "relevant_now": 0,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: 60 个职位",
-   "id": "rga-canada",
-   "jobs_found": 60,
-   "name": "RGA Canada",
-   "note": "第 4 页读取失败（HTTPError），已读 60 个",
-   "relevant_now": 0,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
    "detail": "workday: 80 个职位",
-   "id": "rsm-canada",
+   "id": "procter-gamble-canada",
    "jobs_found": 80,
-   "name": "RSM Canada",
+   "name": "Procter & Gamble Canada",
    "note": "第 5 页读取失败（HTTPError），已读 80 个",
    "relevant_now": 0,
    "scan_state": "partial",
@@ -2986,11 +2528,23 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 20 个职位",
+   "detail": "workday: 220 个职位",
+   "id": "rsm-canada",
+   "jobs_found": 220,
+   "name": "RSM Canada",
+   "note": "第 12 页读取失败（HTTPError），已读 220 个",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-21",
+   "complete": "no",
+   "detail": "workday: 32 个职位",
    "id": "state-street-canada",
-   "jobs_found": 20,
+   "jobs_found": 32,
    "name": "State Street Canada",
-   "note": "招聘板共 1178 个职位，按地点筛选只读目标地区；第 2 页读取失败（HTTPError），已读 20 个",
+   "note": "招聘板共 1171 个职位，只读了部分；地点筛选失败（HTTPError），改用关键词搜索；关键词 Toronto 读取失败（HTTPError）；关键词 Ottawa 读取失败（HTTPError）",
    "relevant_now": 3,
    "scan_state": "partial",
    "status": "ok"
@@ -3002,7 +2556,7 @@
    "id": "toronto-hydro",
    "jobs_found": 10,
    "name": "Toronto Hydro",
-   "note": "报告共 16 个，去重后只有 10 个",
+   "note": "报告共 13 个，去重后只有 10 个",
    "relevant_now": 1,
    "scan_state": "partial",
    "status": "ok"
@@ -3010,24 +2564,12 @@
   {
    "checked": "2026-11-21",
    "complete": "no",
-   "detail": "workday: 80 个职位",
-   "id": "transunion-canada",
-   "jobs_found": 80,
-   "name": "TransUnion Canada",
-   "note": "第 5 页读取失败（HTTPError），已读 80 个",
-   "relevant_now": 0,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-21",
-   "complete": "no",
-   "detail": "workday: 80 个职位",
+   "detail": "workday: 510 个职位",
    "id": "walmart-canada",
-   "jobs_found": 80,
+   "jobs_found": 510,
    "name": "Walmart Canada",
-   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区；第 5 页读取失败（HTTPError），已读 80 个",
-   "relevant_now": 1,
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "relevant_now": 3,
    "scan_state": "partial",
    "status": "ok"
   }
@@ -3038,62 +2580,10 @@
    "ats": "",
    "ats_id": "",
    "careers_url": "",
-   "found_job": "business management analyst",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771512",
-   "id": "swiftronics",
-   "name": "Swiftronics",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  },
-  {
-   "added": "2026-11-21",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "financial analyst",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771015",
-   "id": "agora-dealer-services",
-   "name": "Agora Dealer Services Corp.",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  },
-  {
-   "added": "2026-11-21",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "purchasing agent",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50770806",
-   "id": "merit-decorating-centre",
-   "name": "Merit Decorating Centre Ltd.",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  },
-  {
-   "added": "2026-11-21",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "junior underwriter - insurance",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771947",
-   "id": "optimum-assurance-generale",
-   "name": "Optimum Assurance générale",
-   "sector": "自动发现（Job Bank）",
-   "source": "auto:jobbank",
-   "tier": "P2"
-  },
-  {
-   "added": "2026-11-21",
-   "ats": "",
-   "ats_id": "",
-   "careers_url": "",
-   "found_job": "marketing specialist",
-   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771285",
-   "id": "yunshang-rice-noodle",
-   "name": "Yunshang Rice Noodle",
+   "found_job": "marketing coordinator",
+   "found_url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50774492",
+   "id": "napkin-marketing",
+   "name": "Napkin Marketing Inc.",
    "sector": "自动发现（Job Bank）",
    "source": "auto:jobbank",
    "tier": "P2"
@@ -3109,204 +2599,30 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "",
+    "salary": "$20.00-$22.00 per hour",
     "years_min": null
    },
-   "details_note": "",
+   "details_note": "$20.00-$22.00 per hour",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "BMO",
-   "employer_id": "bmo",
-   "filter_reason": "职能与地点相关",
+   "employer": "Napkin Marketing Inc.",
+   "employer_id": "napkin-marketing",
+   "filter_reason": "职能与地点相关（来源：Job Bank）",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 73,
-   "job_id": "R260031276",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, ON M8X 1C4, Canada",
-   "posted": "2026-11-20",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Scorecard Reporting Analyst",
-   "url": "https://jobs.bmo.com/ca/en/job/R260031276/Scorecard-Reporting-Analyst"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$55,000 - $68,800",
-    "years_min": null
-   },
-   "details_note": "$55,000 - $68,800",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "PointClickCare",
-   "employer_id": "pointclickcare",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "可远程、财务/审计/分析",
-   "fit_score": 62,
-   "job_id": "666eed2e-a629-4dae-8afd-cae397cca694",
-   "last_seen": "2026-11-21",
-   "location": "Remote, Canada",
-   "posted": "2026-11-20",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "lever",
-   "tier": "P1",
-   "title": "Solutions Analyst (EHR, Clinexus Customer Support) - CA",
-   "url": "https://jobs.lever.co/pointclickcare/666eed2e-a629-4dae-8afd-cae397cca694"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Canada Post",
-   "employer_id": "canada-post",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 68,
-   "job_id": "608243817",
-   "last_seen": "2026-11-21",
-   "location": "Ottawa, ON, CA",
-   "posted": "",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "successfactors",
-   "tier": "P2",
-   "title": "Officer, Planning and Projects",
-   "url": "https://jobs.canadapost.ca/job/Ottawa-Officer%2C-Planning-and-Projects-ON/608243817/"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Northbridge Financial",
-   "employer_id": "northbridge-financial",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 61,
-   "job_id": "R5242",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, Ontario",
-   "posted": "2026-11-20",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "phenom",
-   "tier": "P2",
-   "title": "Claims Coordinator, Appraisal Services (Bilingual Preferred)",
-   "url": "https://careers.nbfc.com/ca/en/job/R5242/Claims-Coordinator-Appraisal-Services-Bilingual-Preferred"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$62,000.00 - $92,000.00 per year",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年；$62,000.00 - $92,000.00 per year",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Oxford Properties",
-   "employer_id": "oxford-properties",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
+   "first_seen_run": "20261121T180242Z-f399b7",
    "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 83,
-   "job_id": "/job/Toronto-Ontario/Associate--People-Experience---Operations_JR-8431",
+   "fit_score": 73,
+   "job_id": "50774492",
    "last_seen": "2026-11-21",
-   "location": "Toronto, Ontario",
-   "posted": "Posted 4 Days Ago",
+   "location": "Toronto, ON",
+   "posted": "November 21, 2026",
    "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "workday",
-   "tier": "P2",
-   "title": "Associate, People Experience & Operations",
-   "url": "https://omers.wd3.myworkdayjobs.com/en-US/OMERS_External/job/Toronto-Ontario/Associate--People-Experience---Operations_JR-8431"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 90,000 to $ 105,000",
-    "years_min": null
-   },
-   "details_note": "$ 90,000 to $ 105,000",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Almag Aluminum",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 60,
-   "job_id": "50771887",
-   "last_seen": "2026-11-21",
-   "location": "Brampton, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "finance",
-   "resume_version": "Finance",
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
    "source": "channel:jobbank",
-   "tier": "—",
-   "title": "assistant controller",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771887"
+   "tier": "P2",
+   "title": "marketing coordinator",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50774492"
   },
   {
    "active": true,
@@ -3318,167 +2634,29 @@
     "new_grad_text": false,
     "ok": true,
     "salary": "",
-    "years_min": 1
+    "years_min": 0
    },
-   "details_note": "经验≥1年",
+   "details_note": "经验≥0年",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "Green Ira Immigration Solutions Inc.",
+   "employer": "Top Shop",
    "employer_id": "channel-jobbank",
    "filter_reason": "职能与地点相关（来源：Job Bank）",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
+   "first_seen_run": "20261121T180242Z-f399b7",
    "fit_reasons": "多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远",
    "fit_score": 67,
-   "job_id": "50771182",
+   "job_id": "50774900",
    "last_seen": "2026-11-21",
-   "location": "Brampton, ON",
-   "posted": "November 20, 2026",
+   "location": "Toronto, ON",
+   "posted": "November 21, 2026",
    "relevant": true,
    "resume_family": "coordination",
    "resume_version": "Coordination_Client_Ops",
    "source": "channel:jobbank",
    "tier": "—",
    "title": "administrative assistant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771182"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Modern Air Filtration Corporation",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 65,
-   "job_id": "50771507",
-   "last_seen": "2026-11-21",
-   "location": "Brampton, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "accounts receivable clerk",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771507"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Multi-Turf Canada",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远",
-   "fit_score": 57,
-   "job_id": "50771580",
-   "last_seen": "2026-11-21",
-   "location": "Markham, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "administrative assistant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771580"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "PLDental",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远",
-   "fit_score": 37,
-   "job_id": "50772261",
-   "last_seen": "2026-11-21",
-   "location": "Scarborough, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "office administrator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50772261"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 45,000 to $ 56,000",
-    "years_min": null
-   },
-   "details_note": "$ 45,000 to $ 56,000",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Snuggle Bugz",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职能与地点相关（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华",
-   "fit_score": 45,
-   "job_id": "50770936",
-   "last_seen": "2026-11-21",
-   "location": "Oakville, ON",
-   "posted": "November 20, 2026",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "social media content specialist",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50770936"
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50774900"
   }
  ],
  "new_review": [
@@ -3487,36 +2665,36 @@
    "candidate_status": "review",
    "details": {
     "checked": "2026-11-21",
-    "deadline": "2027-11-20",
+    "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$55,000 to $85,000",
+    "salary": "$79 320",
     "years_min": 2
    },
-   "details_note": "经验≥2年；截止 2027-11-20；$55,000 to $85,000",
+   "details_note": "经验≥2年；$79 320",
    "eligibility": "B",
    "eligibility_notes": [
     "要求 2 年经验"
    ],
-   "employer": "KPMG Canada",
-   "employer_id": "kpmg-canada",
-   "filter_reason": "合同/临时岗：需确认入职时间；职位页要求 2 年经验",
+   "employer": "Citi Canada",
+   "employer_id": "citi-canada",
+   "filter_reason": "职位页要求 2 年经验",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 35,
-   "job_id": "37489",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 47,
+   "job_id": "/job/Mississauga-Ontario-Canada/Testing-Intermediate-Analyst---Officer_261005774",
    "last_seen": "2026-11-21",
-   "location": "Toronto, Ontario, Canada; Ottawa, Ontario, Canada; Kingston, Ontario, Canada; Kitchener, Ontario, Canada; Edmonton, Alberta, Canada; Halifax, Nova Scotia, Canada; Hamilton, Ontario, Canada; Kanata, Ontario, Canada; North Bay, Ontario, Canada; Oakville, Ontario, Canada; London, Ontario, Canada; Regina, Saskatchewan, Canada; Saskatoon, Saskatchewan, Canada; Sault Ste. Marie, Ontario, Canada; St. John's, Newfoundland and Labrador, Canada; Sudbury, Ontario, Canada; Toronto, Ontario, Canada; Vancouver, British Columbia, Canada; Vaughan, Ontario, Canada; Vernon, British Columbia, Canada; Victoria, British Columbia, Canada; Waterloo, Ontario, Canada; Windsor, Ontario, Canada; Winnipeg, Manitoba, Canada",
-   "posted": "2026-11-20",
+   "location": "Mississauga Ontario Canada",
+   "posted": "Posted Yesterday",
    "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "sitemap",
-   "tier": "P0",
-   "title": "Specialist, National CPA Program (24 months contract)",
-   "url": "https://careers.kpmg.ca/jobs/37489?lang=en-us"
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "workday",
+   "tier": "P1",
+   "title": "Testing Intermediate Analyst - Officer",
+   "url": "https://citi.wd5.myworkdayjobs.com/en-US/2/job/Mississauga-Ontario-Canada/Testing-Intermediate-Analyst---Officer_261005774"
   },
   {
    "active": true,
@@ -3528,29 +2706,29 @@
     "new_grad_text": false,
     "ok": true,
     "salary": "",
-    "years_min": null
+    "years_min": 1
    },
-   "details_note": "",
+   "details_note": "经验≥1年",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "Mercer Canada",
-   "employer_id": "mercer-canada",
-   "filter_reason": "实习：需确认是否接受 2027 年 5 月毕业生",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
+   "filter_reason": "没写地点，需确认是否在加拿大/目标城市",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级、应届/项目、财务/审计/分析",
-   "fit_score": 87,
-   "job_id": "/job/Toronto---Bremner/Marsh-Risk-Early-Career-Internship-Program--Summer-2027---Toronto_R_373139",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 36,
+   "job_id": "https://www.roberthalf.com/ca/en/job/mississauga-on/accounts-payable-clerk/001269921-caen",
    "last_seen": "2026-11-21",
-   "location": "Toronto - Bremner",
-   "posted": "Posted Yesterday",
+   "location": "",
+   "posted": "",
    "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "workday",
-   "tier": "P1",
-   "title": "Marsh Risk Early Career Internship Program, Summer 2027 – Toronto",
-   "url": "https://mmc.wd1.myworkdayjobs.com/en-US/MMC/job/Toronto---Bremner/Marsh-Risk-Early-Career-Internship-Program--Summer-2027---Toronto_R_373139"
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "page",
+   "tier": "P2",
+   "title": "Accounts Payable Clerk",
+   "url": "https://www.roberthalf.com/ca/en/job/mississauga-on/accounts-payable-clerk/001269921-caen"
   },
   {
    "active": true,
@@ -3559,34 +2737,68 @@
     "checked": "2026-11-21",
     "deadline": "",
     "flags": [],
-    "new_grad_text": true,
+    "new_grad_text": false,
     "ok": true,
     "salary": "",
-    "years_min": null
+    "years_min": 2
    },
-   "details_note": "写明应届可申",
-   "eligibility": "C",
+   "details_note": "经验≥2年",
+   "eligibility": "B",
    "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+    "要求 2 年经验"
    ],
-   "employer": "Ballet Jörgen",
-   "employer_id": "ballet-jorgen",
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
+   "filter_reason": "没写地点，需确认是否在加拿大/目标城市；职位页要求 2 年经验",
+   "first_seen": "2026-11-21",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "地点待确认、财务/审计/分析",
+   "fit_score": 11,
+   "job_id": "https://www.roberthalf.com/ca/en/job/toronto-on/property-accountant/001269725-caen",
+   "last_seen": "2026-11-21",
+   "location": "",
+   "posted": "",
+   "relevant": false,
+   "resume_family": "audit",
+   "resume_version": "Audit_FinOps",
+   "source": "page",
+   "tier": "P2",
+   "title": "Property Accountant",
+   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/property-accountant/001269725-caen"
+  },
+  {
+   "active": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-21",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 1
+   },
+   "details_note": "经验≥1年",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Robert Half Canada",
+   "employer_id": "robert-half-canada",
    "filter_reason": "没写地点，需确认是否在加拿大/目标城市",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "地点待确认、入门级",
-   "fit_score": 41,
-   "job_id": "https://www.jorgendance.ca/jorgen-dance/careers/",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "地点待确认、运营/项目类、通用行政岗，和财务/分析/艺术方向关系较远",
+   "fit_score": 10,
+   "job_id": "https://www.roberthalf.com/ca/en/job/toronto-on/office-administrator/001269844-caen",
    "last_seen": "2026-11-21",
    "location": "",
    "posted": "",
    "relevant": false,
    "resume_family": "coordination",
-   "resume_version": "Arts_Culture · Museum Administration",
+   "resume_version": "Coordination_Client_Ops",
    "source": "page",
    "tier": "P2",
-   "title": "Lighting Coordinator",
-   "url": "https://www.jorgendance.ca/jorgen-dance/careers/"
+   "title": "Office Administrator",
+   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/office-administrator/001269844-caen"
   },
   {
    "active": true,
@@ -3597,30 +2809,32 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "",
-    "years_min": null
+    "salary": "$ 90,000 to $ 100,000",
+    "years_min": 2
    },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Equifax Canada",
-   "employer_id": "equifax-canada",
-   "filter_reason": "没写地点，需确认是否在加拿大/目标城市",
+   "details_note": "经验≥2年；$ 90,000 to $ 100,000",
+   "eligibility": "B",
+   "eligibility_notes": [
+    "要求 2 年经验"
+   ],
+   "employer": "Employment Hero",
+   "employer_id": "channel-jobbank",
+   "filter_reason": "职位页要求 2 年经验",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "地点待确认、入门级、应届/项目、艺术/文化、偏销售/柜台",
-   "fit_score": 51,
-   "job_id": "https://careers.equifax.com/en/jobs/j00178815/sales-rotational-development-associate/",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "多伦多/渥太华、艺术/文化",
+   "fit_score": 45,
+   "job_id": "50773963",
    "last_seen": "2026-11-21",
-   "location": "",
-   "posted": "",
+   "location": "Toronto, ON",
+   "posted": "November 21, 2026",
    "relevant": false,
    "resume_family": "arts",
    "resume_version": "Arts_Culture · Development",
-   "source": "page",
-   "tier": "P2",
-   "title": "Sales Rotational Development Associate",
-   "url": "https://careers.equifax.com/en/jobs/j00178815/sales-rotational-development-associate/"
+   "source": "channel:jobbank",
+   "tier": "—",
+   "title": "business development officer",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50773963"
   },
   {
    "active": true,
@@ -3628,404 +2842,59 @@
    "details": {
     "checked": "2026-11-21",
     "deadline": "",
-    "flags": [
-     "要求 2026 年内入职（早于 2027 年 1 月）"
-    ],
+    "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$50,000",
-    "years_min": null
+    "salary": "$25,000.00-$50,000.00 per year",
+    "years_min": 2
    },
-   "details_note": "$50,000；要求 2026 年内入职（早于 2027 年 1 月）",
-   "eligibility": "B",
+   "details_note": "经验≥2年；$25,000.00-$50,000.00 per year",
+   "eligibility": "C",
    "eligibility_notes": [
-    "要求 2026 年内入职（早于 2027 年 1 月）"
+    "要求 2 年经验",
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
    ],
-   "employer": "Optimum Assurance générale",
-   "employer_id": "optimum-assurance-generale",
-   "filter_reason": "职位页：要求 2026 年内入职（早于 2027 年 1 月）",
+   "employer": "eye care - optical",
+   "employer_id": "channel-jobbank",
+   "filter_reason": "职位页要求 2 年经验",
    "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级、财务/审计/分析",
-   "fit_score": 76,
-   "job_id": "50771947",
+   "first_seen_run": "20261121T180242Z-f399b7",
+   "fit_reasons": "多伦多/渥太华、入门级",
+   "fit_score": 35,
+   "job_id": "50774874",
    "last_seen": "2026-11-21",
    "location": "Toronto, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "junior underwriter - insurance",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771947"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$72,000.00 - $108,000.00 per year",
-    "years_min": null
-   },
-   "details_note": "$72,000.00 - $108,000.00 per year",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Oxford Properties",
-   "employer_id": "oxford-properties",
-   "filter_reason": "合同/临时岗：需确认入职时间",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 61,
-   "job_id": "/job/Toronto-Ontario/Analyst--Derivative-Operations--10-Month-Contract-_JR-8571",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, Ontario",
-   "posted": "Posted 3 Days Ago",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "workday",
-   "tier": "P2",
-   "title": "Analyst, Derivative Operations (10-Month Contract)",
-   "url": "https://omers.wd3.myworkdayjobs.com/en-US/OMERS_External/job/Toronto-Ontario/Analyst--Derivative-Operations--10-Month-Contract-_JR-8571"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年",
-   "eligibility": "B",
-   "eligibility_notes": [
-    "要求 2 年经验"
-   ],
-   "employer": "Purolator",
-   "employer_id": "purolator",
-   "filter_reason": "职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 18,
-   "job_id": "1452734800",
-   "last_seen": "2026-11-21",
-   "location": "Etobicoke, ON, CA, M9W 1L2",
-   "posted": "20 Nov 2026",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "successfactors",
-   "tier": "P2",
-   "title": "Operations Dispatcher",
-   "url": "https://careers.purolator.com/job/Etobicoke-Operations-Dispatcher-ON-M9W-1L2/1452734800/"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$57,000.00",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年；$57,000.00",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "要求 2 年经验",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Sephora Canada",
-   "employer_id": "sephora-canada",
-   "filter_reason": "合同/临时岗：需确认入职时间；职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 36,
-   "job_id": "1377854955",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, ON, CA, M4W 0A2",
-   "posted": "Nov 21, 2026",
-   "relevant": false,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "successfactors",
-   "tier": "P2",
-   "title": "Coordinator, Sampling Promotions (12-Month Contract)",
-   "url": "https://jobs.sephora.com/Canada/job/Toronto-Coordinator%2C-Sampling-Promotions-%2812-Month-Contract%29-ON-M4W-0A2/1377854955/"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年",
-   "eligibility": "B",
-   "eligibility_notes": [
-    "要求 2 年经验"
-   ],
-   "employer": "Swiftronics",
-   "employer_id": "swiftronics",
-   "filter_reason": "职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 46,
-   "job_id": "50771512",
-   "last_seen": "2026-11-21",
-   "location": "Brampton, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "channel:jobbank",
-   "tier": "P2",
-   "title": "business management analyst",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771512"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "2027-02-18",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$29.25/hour",
-    "years_min": 5
-   },
-   "details_note": "截止 2027-02-18；$29.25/hour",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "WoodGreen Community Services",
-   "employer_id": "woodgreen-community-services",
-   "filter_reason": "职位页提到 5 年经验，请确认是否针对应届生",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、运营/项目类",
-   "fit_score": 33,
-   "job_id": "cEaDCYqpTU",
-   "last_seen": "2026-11-21",
-   "location": "Toronto, ON, Canada",
-   "posted": "",
-   "relevant": false,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "jazzhr",
-   "tier": "P2",
-   "title": "Youth Worker, In-Home Intensive Program (2026-214-YPS)",
-   "url": "https://woodgreencommunityservices.applytojob.com/apply/cEaDCYqpTU/Youth-Worker-InHome-Intensive-Program-2026214YPS"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$24/hour",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年；$24/hour",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "要求 2 年经验",
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "ADECCO",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 35,
-   "job_id": "50771757",
-   "last_seen": "2026-11-21",
-   "location": "Ottawa, ON",
-   "posted": "November 20, 2026",
+   "posted": "November 21, 2026",
    "relevant": false,
    "resume_family": "coordination",
    "resume_version": "Coordination_Client_Ops",
    "source": "channel:jobbank",
    "tier": "—",
-   "title": "materials coordinator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771757"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 2
-   },
-   "details_note": "经验≥2年",
-   "eligibility": "B",
-   "eligibility_notes": [
-    "要求 2 年经验"
-   ],
-   "employer": "Excel Exhaust System Inc",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门（来源：Job Bank）；职位页要求 2 年经验",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 30,
-   "job_id": "50771933",
-   "last_seen": "2026-11-21",
-   "location": "Scarborough, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "consulting",
-   "resume_version": "Consulting",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "business management consultant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50771933"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$ 61,464 to $ 65,304",
-    "years_min": null
-   },
-   "details_note": "$ 61,464 to $ 65,304",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "VON Canada",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "地点只写了 Canada，需确认城市（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "入门级",
-   "fit_score": 35,
-   "job_id": "50767531",
-   "last_seen": "2026-11-21",
-   "location": "Various locations",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "employer-employee relations coordinator",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50767531"
-  },
-  {
-   "active": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-21",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "ZEPHYR CANNABIS",
-   "employer_id": "channel-jobbank",
-   "filter_reason": "顾问/Advisor 头衔在银行和大公司常是中级岗，需确认是否入门（来源：Job Bank）",
-   "first_seen": "2026-11-21",
-   "first_seen_run": "20261121T040056Z-0a11f6",
-   "fit_reasons": "财务/审计/分析",
-   "fit_score": 30,
-   "job_id": "50772638",
-   "last_seen": "2026-11-21",
-   "location": "Kanata, ON",
-   "posted": "November 20, 2026",
-   "relevant": false,
-   "resume_family": "consulting",
-   "resume_version": "Consulting",
-   "source": "channel:jobbank",
-   "tier": "—",
-   "title": "Cannabis consultant",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50772638"
+   "title": "patient care coordinator",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50774874"
   }
  ],
  "newly_broken": [
   {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://bdc.wd10.myworkdayjobs.com/wday/cxs/bdc/BDC_Careers/jobs",
-   "id": "bdc",
-   "name": "BDC",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://interac.wd3.myworkdayjobs.com/wday/cxs/interac/Interac/jobs",
+   "id": "interac",
+   "name": "Interac",
    "now": "failed",
    "tier": "P1",
    "was": "complete"
   },
   {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://brookfield.wd5.myworkdayjobs.com/wday/cxs/brookfield/brookfield/jobs",
-   "id": "brookfield",
-   "name": "Brookfield",
-   "now": "failed",
-   "tier": "P0",
-   "was": "partial"
-  },
-  {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cgf.wd10.myworkdayjobs.com/wday/cxs/cgf/CG/jobs",
-   "id": "canaccord-genuity",
-   "name": "Canaccord Genuity",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+   "id": "nvidia",
+   "name": "NVIDIA",
    "now": "failed",
    "tier": "P1",
    "was": "partial"
   },
   {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hoopp.wd10.myworkdayjobs.com/wday/cxs/hoopp/HOOPP/jobs",
-   "id": "hoopp",
-   "name": "HOOPP",
-   "now": "failed",
-   "tier": "P0",
-   "was": "complete"
-  },
-  {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ia.wd3.myworkdayjobs.com/wday/cxs/ia/Professional/jobs",
-   "id": "ia-financial-group",
-   "name": "iA Financial Group",
-   "now": "failed",
-   "tier": "P1",
-   "was": "partial"
-  },
-  {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs",
-   "id": "mastercard-canada",
-   "name": "Mastercard Canada",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://spgi.wd5.myworkdayjobs.com/wday/cxs/spgi/SPGI_Careers/jobs",
+   "id": "s-p-global",
+   "name": "S&P Global (Ratings)",
    "now": "failed",
    "tier": "P1",
    "was": "complete"
@@ -4034,17 +2903,55 @@
  "removed_relevant": [
   {
    "active": false,
-   "baseline": true,
    "candidate_status": "relevant",
-   "closed_run": "20261121T040056Z-0a11f6",
+   "closed_run": "20261121T180242Z-f399b7",
    "closed_seen": "2026-11-21",
    "details": {
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
+    "deadline": "2026-11-20",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": null
+   },
+   "details_note": "截止 2026-11-20",
+   "eligibility": "C",
+   "eligibility_notes": [
+    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
+   ],
+   "employer": "Bell Canada",
+   "employer_id": "bell-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-12",
+   "first_seen_run": "20261112T185853Z-1f179d",
+   "fit_reasons": "多伦多/渥太华、入门级",
+   "fit_score": 63,
+   "job_id": "1448220900",
+   "last_seen": "2026-11-21",
+   "location": "Mississauga, ON, CA",
+   "posted": "Nov 5, 2026",
+   "relevant": true,
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "successfactors",
+   "tier": "P0",
+   "title": "Channel Execution Coordinator, BCI",
+   "url": "https://jobs.bce.ca/bell/job/Mississauga-Channel-Execution-Coordinator%2C-BCI-ON/1448220900/"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "closed_run": "20261121T180242Z-f399b7",
+   "closed_seen": "2026-11-21",
+   "details": {
+    "checked": "2026-11-10",
     "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$120,000",
+    "salary": "$70,000.00 - $150,000.00",
     "years_min": null
    },
    "employer": "BMO",
@@ -4052,118 +2959,51 @@
    "filter_reason": "职能与地点相关",
    "first_seen": "2026-11-09",
    "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "R260028769",
-   "last_seen": "2026-11-20",
+   "job_id": "R260030221",
+   "last_seen": "2026-11-21",
    "location": "Toronto, ON M8X 1C4, Canada",
-   "posted": "2026-10-13",
+   "posted": "2026-11-03",
    "relevant": true,
    "source": "phenom",
    "tier": "P0",
-   "title": "Associate, Quantitative Modeling",
-   "url": "https://jobs.bmo.com/ca/en/job/R260028769/Associate-Quantitative-Modeling"
+   "title": "Analyst, Investment Platforms",
+   "url": "https://jobs.bmo.com/ca/en/job/R260030221/Analyst-Investment-Platforms"
   },
   {
    "active": false,
    "candidate_status": "relevant",
-   "closed_run": "20261121T040056Z-0a11f6",
+   "closed_run": "20261121T180242Z-f399b7",
    "closed_seen": "2026-11-21",
    "details": {
-    "checked": "2026-11-17",
-    "deadline": "",
+    "checked": "2026-11-14",
+    "deadline": "2026-11-20",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "",
-    "years_min": null
+    "salary": "$ 54,688 - $ 72,917",
+    "years_min": 1
    },
-   "details_note": "",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "BMO",
-   "employer_id": "bmo",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-17",
-   "first_seen_run": "20261117T050717Z-17b661",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 63,
-   "job_id": "R260031377",
-   "last_seen": "2026-11-20",
-   "location": "Toronto, ON M8X 1C4, Canada",
-   "posted": "2026-11-16",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Learning Coordinator",
-   "url": "https://jobs.bmo.com/ca/en/job/R260031377/Learning-Coordinator"
-  },
-  {
-   "active": false,
-   "candidate_status": "relevant",
-   "closed_run": "20261121T040056Z-0a11f6",
-   "closed_seen": "2026-11-21",
-   "details": {
-    "checked": "2026-11-11",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$86,000.00 - $130,000.00 per year",
-    "years_min": null
-   },
-   "employer": "Oxford Properties",
-   "employer_id": "oxford-properties",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-06",
-   "job_id": "/job/Toronto-Ontario/Analyst-Senior-Analyst--Risk-Analytics_JR-7887",
-   "last_seen": "2026-11-16",
-   "legacy_job_id": "JR-7887",
-   "location": "Toronto, Ontario",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "source": "workday",
-   "tier": "P2",
-   "title": "Analyst, Total Plan Risk Management",
-   "url": "https://omers.wd3.myworkdayjobs.com/en-US/OMERS_External/job/Toronto-Ontario/Analyst-Senior-Analyst--Risk-Analytics_JR-7887"
-  },
-  {
-   "active": false,
-   "candidate_status": "relevant",
-   "closed_run": "20261121T040056Z-0a11f6",
-   "closed_seen": "2026-11-21",
-   "details": {
-    "checked": "2026-11-18",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$46,000.00 - $70,000.00",
-    "years_min": null
-   },
-   "details_note": "$46,000.00 - $70,000.00",
+   "details_note": "经验≥1年；截止 2026-11-20；$ 54,688 - $ 72,917",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "RBC",
-   "employer_id": "rbc",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-18",
-   "first_seen_run": "20261118T192600Z-c63bf8",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 58,
-   "job_id": "R-0000189205",
-   "last_seen": "2026-11-20",
-   "location": "MISSISSAUGA, Ontario, Canada",
-   "posted": "2026-11-18",
+   "employer": "City of Mississauga",
+   "employer_id": "city-of-mississauga",
+   "filter_reason": "职能相关；地点未注明",
+   "first_seen": "2026-11-14",
+   "first_seen_run": "20261114T032302Z-b9143d",
+   "fit_reasons": "地点待确认、入门级、艺术/文化",
+   "fit_score": 76,
+   "job_id": "608033217",
+   "last_seen": "2026-11-21",
+   "location": "",
+   "posted": "Nov 13, 2026",
    "relevant": true,
-   "resume_family": "audit",
-   "resume_version": "Audit_FinOps",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Fund Accountant",
-   "url": "https://jobs.rbc.com/ca/en/job/R-0000189205/Fund-Accountant"
+   "resume_family": "arts",
+   "resume_version": "Arts_Culture · Museum Administration",
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Administrative Assistant - Recreation & Culture",
+   "url": "https://jobs.mississauga.ca/job/Mississauga-Administrative-Assistant-Recreation-&amp;-Culture-ON/608033217/"
   },
   {
    "active": false,
@@ -4172,8 +3012,28 @@
     {
      "changes": {
       "posted": [
-       "Posted Today",
-       "Posted Yesterday"
+       "Posted 8 Days Ago",
+       "Posted 9 Days Ago"
+      ]
+     },
+     "date": "2026-11-11",
+     "run": "20261111T184510Z-500a99"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 9 Days Ago",
+       "Posted 10 Days Ago"
+      ]
+     },
+     "date": "2026-11-12",
+     "run": "20261112T185853Z-1f179d"
+    },
+    {
+     "changes": {
+      "posted": [
+       "Posted 10 Days Ago",
+       "Posted 11 Days Ago"
       ]
      },
      "date": "2026-11-13",
@@ -4182,8 +3042,8 @@
     {
      "changes": {
       "posted": [
-       "Posted Yesterday",
-       "Posted 2 Days Ago"
+       "Posted 11 Days Ago",
+       "Posted 12 Days Ago"
       ]
      },
      "date": "2026-11-14",
@@ -4192,111 +3052,155 @@
     {
      "changes": {
       "posted": [
-       "Posted 2 Days Ago",
-       "Posted 3 Days Ago"
+       "Posted 12 Days Ago",
+       "Posted 13 Days Ago"
       ]
      },
      "date": "2026-11-15",
      "run": "20261115T174854Z-1fb16f"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 3 Days Ago",
-       "Posted 5 Days Ago"
-      ]
-     },
-     "date": "2026-11-18",
-     "run": "20261118T043028Z-0685ee"
     }
    ],
-   "closed_run": "20261121T040056Z-0a11f6",
+   "closed_run": "20261121T180242Z-f399b7",
    "closed_seen": "2026-11-21",
    "details": {
     "checked": "2026-11-13",
-    "deadline": "",
+    "deadline": "2026-11-17",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
     "salary": "",
     "years_min": null
    },
-   "details_note": "",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "S&P Global (Ratings)",
-   "employer_id": "s-p-global",
+   "employer": "Desjardins",
+   "employer_id": "desjardins",
    "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-13",
-   "first_seen_run": "20261113T032813Z-db5d5f",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 72,
-   "job_id": "/job/Toronto-CAN/OTC-Derivatives-Analyst_331925-1",
-   "last_modified_seen": "2026-11-18",
-   "last_seen": "2026-11-18",
-   "location": "Toronto, CAN",
-   "posted": "Posted 5 Days Ago",
+   "first_seen": "2026-11-06",
+   "job_id": "/job/Mississauga/Customer-Service-Coordinator_R2613287-1",
+   "last_modified_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "legacy_job_id": "R2613287",
+   "location": "Mississauga",
+   "posted": "Posted 13 Days Ago",
    "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
    "source": "workday",
-   "tier": "P1",
-   "title": "OTC Derivatives Analyst",
-   "url": "https://spgi.wd5.myworkdayjobs.com/en-US/SPGI_Careers/job/Toronto-CAN/OTC-Derivatives-Analyst_331925-1"
-  },
-  {
-   "active": false,
-   "candidate_status": "relevant",
-   "closed_run": "20261121T040056Z-0a11f6",
-   "closed_seen": "2026-11-21",
-   "details": {
-    "checked": "2026-11-17",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": true,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "写明应届可申",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Scotiabank",
-   "employer_id": "scotiabank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-17",
-   "first_seen_run": "20261117T195442Z-431269",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 83,
-   "job_id": "608113217",
-   "last_seen": "2026-11-20",
-   "location": "Toronto, ON, CA, M5H 4A9",
-   "posted": "Nov 17, 2026",
-   "relevant": true,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "successfactors",
    "tier": "P0",
-   "title": "Analyst, Technology & Innovation Banking, Toronto",
-   "url": "https://jobs.scotiabank.com/job/Toronto-Analyst%2C-Technology-&amp;-Innovation-Banking%2C-Toronto-ON-M5H-4A9/608113217/"
+   "title": "Customer Service Coordinator",
+   "url": "https://desjardins.wd10.myworkdayjobs.com/en-US/Desjardins/job/Mississauga/Customer-Service-Coordinator_R2613287-1"
   },
   {
    "active": false,
-   "baseline": true,
    "candidate_status": "relevant",
    "change_history": [
     {
      "changes": {
       "posted": [
-       "Oct 13, 2026",
-       "Nov 11, 2026"
+       "Posted Yesterday",
+       "Posted 3 Days Ago"
       ]
      },
-     "date": "2026-11-11",
-     "run": "20261111T025201Z-eeb67f"
+     "date": "2026-11-20",
+     "run": "20261120T040206Z-083054"
     }
    ],
-   "closed_run": "20261121T040056Z-0a11f6",
+   "closed_run": "20261121T180242Z-f399b7",
+   "closed_seen": "2026-11-21",
+   "details": {
+    "checked": "2026-11-18",
+    "deadline": "2026-11-20",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$72,000.00 - $116,150.00",
+    "years_min": null
+   },
+   "details_note": "截止 2026-11-20；$72,000.00 - $116,150.00",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "Kenvue Canada",
+   "employer_id": "kenvue-canada",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-18",
+   "first_seen_run": "20261118T043028Z-0685ee",
+   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
+   "fit_score": 73,
+   "job_id": "/job/North-America-Canada-Ontario-Toronto/Professional-Marketing-Associate---Oral-Health_2607050228W",
+   "last_modified_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "location": "North America, Canada, Ontario, Toronto",
+   "posted": "Posted 3 Days Ago",
+   "relevant": true,
+   "resume_family": "ba",
+   "resume_version": "Business_Analyst",
+   "source": "workday",
+   "tier": "P2",
+   "title": "Professional Marketing Associate - Oral Health",
+   "url": "https://kenvue.wd5.myworkdayjobs.com/en-US/kenvue/job/North-America-Canada-Ontario-Toronto/Professional-Marketing-Associate---Oral-Health_2607050228W"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "closed_run": "20261121T180242Z-f399b7",
+   "closed_seen": "2026-11-21",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "",
+    "years_min": 1
+   },
+   "employer": "RBC",
+   "employer_id": "rbc",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "R-0000191505",
+   "last_seen": "2026-11-21",
+   "location": "TORONTO, Ontario, Canada",
+   "posted": "2026-10-30",
+   "relevant": true,
+   "source": "phenom",
+   "tier": "P0",
+   "title": "Equity Derivative Operations Analyst",
+   "url": "https://jobs.rbc.com/ca/en/job/R-0000191505/Equity-Derivative-Operations-Analyst"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "closed_run": "20261121T180242Z-f399b7",
+   "closed_seen": "2026-11-21",
+   "details": {
+    "checked": "2026-11-10",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$90,000.00 - $135,000.00",
+    "years_min": null
+   },
+   "employer": "RBC",
+   "employer_id": "rbc",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "R-0000191981",
+   "last_seen": "2026-11-21",
+   "location": "TORONTO, Ontario, Canada",
+   "posted": "2026-11-05",
+   "relevant": true,
+   "source": "phenom",
+   "tier": "P0",
+   "title": "Associate, Global Investment Banking - Debt Capital Markets (DCM)",
+   "url": "https://jobs.rbc.com/ca/en/job/R-0000191981/Associate-Global-Investment-Banking-Debt-Capital-Markets-DCM"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "closed_run": "20261121T180242Z-f399b7",
    "closed_seen": "2026-11-21",
    "details": {
     "checked": "2026-11-12",
@@ -4304,7 +3208,7 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$19.80 - $22.90/hr",
+    "salary": "$22.60/hr",
     "years_min": null
    },
    "employer": "Sephora Canada",
@@ -4312,80 +3216,90 @@
    "filter_reason": "职能与地点相关",
    "first_seen": "2026-11-09",
    "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "1368218455",
-   "last_modified_seen": "2026-11-11",
-   "last_seen": "2026-11-20",
-   "location": "Burlington, MA, US, 01803",
-   "posted": "Nov 11, 2026",
+   "job_id": "1366137955",
+   "last_seen": "2026-11-21",
+   "location": "North York, ON, CA, M4R 1K8",
+   "posted": "Nov 9, 2026",
    "relevant": true,
+   "reopened_seen": "2026-11-18",
    "source": "successfactors",
    "tier": "P2",
    "title": "Seasonal Associate",
-   "url": "https://jobs.sephora.com/USA/job/Burlington-Seasonal-Associate-MA-01803/1368218455/"
-  }
- ],
- "reopened_relevant": [
+   "url": "https://jobs.sephora.com/Canada/job/North-York-Seasonal-Associate-ON-M4R-1K8/1366137955/"
+  },
   {
-   "active": true,
+   "active": false,
+   "baseline": true,
    "candidate_status": "relevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "2026-11-12",
-       "2026-11-20"
-      ]
-     },
-     "date": "2026-11-21",
-     "run": "20261121T040056Z-0a11f6"
-    }
-   ],
-   "closed_run": "20261120T190934Z-bf98b1",
+   "closed_run": "20261121T180242Z-f399b7",
+   "closed_seen": "2026-11-21",
    "details": {
-    "checked": "2026-11-13",
+    "checked": "2026-11-12",
     "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$55,000.00 - $90,000.00",
+    "salary": "$22.60/hr",
     "years_min": null
    },
-   "details_note": "$55,000.00 - $90,000.00",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "RBC",
-   "employer_id": "rbc",
+   "employer": "Sephora Canada",
+   "employer_id": "sephora-canada",
    "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-13",
-   "first_seen_run": "20261113T032813Z-db5d5f",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 75,
-   "job_id": "R-0000192270",
-   "last_modified_seen": "2026-11-21",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "1374818855",
    "last_seen": "2026-11-21",
-   "location": "TORONTO, Ontario, Canada",
-   "posted": "2026-11-20",
+   "location": "Scarborough, ON, CA, M1P 4P5",
+   "posted": "Oct 28, 2026",
    "relevant": true,
-   "reopened_seen": "2026-11-21",
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Coordinator, Digital Marketing",
-   "url": "https://jobs.rbc.com/ca/en/job/R-0000192270/Coordinator-Digital-Marketing"
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Seasonal Associate",
+   "url": "https://jobs.sephora.com/Canada/job/Scarborough-Seasonal-Associate-ON-M1P-4P5/1374818855/"
+  },
+  {
+   "active": false,
+   "baseline": true,
+   "candidate_status": "relevant",
+   "closed_run": "20261121T180242Z-f399b7",
+   "closed_seen": "2026-11-21",
+   "details": {
+    "checked": "2026-11-13",
+    "deadline": "2026-11-20",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$114,151",
+    "years_min": null
+   },
+   "employer": "University of Toronto",
+   "employer_id": "university-of-toronto",
+   "filter_reason": "职能与地点相关",
+   "first_seen": "2026-11-09",
+   "first_seen_run": "20261109T211917Z-3724fa",
+   "job_id": "607878117",
+   "last_seen": "2026-11-21",
+   "location": "Toronto, ON, CA",
+   "posted": "Nov 9, 2026",
+   "relevant": true,
+   "source": "successfactors",
+   "tier": "P2",
+   "title": "Institutional Strategic Initiatives Officer",
+   "url": "https://jobs.utoronto.ca/job/Toronto-Institutional-Strategic-Initiatives-Officer-ON/607878117/"
   }
  ],
- "scan_id": "20261121T040056Z-0a11f6",
+ "reopened_relevant": [],
+ "scan_id": "20261121T180242Z-f399b7",
  "scan_states": {
-  "complete": 116,
-  "failed": 67,
+  "complete": 122,
+  "failed": 55,
   "invalid": 1,
-  "not_configured": 128,
-  "partial": 22,
-  "unverified": 64,
-  "zero_jobs": 137
+  "not_configured": 133,
+  "partial": 23,
+  "unverified": 67,
+  "zero_jobs": 139
  },
- "scanned_at": "2026-11-21T04:00:56+00:00",
+ "scanned_at": "2026-11-21T18:02:42+00:00",
  "unreadable": [
   {
    "id": "accenture-canada",
@@ -4408,12 +3322,6 @@
   {
    "id": "canadian-tire",
    "name": "Canadian Tire",
-   "scan_state": "failed",
-   "tier": "P0"
-  },
-  {
-   "id": "hoopp",
-   "name": "HOOPP",
    "scan_state": "failed",
    "tier": "P0"
   },
@@ -4448,18 +3356,6 @@
    "tier": "P0"
   },
   {
-   "id": "td-bank",
-   "name": "TD Bank",
-   "scan_state": "failed",
-   "tier": "P0"
-  },
-  {
-   "id": "bdc",
-   "name": "BDC",
-   "scan_state": "failed",
-   "tier": "P1"
-  },
-  {
    "id": "bdo-canada",
    "name": "BDO Canada",
    "scan_state": "failed",
@@ -4478,18 +3374,6 @@
    "tier": "P1"
   },
   {
-   "id": "canaccord-genuity",
-   "name": "Canaccord Genuity",
-   "scan_state": "failed",
-   "tier": "P1"
-  },
-  {
-   "id": "citi-canada",
-   "name": "Citi Canada",
-   "scan_state": "failed",
-   "tier": "P1"
-  },
-  {
    "id": "enbridge",
    "name": "Enbridge",
    "scan_state": "failed",
@@ -4502,8 +3386,8 @@
    "tier": "P1"
   },
   {
-   "id": "igm-financial-mackenzie-investments",
-   "name": "IGM Financial / Mackenzie Investments",
+   "id": "interac",
+   "name": "Interac",
    "scan_state": "failed",
    "tier": "P1"
   },
@@ -4514,14 +3398,14 @@
    "tier": "P1"
   },
   {
-   "id": "mastercard-canada",
-   "name": "Mastercard Canada",
+   "id": "moneris",
+   "name": "Moneris",
    "scan_state": "failed",
    "tier": "P1"
   },
   {
-   "id": "moneris",
-   "name": "Moneris",
+   "id": "nvidia",
+   "name": "NVIDIA",
    "scan_state": "failed",
    "tier": "P1"
   },
@@ -4544,6 +3428,12 @@
    "tier": "P1"
   },
   {
+   "id": "s-p-global",
+   "name": "S&P Global (Ratings)",
+   "scan_state": "failed",
+   "tier": "P1"
+  },
+  {
    "id": "tc-energy",
    "name": "TC Energy",
    "scan_state": "failed",
@@ -4552,12 +3442,6 @@
   {
    "id": "tmx-group",
    "name": "TMX Group",
-   "scan_state": "failed",
-   "tier": "P1"
-  },
-  {
-   "id": "toronto-public-library-foundation",
-   "name": "Toronto Public Library Foundation",
    "scan_state": "failed",
    "tier": "P1"
   },
@@ -4574,6 +3458,12 @@
    "tier": "P1"
   },
   {
+   "id": "3m-canada",
+   "name": "3M Canada",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
    "id": "ats-corporation",
    "name": "ATS Corporation",
    "scan_state": "not_configured",
@@ -4586,9 +3476,9 @@
    "tier": "P2"
   },
   {
-   "id": "adobe-canada",
-   "name": "Adobe Canada",
-   "scan_state": "failed",
+   "id": "agora-dealer-services",
+   "name": "Agora Dealer Services Corp.",
+   "scan_state": "not_configured",
    "tier": "P2"
   },
   {
@@ -4613,6 +3503,12 @@
    "id": "amynta-group",
    "name": "Amynta Group (Canada)",
    "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "aritzia",
+   "name": "Aritzia",
+   "scan_state": "failed",
    "tier": "P2"
   },
   {
@@ -4664,12 +3560,6 @@
    "tier": "P2"
   },
   {
-   "id": "caat-pension-plan",
-   "name": "CAAT Pension Plan",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "capreit",
    "name": "CAPREIT (Canadian Apartment Properties REIT)",
    "scan_state": "failed",
@@ -4703,12 +3593,6 @@
    "id": "cammtac",
    "name": "Cammtac",
    "scan_state": "not_configured",
-   "tier": "P2"
-  },
-  {
-   "id": "canada-goose",
-   "name": "Canada Goose",
-   "scan_state": "failed",
    "tier": "P2"
   },
   {
@@ -4805,12 +3689,6 @@
    "id": "craft-ontario",
    "name": "Craft Ontario",
    "scan_state": "not_configured",
-   "tier": "P2"
-  },
-  {
-   "id": "cushman-wakefield-canada",
-   "name": "Cushman & Wakefield Canada",
-   "scan_state": "failed",
    "tier": "P2"
   },
   {
@@ -4922,6 +3800,12 @@
    "tier": "P2"
   },
   {
+   "id": "general-mills-canada",
+   "name": "General Mills Canada",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
    "id": "genumark",
    "name": "Genumark",
    "scan_state": "failed",
@@ -4982,6 +3866,12 @@
    "tier": "P2"
   },
   {
+   "id": "imco",
+   "name": "IMCO",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
    "id": "imgadgets",
    "name": "IMGadgets",
    "scan_state": "not_configured",
@@ -5000,12 +3890,6 @@
    "tier": "P2"
   },
   {
-   "id": "jll-canada",
-   "name": "JLL Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "kaizen-health",
    "name": "KAIZEN HEALTH GROUP",
    "scan_state": "not_configured",
@@ -5018,27 +3902,9 @@
    "tier": "P2"
   },
   {
-   "id": "kenvue-canada",
-   "name": "Kenvue Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
-   "id": "kimberly-clark-canada",
-   "name": "Kimberly-Clark Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "kings-pastry",
    "name": "King's Pastry",
    "scan_state": "not_configured",
-   "tier": "P2"
-  },
-  {
-   "id": "kruger-products",
-   "name": "Kruger Products",
-   "scan_state": "failed",
    "tier": "P2"
   },
   {
@@ -5072,6 +3938,12 @@
    "tier": "P2"
   },
   {
+   "id": "merit-decorating-centre",
+   "name": "Merit Decorating Centre Ltd.",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
    "id": "mike-holloway-cpa-professional",
    "name": "Mike Holloway CPA Professional Corporation",
    "scan_state": "not_configured",
@@ -5087,12 +3959,6 @@
    "id": "mitel",
    "name": "Mitel",
    "scan_state": "not_configured",
-   "tier": "P2"
-  },
-  {
-   "id": "morningstar-dbrs",
-   "name": "Morningstar DBRS",
-   "scan_state": "failed",
    "tier": "P2"
   },
   {
@@ -5132,12 +3998,6 @@
    "tier": "P2"
   },
   {
-   "id": "northern-trust-canada",
-   "name": "Northern Trust Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "olg",
    "name": "OLG",
    "scan_state": "failed",
@@ -5146,12 +4006,6 @@
   {
    "id": "optrust",
    "name": "OPTrust",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
-   "id": "office-of-the-auditor-general-of-ontario",
-   "name": "Office of the Auditor General of Ontario",
    "scan_state": "failed",
    "tier": "P2"
   },
@@ -5183,6 +4037,18 @@
    "id": "ontario-presents",
    "name": "Ontario Presents",
    "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "optimum-assurance-generale",
+   "name": "Optimum Assurance générale",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "oxford-properties",
+   "name": "Oxford Properties",
+   "scan_state": "failed",
    "tier": "P2"
   },
   {
@@ -5342,12 +4208,6 @@
    "tier": "P2"
   },
   {
-   "id": "sagard",
-   "name": "Sagard",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "sander-geophysics",
    "name": "Sander Geophysics Ltd",
    "scan_state": "not_configured",
@@ -5398,6 +4258,12 @@
   {
    "id": "superior-door-gate-systems",
    "name": "Superior Door & Gate Systems",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "swiftronics",
+   "name": "Swiftronics",
    "scan_state": "not_configured",
    "tier": "P2"
   },
@@ -5560,6 +4426,12 @@
   {
    "id": "young-peoples-theatre",
    "name": "Young People's Theatre",
+   "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "yunshang-rice-noodle",
+   "name": "Yunshang Rice Noodle",
    "scan_state": "not_configured",
    "tier": "P2"
   }

@@ -975,9 +975,9 @@
   "kind": "page"
  },
  "kruger-products": {
-  "arg": "https://www.krugerproducts.ca/en-ca/careers",
+  "arg": "kruger/wd10/Kruger_Products",
   "first_ok": "2026-11-09",
-  "kind": "page"
+  "kind": "workday"
  },
  "l-e-k-consulting": {
   "arg": "https://www.lek.com/careers",
