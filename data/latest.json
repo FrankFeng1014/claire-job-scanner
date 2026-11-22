@@ -1,387 +1,80 @@
 {
  "ats_detected_by_browser": [],
- "baseline": [
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "change_history": [
-    {
-     "changes": {
-      "candidate_status": [
-       "relevant",
-       "irrelevant"
-      ],
-      "location": [
-       "Burlington, ON L7R 3N2, Canada",
-       "Hamilton, ON L8K 1H1, Canada"
-      ]
-     },
-     "date": "2026-11-20",
-     "run": "20261120T190934Z-bf98b1"
-    },
-    {
-     "changes": {
-      "candidate_status": [
-       "irrelevant",
-       "relevant"
-      ],
-      "location": [
-       "Hamilton, ON L8K 1H1, Canada",
-       "Burlington, ON L7R 3N2, Canada"
-      ]
-     },
-     "date": "2026-11-21",
-     "run": "20261121T180242Z-f399b7"
-    },
-    {
-     "changes": {
-      "candidate_status": [
-       "relevant",
-       "irrelevant"
-      ],
-      "location": [
-       "Burlington, ON L7R 3N2, Canada",
-       "Hamilton, ON L8K 1H1, Canada"
-      ]
-     },
-     "date": "2026-11-22",
-     "run": "20261122T033513Z-5a35ec"
-    },
-    {
-     "changes": {
-      "candidate_status": [
-       "irrelevant",
-       "relevant"
-      ],
-      "location": [
-       "Hamilton, ON L8K 1H1, Canada",
-       "Burlington, ON L7R 3N2, Canada"
-      ]
-     },
-     "date": "2026-11-22",
-     "run": "20261122T181236Z-c97ae7"
-    }
-   ],
-   "details": {
-    "checked": "2026-11-20",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$40,000",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年；$40,000",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "BMO",
-   "employer_id": "bmo",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-20",
-   "first_seen_run": "20261120T040206Z-083054",
-   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 85,
-   "job_id": "R260027665",
-   "last_modified_seen": "2026-11-22",
-   "last_seen": "2026-11-22",
-   "location": "Burlington, ON L7R 3N2, Canada",
-   "posted": "2026-11-19",
-   "relevant": true,
-   "resume_family": "coordination",
-   "resume_version": "Coordination_Client_Ops",
-   "rule_included": "2026-11-22",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Client Service Assistant",
-   "url": "https://jobs.bmo.com/ca/en/job/R260027665/Client-Service-Assistant"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-22",
-    "deadline": "2026-11-23",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "截止 2026-11-23",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "CIBC",
-   "employer_id": "cibc",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-22",
-   "first_seen_run": "20261122T181236Z-c97ae7",
-   "fit_reasons": "多伦多/渥太华、入门级、应届/项目、运营/项目类、偏销售/柜台",
-   "fit_score": 70,
-   "job_id": "/job/Toronto-ON/Associate--Commercial-Banking-Associate-Program---New-Undergraduates---Ontario_2621508",
-   "last_seen": "2026-11-22",
-   "location": "Toronto, ON",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "resume_family": "finance",
-   "resume_version": "Finance",
-   "source": "workday",
-   "tier": "P0",
-   "title": "Associate, Commercial Banking Associate Program – New Undergraduates - Ontario",
-   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Associate--Commercial-Banking-Associate-Program---New-Undergraduates---Ontario_2621508"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "review",
-   "details": {
-    "checked": "2026-11-22",
-    "deadline": "2026-11-26",
-    "flags": [
-     "仅限在校生/需返校"
-    ],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$125,000",
-    "years_min": null
-   },
-   "details_note": "截止 2026-11-26；$125,000；仅限在校生/需返校",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "投行/资本市场 Associate 级别（通常要求 MBA 或 2–3 年分析师经验）",
-    "仅限在校生/需返校"
-   ],
-   "employer": "CIBC",
-   "employer_id": "cibc",
-   "filter_reason": "投行/资本市场 Associate 级别，通常要求 MBA 或 2–3 年分析师经验",
-   "first_seen": "2026-11-22",
-   "first_seen_run": "20261122T181236Z-c97ae7",
-   "fit_reasons": "多伦多/渥太华、入门级、应届/项目",
-   "fit_score": 63,
-   "job_id": "/job/Toronto-ON/Global-Markets--Global-Markets--Summer-2027-Associate---Equity-Research--4-months-_2624159",
-   "last_seen": "2026-11-22",
-   "location": "Toronto, ON",
-   "posted": "Posted 3 Days Ago",
-   "relevant": false,
-   "resume_family": "ib",
-   "resume_version": "IB_Capital_Markets",
-   "source": "workday",
-   "tier": "P0",
-   "title": "Global Markets, Global Markets, Summer 2027 Associate - Equity Research (4 months)",
-   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Global-Markets--Global-Markets--Summer-2027-Associate---Equity-Research--4-months-_2624159"
-  }
- ],
+ "baseline": [],
  "candidates": [
   {
    "active": true,
    "candidate_status": "relevant",
-   "change_history": [
-    {
-     "changes": {
-      "candidate_status": [
-       "relevant",
-       "irrelevant"
-      ],
-      "location": [
-       "Burlington, ON L7R 3N2, Canada",
-       "Hamilton, ON L8K 1H1, Canada"
-      ]
-     },
-     "date": "2026-11-20",
-     "run": "20261120T190934Z-bf98b1"
-    },
-    {
-     "changes": {
-      "candidate_status": [
-       "irrelevant",
-       "relevant"
-      ],
-      "location": [
-       "Hamilton, ON L8K 1H1, Canada",
-       "Burlington, ON L7R 3N2, Canada"
-      ]
-     },
-     "date": "2026-11-21",
-     "run": "20261121T180242Z-f399b7"
-    },
-    {
-     "changes": {
-      "candidate_status": [
-       "relevant",
-       "irrelevant"
-      ],
-      "location": [
-       "Burlington, ON L7R 3N2, Canada",
-       "Hamilton, ON L8K 1H1, Canada"
-      ]
-     },
-     "date": "2026-11-22",
-     "run": "20261122T033513Z-5a35ec"
-    },
-    {
-     "changes": {
-      "candidate_status": [
-       "irrelevant",
-       "relevant"
-      ],
-      "location": [
-       "Hamilton, ON L8K 1H1, Canada",
-       "Burlington, ON L7R 3N2, Canada"
-      ]
-     },
-     "date": "2026-11-22",
-     "run": "20261122T181236Z-c97ae7"
-    }
-   ],
    "details": {
-    "checked": "2026-11-20",
+    "checked": "2026-11-22",
     "deadline": "",
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$40,000",
+    "salary": "$60,000 - $70,000",
     "years_min": 1
    },
-   "details_note": "经验≥1年；$40,000",
+   "details_note": "经验≥1年；$60,000 - $70,000",
    "eligibility": "A",
    "eligibility_notes": [],
-   "employer": "BMO",
-   "employer_id": "bmo",
+   "employer": "EllisDon Corporation",
+   "employer_id": "ellisdon",
    "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-20",
-   "first_seen_run": "20261120T040206Z-083054",
+   "first_seen": "2026-11-22",
+   "first_seen_run": "20261122T183416Z-3cb26f",
    "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
-   "fit_score": 85,
-   "found_as": "规则新纳入",
-   "job_id": "R260027665",
-   "last_modified_seen": "2026-11-22",
+   "fit_score": 83,
+   "found_as": "新发布",
+   "job_id": "/job/Mississauga-ON/Digital-Marketing-Coordinator_R2026-01640",
    "last_seen": "2026-11-22",
-   "location": "Burlington, ON L7R 3N2, Canada",
-   "posted": "2026-11-19",
+   "location": "Mississauga, ON",
+   "posted": "Posted 5 Days Ago",
    "relevant": true,
    "resume_family": "coordination",
    "resume_version": "Coordination_Client_Ops",
-   "rule_included": "2026-11-22",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Client Service Assistant",
-   "url": "https://jobs.bmo.com/ca/en/job/R260027665/Client-Service-Assistant"
-  },
-  {
-   "active": true,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-22",
-    "deadline": "2026-11-23",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "截止 2026-11-23",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "CIBC",
-   "employer_id": "cibc",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-22",
-   "first_seen_run": "20261122T181236Z-c97ae7",
-   "fit_reasons": "多伦多/渥太华、入门级、应届/项目、运营/项目类、偏销售/柜台",
-   "fit_score": 70,
-   "found_as": "新接入",
-   "job_id": "/job/Toronto-ON/Associate--Commercial-Banking-Associate-Program---New-Undergraduates---Ontario_2621508",
-   "last_seen": "2026-11-22",
-   "location": "Toronto, ON",
-   "posted": "Posted 30+ Days Ago",
-   "relevant": true,
-   "resume_family": "finance",
-   "resume_version": "Finance",
    "source": "workday",
-   "tier": "P0",
-   "title": "Associate, Commercial Banking Associate Program – New Undergraduates - Ontario",
-   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Associate--Commercial-Banking-Associate-Program---New-Undergraduates---Ontario_2621508"
-  },
-  {
-   "active": true,
-   "candidate_status": "relevant",
-   "details": {
-    "checked": "2026-11-22",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$22.60/hr",
-    "years_min": null
-   },
-   "details_note": "$22.60/hr",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Sephora Canada",
-   "employer_id": "sephora-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-22",
-   "first_seen_run": "20261122T181236Z-c97ae7",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 61,
-   "found_as": "新发布",
-   "job_id": "1377960255",
-   "last_seen": "2026-11-22",
-   "location": "Burlington, ON, CA, L7S 2J8",
-   "posted": "Nov 22, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "successfactors",
    "tier": "P2",
-   "title": "Seasonal Associate",
-   "url": "https://jobs.sephora.com/Canada/job/Burlington-Seasonal-Associate-ON-L7S-2J8/1377960255/"
+   "title": "Digital Marketing Coordinator",
+   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Mississauga-ON/Digital-Marketing-Coordinator_R2026-01640"
   }
  ],
  "candidates_review": [
   {
    "active": true,
-   "baseline": true,
    "candidate_status": "review",
    "details": {
     "checked": "2026-11-22",
-    "deadline": "2026-11-26",
-    "flags": [
-     "仅限在校生/需返校"
-    ],
+    "deadline": "",
+    "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$125,000",
-    "years_min": null
+    "salary": "$65,000 - $80,000",
+    "years_min": 2
    },
-   "details_note": "截止 2026-11-26；$125,000；仅限在校生/需返校",
-   "eligibility": "C",
+   "details_note": "经验≥2年；$65,000 - $80,000",
+   "eligibility": "B",
    "eligibility_notes": [
-    "投行/资本市场 Associate 级别（通常要求 MBA 或 2–3 年分析师经验）",
-    "仅限在校生/需返校"
+    "要求 2 年经验"
    ],
-   "employer": "CIBC",
-   "employer_id": "cibc",
-   "filter_reason": "投行/资本市场 Associate 级别，通常要求 MBA 或 2–3 年分析师经验",
+   "employer": "EllisDon Corporation",
+   "employer_id": "ellisdon",
+   "filter_reason": "职位页要求 2 年经验",
    "first_seen": "2026-11-22",
-   "first_seen_run": "20261122T181236Z-c97ae7",
-   "fit_reasons": "多伦多/渥太华、入门级、应届/项目",
-   "fit_score": 63,
-   "found_as": "新接入",
-   "job_id": "/job/Toronto-ON/Global-Markets--Global-Markets--Summer-2027-Associate---Equity-Research--4-months-_2624159",
+   "first_seen_run": "20261122T183416Z-3cb26f",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 46,
+   "found_as": "新发布",
+   "job_id": "/job/Mississauga-ON/Financial-Planning---Analysis-Analyst_R2026-01943",
    "last_seen": "2026-11-22",
-   "location": "Toronto, ON",
-   "posted": "Posted 3 Days Ago",
+   "location": "Mississauga, ON",
+   "posted": "Posted 5 Days Ago",
    "relevant": false,
-   "resume_family": "ib",
-   "resume_version": "IB_Capital_Markets",
+   "resume_family": "finance",
+   "resume_version": "Finance",
    "source": "workday",
-   "tier": "P0",
-   "title": "Global Markets, Global Markets, Summer 2027 Associate - Equity Research (4 months)",
-   "url": "https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Global-Markets--Global-Markets--Summer-2027-Associate---Equity-Research--4-months-_2624159"
+   "tier": "P2",
+   "title": "Financial Planning & Analysis Analyst",
+   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Mississauga-ON/Financial-Planning---Analysis-Analyst_R2026-01943"
   }
  ],
  "channels": [
@@ -392,7 +85,7 @@
   },
   {
    "channel": "Job Bank",
-   "detail": "315 个职位，新记录相关 0 个，新加入名单的雇主 0 家",
+   "detail": "319 个职位，新记录相关 0 个，新加入名单的雇主 0 家",
    "status": "ok"
   },
   {
@@ -1174,26 +867,14 @@
    "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Markham-Ontario/SBB--Client-Service-Associate-11_R_1520874"
   }
  ],
- "details_checked": 3,
- "employers_complete": 121,
- "employers_failed": 64,
- "employers_ok": 345,
+ "details_checked": 2,
+ "employers_complete": 123,
+ "employers_failed": 58,
+ "employers_ok": 351,
  "employers_skipped": 131,
  "employers_total": 540,
  "excluded_by_details": [],
  "failed": [
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs",
-   "id": "3m-canada",
-   "jobs_found": 0,
-   "name": "3M Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
   {
    "checked": "2026-11-22",
    "complete": "no",
@@ -1233,6 +914,18 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://bdo.wd3.myworkdayjobs.com/wday/cxs/bdo/BDO/jobs",
+   "id": "bdo-canada",
+   "jobs_found": 0,
+   "name": "BDO Canada",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
    "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://canadagoose.wd3.myworkdayjobs.com/wday/cxs/canadagoose/CanadaGooseCareers/jobs",
    "id": "canada-goose",
    "jobs_found": 0,
@@ -1249,18 +942,6 @@
    "id": "canadian-tire",
    "jobs_found": 0,
    "name": "Canadian Tire",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://capitalone.wd12.myworkdayjobs.com/wday/cxs/capitalone/Capital_One/jobs",
-   "id": "capital-one-canada",
-   "jobs_found": 0,
-   "name": "Capital One Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1300,18 +981,6 @@
    "note": "",
    "relevant_now": 0,
    "scan_state": "invalid",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://myview.wd3.myworkdayjobs.com/wday/cxs/myview/Choice_Properties_REIT/jobs",
-   "id": "choice-properties-reit",
-   "jobs_found": 0,
-   "name": "Choice Properties REIT",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
    "status": "fail"
   },
   {
@@ -1413,18 +1082,6 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ellisdon.wd3.myworkdayjobs.com/wday/cxs/ellisdon/Ellis-Don/jobs",
-   "id": "ellisdon",
-   "jobs_found": 0,
-   "name": "EllisDon Corporation",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
    "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://enbridge.wd3.myworkdayjobs.com/wday/cxs/enbridge/enbridge_careers/jobs",
    "id": "enbridge",
    "jobs_found": 0,
@@ -1497,18 +1154,6 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://genmills.wd1.myworkdayjobs.com/wday/cxs/genmills/GMI_External_Careers/jobs",
-   "id": "general-mills-canada",
-   "jobs_found": 0,
-   "name": "General Mills Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
    "detail": "successfactors: HTTPError: 404 Client Error: Not Found for url: https://genumark.espwebsites.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow=0",
    "id": "genumark",
    "jobs_found": 0,
@@ -1545,6 +1190,18 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://homedepot.wd5.myworkdayjobs.com/wday/cxs/homedepot/CareerDepotCanada/jobs",
+   "id": "home-depot-canada",
+   "jobs_found": 0,
+   "name": "Home Depot Canada",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
    "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hydroottawa.wd3.myworkdayjobs.com/wday/cxs/hydroottawa/hydro_ottawa_careersite/jobs",
    "id": "hydro-ottawa",
    "jobs_found": 0,
@@ -1561,6 +1218,18 @@
    "id": "ia-financial-group",
    "jobs_found": 0,
    "name": "iA Financial Group",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers",
+   "id": "igm-financial-mackenzie-investments",
+   "jobs_found": 0,
+   "name": "IGM Financial / Mackenzie Investments",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1617,6 +1286,18 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://kenvue.wd5.myworkdayjobs.com/wday/cxs/kenvue/kenvue/jobs",
+   "id": "kenvue-canada",
+   "jobs_found": 0,
+   "name": "Kenvue Canada",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
    "detail": "page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-kinaxis.icims.com/jobs/search",
    "id": "kinaxis",
    "jobs_found": 0,
@@ -1645,18 +1326,6 @@
    "id": "manulife",
    "jobs_found": 0,
    "name": "Manulife",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs",
-   "id": "mastercard-canada",
-   "jobs_found": 0,
-   "name": "Mastercard Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1713,10 +1382,22 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ntrs.wd1.myworkdayjobs.com/wday/cxs/ntrs/northerntrust/jobs",
-   "id": "northern-trust-canada",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+   "id": "nvidia",
    "jobs_found": 0,
-   "name": "Northern Trust Canada",
+   "name": "NVIDIA",
+   "note": "",
+   "relevant_now": 0,
+   "scan_state": "failed",
+   "status": "fail"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "page: ConnectTimeout: HTTPSConnectionPool(host='auditor.on.ca', port=443): Max retries exceeded with url: /careers.html (Caused by ConnectTimeoutError(<HTTPSConnection(host",
+   "id": "office-of-the-auditor-general-of-ontario",
+   "jobs_found": 0,
+   "name": "Office of the Auditor General of Ontario",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1741,18 +1422,6 @@
    "id": "optrust",
    "jobs_found": 0,
    "name": "OPTrust",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000/jobs",
-   "id": "procter-gamble-canada",
-   "jobs_found": 0,
-   "name": "Procter & Gamble Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1809,46 +1478,10 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://rgare.wd1.myworkdayjobs.com/wday/cxs/rgare/Careers/jobs",
-   "id": "rga-canada",
-   "jobs_found": 0,
-   "name": "RGA Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
    "detail": "page: HTTPError: 403 Client Error: Forbidden for url: https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/",
    "id": "royal-academy-of-dance-canada",
    "jobs_found": 0,
    "name": "Royal Academy of Dance (Canada)",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://rsm.wd1.myworkdayjobs.com/wday/cxs/rsm/RSMCareers/jobs",
-   "id": "rsm-canada",
-   "jobs_found": 0,
-   "name": "RSM Canada",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs",
-   "id": "state-street-canada",
-   "jobs_found": 0,
-   "name": "State Street Canada",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1893,18 +1526,6 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_Site/jobs",
-   "id": "thomson-reuters",
-   "jobs_found": 0,
-   "name": "Thomson Reuters",
-   "note": "",
-   "relevant_now": 0,
-   "scan_state": "failed",
-   "status": "fail"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
    "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://tmx.wd3.myworkdayjobs.com/wday/cxs/tmx/TMX_Careers/jobs",
    "id": "tmx-group",
    "jobs_found": 0,
@@ -1917,10 +1538,10 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://transunion.wd5.myworkdayjobs.com/wday/cxs/transunion/transunion/jobs",
-   "id": "transunion-canada",
+   "detail": "page: ConnectTimeout: HTTPSConnectionPool(host='tplfoundation.ca', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host=",
+   "id": "toronto-public-library-foundation",
    "jobs_found": 0,
-   "name": "TransUnion Canada",
+   "name": "Toronto Public Library Foundation",
    "note": "",
    "relevant_now": 0,
    "scan_state": "failed",
@@ -1968,18 +1589,6 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: 120 个职位",
-   "id": "bdo-canada",
-   "jobs_found": 120,
-   "name": "BDO Canada",
-   "note": "第 7 页读取失败（HTTPError），已读 120 个",
-   "relevant_now": 2,
-   "scan_state": "partial",
-   "status": "ok"
-  },
-  {
-   "checked": "2026-11-22",
-   "complete": "no",
    "detail": "avature: 200 个职位",
    "id": "bloomberg-toronto",
    "jobs_found": 200,
@@ -1992,12 +1601,36 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "successfactors: 597 个职位",
+   "detail": "successfactors: 608 个职位",
    "id": "bombardier",
-   "jobs_found": 597,
+   "jobs_found": 608,
    "name": "Bombardier",
-   "note": "报告共 823 个，实际只读到 597 个",
-   "relevant_now": 1,
+   "note": "报告共 823 个，实际只读到 608 个",
+   "relevant_now": 2,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "workday: 20 个职位",
+   "id": "broadridge-canada",
+   "jobs_found": 20,
+   "name": "Broadridge Canada",
+   "note": "第 2 页读取失败（HTTPError），已读 20 个",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "workday: 20 个职位",
+   "id": "brookfield",
+   "jobs_found": 20,
+   "name": "Brookfield",
+   "note": "第 2 页读取失败（HTTPError），已读 20 个",
+   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2016,6 +1649,18 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
+   "detail": "workday: 40 个职位",
+   "id": "capital-one-canada",
+   "jobs_found": 40,
+   "name": "Capital One Canada",
+   "note": "招聘板共 2050 个职位，按地点筛选只读目标地区；第 3 页读取失败（HTTPError），已读 40 个",
+   "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
    "detail": "avature: 数据异常: Avature 页面里找不到职位链接",
    "id": "cbre-canada",
    "jobs_found": 0,
@@ -2028,12 +1673,12 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: 10 个职位",
+   "detail": "workday: 20 个职位",
    "id": "cibc",
-   "jobs_found": 10,
+   "jobs_found": 20,
    "name": "CIBC",
-   "note": "部分入口读取失败：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cibc.wd3.myworkdayjobs.com/wday/cxs/cibc/search/jobs",
-   "relevant_now": 1,
+   "note": "第 2 页读取失败（HTTPError），已读 20 个；部分入口读取失败：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cibc.wd3.myworkdayjobs.com/wday/cxs/cibc/campus/jobs",
+   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2052,11 +1697,11 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "successfactors: 65 个职位",
+   "detail": "successfactors: 63 个职位",
    "id": "cn-rail",
-   "jobs_found": 65,
+   "jobs_found": 63,
    "name": "CN Rail",
-   "note": "报告共 77 个，实际只读到 65 个",
+   "note": "报告共 77 个，实际只读到 63 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -2064,11 +1709,11 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "successfactors: 226 个职位",
+   "detail": "successfactors: 234 个职位",
    "id": "colgate-palmolive-canada",
-   "jobs_found": 226,
+   "jobs_found": 234,
    "name": "Colgate-Palmolive Canada",
-   "note": "报告共 315 个，实际只读到 226 个",
+   "note": "报告共 315 个，实际只读到 234 个",
    "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
@@ -2076,12 +1721,24 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "successfactors: 300 个职位",
+   "detail": "successfactors: 326 个职位",
    "id": "deloitte-canada",
-   "jobs_found": 300,
+   "jobs_found": 326,
    "name": "Deloitte Canada",
-   "note": "报告共 421 个，实际只读到 300 个",
-   "relevant_now": 6,
+   "note": "报告共 421 个，实际只读到 326 个",
+   "relevant_now": 8,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "workday: 80 个职位",
+   "id": "ellisdon",
+   "jobs_found": 80,
+   "name": "EllisDon Corporation",
+   "note": "第 5 页读取失败（HTTPError），已读 80 个",
+   "relevant_now": 4,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2112,12 +1769,24 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: 16 个职位",
-   "id": "nvidia",
-   "jobs_found": 16,
-   "name": "NVIDIA",
-   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区",
+   "detail": "workday: 20 个职位",
+   "id": "moneris",
+   "jobs_found": 20,
+   "name": "Moneris",
+   "note": "第 2 页读取失败（HTTPError），已读 20 个",
    "relevant_now": 1,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "workday: 40 个职位",
+   "id": "morningstar-dbrs",
+   "jobs_found": 40,
+   "name": "Morningstar DBRS",
+   "note": "第 3 页读取失败（HTTPError），已读 40 个",
+   "relevant_now": 0,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2136,12 +1805,36 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: 20 个职位",
-   "id": "s-p-global",
-   "jobs_found": 20,
-   "name": "S&P Global (Ratings)",
-   "note": "第 2 页读取失败（HTTPError），已读 20 个",
+   "detail": "workday: 40 个职位",
+   "id": "procter-gamble-canada",
+   "jobs_found": 40,
+   "name": "Procter & Gamble Canada",
+   "note": "第 3 页读取失败（HTTPError），已读 40 个",
    "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "workday: 140 个职位",
+   "id": "rsm-canada",
+   "jobs_found": 140,
+   "name": "RSM Canada",
+   "note": "第 8 页读取失败（HTTPError），已读 140 个",
+   "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "workday: 32 个职位",
+   "id": "state-street-canada",
+   "jobs_found": 32,
+   "name": "State Street Canada",
+   "note": "招聘板共 1150 个职位，只读了部分；地点筛选失败（HTTPError），改用关键词搜索；关键词 Toronto 读取失败（HTTPError）",
+   "relevant_now": 3,
    "scan_state": "partial",
    "status": "ok"
   },
@@ -2160,12 +1853,24 @@
   {
    "checked": "2026-11-22",
    "complete": "no",
-   "detail": "workday: 60 个职位",
-   "id": "walmart-canada",
-   "jobs_found": 60,
-   "name": "Walmart Canada",
-   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区；第 4 页读取失败（HTTPError），已读 60 个",
+   "detail": "workday: 20 个职位",
+   "id": "transunion-canada",
+   "jobs_found": 20,
+   "name": "TransUnion Canada",
+   "note": "第 2 页读取失败（HTTPError），已读 20 个",
    "relevant_now": 0,
+   "scan_state": "partial",
+   "status": "ok"
+  },
+  {
+   "checked": "2026-11-22",
+   "complete": "no",
+   "detail": "workday: 180 个职位",
+   "id": "walmart-canada",
+   "jobs_found": 180,
+   "name": "Walmart Canada",
+   "note": "招聘板共 2000 个职位，按地点筛选只读目标地区；第 10 页读取失败（HTTPError），已读 180 个",
+   "relevant_now": 3,
    "scan_state": "partial",
    "status": "ok"
   }
@@ -2181,494 +1886,101 @@
     "flags": [],
     "new_grad_text": false,
     "ok": true,
-    "salary": "$22.60/hr",
-    "years_min": null
+    "salary": "$60,000 - $70,000",
+    "years_min": 1
    },
-   "details_note": "$22.60/hr",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Sephora Canada",
-   "employer_id": "sephora-canada",
+   "details_note": "经验≥1年；$60,000 - $70,000",
+   "eligibility": "A",
+   "eligibility_notes": [],
+   "employer": "EllisDon Corporation",
+   "employer_id": "ellisdon",
    "filter_reason": "职能与地点相关",
    "first_seen": "2026-11-22",
-   "first_seen_run": "20261122T181236Z-c97ae7",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 61,
-   "job_id": "1377960255",
+   "first_seen_run": "20261122T183416Z-3cb26f",
+   "fit_reasons": "多伦多/渥太华、入门级、运营/项目类",
+   "fit_score": 83,
+   "job_id": "/job/Mississauga-ON/Digital-Marketing-Coordinator_R2026-01640",
    "last_seen": "2026-11-22",
-   "location": "Burlington, ON, CA, L7S 2J8",
-   "posted": "Nov 22, 2026",
+   "location": "Mississauga, ON",
+   "posted": "Posted 5 Days Ago",
    "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "successfactors",
+   "resume_family": "coordination",
+   "resume_version": "Coordination_Client_Ops",
+   "source": "workday",
    "tier": "P2",
-   "title": "Seasonal Associate",
-   "url": "https://jobs.sephora.com/Canada/job/Burlington-Seasonal-Associate-ON-L7S-2J8/1377960255/"
+   "title": "Digital Marketing Coordinator",
+   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Mississauga-ON/Digital-Marketing-Coordinator_R2026-01640"
   }
  ],
- "new_review": [],
+ "new_review": [
+  {
+   "active": true,
+   "candidate_status": "review",
+   "details": {
+    "checked": "2026-11-22",
+    "deadline": "",
+    "flags": [],
+    "new_grad_text": false,
+    "ok": true,
+    "salary": "$65,000 - $80,000",
+    "years_min": 2
+   },
+   "details_note": "经验≥2年；$65,000 - $80,000",
+   "eligibility": "B",
+   "eligibility_notes": [
+    "要求 2 年经验"
+   ],
+   "employer": "EllisDon Corporation",
+   "employer_id": "ellisdon",
+   "filter_reason": "职位页要求 2 年经验",
+   "first_seen": "2026-11-22",
+   "first_seen_run": "20261122T183416Z-3cb26f",
+   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
+   "fit_score": 46,
+   "job_id": "/job/Mississauga-ON/Financial-Planning---Analysis-Analyst_R2026-01943",
+   "last_seen": "2026-11-22",
+   "location": "Mississauga, ON",
+   "posted": "Posted 5 Days Ago",
+   "relevant": false,
+   "resume_family": "finance",
+   "resume_version": "Finance",
+   "source": "workday",
+   "tier": "P2",
+   "title": "Financial Planning & Analysis Analyst",
+   "url": "https://ellisdon.wd3.myworkdayjobs.com/en-US/Ellis-Don/job/Mississauga-ON/Financial-Planning---Analysis-Analyst_R2026-01943"
+  }
+ ],
  "newly_broken": [
   {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs",
-   "id": "citi-canada",
-   "name": "Citi Canada",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://bdo.wd3.myworkdayjobs.com/wday/cxs/bdo/BDO/jobs",
+   "id": "bdo-canada",
+   "name": "BDO Canada",
    "now": "failed",
    "tier": "P1",
    "was": "partial"
   },
   {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs",
-   "id": "mastercard-canada",
-   "name": "Mastercard Canada",
-   "now": "failed",
-   "tier": "P1",
-   "was": "complete"
-  },
-  {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mmc.wd1.myworkdayjobs.com/wday/cxs/mmc/MMC/jobs",
-   "id": "mercer-canada",
-   "name": "Mercer Canada",
+   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+   "id": "nvidia",
+   "name": "NVIDIA",
    "now": "failed",
    "tier": "P1",
    "was": "partial"
-  },
-  {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000/jobs",
-   "id": "procter-gamble-canada",
-   "name": "Procter & Gamble Canada",
-   "now": "failed",
-   "tier": "P1",
-   "was": "complete"
-  },
-  {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/jobs",
-   "id": "td-bank",
-   "name": "TD Bank",
-   "now": "failed",
-   "tier": "P0",
-   "was": "partial"
-  },
-  {
-   "detail": "workday: HTTPError: 429 Client Error: Too Many Requests for url: https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_",
-   "id": "thomson-reuters",
-   "name": "Thomson Reuters",
-   "now": "failed",
-   "tier": "P0",
-   "was": "complete"
   }
  ],
- "removed_relevant": [
-  {
-   "active": false,
-   "candidate_status": "relevant",
-   "closed_run": "20261122T181236Z-c97ae7",
-   "closed_seen": "2026-11-22",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "2026-11-21",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "details_note": "截止 2026-11-21",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Bell Canada",
-   "employer_id": "bell-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T185853Z-1f179d",
-   "fit_reasons": "多伦多/渥太华、运营/项目类、偏销售/柜台",
-   "fit_score": 30,
-   "job_id": "1445029600",
-   "last_seen": "2026-11-22",
-   "location": "Etobicoke, ON, CA",
-   "posted": "Oct 29, 2026",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Retail Operations Expert, Sherway Gardens",
-   "url": "https://jobs.bce.ca/Best-Buy-Express/job/Etobicoke-Retail-Operations-Expert%2C-Sherway-Gardens-ON/1445029600/"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261122T181236Z-c97ae7",
-   "closed_seen": "2026-11-22",
-   "details": {
-    "checked": "2026-11-14",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$35,500.00 - $65,000.00",
-    "years_min": 1
-   },
-   "employer": "BMO",
-   "employer_id": "bmo",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "R260030058",
-   "last_seen": "2026-11-22",
-   "location": "REMOTE/TELETRAVAIL, QC H1X 1X1, Canada",
-   "posted": "2026-10-27",
-   "relevant": true,
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Bilingual Account Specialist, LVAR",
-   "url": "https://jobs.bmo.com/ca/en/job/R260030058/Bilingual-Account-Specialist-LVAR"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "change_history": [
-    {
-     "changes": {
-      "location": [
-       "REMOTE/TELETRAVAIL, AB T1X 1X1, Canada",
-       "REMOTE/TELETRAVAIL, YT X0X 0X0, Canada"
-      ]
-     },
-     "date": "2026-11-19",
-     "run": "20261119T041459Z-3b1576"
-    },
-    {
-     "changes": {
-      "location": [
-       "REMOTE/TELETRAVAIL, YT X0X 0X0, Canada",
-       "REMOTE/TELETRAVAIL, NU X0X 0X0, Canada"
-      ]
-     },
-     "date": "2026-11-19",
-     "run": "20261119T193132Z-654877"
-    },
-    {
-     "changes": {
-      "location": [
-       "REMOTE/TELETRAVAIL, NU X0X 0X0, Canada",
-       "REMOTE/TELETRAVAIL, ON L4X 1X1, Canada"
-      ]
-     },
-     "date": "2026-11-20",
-     "run": "20261120T040206Z-083054"
-    },
-    {
-     "changes": {
-      "location": [
-       "REMOTE/TELETRAVAIL, ON L4X 1X1, Canada",
-       "REMOTE/TELETRAVAIL, PE X0X 0X0, Canada"
-      ]
-     },
-     "date": "2026-11-20",
-     "run": "20261120T190934Z-bf98b1"
-    },
-    {
-     "changes": {
-      "location": [
-       "REMOTE/TELETRAVAIL, PE X0X 0X0, Canada",
-       "REMOTE/TELETRAVAIL, ON L4X 1X1, Canada"
-      ]
-     },
-     "date": "2026-11-22",
-     "run": "20261122T033513Z-5a35ec"
-    }
-   ],
-   "closed_run": "20261122T181236Z-c97ae7",
-   "closed_seen": "2026-11-22",
-   "details": {
-    "checked": "2026-11-14",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$35,500.00 - $65,000.00",
-    "years_min": 1
-   },
-   "employer": "BMO",
-   "employer_id": "bmo",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "R260030243",
-   "last_modified_seen": "2026-11-22",
-   "last_seen": "2026-11-22",
-   "location": "REMOTE/TELETRAVAIL, ON L4X 1X1, Canada",
-   "posted": "2026-10-28",
-   "relevant": true,
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Account Specialist, LVAR",
-   "url": "https://jobs.bmo.com/ca/en/job/R260030243/Account-Specialist-LVAR"
-  },
-  {
-   "active": false,
-   "candidate_status": "relevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted Today",
-       "Posted Yesterday"
-      ]
-     },
-     "date": "2026-11-13",
-     "run": "20261113T183457Z-b74ae7"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted Yesterday",
-       "Posted 2 Days Ago"
-      ]
-     },
-     "date": "2026-11-14",
-     "run": "20261114T171223Z-096dfd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 2 Days Ago",
-       "Posted 3 Days Ago"
-      ]
-     },
-     "date": "2026-11-15",
-     "run": "20261115T174854Z-1fb16f"
-    }
-   ],
-   "closed_run": "20261122T181236Z-c97ae7",
-   "closed_seen": "2026-11-22",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "2026-11-17",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "",
-    "years_min": 1
-   },
-   "details_note": "经验≥1年；截止 2026-11-17",
-   "eligibility": "C",
-   "eligibility_notes": [
-    "职位名只有 assistant/coordinator 等通用词，职能是否对口需看描述"
-   ],
-   "employer": "Home Depot Canada",
-   "employer_id": "home-depot-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T185853Z-1f179d",
-   "fit_reasons": "多伦多/渥太华、入门级",
-   "fit_score": 71,
-   "job_id": "/job/MISSISSAUGA-SOUTH-STORE---7112/Receiving-Associate-Full-Time---MISSISSAUGA-S_Req198977",
-   "last_modified_seen": "2026-11-15",
-   "last_seen": "2026-11-21",
-   "location": "MISSISSAUGA SOUTH STORE - 7112",
-   "posted": "Posted 3 Days Ago",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "workday",
-   "tier": "P2",
-   "title": "Receiving Associate Full Time - MISSISSAUGA S",
-   "url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepotCanada/job/MISSISSAUGA-SOUTH-STORE---7112/Receiving-Associate-Full-Time---MISSISSAUGA-S_Req198977"
-  },
-  {
-   "active": false,
-   "candidate_status": "relevant",
-   "change_history": [
-    {
-     "changes": {
-      "posted": [
-       "Posted Today",
-       "Posted Yesterday"
-      ]
-     },
-     "date": "2026-11-13",
-     "run": "20261113T183457Z-b74ae7"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted Yesterday",
-       "Posted 2 Days Ago"
-      ]
-     },
-     "date": "2026-11-14",
-     "run": "20261114T171223Z-096dfd"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 2 Days Ago",
-       "Posted 3 Days Ago"
-      ]
-     },
-     "date": "2026-11-15",
-     "run": "20261115T174854Z-1fb16f"
-    },
-    {
-     "changes": {
-      "posted": [
-       "Posted 3 Days Ago",
-       "Posted 8 Days Ago"
-      ]
-     },
-     "date": "2026-11-20",
-     "run": "20261120T190934Z-bf98b1"
-    }
-   ],
-   "closed_run": "20261122T181236Z-c97ae7",
-   "closed_seen": "2026-11-22",
-   "details": {
-    "checked": "2026-11-12",
-    "deadline": "2026-11-21",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$55,100.00 - $62,000.00",
-    "years_min": null
-   },
-   "details_note": "截止 2026-11-21；$55,100.00 - $62,000.00",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "Home Depot Canada",
-   "employer_id": "home-depot-canada",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-12",
-   "first_seen_run": "20261112T185853Z-1f179d",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 71,
-   "job_id": "/job/VAUGHAN-DC---7275/TRANSPORTATION-ANALYST_Req198918",
-   "last_modified_seen": "2026-11-20",
-   "last_seen": "2026-11-21",
-   "location": "VAUGHAN DC - 7275",
-   "posted": "Posted 8 Days Ago",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "workday",
-   "tier": "P2",
-   "title": "TRANSPORTATION ANALYST",
-   "url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepotCanada/job/VAUGHAN-DC---7275/TRANSPORTATION-ANALYST_Req198918"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261122T181236Z-c97ae7",
-   "closed_seen": "2026-11-22",
-   "details": {
-    "checked": "2026-11-14",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$21.56/hour",
-    "years_min": null
-   },
-   "employer": "Purolator",
-   "employer_id": "purolator",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "1448226200",
-   "last_seen": "2026-11-22",
-   "location": "Vaughan, ON, CA, L4K 5N1",
-   "posted": "5 Nov 2026",
-   "relevant": true,
-   "source": "successfactors",
-   "tier": "P2",
-   "title": "Operations Support Representative",
-   "url": "https://careers.purolator.com/job/Vaughan-Operations-Support-Representative-ON-L4K-5N1/1448226200/"
-  },
-  {
-   "active": false,
-   "candidate_status": "relevant",
-   "closed_run": "20261122T181236Z-c97ae7",
-   "closed_seen": "2026-11-22",
-   "details": {
-    "checked": "2026-11-13",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": false,
-    "ok": true,
-    "salary": "$46,000.00 - $70,000.00",
-    "years_min": null
-   },
-   "details_note": "$46,000.00 - $70,000.00",
-   "eligibility": "A",
-   "eligibility_notes": [],
-   "employer": "RBC",
-   "employer_id": "rbc",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-13",
-   "first_seen_run": "20261113T183457Z-b74ae7",
-   "fit_reasons": "多伦多/渥太华、财务/审计/分析",
-   "fit_score": 73,
-   "job_id": "R-0000192672",
-   "last_seen": "2026-11-22",
-   "location": "TORONTO, Ontario, Canada",
-   "posted": "2026-11-13",
-   "relevant": true,
-   "resume_family": "ba",
-   "resume_version": "Business_Analyst",
-   "source": "phenom",
-   "tier": "P0",
-   "title": "Fund Analyst",
-   "url": "https://jobs.rbc.com/ca/en/job/R-0000192672/Fund-Analyst"
-  },
-  {
-   "active": false,
-   "baseline": true,
-   "candidate_status": "relevant",
-   "closed_run": "20261122T181236Z-c97ae7",
-   "closed_seen": "2026-11-22",
-   "details": {
-    "checked": "2026-11-10",
-    "deadline": "",
-    "flags": [],
-    "new_grad_text": true,
-    "ok": true,
-    "salary": "",
-    "years_min": null
-   },
-   "employer": "Scotiabank",
-   "employer_id": "scotiabank",
-   "filter_reason": "职能与地点相关",
-   "first_seen": "2026-11-09",
-   "first_seen_run": "20261109T211917Z-3724fa",
-   "job_id": "605031517",
-   "last_seen": "2026-11-22",
-   "location": "Toronto, ON, CA, M5H 1H1",
-   "posted": "Nov 2, 2026",
-   "relevant": true,
-   "source": "successfactors",
-   "tier": "P0",
-   "title": "Application Support Specialist, Credit Risk Technology",
-   "url": "https://jobs.scotiabank.com/job/Toronto-Application-Support-Specialist%2C-Credit-Risk-Technology-ON-M5H-1H1/605031517/"
-  }
- ],
+ "removed_relevant": [],
  "reopened_relevant": [],
- "scan_id": "20261122T181236Z-c97ae7",
+ "scan_id": "20261122T183416Z-3cb26f",
  "scan_states": {
-  "complete": 121,
-  "failed": 63,
+  "complete": 123,
+  "failed": 57,
   "invalid": 1,
   "not_configured": 131,
-  "partial": 17,
-  "unverified": 67,
+  "partial": 24,
+  "unverified": 64,
   "zero_jobs": 140
  },
- "scanned_at": "2026-11-22T18:12:36+00:00",
+ "scanned_at": "2026-11-22T18:34:16+00:00",
  "unreadable": [
   {
    "id": "accenture-canada",
@@ -2713,10 +2025,10 @@
    "tier": "P0"
   },
   {
-   "id": "thomson-reuters",
-   "name": "Thomson Reuters",
+   "id": "bdo-canada",
+   "name": "BDO Canada",
    "scan_state": "failed",
-   "tier": "P0"
+   "tier": "P1"
   },
   {
    "id": "ci-financial",
@@ -2727,12 +2039,6 @@
   {
    "id": "cpkc",
    "name": "CPKC",
-   "scan_state": "failed",
-   "tier": "P1"
-  },
-  {
-   "id": "capital-one-canada",
-   "name": "Capital One Canada",
    "scan_state": "failed",
    "tier": "P1"
   },
@@ -2755,6 +2061,12 @@
    "tier": "P1"
   },
   {
+   "id": "igm-financial-mackenzie-investments",
+   "name": "IGM Financial / Mackenzie Investments",
+   "scan_state": "failed",
+   "tier": "P1"
+  },
+  {
    "id": "interac",
    "name": "Interac",
    "scan_state": "failed",
@@ -2767,14 +2079,14 @@
    "tier": "P1"
   },
   {
-   "id": "mastercard-canada",
-   "name": "Mastercard Canada",
+   "id": "mercer-canada",
+   "name": "Mercer Canada",
    "scan_state": "failed",
    "tier": "P1"
   },
   {
-   "id": "mercer-canada",
-   "name": "Mercer Canada",
+   "id": "nvidia",
+   "name": "NVIDIA",
    "scan_state": "failed",
    "tier": "P1"
   },
@@ -2797,12 +2109,6 @@
    "tier": "P1"
   },
   {
-   "id": "procter-gamble-canada",
-   "name": "Procter & Gamble Canada",
-   "scan_state": "failed",
-   "tier": "P1"
-  },
-  {
    "id": "tc-energy",
    "name": "TC Energy",
    "scan_state": "failed",
@@ -2811,6 +2117,12 @@
   {
    "id": "tmx-group",
    "name": "TMX Group",
+   "scan_state": "failed",
+   "tier": "P1"
+  },
+  {
+   "id": "toronto-public-library-foundation",
+   "name": "Toronto Public Library Foundation",
    "scan_state": "failed",
    "tier": "P1"
   },
@@ -2831,12 +2143,6 @@
    "name": "iA Financial Group",
    "scan_state": "failed",
    "tier": "P1"
-  },
-  {
-   "id": "3m-canada",
-   "name": "3M Canada",
-   "scan_state": "failed",
-   "tier": "P2"
   },
   {
    "id": "ats-corporation",
@@ -3001,12 +2307,6 @@
    "tier": "P2"
   },
   {
-   "id": "choice-properties-reit",
-   "name": "Choice Properties REIT",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "cieslok-group",
    "name": "Cieslok Group",
    "scan_state": "not_configured",
@@ -3103,12 +2403,6 @@
    "tier": "P2"
   },
   {
-   "id": "ellisdon",
-   "name": "EllisDon Corporation",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "equitable-life-of-canada",
    "name": "Equitable Life of Canada",
    "scan_state": "not_configured",
@@ -3181,12 +2475,6 @@
    "tier": "P2"
   },
   {
-   "id": "general-mills-canada",
-   "name": "General Mills Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "genumark",
    "name": "Genumark",
    "scan_state": "failed",
@@ -3225,6 +2513,12 @@
   {
    "id": "holt-renfrew",
    "name": "Holt Renfrew",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "home-depot-canada",
+   "name": "Home Depot Canada",
    "scan_state": "failed",
    "tier": "P2"
   },
@@ -3280,6 +2574,12 @@
    "id": "kann-boutique",
    "name": "KANN Boutique",
    "scan_state": "not_configured",
+   "tier": "P2"
+  },
+  {
+   "id": "kenvue-canada",
+   "name": "Kenvue Canada",
+   "scan_state": "failed",
    "tier": "P2"
   },
   {
@@ -3379,12 +2679,6 @@
    "tier": "P2"
   },
   {
-   "id": "northern-trust-canada",
-   "name": "Northern Trust Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "olg",
    "name": "OLG",
    "scan_state": "failed",
@@ -3393,6 +2687,12 @@
   {
    "id": "optrust",
    "name": "OPTrust",
+   "scan_state": "failed",
+   "tier": "P2"
+  },
+  {
+   "id": "office-of-the-auditor-general-of-ontario",
+   "name": "Office of the Auditor General of Ontario",
    "scan_state": "failed",
    "tier": "P2"
   },
@@ -3505,21 +2805,9 @@
    "tier": "P2"
   },
   {
-   "id": "rga-canada",
-   "name": "RGA Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "risc-foundation",
    "name": "RISC Foundation",
    "scan_state": "not_configured",
-   "tier": "P2"
-  },
-  {
-   "id": "rsm-canada",
-   "name": "RSM Canada",
-   "scan_state": "failed",
    "tier": "P2"
   },
   {
@@ -3637,12 +2925,6 @@
    "tier": "P2"
   },
   {
-   "id": "state-street-canada",
-   "name": "State Street Canada",
-   "scan_state": "failed",
-   "tier": "P2"
-  },
-  {
    "id": "statistics-canada",
    "name": "Statistics Canada",
    "scan_state": "not_configured",
@@ -3754,12 +3036,6 @@
    "id": "toronto-standard-management",
    "name": "Toronto Standard Management Corp",
    "scan_state": "not_configured",
-   "tier": "P2"
-  },
-  {
-   "id": "transunion-canada",
-   "name": "TransUnion Canada",
-   "scan_state": "failed",
    "tier": "P2"
   },
   {

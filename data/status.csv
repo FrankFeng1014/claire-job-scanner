@@ -1,15 +1,13 @@
 id,name,status,detail,relevant_now,checked,scan_state,jobs_found,complete,note
-3m-canada,3M Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs,0,2026-11-22,failed,0,no,
 accenture-canada,Accenture Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs,0,2026-11-22,failed,0,no,
 altus-group,Altus Group,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://altusgroup.wd3.myworkdayjobs.com/wday/cxs/altusgroup/AltusGroup/jobs,0,2026-11-22,failed,0,no,
 aritzia,Aritzia,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://aritzia.wd3.myworkdayjobs.com/wday/cxs/aritzia/External/jobs,0,2026-11-22,failed,0,no,
+bdo-canada,BDO Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://bdo.wd3.myworkdayjobs.com/wday/cxs/bdo/BDO/jobs,0,2026-11-22,failed,0,no,
 canada-goose,Canada Goose,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://canadagoose.wd3.myworkdayjobs.com/wday/cxs/canadagoose/CanadaGooseCareers/jobs,0,2026-11-22,failed,0,no,
 canadian-tire,Canadian Tire,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://canadiantirecorporation.wd3.myworkdayjobs.com/wday/cxs/canadiantirecorporation/Enterprise_Externa,0,2026-11-22,failed,0,no,
-capital-one-canada,Capital One Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://capitalone.wd12.myworkdayjobs.com/wday/cxs/capitalone/Capital_One/jobs,0,2026-11-22,failed,0,no,
 capreit,CAPREIT (Canadian Apartment Properties REIT),fail,page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-capreit.icims.com/jobs/search,0,2026-11-22,failed,0,no,
 cbc-radio-canada,CBC/Radio-Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cbcrc.wd3.myworkdayjobs.com/wday/cxs/cbcrc/CBC_Radio-Canada_Future_Opportunities/jobs,0,2026-11-22,failed,0,no,
 cbre-canada,CBRE Canada,fail,avature: 数据异常: Avature 页面里找不到职位链接,0,2026-11-22,invalid,0,no,
-choice-properties-reit,Choice Properties REIT,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://myview.wd3.myworkdayjobs.com/wday/cxs/myview/Choice_Properties_REIT/jobs,0,2026-11-22,failed,0,no,
 ci-financial,CI Financial,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ci.wd3.myworkdayjobs.com/wday/cxs/ci/CI_FINANCIAL_EXTERNAL_CAREER-SITE/jobs,0,2026-11-22,failed,0,no,
 cineplex,Cineplex,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cineplex.wd3.myworkdayjobs.com/wday/cxs/cineplex/Cineplex/jobs,0,2026-11-22,failed,0,no,
 citi-canada,Citi Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs,0,2026-11-22,failed,0,no,
@@ -18,51 +16,48 @@ corus-entertainment,Corus Entertainment,fail,"page: SSLError: HTTPSConnectionPoo
 cpkc,CPKC,fail,"page: SSLError: HTTPSConnectionPool(host='careers.cpkcr.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, ""[SSL: CERTI",0,2026-11-22,failed,0,no,
 cushman-wakefield-canada,Cushman & Wakefield Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cw.wd1.myworkdayjobs.com/wday/cxs/cw/External/jobs,0,2026-11-22,failed,0,no,
 diageo-canada,Diageo Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://diageo.wd3.myworkdayjobs.com/wday/cxs/diageo/Diageo_Careers/jobs,0,2026-11-22,failed,0,no,
-ellisdon,EllisDon Corporation,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ellisdon.wd3.myworkdayjobs.com/wday/cxs/ellisdon/Ellis-Don/jobs,0,2026-11-22,failed,0,no,
 enbridge,Enbridge,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://enbridge.wd3.myworkdayjobs.com/wday/cxs/enbridge/enbridge_careers/jobs,0,2026-11-22,failed,0,no,
 fidelity-investments-canada,Fidelity Investments Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://fil.wd3.myworkdayjobs.com/wday/cxs/fil/fidelitycanada/jobs,0,2026-11-22,failed,0,no,
 financial-modeling-prep,Financial Modeling Prep,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://michelinhr.wd3.myworkdayjobs.com/wday/cxs/michelinhr/Michelin/jobs,0,2026-11-22,failed,0,no,
 findev-canada,FinDev Canada,fail,page: HTTPError: 410 Client Error: Gone for url: https://jobs.workable.com/view/23H94p8G1Rrgw7VSvHTynA/hybrid-analyst%2C-investments-in-montreal-at-findev-canada,0,2026-11-22,failed,0,no,
 foresters-financial,Foresters Financial,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://foresters.wd3.myworkdayjobs.com/wday/cxs/foresters/ForestersFinancialCareers/jobs,0,2026-11-22,failed,0,no,
 fsra,FSRA,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://fsra.wd3.myworkdayjobs.com/wday/cxs/fsra/FSRA_Careers/jobs,0,2026-11-22,failed,0,no,
-general-mills-canada,General Mills Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://genmills.wd1.myworkdayjobs.com/wday/cxs/genmills/GMI_External_Careers/jobs,0,2026-11-22,failed,0,no,
 genumark,Genumark,fail,successfactors: HTTPError: 404 Client Error: Not Found for url: https://genumark.espwebsites.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow=0,0,2026-11-22,failed,0,no,
 giant-tiger,Giant Tiger,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://gianttiger.wd3.myworkdayjobs.com/wday/cxs/gianttiger/gianttiger/jobs,0,2026-11-22,failed,0,no,
 holt-renfrew,Holt Renfrew,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.holtrenfrew.com/en/careers,0,2026-11-22,failed,0,no,
+home-depot-canada,Home Depot Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://homedepot.wd5.myworkdayjobs.com/wday/cxs/homedepot/CareerDepotCanada/jobs,0,2026-11-22,failed,0,no,
 hydro-ottawa,Hydro Ottawa,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hydroottawa.wd3.myworkdayjobs.com/wday/cxs/hydroottawa/hydro_ottawa_careersite/jobs,0,2026-11-22,failed,0,no,
 ia-financial-group,iA Financial Group,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ia.wd3.myworkdayjobs.com/wday/cxs/ia/Professional/jobs,0,2026-11-22,failed,0,no,
+igm-financial-mackenzie-investments,IGM Financial / Mackenzie Investments,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.mackenzieinvestments.com/en/careers,0,2026-11-22,failed,0,no,
 imco,IMCO,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://imcoinvest.wd3.myworkdayjobs.com/wday/cxs/imcoinvest/IMCO/jobs,0,2026-11-22,failed,0,no,
 intact-financial,Intact Financial,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://intactfc.wd3.myworkdayjobs.com/wday/cxs/intactfc/intactfc/jobs,0,2026-11-22,failed,0,no,
 interac,Interac,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://interac.wd3.myworkdayjobs.com/wday/cxs/interac/Interac/jobs,0,2026-11-22,failed,0,no,
 jll-canada,JLL Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://jll.wd1.myworkdayjobs.com/wday/cxs/jll/jllcareers/jobs,0,2026-11-22,failed,0,no,
+kenvue-canada,Kenvue Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://kenvue.wd5.myworkdayjobs.com/wday/cxs/kenvue/kenvue/jobs,0,2026-11-22,failed,0,no,
 kinaxis,Kinaxis,fail,page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-kinaxis.icims.com/jobs/search,0,2026-11-22,failed,0,no,
 lcbo,LCBO,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://lcbo.wd3.myworkdayjobs.com/wday/cxs/lcbo/en/jobs,0,2026-11-22,failed,0,no,
 manulife,Manulife,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://manulife.wd3.myworkdayjobs.com/wday/cxs/manulife/MFCJH_Jobs/jobs,0,2026-11-22,failed,0,no,
-mastercard-canada,Mastercard Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs,0,2026-11-22,failed,0,no,
 mckinsey-company,McKinsey & Company,fail,"page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)",0,2026-11-22,failed,0,no,
 mercer-canada,Mercer Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mmc.wd1.myworkdayjobs.com/wday/cxs/mmc/MMC/jobs,0,2026-11-22,failed,0,no,
 mosaic-north-america,Mosaic North America,fail,"page: SSLError: HTTPSConnectionPool(host='mosaicjobs.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME]",0,2026-11-22,failed,0,no,
 nestl-canada,Nestlé Canada,fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.corporate.nestle.ca/en/jobs/students-graduates,0,2026-11-22,failed,0,no,
-northern-trust-canada,Northern Trust Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ntrs.wd1.myworkdayjobs.com/wday/cxs/ntrs/northerntrust/jobs,0,2026-11-22,failed,0,no,
+nvidia,NVIDIA,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs,0,2026-11-22,failed,0,no,
+office-of-the-auditor-general-of-ontario,Office of the Auditor General of Ontario,fail,"page: ConnectTimeout: HTTPSConnectionPool(host='auditor.on.ca', port=443): Max retries exceeded with url: /careers.html (Caused by ConnectTimeoutError(<HTTPSConnection(host",0,2026-11-22,failed,0,no,
 olg,OLG,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://olg.wd3.myworkdayjobs.com/wday/cxs/olg/Careers/jobs,0,2026-11-22,failed,0,no,
 optrust,OPTrust,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://optrust.wd3.myworkdayjobs.com/wday/cxs/optrust/OPTrust/jobs,0,2026-11-22,failed,0,no,
-procter-gamble-canada,Procter & Gamble Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000/jobs,0,2026-11-22,failed,0,no,
 protiviti-canada,Protiviti Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://roberthalf.wd1.myworkdayjobs.com/wday/cxs/roberthalf/ProtivitiNA/jobs,0,2026-11-22,failed,0,no,
 psp-investments,PSP Investments,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://investpsp.wd3.myworkdayjobs.com/wday/cxs/investpsp/psp_careers/jobs,0,2026-11-22,failed,0,no,
 purpose-investments,Purpose Investments,fail,page: HTTPError: 429 Client Error: Too Many Requests for url: https://www.purposeinvest.com/careers,0,2026-11-22,failed,0,no,
 relx-lexisnexis-canada,RELX / LexisNexis Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://relx.wd3.myworkdayjobs.com/wday/cxs/relx/relx/jobs,0,2026-11-22,failed,0,no,
-rga-canada,RGA Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://rgare.wd1.myworkdayjobs.com/wday/cxs/rgare/Careers/jobs,0,2026-11-22,failed,0,no,
 royal-academy-of-dance-canada,Royal Academy of Dance (Canada),fail,page: HTTPError: 403 Client Error: Forbidden for url: https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/,0,2026-11-22,failed,0,no,
-rsm-canada,RSM Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://rsm.wd1.myworkdayjobs.com/wday/cxs/rsm/RSMCareers/jobs,0,2026-11-22,failed,0,no,
-state-street-canada,State Street Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs,0,2026-11-22,failed,0,no,
 sun-life,Sun Life,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://sunlife.wd3.myworkdayjobs.com/wday/cxs/sunlife/Experienced-Jobs/jobs,0,2026-11-22,failed,0,no,
 tc-energy,TC Energy,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://tcenergy.wd3.myworkdayjobs.com/wday/cxs/tcenergy/CAREER_SITE_TC/jobs,0,2026-11-22,failed,0,no,
 td-bank,TD Bank,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/jobs,0,2026-11-22,failed,0,no,
-thomson-reuters,Thomson Reuters,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_Site/jobs,0,2026-11-22,failed,0,no,
 tmx-group,TMX Group,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://tmx.wd3.myworkdayjobs.com/wday/cxs/tmx/TMX_Careers/jobs,0,2026-11-22,failed,0,no,
-transunion-canada,TransUnion Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://transunion.wd5.myworkdayjobs.com/wday/cxs/transunion/transunion/jobs,0,2026-11-22,failed,0,no,
+toronto-public-library-foundation,Toronto Public Library Foundation,fail,"page: ConnectTimeout: HTTPSConnectionPool(host='tplfoundation.ca', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host=",0,2026-11-22,failed,0,no,
 unilever-canada,Unilever Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://unilever.wd3.myworkdayjobs.com/wday/cxs/unilever/Unilever_Experienced_Professionals/jobs,0,2026-11-22,failed,0,no,
 visa-canada,Visa Canada,fail,workday: HTTPError: 429 Client Error: Too Many Requests for url: https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa_Early_Careers/jobs,0,2026-11-22,failed,0,no,
+3m-canada,3M Canada,ok,workday: 811 个职位,0,2026-11-22,complete,811,yes,
 adobe-canada,Adobe Canada,ok,workday: 20 个职位,0,2026-11-22,partial,20,no,第 2 页读取失败（HTTPError），已读 20 个
 aga-khan-museum,Aga Khan Museum,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 agincourt-community-services-association,Agincourt Community Services Association,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -72,7 +67,7 @@ alectra-utilities,Alectra Utilities,ok,page: 0 个职位,0,2026-11-22,zero_jobs,
 allied-properties-reit,Allied Properties REIT,ok,lever: 8 个职位,3,2026-11-22,complete,8,yes,
 amazon-canada,Amazon Canada,ok,amazon: 350 个职位,5,2026-11-22,complete,350,yes,
 amd-canada,AMD Canada,ok,page: 3 个职位,0,2026-11-22,unverified,3,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-american-express-canada,American Express Canada,ok,oracle: 388 个职位,1,2026-11-22,complete,388,yes,
+american-express-canada,American Express Canada,ok,oracle: 383 个职位,1,2026-11-22,complete,383,yes,
 amir-quality-meats,Amir Quality Meats,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 anova-fertility,ANOVA Fertility & Reproductive Health,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 aon-canada,Aon Canada,ok,page: 7 个职位,0,2026-11-22,unverified,7,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -89,16 +84,15 @@ ballet-jorgen,Ballet Jörgen,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,�
 bank-of-canada,Bank of Canada,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 bata-shoe-museum,Bata Shoe Museum,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 bdc,BDC,ok,workday: 47 个职位,0,2026-11-22,complete,47,yes,
-bdo-canada,BDO Canada,ok,workday: 120 个职位,2,2026-11-22,partial,120,no,第 7 页读取失败（HTTPError），已读 120 个
 bell-canada,Bell Canada,ok,successfactors: 87 个职位,0,2026-11-22,complete,87,yes,
 blackrock,BlackRock,ok,radancy: 294 个职位,0,2026-11-22,complete,294,yes,
 bloomberg-toronto,Bloomberg (Toronto),ok,avature: 200 个职位,0,2026-11-22,partial,200,no,报告共 328 个，实际只读到 200 个
 bmo,BMO,ok,phenom: 528 个职位,44,2026-11-22,complete,528,yes,
-bombardier,Bombardier,ok,successfactors: 597 个职位,1,2026-11-22,partial,597,no,报告共 823 个，实际只读到 597 个
+bombardier,Bombardier,ok,successfactors: 608 个职位,2,2026-11-22,partial,608,no,报告共 823 个，实际只读到 608 个
 borrowell,Borrowell,ok,workable: 3 个职位,0,2026-11-22,complete,3,yes,
 boston-consulting-group,Boston Consulting Group,ok,phenom: 949 个职位,1,2026-11-22,complete,949,yes,
-broadridge-canada,Broadridge Canada,ok,workday: 307 个职位,0,2026-11-22,complete,307,yes,
-brookfield,Brookfield,ok,workday: 143 个职位,2,2026-11-22,complete,143,yes,
+broadridge-canada,Broadridge Canada,ok,workday: 20 个职位,0,2026-11-22,partial,20,no,第 2 页读取失败（HTTPError），已读 20 个
+brookfield,Brookfield,ok,workday: 20 个职位,0,2026-11-22,partial,20,no,第 2 页读取失败（HTTPError），已读 20 个
 brunswick-bierworks,Brunswick Bierworks,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 buddies-in-bad-times-theatre,Buddies in Bad Times Theatre,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 burgundy-asset-management,Burgundy Asset Management,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -120,11 +114,13 @@ canadian-music-centre,Canadian Music Centre,ok,page: 4 个职位,0,2026-11-22,un
 canadian-opera-company,Canadian Opera Company,ok,bamboohr: 3 个职位,1,2026-11-22,complete,3,yes,
 canadian-stage,Canadian Stage,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 capco,Capco,ok,greenhouse: 710 个职位,0,2026-11-22,complete,710,yes,
+capital-one-canada,Capital One Canada,ok,workday: 40 个职位,1,2026-11-22,partial,40,no,招聘板共 2050 个职位，按地点筛选只读目标地区；第 3 页读取失败（HTTPError），已读 40 个
 celestica,Celestica,ok,successfactors: 1066 个职位,2,2026-11-22,complete,1066,yes,
 cgi,CGI,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 chamber-music-society-of-mississauga,The Chamber Music Society of Mississauga Inc.,ok,page: 1 个职位,1,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 charles-river-associates-toronto,Charles River Associates (Toronto),ok,greenhouse: 93 个职位,2,2026-11-22,complete,93,yes,
-cibc,CIBC,ok,workday: 10 个职位,1,2026-11-22,partial,10,no,部分入口读取失败：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cibc.wd3.myworkdayjobs.com/wday/cxs/cibc/search/jobs
+choice-properties-reit,Choice Properties REIT,ok,workday: 12 个职位,0,2026-11-22,complete,12,yes,
+cibc,CIBC,ok,workday: 20 个职位,0,2026-11-22,partial,20,no,第 2 页读取失败（HTTPError），已读 20 个；部分入口读取失败：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cibc.wd3.myworkdayjobs.com/wday/cxs/cibc/campus/jobs
 cibc-mellon,CIBC Mellon,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 ciena,Ciena,ok,workday: 180 个职位,1,2026-11-22,complete,180,yes,
 ciro,CIRO,ok,ultipro: 27 个职位,5,2026-11-22,complete,27,yes,
@@ -134,9 +130,9 @@ city-of-ottawa,City of Ottawa,ok,successfactors: 77 个职位,3,2026-11-22,compl
 city-of-toronto,City of Toronto,ok,successfactors: 12 个职位,0,2026-11-22,partial,12,no,按网站地图读取（不完整）
 clearpoint-health-network,ClearPoint Health Network,ok,ultipro: 27 个职位,0,2026-11-22,complete,27,yes,
 cmhc,CMHC,ok,successfactors: 47 个职位,0,2026-11-22,complete,47,yes,
-cn-rail,CN Rail,ok,successfactors: 65 个职位,0,2026-11-22,partial,65,no,报告共 77 个，实际只读到 65 个
+cn-rail,CN Rail,ok,successfactors: 63 个职位,0,2026-11-22,partial,63,no,报告共 77 个，实际只读到 63 个
 cohere,Cohere,ok,ashby: 124 个职位,4,2026-11-22,complete,124,yes,
-colgate-palmolive-canada,Colgate-Palmolive Canada,ok,successfactors: 226 个职位,0,2026-11-22,partial,226,no,报告共 315 个，实际只读到 226 个
+colgate-palmolive-canada,Colgate-Palmolive Canada,ok,successfactors: 234 个职位,0,2026-11-22,partial,234,no,报告共 315 个，实际只读到 234 个
 combined-metal-industries,Combined Metal Industries,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 conference-board-of-canada,Conference Board of Canada,ok,bamboohr: 4 个职位,0,2026-11-22,complete,4,yes,
 convoy-finance,Convoy Finance,ok,workable: 10 个职位,1,2026-11-22,complete,10,yes,
@@ -153,20 +149,21 @@ dance-umbrella-of-ontario,Dance Umbrella of Ontario (DUO),ok,page: 0 个职位,0
 dawson-partners,Dawson Partners Inc.,ok,bamboohr: 5 个职位,0,2026-11-22,complete,5,yes,
 dayforce,Dayforce,ok,page: 14 个职位,0,2026-11-22,unverified,14,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 definity-financial,Definity Financial,ok,page: 2 个职位,0,2026-11-22,unverified,2,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-deloitte-canada,Deloitte Canada,ok,successfactors: 300 个职位,6,2026-11-22,partial,300,no,报告共 421 个，实际只读到 300 个
+deloitte-canada,Deloitte Canada,ok,successfactors: 326 个职位,8,2026-11-22,partial,326,no,报告共 421 个，实际只读到 326 个
 desjardins,Desjardins,ok,workday: 265 个职位,1,2026-11-22,complete,265,yes,
 dexterra,Dexterra,ok,smartrecruiters: 511 个职位,4,2026-11-22,complete,511,yes,
 diamond-schmitt,Diamond Schmitt,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 dollarama,Dollarama,ok,successfactors: 20 个职位,0,2026-11-22,complete,20,yes,
 dream-unlimited,Dream Unlimited,ok,ultipro: 16 个职位,3,2026-11-22,complete,16,yes,
 dying-with-dignity-canada,Dying With Dignity Canada,ok,page: 2 个职位,0,2026-11-22,unverified,2,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
+ellisdon,EllisDon Corporation,ok,workday: 80 个职位,4,2026-11-22,partial,80,no,第 5 页读取失败（HTTPError），已读 80 个
 emco-corporation,EMCO Corporation,ok,smartrecruiters: 294 个职位,19,2026-11-22,complete,294,yes,
 eq-bank,EQ Bank,ok,lever: 82 个职位,2,2026-11-22,complete,82,yes,
 equifax-canada,Equifax Canada,ok,page: 4 个职位,0,2026-11-22,unverified,4,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 erco-worldwide,ERCO Worldwide,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 ericsson-canada,Ericsson Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 esprit-orchestra,Esprit Orchestra,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
-est-e-lauder-canada,Estée Lauder Canada,ok,successfactors: 2093 个职位,0,2026-11-22,complete,2093,yes,
+est-e-lauder-canada,Estée Lauder Canada,ok,successfactors: 2088 个职位,0,2026-11-22,complete,2088,yes,
 export-development-canada,Export Development Canada,ok,workable: 0 个职位,0,2026-11-22,zero_jobs,0,no,
 ey-canada,EY Canada,ok,page: 34 个职位,0,2026-11-22,unverified,34,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 faire,Faire,ok,greenhouse: 74 个职位,0,2026-11-22,complete,74,yes,
@@ -174,10 +171,11 @@ fairfax-financial,Fairfax Financial,ok,page: 0 个职位,0,2026-11-22,zero_jobs,
 fall-for-dance-north,Fall for Dance North Festival,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 first-capital-reit,First Capital REIT,ok,page: 2 个职位,0,2026-11-22,unverified,2,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 first-national-financial,First National Financial,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-ford-motor-company-of-canada,Ford Motor Company of Canada,ok,oracle: 889 个职位,2,2026-11-22,complete,889,yes,
+ford-motor-company-of-canada,Ford Motor Company of Canada,ok,oracle: 887 个职位,2,2026-11-22,complete,887,yes,
 fti-consulting-canada,FTI Consulting Canada,ok,workday: 40 个职位,0,2026-11-22,partial,40,no,第 3 页读取失败（HTTPError），已读 40 个
 fundata-canada,Fundata Canada,ok,bamboohr: 0 个职位,0,2026-11-22,zero_jobs,0,no,
 gardiner-museum,Gardiner Museum,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
+general-mills-canada,General Mills Canada,ok,workday: 365 个职位,1,2026-11-22,complete,365,yes,
 general-motors-canada,General Motors Canada,ok,page: 4 个职位,0,2026-11-22,unverified,4,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 gesco,Gesco,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 gfl-environmental,GFL Environmental,ok,page: 2 个职位,0,2026-11-22,unverified,2,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -197,15 +195,13 @@ harry-rosen,Harry Rosen,ok,workday: 86 个职位,7,2026-11-22,complete,86,yes,
 haus-of-dada,Haus of Dada (Lisa Anita Wegner studio),ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 heffel-fine-art-auction-house,Heffel Fine Art Auction House,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 hercules-moving,Hercules Moving Company,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-home-depot-canada,Home Depot Canada,ok,workday: 418 个职位,3,2026-11-22,complete,418,yes,
 honda-canada,Honda Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-honeywell-canada,Honeywell Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
+honeywell-canada,Honeywell Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 hoopp,HOOPP,ok,workday: 28 个职位,0,2026-11-22,complete,28,yes,
 humberview-group,Humberview Group,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 hydro-one,Hydro One,ok,successfactors: 11 个职位,1,2026-11-22,complete,11,yes,
 ibm-canada,IBM Canada,ok,page: 7 个职位,0,2026-11-22,unverified,7,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 ieso,IESO,ok,successfactors: 19 个职位,0,2026-11-22,partial,19,no,按网站地图读取（不完整）
-igm-financial-mackenzie-investments,IGM Financial / Mackenzie Investments,ok,page: 4 个职位,0,2026-11-22,unverified,4,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 ikea-canada,IKEA Canada,ok,radancy: 1391 个职位,0,2026-11-22,complete,1391,yes,
 indigo,Indigo,ok,smartrecruiters: 110 个职位,1,2026-11-22,complete,110,yes,
 info-tech-research-group,Info-Tech Research Group / McLean & Company,ok,ultipro: 69 个职位,2,2026-11-22,complete,69,yes,
@@ -217,7 +213,6 @@ inuit-art-foundation,Inuit Art Foundation,ok,page: 0 个职位,0,2026-11-22,zero
 invest-ontario,Invest Ontario,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 johnvince-foods,JohnVince Foods,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 kearney,Kearney,ok,page: 44 个职位,0,2026-11-22,unverified,44,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-kenvue-canada,Kenvue Canada,ok,workday: 179 个职位,0,2026-11-22,complete,179,yes,
 kimberly-clark-canada,Kimberly-Clark Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 koffler-arts,Koffler Arts,ok,bamboohr: 13 个职位,0,2026-11-22,complete,13,yes,
 koho,KOHO,ok,ashby: 9 个职位,0,2026-11-22,complete,9,yes,
@@ -240,7 +235,8 @@ lush-handmade-cosmetics,Lush Handmade Cosmetics,ok,greenhouse: 171 个职位,0,2
 mad-elevator,MAD Elevator Inc.,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 magna-international,Magna International,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 maple-leaf-foods,Maple Leaf Foods,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-marsh-canada,Marsh Canada,ok,phenom: 1900 个职位,2,2026-11-22,complete,1900,yes,
+marsh-canada,Marsh Canada,ok,phenom: 1899 个职位,2,2026-11-22,complete,1899,yes,
+mastercard-canada,Mastercard Canada,ok,workday: 19 个职位,0,2026-11-22,complete,19,yes,
 mattamy-homes,Mattamy Homes,ok,page: 53 个职位,0,2026-11-22,unverified,53,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 mcmichael-canadian-art-collection,McMichael Canadian Art Collection,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 media-resources-inc,Media Resources Inc.,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -257,9 +253,9 @@ mirvish-productions,Mirvish Productions,ok,page: 0 个职位,0,2026-11-22,zero_j
 mnp,MNP,ok,ultipro: 64 个职位,2,2026-11-22,complete,64,yes,
 molson-coors-canada,Molson Coors Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 mondelez-canada,Mondelez Canada,ok,page: 6 个职位,0,2026-11-22,unverified,6,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-moneris,Moneris,ok,workday: 29 个职位,1,2026-11-22,complete,29,yes,
+moneris,Moneris,ok,workday: 20 个职位,1,2026-11-22,partial,20,no,第 2 页读取失败（HTTPError），已读 20 个
 moorelands-kids,Moorelands Kids,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-morningstar-dbrs,Morningstar DBRS,ok,workday: 185 个职位,0,2026-11-22,complete,185,yes,
+morningstar-dbrs,Morningstar DBRS,ok,workday: 40 个职位,0,2026-11-22,partial,40,no,第 3 页读取失败（HTTPError），已读 40 个
 munich-re-canada,Munich Re Canada,ok,radancy: 1673 个职位,2,2026-11-22,complete,1673,yes,
 museum-of-contemporary-art-toronto,Museum of Contemporary Art Toronto,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 musicounts,MusiCounts,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -273,12 +269,11 @@ neighbourly-pharmacy,Neighbourly Pharmacy,ok,page: 0 个职位,0,2026-11-22,zero
 nokia-canada,Nokia Canada,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页：无法确认是否读全，只用于发现新职位
 north-york-harvest-food-bank,North York Harvest Food Bank,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 northbridge-financial,Northbridge Financial,ok,phenom: 48 个职位,4,2026-11-22,complete,48,yes,
+northern-trust-canada,Northern Trust Canada,ok,workday: 645 个职位,0,2026-11-22,complete,645,yes,
 northleaf-capital-partners,Northleaf Capital Partners,ok,bamboohr: 8 个职位,0,2026-11-22,complete,8,yes,
-nvidia,NVIDIA,ok,workday: 16 个职位,1,2026-11-22,partial,16,no,招聘板共 2000 个职位，按地点筛选只读目标地区
 oakville-galleries,Oakville Galleries,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 odell-hvac-group,O'Dell HVAC Group,ok,bamboohr: 17 个职位,0,2026-11-22,complete,17,yes,
 office-of-the-auditor-general-of-canada,Office of the Auditor General of Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-office-of-the-auditor-general-of-ontario,Office of the Auditor General of Ontario,ok,page: 1 个职位,1,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 omers,OMERS,ok,phenom: 52 个职位,3,2026-11-22,complete,52,yes,
 onex,Onex,ok,greenhouse: 2 个职位,0,2026-11-22,complete,2,yes,
 ontario-arts-council,Ontario Arts Council,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -306,6 +301,7 @@ piper-arms,PIPER ARMS,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通�
 pointclickcare,PointClickCare,ok,lever: 87 个职位,4,2026-11-22,complete,87,yes,
 porter-airlines,Porter Airlines,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 prep-doctors,Prep Doctors,ok,page: 2 个职位,0,2026-11-22,unverified,2,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
+procter-gamble-canada,Procter & Gamble Canada,ok,workday: 40 个职位,0,2026-11-22,partial,40,no,第 3 页读取失败（HTTPError），已读 40 个
 purolator,Purolator,ok,successfactors: 91 个职位,2,2026-11-22,complete,91,yes,
 pwc-canada,PwC Canada,ok,phenom: 156 个职位,1,2026-11-22,complete,156,yes,
 q4-inc,Q4 Inc.,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -316,6 +312,7 @@ red-head-gallery,Red Head Gallery,ok,page: 1 个职位,0,2026-11-22,unverified,1
 region-of-peel,Region of Peel,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 restaurant-brands-international,Restaurant Brands International,ok,phenom: 136 个职位,3,2026-11-22,complete,136,yes,
 rexall-pharmacy-group,Rexall Pharmacy Group,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
+rga-canada,RGA Canada,ok,workday: 83 个职位,0,2026-11-22,complete,83,yes,
 richter,Richter,ok,ultipro: 5 个职位,3,2026-11-22,complete,5,yes,
 rideau-hall-foundation,Rideau Hall Foundation,ok,bamboohr: 0 个职位,0,2026-11-22,zero_jobs,0,no,
 riocan-reit,RioCan REIT,ok,lever: 8 个职位,1,2026-11-22,complete,8,yes,
@@ -325,15 +322,16 @@ rogers,Rogers,ok,successfactors: 189 个职位,8,2026-11-22,complete,189,yes,
 roots,Roots,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 royal-conservatory-of-music,Royal Conservatory of Music,ok,page: 5 个职位,0,2026-11-22,unverified,5,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 royal-ontario-museum,Royal Ontario Museum,ok,jazzhr: 14 个职位,1,2026-11-22,complete,14,yes,
+rsm-canada,RSM Canada,ok,workday: 140 个职位,0,2026-11-22,partial,140,no,第 8 页读取失败（HTTPError），已读 140 个
 russel-metals,Russel Metals,ok,ultipro: 28 个职位,1,2026-11-22,complete,28,yes,
-s-p-global,S&P Global (Ratings),ok,workday: 20 个职位,0,2026-11-22,partial,20,no,第 2 页读取失败（HTTPError），已读 20 个
+s-p-global,S&P Global (Ratings),ok,workday: 355 个职位,1,2026-11-22,complete,355,yes,
 sagard,Sagard,ok,workday: 32 个职位,2,2026-11-22,complete,32,yes,
 salesforce-canada,Salesforce Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页：无法确认是否读全，只用于发现新职位
 salesgamma,SalesGamma,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 sap-canada,SAP Canada,ok,greenhouse: 9 个职位,0,2026-11-22,complete,9,yes,
 scotiabank,Scotiabank,ok,successfactors: 1256 个职位,33,2026-11-22,complete,1256,yes,
 secret-city,Secret City,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-sephora-canada,Sephora Canada,ok,successfactors: 1055 个职位,8,2026-11-22,complete,1055,yes,
+sephora-canada,Sephora Canada,ok,successfactors: 1054 个职位,8,2026-11-22,complete,1054,yes,
 shaw-festival,Shaw Festival,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 shopify,Shopify,ok,page: 5 个职位,0,2026-11-22,unverified,5,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 sia-partners,Sia Partners,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -355,6 +353,7 @@ south-riverdale-community-health-centre,South Riverdale Community Health Centre,
 sprott,Sprott,ok,bamboohr: 0 个职位,0,2026-11-22,zero_jobs,0,no,
 staples-canada,Staples Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 starlight-investments,Starlight Investments,ok,page: 13 个职位,0,2026-11-22,unverified,13,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
+state-street-canada,State Street Canada,ok,workday: 32 个职位,3,2026-11-22,partial,32,no,招聘板共 1150 个职位，只读了部分；地点筛选失败（HTTPError），改用关键词搜索；关键词 Toronto 读取失败（HTTPError）
 stellantis-canada,Stellantis Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 stratford-festival,Stratford Festival,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 stripe-canada,Stripe Canada,ok,greenhouse: 777 个职位,0,2026-11-22,complete,777,yes,
@@ -374,6 +373,7 @@ the-co-operators,The Co-operators,ok,ultipro: 94 个职位,7,2026-11-22,complete
 the-power-plant-contemporary-art-gallery,The Power Plant Contemporary Art Gallery,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 the-theatre-centre,The Theatre Centre,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 theatre-passe-muraille,Theatre Passe Muraille,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
+thomson-reuters,Thomson Reuters,ok,workday: 546 个职位,1,2026-11-22,complete,546,yes,
 tiff,TIFF,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 toronto-arts-council,Toronto Arts Council,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 toronto-biennial-of-art,Toronto Biennial of Art,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -383,11 +383,11 @@ toronto-hydro,Toronto Hydro,ok,successfactors: 10 个职位,1,2026-11-22,partial
 toronto-mendelssohn-choir,Toronto Mendelssohn Choir,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 toronto-metropolitan-university,Toronto Metropolitan University,ok,page: 2 个职位,0,2026-11-22,unverified,2,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 toronto-public-library,Toronto Public Library,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-toronto-public-library-foundation,Toronto Public Library Foundation,ok,page: 2 个职位,2,2026-11-22,unverified,2,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 toronto-summer-music,Toronto Summer Music Festival,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 toronto-symphony-orchestra,Toronto Symphony Orchestra,ok,page: 2 个职位,0,2026-11-22,unverified,2,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 toyota-canada,Toyota Canada,ok,workday: 130 个职位,0,2026-11-22,complete,130,yes,
 trailcon-leasing,Trailcon,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
+transunion-canada,TransUnion Canada,ok,workday: 20 个职位,0,2026-11-22,partial,20,no,第 2 页读取失败（HTTPError），已读 20 个
 tridel,Tridel,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 ttc,TTC,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 uber-canada,Uber Canada,ok,page: 0 个职位,0,2026-11-22,zero_jobs,0,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
@@ -396,7 +396,7 @@ university-health-network,University Health Network,ok,page: 0 个职位,0,2026-
 university-of-toronto,University of Toronto,ok,successfactors: 203 个职位,11,2026-11-22,complete,203,yes,
 util-assist,Util-Assist Inc.,ok,lever: 2 个职位,0,2026-11-22,complete,2,yes,
 vale-base-metals,Vale Base Metals,ok,page: 1 个职位,0,2026-11-22,unverified,1,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
-walmart-canada,Walmart Canada,ok,workday: 60 个职位,0,2026-11-22,partial,60,no,招聘板共 2000 个职位，按地点筛选只读目标地区；第 4 页读取失败（HTTPError），已读 60 个
+walmart-canada,Walmart Canada,ok,workday: 180 个职位,3,2026-11-22,partial,180,no,招聘板共 2000 个职位，按地点筛选只读目标地区；第 10 页读取失败（HTTPError），已读 180 个
 waterfront-toronto,Waterfront Toronto,ok,page: 3 个职位,1,2026-11-22,unverified,3,no,普通网页（浏览器打开）：无法确认是否读全，只用于发现新职位
 wave-financial,Wave Financial,ok,lever: 9 个职位,0,2026-11-22,complete,9,yes,
 wawanesa-insurance,Wawanesa Insurance,ok,successfactors: 47 个职位,0,2026-11-22,complete,47,yes,
