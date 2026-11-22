@@ -141,12 +141,17 @@ _TIER_RANK = {"P0": 0, "P1": 1, "P2": 2}
 def shared_sources(emps):
     """多家雇主用同一个招聘系统地址（如 Jarislowsky Fraser 用的是母公司 Scotiabank 的招聘网站）：
     只保留层级最高的一家去读，其余的返回 {雇主id: 保留的雇主名}，避免同一批职位被记到两家名下。"""
-    by_src = {}
+    by_src, out = {}, {}
+    names = {e["id"]: e["name"] for e in emps}
     for e in emps:
+        # employers.csv 里 ats 写成 same_as:<雇主id>：职位已包含在那家雇主的招聘网站里（如 Oxford Properties → OMERS）
+        a = (e.get("ats") or "").strip()
+        if a.startswith("same_as:"):
+            out[e["id"]] = names.get(a.split(":", 1)[1].strip(), a.split(":", 1)[1].strip())
+            continue
         kind, arg = target(e)
         if kind and kind != "page" and arg:
             by_src.setdefault((kind, arg.strip().lower().rstrip("/")), []).append(e)
-    out = {}
     for group in by_src.values():
         if len(group) < 2:
             continue
