@@ -82,7 +82,7 @@ chamber-music-society-of-mississauga,The Chamber Music Society of Mississauga In
 charles-river-associates-toronto,Charles River Associates (Toronto),P2,经济咨询,greenhouse,charlesriverassociates,https://job-boards.greenhouse.io/charlesriverassociates,original,
 choice-properties-reit,Choice Properties REIT,P2,房地产,workday,myview/wd3/Choice_Properties_REIT,https://www.choicereit.ca/join-the-team/,original,
 ci-financial,CI Financial,P1,资产管理,workday,ci/wd3/CI_FINANCIAL_EXTERNAL_CAREER-SITE,https://ci.wd3.myworkdayjobs.com/CI_FINANCIAL_EXTERNAL_CAREER-SITE,original,
-cibc,CIBC,P0,银行,workday,cibc/wd3/search,https://www.cibc.com/en/about-cibc/careers/students-and-graduates/new-graduates.html,original,
+cibc,CIBC,P0,银行,workday,cibc/wd3/search;cibc/wd3/campus,https://www.cibc.com/en/about-cibc/careers/students-and-graduates/new-graduates.html,original,
 cibc-mellon,CIBC Mellon,P2,资产服务,,,https://www.cibcmellon.com/en/careers-home.jsp,original,
 ciena,Ciena,P1,科技（Ottawa）,workday,ciena/wd5/Careers,https://www.ciena.com/careers/students-new-graduates,original,
 cieslok-group,Cieslok Group,P2,户外广告媒体（Toronto）,,,,original,
@@ -228,7 +228,7 @@ l-e-k-consulting,L.E.K. Consulting,P1,咨询,,,https://www.lek.com/careers,origi
 l-or-al-canada,L'Oréal Canada,P1,消费品/奢侈品,radancy,https://careers.loreal.com,https://careers.loreal.com/en/search-jobs,original,
 labatt-breweries,Labatt Breweries,P2,消费品,,,,original,
 laurentian-bank,Laurentian Bank,P2,银行,,,https://www.laurentianbank.ca/en/about-us/careers,original,
-lcbo,LCBO,P2,Crown agency,workday,lcbo/wd3/LCBOCareerSite,https://www.lcbo.com/content/lcbo/en/corporate-pages/careers.html,original,
+lcbo,LCBO,P2,Crown agency,workday,lcbo/wd3/LCBOCareerSite;lcbo/wd3/en,https://www.lcbo.com/content/lcbo/en/corporate-pages/careers.html,original,
 library-and-archives-canada,Library and Archives Canada,P2,公共部门/文化（Ottawa）,,,https://www.canada.ca/en/library-archives/corporate/join-team/career.html,original,
 lightspeed-commerce,Lightspeed Commerce,P2,科技,,,https://www.lightspeedhq.com/careers/,original,
 linamar,Linamar,P2,工业/制造,oracle,fa-epmd-saasfaprod1.fa.ocs.oraclecloud.com/CX_3001,https://www.linamar.com/ja/careers/,original,
@@ -517,7 +517,7 @@ sander-geophysics,Sander Geophysics Ltd,P2,自动发现（Job Bank）,,,,auto:jo
 kann-boutique,KANN Boutique,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-14
 shah-trading,Shah Trading Company Ltd,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-15
 switzer-carty-transportation,Switzer-CARTY Transportation,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-16
-greenwin,Greenwin Corp.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-16
+greenwin,Greenwin Corp.,P2,自动发现（Job Bank）,,,https://www.greenwin.ca/about/careers,auto:jobbank,2026-11-16
 d-ta-systems,D-TA Systems Inc,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-17
 viana,Viana Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-17
 iscon-thaal,ISCON THAAL INC.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-17
@@ -531,7 +531,7 @@ anglican-church,The Anglican Church of Canada,P2,自动发现（Job Bank）,,,,a
 bvd,BVD Group,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-18
 sgb-freight-system,SGB FREIGHT SYSTEM,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-19
 nelson-education,Nelson Education LTD,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-19
-convoy-finance,Convoy Finance,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-19
+convoy-finance,Convoy Finance,P2,自动发现（Job Bank）,workable,convoy-finance,https://www.convoyfinance.com/careers,auto:jobbank,2026-11-19
 visa-depot,The Visa Depot Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-19
 toronto-standard-management,Toronto Standard Management Corp,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-20
 c3,C3 CANADA,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-20
@@ -541,4 +541,4 @@ agora-dealer-services,Agora Dealer Services Corp.,P2,自动发现（Job Bank）,
 merit-decorating-centre,Merit Decorating Centre Ltd.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-21
 optimum-assurance-generale,Optimum Assurance générale,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-21
 yunshang-rice-noodle,Yunshang Rice Noodle,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-21
-napkin-marketing,Napkin Marketing Inc.,P2,自动发现（Job Bank）,,,,auto:jobbank,2026-11-21
+napkin-marketing,Napkin Marketing Inc.,P2,自动发现（Job Bank）,,,https://napkinmarketing.com/join-our-team/,auto:jobbank,2026-11-21

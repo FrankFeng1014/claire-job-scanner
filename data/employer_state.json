@@ -459,6 +459,11 @@
   "first_ok": "2026-11-08",
   "kind": "bamboohr"
  },
+ "convoy-finance": {
+  "arg": "convoy-finance",
+  "first_ok": "2026-11-22",
+  "kind": "workable"
+ },
  "costco-canada": {
   "arg": "https://www.costco.com/jobs.html",
   "first_ok": "2026-11-09",
@@ -763,6 +768,11 @@
   "arg": "greenhousejuice",
   "first_ok": "2026-11-10",
   "kind": "bamboohr"
+ },
+ "greenwin": {
+  "arg": "https://www.greenwin.ca/about/careers",
+  "first_ok": "2026-11-22",
+  "kind": "page"
  },
  "guardian-capital": {
   "arg": "https://www.guardiancapital.com/careers/",
@@ -1197,6 +1207,11 @@
  "musicounts": {
   "arg": "https://musicounts.ca/en/",
   "first_ok": "2026-11-10",
+  "kind": "page"
+ },
+ "napkin-marketing": {
+  "arg": "https://napkinmarketing.com/join-our-team/",
+  "first_ok": "2026-11-22",
   "kind": "page"
  },
  "national-arts-centre": {
