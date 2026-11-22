@@ -848,3 +848,35 @@ def test_missing_location_goes_to_review_except_jobbank():
     from scanner.filters import classify
     assert classify({"title": "Visual Merchandising Specialist", "location": "", "source": "avature"})[0] == "review"
     assert classify({"title": "Marketing Coordinator", "location": "", "source": "channel:jobbank"})[0] == "relevant"
+
+
+# ---------- 2026-11-22 BMO 职位描述读取不全、OMERS/Oxford 重复 ----------
+def test_phenom_description_in_script_data():
+    from scanner import details
+    desc = "<p>Build scorecards.</p><p>Qualifications: Typically 3 \\u2013 5 years of relevant experience.</p>" + " x" * 250
+    html = ('<html><body><nav>' + 'Menu ' * 300 + '</nav><script>var phApp={"ddo":{"job":{"description":"' + desc +
+            '","skills":["Strong SAS skills, including SAS Macros and PROC SQL.",'
+            '"Proficiency with SSRS and/or Power BI for report development.","Knowledge of Python is an asset."]}}}'
+            '</script></body></html>')
+
+    class R:
+        text = html
+
+        def raise_for_status(self):
+            pass
+
+    class S:
+        def get(self, *a, **k):
+            return R()
+
+    txt, _ = details.fetch(S(), "https://jobs.bmo.com/ca/en/job/R1/Scorecard-Reporting-Analyst")
+    d = details.extract(txt, {})
+    assert d["years_min"] == 3
+    assert any("SQL" in f and "Power BI" in f and "Python" not in f for f in d["flags"])
+
+
+def test_same_as_employer_not_scanned_twice():
+    from scanner.main import shared_sources
+    emps = [{"id": "omers", "name": "OMERS", "tier": "P0", "ats": "phenom", "ats_id": "https://careers.omers.com/ca/en"},
+            {"id": "oxford-properties", "name": "Oxford Properties", "tier": "P2", "ats": "same_as:omers", "ats_id": ""}]
+    assert shared_sources(emps) == {"oxford-properties": "OMERS"}

@@ -35,6 +35,29 @@ _YEARS = re.compile(
     r"(\d{1,2}|one|two|three|four|five|six|seven|eight|ten)\s*(?:\+|plus)?\s*"
     r"(?:(?:-|–|to|or)\s*(?:\d{1,2})\s*\+?\s*)?(?:\(\d+\)\s*)?"
     r"years?(?:['’]s?)?\s+(?:of\s+)?(?:[\w/&,-]+\s+){0,6}?(?:experience|work experience)", re.I)
+_TOOLS = [("SQL", r"\bSQL\b"), ("SAS", r"\bSAS\b"), ("Python", r"\bPython\b"),
+          ("R", r"\bR\b(?= (?:programming|language|studio))|\bRStudio\b"),
+          ("Power BI", r"\bPower ?BI\b"), ("Tableau", r"\bTableau\b"), ("SSRS", r"\bSSRS\b"), ("VBA", r"\bVBA\b"),
+          ("Alteryx", r"\bAlteryx\b"), ("Snowflake", r"\bSnowflake\b")]
+_TOOLS = [(n, re.compile(p, 0 if n in ("R", "SAS") else re.I)) for n, p in _TOOLS]
+_REQ_CTX = re.compile(r"proficien|strong|experience (?:with|in|using)|knowledge of|skills? in|expertise|hands-on|"
+                      r"required|must|ability to (?:write|use|build)|working knowledge", re.I)
+_OPT_CTX = re.compile(r"asset|nice to have|preferred|an advantage|a plus|bonus|is helpful|would be beneficial|ideally",
+                      re.I)
+
+
+def _required_tools(text):
+    """职位要求里写成必备的数据/编程工具（写成“加分项”的不算）。Claire 的简历只有 Excel/PowerPoint/Word。"""
+    found = []
+    for sent in re.split(r"(?<=[.;•\n])\s+|\s+[-•·]\s+", text):
+        if not _REQ_CTX.search(sent) or _OPT_CTX.search(sent):
+            continue
+        for n, rx in _TOOLS:
+            if n not in found and rx.search(sent):
+                found.append(n)
+    return found
+
+
 _JOBBANK_YEARS = re.compile(r"experience:?\s*(\d{1,2})\s+years?\s+(?:or more|to less than)", re.I)
 _MONTHS = ("january|february|march|april|may|june|july|august|september|october|november|december|"
            "jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec")
@@ -138,6 +161,10 @@ def fetch(s, url):
     ld = _ld(r.text) or {}
     txt = _text(ld.get("description") or "") if ld.get("description") else ""
     page = _text(r.text)
+    # Phenom 等招聘网站（BMO、OMERS…）把职位描述放在网页脚本的数据里，页面文字只有导航
+    blob = _script_fields(r.text)
+    if len(txt) < 400 and len(blob) >= 400:
+        return blob, ld
     if len(txt) < 400:
         txt = page
     if len(txt) < 1200:
@@ -147,6 +174,27 @@ def fetch(s, url):
                    .replace('\\"', '"').replace("\\n", " ").replace("\\/", "/"))
         txt += " " + _text(scripts[:200000])
     return txt, ld
+
+
+_FIELD = re.compile(r'"(description|jobDescription|qualifications|requirements|responsibilities|skills|'
+                    r'externalDescription)"\s*:\s*("(?:[^"\\]|\\.){60,}"|\[(?:"(?:[^"\\]|\\.)*"\s*,?\s*)+\])')
+
+
+def _script_fields(html):
+    """从网页脚本的 JSON 数据里取出职位描述、要求、技能等字段（正确解码 \\u2013 之类的转义）。"""
+    scripts = " ".join(re.findall(r"<script[^>]*>(.*?)</script>", html or "", re.S | re.I))
+    seen, parts = set(), []
+    for _, raw in _FIELD.findall(scripts):
+        try:
+            val = json.loads(raw)
+        except Exception:  # noqa: BLE001
+            continue
+        for v in (val if isinstance(val, list) else [val]):
+            t = _text(v) if isinstance(v, str) else ""
+            if len(t) > 40 and t[:120] not in seen:
+                seen.add(t[:120])
+                parts.append(t)
+    return " ".join(parts)
 
 
 # ---------- 提取 ----------
@@ -183,6 +231,9 @@ def extract(text, extra=None):
         years.append(int(m.group(1)))
     if years:
         out["years_min"] = min(years)
+    tools = _required_tools(text or "")
+    if tools:
+        out["flags"].append("要求 " + "/".join(tools) + " 等技术能力（简历里没有）")
     vt = (extra.get("validThrough") or "")[:10]
     if re.fullmatch(r"\d{4}-\d{2}-\d{2}", vt):
         out["deadline"] = vt
