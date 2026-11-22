@@ -1,0 +1,3 @@
+R260031276/Scorecard-Reporting-Analyst | txt 6824 | {'years_min': 3, 'deadline': '2026-11-29', 'salary': '$55,500.00 - $120,000.00', 'flags': ['要求 SQL/SAS/Power BI/SSRS 等技术能力（简历里没有）'], 'new_grad_text': False}
+R260031276/Scorecard-Reporting-Analyst | txt 6824 | {'years_min': 3, 'deadline': '2026-11-29', 'salary': '$55,500.00 - $120,000.00', 'flags': ['要求 SQL/SAS/Power BI/SSRS 等技术能力（简历里没有）'], 'new_grad_text': False}
+FAIL https://careers.omers.com/ca/en/job/R0015090/Associate-People-Experience-Operations HTTPError 410 Client Error: Gone for url: https://careers.omers.com/ca/en/job/R0015090/Associate-People-Experience-Operations
