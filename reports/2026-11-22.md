@@ -1,16 +1,17 @@
 # 扫描简报 2026-11-22
 
-雇主共 541 家：读取成功 351，失败 59，无招聘页跳过 131。
+雇主共 540 家：读取成功 345，失败 64，无招聘页跳过 131。
 
-读取质量：完整成功 121，部分成功 23，返回零职位 141，需人工核验 66，数据异常 1。（只有“完整成功”的雇主才会判定职位下架）
+读取质量：完整成功 121，部分成功 17，返回零职位 140，需人工核验 67，数据异常 1。（只有“完整成功”的雇主才会判定职位下架）
 
-## ⏰ 7 天内截止（68）
+## ⏰ 7 天内截止（70）
 
 所有在招、可能相关的职位里，职位页写明的截止日期在 7 天内的（不只是本次新出现的）。
 
 | 截止 | 剩余 | 雇主 | 职位 | 地点 | 职位页信息 | 链接 |
 |---|---|---|---|---|---|---|
 | 2026-11-22 | 0 天 | University of Toronto | Governance Coordinator | Toronto, ON, CA | 截止 2026-11-22；$86,902 - $101,385 | [打开](https://jobs.utoronto.ca/job/Toronto-Governance-Coordinator-ON/607855417/) |
+| 2026-11-23 | 1 天 | CIBC | Associate, Commercial Banking Associate Program – New Undergraduates - Ontario | Toronto, ON | 截止 2026-11-23 | [打开](https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Associate--Commercial-Banking-Associate-Program---New-Undergraduates---Ontario_2621508) |
 | 2026-11-23 | 1 天 | Canadian Tire | Social Media Consultant | Toronto, ON | 经验≥2年；截止 2026-11-23；$53,000 – $88,000 | [打开](https://canadiantirecorporation.wd3.myworkdayjobs.com/en-US/Enterprise_External_Careers_Site/job/Toronto-ON/Social-Media-Consultant_JR163478) |
 | 2026-11-23 | 1 天 | Canadian Tire | Treasury Analyst (6 Month Contract) | Toronto, ON | 截止 2026-11-23；$27.00/hr | [打开](https://canadiantirecorporation.wd3.myworkdayjobs.com/en-US/Enterprise_External_Careers_Site/job/Toronto-ON/Treasury-Analyst--6-Month-Contract-_JR167450-1) |
 | 2026-11-23 | 1 天 | City of Mississauga | Lease Administrator | — | 经验≥2年；截止 2026-11-23；$ 70,807.00 - $ 94,410.00 | [打开](https://jobs.mississauga.ca/job/Mississauga-Lease-Administrator-ON/607881517/) |
@@ -53,10 +54,11 @@
 | 2026-11-25 | 3 天 | Canadian Tire | Business Analyst, Supply Chain Automation & Asset Mgmt | Brampton, ON | 截止 2026-11-25；$53,000 – $88,000 | [打开](https://canadiantirecorporation.wd3.myworkdayjobs.com/en-US/Enterprise_External_Careers_Site/job/Brampton-ON/Business-Analyst--Supply-Chain-Automation---Asset-Mgmt_JR166600) |
 | 2026-11-25 | 3 天 | Canadian Tire | Online Assortment Analyst | Toronto, ON | 截止 2026-11-25；$58,000 and $68,000.00 | [打开](https://canadiantirecorporation.wd3.myworkdayjobs.com/en-US/Enterprise_External_Careers_Site/job/Toronto-ON/Online-Assortment-Analyst_JR168046) |
 | 2026-11-25 | 3 天 | Home Depot Canada | Merchandising Executive Associate - Part Time (Markham East) | MARKHAM EAST STORE - 7136 | 截止 2026-11-25 | [打开](https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepotCanada/job/MARKHAM-EAST-STORE---7136/Merchandising-Executive-Associate---Part-Time--Markham-East-_Req199688-1) |
-| 2026-11-25 | 3 天 | TD Bank | Personal Banking Associate Trainee | Toronto, Ontario | 截止 2026-11-25 | [打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Personal-Banking-Associate-Trainee_R_1520656-1) |
 | 2026-11-25 | 3 天 | TD Bank | Personal Banking Associate Trainee | North York, Ontario | 截止 2026-11-25 | [打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/North-York-Ontario/Personal-Banking-Associate-Trainee_R_1522605-1) |
+| 2026-11-25 | 3 天 | TD Bank | Personal Banking Associate Trainee | Toronto, Ontario | 截止 2026-11-25 | [打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Personal-Banking-Associate-Trainee_R_1520656-1) |
 | 2026-11-25 | 3 天 | University of Toronto | Program Administrator (TERM) | Toronto, ON, CA | 经验≥2年；截止 2026-11-25；$70,633 | [打开](https://jobs.utoronto.ca/job/Toronto-Program-Administrator-%28TERM%29-ON/608060617/) |
 | 2026-11-25 | 3 天 | University of Toronto | Financial Aid and Awards Advisor, Graduate | Toronto, ON, CA | 截止 2026-11-25；$84,564 | [打开](https://jobs.utoronto.ca/job/Toronto-Financial-Aid-and-Awards-Advisor%2C-Graduate-ON/608122117/) |
+| 2026-11-26 | 4 天 | CIBC | Global Markets, Global Markets, Summer 2027 Associate - Equity Research (4 months) | Toronto, ON | 截止 2026-11-26；$125,000；仅限在校生/需返校 | [打开](https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Global-Markets--Global-Markets--Summer-2027-Associate---Equity-Research--4-months-_2624159) |
 | 2026-11-26 | 4 天 | TD Bank | TDS Operations Analyst III | Toronto, Ontario | 截止 2026-11-26 | [打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/TDS-Operations-Analyst-III_R_1520619) |
 | 2026-11-26 | 4 天 | University of Toronto | Administrative Assistant - Exam Services | Mississauga, ON, CA | 截止 2026-11-26；$62,646 | [打开](https://jobs.utoronto.ca/job/Mississauga-Administrative-Assistant-Exam-Services-ON/608139817/) |
 | 2026-11-26 | 4 天 | University of Toronto | Athletic Facility Assistant | Toronto, ON, CA | 经验≥1年；截止 2026-11-26 | [打开](https://jobs.utoronto.ca/job/Toronto-Athletic-Facility-Assistant-ON/608174717/) |
@@ -79,27 +81,28 @@
 | 2026-11-28 | 6 天 | MusiCounts | Coordinator, Programs & Operations | Toronto, ON | 截止 2026-11-28 | [打开](https://workinculture.ca/jobs-and-more/musicounts-full-time-coordinator-programs-operations/) |
 | 2026-11-28 | 6 天 | TD Bank | SBB, Client Service Associate-11 | Markham, Ontario | 经验≥2年；截止 2026-11-28 | [打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Markham-Ontario/SBB--Client-Service-Associate-11_R_1520874) |
 
-## ⚠️ 重点雇主突然读不到（2）
+## ⚠️ 重点雇主突然读不到（6）
 
 上次还能读取、这次读取失败的 P0/P1 雇主，可能是招聘网站改版或临时拦截，需要修复。这是数据读取问题，不代表没有职位；它们已有的职位不会被判为下架。
 
-- P1 Capital One Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://capitalone.wd12.myworkdayjobs.com/wday/cxs/capitalone/Capital_One/jobs
-- P1 Visa Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa_Early_Careers/jobs
+- P1 Citi Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs
+- P1 Mastercard Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs
+- P1 Mercer Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mmc.wd1.myworkdayjobs.com/wday/cxs/mmc/MMC/jobs
+- P1 Procter & Gamble Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000/jobs
+- P0 TD Bank：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/jobs
+- P0 Thomson Reuters：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_
 
-## 本次可申请的职位（6）
+## 本次可申请的职位（3）
 
-其中新发布 5 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。
+其中新发布 1 个，其余是 Claire 之前没见过的已有职位（新接入的雇主/渠道，或搜索规则扩大后新纳入）。全部一视同仁，**先按资格等级、再按与 Claire 的匹配度排序**。
 
 资格等级（扫描程序根据职位页自动初评，最终以打开职位页核对为准）：**A 已满足**＝职位页读到了，没发现她不满足的硬性要求；**B 部分满足**＝有 1 项需要确认或弥补（如要 2 年经验、要证书）；**C 待核查**＝职位页没读到或差距 2 项以上。明确不符合的（要 3 年以上经验、仅限在校生的全职岗）已排除，单独列在后面。
 
 | 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 匹配原因 | 职位页信息 | 建议简历 | 链接 |
 |---|---|---|---|---|---|---|---|---|---|
-| A | 86 | Convoy Finance | Junior Staff Accountant | Toronto, Ontario, Canada | 新接入 | 多伦多/渥太华、入门级、财务/审计/分析 | — | Audit_FinOps | [打开](https://apply.workable.com/j/613302748D) |
-| A | 83 | TD Bank | Risk Analyst, Collateral Analytics (5841) | Toronto, Ontario | 新发布 | 多伦多/渥太华、财务/审计/分析 | 经验≥1年；截止 2026-12-04 | Finance | [打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Risk-Analyst--Collateral-Analytics--5841-_R_1523478) |
-| A | 67 | Athree Soultions Ltd | administrative officer | Mississauga, ON | 新发布 | 多伦多/渥太华、运营/项目类 | 经验≥1年 | Coordination_Client_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50780396) |
-| A | 55 | Ianco Holdings Inc. | accounting bookkeeper | Scarborough, ON | 新发布 | 多伦多/渥太华、财务/审计/分析 | — | Audit_FinOps | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50778182) |
-| C | 58 | TD Bank | Personal Banking Associate Trainee | North York, Ontario | 新发布 | 多伦多/渥太华、入门级、偏销售/柜台 | 截止 2026-11-25 | Finance | [打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/North-York-Ontario/Personal-Banking-Associate-Trainee_R_1522605-1) |
-| C | 30 | Palma Pasta / Palma's Kitchen | merchandiser | Mississauga, ON | 新发布 | 多伦多/渥太华 | $18.00 per hour | Commercial_Product_Ops | [打开](https://www.jobbank.gc.ca/jobsearch/jobposting/50778775) |
+| A | 85 | BMO | Client Service Assistant | Burlington, ON L7R 3N2, Canada | 规则新纳入 | 多伦多/渥太华、入门级、运营/项目类 | 经验≥1年；$40,000 | Coordination_Client_Ops | [打开](https://jobs.bmo.com/ca/en/job/R260027665/Client-Service-Assistant) |
+| A | 70 | CIBC | Associate, Commercial Banking Associate Program – New Undergraduates - Ontario | Toronto, ON | 新接入 | 多伦多/渥太华、入门级、应届/项目、运营/项目类、偏销售/柜台 | 截止 2026-11-23 | Finance | [打开](https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Associate--Commercial-Banking-Associate-Program---New-Undergraduates---Ontario_2621508) |
+| C | 61 | Sephora Canada | Seasonal Associate | Burlington, ON, CA, L7S 2J8 | 新发布 | 多伦多/渥太华、入门级 | $22.60/hr | Business_Analyst | [打开](https://jobs.sephora.com/Canada/job/Burlington-Seasonal-Associate-ON-L7S-2J8/1377960255/) |
 
 ## 可能相关、需要核实（1）
 
@@ -107,58 +110,47 @@
 
 | 资格 | 匹配 | 雇主 | 职位 | 地点 | 来源 | 待核实原因 | 职位页信息 | 建议简历 | 链接 |
 |---|---|---|---|---|---|---|---|---|---|
-| A | 23 | Lululemon | Product Operations Educator | Rush St | — | 新发布 | 没写地点，需确认是否在加拿大/目标城市 | — | Commercial_Product_Ops | [打开](https://careers.lululemon.com/en_US/careers/JobDetail/Product-Operations-Educator-Rush-St/65990) |
+| C | 63 | CIBC | Global Markets, Global Markets, Summer 2027 Associate - Equity Research (4 months) | Toronto, ON | 新接入 | 投行/资本市场 Associate 级别，通常要求 MBA 或 2–3 年分析师经验 | 截止 2026-11-26；$125,000；仅限在校生/需返校 | IB_Capital_Markets | [打开](https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Global-Markets--Global-Markets--Summer-2027-Associate---Equity-Research--4-months-_2624159) |
 
-## 打开职位页后排除（3）
+## 已下架的相关职位（8）
 
-职位名看起来合适，但职位页写明要求 3 年以上经验或仅限在校生。列在这里备查，不用申请。
+- Bell Canada · Retail Operations Expert, Sherway Gardens（首次出现 2026-11-12）
+- BMO · Bilingual Account Specialist, LVAR（首次出现 2026-11-09）
+- BMO · Account Specialist, LVAR（首次出现 2026-11-09）
+- Home Depot Canada · Receiving Associate Full Time - MISSISSAUGA S（首次出现 2026-11-12）
+- Home Depot Canada · TRANSPORTATION ANALYST（首次出现 2026-11-12）
+- Purolator · Operations Support Representative（首次出现 2026-11-09）
+- RBC · Fund Analyst（首次出现 2026-11-13）
+- Scotiabank · Application Support Specialist, Credit Risk Technology（首次出现 2026-11-09）
 
-- TD Bank · Associate, Global Multi-Asset Strategy Team - TD Asset Management：职位页要求 3 年以上经验（[打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Associate--Global-Multi-Asset-Strategy-Team---TD-Asset-Management_R_1503896)）
-- TD Bank · Portfolio Management Analyst：职位页要求 3 年以上经验（[打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Portfolio-Management-Analyst_R_1522370-1)）
-- TD Bank · Business Systems Analyst III：职位页要求 3 年以上经验（[打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Business-Systems-Analyst-III_R_1513928-1)）
+## 只读到部分或数据异常的雇主（18）
 
-## 重新出现的相关职位（1）
-
-- TD Bank · Business Systems Analyst III（[打开](https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Business-Systems-Analyst-III_R_1513928-1)）
-
-## 已下架的相关职位（2）
-
-- Scotiabank · QE Portfolio Specialist（首次出现 2026-11-09）
-- Sephora Canada · Seasonal Associate（首次出现 2026-11-09）
-
-## 只读到部分或数据异常的雇主（24）
-
-- 3M Canada：部分成功，第 15 页读取失败（HTTPError），已读 280 个
+- Adobe Canada：部分成功，第 2 页读取失败（HTTPError），已读 20 个
 - BDO Canada：部分成功，第 7 页读取失败（HTTPError），已读 120 个
 - Bloomberg (Toronto)：部分成功，报告共 328 个，实际只读到 200 个
-- Bombardier：部分成功，报告共 823 个，实际只读到 595 个
+- Bombardier：部分成功，报告共 823 个，实际只读到 597 个
 - Canada Post：部分成功，只读到最新职位的 RSS（不完整）
 - CBRE Canada：数据异常
-- Citi Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区；第 6 页读取失败（HTTPError），已读 100 个
+- CIBC：部分成功，部分入口读取失败：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cibc.wd3.myworkdayjobs.com/wday/cxs/cibc/search/jobs
 - City of Toronto：部分成功，按网站地图读取（不完整）
-- CN Rail：部分成功，报告共 81 个，实际只读到 60 个
-- Colgate-Palmolive Canada：部分成功，报告共 315 个，实际只读到 214 个
-- Cushman & Wakefield Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
-- Deloitte Canada：部分成功，报告共 421 个，实际只读到 294 个
-- FTI Consulting Canada：部分成功，第 9 页读取失败（HTTPError），已读 160 个
-- General Mills Canada：部分成功，第 8 页读取失败（HTTPError），已读 140 个
+- CN Rail：部分成功，报告共 77 个，实际只读到 65 个
+- Colgate-Palmolive Canada：部分成功，报告共 315 个，实际只读到 226 个
+- Deloitte Canada：部分成功，报告共 421 个，实际只读到 300 个
+- FTI Consulting Canada：部分成功，第 3 页读取失败（HTTPError），已读 40 个
 - IESO：部分成功，按网站地图读取（不完整）
-- Mercer Canada：部分成功，招聘板共 1955 个职位，按地点筛选只读目标地区
-- Morningstar DBRS：部分成功，第 5 页读取失败（HTTPError），已读 80 个
 - NVIDIA：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区
 - Ontario Power Generation：部分成功，只读到最新职位的 RSS（不完整）
-- Protiviti Canada：部分成功，第 5 页读取失败（HTTPError），已读 80 个
-- State Street Canada：部分成功，招聘板共 1164 个职位，按地点筛选只读目标地区；第 3 页读取失败（HTTPError），已读 40 个
-- TD Bank：部分成功，招聘板共 1722 个职位，按地点筛选只读目标地区；第 7 页读取失败（HTTPError），已读 120 个
+- S&P Global (Ratings)：部分成功，第 2 页读取失败（HTTPError），已读 20 个
 - Toronto Hydro：部分成功，报告共 13 个，去重后只有 10 个
-- Walmart Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区；第 15 页读取失败（HTTPError），已读 280 个
+- Walmart Canada：部分成功，招聘板共 2000 个职位，按地点筛选只读目标地区；第 4 页读取失败（HTTPError），已读 60 个
 
-## 读取失败的雇主（59）
+## 读取失败的雇主（64）
 
 这是**数据读取问题**，不代表这些雇主没有职位：上次读到的职位保持在招状态，不会因此判为下架。需要人工到官网核查，或等下次扫描恢复。
 
+- 3M Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs
 - Accenture Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://accenture.wd103.myworkdayjobs.com/wday/cxs/accenture/AccentureCareers/jobs
-- Adobe Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs
+- Altus Group：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://altusgroup.wd3.myworkdayjobs.com/wday/cxs/altusgroup/AltusGroup/jobs
 - Aritzia：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://aritzia.wd3.myworkdayjobs.com/wday/cxs/aritzia/External/jobs
 - Canada Goose：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://canadagoose.wd3.myworkdayjobs.com/wday/cxs/canadagoose/CanadaGooseCareers/jobs
 - Canadian Tire：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://canadiantirecorporation.wd3.myworkdayjobs.com/wday/cxs/canadiantirecorporation/Enterprise_Externa
@@ -168,11 +160,12 @@
 - CBRE Canada：avature: 数据异常: Avature 页面里找不到职位链接
 - Choice Properties REIT：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://myview.wd3.myworkdayjobs.com/wday/cxs/myview/Choice_Properties_REIT/jobs
 - CI Financial：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ci.wd3.myworkdayjobs.com/wday/cxs/ci/CI_FINANCIAL_EXTERNAL_CAREER-SITE/jobs
-- CIBC：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cibc.wd3.myworkdayjobs.com/wday/cxs/cibc/campus/jobs
 - Cineplex：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cineplex.wd3.myworkdayjobs.com/wday/cxs/cineplex/Cineplex/jobs
+- Citi Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs
 - Colliers：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://colliers.wd3.myworkdayjobs.com/wday/cxs/colliers/Colliers-External-Career-Site/jobs
 - Corus Entertainment：page: SSLError: HTTPSConnectionPool(host='www.corus.ca', port=443): Max retries exceeded with url: /en/careers/ (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HAN
 - CPKC：page: SSLError: HTTPSConnectionPool(host='careers.cpkcr.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTI
+- Cushman & Wakefield Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://cw.wd1.myworkdayjobs.com/wday/cxs/cw/External/jobs
 - Diageo Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://diageo.wd3.myworkdayjobs.com/wday/cxs/diageo/Diageo_Careers/jobs
 - EllisDon Corporation：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ellisdon.wd3.myworkdayjobs.com/wday/cxs/ellisdon/Ellis-Don/jobs
 - Enbridge：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://enbridge.wd3.myworkdayjobs.com/wday/cxs/enbridge/enbridge_careers/jobs
@@ -181,37 +174,40 @@
 - FinDev Canada：page: HTTPError: 410 Client Error: Gone for url: https://jobs.workable.com/view/23H94p8G1Rrgw7VSvHTynA/hybrid-analyst%2C-investments-in-montreal-at-findev-canada
 - Foresters Financial：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://foresters.wd3.myworkdayjobs.com/wday/cxs/foresters/ForestersFinancialCareers/jobs
 - FSRA：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://fsra.wd3.myworkdayjobs.com/wday/cxs/fsra/FSRA_Careers/jobs
+- General Mills Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://genmills.wd1.myworkdayjobs.com/wday/cxs/genmills/GMI_External_Careers/jobs
 - Genumark：successfactors: HTTPError: 404 Client Error: Not Found for url: https://genumark.espwebsites.com/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow=0
 - Giant Tiger：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://gianttiger.wd3.myworkdayjobs.com/wday/cxs/gianttiger/gianttiger/jobs
 - Holt Renfrew：page: HTTPError: 403 Client Error: Forbidden for url: https://www.holtrenfrew.com/en/careers
-- Home Depot Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://homedepot.wd5.myworkdayjobs.com/wday/cxs/homedepot/CareerDepotCanada/jobs
 - Hydro Ottawa：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://hydroottawa.wd3.myworkdayjobs.com/wday/cxs/hydroottawa/hydro_ottawa_careersite/jobs
 - iA Financial Group：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ia.wd3.myworkdayjobs.com/wday/cxs/ia/Professional/jobs
 - IMCO：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://imcoinvest.wd3.myworkdayjobs.com/wday/cxs/imcoinvest/IMCO/jobs
 - Intact Financial：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://intactfc.wd3.myworkdayjobs.com/wday/cxs/intactfc/intactfc/jobs
 - Interac：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://interac.wd3.myworkdayjobs.com/wday/cxs/interac/Interac/jobs
 - JLL Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://jll.wd1.myworkdayjobs.com/wday/cxs/jll/jllcareers/jobs
-- JohnVince Foods：page: ConnectTimeout: HTTPSConnectionPool(host='johnvince.com', port=443): Max retries exceeded with url: /work-at-johnvince/ (Caused by ConnectTimeoutError(<HTTPSConnectio
-- Kenvue Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://kenvue.wd5.myworkdayjobs.com/wday/cxs/kenvue/kenvue/jobs
 - Kinaxis：page: HTTPError: 405 Client Error: Not Allowed for url: https://careers-kinaxis.icims.com/jobs/search
 - LCBO：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://lcbo.wd3.myworkdayjobs.com/wday/cxs/lcbo/en/jobs
 - Manulife：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://manulife.wd3.myworkdayjobs.com/wday/cxs/manulife/MFCJH_Jobs/jobs
+- Mastercard Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/campus/jobs
 - McKinsey & Company：page: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=25)
-- Moneris：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://moneris.wd3.myworkdayjobs.com/wday/cxs/moneris/Moneris/jobs
+- Mercer Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://mmc.wd1.myworkdayjobs.com/wday/cxs/mmc/MMC/jobs
 - Mosaic North America：page: SSLError: HTTPSConnectionPool(host='mosaicjobs.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME]
 - Nestlé Canada：page: HTTPError: 403 Client Error: Forbidden for url: https://www.corporate.nestle.ca/en/jobs/students-graduates
 - Northern Trust Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://ntrs.wd1.myworkdayjobs.com/wday/cxs/ntrs/northerntrust/jobs
 - OLG：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://olg.wd3.myworkdayjobs.com/wday/cxs/olg/Careers/jobs
 - OPTrust：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://optrust.wd3.myworkdayjobs.com/wday/cxs/optrust/OPTrust/jobs
-- Oxford Properties：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://omers.wd3.myworkdayjobs.com/wday/cxs/omers/OMERS_External/jobs
+- Procter & Gamble Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://pg.wd5.myworkdayjobs.com/wday/cxs/pg/1000/jobs
+- Protiviti Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://roberthalf.wd1.myworkdayjobs.com/wday/cxs/roberthalf/ProtivitiNA/jobs
 - PSP Investments：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://investpsp.wd3.myworkdayjobs.com/wday/cxs/investpsp/psp_careers/jobs
 - Purpose Investments：page: HTTPError: 429 Client Error: Too Many Requests for url: https://www.purposeinvest.com/careers
 - RELX / LexisNexis Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://relx.wd3.myworkdayjobs.com/wday/cxs/relx/relx/jobs
 - RGA Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://rgare.wd1.myworkdayjobs.com/wday/cxs/rgare/Careers/jobs
+- Royal Academy of Dance (Canada)：page: HTTPError: 403 Client Error: Forbidden for url: https://www.royalacademyofdance.org/en-au/about-the-rad/work-at-the-rad/
 - RSM Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://rsm.wd1.myworkdayjobs.com/wday/cxs/rsm/RSMCareers/jobs
-- S&P Global (Ratings)：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://spgi.wd5.myworkdayjobs.com/wday/cxs/spgi/SPGI_Careers/jobs
+- State Street Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs
 - Sun Life：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://sunlife.wd3.myworkdayjobs.com/wday/cxs/sunlife/Experienced-Jobs/jobs
 - TC Energy：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://tcenergy.wd3.myworkdayjobs.com/wday/cxs/tcenergy/CAREER_SITE_TC/jobs
+- TD Bank：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://td.wd3.myworkdayjobs.com/wday/cxs/td/TD_Bank_Careers/jobs
+- Thomson Reuters：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_Site/jobs
 - TMX Group：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://tmx.wd3.myworkdayjobs.com/wday/cxs/tmx/TMX_Careers/jobs
 - TransUnion Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://transunion.wd5.myworkdayjobs.com/wday/cxs/transunion/transunion/jobs
 - Unilever Canada：workday: HTTPError: 429 Client Error: Too Many Requests for url: https://unilever.wd3.myworkdayjobs.com/wday/cxs/unilever/Unilever_Experienced_Professionals/jobs
@@ -220,7 +216,7 @@
 ## 外部招聘渠道
 
 - Work In Culture：成功，90 个职位，新记录相关 0 个，新加入名单的雇主 0 家
-- Job Bank：成功，316 个职位，新记录相关 3 个，新加入名单的雇主 0 家
+- Job Bank：成功，315 个职位，新记录相关 0 个，新加入名单的雇主 0 家
 - Adzuna：跳过，未设置接口密钥，跳过
 
 ## 还没有招聘入口的雇主（131）

@@ -370,7 +370,7 @@
   "kind": "workday"
  },
  "cibc": {
-  "arg": "cibc/wd3/search",
+  "arg": "cibc/wd3/search;cibc/wd3/campus",
   "first_ok": "2026-11-08",
   "kind": "workday"
  },
